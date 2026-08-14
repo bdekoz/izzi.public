@@ -1,0 +1,240 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://izzi.example/schemas/izzi.guilloche-scene-1.schema.json",
+  "title": "Izzi guilloche scene authoring document",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "scene_id",
+    "canvas",
+    "content",
+    "treatment",
+    "layout",
+    "review"
+  ],
+  "properties": {
+    "$schema": { "type": "string" },
+    "schema_version": { "const": "izzi.guilloche-scene/1" },
+    "scene_id": { "$ref": "#/$defs/id" },
+    "canvas": { "$ref": "#/$defs/canvas" },
+    "content": { "$ref": "#/$defs/content" },
+    "treatment": { "$ref": "#/$defs/treatment" },
+    "layout": { "$ref": "#/$defs/radial_layout" },
+    "palette": { "$ref": "#/$defs/palette" },
+    "budget": { "$ref": "#/$defs/budget" },
+    "review": { "$ref": "#/$defs/review" },
+    "extensions": { "$ref": "#/$defs/extensions" }
+  },
+  "$defs": {
+    "id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 128,
+      "pattern": "^[A-Za-z_][A-Za-z0-9_.-]*$"
+    },
+    "text": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 512
+    },
+    "color": {
+      "type": "string",
+      "pattern": "^#[0-9A-Fa-f]{6}$"
+    },
+    "canvas": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["width", "height", "background"],
+      "properties": {
+        "width": { "type": "integer", "minimum": 64, "maximum": 16384 },
+        "height": { "type": "integer", "minimum": 64, "maximum": 16384 },
+        "background": { "$ref": "#/$defs/color" }
+      }
+    },
+    "number_content": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind", "number", "accessible_label"],
+      "properties": {
+        "kind": { "const": "number" },
+        "number": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 64,
+          "pattern": "^[0-9][0-9 .,+-]*$"
+        },
+        "accessible_label": { "$ref": "#/$defs/text" }
+      }
+    },
+    "word_content": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind", "word", "accessible_label"],
+      "properties": {
+        "kind": { "const": "word" },
+        "word": { "$ref": "#/$defs/text" },
+        "accessible_label": { "$ref": "#/$defs/text" }
+      }
+    },
+    "word_number_content": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind", "word", "number", "accessible_label"],
+      "properties": {
+        "kind": { "const": "word-number" },
+        "word": { "$ref": "#/$defs/text" },
+        "number": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 64,
+          "pattern": "^[0-9][0-9 .,+-]*$"
+        },
+        "accessible_label": { "$ref": "#/$defs/text" }
+      }
+    },
+    "content": {
+      "oneOf": [
+        { "$ref": "#/$defs/number_content" },
+        { "$ref": "#/$defs/word_content" },
+        { "$ref": "#/$defs/word_number_content" }
+      ]
+    },
+    "bounded_pair": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 2,
+      "prefixItems": [
+        { "type": "integer", "minimum": 1, "maximum": 64 },
+        { "type": "integer", "minimum": 1, "maximum": 64 }
+      ],
+      "items": false
+    },
+    "treatment": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "kind",
+        "seed",
+        "floral_group_range",
+        "petal_range",
+        "cycloid_amplitude",
+        "density"
+      ],
+      "properties": {
+        "kind": {
+          "enum": ["cycloid-outline", "floral-cells", "floral-cycloid"]
+        },
+        "seed": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 9007199254740991
+        },
+        "floral_group_range": { "$ref": "#/$defs/bounded_pair" },
+        "petal_range": { "$ref": "#/$defs/bounded_pair" },
+        "cycloid_amplitude": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 256
+        },
+        "density": {
+          "enum": ["accessible", "standard", "experimental", "wild"]
+        }
+      }
+    },
+    "point": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 2,
+      "prefixItems": [
+        { "type": "number", "minimum": 0, "maximum": 16384 },
+        { "type": "number", "minimum": 0, "maximum": 16384 }
+      ],
+      "items": false
+    },
+    "radial_layout": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind", "symmetry_order", "center", "radius"],
+      "properties": {
+        "kind": { "const": "radial" },
+        "symmetry_order": {
+          "type": "integer",
+          "minimum": 2,
+          "maximum": 24
+        },
+        "center": { "$ref": "#/$defs/point" },
+        "radius": {
+          "type": "number",
+          "exclusiveMinimum": 0,
+          "maximum": 8192
+        }
+      }
+    },
+    "palette": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["colors"],
+      "properties": {
+        "colors": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 8,
+          "uniqueItems": true,
+          "items": { "$ref": "#/$defs/color" }
+        },
+        "stroke_width": {
+          "type": "number",
+          "exclusiveMinimum": 0,
+          "maximum": 32
+        },
+        "opacity": {
+          "type": "number",
+          "minimum": 0.05,
+          "maximum": 1
+        },
+        "blend": { "enum": ["normal", "multiply", "screen"] }
+      }
+    },
+    "budget": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["maximum_paths", "maximum_points", "maximum_svg_bytes"],
+      "properties": {
+        "maximum_paths": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 20000
+        },
+        "maximum_points": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 2000000
+        },
+        "maximum_svg_bytes": {
+          "type": "integer",
+          "minimum": 4096,
+          "maximum": 67108864
+        }
+      }
+    },
+    "review": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["profile", "human_acceptance"],
+      "properties": {
+        "profile": {
+          "enum": ["accessible-static", "motion-safe", "experimental"]
+        },
+        "human_acceptance": { "const": "PENDING" }
+      }
+    },
+    "extensions": {
+      "type": "object",
+      "propertyNames": {
+        "pattern": "^[A-Za-z][A-Za-z0-9_.-]*:[A-Za-z0-9_.-]+$"
+      },
+      "additionalProperties": true
+    }
+  }
+}

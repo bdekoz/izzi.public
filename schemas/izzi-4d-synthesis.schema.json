@@ -1,0 +1,235 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://izzi.dev/schemas/izzi-4d-synthesis.schema.json",
+  "title": "Izzi four-dimensional synthesis review pass",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "package_id",
+    "status",
+    "source_manifest",
+    "design_reference_root",
+    "output_root",
+    "profile",
+    "episode_contract",
+    "wildness_contract",
+    "motif_vocabulary",
+    "visual_passes",
+    "seed",
+    "typography_policy",
+    "authority"
+  ],
+  "properties": {
+    "schema_version": { "const": "izzi-4d-synthesis-1" },
+    "package_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9._-]+$"
+    },
+    "status": { "const": "CANDIDATE-NOT-PROMOTED" },
+    "source_manifest": {
+      "type": "string",
+      "pattern": "^outputs/review/feedback/visual/3d-synthesis/round-[0-9]{2}/manifest\\.json$"
+    },
+    "design_reference_root": { "const": "resources/asama-loops" },
+    "output_root": {
+      "type": "string",
+      "pattern": "^outputs/review/feedback/visual/4d-synthesis/round-[0-9]{2}$"
+    },
+    "profile": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["width", "height", "fps", "codec", "pixel_format", "audio"],
+      "properties": {
+        "width": { "const": 1080 },
+        "height": { "const": 1920 },
+        "fps": { "const": 30 },
+        "codec": { "const": "h264" },
+        "pixel_format": { "const": "yuv420p" },
+        "audio": { "const": false }
+      }
+    },
+    "episode_contract": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "episodes_per_visual_pass",
+        "duration_seconds",
+        "segment_seconds",
+        "duration_sampling"
+      ],
+      "properties": {
+        "episodes_per_visual_pass": { "const": 10 },
+        "duration_seconds": {
+          "type": "array",
+          "prefixItems": [
+            { "const": 60 },
+            { "const": 240 }
+          ],
+          "items": false,
+          "minItems": 2,
+          "maxItems": 2
+        },
+        "segment_seconds": {
+          "type": "array",
+          "prefixItems": [
+            { "type": "integer", "minimum": 8, "maximum": 30 },
+            { "type": "integer", "minimum": 12, "maximum": 40 }
+          ],
+          "items": false,
+          "minItems": 2,
+          "maxItems": 2
+        },
+        "duration_sampling": { "const": "DETERMINISTIC-UNIFORM-WHOLE-SECONDS" }
+      }
+    },
+    "wildness_contract": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["motion", "color", "composition"],
+      "properties": {
+        "motion": { "$ref": "#/$defs/range" },
+        "color": { "$ref": "#/$defs/range" },
+        "composition": { "$ref": "#/$defs/range" }
+      }
+    },
+    "motif_vocabulary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["composition", "motion", "structure", "selection"],
+      "properties": {
+        "composition": {
+          "type": "array",
+          "minItems": 4,
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "center-orbit",
+              "edge-entry",
+              "bilateral-mirror",
+              "quad-mirror",
+              "banded-field",
+              "split-field",
+              "layered-registration",
+              "negative-space-inset"
+            ]
+          }
+        },
+        "motion": {
+          "type": "array",
+          "minItems": 4,
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "swipe",
+              "band-scan",
+              "radial-pulse",
+              "orbit",
+              "drift",
+              "dot-expand",
+              "strobe",
+              "glitch-sync"
+            ]
+          }
+        },
+        "structure": {
+          "type": "array",
+          "minItems": 3,
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "hold-reveal-hold",
+              "continuous-loop",
+              "layered-accumulation",
+              "alternating-fields",
+              "serial-assembly",
+              "glitch-interruption"
+            ]
+          }
+        },
+        "selection": { "const": "DETERMINISTIC-SEEDED-UNIFORM" }
+      }
+    },
+    "visual_passes": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 3,
+      "prefixItems": [
+        {
+          "$ref": "#/$defs/visual_pass",
+          "properties": {
+            "pass_id": { "const": "guilloche" },
+            "field_grammar": { "const": "roulette" }
+          }
+        },
+        {
+          "$ref": "#/$defs/visual_pass",
+          "properties": {
+            "pass_id": { "const": "moire" },
+            "field_grammar": { "const": "moire" }
+          }
+        },
+        {
+          "$ref": "#/$defs/visual_pass",
+          "properties": {
+            "pass_id": { "const": "surface-tension" },
+            "field_grammar": { "const": "surface-tension" }
+          }
+        }
+      ],
+      "items": false
+    },
+    "seed": { "type": "integer", "minimum": 0, "maximum": 2147483647 },
+    "typography_policy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["numeric_roles", "letter_roles", "rejected_numeric_face_reuse"],
+      "properties": {
+        "numeric_roles": { "const": "RECORDED-NUMERIC-CAPABLE-FACE" },
+        "letter_roles": { "const": "RECORDED-EXPERIMENTAL-FACE-ALLOWED" },
+        "rejected_numeric_face_reuse": { "const": false }
+      }
+    },
+    "authority": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "local_generation_authorized",
+        "human_visual_acceptance",
+        "accessibility_review",
+        "baseline_promotion_authorized",
+        "publication_authorized",
+        "external_transfer_authorized"
+      ],
+      "properties": {
+        "local_generation_authorized": { "const": true },
+        "human_visual_acceptance": { "const": "PENDING" },
+        "accessibility_review": { "const": "PENDING" },
+        "baseline_promotion_authorized": { "const": false },
+        "publication_authorized": { "const": false },
+        "external_transfer_authorized": { "const": false }
+      }
+    }
+  },
+  "$defs": {
+    "range": {
+      "type": "array",
+      "prefixItems": [
+        { "type": "number", "minimum": 0, "maximum": 1 },
+        { "type": "number", "minimum": 0, "maximum": 1 }
+      ],
+      "items": false,
+      "minItems": 2,
+      "maxItems": 2
+    },
+    "visual_pass": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["pass_id", "field_grammar"],
+      "properties": {
+        "pass_id": { "type": "string" },
+        "field_grammar": { "type": "string" }
+      }
+    }
+  }
+}

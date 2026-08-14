@@ -1,0 +1,240 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://izzi.example/schemas/izzi.graph-1.schema.json",
+  "title": "Izzi graph authoring document",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "graph_id",
+    "kind",
+    "data",
+    "accessibility"
+  ],
+  "properties": {
+    "schema_version": { "const": "izzi.graph/1" },
+    "graph_id": { "$ref": "#/$defs/id" },
+    "kind": { "enum": ["radial-orbit", "linear-chord"] },
+    "data": { "type": "object" },
+    "layout": { "type": "object" },
+    "style": { "$ref": "#/$defs/style" },
+    "accessibility": { "$ref": "#/$defs/accessibility" },
+    "outputs": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/output" }
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": { "kind": { "const": "radial-orbit" } },
+        "required": ["kind"]
+      },
+      "then": {
+        "properties": {
+          "data": { "$ref": "#/$defs/radial_data" },
+          "layout": { "$ref": "#/$defs/radial_layout" }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": { "kind": { "const": "linear-chord" } },
+        "required": ["kind"]
+      },
+      "then": {
+        "properties": {
+          "data": { "$ref": "#/$defs/flow_data" },
+          "layout": { "$ref": "#/$defs/linear_layout" }
+        }
+      }
+    }
+  ],
+  "$defs": {
+    "id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "non_empty_string": {
+      "type": "string",
+      "minLength": 1
+    },
+    "finite_non_negative": {
+      "type": "number",
+      "minimum": 0
+    },
+    "finite_positive": {
+      "type": "number",
+      "exclusiveMinimum": 0
+    },
+    "viewport": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["width", "height"],
+      "properties": {
+        "width": { "$ref": "#/$defs/finite_positive" },
+        "height": { "$ref": "#/$defs/finite_positive" }
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["source_id", "source_uri", "source_sha256"],
+      "properties": {
+        "source_id": { "$ref": "#/$defs/id" },
+        "source_uri": { "$ref": "#/$defs/non_empty_string" },
+        "source_sha256": {
+          "type": "string",
+          "pattern": "^(UNAVAILABLE|[0-9a-f]{64})$"
+        }
+      }
+    },
+    "radial_item": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "label", "value"],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "label": { "$ref": "#/$defs/non_empty_string" },
+        "value": { "$ref": "#/$defs/finite_non_negative" },
+        "satellites": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": { "$ref": "#/$defs/id" }
+        },
+        "description": { "type": "string" }
+      }
+    },
+    "radial_data": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["value_label", "items"],
+      "properties": {
+        "dataset_id": { "$ref": "#/$defs/id" },
+        "value_label": { "$ref": "#/$defs/non_empty_string" },
+        "items": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/radial_item" }
+        },
+        "provenance": { "$ref": "#/$defs/provenance" }
+      }
+    },
+    "relation_node": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "label"],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "label": { "$ref": "#/$defs/non_empty_string" },
+        "description": { "type": "string" }
+      }
+    },
+    "weighted_relation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["source_id", "target_id", "value"],
+      "properties": {
+        "source_id": { "$ref": "#/$defs/id" },
+        "target_id": { "$ref": "#/$defs/id" },
+        "value": { "$ref": "#/$defs/finite_non_negative" },
+        "description": { "type": "string" }
+      }
+    },
+    "flow_data": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["value_label", "nodes", "relations"],
+      "properties": {
+        "dataset_id": { "$ref": "#/$defs/id" },
+        "value_label": { "$ref": "#/$defs/non_empty_string" },
+        "nodes": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/relation_node" }
+        },
+        "relations": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/weighted_relation" }
+        },
+        "provenance": { "$ref": "#/$defs/provenance" }
+      }
+    },
+    "radial_layout": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "viewport": { "$ref": "#/$defs/viewport" },
+        "angles_degrees": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 2,
+          "items": { "type": "number" }
+        },
+        "base_radius": { "$ref": "#/$defs/finite_positive" },
+        "ring_spacing": { "$ref": "#/$defs/finite_non_negative" },
+        "minimum_satellite_radius": {
+          "$ref": "#/$defs/finite_positive"
+        },
+        "minimum_satellite_gap": {
+          "$ref": "#/$defs/finite_non_negative"
+        },
+        "satellite_scale": { "enum": ["constant", "by-value"] },
+        "collision_policy": {
+          "enum": ["none", "outward-orbit", "compact-splay"]
+        },
+        "label_order": {
+          "enum": ["input", "identifier", "shortest-first"]
+        }
+      }
+    },
+    "linear_layout": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "viewport": { "$ref": "#/$defs/viewport" },
+        "category_order": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": { "$ref": "#/$defs/id" }
+        },
+        "vertical_scale": {
+          "type": "number",
+          "exclusiveMinimum": 0,
+          "maximum": 1
+        },
+        "bar_width": { "$ref": "#/$defs/finite_positive" },
+        "show_marginal_totals": { "type": "boolean" }
+      }
+    },
+    "style": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "visual_preset": { "$ref": "#/$defs/non_empty_string" },
+        "accessibility_profile": { "$ref": "#/$defs/non_empty_string" }
+      }
+    },
+    "accessibility": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["title", "summary"],
+      "properties": {
+        "title": { "$ref": "#/$defs/non_empty_string" },
+        "summary": { "$ref": "#/$defs/non_empty_string" },
+        "details_ref": { "type": "string" },
+        "reduced_motion_available": { "type": "boolean" }
+      }
+    },
+    "output": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["format", "profile"],
+      "properties": {
+        "format": { "enum": ["svg", "png", "pdf"] },
+        "profile": { "$ref": "#/$defs/non_empty_string" }
+      }
+    }
+  }
+}

@@ -1,0 +1,229 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://izzi.example/schemas/izzi.graph-resolved-1.schema.json",
+  "title": "Izzi resolved graph document",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "source_schema_version",
+    "graph_id",
+    "kind",
+    "data",
+    "layout",
+    "style",
+    "accessibility",
+    "outputs",
+    "resolution",
+    "scene"
+  ],
+  "properties": {
+    "schema_version": { "const": "izzi.graph-resolved/1" },
+    "source_schema_version": { "const": "izzi.graph/1" },
+    "graph_id": { "$ref": "izzi.graph-1.schema.json#/$defs/id" },
+    "kind": { "enum": ["radial-orbit", "linear-chord"] },
+    "data": { "type": "object" },
+    "layout": { "type": "object" },
+    "style": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["visual_preset", "accessibility_profile"],
+      "properties": {
+        "visual_preset": {
+          "$ref": "izzi.graph-1.schema.json#/$defs/non_empty_string"
+        },
+        "accessibility_profile": {
+          "$ref": "izzi.graph-1.schema.json#/$defs/non_empty_string"
+        }
+      }
+    },
+    "accessibility": {
+      "allOf": [
+        { "$ref": "izzi.graph-1.schema.json#/$defs/accessibility" },
+        { "required": ["details_ref", "reduced_motion_available"] }
+      ]
+    },
+    "outputs": {
+      "type": "array",
+      "items": { "$ref": "izzi.graph-1.schema.json#/$defs/output" }
+    },
+    "resolution": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["input_sha256", "schema_sha256"],
+      "properties": {
+        "input_sha256": {
+          "type": "string",
+          "pattern": "^(UNAVAILABLE|[0-9a-f]{64})$"
+        },
+        "schema_sha256": {
+          "type": "string",
+          "pattern": "^(UNAVAILABLE|[0-9a-f]{64})$"
+        }
+      }
+    },
+    "scene": { "$ref": "#/$defs/scene" }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": { "kind": { "const": "radial-orbit" } },
+        "required": ["kind"]
+      },
+      "then": {
+        "properties": {
+          "data": {
+            "allOf": [
+              { "$ref": "izzi.graph-1.schema.json#/$defs/radial_data" },
+              { "required": ["dataset_id"] }
+            ]
+          },
+          "layout": {
+            "allOf": [
+              { "$ref": "izzi.graph-1.schema.json#/$defs/radial_layout" },
+              {
+                "required": [
+                  "viewport",
+                  "angles_degrees",
+                  "base_radius",
+                  "ring_spacing",
+                  "minimum_satellite_radius",
+                  "minimum_satellite_gap",
+                  "satellite_scale",
+                  "collision_policy",
+                  "label_order"
+                ]
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": { "kind": { "const": "linear-chord" } },
+        "required": ["kind"]
+      },
+      "then": {
+        "properties": {
+          "data": {
+            "allOf": [
+              { "$ref": "izzi.graph-1.schema.json#/$defs/flow_data" },
+              { "required": ["dataset_id"] }
+            ]
+          },
+          "layout": {
+            "allOf": [
+              { "$ref": "izzi.graph-1.schema.json#/$defs/linear_layout" },
+              {
+                "required": [
+                  "viewport",
+                  "category_order",
+                  "vertical_scale",
+                  "bar_width",
+                  "show_marginal_totals"
+                ]
+              }
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "$defs": {
+    "point": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["x", "y"],
+      "properties": {
+        "x": { "type": "number" },
+        "y": { "type": "number" }
+      }
+    },
+    "scene_node": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "parent_id",
+        "label",
+        "role",
+        "value",
+        "position",
+        "radius",
+        "reading_index",
+        "incoming_total",
+        "outgoing_total"
+      ],
+      "properties": {
+        "id": { "type": "string", "minLength": 1 },
+        "parent_id": { "type": "string" },
+        "label": { "type": "string", "minLength": 1 },
+        "description": { "type": "string" },
+        "role": { "enum": ["datum", "satellite", "category"] },
+        "value": { "type": "number", "minimum": 0 },
+        "position": { "$ref": "#/$defs/point" },
+        "radius": { "type": "number", "minimum": 0 },
+        "reading_index": { "type": "integer", "minimum": 0 },
+        "incoming_total": { "type": "number", "minimum": 0 },
+        "outgoing_total": { "type": "number", "minimum": 0 }
+      }
+    },
+    "scene_relation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "source_id",
+        "target_id",
+        "value",
+        "source_position",
+        "target_position"
+      ],
+      "properties": {
+        "id": { "type": "string", "minLength": 1 },
+        "source_id": { "type": "string", "minLength": 1 },
+        "target_id": { "type": "string", "minLength": 1 },
+        "value": { "type": "number", "minimum": 0 },
+        "source_position": { "$ref": "#/$defs/point" },
+        "target_position": { "$ref": "#/$defs/point" },
+        "description": { "type": "string" }
+      }
+    },
+    "scene": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "scene_id",
+        "kind",
+        "viewport",
+        "visual_preset",
+        "nodes",
+        "relations",
+        "reading_order"
+      ],
+      "properties": {
+        "scene_id": { "type": "string", "minLength": 1 },
+        "kind": { "enum": ["radial-orbit", "linear-chord"] },
+        "viewport": {
+          "$ref": "izzi.graph-1.schema.json#/$defs/viewport"
+        },
+        "visual_preset": { "type": "string", "minLength": 1 },
+        "nodes": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/scene_node" }
+        },
+        "relations": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/scene_relation" }
+        },
+        "reading_order": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "type": "string", "minLength": 1 }
+        }
+      }
+    }
+  }
+}

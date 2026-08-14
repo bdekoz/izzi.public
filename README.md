@@ -143,3 +143,17 @@ The
 [Hamonshū wave-pattern catalogue and rendering notes](https://bdekoz.github.io/izzi.public/docs/generative_patterns/hamonshu.md)
 document the source-page convention, motif naming, procedural interpretation,
 cartographic clipping, rebuild workflow, and provenance.
+
+**PUBLISHING THE PUBLIC SITE**
+
+The public docs site ([https://bdekoz.github.io/izzi.public/](https://bdekoz.github.io/izzi.public/))
+is a curated snapshot of this repository: `docs/`, `examples/`, and the root
+landing files, with `src/` and other private trees excluded. Refresh it with:
+
+```sh
+scripts/publish-public-mirror.sh --push
+```
+
+Add `--regen-doxygen` to regenerate `docs/html` (with `SOURCE_BROWSER = NO`,
+source-listing pages stripped) and commit that to this repository first. Use
+`--dry-run` to build and audit the snapshot without changing any repository.
