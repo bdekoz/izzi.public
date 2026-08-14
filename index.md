@@ -10,4 +10,4 @@
 
 ## Development
 
-* [Here Lies Trouble — cut v1 plan](docs/development/here_lies_trouble_cut_v1.md)
+* [Here Lies Trouble — cut v1 plan](docs/development/here-lies-trouble/cut-v1.md)

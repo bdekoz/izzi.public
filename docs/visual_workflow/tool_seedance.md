@@ -10,6 +10,6 @@ First-pass sort for the configured provider video path.
   `TC-LOOP-SEEDANCE-PRO-720P-RETURNED-496X864-001.json`), `generate_audio: false`.
 - Cost gate: prior 5 s pro 1080p job 120 credits; 720p estimate 60 credits;
   hard-stop and quote verification before any submission; see
-  `docs/development/explore_futures_here_lies_trouble_motion_provider_auth.20260812.md`.
+  `docs/development/here-lies-trouble/provider-auth-motion.md`.
 
 Status: `FIRST-PASS-SORT; NO-REMOVAL`

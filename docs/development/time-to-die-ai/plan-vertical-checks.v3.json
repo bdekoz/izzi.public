@@ -1,0 +1,18 @@
+{
+  "schema_version": "izzi-plan-vertical-checks-v1",
+  "artifact_id": "plan-vertical-ai-time-to-die-v3",
+  "stage": "PLAN-FORMAL",
+  "required_content": {
+    "template": true,
+    "segments": true,
+    "estimates": true,
+    "pilot_options": true,
+    "gates": true,
+    "orchestration": true
+  },
+  "house_style_checks": {
+    "special_topics": "PASS",
+    "coda_share": "PASS"
+  },
+  "checked_at": "2026-08-14T19:06:00Z"
+}

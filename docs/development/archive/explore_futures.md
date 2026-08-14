@@ -32,4 +32,4 @@ alpha60
 alpha60-results
 
 Write report to
-docs/development/explore_futures.20260808.md
+docs/development/sessions/explore_futures.20260808.md

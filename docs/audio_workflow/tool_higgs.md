@@ -23,6 +23,6 @@ First-pass sort for the high-compute TTS path.
   (supports per-window variants).
 - Verification: local Whisper transcription before publication
   (faster-whisper small, CPU).
-- Full investigation: `docs/development/explore_futures_seedance_audio_higgs.md`.
+- Full investigation: `docs/development/seedance/audio-higgs.md`.
 
 Status: `FIRST-PASS-SORT; NO-REMOVAL`

@@ -6,8 +6,8 @@
 - Scope: sequence artifacts, vertical-series assembly, radial and orbit graph
   evolution, roulette-to-guilloche pattern systems, canonical header naming,
   and build/install migration
-- Predecessors: `docs/development/explore_futures.md` and
-  `docs/development/explore_futures.20260808.md`, preserved unchanged
+- Predecessors: `docs/development/archive/explore_futures.md` and
+  `docs/development/sessions/explore_futures.20260808.md`, preserved unchanged
 
 ## Outcome
 
@@ -122,7 +122,7 @@ editorial structure.
     separate gate.
 
 The detailed duration, episode-count, layout, runtime, and file-size variants
-are in `docs/development/explore_futures_vertical_form.md`.
+are in `docs/development/vertical-form.md`.
 
 ## Evidence from the current sources
 

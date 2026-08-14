@@ -41,10 +41,10 @@ the image back into an illustration.
 
 The companion documents remain:
 
-- [Seedance account and delivery proposal](explore_futures_seedance.md);
-- [audio-first installment workflow](explore_futures_seedance_audio.md);
-- [audio authentication and local-key guidance](explore_futures_seedance_auth.md);
-- [2026-08-09 Izzi evolution plan](explore_futures.20260809.md).
+- [Seedance account and delivery proposal](../archive/seedance.md);
+- [audio-first installment workflow](audio.md);
+- [audio authentication and local-key guidance](../archive/seedance-auth.md);
+- [2026-08-09 Izzi evolution plan](../sessions/explore_futures.20260809.md).
 
 ## Central decision
 

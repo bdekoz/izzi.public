@@ -80,7 +80,7 @@ but the 5→6 content transition retains the original segment-6 clip.
 
 ## Audit trail
 
-- Plan + status: `docs/development/here_lies_trouble_cut_v1.md`
+- Plan + status: `docs/development/here-lies-trouble/cut-v1.md`
 - Receipt: `docs/training-conversion/receipts/WI-HLT-RESUME-SNAPSHOT-COMPLETION-2026-08-12.md`
 - Dyads: `DYAD-2026-08-12-PILOT-PRODUCTION-{APPROVAL,END-001,SNAPSHOT-001,
   SNAPSHOT-002,END-002}-001/002.json`

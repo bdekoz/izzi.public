@@ -13,6 +13,7 @@ content.
 | `docs/generative_patterns/hamonshu.md` | Family entry: hamonshu, including the Hamonshū volume 2 wave-pattern catalogue and rendering notes |
 | `docs/generative_patterns/guilloche.md` | Family entry: guilloche |
 | `docs/generative_patterns/moire.md` | Family entry: moire |
+| `docs/generative_patterns/danmu.md` | Family entry: danmu (danmaku text overlay), incl. W3C Bullet Chatting relation |
 | `docs/generative_patterns/surface_tension.md` | Family entry: surface tension |
 | `docs/generative_patterns/radial.md` | Family entry: radial |
 | `docs/generative_patterns/harmonograph.md` | Family entry: damped harmonograph |
@@ -28,6 +29,7 @@ content.
 | hamonshu | `src/izzi-svg-curves-hamonshu.h`, `src/izzi-svg-curves-hamonshu-v2.inc` | `docs/generative_patterns/hamonshu.md` (incl. wave-pattern catalogue and rendering notes); Doxygen under `docs/html/` |
 | guilloche | `src/izzi-svg-guilloche.h`, `src/izzi-svg-guilloche-json.h`, `src/izzi-svg-graph-guilloche.h` | `docs/visual_workflow/tool_guilloche.md` |
 | moire | `src/izzi-svg-moire.h` | visual experiments method |
+| danmu | `src/izzi-svg-text-overlay.h` | `docs/generative_patterns/danmu.md`; W3C Bullet Chatting relation; `examples/text-danmu-[1-5].cc` |
 | surface tension | `src/izzi-svg-surface-tension.h` | visual experiments method |
 | radial | `src/izzi-svg-radial*.h` (6 headers) | visual experiments method |
 | damped harmonograph | `src/izzi-svg-curves-damped-harmonograph.h` | — |

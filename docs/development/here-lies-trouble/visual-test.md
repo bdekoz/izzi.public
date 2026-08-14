@@ -9,7 +9,7 @@ complete local Episode 1 engineering trial with the existing random-default
 transformed audio. Human review rejected that trial's motion form, generic
 filename, and mono dialogue-only mix: camera drift over one still does not show
 the animals talking, walking, and exploring Frogtown. The correction plan is
-`docs/development/explore_futures_here_lies_trouble_episode_01_v2.md`, with an editable
+`docs/development/here-lies-trouble/episode-01-v2.md`, with an editable
 boundary at
 `examples/seedance2/here-lies-trouble-episode-01-frogtown.v2.json`. This does
 not assign recorded voices to animals, authorize a provider job or publication,
@@ -204,7 +204,7 @@ The ten-episode run remains a separate human and budget decision.
 
 The still decision is complete and the first combined package has disposition
 `REVISE`. The user confirmed
-`docs/development/explore_futures_here_lies_trouble_episode_01_v2.md` and its JSON defaults.
+`docs/development/here-lies-trouble/episode-01-v2.md` and its JSON defaults.
 The provisional stereo river-ambience audio canary is technically verified and
 ready for human listening. Three five-second silent motion-canary
 specifications are schema-validated, but no motion output was generated. The

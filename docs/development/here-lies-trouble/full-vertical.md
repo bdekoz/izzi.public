@@ -4,7 +4,7 @@ Recorded: 2026-08-12 America/Los_Angeles
 Status: `PLAN-DRAFT; NO-PROVIDER-SPEND; NOT-SHARED`
 
 Session update 2026-08-12 evening: superseded for current planning by
-[`here_lies_trouble_cut_v1.md`](here_lies_trouble_cut_v1.md) (pilot 01–03 +
+[`here_lies_trouble_cut_v1.md`](cut-v1.md) (pilot 01–03 +
 full-corpus estimates). This document remains the arc table and evidence
 anchor. Location scouting is KEEP'd for all six routes (issues #10–#15,
 `sunset-scientology-pass` renamed `hiho-to-runyon-canyon`); the madredeus

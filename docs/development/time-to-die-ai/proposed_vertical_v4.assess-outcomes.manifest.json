@@ -1,0 +1,303 @@
+{
+  "schema_version": 1,
+  "specification_version": "3.9",
+  "document_type": "assess-outcomes",
+  "style": "randoma11y-full",
+  "report_id": "ai-time-to-die-v4-production-plan-assess-outcomes",
+  "topic": "ai-time-to-die vertical production plan v4 (episodes 01-03, measured walkthrough assessment)",
+  "evidence_boundary": "Measured izzi repository records and portal review issues from 2026-08-13/14 only; provider spend bounded to three Seedance jobs (590 credits total).",
+  "intended_audience": "The project owner and authorized collaborators",
+  "evidence_scope": [
+    "izzi repository records: proposal_vertical_v1.md, proposed_vertical_v2.md, proposal_vertical_v3.md (walkthrough), draft-2.md, draft-8.md, explore_futures.20260813.md, render scripts",
+    "situationshipin.space portal catalog and review issues #18-#28",
+    "portal voice bank (29 Kokoro voices) and reference set (26 guilloche/moire/surface-tension images)",
+    "local-object dyad records and the draft-9 KEEP decision mirror"
+  ],
+  "output_format": "pdf",
+  "observation_cutoff": "2026-08-14T12:15:00-07:00",
+  "predecessor_or_unavailable": {
+    "predecessor": "proposed_vertical_v3.md",
+    "review_artifact": "plan-vertical-ai-time-to-die-v3",
+    "review_surface": "situationshipin.space plan review",
+    "disposition": "RETAINED_UPDATED by this record"
+  },
+  "document_type_modifiers": ["coda-share"],
+  "sections": [
+    {
+      "id": "assessment-question-and-bounded-conclusion",
+      "title": "Assessment question and bounded conclusion",
+      "state": "NEW",
+      "evidence_statuses": ["OBSERVED"]
+    },
+    {
+      "id": "evidence-boundary-and-predecessor-continuity",
+      "title": "Evidence boundary and predecessor continuity",
+      "state": "RETAINED_UPDATED",
+      "evidence_statuses": ["OBSERVED"]
+    },
+    {
+      "id": "outcomes-and-contribution",
+      "title": "Outcomes and contribution",
+      "state": "NEW",
+      "evidence_statuses": ["OBSERVED"]
+    },
+    {
+      "id": "integrated-practice-and-research-fit",
+      "title": "Integrated practice and research fit",
+      "state": "RETAINED_UPDATED",
+      "evidence_statuses": ["OBSERVED", "INFERRED"]
+    },
+    {
+      "id": "software-data-ai-methods",
+      "title": "Software × data × AI methods",
+      "state": "RETAINED_UPDATED",
+      "evidence_statuses": ["OBSERVED"]
+    },
+    {
+      "id": "limitations-counterevidence-and-unresolved-questions",
+      "title": "Limitations, counterevidence, and unresolved questions",
+      "state": "NEW",
+      "evidence_statuses": ["OBSERVED", "UNAVAILABLE"]
+    },
+    {
+      "id": "futures-and-next-verification",
+      "title": "Futures and next verification",
+      "state": "NEW",
+      "evidence_statuses": ["INFERRED", "MODELED"]
+    },
+    {
+      "id": "source-claim-run-and-revision-ledgers",
+      "title": "Source, claim, run, and revision ledgers",
+      "state": "NEW",
+      "evidence_statuses": ["OBSERVED"]
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "SRC-01",
+      "reference": "docs/development/time-to-die-ai/proposal_vertical_v1.md",
+      "kind": "REPOSITORY",
+      "status": "OBSERVED"
+    },
+    {
+      "source_id": "SRC-02",
+      "reference": "docs/development/time-to-die-ai/proposed_vertical_v2.md",
+      "kind": "REPOSITORY",
+      "status": "OBSERVED"
+    },
+    {
+      "source_id": "SRC-03",
+      "reference": "docs/development/time-to-die-ai/proposal_vertical_v3.md (walkthrough)",
+      "kind": "REPOSITORY",
+      "status": "OBSERVED"
+    },
+    {
+      "source_id": "SRC-04",
+      "reference": "docs/development/time-to-die-ai/draft-2.md and draft-8.md",
+      "kind": "REPOSITORY",
+      "status": "OBSERVED"
+    },
+    {
+      "source_id": "SRC-05",
+      "reference": "docs/development/time-to-die-ai/explore_futures.20260813.md",
+      "kind": "REPOSITORY",
+      "status": "OBSERVED"
+    },
+    {
+      "source_id": "SRC-06",
+      "reference": "scripts/render-time-to-die-draft*.py, scripts/compose-vector-overlay.py",
+      "kind": "REPOSITORY",
+      "status": "OBSERVED"
+    },
+    {
+      "source_id": "SRC-07",
+      "reference": "situationshipin.space catalog + review issues #18-#28",
+      "kind": "PUBLIC",
+      "status": "OBSERVED"
+    },
+    {
+      "source_id": "SRC-08",
+      "reference": "portal voice bank (29 Kokoro voices; zf_xiaoyi V29 KEEP #27)",
+      "kind": "PUBLIC",
+      "status": "OBSERVED"
+    },
+    {
+      "source_id": "SRC-09",
+      "reference": "portal reference set (26 guilloche/moire/surface-tension images)",
+      "kind": "PUBLIC",
+      "status": "OBSERVED"
+    },
+    {
+      "source_id": "SRC-10",
+      "reference": "examples.rizal/local-objects/dyads/ + draft-9 KEEP decision mirror",
+      "kind": "ARCHIVAL",
+      "status": "OBSERVED"
+    },
+    {
+      "source_id": "SRC-11",
+      "reference": "resources/time-to-die-ai/ corpus (28 files, 841,586,395 bytes)",
+      "kind": "REPOSITORY",
+      "status": "OBSERVED"
+    }
+  ],
+  "findings": [
+    {
+      "finding_id": "F-001",
+      "status": "OBSERVED",
+      "summary": "Episode template locked at 8 segments / 57 s / 1080x1920@24 by the draft-9 KEEP (issue #28).",
+      "source_ids": ["SRC-04", "SRC-07"],
+      "counterevidence_or_limit": "None recorded in the walkthrough.",
+      "next_verification": "G4 episode review of masters 01-03."
+    },
+    {
+      "finding_id": "F-002",
+      "status": "OBSERVED",
+      "summary": "Canonical corpus is 79.0 s, bounding the series to 2-3 episodes (30 s canonical per episode).",
+      "source_ids": ["SRC-02", "SRC-11"],
+      "counterevidence_or_limit": "Episode 03 is a documented callback plus provider location, not new canonical material.",
+      "next_verification": "Re-measure at series scale; confirm episode 03 composition."
+    },
+    {
+      "finding_id": "F-003",
+      "status": "OBSERVED",
+      "summary": "Provider resolution cap persists: requested 1080p returned 720x1280; requested 720p returned 496x864 (three jobs, 590 credits).",
+      "source_ids": ["SRC-07"],
+      "counterevidence_or_limit": "PRO-key submission also returned 720x1280.",
+      "next_verification": "One bounded 5 s 1080p probe on a new key/tier if acquired."
+    },
+    {
+      "finding_id": "F-004",
+      "status": "OBSERVED",
+      "summary": "Voice selection zf_xiaoyi (V29) KEEP (issue #27) from the 29-voice Kokoro bank; MeanVC2 remap ~1-2 min per 30 s window.",
+      "source_ids": ["SRC-08", "SRC-07"],
+      "counterevidence_or_limit": "Custom accents (Asian-American, Southern) are outside the stock bank.",
+      "next_verification": "Reference recordings if custom accents are required."
+    },
+    {
+      "finding_id": "F-005",
+      "status": "OBSERVED",
+      "summary": "PGS subtitle burn recorded NOT-BURNED (bitmap track, no local burn path); track referenced.",
+      "source_ids": ["SRC-04"],
+      "counterevidence_or_limit": "No local PGS burn path exists.",
+      "next_verification": "Bounded mkvextract + ffmpeg pgssub test."
+    },
+    {
+      "finding_id": "F-006",
+      "status": "UNAVAILABLE",
+      "summary": "WASM byte-parity for izzi-svg-text-overlay.h is not yet verified.",
+      "source_ids": ["SRC-02"],
+      "counterevidence_or_limit": "No parity evidence recorded.",
+      "next_verification": "Byte-parity check against the emitted overlay header."
+    },
+    {
+      "finding_id": "F-007",
+      "status": "OBSERVED",
+      "summary": "Episode masters 01-03 are rendered, verified, and published full-motion; awaiting G4; baseline_state NOT-PROMOTED.",
+      "source_ids": ["SRC-07"],
+      "counterevidence_or_limit": "No baseline promotion without an explicit KEEP.",
+      "next_verification": "Portal KEEP on the episode-master reviews + decision mirror."
+    },
+    {
+      "finding_id": "F-008",
+      "status": "OBSERVED",
+      "summary": "Portal payload grows with full-motion reviews (96 MiB cap, ~86 MiB used); needs per-series planning.",
+      "source_ids": ["SRC-07"],
+      "counterevidence_or_limit": "Reactive raises (48→64→80→96 MiB) recorded.",
+      "next_verification": "Budget model for the next vertical before its first full-motion publish."
+    }
+  ],
+  "runs": [
+    {
+      "run_id": "RUN-D1",
+      "procedure": "render-time-to-die-draft1.py + publish-video-proof.mjs",
+      "result": "57.0 s draft-1 attempted render published; REVISE issue #18",
+      "status": "OBSERVED"
+    },
+    {
+      "run_id": "RUN-D2",
+      "procedure": "Draft-2 rework per five findings (T4 fit-page, masks, OCR scroll, A/V state machine, tiling forensics)",
+      "result": "Round-2 render; REVISE loop",
+      "status": "OBSERVED"
+    },
+    {
+      "run_id": "RUN-D8",
+      "procedure": "Two-region OCR bullet text (lane_offset_y) + canonical audio state machine",
+      "result": "y 3..1849 verified; RMS 5022/2001; PGS NOT-BURNED",
+      "status": "OBSERVED"
+    },
+    {
+      "run_id": "RUN-D9",
+      "procedure": "Audio-only remux of byte-identical draft-8 video",
+      "result": "KEEP issue #28; episode template locked",
+      "status": "OBSERVED"
+    },
+    {
+      "run_id": "RUN-MASTERS",
+      "procedure": "Episodes 01-03 renders + full-motion portal publish",
+      "result": "Episode-master reviews live; awaiting G4",
+      "status": "OBSERVED"
+    }
+  ],
+  "revisions": [
+    {
+      "revision_id": "REV-V2",
+      "predecessor_claim_or_section": "proposal_vertical_v1.md",
+      "disposition": "SUPERSEDED",
+      "reason": "v2 synthesis added measured estimates, pilots, and orchestration"
+    },
+    {
+      "revision_id": "REV-V3",
+      "predecessor_claim_or_section": "proposed_vertical_v2.md",
+      "disposition": "RETAINED_UPDATED",
+      "reason": "v3 walkthrough documented the complete vertical arc"
+    },
+    {
+      "revision_id": "REV-V4",
+      "predecessor_claim_or_section": "proposed_vertical_v3.md",
+      "disposition": "RETAINED_UPDATED",
+      "reason": "v4 expands to cut-v1-level detail as an assess-outcomes record"
+    },
+    {
+      "revision_id": "REV-V4A",
+      "predecessor_claim_or_section": "proposed_vertical_v4.assess-outcomes.md",
+      "disposition": "NEW",
+      "reason": "This record and its PDF"
+    }
+  ],
+  "coda_share": {
+    "appendix_label": "Coda",
+    "title": "Share",
+    "position": "final",
+    "content_order": [
+      "share-summary",
+      "aggregated-portable-prompt",
+      "sharing-boundary",
+      "ai-guided-reassessment"
+    ],
+    "share_summary_precedes_prompt": true,
+    "reader_facing_prompt_heading": "Portable Prompt",
+    "reader_facing_prompt_slug": "portable-prompt",
+    "manifest_prompt_field": "aggregated_simplified_prompt",
+    "sharing_boundary_follows_prompt": true,
+    "aggregated_prompt_status": "INFERRED",
+    "prompt_source_kind": "completed-report-and-manifest-synthesis",
+    "prompt_source_role": "agent-synthesis",
+    "selectable_text": true,
+    "modifier_authorizes_transfer": false,
+    "share_summary": "The ai-time-to-die walkthrough produced a measured, zero-spend-by-default production plan: an 8-segment / 57 s episode template locked by the draft-9 KEEP (#28), episode masters 01-03 published full-motion and awaiting G4, a 79.0 s canonical corpus bounding the series to 2-3 episodes, zf_xiaoyi (V29) voice selection, two-region OCR bullet text, wild 50 % opacity masks, and the portal plan-vertical review class. Limits: the provider resolution cap persists, PGS subtitles are NOT-BURNED, and WASM byte-parity is unverified.",
+    "aggregated_prompt_id": "AITTD-V4-AGG-001",
+    "aggregated_simplified_prompt": "document_type: assess-outcomes\nstyle: randoma11y-full\ndocument_type_modifiers:\n  - coda-share\nevidence_scope:\n  - izzi repository records: proposal_vertical_v1.md, proposed_vertical_v2.md, proposal_vertical_v3.md (walkthrough), draft-2.md, draft-8.md, explore_futures.20260813.md, render scripts\n  - situationshipin.space portal catalog and review issues #18-#28\n  - portal voice bank (29 Kokoro voices) and reference set (26 guilloche/moire/surface-tension images)\n  - local-object dyad records and the draft-9 KEEP decision mirror\noutput_format: pdf\n\nProduce ai-time-to-die episodes with the accepted draft-9 pipeline: 8 segments / 57 s / 1080x1920@24, canonical dialogue remapped to zf_xiaoyi via MeanVC2, izzi red-on-white 20 pt two-region bullet text, wild 50 % opacity masks, T5 as the HLT stand-in unless provider spend is authorized, shinkansen bed elsewhere, full-motion portal review, validator passing under the 96 MiB budget, estimated against the 79 s canonical corpus bound and the measured 3-5 min per-episode render time. Keep every claim inside the declared evidence boundary, preserve evidence states, and do not promote baselines without an explicit G4 KEEP.",
+    "summary_evidence_statuses": ["OBSERVED"],
+    "sharing_boundary": {
+      "authority_status": "AUTHORIZED-BY-PROJECT-OWNER",
+      "privacy_review_status": "BOUNDED-REPO-FACTS-ONLY",
+      "intended_recipient_or_unavailable": "project owner and authorized collaborators",
+      "permitted_purpose_or_unavailable": "review and continuation of ai-time-to-die production",
+      "included_material": "Final report PDF only, if separately authorized",
+      "excluded_material": "Source corpus, secrets, sensitive data, private host objects, hidden reasoning, and unauthorized third-party material",
+      "external_transfer_state": "NOT-AUTHORIZED",
+      "retention_or_redistribution_rule": "retain in the local-object store; redistribution requires a new decision",
+      "further_transfer_rule": "no further transfer without explicit authorization"
+    }
+  }
+}

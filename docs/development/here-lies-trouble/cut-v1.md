@@ -8,9 +8,9 @@ This is the working plan for the Here Lies Trouble vertical corpus
 the project `here-lies-love`, resolved as a visible spelling slip). It starts
 with a three-episode pilot, then estimates time and Seedance credit spend for
 the full corpus. It supersedes
-[`explore_futures_here_lies_trouble_full_vertical.20260812.md`](explore_futures_here_lies_trouble_full_vertical.20260812.md)
+[`explore_futures_here_lies_trouble_full_vertical.20260812.md`](full-vertical.md)
 for current planning; the resume pointer is
-[`explore_futures.20260812.restart_here.md`](explore_futures.20260812.restart_here.md).
+[`explore_futures.20260812.restart_here.md`](../sessions/explore_futures.20260812.restart_here.md).
 
 ## Corpus definition
 
@@ -410,11 +410,11 @@ any provider spend.
 
 ## Evidence anchors
 
-- Resume pointer: `docs/development/explore_futures.20260812.restart_here.md`
-- Full-vertical arc: `docs/development/explore_futures_here_lies_trouble_full_vertical.20260812.md`
+- Resume pointer: `docs/development/sessions/explore_futures.20260812.restart_here.md`
+- Full-vertical arc: `docs/development/here-lies-trouble/full-vertical.md`
 - Audio workflow: `docs/audio_workflow.md` + `docs/audio_workflow/`
-- Higgs: `docs/audio_workflow/tool_higgs.md`, `docs/development/explore_futures_seedance_audio_higgs.md`
-- Seedance evidence: `docs/development/explore_futures_seedance.md`,
+- Higgs: `docs/audio_workflow/tool_higgs.md`, `docs/development/seedance/audio-higgs.md`
+- Seedance evidence: `docs/development/archive/seedance.md`,
   `docs/training-conversion/receipts/WI-HLT-FROGTOWN-V2-FULL-LENGTH-SCENE-COMPLETION-2026-08-12.md`
 - Pink-spike loop:
   `docs/training-conversion/failure-loops/TC-LOOP-HLT-FROGTOWN-V2-CAT-PINK-SPIKE-001.json`

@@ -8,12 +8,12 @@ workflows.
 **DOCUMENTATION**
 
 - API reference: [Doxygen](https://bdekoz.github.io/izzi.public/docs/html/)
-- [Generative pattern families](https://bdekoz.github.io/izzi.public/docs/generative_patterns.md)
+- [Generative pattern families](https://bdekoz.github.io/izzi.public/docs/generative_patterns.html)
   — hamonshu, guilloche, moire, surface tension, radial, damped harmonograph,
   grignani, roulette
 - [Visual workflow](https://bdekoz.github.io/izzi.public/docs/visual_workflow.md) and
   [audio workflow](https://bdekoz.github.io/izzi.public/docs/audio_workflow.md)
-- [Examples detail](https://bdekoz.github.io/izzi.public/docs/examples_detail.md)
+- [Examples detail](https://situationshipin.space/review/izzi-generation-20260814/)
 
 **PREREQUISITES**
 

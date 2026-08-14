@@ -11,9 +11,9 @@ text, number, and portrait-transition exploration. The current local feedback
 round is `outputs/review/feedback/visual/guilloche/round-05`. It supplements rather than
 replaces:
 
-- `docs/development/explore_futures.md`, the authoritative user-supplied source plan;
-- `docs/development/explore_futures.20260808.md`, the initial audit and evolution plan;
-- `docs/development/explore_futures.20260809.md`, the active conversion, video, graph, and
+- `docs/development/archive/explore_futures.md`, the authoritative user-supplied source plan;
+- `docs/development/sessions/explore_futures.20260808.md`, the initial audit and evolution plan;
+- `docs/development/sessions/explore_futures.20260809.md`, the active conversion, video, graph, and
   guilloche proposal;
 - `docs/visual_workflow/visual_experiments_method.md`, the accepted living method for generation
   passes, feedback rounds, freshness, review packaging, and promotion gates;

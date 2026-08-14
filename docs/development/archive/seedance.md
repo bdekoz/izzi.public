@@ -16,10 +16,10 @@ JSON schemas.
 the `.io` hostname in this proposal, reuse the `.io` key there, or interpret an
 account at one domain as an account at the other. The current comparison and
 new-domain preflight are in
-[`explore_futures.20260811.md`](explore_futures.20260811.md).
+[`explore_futures.20260811.md`](../sessions/explore_futures.20260811.md).
 
 The later audio-first clarification is specified in
-[`explore_futures_seedance_audio.md`](explore_futures_seedance_audio.md). In
+[`explore_futures_seedance_audio.md`](../seedance/audio.md). In
 that workflow, *scene* is the provider/rendering unit and *installment* is the
 editorial unit; they map one-to-one. Its compact input describes an overall
 vertical style, while the ten source moments and resolved scene details are
@@ -161,7 +161,7 @@ The account operator performs these steps outside izzi:
    process as `SEEDANCE2AI_API_KEY` at execution time. This checkout's
    on-disk fallback is outside the repository tree at
    `~/.config/izzi/private/seedance2.key` (mode 600; `IZZI_PRIVATE_DIR`
-   overrides the directory); see `docs/development/explore_futures_seedance_auth.md`.
+   overrides the directory); see `docs/development/archive/seedance-auth.md`.
 5. Revoke and replace the key immediately if it is exposed.
 
 The key must never appear in:
@@ -196,8 +196,8 @@ in `examples/seedance2`:
 
 | Document | Existing artifact | Role |
 |---|---|---|
-| Human authoring input | [`ten-scene-authoring.proposed.schema.json`](../../examples/seedance2/ten-scene-authoring.proposed.schema.json) and [`ten-scene-authoring.example.json`](../../examples/seedance2/ten-scene-authoring.example.json) | Exactly ten scenes; collaborator edits creative intent and optional references, never credentials |
-| Resolved execution plan | [`ten-scene-project.proposed.schema.json`](../../examples/seedance2/ten-scene-project.proposed.schema.json) and [`ten-scene-project.example.json`](../../examples/seedance2/ten-scene-project.example.json) | Deterministic prompts, seeds, title frames, transitions, delivery defaults, outputs, and accessibility drafts |
+| Human authoring input | [`ten-scene-authoring.proposed.schema.json`](../../../examples/seedance2/ten-scene-authoring.proposed.schema.json) and [`ten-scene-authoring.example.json`](../../../examples/seedance2/ten-scene-authoring.example.json) | Exactly ten scenes; collaborator edits creative intent and optional references, never credentials |
+| Resolved execution plan | [`ten-scene-project.proposed.schema.json`](../../../examples/seedance2/ten-scene-project.proposed.schema.json) and [`ten-scene-project.example.json`](../../../examples/seedance2/ten-scene-project.example.json) | Deterministic prompts, seeds, title frames, transitions, delivery defaults, outputs, and accessibility drafts |
 | Provider run state | Proposed below; generated locally, not part of either existing schema | Account-neutral execution policy, task checkpoints, receipts, downloads, and acceptance |
 
 The existing authoring schema fixes ten scenes and a ten-second, 30 fps,
@@ -529,7 +529,7 @@ profile must receive its own visual baseline:
 
 - `examples/seedance2/generated/hamonshu-10s.mkv` (local-only)
 - `examples/seedance2/generated/roulette-10s.mkv` (local-only)
-- [`Seedance example workflow`](../../examples/seedance2/README.md)
+- [`Seedance example workflow`](../../../examples/seedance2/README.md)
 
 After all ten clips pass their own gates, concatenate them as an exactly
 100-second editorial MKV with chapters. Preserve the individual clips, since

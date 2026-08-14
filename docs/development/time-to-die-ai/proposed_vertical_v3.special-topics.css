@@ -1,0 +1,110 @@
+@page {
+  size: Letter;
+  margin: 0.72in 0.64in 0.72in 0.78in;
+
+  @bottom-left {
+    color: #4a5057;
+    content: "DEVASTATION PACIFIC / SPECIAL TOPICS";
+    font-family: "Atkinson Hyperlegible Mono", monospace;
+    font-size: 7pt;
+    letter-spacing: 0.06em;
+  }
+
+  @bottom-right {
+    color: #4a5057;
+    content: counter(page);
+    font-family: "Atkinson Hyperlegible Mono", monospace;
+    font-size: 8pt;
+  }
+}
+
+html {
+  color: #581c87;
+  background: #faf5ff;
+}
+
+body {
+  margin: 0;
+  font-family: "Atkinson Hyperlegible", "Atkinson Hyperlegible Next", sans-serif;
+  font-size: 10.5pt;
+  line-height: 1.45;
+}
+
+.page {
+  break-after: page;
+}
+
+.page:last-of-type {
+  break-after: auto;
+}
+
+.page::after {
+  content: attr(data-folio);
+  display: block;
+  margin-top: 1.25rem;
+  padding-top: 0.4rem;
+  border-top: 0.5pt solid #cbb8e0;
+  color: #4a5057;
+  font-family: "Atkinson Hyperlegible Mono", monospace;
+  font-size: 7.5pt;
+  letter-spacing: 0.08em;
+}
+
+h1 {
+  margin: 0 0 0.75rem;
+  font-size: 17pt;
+  line-height: 1.2;
+}
+
+h2 {
+  margin: 1.1rem 0 0.45rem;
+  font-size: 12.5pt;
+}
+
+h3 {
+  margin: 1rem 0 0.35rem;
+  font-size: 11pt;
+}
+
+p {
+  margin: 0.35rem 0;
+}
+
+table {
+  width: 100%;
+  margin: 0.6rem 0;
+  border-collapse: collapse;
+  font-size: 9pt;
+}
+
+th,
+td {
+  padding: 0.28rem 0.4rem;
+  border: 0.5pt solid #cbb8e0;
+  text-align: left;
+  vertical-align: top;
+}
+
+th {
+  background: #efe3fb;
+}
+
+code,
+pre {
+  font-family: "Atkinson Hyperlegible Mono", monospace;
+  font-size: 8.5pt;
+}
+
+pre {
+  margin: 0.6rem 0;
+  padding: 0.55rem 0.65rem;
+  border: 0.5pt solid #cbb8e0;
+  background: #fcfaff;
+  white-space: pre-wrap;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+a {
+  color: #4c1d95;
+}

@@ -30,11 +30,11 @@ Existing material maps into the buckets as follows (pointer references only):
 
 | Existing | Proposed bucket |
 | --- | --- |
-| `docs/development/explore_futures_seedance_visual_method.md` | method.md |
+| `docs/development/seedance/visual-method.md` | method.md |
 | `docs/visual_workflow/visual_experiments_method.md` | method.md |
-| `docs/development/explore_futures_here_lies_trouble_visual_test.md` | method.md |
-| `docs/development/explore_futures_here_lies_trouble_episode_01_v2.md` | method.md (+ motion_grammar.md) |
-| `docs/development/explore_futures_blade_runner_motion_seeds.20260812.md` | motion_grammar.md |
+| `docs/development/here-lies-trouble/visual-test.md` | method.md |
+| `docs/development/here-lies-trouble/episode-01-v2.md` | method.md (+ motion_grammar.md) |
+| `docs/development/blade-runner/motion-seeds.md` | motion_grammar.md |
 | `docs/visual_workflow/camera_tracking_routes.md` | camera_tracking_routes.md |
 | `scripts/render-guilloche-v4*.py`, `check/finalize-guilloche-v4.py`, `guilloche_v4_common.py`, `guilloche_v4_contours.py` | tool_guilloche.md |
 | `scripts/render-interference-motion-tests.py`, `check-interference-motion-tests.py`, `check-expanded-interference-motion.py` | method.md |

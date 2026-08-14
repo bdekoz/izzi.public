@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "specification_version": "3.9",
+  "document_type": "special-topics",
+  "style": "randoma11y-accent",
+  "report_id": "ai-time-to-die-v3-production-plan-special-topics",
+  "topic": "ai-time-to-die vertical production plan v3 (episodes 01-03 + corpus bound)",
+  "evidence_boundary": "Measured izzi repository records and portal review issues from 2026-08-13/14 only; provider spend bounded to three Seedance jobs (590 credits total).",
+  "intended_audience": "The project owner and authorized collaborators",
+  "output_format": "pdf",
+  "evidence_scope": [
+    "measured izzi repository records",
+    "portal review issues #18-#28"
+  ],
+  "document_type_modifiers": ["coda-share"],
+  "final_appendix_id": "coda-simplified-prompt",
+  "coda": {
+    "clip_id": "ST-CODA-AITTD-V3-001",
+    "appendix_label": "Coda",
+    "title": "Simplified Prompt",
+    "content_label": "Response clip",
+    "position": "final",
+    "source_role": "assistant",
+    "source_reference": "izzi Codex thread 2026-08-14 (v3 production plan direction)",
+    "date_or_date_status": "2026-08-14",
+    "boundary_start": "2026-08-14T11:55:00-07:00",
+    "boundary_end": "2026-08-14T12:05:00-07:00",
+    "clip_status": "EXACT",
+    "omissions_or_redactions": "NONE",
+    "evidence_status": "OBSERVED",
+    "response_clip": "document_type: special-topics\nstyle: randoma11y-accent\ntopic: ai-time-to-die vertical production plan v3 (episodes 01-03 + corpus bound)\nevidence_boundary: Measured izzi repository records and portal review issues from 2026-08-13/14 only; provider spend bounded to three Seedance jobs (590 credits total).\nintended_audience: The project owner and authorized collaborators\noutput_format: pdf\n\nThe user approved the v3 plan direction: write proposed_vertical_v3.md at here_lies_trouble_cut_v1 level of detail, synthesize the devastation-pacific-house-style special-topics record (randoma11y-accent, coda-share) as proposed_vertical_v3.pdf, and publish the plan and PDF for review on situationshipin.space.",
+    "selectable_text": true
+  },
+  "coda_share": {
+    "appendix_label": "Coda",
+    "title": "Share",
+    "position": "final",
+    "content_order": [
+      "share-summary",
+      "aggregated-portable-prompt",
+      "sharing-boundary",
+      "ai-guided-reassessment"
+    ],
+    "aggregated_prompt_status": "INFERRED",
+    "prompt_source_kind": "completed-report-and-manifest-synthesis",
+    "prompt_source_role": "agent-synthesis",
+    "selectable_text": true,
+    "modifier_authorizes_transfer": false,
+    "share_summary": "The v3 plan turns the walked-through ai-time-to-die vertical into a reviewable production plan at here_lies_trouble_cut_v1 detail: 8 segments / 57 s template, 79 s canonical corpus bound (2-3 episodes), measured render/voice/provider facts, pilot options, gates, and rizal/ord/eureka orchestration. Production is zero-spend by default; a formal plan-vertical KEEP on situationshipin.space unlocks it.",
+    "aggregated_prompt_id": "AITTD-V3-AGG-001",
+    "aggregated_simplified_prompt": "document_type: special-topics\nstyle: randoma11y-accent\ndocument_type_modifiers:\n- coda-share\nevidence_scope:\n- measured izzi repository records\n- portal review issues #18-#28\noutput_format: pdf\n\nProduce ai-time-to-die episodes with the accepted draft-9 pipeline: 8 segments / 57 s / 1080x1920@24, canonical dialogue remapped to zf_xiaoyi via MeanVC2, izzi red-on-white 20 pt two-region bullet text, wild 50% opacity masks, T5 as the HLT stand-in unless provider spend is authorized, shinkansen bed elsewhere, full-motion portal review, validator passing under the 96 MiB budget, estimated against the 79 s canonical corpus bound and the measured 3-5 min per-episode render time.",
+    "summary_evidence_statuses": ["OBSERVED"],
+    "sharing_boundary": {
+      "authority_status": "AUTHORIZED-BY-PROJECT-OWNER",
+      "privacy_review_status": "BOUNDED-REPO-FACTS-ONLY",
+      "intended_recipient_or_unavailable": "project owner and authorized collaborators",
+      "permitted_purpose_or_unavailable": "review and continuation of ai-time-to-die production",
+      "included_material": "measured render facts, gate decisions, provider credit totals",
+      "excluded_material": "credentials, raw provider prompts beyond the bounded scope, training-conversion transfer",
+      "external_transfer_state": "NOT-AUTHORIZED",
+      "retention_or_redistribution_rule": "retain in the local-object store; redistribution requires a new decision",
+      "further_transfer_rule": "no further transfer without explicit authorization"
+    }
+  }
+}

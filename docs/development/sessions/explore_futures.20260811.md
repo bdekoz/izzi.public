@@ -13,11 +13,11 @@ and training transfer remain separate decisions.
 This document proposes a small, accessible web review surface for Izzi's
 generated artifacts. It extends rather than replaces:
 
-- `docs/development/explore_futures.md`, the authoritative user-supplied source plan;
-- `docs/development/explore_futures.20260808.md`, the initial audit and evolution plan;
-- `docs/development/explore_futures.20260809.md`, the conversion, video, graph, and
+- `docs/development/archive/explore_futures.md`, the authoritative user-supplied source plan;
+- `docs/development/sessions/explore_futures.20260808.md`, the initial audit and evolution plan;
+- `docs/development/sessions/explore_futures.20260809.md`, the conversion, video, graph, and
   generative-pattern proposal;
-- `docs/development/explore_futures.20260810.md`, the active next-stage implementation plan;
+- `docs/development/sessions/explore_futures.20260810.md`, the active next-stage implementation plan;
 - `docs/visual_workflow/visual_experiments_method.md`, the generation-pass and human-review
   method.
 

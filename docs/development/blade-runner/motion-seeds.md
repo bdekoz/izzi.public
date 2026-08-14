@@ -125,7 +125,7 @@ Suggested per-clip seed record:
 ```
 
 The `motion_grammar` fields reuse the vocabulary already present in
-`docs/development/explore_futures_seedance_visual_method.md` (camera, subject_motion,
+`docs/development/seedance/visual-method.md` (camera, subject_motion,
 environmental_motion, tempo). Only these descriptor strings, never frames or
 film-derived imagery, are eligible for provider prompts.
 

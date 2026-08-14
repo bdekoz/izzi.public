@@ -6,8 +6,8 @@ documents. Nothing removed; nothing promoted.
 ## Unclassified / experimental
 
 - Seedance audio proposal and vertical-installment authoring:
-  `docs/development/explore_futures_seedance_audio.md`,
-  `docs/development/explore_futures_seedance_audio_test_plan.20260809.md`,
+  `docs/development/seedance/audio.md`,
+  `docs/development/seedance/test-plan.md`,
   `examples/seedance2/audio-vertical-authoring*.json`.
 - Waveform visualization aids: `scripts/render-audio-audition-waveforms.py`,
   `outputs/ad-hoc/here-lies-trouble/audio-auditions/audio-audition-waveforms.png`.

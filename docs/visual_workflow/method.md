@@ -4,10 +4,10 @@ First-pass sort of the visual method documentation.
 
 ## Living method docs
 
-- `docs/development/explore_futures_seedance_visual_method.md`
+- `docs/development/seedance/visual-method.md`
 - `docs/visual_workflow/visual_experiments_method.md`
-- `docs/development/explore_futures_here_lies_trouble_visual_test.md`
-- `docs/development/explore_futures_here_lies_trouble_episode_01_v2.md` (also informs
+- `docs/development/here-lies-trouble/visual-test.md`
+- `docs/development/here-lies-trouble/episode-01-v2.md` (also informs
   `motion_grammar.md`)
 
 ## Method scripts

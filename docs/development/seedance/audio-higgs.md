@@ -228,4 +228,4 @@ Suggested approval phrase if the local probe is desired:
 - ROCm gfx1151 support: AMD compatibility matrix (ROCm 6.4.4 adds gfx1150/
   gfx1151), TheRock nightly torch builds issue #3065, ROCm/ROCm issue #6034
   (Strix Halo stability notes), vLLM PR #38455 (gfx1151 device IDs).
-- Report file: `docs/development/explore_futures_seedance_audio_higgs.md`
+- Report file: `docs/development/seedance/audio-higgs.md`

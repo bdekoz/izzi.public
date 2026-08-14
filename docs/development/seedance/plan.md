@@ -47,7 +47,11 @@ use madredeus font for type
    guilloche-style card (light gray background, episode number, madredeus
    type) to `title-card-v5-madredeus.png` (SHA-256
    `6a112554ec31954f4b5be10e27d3e68d886fbd045273e59f89c94929834ad4a7`).
-   Wiring the card into the episode renderer remains a follow-up.
+   **WIRED 2026-08-14:** `scripts/build-hlt-frogtown-v2-episode-master.py`
+   now defaults `--title-card` to the madredeus card, and the episode-01
+   Frogtown v1 master was rebuilt with the card as its 3 s title segment
+   (168 s preserved; original kept as `*.v1.pre-madredeus.mkv`; manifest
+   sha updated).  Verified light-gray title frame in the rebuilt master.
 
 Project naming note: the plan says "here-lies-love"; the implemented registry
 and pages use the established project id `here-lies-trouble`. Renaming is a

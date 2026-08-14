@@ -7,7 +7,7 @@ Status: reproducible baseline; known failures are not waived
 This document is the compact issue ledger for Izzi's C++20/header-only
 baseline. It records what the current harness proves and what must become green
 before Milestone 1 can claim a safe core. The broader rationale remains in
-[`explore_futures.20260808.md`](explore_futures.20260808.md).
+[`explore_futures.20260808.md`](sessions/explore_futures.20260808.md).
 
 ## Toolchain and reproduction
 
@@ -100,7 +100,7 @@ Totals: 33 headers, 10 pass under both compilers, 23 fail under both compilers.
 | `M0-MARKER-RNG-001` | `make_path_blob` used hidden wall-clock/global C RNG state, so `markers-1` varied across captures | `TC-LOOP-MARKERS-CROSS-CAPTURE-RNG-001` and two post-RNG candidates | CORRECTED/VERIFIED; marker SVG and pixels are exact across independent captures; human acceptance remains unavailable |
 | `M0-RESOURCE-001` | Four previews report an external-image load failure | dark-red grid borders and render receipts | OBSERVED; resource policy unresolved |
 | `M0-VISUAL-001` | The first whole-grid renderer silently substituted 106 identical broken-image glyphs despite exit status zero | invalidated history plus `TC-LOOP-VISUAL-GRID-RENDERER-001` | CORRECTED; Pillow assembly and pixel-diversity gate verified |
-| `M0-CONSUMER-001` | Cartofreako and alpha60-results smoke consumers are documented but not implemented as pinned offline jobs | futures plan and [`explore_futures_alpha60_results.md`](explore_futures_alpha60_results.md) | NOT-STARTED |
+| `M0-CONSUMER-001` | Cartofreako and alpha60-results smoke consumers are documented but not implemented as pinned offline jobs | futures plan and [`explore_futures_alpha60_results.md`](archive/alpha60-results-audit.md) | NOT-STARTED |
 | `M0-LICENSE-001` | Source headers state GPL version 3 or later, but no authoritative root license file exists | header notices and repository inventory | BLOCKED on rights-holder confirmation; no relicensing is inferred |
 
 ## Example and visual baseline

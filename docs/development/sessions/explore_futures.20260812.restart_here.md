@@ -3,7 +3,7 @@
 Recorded: 2026-08-12 America/Los_Angeles (shutdown prep; relocated to
 `docs/development/` as `explore_futures.20260812.restart_here.md` on
 2026-08-12 by session direction). Session status as of 2026-08-12 evening:
-see [`here_lies_trouble_cut_v1.md`](here_lies_trouble_cut_v1.md) for the
+see [`here_lies_trouble_cut_v1.md`](../here-lies-trouble/cut-v1.md) for the
 current cut-v1 plan (3-episode pilot + full-corpus estimates).
 
 This file is the single starting point for the next development session. It
@@ -64,7 +64,7 @@ gates, and the next development proposals in priority order.
 
 Render Stage 0 audio defaults for episodes 02–03 (jobs exist, outputs empty);
 then the pilot chain in
-[`here_lies_trouble_cut_v1.md`](here_lies_trouble_cut_v1.md): canaries with
+[`here_lies_trouble_cut_v1.md`](../here-lies-trouble/cut-v1.md): canaries with
 the pink-spike negative constraint, 165 s scene chain, full-episode Higgs on
 eureka, masters + review pages. Local Stage 0 work is zero-spend.
 
@@ -113,8 +113,8 @@ the radial family should expose named entry points; close the open items in
 - Pattern families: `docs/generative_patterns.md` + `docs/generative_patterns/`
 - Evidence: `docs/training-conversion/` (receipts, dyads, failure loops)
 - Full vertical plan:
-  `docs/development/explore_futures_here_lies_trouble_full_vertical.20260812.md`;
+  `docs/development/here-lies-trouble/full-vertical.md`;
   current cut-v1 plan:
-  `docs/development/here_lies_trouble_cut_v1.md`
+  `docs/development/here-lies-trouble/cut-v1.md`
 
 Status: `SHUTDOWN-PREP; RESUME-POINTER; NOT-SHARED`

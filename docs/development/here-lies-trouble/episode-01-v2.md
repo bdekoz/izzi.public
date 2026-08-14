@@ -224,7 +224,7 @@ Each specification also references hash-bound Blade Runner motion-aesthetic
 seeds (`resources/blade-runner/motion-aesthetic-seeds.json`) and carries a
 derived `motion_grammar` block; only the derived descriptor text is eligible
 for prompts, and the film clips stay local-only. See
-`docs/development/explore_futures_blade_runner_motion_seeds.20260812.md`.
+`docs/development/blade-runner/motion-seeds.md`.
 
 The next gates are human listening of the audio canary and human review of the
 three motion specifications. Neither technical verification nor silence is

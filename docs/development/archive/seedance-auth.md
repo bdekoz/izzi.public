@@ -19,7 +19,7 @@ spend credits.
 > the existing local key apply only to `.io`. Never send that key to `.ai` and
 > never change the adapter hostname as a migration shortcut. The newly reviewed
 > `.ai` site exposes different model names and credit rates, and no public video
-> API/key contract was found. See `docs/development/explore_futures.20260811.md` for the
+> API/key contract was found. See `docs/development/sessions/explore_futures.20260811.md` for the
 > comparison and the required account-domain preflight.
 
 The availability of a user-controlled account is user-supplied context. Codex
@@ -252,7 +252,7 @@ The idempotency key must not contain the API key, account email, collaborator
 email, prompt text, or private asset name. A credential does not authorize a
 canary, retry, top-up, subscription change, public asset upload, or generation.
 Those remain separate consent and budget decisions under the
-[Seedance account integration proposal](explore_futures_seedance.md).
+[Seedance account integration proposal](seedance.md).
 
 ## Rotation, revocation, and suspected exposure
 

@@ -34,6 +34,6 @@ Trouble audio pipeline.
 
 Primary sources: `examples/seedance2/here-lies-trouble-episode-01-frogtown.v2.json`
 (`audio_mix`), `docs/audio_workflow/human_voice_selection.md`,
-`docs/development/explore_futures_seedance_audio_test_plan.20260809.md`.
+`docs/development/seedance/test-plan.md`.
 
 Status: `FIRST-PASS-SORT; NO-REMOVAL`

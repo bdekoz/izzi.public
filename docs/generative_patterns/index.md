@@ -8,6 +8,8 @@ Family entries in this directory:
   catalogue and rendering notes
 - [guilloche](guilloche.md)
 - [moire](moire.md)
+- [danmu](danmu.md) — danmaku text overlay family incl. the W3C Bullet
+  Chatting relation
 - [surface tension](surface_tension.md)
 - [radial](radial.md)
 - [damped harmonograph](harmonograph.md)

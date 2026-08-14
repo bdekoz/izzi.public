@@ -97,7 +97,7 @@ The project should retain this breadth. The evolution plan is not a proposal to 
 
 ### Hamonshu and roulette are good forward models
 
-[`izzi-svg-curves-hamonshu.h`](../html/izzi-svg-curves-hamonshu_8h.html) supplies a 153-entry, source-indexed catalogue, stable source coordinates, explicit motif configuration, bounded sampling, validation, and deterministic path construction. [`izzi-svg-curves-roulette.h`](../html/izzi-svg-curves-roulette_8h.html) separates curve kinds and configuration, bounds sample counts, rejects non-finite inputs, and computes exact closure periods using integer ratios.
+[`izzi-svg-curves-hamonshu.h`](../../html/izzi-svg-curves-hamonshu_8h.html) supplies a 153-entry, source-indexed catalogue, stable source coordinates, explicit motif configuration, bounded sampling, validation, and deterministic path construction. [`izzi-svg-curves-roulette.h`](../../html/izzi-svg-curves-roulette_8h.html) separates curve kinds and configuration, bounds sample counts, rejects non-finite inputs, and computes exact closure periods using integer ratios.
 
 The representative programs generated:
 
@@ -287,7 +287,7 @@ The new public include layout should use names such as `<izzi/svg/document.hpp>`
 
 ## JSON audit
 
-[`izzi-json-basics.h`](../html/izzi-json-basics_8h.html) provides useful RapidJSON helpers, but it is not yet a safe configuration boundary:
+[`izzi-json-basics.h`](../../html/izzi-json-basics_8h.html) provides useful RapidJSON helpers, but it is not yet a safe configuration boundary:
 
 - compiler branches use different include paths;
 - missing files and parse failures print to stderr and return a document that callers may continue using;
@@ -583,7 +583,7 @@ The profile should initially cover the subset izzi already uses reliably: root d
 
 ### Existing sequence behavior
 
-[`izzi-svg-sequences.h`](../html/izzi-svg-sequences_8h.html) contains fade, blink, wink, vertical-sync roll, dot-grid effects, optical dots, and swipe-left. The functions return vectors of SVG fragments and are used by alpha60 to composite numbered frame files.
+[`izzi-svg-sequences.h`](../../html/izzi-svg-sequences_8h.html) contains fade, blink, wink, vertical-sync roll, dot-grid effects, optical dots, and swipe-left. The functions return vectors of SVG fragments and are used by alpha60 to composite numbered frame files.
 
 That is useful behavior, but the current API leaves timing, composition, naming, random seeds, and endpoint rules implicit. New curve transitions should be behaviorally parallel to blink and wink while using a cleaner timeline underneath.
 
@@ -881,7 +881,7 @@ Two reproducible offline proofs accompany this report:
 | Hamonshu wave/mask reveal | `examples/seedance2/generated/hamonshu-10s.mkv` (local-only) | `examples/seedance2/generated/hamonshu-10s-poster.png` (local-only) | 1280×720, 30 fps, 300 frames, 10.000 seconds, H.264/yuv420p, no audio |
 | Roulette hypotrochoid iris | `examples/seedance2/generated/roulette-10s.mkv` (local-only) | `examples/seedance2/generated/roulette-10s-poster.png` (local-only) | 1280×720, 30 fps, 300 frames, 10.000 seconds, H.264/yuv420p, no audio |
 
-The [study README](../../examples/seedance2/README.md), [C++20 generator](../../examples/seedance2/title-transition-study.cc), and user JSON configs are included. The generator uses izzi's existing Hamonshu and roulette geometry, writes safe standalone SVG frames, and relies on ffmpeg/librsvg only for explicit encoding. It performs no network access and submits no API request.
+The [study README](../../../examples/seedance2/README.md), [C++20 generator](../../../examples/seedance2/title-transition-study.cc), and user JSON configs are included. The generator uses izzi's existing Hamonshu and roulette geometry, writes safe standalone SVG frames, and relies on ffmpeg/librsvg only for explicit encoding. It performs no network access and submits no API request.
 
 Current artifact hashes:
 
@@ -898,8 +898,8 @@ These are design/transition studies, not generated Seedance model output. The fu
 
 The next contract should describe a whole job rather than require ten unrelated title configs. It should have two representations:
 
-- the human-facing [authoring schema](../../examples/seedance2/ten-scene-authoring.proposed.schema.json) and [ten-scene authoring example](../../examples/seedance2/ten-scene-authoring.example.json);
-- the generated [resolved execution schema](../../examples/seedance2/ten-scene-project.proposed.schema.json) and [complete resolved example](../../examples/seedance2/ten-scene-project.example.json).
+- the human-facing [authoring schema](../../../examples/seedance2/ten-scene-authoring.proposed.schema.json) and [ten-scene authoring example](../../../examples/seedance2/ten-scene-authoring.example.json);
+- the generated [resolved execution schema](../../../examples/seedance2/ten-scene-project.proposed.schema.json) and [complete resolved example](../../../examples/seedance2/ten-scene-project.example.json).
 
 In the authoring form, each of exactly ten scenes requires only `scene_id`, `title`, and `description`. Project defaults carry the shared 10-second timeline, title style, transition policy, provider profile, and output rules:
 

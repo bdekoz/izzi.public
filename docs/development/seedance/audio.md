@@ -9,7 +9,7 @@
 - Privacy default: offline analysis only; provider transfer is disabled
 
 This is a narrower companion to the
-[Seedance account and delivery proposal](explore_futures_seedance.md). The user
+[Seedance account and delivery proposal](../archive/seedance.md). The user
 provides one editorial `vertical_name` (the series name), one `visual_style`, and
 one local audio path. Izzi proposes acoustic moments; the user reviews them, and
 only explicit user-sourced decisions can lock exactly ten distinct ten-second
@@ -72,7 +72,7 @@ or authorize provider activity.
 ## Minimal author interface
 
 The authoring contract is intentionally smaller than the general
-[ten-scene authoring skeleton](../../examples/seedance2/ten-scene-authoring.10x10s.skeleton.json).
+[ten-scene authoring skeleton](../../../examples/seedance2/ten-scene-authoring.10x10s.skeleton.json).
 Version 1 is a closed JSON object with four required fields:
 
 - `schema_version`: integer constant `1`;
@@ -102,7 +102,7 @@ Minimal input:
 ```
 
 The implemented Draft 2020-12 schema is
-[`audio-vertical-authoring.proposed.schema.json`](../../examples/seedance2/audio-vertical-authoring.proposed.schema.json).
+[`audio-vertical-authoring.proposed.schema.json`](../../../examples/seedance2/audio-vertical-authoring.proposed.schema.json).
 Its normative content is reproduced here for review:
 
 ```json
@@ -417,7 +417,7 @@ Each released installment is exactly 1080×1920 pixels, 30/1 fps, 300 frames,
 and 10 seconds. Use H.264/yuv420p in Matroska for the local master. Provider
 video is an input to post-production, not duration or text authority. Normalize
 or reject it against the
-[existing MKV output contract](explore_futures_seedance.md#mkv-output-contract),
+[existing MKV output contract](../archive/seedance.md#mkv-output-contract),
 using its 9:16 vertical-master profile.
 
 Preserve the original MP3 by hash. Cut each excerpt from the decoded analysis
@@ -438,7 +438,7 @@ Compile `visual_style` into a reviewed allowlisted profile:
   reject unsafe flashing.
 
 The implementation belongs beside the deterministic frame vocabulary in
-[`izzi-svg-sequences.h`](../html/izzi-svg-sequences_8h.html), while encoding remains an
+[`izzi-svg-sequences.h`](../../html/izzi-svg-sequences_8h.html), while encoding remains an
 external tool contract. Transition frames consume part of each installment's
 fixed 300-frame budget; they never extend or silently shorten it.
 
@@ -452,7 +452,7 @@ evidence:
 - `/home/bkoz/src/MiL.git/scripts/ffmpeg-from-png-and-wav-to-mkv.sh` combines a
   still image and an audio source into a bounded video.
 
-The future adapter around [`izzi-svg-sequences.h`](../html/izzi-svg-sequences_8h.html)
+The future adapter around [`izzi-svg-sequences.h`](../../html/izzi-svg-sequences_8h.html)
 should preserve those capabilities behind a validated manifest rather than
 require callers to construct positional shell commands. For each locked
 installment it emits the source start sample, exact 160,000-sample audio cut,
@@ -461,7 +461,7 @@ vertical dimensions, output MKV path, and expected hashes. A maintained encoder
 then consumes only that allowlisted manifest, uses quoted paths and fail-fast
 arguments, and verifies the result with `ffprobe`.
 
-The current [`build-clips.sh`](../../examples/seedance2/build-clips.sh) already
+The current [`build-clips.sh`](../../../examples/seedance2/build-clips.sh) already
 demonstrates the complementary numbered-SVG-to-Matroska path. The new handoff
 unifies frame-sequence, still-image-plus-audio, and exact supercut inputs without
 making FFmpeg or a shell process part of the header-only C++ public API.

@@ -20,10 +20,10 @@ merge without losing evidence.
 ## Current working material (2026-08-12)
 
 - Living docs: `docs/audio_workflow/human_voice_selection.md`,
-  `docs/development/explore_futures_seedance_audio.md`,
-  `docs/development/explore_futures_seedance_audio_test_plan.20260809.md`,
-  `docs/development/explore_futures_seedance_audio_higgs.md`,
-  `docs/development/explore_futures_seedance_plan.20260812.md`.
+  `docs/development/seedance/audio.md`,
+  `docs/development/seedance/test-plan.md`,
+  `docs/development/seedance/audio-higgs.md`,
+  `docs/development/seedance/plan.md`.
 - Scripts: `scripts/izzi-audio-excerpt-select.py`,
   `scripts/izzi-meanvc-audition-batch.py`, `scripts/izzi-meanvc-full-episode.py`,
   `scripts/izzi-human-voice-select.py`, `scripts/render-audio-audition-waveforms.py`,

@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "specification_version": "3.9",
+  "document_type": "special-topics",
+  "style": "randoma11y-accent",
+  "report_id": "ai-time-to-die-v2-synthesis-special-topics",
+  "topic": "ai-time-to-die vertical project v2 synthesis (Phase 6, post draft-9 KEEP)",
+  "evidence_boundary": "Measured izzi repository records and portal review issues from 2026-08-13/14 only; provider spend bounded to two Seedance jobs.",
+  "intended_audience": "The project owner and authorized collaborators",
+  "output_format": "pdf",
+  "evidence_scope": [
+    "measured izzi repository records",
+    "portal review issues #18-#28"
+  ],
+  "document_type_modifiers": ["coda-share"],
+  "final_appendix_id": "coda-simplified-prompt",
+  "coda": {
+    "clip_id": "ST-CODA-AITTD-V2-001",
+    "appendix_label": "Coda",
+    "title": "Simplified Prompt",
+    "content_label": "Response clip",
+    "position": "final",
+    "source_role": "assistant",
+    "source_reference": "izzi Codex thread 2026-08-14 (Phase 6 direction)",
+    "date_or_date_status": "2026-08-14",
+    "boundary_start": "2026-08-14T03:00:00-07:00",
+    "boundary_end": "2026-08-14T04:15:00-07:00",
+    "clip_status": "EXACT",
+    "omissions_or_redactions": "NONE",
+    "evidence_status": "OBSERVED",
+    "response_clip": "document_type: special-topics\nstyle: randoma11y-accent\ntopic: ai-time-to-die vertical project v2 synthesis (Phase 6, post draft-9 KEEP)\nevidence_boundary: Measured izzi repository records and portal review issues from 2026-08-13/14 only; provider spend bounded to two Seedance jobs.\nintended_audience: The project owner and authorized collaborators\noutput_format: pdf\n\nPhase 6 is unlocked by the draft-9 KEEP (issue #28): synthesize proposed_vertical_v2.md with staging, gates, measured estimates, pilot 1 and pilot 1-3 options, and rizal/ord/eureka orchestration, then generate the devastation-pacific-house-style special-topics record (randoma11y-accent, coda-share) as proposed_vertical_v2.pdf.",
+    "selectable_text": true
+  },
+  "coda_share": {
+    "appendix_label": "Coda",
+    "title": "Share",
+    "position": "final",
+    "content_order": [
+      "share-summary",
+      "aggregated-portable-prompt",
+      "sharing-boundary",
+      "ai-guided-reassessment"
+    ],
+    "aggregated_prompt_status": "INFERRED",
+    "prompt_source_kind": "completed-report-and-manifest-synthesis",
+    "prompt_source_role": "agent-synthesis",
+    "selectable_text": true,
+    "modifier_authorizes_transfer": false,
+    "share_summary": "The draft-9 KEEP closes the ai-time-to-die draft loop: the 57 s episode template, zf_xiaoyi canonical voice remap, two-region bullet text, wild masks, and full-motion review format are all accepted. v2 production is a measured, zero-spend-by-default pipeline over a 79 s canonical corpus.",
+    "aggregated_prompt_id": "AITTD-V2-AGG-001",
+    "aggregated_simplified_prompt": "document_type: special-topics\nstyle: randoma11y-accent\ndocument_type_modifiers:\n- coda-share\nevidence_scope:\n- measured izzi repository records\n- portal review issues #18-#28\noutput_format: pdf\n\nProduce ai-time-to-die episodes with the accepted draft-9 pipeline: 8 segments / 57 s / 1080x1920@24, canonical dialogue remapped to zf_xiaoyi via MeanVC2, izzi red-on-white 20 pt two-region bullet text, wild 50% opacity masks, T5 as the HLT stand-in unless provider spend is authorized, shinkansen bed elsewhere, full-motion portal review, validator passing under the 80 MiB budget, estimated against the 79 s canonical corpus bound and the measured 3-5 min per-episode render time.",
+    "summary_evidence_statuses": ["OBSERVED"],
+    "sharing_boundary": {
+      "authority_status": "AUTHORIZED-BY-PROJECT-OWNER",
+      "privacy_review_status": "BOUNDED-REPO-FACTS-ONLY",
+      "intended_recipient_or_unavailable": "project owner and authorized collaborators",
+      "permitted_purpose_or_unavailable": "review and continuation of ai-time-to-die production",
+      "included_material": "measured render facts, gate decisions, provider credit totals",
+      "excluded_material": "credentials, raw provider prompts beyond the bounded scope, training-conversion transfer",
+      "external_transfer_state": "NOT-AUTHORIZED",
+      "retention_or_redistribution_rule": "retain in the local-object store; redistribution requires a new decision",
+      "further_transfer_rule": "no further transfer without explicit authorization"
+    }
+  }
+}
