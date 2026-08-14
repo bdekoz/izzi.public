@@ -1,0 +1,4 @@
+var searchData=
+[
+  ['json_5ferror_0',['json_error',['../namespacesvg_1_1graph_1_1json__detail.html#ac619195a09a1644ebdc0a21e670ccb28',1,'svg::graph::json_detail']]]
+];

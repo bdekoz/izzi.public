@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://bdekoz.github.io/izzi.public/examples/seedance2/audio-vertical-authoring.proposed.schema.json",
+  "title": "Izzi audio-first vertical authoring input",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "vertical_name",
+    "visual_style",
+    "audio_path"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "vertical_name": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 120
+    },
+    "visual_style": {
+      "type": "string",
+      "minLength": 20,
+      "maxLength": 1000
+    },
+    "audio_path": {
+      "type": "string",
+      "pattern": "^(?!/)(?!.*(?:^|/)\\.\\.(?:/|$))[^\\u0000]+$"
+    },
+    "title_card_seconds": {
+      "type": "number",
+      "minimum": 0.5,
+      "maximum": 5.0,
+      "multipleOf": 0.1,
+      "default": 2.0
+    }
+  }
+}

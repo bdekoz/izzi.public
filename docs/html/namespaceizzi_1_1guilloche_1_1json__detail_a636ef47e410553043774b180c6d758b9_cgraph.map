@@ -1,0 +1,11 @@
+<map id="izzi::guilloche::json_detail::read_point" name="izzi::guilloche::json_detail::read_point">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,48,134,85"/>
+<area shape="rect" id="Node000002" href="$namespaceizzi_1_1guilloche_1_1json__detail.html#a6c4a7a91797a3b40fae005504071cb24" title=" " alt="" coords="374,5,503,42"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="129,45,181,33,273,23,359,20,359,26,273,29,182,38,130,50"/>
+<area shape="rect" id="Node000003" href="$namespaceizzi_1_1guilloche_1_1json__detail.html#afd065dadb89d3ac16575609ff7111163" title=" " alt="" coords="366,79,511,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="128,83,182,94,268,101,350,100,350,105,268,106,181,100,127,88"/>
+<area shape="rect" id="Node000004" href="$namespaceizzi_1_1guilloche_1_1json__detail.html#aca487ff24dbf4ff73c745f9f54035a93" title=" " alt="" coords="182,48,318,85"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="134,64,166,64,166,69,134,69"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="318,48,359,39,360,44,319,54"/>
+<area shape="poly" id="edge5_Node000004_Node000003" title=" " alt="" coords="319,75,351,80,351,85,318,80"/>
+</map>

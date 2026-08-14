@@ -1,0 +1,261 @@
+{
+  "$schema": "../../schemas/izzi.here-lies-trouble-episode-v2.schema.json",
+  "schema_version": "izzi.here-lies-trouble-episode-v2/1",
+  "project_id": "here-lies-trouble",
+  "episode_index": 1,
+  "scene_id": "hlt1-episode-01-frogtown",
+  "status": "APPROVED-FOR-LOCAL-CANARIES",
+  "identity": {
+    "location_slug": "frogtown",
+    "artifact_version": "v2",
+    "canonical_basename": "here-lies-trouble-episode-01-frogtown.v2.mkv"
+  },
+  "supersedes": {
+    "path": "outputs/review/feedback/visual/here-lies-trouble/neon-addict-stage-01/episode-01-local-trial/here-lies-trouble-episode-01-frogtown.v1.mkv",
+    "sha256": "a6f754c62de7ab194e1ff76241a45af33826a34052d812bdfebcd4ca5ac72718",
+    "human_disposition": "REVISE",
+    "requested_v1_basename": "here-lies-trouble-episode-01-frogtown.v1.mkv"
+  },
+  "sources": {
+    "accepted_visual": {
+      "path": "outputs/review/feedback/visual/here-lies-trouble/neon-addict-stage-01/style-frames/sample-01-frogtown-source.png",
+      "sha256": "78b79a6f1cb67162293c7ff901ca53d90a4d7c44d179b649d4d9103b95b86d42"
+    },
+    "transformed_dialogue": {
+      "path": "outputs/ad-hoc/here-lies-trouble/audio-random-defaults/episode-01/full-episode-random-default.wav",
+      "sha256": "d0bde9a7a59196308af9bc8cc29daa6144620162d61d8a557787874d3deec72f",
+      "manifest_path": "outputs/ad-hoc/here-lies-trouble/audio-random-defaults/episode-01/manifest.json",
+      "manifest_sha256": "4a08591aaf703cc0293af89b15e2f2526517dbfe9944fc449d5ea3385f45a204",
+      "speaker_diarization": "NOT-PERFORMED"
+    },
+    "ambience": {
+      "path": "resources/here-lies-trouble/seed-audio-nature/Sounds of Nature - The River.mp3",
+      "sha256": "12027e8728997645d0da87d89e77c7ee06dbb1f5c0b1765ba3961f53281cd53f",
+      "provenance_status": "USER-CONFIRMED-RESOURCE",
+      "decode_once_before_mix": true
+    }
+  },
+  "form": {
+    "title_seconds": 3,
+    "content_seconds": 165,
+    "total_seconds": 168,
+    "width": 720,
+    "height": 1280,
+    "fps": 30,
+    "pixel_format": "yuv420p"
+  },
+  "title_card": {
+    "visible_text": "1",
+    "background": "#000000",
+    "foreground": "#ffffff",
+    "typography": "devastation-pacific-house-style-2.3"
+  },
+  "cast": [
+    {
+      "animal": "unicorn",
+      "stable_visual_markers": ["single readable horn silhouette", "restrained neon flank markings"],
+      "motion_personality": "leads with deliberate steps, then turns back to include the group",
+      "provisional_speaker_code": null,
+      "decision_status": "NEEDS-HUMAN"
+    },
+    {
+      "animal": "albatross",
+      "stable_visual_markers": ["long wing edge", "readable long-beaked profile"],
+      "motion_personality": "walks and low-hops beside the group, using wing and head reactions while listening",
+      "provisional_speaker_code": null,
+      "decision_status": "NEEDS-HUMAN"
+    },
+    {
+      "animal": "dog",
+      "stable_visual_markers": ["asymmetric ear silhouette", "compact white contour accents"],
+      "motion_personality": "ranges ahead, pauses to investigate, and returns attention to each speaker",
+      "provisional_speaker_code": null,
+      "decision_status": "NEEDS-HUMAN"
+    },
+    {
+      "animal": "cat",
+      "stable_visual_markers": ["flank circle", "high curved tail silhouette"],
+      "motion_personality": "moves at the edge of the group, stops on raised surfaces, and answers with restrained gestures",
+      "provisional_speaker_code": null,
+      "decision_status": "NEEDS-HUMAN"
+    }
+  ],
+  "location": {
+    "display_name": "Frogtown and the Los Angeles River bicycle corridor",
+    "slug": "frogtown",
+    "route_beats": [
+      {
+        "beat_id": "beat-01",
+        "place": "bike-path entrance",
+        "group_action": "the four animals enter together and establish a shared walking pace",
+        "conversation_action": "one animal begins while the other three visibly listen",
+        "decision_status": "PROPOSED"
+      },
+      {
+        "beat_id": "beat-02",
+        "place": "river overlook",
+        "group_action": "the group slows, looks toward water, and changes formation",
+        "conversation_action": "the active speaker changes and a listener reacts before answering",
+        "decision_status": "PROPOSED"
+      },
+      {
+        "beat_id": "beat-03",
+        "place": "underpass or bridge shadow",
+        "group_action": "the animals cross from hard sunlight into angular shade",
+        "conversation_action": "two speakers exchange a turn while the dog briefly investigates the edge of frame",
+        "decision_status": "PROPOSED"
+      },
+      {
+        "beat_id": "beat-04",
+        "place": "riparian planting and river edge",
+        "group_action": "the group explores plants, water, and found geometry without separating completely",
+        "conversation_action": "the albatross and cat carry distinct listening reactions",
+        "decision_status": "PROPOSED"
+      },
+      {
+        "beat_id": "beat-05",
+        "place": "final shared river view",
+        "group_action": "the four regroup, settle into a final composition, and continue breathing or shifting weight",
+        "conversation_action": "the last turn resolves with a visible group response rather than a frozen tableau",
+        "decision_status": "PROPOSED"
+      }
+    ],
+    "required_anchors": [
+      "Los Angeles River concrete-and-riparian edge",
+      "Frogtown bicycle-path geometry",
+      "distant urban infrastructure without generic skyline shorthand"
+    ],
+    "reference_images": []
+  },
+  "conversation": {
+    "synchronization_mode": "TURN-AWARE-GESTURE",
+    "exact_lip_sync_required": false,
+    "active_speaker_gesture": true,
+    "listener_reactions": true,
+    "walk_while_talking": true
+  },
+  "audio_mix": {
+    "canary": {
+      "normalization_scope": "ENGINEERING-WINDOWS-NOT-SPEAKERS",
+      "label": "PROVISIONAL-WINDOW-NORMALIZED-REVIEW-MIX",
+      "target_lufs_i": -18,
+      "true_peak_dbfs": -1.5
+    },
+    "production": {
+      "corrected_diarization_required": true,
+      "stable_speaker_ids_required": true,
+      "per_speaker_normalization_required": true
+    },
+    "ambience": {
+      "source_offset_seconds": 2,
+      "loop_if_needed": false,
+      "target_lufs_i": -32,
+      "duck_under_dialogue_db": 5
+    },
+    "delivery": {
+      "sample_rate": 48000,
+      "channels": 2,
+      "channel_layout": "stereo",
+      "target_lufs_i": -16,
+      "true_peak_dbfs": -1.5,
+      "lra_max_lu": 12
+    }
+  },
+  "motion": {
+    "canaries": [
+      {
+        "canary_id": "motion-canary-01",
+        "duration_seconds": 5,
+        "purpose": "prove a coherent four-animal group walk in Frogtown",
+        "required_actions": ["all four animals advance", "legs, bodies, and environment move", "species and markings remain stable"],
+        "status": "PLANNED"
+      },
+      {
+        "canary_id": "motion-canary-02",
+        "duration_seconds": 5,
+        "purpose": "prove conversational turn-taking without exact lip sync",
+        "required_actions": ["one active-speaker gesture", "three readable listener reactions", "walking continues or pauses naturally"],
+        "status": "PLANNED"
+      },
+      {
+        "canary_id": "motion-canary-03",
+        "duration_seconds": 5,
+        "purpose": "prove location exploration rather than generic camera drift",
+        "required_actions": ["interaction with river-edge detail", "Frogtown anchor remains visible", "group composition changes coherently"],
+        "status": "PLANNED"
+      }
+    ],
+    "episode_structure": {
+      "narrative_beats": 11,
+      "shot_duration_seconds": [5, 10],
+      "animatic_before_motion_batch": true
+    },
+    "invariants": [
+      "exactly one unicorn, one albatross, one dog, and one cat",
+      "no species swaps or character duplication",
+      "no extra limbs, disappearing animals, or identity drift",
+      "restrained Neon Addict animal markings",
+      "no generated readable text",
+      "Frogtown and Los Angeles River specificity",
+      "animal and environmental movement must exceed camera-only motion"
+    ],
+    "maximum_static_hold_seconds": 2
+  },
+  "provider_gate": {
+    "provider": null,
+    "model": null,
+    "external_submission_authorized": false,
+    "cost_ceiling": null,
+    "quality_request": "720p-preview"
+  },
+  "review_gates": [
+    {
+      "gate_id": "gate-01",
+      "artifact_class": "AUDIO-CANARY",
+      "status": "READY-FOR-HUMAN",
+      "acceptance_conditions": ["dialogue is intelligible and more even", "river ambience supports place without masking speech", "stereo presentation does not imply false speaker placement"]
+    },
+    {
+      "gate_id": "gate-02",
+      "artifact_class": "MOTION-CANARIES",
+      "status": "NOT-STARTED",
+      "acceptance_conditions": ["all four animals truly move", "conversation is legible through gesture and reaction", "Frogtown exploration is visible", "cast identity remains stable"]
+    },
+    {
+      "gate_id": "gate-03",
+      "artifact_class": "FULL-EPISODE-ANIMATIC",
+      "status": "NOT-STARTED",
+      "acceptance_conditions": ["165-second route and shot rhythm work with the transformed audio", "no long accidental still holds", "title and content timing remain exact"]
+    },
+    {
+      "gate_id": "gate-04",
+      "artifact_class": "FULL-EPISODE-REVIEW-MASTER",
+      "status": "NOT-STARTED",
+      "acceptance_conditions": ["technical checks pass", "complete human watch and listen occurs", "acceptance or revision is explicit rather than inferred"]
+    }
+  ],
+  "output": {
+    "root": "outputs/review/feedback/visual/here-lies-trouble/neon-addict-stage-01/episode-01-local-trial",
+    "audio_canary": "outputs/review/feedback/visual/here-lies-trouble/neon-addict-stage-01/episode-01-local-trial/audio/here-lies-trouble-episode-01-frogtown.v2.audio-canary.wav",
+    "ambience_intermediate": "outputs/review/feedback/visual/here-lies-trouble/neon-addict-stage-01/episode-01-local-trial/audio/river-ambience.offset-2s.165s.48k-stereo.flac",
+    "audio_review_mkv": "outputs/review/feedback/visual/here-lies-trouble/neon-addict-stage-01/episode-01-local-trial/here-lies-trouble-episode-01-frogtown.v2.audio-canary.mkv",
+    "audio_probe": "outputs/review/feedback/visual/here-lies-trouble/neon-addict-stage-01/episode-01-local-trial/audio/here-lies-trouble-episode-01-frogtown.v2.audio-canary.ffprobe.json",
+    "audio_manifest": "outputs/review/feedback/visual/here-lies-trouble/neon-addict-stage-01/episode-01-local-trial/audio/here-lies-trouble-episode-01-frogtown.v2.audio-canary.manifest.json",
+    "motion_canary_root": "outputs/review/feedback/visual/here-lies-trouble/neon-addict-stage-01/episode-01-local-trial/motion-canaries/v2",
+    "animatic": "outputs/review/feedback/visual/here-lies-trouble/neon-addict-stage-01/episode-01-local-trial/here-lies-trouble-episode-01-frogtown.v2.animatic.mkv",
+    "review_master": "outputs/review/feedback/visual/here-lies-trouble/neon-addict-stage-01/episode-01-local-trial/here-lies-trouble-episode-01-frogtown.v2.mkv",
+    "filmstrip": "outputs/review/feedback/visual/here-lies-trouble/neon-addict-stage-01/episode-01-local-trial/review/here-lies-trouble-episode-01-frogtown.v2.filmstrip.jpg",
+    "manifest": "outputs/review/feedback/visual/here-lies-trouble/neon-addict-stage-01/episode-01-local-trial/here-lies-trouble-episode-01-frogtown.v2.manifest.json"
+  },
+  "authority": {
+    "planning_authorized": true,
+    "local_generation_authorized": true,
+    "provider_submission_authorized": false,
+    "additional_spending_authorized": false,
+    "audio_transfer_authorized": false,
+    "publication_authorized": false,
+    "baseline_promotion_authorized": false,
+    "training_conversion_transfer_authorized": false,
+    "wait_for_user_confirmation": false
+  }
+}

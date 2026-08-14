@@ -1,0 +1,10 @@
+<map id="svg::graph::json_detail::write_linear_layout" name="svg::graph::json_detail::write_linear_layout">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,24,153,61"/>
+<area shape="rect" id="Node000002" href="$namespacesvg_1_1graph_1_1json__detail.html#a2de50632f8240f0f10fb1892d5926081" title=" " alt="" coords="396,27,543,63"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="142,21,200,9,274,3,348,9,398,19,397,25,348,14,274,8,201,14,143,26"/>
+<area shape="rect" id="Node000003" href="$namespacesvg_1_1graph_1_1json__detail.html#ac2c6c524c9c08c7deacae3c0304906ba" title=" " alt="" coords="201,24,348,61"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="153,40,185,40,185,45,153,45"/>
+<area shape="rect" id="Node000004" href="$namespacesvg_1_1graph_1_1json__detail.html#a223c3efc7d6faaf425abbc17600306c6" title=" " alt="" coords="201,85,348,122"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="141,59,200,78,199,83,139,64"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="337,82,391,66,393,71,338,87"/>
+</map>

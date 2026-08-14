@@ -1,0 +1,9 @@
+<map id="izzi::moire::detail::sample_linear" name="izzi::moire::detail::sample_linear">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,122,42"/>
+<area shape="rect" id="Node000002" href="$namespaceizzi_1_1moire_1_1detail.html#a551f7338548adb7c6a79abe40ac0a541" title=" " alt="" coords="170,5,286,42"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="122,21,154,21,154,26,122,26"/>
+<area shape="rect" id="Node000003" href="$namespaceizzi_1_1moire_1_1detail.html#a14700198917d76704fdd2d0dc8f53543" title=" " alt="" coords="334,5,466,42"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="287,21,319,21,319,26,287,26"/>
+<area shape="rect" id="Node000004" href="$namespaceizzi_1_1moire_1_1detail.html#a18e3346150480e206d3f8f4c7080df4b" title=" " alt="" coords="514,12,658,36"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="467,21,499,21,499,26,467,26"/>
+</map>

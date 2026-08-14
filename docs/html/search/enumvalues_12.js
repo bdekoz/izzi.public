@@ -1,0 +1,28 @@
+var searchData=
+[
+  ['salmon_0',['salmon',['../namespacesvg.html#a0e622bba4eee0e6528a9261d6aa251d1a180fd182f9a0742f483619781ccc36c4',1,'svg']]],
+  ['satellite_1',['satellite',['../namespacesvg_1_1graph.html#acbe4fcc2a0e384bd58a39475fb76d261a53bb79002a8ade0bc488f4469ce3fcd7',1,'svg::graph::satellite'],['../namespacesvg.html#ac8061963317131e6bd4d517ed84880bca53bb79002a8ade0bc488f4469ce3fcd7',1,'svg::satellite']]],
+  ['science_2',['science',['../namespacesvg.html#a0e622bba4eee0e6528a9261d6aa251d1afb5c7f9bb4b32ce2f3bff4662f1ab27b',1,'svg']]],
+  ['screen_3',['screen',['../namespaceizzi_1_1guilloche.html#a4a7a2e58353a56f0e4944bb02eff9de4a599eba19aa93a929cb8589f148b8a6c4',1,'izzi::guilloche::screen'],['../namespaceizzi_1_1moire.html#a906917fbb3add22040bb08cbaf83e18da599eba19aa93a929cb8589f148b8a6c4',1,'izzi::moire::screen'],['../namespaceizzi_1_1surface__tension.html#a5c83572f5d7e3035a6630633ac37512aa599eba19aa93a929cb8589f148b8a6c4',1,'izzi::surface_tension::screen']]],
+  ['scroll_4',['scroll',['../namespacesvg_1_1hamonshu.html#a6ef0408fcb2cb24c37c7db772489a6dea089b0cdd8835d09cb1cabf38b3ce9c09',1,'svg::hamonshu']]],
+  ['seiheki_5',['seiheki',['../namespacesvg.html#a0e622bba4eee0e6528a9261d6aa251d1a2b9d7312f9d6c9eef7dc783e66f11026',1,'svg']]],
+  ['seijiiro_6',['seijiiro',['../namespacesvg.html#a0e622bba4eee0e6528a9261d6aa251d1ab79fc1074d3c2858c3794080e16a2369',1,'svg']]],
+  ['shinbashiiro_7',['shinbashiiro',['../namespacesvg.html#a0e622bba4eee0e6528a9261d6aa251d1ab81971f6241fe6688d83c58565ed883d',1,'svg']]],
+  ['shortest_5ffirst_8',['shortest_first',['../namespacesvg_1_1graph.html#aef3ccd02e58140cefa3d3146c66e0b7da705578a427ece44455144cfb4be2684b',1,'svg::graph']]],
+  ['skyblue_9',['skyblue',['../namespacesvg.html#a0e622bba4eee0e6528a9261d6aa251d1afcd8ce74755a0c1d53e1c4750251b22c',1,'svg']]],
+  ['slateblue_10',['slateblue',['../namespacesvg.html#a0e622bba4eee0e6528a9261d6aa251d1aad5f9b21b16873ccb3b71ffce804461d',1,'svg']]],
+  ['slim_11',['slim',['../namespacesvg.html#a5fd971345fcede00e46bd1bd8846f12dac6646e2ff255b75a314b7c346148c7a5',1,'svg']]],
+  ['small_12',['small',['../namespacesvg.html#adc7e4c413a77264dd28e589407293de8aeb5c1399a871211c7e7ed732d15e3a8b',1,'svg']]],
+  ['sohi_13',['sohi',['../namespacesvg.html#a0e622bba4eee0e6528a9261d6aa251d1ad722a7507f53970a5142930a0e552186',1,'svg']]],
+  ['source_5fover_14',['source_over',['../namespaceizzi_1_1guilloche.html#a4a7a2e58353a56f0e4944bb02eff9de4a860475318c6a049de5f7173dbe29077c',1,'izzi::guilloche::source_over'],['../namespaceizzi_1_1moire.html#a906917fbb3add22040bb08cbaf83e18da860475318c6a049de5f7173dbe29077c',1,'izzi::moire::source_over'],['../namespaceizzi_1_1surface__tension.html#a5c83572f5d7e3035a6630633ac37512aa860475318c6a049de5f7173dbe29077c',1,'izzi::surface_tension::source_over']]],
+  ['spiral_15',['spiral',['../namespacesvg_1_1hamonshu.html#a6ef0408fcb2cb24c37c7db772489a6deab95e8dab472386a075a7a12d23530c0a',1,'svg::hamonshu']]],
+  ['spray_16',['spray',['../namespacesvg_1_1hamonshu.html#a6ef0408fcb2cb24c37c7db772489a6deaca68639bef59f439d98e03e1c01f75c1',1,'svg::hamonshu']]],
+  ['springgreen_17',['springgreen',['../namespacesvg.html#a0e622bba4eee0e6528a9261d6aa251d1a5f6f0a07ae03bdbf4d6c26daf552dc87',1,'svg']]],
+  ['square_18',['square',['../namespacesvg.html#a7c30513e0ec17ac816f135b43687f7eaa2fc01ec765ec0cb3dcc559126de20b30',1,'svg']]],
+  ['standard_19',['standard',['../namespaceizzi_1_1guilloche.html#a6a5c09f98eef40a655633ad6db784c18ac00f0c4675b91fb8b918e4079a0b1bac',1,'izzi::guilloche']]],
+  ['start_20',['start',['../structsvg_1_1typography.html#a93bca2e6c4e32784def555d27487f886aea2b2676c28c0db26d39331a336c6b92',1,'svg::typography::start'],['../structsvg_1_1typography.html#ab466ab5a124304d826cea9c46a46d3b0aea2b2676c28c0db26d39331a336c6b92',1,'svg::typography::start']]],
+  ['steelblue_21',['steelblue',['../namespacesvg.html#a0e622bba4eee0e6528a9261d6aa251d1a53f33c2424d2c6b5652d277d57b2d2c4',1,'svg']]],
+  ['stop_22',['stop',['../group__elements.html#a7c19a4d45da1acb512fc1c69048253bfaef399b2d446bb37b7c32ad2cc1b6045b',1,'svg::gradient_element']]],
+  ['sunburst_23',['sunburst',['../namespacesvg.html#a7c30513e0ec17ac816f135b43687f7eaa286d3c33563f9115c9d28e8292842ed3',1,'svg']]],
+  ['svg_24',['svg',['../namespacesvg_1_1graph.html#afff91e2dbeaf237a2c0e441010812bd3aae8eb96df05e788ac39d88948eaf295c',1,'svg::graph::svg'],['../namespacesvg.html#ac8061963317131e6bd4d517ed84880bcaae8eb96df05e788ac39d88948eaf295c',1,'svg::svg']]]
+];

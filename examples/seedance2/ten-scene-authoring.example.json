@@ -1,0 +1,131 @@
+{
+  "$schema": "https://bdekoz.github.io/izzi.public/examples/seedance2/ten-scene-authoring.proposed.schema.json",
+  "schema_version": 1,
+  "project_id": "pacific-instrument-ten-scene",
+  "creative_direction": {
+    "summary": "A restrained scientific-documentary journey from a predawn Pacific horizon through ocean instruments, evidence, infrastructure, and a final return to the sea.",
+    "language": "en-US",
+    "global_constraints": [
+      "no watermark",
+      "no logo",
+      "no generated text after the exact title frame",
+      "no unsafe flashing",
+      "stable documentary camera movement",
+      "deep Pacific blue, warm white, and cyan accent palette"
+    ]
+  },
+  "defaults": {
+    "canvas": {
+      "width_px": 1280,
+      "height_px": 720,
+      "background": "#081820",
+      "safe_area_px": {
+        "top": 58,
+        "right": 64,
+        "bottom": 58,
+        "left": 64
+      }
+    },
+    "timeline": {
+      "frame_rate": {
+        "numerator": 30,
+        "denominator": 1
+      },
+      "frame_count": 300,
+      "duration_seconds": 10
+    },
+    "title_style": {
+      "editorial_family": "Atkinson Hyperlegible Next",
+      "weight": 800,
+      "size_px": 76,
+      "field_background": "#173A55",
+      "color": "#FCFBF7",
+      "accent_color": "#7FE1D1",
+      "hold_frames": 45
+    },
+    "transition_policy": {
+      "kind": "alternate-hamonshu-roulette",
+      "preset_version": 1,
+      "frame_count": 75,
+      "reduced_motion": "cross-fade"
+    },
+    "prompt_policy": "derive-and-review",
+    "delivery": {
+      "adapter": "seedance2ai-v1",
+      "quality_tier": "standard",
+      "channel": "standard",
+      "aspect_ratio": "16:9",
+      "duration": "10",
+      "resolution": "720p",
+      "generate_audio": false,
+      "fixed_lens": true
+    },
+    "output": {
+      "root": "build/pacific-instrument-ten-scene",
+      "clip_pattern": "{scene_id}-final.mkv",
+      "poster_pattern": "{scene_id}-poster.png",
+      "manifest": "storyboard-manifest.json"
+    }
+  },
+  "assets": [],
+  "scenes": [
+    {
+      "scene_id": "scene-01",
+      "title": "PACIFIC INSTRUMENT",
+      "description": "An exact Pacific Instrument title field opens the sequence before yielding to a wide predawn ocean horizon."
+    },
+    {
+      "scene_id": "scene-02",
+      "title": "SURFACE RECORD",
+      "description": "The camera descends toward a single scientific buoy whose sensors begin recording the changing surface conditions."
+    },
+    {
+      "scene_id": "scene-03",
+      "title": "WATER COLUMN",
+      "description": "A roulette aperture moves the view below the surface to reveal a vertical column of measured temperature and light."
+    },
+    {
+      "scene_id": "scene-04",
+      "title": "SUBSEA LINK",
+      "description": "Hamonshu lines become current traces around a seabed instrument package and a cable carrying measurements toward shore."
+    },
+    {
+      "scene_id": "scene-05",
+      "title": "SHORE STATION",
+      "description": "The cable reaches a quiet shore station where incoming observations resolve into restrained lines and numeric records."
+    },
+    {
+      "scene_id": "scene-06",
+      "title": "TEN MEASURES",
+      "description": "A roulette form organizes ten simultaneous measurements into a quiet radial instrument without implying unavailable precision."
+    },
+    {
+      "scene_id": "scene-07",
+      "title": "EVIDENCE FIELD",
+      "description": "Wave forms separate observed measurements from modeled intervals while retaining their explicit evidence status."
+    },
+    {
+      "scene_id": "scene-08",
+      "title": "PORT INTERFACE",
+      "description": "A mechanical roulette aperture opens from the evidence field onto a night port where ocean observations meet infrastructure."
+    },
+    {
+      "scene_id": "scene-09",
+      "title": "READING THE RECORD",
+      "description": "A human reader studies the record at a large table, connecting the visual instrument back to scientific documentation."
+    },
+    {
+      "scene_id": "scene-10",
+      "title": "THE RECORD REMAINS",
+      "description": "The sequence returns to the Pacific horizon and closes on an exact end title carried by a final restrained Hamonshu field."
+    }
+  ],
+  "assembly": {
+    "enabled": true,
+    "mode": "cut",
+    "expected_duration_seconds": 100,
+    "output": "build/pacific-instrument-ten-scene/pacific-instrument-100s.mkv",
+    "chapter_markers": true,
+    "audio_policy": "preserve"
+  }
+}

@@ -1,0 +1,538 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://bdekoz.github.io/izzi.public/examples/seedance2/ten-scene-authoring.proposed.schema.json",
+  "title": "Izzi ten-scene Seedance authoring project",
+  "description": "Human-facing version 1 contract for exactly ten described scenes. A separate resolve step creates the complete provider execution plan.",
+  "type": "object",
+  "required": [
+    "$schema",
+    "schema_version",
+    "project_id",
+    "creative_direction",
+    "defaults",
+    "assets",
+    "scenes",
+    "assembly"
+  ],
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "format": "uri"
+    },
+    "schema_version": {
+      "const": 1
+    },
+    "project_id": {
+      "$ref": "#/$defs/id"
+    },
+    "creative_direction": {
+      "$ref": "#/$defs/creative_direction"
+    },
+    "defaults": {
+      "$ref": "#/$defs/defaults"
+    },
+    "assets": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "$ref": "#/$defs/asset"
+      }
+    },
+    "scenes": {
+      "type": "array",
+      "minItems": 10,
+      "maxItems": 10,
+      "items": {
+        "$ref": "#/$defs/scene"
+      }
+    },
+    "assembly": {
+      "$ref": "#/$defs/assembly"
+    }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$",
+      "minLength": 3,
+      "maxLength": 80
+    },
+    "color": {
+      "type": "string",
+      "pattern": "^#[0-9A-Fa-f]{6}$"
+    },
+    "sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "relative_path": {
+      "type": "string",
+      "pattern": "^(?!/)(?!.*(?:^|/)\\.\\.(?:/|$)).+$",
+      "maxLength": 240
+    },
+    "creative_direction": {
+      "type": "object",
+      "required": [
+        "summary",
+        "language",
+        "global_constraints"
+      ],
+      "properties": {
+        "summary": {
+          "type": "string",
+          "minLength": 20,
+          "maxLength": 2000
+        },
+        "language": {
+          "type": "string",
+          "pattern": "^[A-Za-z]{2,3}(?:-[A-Za-z0-9]{2,8})*$"
+        },
+        "global_constraints": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 500
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "canvas": {
+      "type": "object",
+      "required": [
+        "width_px",
+        "height_px",
+        "background",
+        "safe_area_px"
+      ],
+      "properties": {
+        "width_px": {
+          "type": "integer",
+          "minimum": 320,
+          "maximum": 7680
+        },
+        "height_px": {
+          "type": "integer",
+          "minimum": 240,
+          "maximum": 4320
+        },
+        "background": {
+          "$ref": "#/$defs/color"
+        },
+        "safe_area_px": {
+          "type": "object",
+          "required": [
+            "top",
+            "right",
+            "bottom",
+            "left"
+          ],
+          "properties": {
+            "top": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 1024
+            },
+            "right": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 1024
+            },
+            "bottom": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 1024
+            },
+            "left": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 1024
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "timeline": {
+      "type": "object",
+      "required": [
+        "frame_rate",
+        "frame_count",
+        "duration_seconds"
+      ],
+      "properties": {
+        "frame_rate": {
+          "type": "object",
+          "required": [
+            "numerator",
+            "denominator"
+          ],
+          "properties": {
+            "numerator": {
+              "const": 30
+            },
+            "denominator": {
+              "const": 1
+            }
+          },
+          "additionalProperties": false
+        },
+        "frame_count": {
+          "const": 300
+        },
+        "duration_seconds": {
+          "const": 10
+        }
+      },
+      "additionalProperties": false
+    },
+    "title_style": {
+      "type": "object",
+      "required": [
+        "editorial_family",
+        "weight",
+        "size_px",
+        "field_background",
+        "color",
+        "accent_color",
+        "hold_frames"
+      ],
+      "properties": {
+        "editorial_family": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 120
+        },
+        "weight": {
+          "type": "integer",
+          "minimum": 100,
+          "maximum": 900,
+          "multipleOf": 100
+        },
+        "size_px": {
+          "type": "number",
+          "minimum": 12,
+          "maximum": 240
+        },
+        "field_background": {
+          "$ref": "#/$defs/color"
+        },
+        "color": {
+          "$ref": "#/$defs/color"
+        },
+        "accent_color": {
+          "$ref": "#/$defs/color"
+        },
+        "hold_frames": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 150
+        }
+      },
+      "additionalProperties": false
+    },
+    "transition_policy": {
+      "type": "object",
+      "required": [
+        "kind",
+        "preset_version",
+        "frame_count",
+        "reduced_motion"
+      ],
+      "properties": {
+        "kind": {
+          "enum": [
+            "alternate-hamonshu-roulette",
+            "hamonshu",
+            "roulette",
+            "fade",
+            "none"
+          ]
+        },
+        "preset_version": {
+          "const": 1
+        },
+        "frame_count": {
+          "type": "integer",
+          "minimum": 2,
+          "maximum": 150
+        },
+        "reduced_motion": {
+          "enum": [
+            "none",
+            "cross-fade",
+            "poster"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "delivery": {
+      "type": "object",
+      "required": [
+        "adapter",
+        "quality_tier",
+        "channel",
+        "aspect_ratio",
+        "duration",
+        "resolution",
+        "generate_audio",
+        "fixed_lens"
+      ],
+      "properties": {
+        "adapter": {
+          "const": "seedance2ai-v1"
+        },
+        "quality_tier": {
+          "enum": [
+            "mini",
+            "standard",
+            "pro"
+          ]
+        },
+        "channel": {
+          "enum": [
+            "standard",
+            "real",
+            "wild"
+          ]
+        },
+        "aspect_ratio": {
+          "enum": [
+            "1:1",
+            "21:9",
+            "4:3",
+            "3:4",
+            "16:9",
+            "9:16",
+            "adaptive"
+          ]
+        },
+        "duration": {
+          "const": "10"
+        },
+        "resolution": {
+          "enum": [
+            "720p",
+            "1080p",
+            "1080p-plus",
+            "4k"
+          ]
+        },
+        "generate_audio": {
+          "type": "boolean"
+        },
+        "fixed_lens": {
+          "type": "boolean"
+        }
+      },
+      "additionalProperties": false
+    },
+    "output": {
+      "type": "object",
+      "required": [
+        "root",
+        "clip_pattern",
+        "poster_pattern",
+        "manifest"
+      ],
+      "properties": {
+        "root": {
+          "$ref": "#/$defs/relative_path"
+        },
+        "clip_pattern": {
+          "const": "{scene_id}-final.mkv"
+        },
+        "poster_pattern": {
+          "const": "{scene_id}-poster.png"
+        },
+        "manifest": {
+          "const": "storyboard-manifest.json"
+        }
+      },
+      "additionalProperties": false
+    },
+    "defaults": {
+      "type": "object",
+      "required": [
+        "canvas",
+        "timeline",
+        "title_style",
+        "transition_policy",
+        "prompt_policy",
+        "delivery",
+        "output"
+      ],
+      "properties": {
+        "canvas": {
+          "$ref": "#/$defs/canvas"
+        },
+        "timeline": {
+          "$ref": "#/$defs/timeline"
+        },
+        "title_style": {
+          "$ref": "#/$defs/title_style"
+        },
+        "transition_policy": {
+          "$ref": "#/$defs/transition_policy"
+        },
+        "prompt_policy": {
+          "const": "derive-and-review"
+        },
+        "delivery": {
+          "$ref": "#/$defs/delivery"
+        },
+        "output": {
+          "$ref": "#/$defs/output"
+        }
+      },
+      "additionalProperties": false
+    },
+    "asset": {
+      "type": "object",
+      "required": [
+        "asset_id",
+        "kind",
+        "source",
+        "sha256"
+      ],
+      "properties": {
+        "asset_id": {
+          "$ref": "#/$defs/id"
+        },
+        "kind": {
+          "enum": [
+            "image",
+            "video",
+            "audio",
+            "font"
+          ]
+        },
+        "source": {
+          "$ref": "#/$defs/relative_path"
+        },
+        "sha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "description": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 500
+        }
+      },
+      "additionalProperties": false
+    },
+    "scene": {
+      "type": "object",
+      "required": [
+        "scene_id",
+        "title",
+        "description"
+      ],
+      "properties": {
+        "scene_id": {
+          "type": "string",
+          "pattern": "^scene-(?:0[1-9]|10)$"
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 120
+        },
+        "subtitle": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 240
+        },
+        "description": {
+          "type": "string",
+          "minLength": 20,
+          "maxLength": 1000
+        },
+        "prompt_override": {
+          "type": "string",
+          "minLength": 3,
+          "maxLength": 10000
+        },
+        "constraints": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 500
+          }
+        },
+        "reference_asset_ids": {
+          "type": "array",
+          "uniqueItems": true,
+          "maxItems": 12,
+          "items": {
+            "$ref": "#/$defs/id"
+          }
+        },
+        "seed_override": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 4294967295
+        },
+        "transition_override": {
+          "enum": [
+            "hamonshu",
+            "roulette",
+            "fade",
+            "none"
+          ]
+        },
+        "accessibility_hint": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 1000
+        }
+      },
+      "additionalProperties": false
+    },
+    "assembly": {
+      "type": "object",
+      "required": [
+        "enabled",
+        "mode",
+        "expected_duration_seconds",
+        "output",
+        "chapter_markers",
+        "audio_policy"
+      ],
+      "properties": {
+        "enabled": {
+          "type": "boolean"
+        },
+        "mode": {
+          "const": "cut"
+        },
+        "expected_duration_seconds": {
+          "const": 100
+        },
+        "output": {
+          "type": "string",
+          "pattern": "^(?!/)(?!.*(?:^|/)\\.\\.(?:/|$)).+\\.mkv$",
+          "maxLength": 240
+        },
+        "chapter_markers": {
+          "type": "boolean"
+        },
+        "audio_policy": {
+          "enum": [
+            "preserve",
+            "mute",
+            "normalize"
+          ]
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}

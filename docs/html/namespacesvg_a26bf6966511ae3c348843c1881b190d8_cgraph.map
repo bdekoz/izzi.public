@@ -1,0 +1,5 @@
+<map id="svg::escape_xml_text" name="svg::escape_xml_text">
+<area shape="rect" id="Node000001" title="Escape unescaped data for an XML text node." alt="" coords="5,5,143,29"/>
+<area shape="rect" id="Node000002" href="$namespacesvg_1_1detail.html#a0dabd749799988c1aae4474d923c6fd1" title="Escape unescaped character data at its XML serialization boundary. Existing entity spellings are data..." alt="" coords="191,5,342,29"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="143,14,175,14,175,20,143,20"/>
+</map>

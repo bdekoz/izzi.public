@@ -1,0 +1,12 @@
+<map id="izzi::moire::render_svg" name="izzi::moire::render_svg">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,96,150,120"/>
+<area shape="rect" id="Node000002" href="$namespaceizzi_1_1moire_1_1detail.html#a35ba76ed65d04731bb786d94973bd4ba" title=" " alt="" coords="206,5,322,42"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="105,93,206,47,208,51,107,98"/>
+<area shape="rect" id="Node000003" href="$namespaceizzi_1_1moire_1_1detail.html#a9d8bca75c32bc27878aac3316ebe2701" title=" " alt="" coords="378,89,494,126"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="150,103,198,102,330,102,363,103,362,108,330,108,198,108,150,108"/>
+<area shape="rect" id="Node000004" href="$namespaceizzi_1_1moire_1_1detail.html#ac725882c8118e0be9ca20c403dfa52a0" title=" " alt="" coords="206,117,322,154"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="150,116,191,122,190,127,149,121"/>
+<area shape="rect" id="Node000005" href="$namespaceizzi_1_1moire.html#ac81657810a7b565d38d4700ba0f02271" title=" " alt="" coords="198,178,330,202"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="103,118,199,164,214,170,212,175,197,169,101,122"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="322,124,362,117,363,122,323,129"/>
+</map>

@@ -1,0 +1,30 @@
+<map id="svg::make_path_polygon" name="svg::make_path_polygon">
+<area shape="rect" id="Node000001" title="Center an polygon at this point. radius 4 is pixels to draw out from center point...." alt="" coords="5,224,162,248"/>
+<area shape="rect" id="Node000002" href="$namespacesvg.html#ab44508c4aeca591141ebec50145b75cd" title="Angle in degrees." alt="" coords="216,71,364,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="100,221,249,115,252,119,103,226"/>
+<area shape="rect" id="Node000004" href="$namespacesvg.html#a302d3f13fef13ef823b99cfabcfac3ab" title="Draw path given serialized path data. Can be used to make pinstripes, ie top and bottom line layers...." alt="" coords="237,196,344,220"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="162,222,221,214,222,220,162,228"/>
+<area shape="rect" id="Node000013" href="$namespacesvg.html#a2c65de7707b8b7b1bca959a3a2bbba91" title="Make single path segment." alt="" coords="222,244,359,281"/>
+<area shape="poly" id="edge13_Node000001_Node000013" title=" " alt="" coords="162,243,206,249,206,254,162,248"/>
+<area shape="rect" id="Node000014" href="$namespacesvg.html#a46164d75fd5109e4ed8879abbacd5c11" title="Zero degrees is top, going clockwise (cw)." alt="" coords="210,305,371,329"/>
+<area shape="poly" id="edge14_Node000001_Node000014" title=" " alt="" coords="110,246,211,291,230,297,229,302,209,295,108,251"/>
+<area shape="rect" id="Node000003" href="$namespacesvg.html#aef05ac63d88a6102981d3faf37275297" title="Angle in radians." alt="" coords="419,5,567,42"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="349,68,419,45,421,50,350,73"/>
+<area shape="rect" id="Node000005" href="$group__elements.html#a807f3c30f2ace338ad10aaf230b47665" title="Either serialize immediately (as below), or create data structure that adds data to data_vec and then..." alt="" coords="428,67,559,103"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="305,193,353,156,418,113,427,108,430,113,420,118,356,160,308,198"/>
+<area shape="rect" id="Node000008" href="$group__elements.html#acafbdd950c6c2639c9d376c3eab696e5" title=" " alt="" coords="426,128,560,165"/>
+<area shape="poly" id="edge7_Node000004_Node000008" title=" " alt="" coords="331,193,415,167,416,172,333,198"/>
+<area shape="rect" id="Node000009" href="$group__elements.html#a238b38ca99a1cf6c2baf80c8e4338d99" title=" " alt="" coords="426,189,560,226"/>
+<area shape="poly" id="edge8_Node000004_Node000009" title=" " alt="" coords="344,205,411,205,411,210,344,210"/>
+<area shape="rect" id="Node000010" href="$namespacesvg.html#ac10e7d47d031b121174fc0e65232980f" title="Convert point_2t to string." alt="" coords="650,224,745,248"/>
+<area shape="poly" id="edge12_Node000004_Node000010" title=" " alt="" coords="333,217,419,236,533,241,634,238,634,243,533,247,419,241,332,223"/>
+<area shape="rect" id="Node000011" href="$group__elements.html#gaac30ae99fb1a2542688fa1ffb43cd8e1" title=" " alt="" coords="428,301,559,338"/>
+<area shape="poly" id="edge10_Node000004_Node000011" title=" " alt="" coords="346,217,372,229,388,242,398,255,407,267,421,280,438,291,435,296,417,284,403,271,393,258,384,246,370,234,343,222"/>
+<area shape="rect" id="Node000012" href="$group__elements.html#a6dbca7cef2cbc0c10aa44c44ae20b36e" title=" " alt="" coords="428,363,559,399"/>
+<area shape="poly" id="edge11_Node000004_Node000012" title=" " alt="" coords="346,214,373,230,386,245,393,260,398,290,403,319,409,334,421,349,424,351,420,355,417,352,405,337,398,321,393,291,388,262,381,248,369,234,343,219"/>
+<area shape="rect" id="Node000006" href="$namespacesvg.html#ac91e1a80dd6b2df85fd06a07320bc6ce" title="Escape unescaped data for a double&#45;quoted XML attribute value." alt="" coords="615,73,780,97"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="559,82,599,82,599,88,559,88"/>
+<area shape="rect" id="Node000007" href="$namespacesvg_1_1detail.html#a0dabd749799988c1aae4474d923c6fd1" title="Escape unescaped character data at its XML serialization boundary. Existing entity spellings are data..." alt="" coords="828,73,979,97"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="780,82,812,82,812,88,780,88"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="560,214,635,224,634,230,560,219"/>
+</map>

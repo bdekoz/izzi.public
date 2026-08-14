@@ -1,0 +1,9 @@
+<map id="svg::iframe_element::start_element" name="svg::iframe_element::start_element">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,33,139,70"/>
+<area shape="rect" id="Node000002" href="$group__elements.html#ad192becf9565fd5d15094d275e207481" title="Empty when the output buffer is." alt="" coords="202,5,336,42"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="139,40,186,33,187,38,139,45"/>
+<area shape="rect" id="Node000003" href="$namespacesvg.html#ac91e1a80dd6b2df85fd06a07320bc6ce" title="Escape unescaped data for a double&#45;quoted XML attribute value." alt="" coords="187,66,351,90"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="139,58,172,62,171,68,139,63"/>
+<area shape="rect" id="Node000004" href="$namespacesvg_1_1detail.html#a0dabd749799988c1aae4474d923c6fd1" title="Escape unescaped character data at its XML serialization boundary. Existing entity spellings are data..." alt="" coords="399,66,550,90"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="352,76,383,76,383,81,352,81"/>
+</map>

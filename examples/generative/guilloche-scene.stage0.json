@@ -1,0 +1,49 @@
+{
+  "$schema": "../../schemas/izzi.guilloche-scene-1.schema.json",
+  "schema_version": "izzi.guilloche-scene/1",
+  "scene_id": "duotone-111-radial-stage0",
+  "canvas": {
+    "width": 1080,
+    "height": 1920,
+    "background": "#02030A"
+  },
+  "content": {
+    "kind": "word-number",
+    "word": "duotone",
+    "number": "111",
+    "accessible_label": "duotone 111"
+  },
+  "treatment": {
+    "kind": "floral-cycloid",
+    "seed": 111,
+    "floral_group_range": [1, 3],
+    "petal_range": [5, 11],
+    "cycloid_amplitude": 12,
+    "density": "experimental"
+  },
+  "layout": {
+    "kind": "radial",
+    "symmetry_order": 6,
+    "center": [540, 960],
+    "radius": 360
+  },
+  "palette": {
+    "colors": ["#F8F8F2", "#00D7FF", "#FF3B8D"],
+    "stroke_width": 1.2,
+    "opacity": 0.78,
+    "blend": "screen"
+  },
+  "budget": {
+    "maximum_paths": 20000,
+    "maximum_points": 2000000,
+    "maximum_svg_bytes": 67108864
+  },
+  "review": {
+    "profile": "experimental",
+    "human_acceptance": "PENDING"
+  },
+  "extensions": {
+    "devastation.pacific:project": "duotone-111",
+    "izzi.review:stage": 0
+  }
+}

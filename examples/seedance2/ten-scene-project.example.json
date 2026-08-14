@@ -1,0 +1,518 @@
+{
+  "$schema": "https://bdekoz.github.io/izzi.public/examples/seedance2/ten-scene-project.proposed.schema.json",
+  "schema_version": 1,
+  "project_id": "pacific-instrument-ten-scene",
+  "defaults": {
+    "canvas": {
+      "width_px": 1280,
+      "height_px": 720,
+      "background": "#081820",
+      "safe_area_px": {
+        "top": 58,
+        "right": 64,
+        "bottom": 58,
+        "left": 64
+      }
+    },
+    "timeline": {
+      "frame_rate": {
+        "numerator": 30,
+        "denominator": 1
+      },
+      "frame_count": 300,
+      "duration_seconds": 10
+    },
+    "typography": {
+      "editorial_family": "Atkinson Hyperlegible Next",
+      "data_family": "Atkinson Hyperlegible Mono",
+      "weight": 800,
+      "size_px": 76
+    },
+    "delivery": {
+      "adapter": "seedance2ai-v1",
+      "submit": false,
+      "quality_tier": "standard",
+      "channel": "standard",
+      "aspect_ratio": "16:9",
+      "duration": "10",
+      "resolution": "720p",
+      "generate_audio": false,
+      "fixed_lens": true
+    },
+    "output": {
+      "root": "build/pacific-instrument-ten-scene",
+      "clip_pattern": "{scene_id}-final.mkv",
+      "poster_pattern": "{scene_id}-poster.png",
+      "manifest": "storyboard-manifest.json"
+    }
+  },
+  "assets": [],
+  "scenes": [
+    {
+      "scene_id": "scene-01",
+      "description": "An exact Pacific Instrument title field opens the sequence before yielding to a wide predawn ocean horizon.",
+      "prompt": "A wide predawn Pacific Ocean horizon, almost still water, a narrow cyan line of first light, restrained documentary cinematography, slow forward camera drift, deep blue and warm-white palette.",
+      "constraints": [
+        "no watermark",
+        "no logo",
+        "no subtitles after the supplied opening frame",
+        "stable horizon",
+        "no unsafe flashing"
+      ],
+      "reference_asset_ids": [],
+      "seed": 1001,
+      "title_frame": {
+        "text": "PACIFIC INSTRUMENT",
+        "subtitle": "SCENE 01 / SIGNAL AT FIRST LIGHT",
+        "accessible_name": "Pacific Instrument opening title",
+        "description": "Warm-white title and cyan rule on a deep Pacific blue field.",
+        "field_background": "#173A55",
+        "color": "#FCFBF7",
+        "accent_color": "#7FE1D1",
+        "hold_frames": 45,
+        "use_as_provider_start_frame": true
+      },
+      "transition_in": {
+        "kind": "hamonshu",
+        "mode": "mask-reveal",
+        "start_frame": 45,
+        "frame_count": 75,
+        "reduced_motion": "cross-fade",
+        "hamonshu": {
+          "pattern": {
+            "first_page": 1,
+            "last_page": 1,
+            "motif": 1
+          },
+          "density": 1.0,
+          "curvature": 1.3,
+          "phase_radians": 0.0,
+          "rotation_radians": 0.0,
+          "reflected": false,
+          "samples_per_curve": 48
+        }
+      },
+      "accessibility": {
+        "accessible_name": "Predawn Pacific horizon",
+        "long_description": "A nearly black-blue ocean meets a level horizon. A thin cyan dawn line grows gradually without rapid luminance changes.",
+        "motion_note": "Slow forward drift and a gradual wave-mask reveal.",
+        "flash_policy": "no-unsafe-flashing"
+      }
+    },
+    {
+      "scene_id": "scene-02",
+      "description": "The camera descends toward a single scientific buoy whose sensors begin recording the changing surface conditions.",
+      "prompt": "A solitary scientific ocean buoy at blue hour, visible instruments and antenna, realistic water movement, slow descending camera, quiet technical documentary style, no people.",
+      "constraints": [
+        "no watermark",
+        "no logo",
+        "no subtitles",
+        "physically plausible buoy motion",
+        "no unsafe flashing"
+      ],
+      "reference_asset_ids": [],
+      "seed": 1002,
+      "title_frame": {
+        "text": "SURFACE RECORD",
+        "subtitle": "SCENE 02 / BUOY AND WEATHER",
+        "accessible_name": "Surface Record scene title",
+        "description": "Dark title on warm white with a deep-blue structural rule.",
+        "field_background": "#FCFBF7",
+        "color": "#14171A",
+        "accent_color": "#173A55",
+        "hold_frames": 30,
+        "use_as_provider_start_frame": false
+      },
+      "transition_in": {
+        "kind": "fade",
+        "mode": "cross-fade",
+        "start_frame": 30,
+        "frame_count": 45,
+        "reduced_motion": "cross-fade"
+      },
+      "accessibility": {
+        "accessible_name": "Scientific buoy recording ocean conditions",
+        "long_description": "A yellow scientific buoy rises and falls gently while small instrument housings and an antenna remain clearly visible.",
+        "motion_note": "Gentle water movement and a slow camera descent.",
+        "flash_policy": "no-unsafe-flashing"
+      }
+    },
+    {
+      "scene_id": "scene-03",
+      "description": "A roulette aperture moves the view below the surface to reveal a vertical column of measured temperature and light.",
+      "prompt": "Underwater descent beneath a scientific buoy, clear vertical water column, suspended particles, sunlight attenuating with depth, calm camera, scientifically plausible color shift from cyan to deep blue.",
+      "constraints": [
+        "no watermark",
+        "no logo",
+        "no subtitles",
+        "no fantasy sea creatures",
+        "no unsafe flashing"
+      ],
+      "reference_asset_ids": [],
+      "seed": 1003,
+      "title_frame": {
+        "text": "WATER COLUMN",
+        "subtitle": "SCENE 03 / LIGHT AND TEMPERATURE",
+        "accessible_name": "Water Column scene title",
+        "description": "Warm-white title on deep blue with a red roulette accent.",
+        "field_background": "#173A55",
+        "color": "#FCFBF7",
+        "accent_color": "#D33F49",
+        "hold_frames": 30,
+        "use_as_provider_start_frame": false
+      },
+      "transition_in": {
+        "kind": "roulette",
+        "mode": "iris-mask",
+        "start_frame": 30,
+        "frame_count": 75,
+        "reduced_motion": "cross-fade",
+        "roulette": {
+          "kind": "hypotrochoid",
+          "fixed_radius": 5,
+          "rolling_radius": 2,
+          "point_distance": 2.5,
+          "phase_radians": 0.0,
+          "samples_per_turn": 192,
+          "origin": "center"
+        }
+      },
+      "accessibility": {
+        "accessible_name": "Descent through an ocean water column",
+        "long_description": "The view descends from bright cyan surface water into darker blue depth while particles drift slowly past the camera.",
+        "motion_note": "Expanding roulette iris followed by a steady downward camera path.",
+        "flash_policy": "no-unsafe-flashing"
+      }
+    },
+    {
+      "scene_id": "scene-04",
+      "description": "Hamonshu lines become current traces around a seabed instrument package and a cable carrying measurements toward shore.",
+      "prompt": "A seabed scientific instrument package beside a fiber-optic cable, low-angle underwater documentary view, slow current moving fine sediment, precise engineered forms, restrained blue-gray palette.",
+      "constraints": [
+        "no watermark",
+        "no logo",
+        "no subtitles",
+        "do not deform the instrument housing",
+        "no unsafe flashing"
+      ],
+      "reference_asset_ids": [],
+      "seed": 1004,
+      "title_frame": {
+        "text": "SUBSEA LINK",
+        "subtitle": "SCENE 04 / SENSOR TO SHORE",
+        "accessible_name": "Subsea Link scene title",
+        "description": "Warm-white title and cyan accent over a dark ocean field.",
+        "field_background": "#081820",
+        "color": "#FCFBF7",
+        "accent_color": "#7FE1D1",
+        "hold_frames": 30,
+        "use_as_provider_start_frame": false
+      },
+      "transition_in": {
+        "kind": "hamonshu",
+        "mode": "wave-wipe",
+        "start_frame": 30,
+        "frame_count": 75,
+        "reduced_motion": "cross-fade",
+        "hamonshu": {
+          "pattern": {
+            "first_page": 3,
+            "last_page": 3,
+            "motif": 1
+          },
+          "density": 1.1,
+          "curvature": 0.9,
+          "phase_radians": 0.2,
+          "rotation_radians": 0.0,
+          "reflected": false,
+          "samples_per_curve": 48
+        }
+      },
+      "accessibility": {
+        "accessible_name": "Seabed sensor and communications cable",
+        "long_description": "A rectangular instrument package sits on the seabed beside a cable that exits the frame toward shore. Fine sediment moves slowly in one direction.",
+        "motion_note": "A directional wave wipe and slow lateral current.",
+        "flash_policy": "no-unsafe-flashing"
+      }
+    },
+    {
+      "scene_id": "scene-05",
+      "description": "The cable reaches a quiet shore station where incoming observations resolve into restrained lines and numeric records.",
+      "prompt": "Interior of a small coastal monitoring station at dawn, cable termination and scientific instruments, screens showing restrained line traces without legible fabricated data, slow lateral camera move, editorial technical atmosphere.",
+      "constraints": [
+        "no watermark",
+        "no logo",
+        "no generated words or fake labels on screens",
+        "no unsafe flashing"
+      ],
+      "reference_asset_ids": [],
+      "seed": 1005,
+      "title_frame": {
+        "text": "SHORE STATION",
+        "subtitle": "SCENE 05 / OBSERVATIONS ARRIVE",
+        "accessible_name": "Shore Station scene title",
+        "description": "Near-black title on warm white with a Pacific blue rule.",
+        "field_background": "#FCFBF7",
+        "color": "#14171A",
+        "accent_color": "#173A55",
+        "hold_frames": 30,
+        "use_as_provider_start_frame": false
+      },
+      "transition_in": {
+        "kind": "fade",
+        "mode": "cross-fade",
+        "start_frame": 30,
+        "frame_count": 45,
+        "reduced_motion": "cross-fade"
+      },
+      "accessibility": {
+        "accessible_name": "Coastal scientific monitoring station",
+        "long_description": "A compact room contains cable termination hardware, instruments, and screens with unlabeled line traces. Daylight enters from one side.",
+        "motion_note": "Slow lateral camera movement with a cross-fade entry.",
+        "flash_policy": "no-unsafe-flashing"
+      }
+    },
+    {
+      "scene_id": "scene-06",
+      "description": "A roulette form organizes ten simultaneous measurements into a quiet radial instrument without implying unavailable precision.",
+      "prompt": "Abstract scientific instrument made from ten radial measurement traces, flat editorial motion graphics, warm-white field, near-black marks, one restrained red accent, precise and minimal, slow rotation only.",
+      "constraints": [
+        "no watermark",
+        "no logo",
+        "no fabricated numbers",
+        "no decorative dashboard cards",
+        "no unsafe flashing"
+      ],
+      "reference_asset_ids": [],
+      "seed": 1006,
+      "title_frame": {
+        "text": "TEN MEASURES",
+        "subtitle": "SCENE 06 / ONE SHARED CLOCK",
+        "accessible_name": "Ten Measures scene title",
+        "description": "Near-black title on warm white with a restrained red accent.",
+        "field_background": "#FCFBF7",
+        "color": "#14171A",
+        "accent_color": "#D33F49",
+        "hold_frames": 30,
+        "use_as_provider_start_frame": false
+      },
+      "transition_in": {
+        "kind": "roulette",
+        "mode": "radial-wipe",
+        "start_frame": 30,
+        "frame_count": 75,
+        "reduced_motion": "poster",
+        "roulette": {
+          "kind": "epitrochoid",
+          "fixed_radius": 7,
+          "rolling_radius": 3,
+          "point_distance": 4.0,
+          "phase_radians": 0.0,
+          "samples_per_turn": 192,
+          "origin": "center"
+        }
+      },
+      "accessibility": {
+        "accessible_name": "Abstract radial instrument with ten traces",
+        "long_description": "Ten labeled-by-position traces share one circular frame. The graphic contains no numeric claims and uses line form as well as color.",
+        "motion_note": "One slow rotation; the reduced-motion form is a static poster.",
+        "flash_policy": "no-unsafe-flashing"
+      }
+    },
+    {
+      "scene_id": "scene-07",
+      "description": "Wave forms separate observed measurements from modeled intervals while retaining their explicit evidence status.",
+      "prompt": "Editorial scientific motion graphic comparing observed measurements with a modeled uncertainty band, deep Pacific blue field, warm-white lines, cyan patterned interval, direct labels represented as blank layout zones for exact post-production typography.",
+      "constraints": [
+        "no watermark",
+        "no logo",
+        "no generated text",
+        "do not imply exact values",
+        "no unsafe flashing"
+      ],
+      "reference_asset_ids": [],
+      "seed": 1007,
+      "title_frame": {
+        "text": "EVIDENCE FIELD",
+        "subtitle": "SCENE 07 / OBSERVED AND MODELED",
+        "accessible_name": "Evidence Field scene title",
+        "description": "Warm-white title over deep blue with cyan Hamonshu linework.",
+        "field_background": "#173A55",
+        "color": "#FCFBF7",
+        "accent_color": "#7FE1D1",
+        "hold_frames": 30,
+        "use_as_provider_start_frame": false
+      },
+      "transition_in": {
+        "kind": "hamonshu",
+        "mode": "stroke-reveal",
+        "start_frame": 30,
+        "frame_count": 90,
+        "reduced_motion": "poster",
+        "hamonshu": {
+          "pattern": {
+            "first_page": 9,
+            "last_page": 9,
+            "motif": 1
+          },
+          "density": 0.9,
+          "curvature": 1.0,
+          "phase_radians": 0.0,
+          "rotation_radians": 0.0,
+          "reflected": true,
+          "samples_per_curve": 48
+        }
+      },
+      "accessibility": {
+        "accessible_name": "Observed line and modeled interval",
+        "long_description": "A solid line represents observed evidence and a patterned band represents a modeled interval. Exact labels and values are reserved for deterministic post-production.",
+        "motion_note": "Slow stroke reveal; a static poster is available.",
+        "flash_policy": "no-unsafe-flashing"
+      }
+    },
+    {
+      "scene_id": "scene-08",
+      "description": "A mechanical roulette aperture opens from the evidence field onto a night port where ocean observations meet infrastructure.",
+      "prompt": "Night view of a working Pacific port from across the water, restrained industrial lights, cranes and cable infrastructure, calm long-lens documentary composition, slow aperture opening and then a locked camera.",
+      "constraints": [
+        "no watermark",
+        "no logo",
+        "no readable corporate signage",
+        "no rapid light flicker",
+        "no unsafe flashing"
+      ],
+      "reference_asset_ids": [],
+      "seed": 1008,
+      "title_frame": {
+        "text": "PORT INTERFACE",
+        "subtitle": "SCENE 08 / WATER MEETS INFRASTRUCTURE",
+        "accessible_name": "Port Interface scene title",
+        "description": "Warm-white title on near-black with a red roulette accent.",
+        "field_background": "#14171A",
+        "color": "#FCFBF7",
+        "accent_color": "#D33F49",
+        "hold_frames": 30,
+        "use_as_provider_start_frame": false
+      },
+      "transition_in": {
+        "kind": "roulette",
+        "mode": "iris-mask",
+        "start_frame": 30,
+        "frame_count": 75,
+        "reduced_motion": "cross-fade",
+        "roulette": {
+          "kind": "hypotrochoid",
+          "fixed_radius": 8,
+          "rolling_radius": 3,
+          "point_distance": 4.5,
+          "phase_radians": 0.3,
+          "samples_per_turn": 192,
+          "origin": "center"
+        }
+      },
+      "accessibility": {
+        "accessible_name": "Pacific port at night",
+        "long_description": "Cranes and cable infrastructure form a dark silhouette across calm water. Industrial lights remain steady and restrained.",
+        "motion_note": "A slow roulette iris opens onto a locked long-lens view.",
+        "flash_policy": "no-unsafe-flashing"
+      }
+    },
+    {
+      "scene_id": "scene-09",
+      "description": "A human reader studies the record at a large table, connecting the visual instrument back to scientific documentation.",
+      "prompt": "A researcher at a large worktable reviewing printed ocean charts and one wide monitor, side view, Atkinson-like high-legibility typography zones left blank for exact post-production text, soft daylight, quiet archival workspace.",
+      "constraints": [
+        "no watermark",
+        "no logo",
+        "no generated readable text",
+        "natural restrained human motion",
+        "no unsafe flashing"
+      ],
+      "reference_asset_ids": [],
+      "seed": 1009,
+      "title_frame": {
+        "text": "READING THE RECORD",
+        "subtitle": "SCENE 09 / VISUAL THINKING",
+        "accessible_name": "Reading the Record scene title",
+        "description": "Near-black title on warm white with a deep Pacific blue rule.",
+        "field_background": "#FCFBF7",
+        "color": "#14171A",
+        "accent_color": "#173A55",
+        "hold_frames": 30,
+        "use_as_provider_start_frame": false
+      },
+      "transition_in": {
+        "kind": "fade",
+        "mode": "cross-fade",
+        "start_frame": 30,
+        "frame_count": 45,
+        "reduced_motion": "cross-fade"
+      },
+      "accessibility": {
+        "accessible_name": "Researcher reading ocean charts",
+        "long_description": "A seated researcher compares printed charts with a wide monitor in a softly lit archival workspace. No private or readable source data is shown.",
+        "motion_note": "Subtle hand and head movement with a slow cross-fade.",
+        "flash_policy": "no-unsafe-flashing"
+      }
+    },
+    {
+      "scene_id": "scene-10",
+      "description": "The sequence returns to the Pacific horizon and closes on an exact end title carried by a final restrained Hamonshu field.",
+      "prompt": "Return to a wide Pacific horizon after sunrise, calm water and a pale warm sky, locked documentary camera, enough negative space for an exact closing title added in post-production.",
+      "constraints": [
+        "no watermark",
+        "no logo",
+        "no generated subtitles",
+        "stable horizon",
+        "no unsafe flashing"
+      ],
+      "reference_asset_ids": [],
+      "seed": 1010,
+      "title_frame": {
+        "text": "THE RECORD REMAINS",
+        "subtitle": "SCENE 10 / END FIELD",
+        "accessible_name": "The Record Remains closing title",
+        "description": "Warm-white closing title and cyan rule over a deep Pacific blue field.",
+        "field_background": "#173A55",
+        "color": "#FCFBF7",
+        "accent_color": "#7FE1D1",
+        "hold_frames": 60,
+        "use_as_provider_start_frame": true
+      },
+      "transition_in": {
+        "kind": "hamonshu",
+        "mode": "mask-reveal",
+        "start_frame": 30,
+        "frame_count": 90,
+        "reduced_motion": "cross-fade",
+        "hamonshu": {
+          "pattern": {
+            "first_page": 17,
+            "last_page": 17,
+            "motif": 3
+          },
+          "density": 0.8,
+          "curvature": 1.1,
+          "phase_radians": 0.0,
+          "rotation_radians": 0.0,
+          "reflected": false,
+          "samples_per_curve": 48
+        }
+      },
+      "accessibility": {
+        "accessible_name": "Sunrise Pacific horizon and closing title",
+        "long_description": "A calm sunrise horizon leaves open sky for a deterministic closing title. A restrained wave field resolves into the exact words The Record Remains.",
+        "motion_note": "Slow wave reveal with no rapid luminance change.",
+        "flash_policy": "no-unsafe-flashing"
+      }
+    }
+  ],
+  "assembly": {
+    "enabled": true,
+    "mode": "cut",
+    "expected_duration_seconds": 100,
+    "output": "build/pacific-instrument-ten-scene/pacific-instrument-100s.mkv",
+    "chapter_markers": true,
+    "audio_policy": "preserve"
+  }
+}

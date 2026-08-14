@@ -1,0 +1,125 @@
+{
+  "$schema": "../../schemas/izzi.here-lies-trouble-motion-canary.schema.json",
+  "schema_version": "izzi.here-lies-trouble-motion-canary/1",
+  "canary_id": "hlt-frogtown-v2-motion-canary-02",
+  "project_id": "here-lies-trouble",
+  "episode_index": 1,
+  "location_slug": "frogtown",
+  "artifact_version": "v2",
+  "status": "SPECIFICATION-AUTHORIZED-PENDING-SUBMISSION",
+  "sources": {
+    "episode_config": {
+      "path": "examples/seedance2/here-lies-trouble-episode-01-frogtown.v2.json",
+      "sha256": "a4de4ca5947771bb07c39d21d720a6c7d1548fe2d706838050e1259c5047fe5f"
+    },
+    "accepted_visual": {
+      "path": "outputs/review/feedback/visual/here-lies-trouble/neon-addict-stage-01/style-frames/sample-01-frogtown-source.png",
+      "sha256": "78b79a6f1cb67162293c7ff901ca53d90a4d7c44d179b649d4d9103b95b86d42"
+    }
+  },
+  "profile": {
+    "width": 720,
+    "height": 1280,
+    "duration_seconds": 5,
+    "audio": false,
+    "generated_text": false
+  },
+  "cast": ["unicorn", "albatross", "dog", "cat"],
+  "motion_test": "CONVERSATION-AND-LISTENER-REACTIONS",
+  "scene": {
+    "frogtown_anchor": "river overlook beside the Frogtown bicycle path with water and angular bridge shadow",
+    "starting_composition": "the four animals walk slowly as a loose conversational cluster, each face and silhouette readable",
+    "required_action": "one animal makes a clear speaking gesture while each of the other three gives a different head, ear, wing, tail, or posture reaction; the active role is motion mechanics only and not voice casting",
+    "ending_composition": "a second animal begins to answer while the group resumes a shared walking rhythm",
+    "camera": "stable three-quarter group view with only enough tracking to keep all four animals visible",
+    "environmental_motion": "small water reflections and shifting bridge shadow continue behind the conversational action"
+  },
+  "motion_aesthetic_seeds": [
+    { "seed_id": "br-final-cut-cut-1", "role": "camera-reference" },
+    { "seed_id": "br-final-cut-cut-2", "role": "gesture-accent-reference" }
+  ],
+  "motion_grammar": {
+    "camera": [
+      "stable near-locked three-quarter view",
+      "only enough tracking to keep the group visible"
+    ],
+    "subject_motion": [
+      "one deliberate gesture or reaction per beat",
+      "distinct listener responses rather than unison movement",
+      "no continuous whole-frame motion"
+    ],
+    "environmental_motion": [
+      "small water reflections and shifting bridge shadow between beats"
+    ],
+    "tempo": [
+      "held stillness between beats",
+      "one sharp restrained accent per beat"
+    ]
+  },
+  "cost_gate": {
+    "estimated_credits_per_job": 60,
+    "maximum_credits_per_job": 90,
+    "maximum_total_credits": 270
+  },
+  "continuity_invariants": [
+    "exactly one unicorn, one albatross, one dog, and one cat",
+    "single readable unicorn horn",
+    "long-winged and long-beaked albatross silhouette",
+    "asymmetric dog-ear silhouette",
+    "cat flank circle and high curved tail",
+    "restrained Neon Addict markings",
+    "speaker gesture does not imply a final voice-to-animal assignment",
+    "all three listeners visibly react in different ways",
+    "no exact lip sync requirement",
+    "no species swaps, duplication, disappearance, or extra limbs",
+    "Frogtown and Los Angeles River specificity",
+    "no spike-shaped projection on any animal back or body; cat back and high curved tail stay clean and continuous"
+  ],
+  "prompt": "Animate the supplied accepted Frogtown keyframe as an original two-dimensional conversational scene. Keep exactly one unicorn, one albatross, one dog, and one cat, preserving their silhouettes, proportions, and restrained neon markings. At a Los Angeles River overlook in Frogtown, the four move slowly together. One animal makes a readable but economical speaking gesture with head and body orientation; this is only a motion test and does not assign a recorded voice. The unicorn changes weight and inclines its horn, the albatross answers with a wing-edge and beak turn, the dog's uneven ears and posture react, and the cat pauses with a tail and flank response. By the end, a different animal starts to answer and the group resumes walking. Use turn-aware gesture and listener reactions without exact lip sync. Preserve bold off-white and black fields, sparse neon color, tactile paper and ink texture, angular bridge shadow, large negative space, and location-specific river geometry. No text and no audio.",
+  "negative_prompt": [
+    "frozen characters",
+    "camera-only motion",
+    "four synchronized identical reactions",
+    "exaggerated mouth flapping",
+    "final voice casting implication",
+    "missing animal",
+    "duplicate animal",
+    "species swap",
+    "extra limbs",
+    "melting faces",
+    "identity drift",
+    "generic neon city",
+    "photorealism",
+    "embedded text",
+    "captions",
+    "logos",
+    "pink spike on cat body",
+    "spike-shaped projection on any animal back",
+    "extra spike-shaped color artifact"
+  ],
+  "review_questions": [
+    "Is the active-speaker gesture readable without exact lip sync?",
+    "Do the three listeners react distinctly rather than moving in unison?",
+    "Does the group remain capable of walking while conversing?",
+    "Are all four identities stable for the full five seconds?",
+    "Does the Frogtown overlook remain recognizable and compositionally useful?"
+  ],
+  "provider_adapter": {
+    "provider": "seedance2ai.io",
+    "model": "seedance2",
+    "seed": 2026081202,
+    "requested_quality": "720p-preview",
+    "submission_status": "AUTHORIZED"
+  },
+  "intended_output": "outputs/review/feedback/visual/here-lies-trouble/neon-addict-stage-01/episode-01-local-trial/motion-canaries/v2/here-lies-trouble-episode-01-frogtown.v2.motion-canary-02.mkv",
+  "authority": {
+    "local_specification_authorized": true,
+    "motion_generation_authorized": true,
+    "provider_submission_authorized": true,
+    "additional_spending_authorized": true,
+    "audio_transfer_authorized": false,
+    "publication_authorized": true,
+    "baseline_promotion_authorized": false,
+    "training_conversion_transfer_authorized": false
+  }
+}

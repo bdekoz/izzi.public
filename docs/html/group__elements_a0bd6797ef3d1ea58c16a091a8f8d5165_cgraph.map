@@ -1,0 +1,17 @@
+<map id="svg::group_element::start_element" name="svg::group_element::start_element">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,89,135,126"/>
+<area shape="rect" id="Node000002" href="$group__elements.html#a238b38ca99a1cf6c2baf80c8e4338d99" title=" " alt="" coords="183,5,316,42"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="110,86,194,46,196,51,112,91"/>
+<area shape="rect" id="Node000003" href="$namespacesvg.html#ac10e7d47d031b121174fc0e65232980f" title="Convert point_2t to string." alt="" coords="396,40,492,63"/>
+<area shape="poly" id="edge8_Node000001_Node000003" title=" " alt="" coords="135,95,381,58,382,64,136,101"/>
+<area shape="rect" id="Node000004" href="$group__elements.html#a53d72a7ff728ad1d4d027254530bcf3d" title=" " alt="" coords="183,117,316,154"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="136,115,168,120,167,126,135,120"/>
+<area shape="rect" id="Node000006" href="$namespacesvg.html#ac91e1a80dd6b2df85fd06a07320bc6ce" title="Escape unescaped data for a double&#45;quoted XML attribute value." alt="" coords="572,152,737,176"/>
+<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="100,124,138,146,183,164,281,180,381,185,475,182,557,175,557,181,476,188,381,191,281,186,182,169,136,151,97,129"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="317,31,382,40,381,45,316,36"/>
+<area shape="rect" id="Node000005" href="$group__elements.html#ae50258851ebbaf08c7eebc3fbdbf1ac8" title="Common transforms include rotate(180)" alt="" coords="364,117,524,154"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="316,133,348,133,348,138,316,138"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="525,144,557,148,556,153,524,149"/>
+<area shape="rect" id="Node000007" href="$namespacesvg_1_1detail.html#a0dabd749799988c1aae4474d923c6fd1" title="Escape unescaped character data at its XML serialization boundary. Existing entity spellings are data..." alt="" coords="785,152,936,176"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="737,161,769,161,769,166,737,166"/>
+</map>

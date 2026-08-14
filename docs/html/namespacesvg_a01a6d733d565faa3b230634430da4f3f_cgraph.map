@@ -1,0 +1,23 @@
+<map id="svg::dot_grid_seq" name="svg::dot_grid_seq">
+<area shape="rect" id="Node000001" title="Randomly create grid of [maxwidth] x [maxheight] grid, and fill with dots." alt="" coords="5,134,123,158"/>
+<area shape="rect" id="Node000002" href="$group__elements.html#a519382631540ecedee961bfb53e9ae87" title=" " alt="" coords="181,5,308,42"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="75,132,115,94,169,52,178,47,180,52,172,57,118,98,79,136"/>
+<area shape="rect" id="Node000007" href="$group__elements.html#a238b38ca99a1cf6c2baf80c8e4338d99" title=" " alt="" coords="178,67,311,103"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="100,131,173,106,175,111,102,136"/>
+<area shape="rect" id="Node000009" href="$group__elements.html#ga98a1538c46e39122d8199c12b3a57b5d" title=" " alt="" coords="181,128,308,165"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="123,144,165,144,165,149,123,149"/>
+<area shape="rect" id="Node000010" href="$group__elements.html#a793cb6b40b2aea335b11f14fd327cde8" title=" " alt="" coords="181,189,308,226"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="102,156,175,181,173,186,100,161"/>
+<area shape="rect" id="Node000011" href="$group__elements.html#ad893ef9c13a15464c96d8a85c08af30f" title=" " alt="" coords="171,250,318,274"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="78,157,117,196,172,236,184,242,181,247,169,241,114,200,75,161"/>
+<area shape="rect" id="Node000003" href="$group__elements.html#a53d72a7ff728ad1d4d027254530bcf3d" title=" " alt="" coords="366,5,499,42"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="309,21,350,21,350,26,309,26"/>
+<area shape="rect" id="Node000004" href="$group__elements.html#ae50258851ebbaf08c7eebc3fbdbf1ac8" title="Common transforms include rotate(180)" alt="" coords="547,5,708,42"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="500,21,532,21,532,26,500,26"/>
+<area shape="rect" id="Node000005" href="$namespacesvg.html#ac91e1a80dd6b2df85fd06a07320bc6ce" title="Escape unescaped data for a double&#45;quoted XML attribute value." alt="" coords="756,12,920,36"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="708,21,740,21,740,26,708,26"/>
+<area shape="rect" id="Node000006" href="$namespacesvg_1_1detail.html#a0dabd749799988c1aae4474d923c6fd1" title="Escape unescaped character data at its XML serialization boundary. Existing entity spellings are data..." alt="" coords="968,12,1119,36"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="921,21,952,21,952,26,921,26"/>
+<area shape="rect" id="Node000008" href="$namespacesvg.html#ac10e7d47d031b121174fc0e65232980f" title="Convert point_2t to string." alt="" coords="385,73,480,97"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="312,82,370,82,370,88,312,88"/>
+</map>

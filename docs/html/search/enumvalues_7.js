@@ -1,0 +1,28 @@
+var searchData=
+[
+  ['ginshu_0',['ginshu',['../namespacesvg.html#a0e622bba4eee0e6528a9261d6aa251d1a84f5b548ef752699167012b275e54132',1,'svg']]],
+  ['glitch_1',['glitch',['../namespaceizzi_1_1moire.html#ae97136016d3efe2477f1004bd62d1231a9aea99aed2f8fd9e0648ec445062673b',1,'izzi::moire::glitch'],['../namespaceizzi_1_1surface__tension.html#a61d70fb91980bd6b1b8048fc055426bca9aea99aed2f8fd9e0648ec445062673b',1,'izzi::surface_tension::glitch']]],
+  ['glyph_2',['glyph',['../namespacesvg.html#ac8061963317131e6bd4d517ed84880bcad0df69451cb647905e5af2fddaf910b3',1,'svg']]],
+  ['gold_3',['gold',['../namespacesvg.html#a0e622bba4eee0e6528a9261d6aa251d1ae07e81c20cf5935f5225765f0af81755',1,'svg']]],
+  ['goldenrod_4',['goldenrod',['../namespacesvg.html#a0e622bba4eee0e6528a9261d6aa251d1acf32f5cd9a11a837faccbbb96b3c8170',1,'svg']]],
+  ['goldenyellow_5',['goldenyellow',['../namespacesvg.html#a0e622bba4eee0e6528a9261d6aa251d1a1f1d534788a2b332c5444c8063a38c04',1,'svg']]],
+  ['gray01_6',['gray01',['../namespacesvg.html#a0e622bba4eee0e6528a9261d6aa251d1a4aa52dde14d9f8822383f917b116bff8',1,'svg']]],
+  ['gray02_7',['gray02',['../namespacesvg.html#a0e622bba4eee0e6528a9261d6aa251d1a9303d5b104e9e72e94512c55325903db',1,'svg']]],
+  ['gray05_8',['gray05',['../namespacesvg.html#a0e622bba4eee0e6528a9261d6aa251d1acac8ebadb169f55d56d9ec6452d6fabb',1,'svg']]],
+  ['gray10_9',['gray10',['../namespacesvg.html#a0e622bba4eee0e6528a9261d6aa251d1a84f2658171babde7201bcc22f57a9277',1,'svg']]],
+  ['gray20_10',['gray20',['../namespacesvg.html#a0e622bba4eee0e6528a9261d6aa251d1af6f92901c80bb6301af3773673e613e1',1,'svg']]],
+  ['gray25_11',['gray25',['../namespacesvg.html#a0e622bba4eee0e6528a9261d6aa251d1aca5e44f75072c3457603ab53ae6cb24b',1,'svg']]],
+  ['gray30_12',['gray30',['../namespacesvg.html#a0e622bba4eee0e6528a9261d6aa251d1ae45f1f2bc9a56641673b6765465cc916',1,'svg']]],
+  ['gray33_13',['gray33',['../namespacesvg.html#a0e622bba4eee0e6528a9261d6aa251d1a9a6aaa5091ccc6191715f37cdc3bd1f0',1,'svg']]],
+  ['gray40_14',['gray40',['../namespacesvg.html#a0e622bba4eee0e6528a9261d6aa251d1a583e6b149ebee4ddb1df009fbef60afb',1,'svg']]],
+  ['gray50_15',['gray50',['../namespacesvg.html#a0e622bba4eee0e6528a9261d6aa251d1a7926fc0ace21cd068ce7ac710fa8242a',1,'svg']]],
+  ['gray60_16',['gray60',['../namespacesvg.html#a0e622bba4eee0e6528a9261d6aa251d1a1a6ef9b64f983f383fa4c23f0edc2db3',1,'svg']]],
+  ['gray66_17',['gray66',['../namespacesvg.html#a0e622bba4eee0e6528a9261d6aa251d1ae95d982a7f891246184bdceba42e0cac',1,'svg']]],
+  ['gray70_18',['gray70',['../namespacesvg.html#a0e622bba4eee0e6528a9261d6aa251d1a3d369630513a264ae56f6f0fab5d6e8b',1,'svg']]],
+  ['gray75_19',['gray75',['../namespacesvg.html#a0e622bba4eee0e6528a9261d6aa251d1a116401922cb0c1d9f8c369cafe267715',1,'svg']]],
+  ['gray80_20',['gray80',['../namespacesvg.html#a0e622bba4eee0e6528a9261d6aa251d1a18557e3b439a0dba2ffa2482e149eedc',1,'svg']]],
+  ['gray90_21',['gray90',['../namespacesvg.html#a0e622bba4eee0e6528a9261d6aa251d1ab59c9e6f73e479e98218d76f765354e6',1,'svg']]],
+  ['green_22',['green',['../namespacesvg.html#a0e622bba4eee0e6528a9261d6aa251d1a9f27410725ab8cc8854a2769c7a516b8',1,'svg']]],
+  ['greenyellow_23',['greenyellow',['../namespacesvg.html#a0e622bba4eee0e6528a9261d6aa251d1add675e7d49f43ce4437518439af03897',1,'svg']]],
+  ['grid_24',['grid',['../namespacesvg.html#ac8061963317131e6bd4d517ed84880bcaff4a008470319a22d9cf3d14af485977',1,'svg']]]
+];

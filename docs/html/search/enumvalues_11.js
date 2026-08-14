@@ -1,0 +1,24 @@
+var searchData=
+[
+  ['r1s_0',['r1s',['../namespacesvg.html#adc7e4c413a77264dd28e589407293de8a89878a41ad6a094af992dc6ba8051b07',1,'svg']]],
+  ['r2s_1',['r2s',['../namespacesvg.html#adc7e4c413a77264dd28e589407293de8aea350c7fd00b82fa94ce264a386a57cb',1,'svg']]],
+  ['r3s_2',['r3s',['../namespacesvg.html#adc7e4c413a77264dd28e589407293de8a9f949f8c0f5e7d62b2814acd686e67a8',1,'svg']]],
+  ['r4s_3',['r4s',['../namespacesvg.html#adc7e4c413a77264dd28e589407293de8abd1c5fb73fb99b9b540307dbb3a4335a',1,'svg']]],
+  ['r5s_4',['r5s',['../namespacesvg.html#adc7e4c413a77264dd28e589407293de8a3a199e96d52b2309f5369a687b62d10c',1,'svg']]],
+  ['radial_5',['radial',['../namespaceizzi_1_1moire.html#a67c49399b049f3992965b077f9f7624ba869836a44b607137a7e094cf8a308938',1,'izzi::moire']]],
+  ['radial_5forbit_6',['radial_orbit',['../namespacesvg_1_1graph.html#abd3a7309050d8baf1daf39e6dcde22a5a37591d1f60a20e980b0393952f30e328',1,'svg::graph']]],
+  ['radialgradient_7',['radialGradient',['../group__elements.html#a7c19a4d45da1acb512fc1c69048253bfa1ef4c255bfa3d1d0e4d8509e44bc7a54',1,'svg::gradient_element']]],
+  ['raster_8',['raster',['../namespacesvg.html#ac8061963317131e6bd4d517ed84880bca5c4b511a3d70a42ea3d7a7c632160381',1,'svg']]],
+  ['rational_5fclosed_9',['rational_closed',['../namespaceizzi_1_1guilloche.html#a41b521cb48e479fc99c6b4ae43618e43a895462610c259aa7aeb726abb072e771',1,'izzi::guilloche']]],
+  ['red_10',['red',['../namespacesvg.html#a0e622bba4eee0e6528a9261d6aa251d1abda9643ac6601722a28f238714274da4',1,'svg']]],
+  ['redorange_11',['redorange',['../namespacesvg.html#a0e622bba4eee0e6528a9261d6aa251d1a2c84d97638de6e4e9c3ddff03f92cd51',1,'svg']]],
+  ['redwisteria_12',['redwisteria',['../namespacesvg.html#a0e622bba4eee0e6528a9261d6aa251d1aa748cf2661f3eccccd59f1299834a6d5',1,'svg']]],
+  ['repeat_13',['repeat',['../namespaceizzi_1_1moire.html#ae97136016d3efe2477f1004bd62d1231a32cf6da134a8b268cf4ab6b79a9a5ad9',1,'izzi::moire::repeat'],['../namespaceizzi_1_1surface__tension.html#a61d70fb91980bd6b1b8048fc055426bca32cf6da134a8b268cf4ab6b79a9a5ad9',1,'izzi::surface_tension::repeat']]],
+  ['right_14',['right',['../structsvg_1_1typography.html#a93bca2e6c4e32784def555d27487f886a7c4f29407893c334a6cb7a87bf045c0d',1,'svg::typography']]],
+  ['ripple_15',['ripple',['../namespacesvg_1_1hamonshu.html#a6ef0408fcb2cb24c37c7db772489a6dea2a263b152b6dcf8f6dd2e5ddfb3de3a4',1,'svg::hamonshu']]],
+  ['rokusho_16',['rokusho',['../namespacesvg.html#a0e622bba4eee0e6528a9261d6aa251d1ae6885b33bb3745c23b3a04cdb5732856',1,'svg']]],
+  ['rosette_17',['rosette',['../namespaceizzi_1_1guilloche.html#a3da839b4953fb9615a23332b85f858bfa9551ea1bf14aa978c3f9df1eb443b8d0',1,'izzi::guilloche']]],
+  ['royalblue_18',['royalblue',['../namespacesvg.html#a0e622bba4eee0e6528a9261d6aa251d1a231f2b387a5d04315a8c8aff6e042ee7',1,'svg']]],
+  ['ruriiro_19',['ruriiro',['../namespacesvg.html#a0e622bba4eee0e6528a9261d6aa251d1ae42b64f7834ad8d8a694495c67698bfa',1,'svg']]],
+  ['rurikon_20',['rurikon',['../namespacesvg.html#a0e622bba4eee0e6528a9261d6aa251d1a779846124c805daa03e1fdbe887f5288',1,'svg']]]
+];

@@ -1,0 +1,10 @@
+<map id="izzi::surface_tension::detail::sample_field" name="izzi::surface_tension::detail::sample_field">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,33,143,70"/>
+<area shape="rect" id="Node000002" href="$namespaceizzi_1_1surface__tension_1_1detail.html#a516defa50d0c2899ed23295079e6f473" title=" " alt="" coords="191,5,348,42"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="143,39,175,35,175,40,144,44"/>
+<area shape="rect" id="Node000003" href="$namespaceizzi_1_1surface__tension_1_1detail.html#abd72cb7f2bb7dcf99d62fa965dbe57f8" title=" " alt="" coords="396,33,567,70"/>
+<area shape="poly" id="edge4_Node000001_Node000003" title=" " alt="" coords="143,51,191,52,348,52,380,51,380,57,348,57,191,57,143,56"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="348,31,381,36,380,41,348,37"/>
+<area shape="rect" id="Node000004" href="$namespaceizzi_1_1surface__tension_1_1detail.html#a0c0ae19671736598b9c08a52d86d541b" title=" " alt="" coords="615,33,750,70"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="568,49,600,49,600,54,568,54"/>
+</map>

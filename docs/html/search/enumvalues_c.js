@@ -1,0 +1,22 @@
+var searchData=
+[
+  ['label_0',['label',['../namespaceizzi_1_1guilloche.html#afbcd28fe9c1ae982e1100e13e53a597dad304ba20e96d87411588eeabac850e34',1,'izzi::guilloche']]],
+  ['large_1',['large',['../namespacesvg.html#adc7e4c413a77264dd28e589407293de8aafacdb0a401ccdf6b48551bbc00e8a74',1,'svg']]],
+  ['last_2',['last',['../namespacesvg.html#a0e622bba4eee0e6528a9261d6aa251d1a98bd1c45684cf587ac2347a92dd7bb51',1,'svg']]],
+  ['lattice_3',['lattice',['../namespacesvg_1_1hamonshu.html#a6ef0408fcb2cb24c37c7db772489a6deaaa33451da4827e9bd90b3c408f7d7dce',1,'svg::hamonshu']]],
+  ['lauburu_4',['lauburu',['../namespacesvg.html#a7c30513e0ec17ac816f135b43687f7eaa3469f801079b56bae4eb6f6f6e209733',1,'svg']]],
+  ['lavender_5',['lavender',['../namespacesvg.html#a0e622bba4eee0e6528a9261d6aa251d1a153fa52654465ad67f045dc293f3b16e',1,'svg']]],
+  ['left_6',['left',['../structsvg_1_1typography.html#a93bca2e6c4e32784def555d27487f886a811882fecd5c7618d7099ebbd39ea254',1,'svg::typography']]],
+  ['legend_7',['legend',['../namespacesvg.html#ac8061963317131e6bd4d517ed84880bca3d4dcd6fc8845fa8dfc04c3ea01eb0fb',1,'svg']]],
+  ['lemonchiffon_8',['lemonchiffon',['../namespacesvg.html#a0e622bba4eee0e6528a9261d6aa251d1a3b5720926e81aca08b9343bb338f3583',1,'svg']]],
+  ['light_9',['light',['../structsvg_1_1typography.html#ac41cf6a133f5b21757130ce5ba72b3d7a2ac43aa43bf473f9a9c09b4b608619d3',1,'svg::typography']]],
+  ['lightblue_10',['lightblue',['../namespacesvg.html#a0e622bba4eee0e6528a9261d6aa251d1a6eed435cb5faa552a3117e7d60ebce8d',1,'svg']]],
+  ['lightcyan_11',['lightcyan',['../namespacesvg.html#a0e622bba4eee0e6528a9261d6aa251d1a27bc3fe7e0664191f0ffc2cffa3035ab',1,'svg']]],
+  ['lightskyblue_12',['lightskyblue',['../namespacesvg.html#a0e622bba4eee0e6528a9261d6aa251d1aa4fd560e81d368f625763cb684dd348c',1,'svg']]],
+  ['limegreen_13',['limegreen',['../namespacesvg.html#a0e622bba4eee0e6528a9261d6aa251d1a8a03233f60c05bc5c3161698a5f78a58',1,'svg']]],
+  ['linear_14',['linear',['../namespaceizzi_1_1moire.html#a67c49399b049f3992965b077f9f7624ba9a932b3cb396238423eb2f33ec17d6aa',1,'izzi::moire']]],
+  ['linear_5fchord_15',['linear_chord',['../namespacesvg_1_1graph.html#abd3a7309050d8baf1daf39e6dcde22a5a7a5e5aa81a5d9e092ea41d89bf1acd4e',1,'svg::graph']]],
+  ['lineargradient_16',['linearGradient',['../group__elements.html#a7c19a4d45da1acb512fc1c69048253bfa1f95312db58aef3645ec3865b5bd04d0',1,'svg::gradient_element']]],
+  ['linex_17',['linex',['../namespacesvg.html#ac8061963317131e6bd4d517ed84880bca7af3f32e7f6f3bd3fd8cc047c1ba8ee6',1,'svg']]],
+  ['liney_18',['liney',['../namespacesvg.html#ac8061963317131e6bd4d517ed84880bca22ba1f9d2f01584a436f3e60567247a5',1,'svg']]]
+];

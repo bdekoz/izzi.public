@@ -1,0 +1,5 @@
+<map id="svg::make_path_arc_closed" name="svg::make_path_arc_closed">
+<area shape="rect" id="Node000001" title="Make closed path between two points and the center of a circle of radius r. Points like: get_circumfe..." alt="" coords="5,5,135,42"/>
+<area shape="rect" id="Node000002" href="$namespacesvg.html#ac10e7d47d031b121174fc0e65232980f" title="Convert point_2t to string." alt="" coords="183,12,278,36"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="135,21,167,21,167,26,135,26"/>
+</map>

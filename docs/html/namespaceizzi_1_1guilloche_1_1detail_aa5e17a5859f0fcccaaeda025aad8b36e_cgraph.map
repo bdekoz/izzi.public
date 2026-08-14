@@ -1,0 +1,18 @@
+<map id="izzi::guilloche::detail::validate_ornamented_inscription" name="izzi::guilloche::detail::validate_ornamented_inscription">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,91,151,140"/>
+<area shape="rect" id="Node000002" href="$namespaceizzi_1_1guilloche_1_1detail.html#a01ab0bb61bd09ef54154151fdc730512" title=" " alt="" coords="203,8,340,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="128,88,198,55,210,49,212,54,200,59,131,93"/>
+<area shape="rect" id="Node000003" href="$namespaceizzi_1_1guilloche_1_1detail.html#aac1a6b8a486636ce7726466e0858f08a" title=" " alt="" coords="199,69,344,106"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="150,103,183,98,183,103,151,108"/>
+<area shape="rect" id="Node000007" href="$namespaceizzi_1_1guilloche_1_1detail.html#aa2e3cb80bde026ce4a045068023f69c2" title=" " alt="" coords="392,128,528,165"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="151,119,377,137,376,142,151,124"/>
+<area shape="rect" id="Node000008" href="$namespaceizzi_1_1guilloche_1_1detail.html#a7e2929a46196102035094efcdc1fcad9" title=" " alt="" coords="203,181,340,218"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="138,139,214,172,212,177,136,144"/>
+<area shape="rect" id="Node000004" href="$namespaceizzi_1_1guilloche_1_1detail.html#a81e7d499c318294ec2e5baa2410a0df0" title=" " alt="" coords="392,5,528,42"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="327,66,388,45,390,50,328,71"/>
+<area shape="rect" id="Node000005" href="$namespaceizzi_1_1guilloche_1_1detail.html#a2d419f80a77a6f2bdc2c742ffa306f5b" title=" " alt="" coords="392,67,528,103"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="345,84,377,84,377,89,345,89"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="333,104,386,120,384,126,332,109"/>
+<area shape="rect" id="Node000006" href="$namespaceizzi_1_1guilloche_1_1detail.html#aacdc64a49cfac1c53d0f4007b93f7d8e" title=" " alt="" coords="576,67,713,103"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="529,82,561,82,561,88,529,88"/>
+</map>

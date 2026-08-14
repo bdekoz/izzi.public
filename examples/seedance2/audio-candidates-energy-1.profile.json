@@ -1,0 +1,106 @@
+{
+  "profile_name": "izzi-audio-candidates-energy-1",
+  "profile_version": 1,
+  "evidence_scope": "acoustic-features-only",
+  "sample_rate_hz": 16000,
+  "decoded_sample_format": "signed-16-bit-little-endian",
+  "decoder": {
+    "tool": "ffmpeg",
+    "required_version": "7.1.5",
+    "arguments": [
+      "-nostdin",
+      "-hide_banner",
+      "-loglevel",
+      "error",
+      "-threads",
+      "1",
+      "-i",
+      "{source}",
+      "-map_metadata",
+      "-1",
+      "-map_chapters",
+      "-1",
+      "-vn",
+      "-ac",
+      "1",
+      "-ar",
+      "16000",
+      "-c:a",
+      "pcm_s16le",
+      "-bitexact",
+      "-f",
+      "s16le",
+      "-y",
+      "{scratch_pcm}"
+    ]
+  },
+  "vad": {
+    "state": "UNAVAILABLE",
+    "weight": 0.0,
+    "reason": "No pinned local WebRTC VAD implementation is installed; this energy-only profile must not be described as izzi-audio-candidates-1."
+  },
+  "frame_analysis": {
+    "frame_samples": 320,
+    "frame_seconds": 0.02,
+    "hop_samples": 160,
+    "hop_seconds": 0.01,
+    "amplitude_scale": 32768.0,
+    "rms_floor": 0.000030517578125,
+    "silence_threshold_dbfs": -50.0,
+    "clipping_threshold_pcm": 32760,
+    "spectrum_window": "numpy.hanning(320)",
+    "spectrum_normalization": "magnitude divided by its sum; an all-zero spectrum remains zero",
+    "spectral_centroid": "sum(normalized-magnitude * rfft-frequency-hz)",
+    "spectral_flux": "L2 distance between adjacent normalized magnitude spectra"
+  },
+  "candidate_windows": {
+    "window_samples": 160000,
+    "window_seconds": 10.0,
+    "grid_hop_samples": 1600,
+    "grid_hop_seconds": 0.1,
+    "coverage_bands": 10,
+    "alternatives_per_band": 3,
+    "alternative_minimum_start_separation_samples": 160000,
+    "band_rule": "floor(i * decoded_samples / 10) boundaries; candidate start and end must both remain within one band",
+    "overlap_rule": "ranked alternatives within a band and system-proposal windows must not overlap"
+  },
+  "normalization_parameters": {
+    "activity_clipping_penalty_multiplier": 10.0,
+    "energy_change_full_scale_db": 6.0,
+    "spectral_flux_full_scale": 0.08,
+    "boundary_context_frames": 50,
+    "diversity_max_euclidean_distance": 2.0,
+    "feature_rounding_decimal_places": 9,
+    "score_rounding_decimal_places": 12
+  },
+  "normalized_features": {
+    "activity": "clip(active-frame-fraction * (1 - clip(10 * clipping-frame-fraction, 0, 1)), 0, 1)",
+    "energy_change": "clip(mean internal absolute adjacent-frame RMS dBFS change / 6, 0, 1)",
+    "spectral_flux": "clip(mean internal normalized-spectrum L2 flux / 0.08, 0, 1)",
+    "silence_boundary": "mean of silent-frame fractions in the 0.5 seconds immediately before start and after end; missing context contributes zero",
+    "timeline_coverage": "one minus distance from the center of feasible in-band starts divided by half their span",
+    "feature_diversity": "minimum Euclidean distance from prior greedy references over activity, energy-change, spectral-flux, and silence-boundary, divided by 2; one when no reference exists"
+  },
+  "weights": {
+    "activity": 0.3,
+    "energy_change": 0.2,
+    "spectral_flux": 0.2,
+    "silence_boundary": 0.15,
+    "timeline_coverage": 0.1,
+    "feature_diversity": 0.05
+  },
+  "ranking": {
+    "algorithm": "band-ordered greedy maximum marginal relevance",
+    "system_proposal": "rank-one candidate from each band",
+    "alternative_references": "rank-one candidates from prior bands plus earlier-ranked non-overlapping candidates in the current band",
+    "tie_break": [
+      "score-descending",
+      "start-sample-ascending",
+      "candidate-id-ascending"
+    ]
+  },
+  "candidate_identity": {
+    "feature_vector_hash": "SHA-256 of canonical rounded raw and normalized acoustic features",
+    "candidate_id": "ec1- plus first 20 hex characters of SHA-256 over source hash, profile hash, start sample, end sample, and feature-vector hash"
+  }
+}

@@ -1,0 +1,9 @@
+<map id="izzi::guilloche::detail::apply_plate_transform" name="izzi::guilloche::detail::apply_plate_transform">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,67,156,103"/>
+<area shape="rect" id="Node000002" href="$namespaceizzi_1_1guilloche_1_1detail.html#a01ab0bb61bd09ef54154151fdc730512" title=" " alt="" coords="204,5,340,42"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="139,64,197,45,199,50,141,69"/>
+<area shape="rect" id="Node000003" href="$namespaceizzi_1_1guilloche_1_1detail.html#aa2e3cb80bde026ce4a045068023f69c2" title=" " alt="" coords="204,67,340,103"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="156,82,188,82,188,88,156,88"/>
+<area shape="rect" id="Node000004" href="$namespaceizzi_1_1guilloche_1_1detail.html#a34e3a693fe98f4db4258fc7c9a5f00de" title=" " alt="" coords="204,128,340,165"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="141,101,199,120,197,125,139,106"/>
+</map>

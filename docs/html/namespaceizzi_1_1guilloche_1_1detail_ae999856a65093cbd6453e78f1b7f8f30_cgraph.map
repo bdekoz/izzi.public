@@ -1,0 +1,8 @@
+<map id="izzi::guilloche::detail::centerline_point_count" name="izzi::guilloche::detail::centerline_point_count">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,159,42"/>
+<area shape="rect" id="Node000002" href="$namespaceizzi_1_1guilloche_1_1detail.html#aa2e3cb80bde026ce4a045068023f69c2" title=" " alt="" coords="391,5,527,42"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="159,19,207,18,343,18,375,19,375,24,343,24,207,24,159,24"/>
+<area shape="rect" id="Node000003" href="$namespaceizzi_1_1guilloche_1_1detail.html#a43085b52b2c54d59241bba794b71832d" title=" " alt="" coords="207,33,343,70"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="159,32,192,37,191,42,159,37"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="343,39,375,34,376,39,344,44"/>
+</map>

@@ -1,0 +1,10 @@
+<map id="svg::graph::detail::validate_radial_spec" name="svg::graph::detail::validate_radial_spec">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,61,146,98"/>
+<area shape="rect" id="Node000002" href="$namespacesvg_1_1graph_1_1detail.html#a1120b363480e1f2f2c8129f4b81baa61" title=" " alt="" coords="194,5,313,42"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="135,58,178,45,180,50,137,63"/>
+<area shape="rect" id="Node000003" href="$namespacesvg_1_1graph_1_1detail.html#a3cf3ca365c7132cb3e2887f46545b0a9" title=" " alt="" coords="361,89,480,126"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="146,83,345,99,345,104,146,88"/>
+<area shape="rect" id="Node000004" href="$namespacesvg_1_1graph_1_1detail.html#a238aac37ed154872c3f244fa112e9ebd" title=" " alt="" coords="194,117,313,154"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="137,96,180,110,178,115,135,101"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="313,123,345,118,346,123,314,128"/>
+</map>

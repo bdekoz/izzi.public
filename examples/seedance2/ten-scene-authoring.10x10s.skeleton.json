@@ -1,0 +1,198 @@
+{
+  "$schema": "https://bdekoz.github.io/izzi.public/examples/seedance2/ten-scene-authoring.proposed.schema.json",
+  "schema_version": 1,
+  "project_id": "replace-ten-scene-project",
+  "creative_direction": {
+    "summary": "REPLACE: Summarize the visual story, audience, tone, and desired progression across all ten scenes.",
+    "language": "en-US",
+    "global_constraints": [
+      "REPLACE: Add project-wide visual, factual, safety, and accessibility constraints.",
+      "Keep essential titles and subjects inside the defined safe area.",
+      "Avoid unsafe flashing and preserve a reduced-motion-compatible edit."
+    ]
+  },
+  "defaults": {
+    "canvas": {
+      "width_px": 1280,
+      "height_px": 720,
+      "background": "#081820",
+      "safe_area_px": {
+        "top": 58,
+        "right": 64,
+        "bottom": 58,
+        "left": 64
+      }
+    },
+    "timeline": {
+      "frame_rate": {
+        "numerator": 30,
+        "denominator": 1
+      },
+      "frame_count": 300,
+      "duration_seconds": 10
+    },
+    "title_style": {
+      "editorial_family": "Atkinson Hyperlegible Next",
+      "weight": 800,
+      "size_px": 76,
+      "field_background": "#173A55",
+      "color": "#FCFBF7",
+      "accent_color": "#7FE1D1",
+      "hold_frames": 45
+    },
+    "transition_policy": {
+      "kind": "alternate-hamonshu-roulette",
+      "preset_version": 1,
+      "frame_count": 75,
+      "reduced_motion": "cross-fade"
+    },
+    "prompt_policy": "derive-and-review",
+    "delivery": {
+      "adapter": "seedance2ai-v1",
+      "quality_tier": "standard",
+      "channel": "standard",
+      "aspect_ratio": "16:9",
+      "duration": "10",
+      "resolution": "720p",
+      "generate_audio": false,
+      "fixed_lens": true
+    },
+    "output": {
+      "root": "build/replace-ten-scene-project",
+      "clip_pattern": "{scene_id}-final.mkv",
+      "poster_pattern": "{scene_id}-poster.png",
+      "manifest": "storyboard-manifest.json"
+    }
+  },
+  "assets": [],
+  "scenes": [
+    {
+      "scene_id": "scene-01",
+      "title": "REPLACE: SCENE 01 TITLE",
+      "subtitle": "REPLACE: Optional scene 01 subtitle, or remove this field.",
+      "description": "REPLACE: Describe scene 01 subject, setting, action, camera, lighting, palette, and its role in the sequence.",
+      "prompt_override": "REPLACE: Write a reviewed scene 01 generation prompt, or remove this field to derive one from the description.",
+      "constraints": [
+        "REPLACE: Add scene 01 factual, visual, continuity, safety, or exclusion constraints."
+      ],
+      "reference_asset_ids": [],
+      "accessibility_hint": "REPLACE: Describe scene 01 contrast, legibility, motion, narration, or descriptive-audio needs."
+    },
+    {
+      "scene_id": "scene-02",
+      "title": "REPLACE: SCENE 02 TITLE",
+      "subtitle": "REPLACE: Optional scene 02 subtitle, or remove this field.",
+      "description": "REPLACE: Describe scene 02 subject, setting, action, camera, lighting, palette, and its role in the sequence.",
+      "prompt_override": "REPLACE: Write a reviewed scene 02 generation prompt, or remove this field to derive one from the description.",
+      "constraints": [
+        "REPLACE: Add scene 02 factual, visual, continuity, safety, or exclusion constraints."
+      ],
+      "reference_asset_ids": [],
+      "accessibility_hint": "REPLACE: Describe scene 02 contrast, legibility, motion, narration, or descriptive-audio needs."
+    },
+    {
+      "scene_id": "scene-03",
+      "title": "REPLACE: SCENE 03 TITLE",
+      "subtitle": "REPLACE: Optional scene 03 subtitle, or remove this field.",
+      "description": "REPLACE: Describe scene 03 subject, setting, action, camera, lighting, palette, and its role in the sequence.",
+      "prompt_override": "REPLACE: Write a reviewed scene 03 generation prompt, or remove this field to derive one from the description.",
+      "constraints": [
+        "REPLACE: Add scene 03 factual, visual, continuity, safety, or exclusion constraints."
+      ],
+      "reference_asset_ids": [],
+      "accessibility_hint": "REPLACE: Describe scene 03 contrast, legibility, motion, narration, or descriptive-audio needs."
+    },
+    {
+      "scene_id": "scene-04",
+      "title": "REPLACE: SCENE 04 TITLE",
+      "subtitle": "REPLACE: Optional scene 04 subtitle, or remove this field.",
+      "description": "REPLACE: Describe scene 04 subject, setting, action, camera, lighting, palette, and its role in the sequence.",
+      "prompt_override": "REPLACE: Write a reviewed scene 04 generation prompt, or remove this field to derive one from the description.",
+      "constraints": [
+        "REPLACE: Add scene 04 factual, visual, continuity, safety, or exclusion constraints."
+      ],
+      "reference_asset_ids": [],
+      "accessibility_hint": "REPLACE: Describe scene 04 contrast, legibility, motion, narration, or descriptive-audio needs."
+    },
+    {
+      "scene_id": "scene-05",
+      "title": "REPLACE: SCENE 05 TITLE",
+      "subtitle": "REPLACE: Optional scene 05 subtitle, or remove this field.",
+      "description": "REPLACE: Describe scene 05 subject, setting, action, camera, lighting, palette, and its role in the sequence.",
+      "prompt_override": "REPLACE: Write a reviewed scene 05 generation prompt, or remove this field to derive one from the description.",
+      "constraints": [
+        "REPLACE: Add scene 05 factual, visual, continuity, safety, or exclusion constraints."
+      ],
+      "reference_asset_ids": [],
+      "accessibility_hint": "REPLACE: Describe scene 05 contrast, legibility, motion, narration, or descriptive-audio needs."
+    },
+    {
+      "scene_id": "scene-06",
+      "title": "REPLACE: SCENE 06 TITLE",
+      "subtitle": "REPLACE: Optional scene 06 subtitle, or remove this field.",
+      "description": "REPLACE: Describe scene 06 subject, setting, action, camera, lighting, palette, and its role in the sequence.",
+      "prompt_override": "REPLACE: Write a reviewed scene 06 generation prompt, or remove this field to derive one from the description.",
+      "constraints": [
+        "REPLACE: Add scene 06 factual, visual, continuity, safety, or exclusion constraints."
+      ],
+      "reference_asset_ids": [],
+      "accessibility_hint": "REPLACE: Describe scene 06 contrast, legibility, motion, narration, or descriptive-audio needs."
+    },
+    {
+      "scene_id": "scene-07",
+      "title": "REPLACE: SCENE 07 TITLE",
+      "subtitle": "REPLACE: Optional scene 07 subtitle, or remove this field.",
+      "description": "REPLACE: Describe scene 07 subject, setting, action, camera, lighting, palette, and its role in the sequence.",
+      "prompt_override": "REPLACE: Write a reviewed scene 07 generation prompt, or remove this field to derive one from the description.",
+      "constraints": [
+        "REPLACE: Add scene 07 factual, visual, continuity, safety, or exclusion constraints."
+      ],
+      "reference_asset_ids": [],
+      "accessibility_hint": "REPLACE: Describe scene 07 contrast, legibility, motion, narration, or descriptive-audio needs."
+    },
+    {
+      "scene_id": "scene-08",
+      "title": "REPLACE: SCENE 08 TITLE",
+      "subtitle": "REPLACE: Optional scene 08 subtitle, or remove this field.",
+      "description": "REPLACE: Describe scene 08 subject, setting, action, camera, lighting, palette, and its role in the sequence.",
+      "prompt_override": "REPLACE: Write a reviewed scene 08 generation prompt, or remove this field to derive one from the description.",
+      "constraints": [
+        "REPLACE: Add scene 08 factual, visual, continuity, safety, or exclusion constraints."
+      ],
+      "reference_asset_ids": [],
+      "accessibility_hint": "REPLACE: Describe scene 08 contrast, legibility, motion, narration, or descriptive-audio needs."
+    },
+    {
+      "scene_id": "scene-09",
+      "title": "REPLACE: SCENE 09 TITLE",
+      "subtitle": "REPLACE: Optional scene 09 subtitle, or remove this field.",
+      "description": "REPLACE: Describe scene 09 subject, setting, action, camera, lighting, palette, and its role in the sequence.",
+      "prompt_override": "REPLACE: Write a reviewed scene 09 generation prompt, or remove this field to derive one from the description.",
+      "constraints": [
+        "REPLACE: Add scene 09 factual, visual, continuity, safety, or exclusion constraints."
+      ],
+      "reference_asset_ids": [],
+      "accessibility_hint": "REPLACE: Describe scene 09 contrast, legibility, motion, narration, or descriptive-audio needs."
+    },
+    {
+      "scene_id": "scene-10",
+      "title": "REPLACE: SCENE 10 TITLE",
+      "subtitle": "REPLACE: Optional scene 10 subtitle, or remove this field.",
+      "description": "REPLACE: Describe scene 10 subject, setting, action, camera, lighting, palette, and its role in the sequence.",
+      "prompt_override": "REPLACE: Write a reviewed scene 10 generation prompt, or remove this field to derive one from the description.",
+      "constraints": [
+        "REPLACE: Add scene 10 factual, visual, continuity, safety, or exclusion constraints."
+      ],
+      "reference_asset_ids": [],
+      "accessibility_hint": "REPLACE: Describe scene 10 contrast, legibility, motion, narration, or descriptive-audio needs."
+    }
+  ],
+  "assembly": {
+    "enabled": true,
+    "mode": "cut",
+    "expected_duration_seconds": 100,
+    "output": "build/replace-ten-scene-project/replace-ten-scene-project-100s.mkv",
+    "chapter_markers": true,
+    "audio_policy": "preserve"
+  }
+}

@@ -1,0 +1,154 @@
+{
+  "schema_version": "izzi-wild-motion-episodes-1",
+  "package_id": "izzi-wild-motion-episodes-stage0-20260810",
+  "status": "STAGE-0-PROVISIONAL",
+  "output_root": "outputs/ad-hoc/wild-motion-episodes.v1/stage-0",
+  "profile": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "codec": "h264",
+    "pixel_format": "yuv420p",
+    "audio": "NONE",
+    "text_policy": "TEXT-FREE-BY-DEFAULT"
+  },
+  "authority": {
+    "local_generation_authorized": true,
+    "human_visual_acceptance": "PENDING",
+    "baseline_promotion_authorized": false,
+    "publication_authorized": false,
+    "external_transfer_authorized": false
+  },
+  "episodes": [
+    {
+      "episode_id": "wild-motion-episode-01",
+      "episode_index": 1,
+      "duration_seconds": 60.0,
+      "review_status": "STAGE-0-PROVISIONAL",
+      "segments": [
+        {
+          "segment_id": "segment-001",
+          "duration_seconds": 10.0,
+          "primary": {
+            "path": "outputs/review/feedback/visual/guilloche/round-05/wild-motion/wild-variation-02.mkv",
+            "sha256": "b1c770726b59435ee3f7f29a0bfdfd1decaf1bf1d5d83ed65579414840ee6d76",
+            "family": "guilloche.v4"
+          },
+          "speed": 0.75,
+          "transform": "hflip",
+          "palette": "cool",
+          "overlay": {
+            "source": {
+              "path": "outputs/ad-hoc/moire.v1/motion-tests/wild-motion/wild-variation-01-sweep-bloom.mkv",
+              "sha256": "aa4bff04b485ebf1735bc9bbdf198046100634d420ab19668d74b2691d2ac08c",
+              "family": "moire.v1"
+            },
+            "speed": 1.0,
+            "transform": "identity",
+            "palette": "identity",
+            "mode": "screen",
+            "opacity": 0.18
+          }
+        },
+        {
+          "segment_id": "segment-002",
+          "duration_seconds": 10.0,
+          "primary": {
+            "path": "outputs/ad-hoc/moire.v1/motion-tests/wild-motion/wild-variation-01-sweep-bloom.mkv",
+            "sha256": "aa4bff04b485ebf1735bc9bbdf198046100634d420ab19668d74b2691d2ac08c",
+            "family": "moire.v1"
+          },
+          "speed": 1.0,
+          "transform": "identity",
+          "palette": "warm",
+          "overlay": null
+        },
+        {
+          "segment_id": "segment-003",
+          "duration_seconds": 10.0,
+          "primary": {
+            "path": "outputs/ad-hoc/surface-tension.v1/motion-tests/wild-motion/wild-variation-01-sweep-bloom.mkv",
+            "sha256": "9cbe347a0d737c59da3438462d0052ed84175f02c69575d1241be8e21c90504f",
+            "family": "surface-tension.v1"
+          },
+          "speed": 1.25,
+          "transform": "vflip",
+          "palette": "mono",
+          "overlay": {
+            "source": {
+              "path": "outputs/review/feedback/visual/guilloche/round-05/wild-motion/wild-variation-05.mkv",
+              "sha256": "e7392523b9740c71bb8620bfa7442ed872b2818433405a57b5f77c97909f613c",
+              "family": "guilloche.v4"
+            },
+            "speed": 0.9,
+            "transform": "rotate180",
+            "palette": "warm",
+            "mode": "addition",
+            "opacity": 0.14
+          }
+        },
+        {
+          "segment_id": "segment-004",
+          "duration_seconds": 10.0,
+          "primary": {
+            "path": "outputs/review/feedback/visual/guilloche/round-05/wild-motion/wild-variation-04.mkv",
+            "sha256": "bad8ef6df29c7fdf07d72e9d2b7b5a5677be5b15138d609ca29e02ba5c904372",
+            "family": "guilloche.v4"
+          },
+          "speed": 0.9,
+          "transform": "identity",
+          "palette": "warm",
+          "overlay": {
+            "source": {
+              "path": "outputs/ad-hoc/surface-tension.v1/motion-tests/wild-motion/wild-variation-02-orbital-collision.mkv",
+              "sha256": "2a34358d2aa59adb25eb88c914522efe4725fc2b73fd00156889534ba9ea56cb",
+              "family": "surface-tension.v1"
+            },
+            "speed": 1.1,
+            "transform": "hflip",
+            "palette": "cool",
+            "mode": "difference",
+            "opacity": 0.2
+          }
+        },
+        {
+          "segment_id": "segment-005",
+          "duration_seconds": 10.0,
+          "primary": {
+            "path": "outputs/ad-hoc/moire.v1/motion-tests/wild-motion/wild-variation-02-orbital-collision.mkv",
+            "sha256": "ad10fa1a6dff93b102038a38213a0ad29bbd566eac8030d155960ea89329ea15",
+            "family": "moire.v1"
+          },
+          "speed": 1.15,
+          "transform": "hflip",
+          "palette": "cool",
+          "overlay": null
+        },
+        {
+          "segment_id": "segment-006",
+          "duration_seconds": 10.0,
+          "primary": {
+            "path": "outputs/ad-hoc/surface-tension.v1/motion-tests/wild-motion/wild-variation-02-orbital-collision.mkv",
+            "sha256": "2a34358d2aa59adb25eb88c914522efe4725fc2b73fd00156889534ba9ea56cb",
+            "family": "surface-tension.v1"
+          },
+          "speed": 0.8,
+          "transform": "identity",
+          "palette": "identity",
+          "overlay": {
+            "source": {
+              "path": "outputs/review/feedback/visual/guilloche/round-05/wild-motion/wild-variation-08.mkv",
+              "sha256": "b294c7cc59c5c850e714ceef1d29c6fb71126ab191f1a5e4b1bb56d147af6fb2",
+              "family": "guilloche.v4"
+            },
+            "speed": 1.2,
+            "transform": "vflip",
+            "palette": "invert",
+            "mode": "screen",
+            "opacity": 0.16
+          }
+        }
+      ]
+    }
+  ]
+}

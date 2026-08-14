@@ -1,0 +1,9 @@
+<map id="svg::graph::json_detail::read_boolean" name="svg::graph::json_detail::read_boolean">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,36,153,73"/>
+<area shape="rect" id="Node000002" href="$namespacesvg_1_1graph_1_1json__detail.html#ac619195a09a1644ebdc0a21e670ccb28" title=" " alt="" coords="201,5,348,42"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="153,40,185,35,186,40,154,45"/>
+<area shape="rect" id="Node000004" href="$namespacesvg_1_1graph_1_1json__detail.html#a72f8ebaec0c2bcfc8f8faa7f6fd62e37" title=" " alt="" coords="201,67,348,103"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="154,63,186,68,185,74,153,69"/>
+<area shape="rect" id="Node000003" href="$namespacesvg_1_1graph_1_1detail.html#a1120b363480e1f2f2c8129f4b81baa61" title=" " alt="" coords="396,5,515,42"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="348,21,380,21,380,26,348,26"/>
+</map>

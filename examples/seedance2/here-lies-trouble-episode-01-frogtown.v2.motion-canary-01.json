@@ -1,0 +1,123 @@
+{
+  "$schema": "../../schemas/izzi.here-lies-trouble-motion-canary.schema.json",
+  "schema_version": "izzi.here-lies-trouble-motion-canary/1",
+  "canary_id": "hlt-frogtown-v2-motion-canary-01",
+  "project_id": "here-lies-trouble",
+  "episode_index": 1,
+  "location_slug": "frogtown",
+  "artifact_version": "v2",
+  "status": "SPECIFICATION-AUTHORIZED-PENDING-SUBMISSION",
+  "sources": {
+    "episode_config": {
+      "path": "examples/seedance2/here-lies-trouble-episode-01-frogtown.v2.json",
+      "sha256": "a4de4ca5947771bb07c39d21d720a6c7d1548fe2d706838050e1259c5047fe5f"
+    },
+    "accepted_visual": {
+      "path": "outputs/review/feedback/visual/here-lies-trouble/neon-addict-stage-01/style-frames/sample-01-frogtown-source.png",
+      "sha256": "78b79a6f1cb67162293c7ff901ca53d90a4d7c44d179b649d4d9103b95b86d42"
+    }
+  },
+  "profile": {
+    "width": 720,
+    "height": 1280,
+    "duration_seconds": 5,
+    "audio": false,
+    "generated_text": false
+  },
+  "cast": ["unicorn", "albatross", "dog", "cat"],
+  "motion_test": "GROUP-WALK",
+  "scene": {
+    "frogtown_anchor": "Los Angeles River bicycle path with concrete river edge, riparian plants, and distant bridge structure",
+    "starting_composition": "all four animals appear together in a readable staggered group near the lower middle of the portrait frame",
+    "required_action": "the complete group advances several visible steps along the path; legs, bodies, heads, tails, wings, and spacing change coherently",
+    "ending_composition": "the four remain present and recognizable in a slightly changed formation farther along the path",
+    "camera": "restrained lateral tracking may follow the group but cannot be the primary source of motion",
+    "environmental_motion": "river glint, two or three plant movements, and a distant bicycle-wheel arc reinforce forward travel"
+  },
+  "motion_aesthetic_seeds": [
+    { "seed_id": "br-final-cut-cut-1", "role": "camera-reference" },
+    { "seed_id": "br-final-cut-cut-5", "role": "locomotion-reference" }
+  ],
+  "motion_grammar": {
+    "camera": [
+      "restrained lateral drift that never becomes the primary source of motion",
+      "near-static framing permitted between strides"
+    ],
+    "subject_motion": [
+      "unhurried weighty stride",
+      "coherent limb cycles and shifting body weight",
+      "steady build without violent peaks"
+    ],
+    "environmental_motion": [
+      "river glint and plant sway supporting forward travel"
+    ],
+    "tempo": [
+      "measured acceleration",
+      "calm unbroken forward energy"
+    ]
+  },
+  "cost_gate": {
+    "estimated_credits_per_job": 60,
+    "maximum_credits_per_job": 90,
+    "maximum_total_credits": 270
+  },
+  "continuity_invariants": [
+    "exactly one unicorn, one albatross, one dog, and one cat",
+    "single readable unicorn horn",
+    "long-winged and long-beaked albatross silhouette",
+    "asymmetric dog-ear silhouette",
+    "cat flank circle and high curved tail",
+    "restrained Neon Addict markings",
+    "off-white, black, cyan, chartreuse, magenta, yellow, and coral palette",
+    "no species swaps, duplication, disappearance, or extra limbs",
+    "Frogtown and Los Angeles River specificity",
+    "actual animal locomotion rather than camera drift",
+    "no spike-shaped projection on any animal back or body; cat back and high curved tail stay clean and continuous"
+  ],
+  "prompt": "Animate the supplied accepted Frogtown keyframe as an original two-dimensional graphic scene. Keep exactly one unicorn, one albatross, one dog, and one cat, with the same readable silhouettes and restrained neon markings. Over five seconds, the four animals walk together along the Frogtown Los Angeles River bicycle path. Show coherent leg cycles, shifting body weight, head turns, tail and wing balance, and changing spacing. The albatross walks and makes one low balancing hop rather than flying away. Track laterally with restraint while river glints, riparian plants, and one distant bicycle-wheel arc move independently. Preserve bold off-white and black fields, cyan, chartreuse, magenta, yellow, and coral accents, tactile ink and paper texture, angular shadow, and generous negative space. End with all four animals intact and farther along the same recognizable path. No text and no audio.",
+  "negative_prompt": [
+    "static tableau",
+    "camera-only pan or zoom",
+    "missing animal",
+    "duplicate animal",
+    "species swap",
+    "extra limbs",
+    "melting anatomy",
+    "identity drift",
+    "albatross flying out of frame",
+    "generic neon city",
+    "generic skyline",
+    "photorealism",
+    "embedded text",
+    "captions",
+    "logos",
+    "pink spike on cat body",
+    "spike-shaped projection on any animal back",
+    "extra spike-shaped color artifact"
+  ],
+  "review_questions": [
+    "Do all four animals make unmistakable body-driven forward progress?",
+    "Does each character retain its species, silhouette, and restrained markings?",
+    "Does the setting read as Frogtown beside the Los Angeles River?",
+    "Does environmental motion support rather than replace the group walk?",
+    "Is the motion calm enough to support conversation in later shots?"
+  ],
+  "provider_adapter": {
+    "provider": "seedance2ai.io",
+    "model": "seedance2",
+    "seed": 2026081201,
+    "requested_quality": "720p-preview",
+    "submission_status": "AUTHORIZED"
+  },
+  "intended_output": "outputs/review/feedback/visual/here-lies-trouble/neon-addict-stage-01/episode-01-local-trial/motion-canaries/v2/here-lies-trouble-episode-01-frogtown.v2.motion-canary-01.mkv",
+  "authority": {
+    "local_specification_authorized": true,
+    "motion_generation_authorized": true,
+    "provider_submission_authorized": true,
+    "additional_spending_authorized": true,
+    "audio_transfer_authorized": false,
+    "publication_authorized": true,
+    "baseline_promotion_authorized": false,
+    "training_conversion_transfer_authorized": false
+  }
+}

@@ -1,0 +1,18 @@
+var searchData=
+[
+  ['v_0',['v',['../structsvg_1_1color__qf.html#a186bba2de5a59115e59161076a68449c',1,'svg::color_qf']]],
+  ['v1080p_5fh_1',['v1080p_h',['../namespacesvg_1_1constants.html#ad76f7994c99f6c82f8bcf4afa77385fa',1,'svg::constants']]],
+  ['v1080p_5fv_2',['v1080p_v',['../namespacesvg_1_1constants.html#a476fd77ecac33a859404f220c2676314',1,'svg::constants']]],
+  ['v4k_5fh_3',['v4k_h',['../namespacesvg_1_1constants.html#ab183e983bc4cb26dbfa67e600c877eed',1,'svg::constants']]],
+  ['v4k_5fv_4',['v4k_v',['../namespacesvg_1_1constants.html#a4be2c8cd32de6775b1f83c5cf750d6e7',1,'svg::constants']]],
+  ['value_5',['value',['../structsvg_1_1graph_1_1degrees.html#a2e60485747423965d980a8f021a85a12',1,'svg::graph::degrees::value'],['../structsvg_1_1graph_1_1radius.html#a1b51e6ab0b958a687cfaeac892183640',1,'svg::graph::radius::value'],['../structsvg_1_1graph_1_1orbit__item.html#a5c7b0c7bed169d7412c31ce2a7bfbff1',1,'svg::graph::orbit_item::value'],['../structsvg_1_1graph_1_1weighted__relation.html#ac1aac3b96809c98a0a89f8212d4102af',1,'svg::graph::weighted_relation::value'],['../structsvg_1_1graph_1_1scene__node.html#aa90a9792de38d687956b4bafdc730283',1,'svg::graph::scene_node::value'],['../structsvg_1_1graph_1_1scene__relation.html#a7ed8e3f229793061ff8c5bbc4e31f1a4',1,'svg::graph::scene_relation::value']]],
+  ['value_5flabel_6',['value_label',['../structsvg_1_1graph_1_1radial__dataset.html#a073a51784921c01c7b2697a5f1392453',1,'svg::graph::radial_dataset::value_label'],['../structsvg_1_1graph_1_1flow__dataset.html#a00783ebdcb1b57737ba7f8a860a57d8f',1,'svg::graph::flow_dataset::value_label']]],
+  ['variants_7',['variants',['../structizzi_1_1guilloche_1_1scene__profile__bundle__result.html#a4f704a93a9dd2c00c1030c6583d1b102',1,'izzi::guilloche::scene_profile_bundle_result']]],
+  ['vertical_5fscale_8',['vertical_scale',['../structsvg_1_1graph_1_1linear__chord__spec.html#a4438953c61752a23e3872303d276e549',1,'svg::graph::linear_chord_spec']]],
+  ['vertices_9',['vertices',['../structvoronoi__cell.html#afd2417894a94d08a8a6f5b75adc47a26',1,'voronoi_cell']]],
+  ['view_5ftilt_5fx_10',['view_tilt_x',['../structsvg_1_1ribbon__config.html#aa0d6bcc66e00e69771273b8ce1c7fe62',1,'svg::ribbon_config::view_tilt_x'],['../structsvg_1_1ripple__config.html#ab6ce9037189c3fd5028c5cbc8b883a27',1,'svg::ripple_config::view_tilt_x']]],
+  ['view_5ftilt_5fy_11',['view_tilt_y',['../structsvg_1_1ribbon__config.html#a2f63d0a3a2f8c2e354a44951fd84f0fe',1,'svg::ribbon_config::view_tilt_y'],['../structsvg_1_1ripple__config.html#a87e825b822876e053d85e00174923213',1,'svg::ripple_config::view_tilt_y']]],
+  ['viewport_12',['viewport',['../structsvg_1_1graph_1_1radial__orbit__spec.html#a6a1c8faf81cde8d13a6bde3228707ecc',1,'svg::graph::radial_orbit_spec::viewport'],['../structsvg_1_1graph_1_1linear__chord__spec.html#ae64a3bc98a5c0b4ac97bcee20fd7b6be',1,'svg::graph::linear_chord_spec::viewport'],['../structsvg_1_1graph_1_1graph__scene.html#a17e2e829a6367d90401f271a616b2c41',1,'svg::graph::graph_scene::viewport']]],
+  ['visible_5fmode_13',['visible_mode',['../structsvg_1_1render__state__base.html#a7036f53a7ab20ebf3e7b32d1890d50f8',1,'svg::render_state_base']]],
+  ['visual_5fpreset_14',['visual_preset',['../structsvg_1_1graph_1_1radial__orbit__spec.html#afcf54b747d54ec9bf6a7a30191bbd881',1,'svg::graph::radial_orbit_spec::visual_preset'],['../structsvg_1_1graph_1_1linear__chord__spec.html#ad66e75559559b755b136e6d8de571c87',1,'svg::graph::linear_chord_spec::visual_preset'],['../structsvg_1_1graph_1_1graph__scene.html#ae138f04db9d43152742192b00c780b40',1,'svg::graph::graph_scene::visual_preset']]]
+];

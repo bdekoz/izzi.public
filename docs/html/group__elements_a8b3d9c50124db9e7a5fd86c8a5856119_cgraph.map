@@ -1,0 +1,9 @@
+<map id="svg::gradient_element::stop" name="svg::gradient_element::stop">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,23,150,60"/>
+<area shape="rect" id="Node000002" href="$namespacesvg.html#ac91e1a80dd6b2df85fd06a07320bc6ce" title="Escape unescaped data for a double&#45;quoted XML attribute value." alt="" coords="198,5,362,29"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="149,30,182,26,183,31,150,35"/>
+<area shape="rect" id="Node000004" href="$namespacesvg.html#ac10e7d47d031b121174fc0e65232980f" title="Convert point_2t to string." alt="" coords="232,53,328,77"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="150,47,217,55,216,60,149,52"/>
+<area shape="rect" id="Node000003" href="$namespacesvg_1_1detail.html#a0dabd749799988c1aae4474d923c6fd1" title="Escape unescaped character data at its XML serialization boundary. Existing entity spellings are data..." alt="" coords="410,5,561,29"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="363,14,394,14,394,20,363,20"/>
+</map>

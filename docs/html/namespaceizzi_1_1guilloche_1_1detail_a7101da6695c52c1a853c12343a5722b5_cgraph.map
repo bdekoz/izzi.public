@@ -1,0 +1,9 @@
+<map id="izzi::guilloche::detail::apply_ornament_layout" name="izzi::guilloche::detail::apply_ornament_layout">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,67,162,103"/>
+<area shape="rect" id="Node000002" href="$namespaceizzi_1_1guilloche_1_1detail.html#a3bdc2cd05ea83d82626c431a1b211c9b" title=" " alt="" coords="210,5,346,42"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="143,64,202,45,204,50,145,69"/>
+<area shape="rect" id="Node000003" href="$namespaceizzi_1_1guilloche_1_1detail.html#aa2e3cb80bde026ce4a045068023f69c2" title=" " alt="" coords="210,67,346,103"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="162,82,194,82,194,88,162,88"/>
+<area shape="rect" id="Node000004" href="$namespaceizzi_1_1guilloche_1_1detail.html#a34e3a693fe98f4db4258fc7c9a5f00de" title=" " alt="" coords="210,128,346,165"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="145,101,204,120,202,125,143,106"/>
+</map>

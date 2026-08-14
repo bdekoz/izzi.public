@@ -1,0 +1,9 @@
+<map id="svg::group_element::start_element" name="svg::group_element::start_element">
+<area shape="rect" id="Node000001" title="For groups of elements that have the same name." alt="" coords="5,5,135,42"/>
+<area shape="rect" id="Node000002" href="$group__elements.html#ab84e1bc08d2d2a71ab05521af65d7585" title=" " alt="" coords="183,5,312,42"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="135,21,167,21,167,26,135,26"/>
+<area shape="rect" id="Node000003" href="$namespacesvg.html#ac91e1a80dd6b2df85fd06a07320bc6ce" title="Escape unescaped data for a double&#45;quoted XML attribute value." alt="" coords="360,12,524,36"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="313,21,344,21,344,26,313,26"/>
+<area shape="rect" id="Node000004" href="$namespacesvg_1_1detail.html#a0dabd749799988c1aae4474d923c6fd1" title="Escape unescaped character data at its XML serialization boundary. Existing entity spellings are data..." alt="" coords="572,12,724,36"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="525,21,557,21,557,26,525,26"/>
+</map>

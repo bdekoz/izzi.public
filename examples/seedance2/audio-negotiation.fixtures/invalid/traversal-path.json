@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "candidate_manifest": {
+    "path": "tests/baselines/audio/../../../../etc/passwd",
+    "sha256": "a3cd27642c777f62415a8fd562b152f08a0735f001c4bd920ba9c41b2c4fa141"
+  },
+  "evidence_status": "UNAVAILABLE",
+  "authority_status": "UNAVAILABLE",
+  "document_purpose": "REAL-NEGOTIATION",
+  "synthetic_notice": null,
+  "revision": 0,
+  "claimed_state": "CANDIDATES-READY",
+  "lock_claim": false,
+  "decisions": [
+    {"band": 1, "action": "UNAVAILABLE", "decision": "UNAVAILABLE", "candidate_id": null, "decision_source": "UNAVAILABLE"},
+    {"band": 2, "action": "UNAVAILABLE", "decision": "UNAVAILABLE", "candidate_id": null, "decision_source": "UNAVAILABLE"},
+    {"band": 3, "action": "UNAVAILABLE", "decision": "UNAVAILABLE", "candidate_id": null, "decision_source": "UNAVAILABLE"},
+    {"band": 4, "action": "UNAVAILABLE", "decision": "UNAVAILABLE", "candidate_id": null, "decision_source": "UNAVAILABLE"},
+    {"band": 5, "action": "UNAVAILABLE", "decision": "UNAVAILABLE", "candidate_id": null, "decision_source": "UNAVAILABLE"},
+    {"band": 6, "action": "UNAVAILABLE", "decision": "UNAVAILABLE", "candidate_id": null, "decision_source": "UNAVAILABLE"},
+    {"band": 7, "action": "UNAVAILABLE", "decision": "UNAVAILABLE", "candidate_id": null, "decision_source": "UNAVAILABLE"},
+    {"band": 8, "action": "UNAVAILABLE", "decision": "UNAVAILABLE", "candidate_id": null, "decision_source": "UNAVAILABLE"},
+    {"band": 9, "action": "UNAVAILABLE", "decision": "UNAVAILABLE", "candidate_id": null, "decision_source": "UNAVAILABLE"},
+    {"band": 10, "action": "UNAVAILABLE", "decision": "UNAVAILABLE", "candidate_id": null, "decision_source": "UNAVAILABLE"}
+  ]
+}

@@ -1,0 +1,12 @@
+<map id="izzi::surface_tension::render_svg" name="izzi::surface_tension::render_svg">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,89,140,126"/>
+<area shape="rect" id="Node000002" href="$namespaceizzi_1_1surface__tension_1_1detail.html#aaa59b553723fa809bfd00d7b9226a2d0" title=" " alt="" coords="188,5,322,42"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="113,86,198,46,201,51,115,91"/>
+<area shape="rect" id="Node000003" href="$namespaceizzi_1_1surface__tension_1_1detail.html#acb63f5883ec4788a578a98c0656fad72" title=" " alt="" coords="370,89,521,126"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="140,103,188,102,322,102,355,103,355,108,322,108,188,108,140,109"/>
+<area shape="rect" id="Node000004" href="$namespaceizzi_1_1surface__tension_1_1detail.html#ab491f74469d2b4fbc79bb7bcb524a056" title=" " alt="" coords="188,117,322,154"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="141,115,173,120,172,126,140,121"/>
+<area shape="rect" id="Node000005" href="$namespaceizzi_1_1surface__tension.html#a0a21674efbeeb09f03aa9f6c142f3ae7" title=" " alt="" coords="188,179,322,215"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="111,124,189,164,200,169,198,174,186,169,108,129"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="322,123,354,118,355,124,323,128"/>
+</map>

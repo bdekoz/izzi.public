@@ -1,0 +1,14 @@
+<map id="svg::make_tspan_y_from_string_by_token" name="svg::make_tspan_y_from_string_by_token">
+<area shape="rect" id="Node000001" title="Make text span." alt="" coords="5,38,159,74"/>
+<area shape="rect" id="Node000002" href="$namespacesvg.html#a26bf6966511ae3c348843c1881b190d8" title="Escape unescaped data for an XML text node." alt="" coords="394,5,532,29"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="148,34,206,23,296,15,379,13,379,18,296,20,207,28,149,40"/>
+<area shape="rect" id="Node000004" href="$group__elements.html#a5148bd1fef414dc3e19178676adb5f33" title=" " alt="" coords="207,38,333,74"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="159,53,191,53,191,58,159,58"/>
+<area shape="rect" id="Node000005" href="$group__elements.html#aa3cf6ccdf271bdf55e83e47818daadc0" title="For text list output, use tspan for line breaks. This span creates a new horizontal line for every ts..." alt="" coords="207,99,333,136"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="141,72,198,91,196,96,140,77"/>
+<area shape="rect" id="Node000003" href="$namespacesvg_1_1detail.html#a0dabd749799988c1aae4474d923c6fd1" title="Escape unescaped character data at its XML serialization boundary. Existing entity spellings are data..." alt="" coords="593,47,745,70"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="526,27,592,40,591,46,525,32"/>
+<area shape="rect" id="Node000006" href="$namespacesvg.html#ac91e1a80dd6b2df85fd06a07320bc6ce" title="Escape unescaped data for a double&#45;quoted XML attribute value." alt="" coords="381,71,545,94"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="333,103,378,95,379,100,334,108"/>
+<area shape="poly" id="edge6_Node000006_Node000003" title=" " alt="" coords="546,70,577,66,578,72,546,76"/>
+</map>

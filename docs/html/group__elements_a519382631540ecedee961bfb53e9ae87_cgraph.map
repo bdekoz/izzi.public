@@ -1,0 +1,11 @@
+<map id="svg::circle_element::add_data" name="svg::circle_element::add_data">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,133,42"/>
+<area shape="rect" id="Node000002" href="$group__elements.html#a53d72a7ff728ad1d4d027254530bcf3d" title=" " alt="" coords="181,5,314,42"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="133,21,165,21,165,26,133,26"/>
+<area shape="rect" id="Node000003" href="$group__elements.html#ae50258851ebbaf08c7eebc3fbdbf1ac8" title="Common transforms include rotate(180)" alt="" coords="362,5,522,42"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="314,21,346,21,346,26,314,26"/>
+<area shape="rect" id="Node000004" href="$namespacesvg.html#ac91e1a80dd6b2df85fd06a07320bc6ce" title="Escape unescaped data for a double&#45;quoted XML attribute value." alt="" coords="570,12,735,36"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="523,21,555,21,555,26,523,26"/>
+<area shape="rect" id="Node000005" href="$namespacesvg_1_1detail.html#a0dabd749799988c1aae4474d923c6fd1" title="Escape unescaped character data at its XML serialization boundary. Existing entity spellings are data..." alt="" coords="783,12,934,36"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="735,21,767,21,767,26,735,26"/>
+</map>

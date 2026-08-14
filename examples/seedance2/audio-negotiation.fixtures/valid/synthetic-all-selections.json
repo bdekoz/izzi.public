@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "candidate_manifest": {
+    "path": "tests/baselines/audio/here-lies-trouble-1/izzi-audio-candidates-energy-1-4ebd1fc24c7fb66d/manifest.json",
+    "sha256": "a3cd27642c777f62415a8fd562b152f08a0735f001c4bd920ba9c41b2c4fa141"
+  },
+  "evidence_status": "SYNTHETIC-TEST-EVIDENCE",
+  "authority_status": "SYNTHETIC-NON-AUTHORITATIVE",
+  "document_purpose": "SYNTHETIC-NEGOTIATION-TEST-ONLY",
+  "synthetic_notice": "SYNTHETIC TEST ONLY; THESE ARE NOT USER DECISIONS",
+  "revision": 1,
+  "claimed_state": "TEN-LOCKED",
+  "lock_claim": true,
+  "decisions": [
+    {"band": 1, "action": "SELECT", "decision": "SELECTED", "candidate_id": "ec1-389623ce28b1f7828d06", "decision_source": "SYNTHETIC-TEST"},
+    {"band": 2, "action": "SELECT", "decision": "SELECTED", "candidate_id": "ec1-4bcb25296f930264d759", "decision_source": "SYNTHETIC-TEST"},
+    {"band": 3, "action": "SELECT", "decision": "SELECTED", "candidate_id": "ec1-fd9f918f0e6a3192f274", "decision_source": "SYNTHETIC-TEST"},
+    {"band": 4, "action": "SELECT", "decision": "SELECTED", "candidate_id": "ec1-2789e1f0ef12cf6a3251", "decision_source": "SYNTHETIC-TEST"},
+    {"band": 5, "action": "SELECT", "decision": "SELECTED", "candidate_id": "ec1-e5adf6b5e3cbcac0d91c", "decision_source": "SYNTHETIC-TEST"},
+    {"band": 6, "action": "SELECT", "decision": "SELECTED", "candidate_id": "ec1-5651cd55f0e5da152ef8", "decision_source": "SYNTHETIC-TEST"},
+    {"band": 7, "action": "SELECT", "decision": "SELECTED", "candidate_id": "ec1-d21f06e171cd31816dc6", "decision_source": "SYNTHETIC-TEST"},
+    {"band": 8, "action": "SELECT", "decision": "SELECTED", "candidate_id": "ec1-07e7d1b7fa9396ecb7e1", "decision_source": "SYNTHETIC-TEST"},
+    {"band": 9, "action": "SELECT", "decision": "SELECTED", "candidate_id": "ec1-6babddeef04058e85a0d", "decision_source": "SYNTHETIC-TEST"},
+    {"band": 10, "action": "SELECT", "decision": "SELECTED", "candidate_id": "ec1-a4bbc88e094b2dc275fd", "decision_source": "SYNTHETIC-TEST"}
+  ]
+}

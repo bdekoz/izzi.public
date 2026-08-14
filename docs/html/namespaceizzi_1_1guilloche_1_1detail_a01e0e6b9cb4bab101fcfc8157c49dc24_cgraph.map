@@ -1,0 +1,15 @@
+<map id="izzi::guilloche::detail::sample_centerline" name="izzi::guilloche::detail::sample_centerline">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,107,142,144"/>
+<area shape="rect" id="Node000002" href="$namespaceizzi_1_1guilloche_1_1detail.html#ae999856a65093cbd6453e78f1b7f8f30" title=" " alt="" coords="190,23,343,60"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="116,104,208,64,210,69,119,109"/>
+<area shape="rect" id="Node000003" href="$namespaceizzi_1_1guilloche_1_1detail.html#aa2e3cb80bde026ce4a045068023f69c2" title=" " alt="" coords="575,23,712,60"/>
+<area shape="poly" id="edge6_Node000001_Node000003" title=" " alt="" coords="142,118,317,101,422,87,527,70,562,62,563,67,528,75,423,93,317,106,142,124"/>
+<area shape="rect" id="Node000005" href="$namespaceizzi_1_1guilloche_1_1detail.html#a01ab0bb61bd09ef54154151fdc730512" title=" " alt="" coords="198,135,334,172"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="142,133,184,139,183,144,141,138"/>
+<area shape="rect" id="Node000006" href="$namespacesvg.html#acb09147a4660e9ed01ecf52561143042" title="Sample an automatically closed epi&#45; or hypotrochoid." alt="" coords="199,197,334,220"/>
+<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="109,142,191,182,209,189,207,194,189,187,107,147"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="331,20,391,8,459,3,528,8,569,17,568,22,527,14,459,8,391,14,332,25"/>
+<area shape="rect" id="Node000004" href="$namespaceizzi_1_1guilloche_1_1detail.html#a43085b52b2c54d59241bba794b71832d" title=" " alt="" coords="391,23,527,60"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="343,39,375,39,375,44,343,44"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="528,39,560,39,560,44,528,44"/>
+</map>

@@ -1,0 +1,18 @@
+var searchData=
+[
+  ['icosahedron_0',['icosahedron',['../namespacesvg.html#a7c30513e0ec17ac816f135b43687f7eaadb521769723bc15762db3315e6e54504',1,'svg']]],
+  ['identifier_1',['identifier',['../namespacesvg_1_1graph.html#aef3ccd02e58140cefa3d3146c66e0b7daf393f3f5e496869a15bc72cbfd56f541',1,'svg::graph']]],
+  ['ideographic_2',['ideographic',['../structsvg_1_1typography.html#a13d320c2ae85f1d4f3ea33806e60a7b9a0de30bfd9180a596227b4e87e94f73a8',1,'svg::typography']]],
+  ['image_3',['image',['../namespacesvg.html#ac8061963317131e6bd4d517ed84880bca78805a221a988e79ef3f42d7c5bfd418',1,'svg']]],
+  ['in_4',['in',['../namespacesvg.html#a1210fd1e2d44bd05ccad2b95c9fdb887a13b5bfe96f3e2fe411c9f66f4a582adf',1,'svg']]],
+  ['inch_5',['inch',['../namespacesvg.html#a1210fd1e2d44bd05ccad2b95c9fdb887a7b5459ea3cf12f9c4cfcd23fa54cde07',1,'svg']]],
+  ['indigo_6',['indigo',['../namespacesvg.html#a0e622bba4eee0e6528a9261d6aa251d1a8a99d28c3c43cafed58cdbac5f4e9201',1,'svg']]],
+  ['information_7',['information',['../namespacesvg_1_1graph.html#a1aaedbadf0c81bd78b22e4bc44090669abb3ccd5881d651448ded1dac904054ac',1,'svg::graph::information'],['../namespaceizzi_1_1guilloche.html#aa7f3ac6a8b0e4dbb1439d28f40c2b6d4abb3ccd5881d651448ded1dac904054ac',1,'izzi::guilloche::information'],['../namespaceizzi_1_1moire.html#a82facba37f012006e3bd589f728d1b87abb3ccd5881d651448ded1dac904054ac',1,'izzi::moire::information'],['../namespaceizzi_1_1surface__tension.html#a40d5493cbe38e5b5f4b9d105dbc7cf52abb3ccd5881d651448ded1dac904054ac',1,'izzi::surface_tension::information']]],
+  ['inherit_8',['inherit',['../structsvg_1_1typography.html#a93bca2e6c4e32784def555d27487f886a6995c373523132a1006975baf4079aa0',1,'svg::typography::inherit'],['../structsvg_1_1typography.html#ab466ab5a124304d826cea9c46a46d3b0a6995c373523132a1006975baf4079aa0',1,'svg::typography::inherit']]],
+  ['initial_9',['initial',['../structsvg_1_1typography.html#a93bca2e6c4e32784def555d27487f886acc51b81974287ab79cef9e94fe778cc9',1,'svg::typography']]],
+  ['input_10',['input',['../namespacesvg_1_1graph.html#aef3ccd02e58140cefa3d3146c66e0b7daa43c1b0aa53a0c908810c06ab1ff3967',1,'svg::graph']]],
+  ['interfere_11',['interfere',['../namespaceizzi_1_1moire.html#ae97136016d3efe2477f1004bd62d1231aceff088dfeb78b82780f12c4f2b08b48',1,'izzi::moire::interfere'],['../namespaceizzi_1_1surface__tension.html#a61d70fb91980bd6b1b8048fc055426bcaceff088dfeb78b82780f12c4f2b08b48',1,'izzi::surface_tension::interfere']]],
+  ['internationalorange_12',['internationalorange',['../namespacesvg.html#a0e622bba4eee0e6528a9261d6aa251d1a528f731a4d64ef8ce815e38e9f7112f1',1,'svg']]],
+  ['italic_13',['italic',['../structsvg_1_1typography.html#aba5bf3a1484966319aebc9443746e98ca030c5b6d1e5715105943ac111d9671bf',1,'svg::typography']]],
+  ['ivory_14',['ivory',['../namespacesvg.html#a0e622bba4eee0e6528a9261d6aa251d1ac55c68625ca1da0e1d4a922fc8cb373e',1,'svg']]]
+];

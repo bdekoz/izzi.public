@@ -1,0 +1,17 @@
+<map id="svg::make_line" name="svg::make_line">
+<area shape="rect" id="Node000001" title="Line primitive." alt="" coords="5,104,108,128"/>
+<area shape="rect" id="Node000002" href="$group__elements.html#a306eac4c5a7ea755ab6375a65489366f" title=" " alt="" coords="159,5,286,42"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="75,101,154,52,164,47,167,52,157,57,78,105"/>
+<area shape="rect" id="Node000005" href="$group__elements.html#a238b38ca99a1cf6c2baf80c8e4338d99" title=" " alt="" coords="156,67,289,103"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="108,104,140,97,141,103,109,109"/>
+<area shape="rect" id="Node000007" href="$group__elements.html#ga4769af15793cb308d426abb5fd552df5" title=" " alt="" coords="159,128,286,165"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="109,122,145,129,144,135,108,128"/>
+<area shape="rect" id="Node000008" href="$group__elements.html#aa6b4ba04be5858b4943235801f034943" title=" " alt="" coords="159,189,286,226"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="78,126,157,175,167,180,164,184,154,179,75,130"/>
+<area shape="rect" id="Node000003" href="$namespacesvg.html#ac91e1a80dd6b2df85fd06a07320bc6ce" title="Escape unescaped data for a double&#45;quoted XML attribute value." alt="" coords="337,12,501,36"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="286,21,321,21,321,26,286,26"/>
+<area shape="rect" id="Node000004" href="$namespacesvg_1_1detail.html#a0dabd749799988c1aae4474d923c6fd1" title="Escape unescaped character data at its XML serialization boundary. Existing entity spellings are data..." alt="" coords="549,12,701,36"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="502,21,534,21,534,26,502,26"/>
+<area shape="rect" id="Node000006" href="$namespacesvg.html#ac10e7d47d031b121174fc0e65232980f" title="Convert point_2t to string." alt="" coords="372,73,467,97"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="289,82,356,82,356,88,289,88"/>
+</map>

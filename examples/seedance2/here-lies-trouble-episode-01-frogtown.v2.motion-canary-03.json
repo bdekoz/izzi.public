@@ -1,0 +1,121 @@
+{
+  "$schema": "../../schemas/izzi.here-lies-trouble-motion-canary.schema.json",
+  "schema_version": "izzi.here-lies-trouble-motion-canary/1",
+  "canary_id": "hlt-frogtown-v2-motion-canary-03",
+  "project_id": "here-lies-trouble",
+  "episode_index": 1,
+  "location_slug": "frogtown",
+  "artifact_version": "v2",
+  "status": "SPECIFICATION-AUTHORIZED-PENDING-SUBMISSION",
+  "sources": {
+    "episode_config": {
+      "path": "examples/seedance2/here-lies-trouble-episode-01-frogtown.v2.json",
+      "sha256": "a4de4ca5947771bb07c39d21d720a6c7d1548fe2d706838050e1259c5047fe5f"
+    },
+    "accepted_visual": {
+      "path": "outputs/review/feedback/visual/here-lies-trouble/neon-addict-stage-01/style-frames/sample-01-frogtown-source.png",
+      "sha256": "78b79a6f1cb67162293c7ff901ca53d90a4d7c44d179b649d4d9103b95b86d42"
+    }
+  },
+  "profile": {
+    "width": 720,
+    "height": 1280,
+    "duration_seconds": 5,
+    "audio": false,
+    "generated_text": false
+  },
+  "cast": ["unicorn", "albatross", "dog", "cat"],
+  "motion_test": "LOCATION-EXPLORATION",
+  "scene": {
+    "frogtown_anchor": "riparian planting pocket at the concrete Los Angeles River edge beside the Frogtown path",
+    "starting_composition": "the group arrives at the river edge with the concrete channel, plants, and bicycle-path line all visible",
+    "required_action": "the dog investigates the path edge, the cat steps onto a low concrete rise, the albatross examines moving plants, and the unicorn turns toward the water while the group remains connected",
+    "ending_composition": "the four regroup around one discovered river-edge detail in a new but balanced composition",
+    "camera": "mostly fixed portrait composition with a small reframing only after character actions establish movement",
+    "environmental_motion": "plant stems bend independently, water reflections travel, and one small found object shifts near the concrete edge"
+  },
+  "motion_aesthetic_seeds": [
+    { "seed_id": "br-final-cut-cut-4", "role": "exploration-tempo-reference" }
+  ],
+  "motion_grammar": {
+    "camera": [
+      "mostly fixed with small episodic reframing after character actions"
+    ],
+    "subject_motion": [
+      "advance, pause, look",
+      "localized stage-by-stage exploration by each animal"
+    ],
+    "environmental_motion": [
+      "plant stems, traveling water reflections, and one small found object during holds"
+    ],
+    "tempo": [
+      "rhythmic: action, pause, action"
+    ]
+  },
+  "cost_gate": {
+    "estimated_credits_per_job": 60,
+    "maximum_credits_per_job": 90,
+    "maximum_total_credits": 270
+  },
+  "continuity_invariants": [
+    "exactly one unicorn, one albatross, one dog, and one cat",
+    "single readable unicorn horn",
+    "long-winged and long-beaked albatross silhouette",
+    "asymmetric dog-ear silhouette",
+    "cat flank circle and high curved tail",
+    "restrained Neon Addict markings",
+    "each animal performs a different location-directed action",
+    "the group remains socially connected",
+    "no species swaps, duplication, disappearance, or extra limbs",
+    "Frogtown concrete, bicycle path, water, and riparian ecology remain visible",
+    "actual character and environmental movement rather than camera drift",
+    "no spike-shaped projection on any animal back or body; cat back and high curved tail stay clean and continuous"
+  ],
+  "prompt": "Animate the supplied accepted Frogtown keyframe as an original two-dimensional exploration scene at a riparian planting pocket beside the concrete Los Angeles River. Keep exactly one unicorn, one albatross, one dog, and one cat with stable silhouettes and restrained neon markings. Give each animal a different, coherent action over five seconds: the dog investigates the path edge and returns attention to the group; the cat steps onto a low concrete rise; the albatross walks to moving plants and examines them with head and wing-edge motion; the unicorn turns toward changing water reflections and then back to the others. The group should remain socially connected and regroup around one small discovered river-edge detail. Keep the camera mostly fixed until body-driven motion is unmistakable. Preserve bold off-white and black fields, sparse cyan, chartreuse, magenta, yellow, and coral, tactile ink and paper texture, asymmetrical geometry, and generous negative space. No text and no audio.",
+  "negative_prompt": [
+    "static tableau",
+    "camera-only movement",
+    "generic nature scene",
+    "generic neon city",
+    "missing Los Angeles River concrete",
+    "missing animal",
+    "duplicate animal",
+    "species swap",
+    "extra limbs",
+    "melting anatomy",
+    "identity drift",
+    "animals leaving the group permanently",
+    "photorealism",
+    "embedded text",
+    "captions",
+    "logos",
+    "pink spike on cat body",
+    "spike-shaped projection on any animal back",
+    "extra spike-shaped color artifact"
+  ],
+  "review_questions": [
+    "Does each animal perform a distinct location-directed action?",
+    "Does body and environmental motion clearly exceed camera motion?",
+    "Does the scene retain concrete, path, water, and riparian Frogtown anchors?",
+    "Do the four animals remain recognizable and socially connected?",
+    "Does the final regrouping create a useful episode shot rather than a disconnected montage?"
+  ],
+  "provider_adapter": {
+    "provider": "seedance2ai.io",
+    "model": "seedance2",
+    "seed": 2026081203,
+    "requested_quality": "720p-preview",
+    "submission_status": "AUTHORIZED"
+  },
+  "intended_output": "outputs/review/feedback/visual/here-lies-trouble/neon-addict-stage-01/episode-01-local-trial/motion-canaries/v2/here-lies-trouble-episode-01-frogtown.v2.motion-canary-03.mkv",
+  "authority": {
+    "local_specification_authorized": true,
+    "motion_generation_authorized": true,
+    "provider_submission_authorized": true,
+    "additional_spending_authorized": true,
+    "audio_transfer_authorized": false,
+    "publication_authorized": true,
+    "baseline_promotion_authorized": false,
+    "training_conversion_transfer_authorized": false
+  }
+}

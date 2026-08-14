@@ -1,0 +1,24 @@
+<map id="svg::make_rect" name="svg::make_rect">
+<area shape="rect" id="Node000001" title="Create rect_element at origin." alt="" coords="5,154,108,178"/>
+<area shape="rect" id="Node000002" href="$group__elements.html#a1dd6663d882fb5dd14a47462a77f351b" title="Either serialize immediately (as below), or create data structure that adds data to data_vec and then..." alt="" coords="159,5,286,42"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="65,152,102,109,154,59,169,48,172,53,157,63,106,113,69,156"/>
+<area shape="rect" id="Node000003" href="$group__elements.html#a1b22cfab9437b40c8b877ffe5472ff02" title=" " alt="" coords="350,63,484,99"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="71,152,107,126,155,103,200,90,247,82,334,76,335,82,247,88,201,95,157,107,110,130,74,156"/>
+<area shape="rect" id="Node000006" href="$group__elements.html#a238b38ca99a1cf6c2baf80c8e4338d99" title=" " alt="" coords="156,117,289,154"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="108,154,140,148,141,153,109,160"/>
+<area shape="rect" id="Node000008" href="$group__elements.html#a53d72a7ff728ad1d4d027254530bcf3d" title=" " alt="" coords="156,179,289,215"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="109,173,141,179,140,185,108,178"/>
+<area shape="rect" id="Node000010" href="$group__elements.html#gad01750ac554c6bd6871a930c90e17a04" title=" " alt="" coords="159,240,286,277"/>
+<area shape="poly" id="edge10_Node000001_Node000010" title=" " alt="" coords="78,177,157,225,167,230,164,235,154,230,75,181"/>
+<area shape="rect" id="Node000011" href="$group__elements.html#a1e0ed5e9dfe1244317a87d7e6774348b" title=" " alt="" coords="159,301,286,338"/>
+<area shape="poly" id="edge11_Node000001_Node000011" title=" " alt="" coords="67,177,102,229,128,259,157,287,163,291,159,295,154,291,124,263,98,232,63,180"/>
+<area shape="rect" id="Node000004" href="$namespacesvg.html#ac91e1a80dd6b2df85fd06a07320bc6ce" title="Escape unescaped data for a double&#45;quoted XML attribute value." alt="" coords="545,126,710,150"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="485,97,567,119,566,124,483,102"/>
+<area shape="rect" id="Node000005" href="$namespacesvg_1_1detail.html#a0dabd749799988c1aae4474d923c6fd1" title="Escape unescaped character data at its XML serialization boundary. Existing entity spellings are data..." alt="" coords="758,126,909,150"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="710,136,742,136,742,141,710,141"/>
+<area shape="rect" id="Node000007" href="$namespacesvg.html#ac10e7d47d031b121174fc0e65232980f" title="Convert point_2t to string." alt="" coords="370,124,465,148"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="289,133,354,133,354,138,289,138"/>
+<area shape="rect" id="Node000009" href="$group__elements.html#ae50258851ebbaf08c7eebc3fbdbf1ac8" title="Common transforms include rotate(180)" alt="" coords="337,175,497,211"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="289,193,321,192,321,198,289,198"/>
+<area shape="poly" id="edge9_Node000009_Node000004" title=" " alt="" coords="490,171,564,152,565,157,491,177"/>
+</map>

@@ -1,0 +1,17 @@
+<map id="izzi::moire::detail::sample" name="izzi::moire::detail::sample">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,67,122,103"/>
+<area shape="rect" id="Node000002" href="$namespaceizzi_1_1moire_1_1detail.html#a2d0381da0b9cd4edd86e37147f39deca" title=" " alt="" coords="170,5,301,42"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="116,64,166,45,168,50,118,69"/>
+<area shape="rect" id="Node000006" href="$namespaceizzi_1_1moire_1_1detail.html#a1ea603ea7eb8b92601edf9288734d535" title=" " alt="" coords="177,67,294,103"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="122,82,162,82,162,88,122,88"/>
+<area shape="rect" id="Node000007" href="$namespaceizzi_1_1moire_1_1detail.html#ad9cec99f4532352daf7feb3487e6e5e8" title=" " alt="" coords="177,128,294,165"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="118,101,168,120,166,125,116,106"/>
+<area shape="rect" id="Node000003" href="$namespaceizzi_1_1moire_1_1detail.html#a551f7338548adb7c6a79abe40ac0a541" title=" " alt="" coords="349,67,465,103"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="290,40,340,58,338,63,288,45"/>
+<area shape="rect" id="Node000004" href="$namespaceizzi_1_1moire_1_1detail.html#a14700198917d76704fdd2d0dc8f53543" title=" " alt="" coords="513,67,646,103"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="466,82,498,82,498,88,466,88"/>
+<area shape="rect" id="Node000005" href="$namespaceizzi_1_1moire_1_1detail.html#a18e3346150480e206d3f8f4c7080df4b" title=" " alt="" coords="694,73,837,97"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="646,82,678,82,678,88,646,88"/>
+<area shape="poly" id="edge6_Node000006_Node000003" title=" " alt="" coords="294,82,333,82,333,88,294,88"/>
+<area shape="poly" id="edge8_Node000007_Node000003" title=" " alt="" coords="288,125,338,107,340,112,290,130"/>
+</map>

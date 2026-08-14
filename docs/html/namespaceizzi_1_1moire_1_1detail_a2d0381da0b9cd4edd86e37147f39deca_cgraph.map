@@ -1,0 +1,9 @@
+<map id="izzi::moire::detail::sample_concentric" name="izzi::moire::detail::sample_concentric">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,137,42"/>
+<area shape="rect" id="Node000002" href="$namespaceizzi_1_1moire_1_1detail.html#a551f7338548adb7c6a79abe40ac0a541" title=" " alt="" coords="185,5,301,42"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="137,21,169,21,169,26,137,26"/>
+<area shape="rect" id="Node000003" href="$namespaceizzi_1_1moire_1_1detail.html#a14700198917d76704fdd2d0dc8f53543" title=" " alt="" coords="349,5,481,42"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="302,21,334,21,334,26,302,26"/>
+<area shape="rect" id="Node000004" href="$namespaceizzi_1_1moire_1_1detail.html#a18e3346150480e206d3f8f4c7080df4b" title=" " alt="" coords="529,12,673,36"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="482,21,514,21,514,26,482,26"/>
+</map>

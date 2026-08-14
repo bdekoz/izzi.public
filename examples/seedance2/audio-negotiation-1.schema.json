@@ -1,0 +1,342 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://bdekoz.github.io/izzi.public/examples/seedance2/audio-negotiation-1.schema.json",
+  "title": "Izzi audio-candidate negotiation input",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "candidate_manifest",
+    "evidence_status",
+    "authority_status",
+    "document_purpose",
+    "synthetic_notice",
+    "revision",
+    "claimed_state",
+    "lock_claim",
+    "decisions"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "candidate_manifest": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "path",
+        "sha256"
+      ],
+      "properties": {
+        "path": {
+          "type": "string",
+          "pattern": "^(?!/)(?!.*(?:^|/)\\.\\.(?:/|$))[^\\u0000]+$"
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        }
+      }
+    },
+    "evidence_status": {
+      "enum": [
+        "UNAVAILABLE",
+        "VISIBLE-USER-DECISIONS",
+        "SYNTHETIC-TEST-EVIDENCE"
+      ]
+    },
+    "authority_status": {
+      "enum": [
+        "UNAVAILABLE",
+        "VISIBLE-USER-AUTHORITY",
+        "SYNTHETIC-NON-AUTHORITATIVE"
+      ]
+    },
+    "document_purpose": {
+      "enum": [
+        "REAL-NEGOTIATION",
+        "SYNTHETIC-NEGOTIATION-TEST-ONLY"
+      ]
+    },
+    "synthetic_notice": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "revision": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "claimed_state": {
+      "enum": [
+        "CANDIDATES-READY",
+        "NEGOTIATING",
+        "TEN-LOCKED"
+      ]
+    },
+    "lock_claim": {
+      "type": "boolean"
+    },
+    "decisions": {
+      "type": "array",
+      "minItems": 10,
+      "maxItems": 10,
+      "items": {
+        "$ref": "#/$defs/decision"
+      }
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "evidence_status": {
+            "const": "UNAVAILABLE"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "authority_status": {
+            "const": "UNAVAILABLE"
+          },
+          "document_purpose": {
+            "const": "REAL-NEGOTIATION"
+          },
+          "synthetic_notice": {
+            "type": "null"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "evidence_status": {
+            "const": "VISIBLE-USER-DECISIONS"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "authority_status": {
+            "const": "VISIBLE-USER-AUTHORITY"
+          },
+          "document_purpose": {
+            "const": "REAL-NEGOTIATION"
+          },
+          "synthetic_notice": {
+            "type": "null"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "evidence_status": {
+            "const": "SYNTHETIC-TEST-EVIDENCE"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "authority_status": {
+            "const": "SYNTHETIC-NON-AUTHORITATIVE"
+          },
+          "document_purpose": {
+            "const": "SYNTHETIC-NEGOTIATION-TEST-ONLY"
+          },
+          "synthetic_notice": {
+            "const": "SYNTHETIC TEST ONLY; THESE ARE NOT USER DECISIONS"
+          }
+        }
+      }
+    }
+  ],
+  "$defs": {
+    "candidateId": {
+      "type": "string",
+      "pattern": "^ec1-[0-9a-f]{20}$"
+    },
+    "decision": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "band",
+        "action",
+        "decision",
+        "candidate_id",
+        "decision_source"
+      ],
+      "properties": {
+        "band": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 10
+        },
+        "action": {
+          "enum": [
+            "UNAVAILABLE",
+            "SELECT",
+            "REJECT",
+            "REQUEST-REANALYSIS",
+            "DEFER"
+          ]
+        },
+        "decision": {
+          "enum": [
+            "UNAVAILABLE",
+            "SELECTED",
+            "REJECTED",
+            "REANALYSIS-REQUESTED",
+            "DEFERRED"
+          ]
+        },
+        "candidate_id": {
+          "oneOf": [
+            {
+              "$ref": "#/$defs/candidateId"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "decision_source": {
+          "enum": [
+            "UNAVAILABLE",
+            "USER",
+            "SYNTHETIC-TEST",
+            "SYSTEM"
+          ]
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "action": {
+                "const": "UNAVAILABLE"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "decision": {
+                "const": "UNAVAILABLE"
+              },
+              "candidate_id": {
+                "type": "null"
+              },
+              "decision_source": {
+                "const": "UNAVAILABLE"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "action": {
+                "const": "SELECT"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "decision": {
+                "const": "SELECTED"
+              },
+              "candidate_id": {
+                "$ref": "#/$defs/candidateId"
+              },
+              "decision_source": {
+                "enum": [
+                  "USER",
+                  "SYNTHETIC-TEST"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "action": {
+                "const": "REJECT"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "decision": {
+                "const": "REJECTED"
+              },
+              "candidate_id": {
+                "$ref": "#/$defs/candidateId"
+              },
+              "decision_source": {
+                "enum": [
+                  "USER",
+                  "SYNTHETIC-TEST"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "action": {
+                "const": "REQUEST-REANALYSIS"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "decision": {
+                "const": "REANALYSIS-REQUESTED"
+              },
+              "candidate_id": {
+                "type": "null"
+              },
+              "decision_source": {
+                "enum": [
+                  "USER",
+                  "SYNTHETIC-TEST"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "action": {
+                "const": "DEFER"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "decision": {
+                "const": "DEFERRED"
+              },
+              "candidate_id": {
+                "type": "null"
+              },
+              "decision_source": {
+                "enum": [
+                  "USER",
+                  "SYNTHETIC-TEST"
+                ]
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

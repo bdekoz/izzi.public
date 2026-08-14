@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "candidate_manifest": {
+    "path": "tests/baselines/audio/here-lies-trouble-1/izzi-audio-candidates-energy-1-4ebd1fc24c7fb66d/manifest.json",
+    "sha256": "a3cd27642c777f62415a8fd562b152f08a0735f001c4bd920ba9c41b2c4fa141"
+  },
+  "evidence_status": "SYNTHETIC-TEST-EVIDENCE",
+  "authority_status": "SYNTHETIC-NON-AUTHORITATIVE",
+  "document_purpose": "SYNTHETIC-NEGOTIATION-TEST-ONLY",
+  "synthetic_notice": "SYNTHETIC TEST ONLY; THESE ARE NOT USER DECISIONS",
+  "revision": 1,
+  "claimed_state": "NEGOTIATING",
+  "lock_claim": false,
+  "decisions": [
+    {"band": 1, "action": "SELECT", "decision": "SELECTED", "candidate_id": "ec1-389623ce28b1f7828d06", "decision_source": "SYSTEM"},
+    {"band": 2, "action": "UNAVAILABLE", "decision": "UNAVAILABLE", "candidate_id": null, "decision_source": "UNAVAILABLE"},
+    {"band": 3, "action": "UNAVAILABLE", "decision": "UNAVAILABLE", "candidate_id": null, "decision_source": "UNAVAILABLE"},
+    {"band": 4, "action": "UNAVAILABLE", "decision": "UNAVAILABLE", "candidate_id": null, "decision_source": "UNAVAILABLE"},
+    {"band": 5, "action": "UNAVAILABLE", "decision": "UNAVAILABLE", "candidate_id": null, "decision_source": "UNAVAILABLE"},
+    {"band": 6, "action": "UNAVAILABLE", "decision": "UNAVAILABLE", "candidate_id": null, "decision_source": "UNAVAILABLE"},
+    {"band": 7, "action": "UNAVAILABLE", "decision": "UNAVAILABLE", "candidate_id": null, "decision_source": "UNAVAILABLE"},
+    {"band": 8, "action": "UNAVAILABLE", "decision": "UNAVAILABLE", "candidate_id": null, "decision_source": "UNAVAILABLE"},
+    {"band": 9, "action": "UNAVAILABLE", "decision": "UNAVAILABLE", "candidate_id": null, "decision_source": "UNAVAILABLE"},
+    {"band": 10, "action": "UNAVAILABLE", "decision": "UNAVAILABLE", "candidate_id": null, "decision_source": "UNAVAILABLE"}
+  ]
+}

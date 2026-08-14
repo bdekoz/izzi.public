@@ -1,0 +1,36 @@
+<map id="svg::graph::json_detail::parse_provenance" name="svg::graph::json_detail::parse_provenance">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,182,153,218"/>
+<area shape="rect" id="Node000002" href="$namespacesvg_1_1graph_1_1json__detail.html#a57a163d42b960248e3f133e6579e8264" title=" " alt="" coords="614,34,762,70"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="87,180,104,150,129,114,161,79,199,50,250,27,303,13,358,5,414,3,519,11,607,27,606,32,518,16,413,8,359,10,304,18,251,32,202,54,164,83,133,118,109,153,92,183"/>
+<area shape="rect" id="Node000004" href="$namespacesvg_1_1graph_1_1json__detail.html#ac619195a09a1644ebdc0a21e670ccb28" title=" " alt="" coords="614,184,762,221"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="153,211,238,224,341,234,454,238,566,231,610,223,611,228,567,236,454,243,340,239,237,229,153,216"/>
+<area shape="rect" id="Node000006" href="$namespacesvg_1_1graph_1_1json__detail.html#af2d428ef94f95393d2336b978ed17833" title=" " alt="" coords="408,296,555,333"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="104,217,148,248,202,275,249,289,299,300,393,310,392,316,298,305,248,295,200,280,145,252,101,221"/>
+<area shape="rect" id="Node000008" href="$namespacesvg_1_1graph_1_1json__detail.html#a3a8d45a574aa7301a647f46063ecd289" title=" " alt="" coords="396,123,566,160"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="153,187,380,153,381,159,154,192"/>
+<area shape="rect" id="Node000010" href="$namespacesvg_1_1graph_1_1json__detail.html#a017e3dbd7348377f6a815743788a153d" title=" " alt="" coords="201,64,348,101"/>
+<area shape="poly" id="edge12_Node000001_Node000010" title=" " alt="" coords="110,179,228,107,230,112,113,184"/>
+<area shape="rect" id="Node000013" href="$namespacesvg_1_1graph_1_1json__detail.html#a44c5fe5600bbd06e8edca5983e449129" title=" " alt="" coords="201,347,348,384"/>
+<area shape="poly" id="edge21_Node000001_Node000013" title=" " alt="" coords="97,217,141,269,170,299,202,326,219,337,216,342,199,330,167,303,137,273,93,221"/>
+<area shape="rect" id="Node000003" href="$namespacesvg_1_1graph_1_1json__detail.html#a72aecd92996018a49e3566b2294d07d9" title=" " alt="" coords="810,34,957,70"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="762,49,794,49,794,55,762,55"/>
+<area shape="rect" id="Node000005" href="$namespacesvg_1_1graph_1_1detail.html#a1120b363480e1f2f2c8129f4b81baa61" title=" " alt="" coords="824,184,943,221"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="762,200,808,200,808,205,762,205"/>
+<area shape="poly" id="edge6_Node000006_Node000004" title=" " alt="" coords="527,294,565,275,645,228,647,232,568,280,529,298"/>
+<area shape="rect" id="Node000007" href="$namespacesvg_1_1graph_1_1json__detail.html#a72f8ebaec0c2bcfc8f8faa7f6fd62e37" title=" " alt="" coords="614,271,762,308"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="555,303,599,298,599,303,555,308"/>
+<area shape="poly" id="edge9_Node000008_Node000002" title=" " alt="" coords="536,120,565,108,636,75,638,80,567,113,538,125"/>
+<area shape="poly" id="edge10_Node000008_Node000004" title=" " alt="" coords="546,158,610,177,609,182,545,163"/>
+<area shape="rect" id="Node000009" href="$namespacesvg_1_1graph_1_1json__detail.html#a3607c8ee61f5a00652b5a7a211f4245f" title=" " alt="" coords="614,123,762,160"/>
+<area shape="poly" id="edge11_Node000008_Node000009" title=" " alt="" coords="567,139,598,139,598,144,567,144"/>
+<area shape="poly" id="edge13_Node000010_Node000002" title=" " alt="" coords="331,61,396,47,501,40,599,42,599,47,501,45,396,52,333,66"/>
+<area shape="rect" id="Node000011" href="$namespacesvg_1_1graph_1_1json__detail.html#ad072d0ef5139087e1dc82ebcc4e44f3e" title=" " alt="" coords="408,184,555,221"/>
+<area shape="poly" id="edge14_Node000010_Node000011" title=" " alt="" coords="299,100,343,135,397,170,408,175,406,180,395,174,340,139,295,104"/>
+<area shape="rect" id="Node000012" href="$namespacesvg_1_1graph_1_1json__detail.html#a561656325c1a5797a9553e671f279b82" title=" " alt="" coords="408,62,555,98"/>
+<area shape="poly" id="edge17_Node000010_Node000012" title=" " alt="" coords="348,79,392,79,392,84,348,85"/>
+<area shape="poly" id="edge15_Node000011_Node000004" title=" " alt="" coords="555,200,599,200,599,205,555,205"/>
+<area shape="poly" id="edge16_Node000011_Node000007" title=" " alt="" coords="528,219,629,262,627,267,526,224"/>
+<area shape="poly" id="edge18_Node000012_Node000002" title=" " alt="" coords="555,68,599,62,599,67,555,73"/>
+<area shape="poly" id="edge19_Node000012_Node000004" title=" " alt="" coords="548,97,568,109,584,124,593,140,601,155,616,170,621,174,618,178,613,174,597,158,588,143,580,128,565,113,545,101"/>
+<area shape="poly" id="edge20_Node000012_Node000009" title=" " alt="" coords="546,96,610,116,609,121,545,102"/>
+</map>

@@ -1,0 +1,90 @@
+{
+  "$schema": "https://bdekoz.github.io/izzi.public/examples/seedance2/ten-scene-authoring.proposed.schema.json",
+  "schema_version": 1,
+  "project_id": "seedance-roulette-10s",
+  "canvas": {
+    "width_px": 1280,
+    "height_px": 720,
+    "background": "#14171A",
+    "safe_area_px": {
+      "top": 58,
+      "right": 64,
+      "bottom": 58,
+      "left": 64
+    }
+  },
+  "timeline": {
+    "frame_rate": {
+      "numerator": 30,
+      "denominator": 1
+    },
+    "frame_count": 300
+  },
+  "title": {
+    "text": "GENERATIVE MOTION",
+    "subtitle": "ROULETTE IRIS / 10 SECOND STUDY",
+    "language": "en-US",
+    "accessible_name": "Generative Motion title card",
+    "description": "A dark title on a warm-white field is revealed by an expanding hypotrochoid iris.",
+    "field_background": "#FCFBF7",
+    "layout": {
+      "horizontal": "left",
+      "vertical": "center",
+      "max_width_px": 1024
+    },
+    "typography": {
+      "family": "Atkinson Hyperlegible Next",
+      "weight": 800,
+      "size_px": 78,
+      "line_height": 1.05,
+      "letter_spacing_em": 0.01
+    },
+    "color": "#14171A"
+  },
+  "transition": {
+    "kind": "roulette",
+    "mode": "iris-mask",
+    "start_frame": 45,
+    "frame_count": 90,
+    "easing": "smoothstep",
+    "seed": 4242,
+    "reduced_motion": "cross-fade",
+    "accent_color": "#D33F49",
+    "roulette": {
+      "kind": "hypotrochoid",
+      "fixed_radius": 5,
+      "rolling_radius": 2,
+      "point_distance": 2.5,
+      "phase_radians": 0.0,
+      "samples_per_turn": 192,
+      "origin": "center"
+    }
+  },
+  "output": {
+    "directory": "examples/seedance2/generated",
+    "frame_pattern": "frame-%08d",
+    "formats": [
+      "svg",
+      "png",
+      "mkv"
+    ],
+    "still_asset_id": "roulette-title-still",
+    "manifest": "manifest.json"
+  },
+  "delivery": {
+    "adapter": "seedance2ai-v1",
+    "asset_role": "start-frame",
+    "asset_id": "roulette-title-still",
+    "request": {
+      "quality_tier": "standard",
+      "channel": "standard",
+      "prompt": "Begin on the supplied Generative Motion title field, then pass through the roulette aperture into an abstract mechanical landscape. Keep the exact title only in the opening frame.",
+      "aspect_ratio": "16:9",
+      "duration": "10",
+      "resolution": "720p",
+      "generate_audio": false,
+      "fixed_lens": true,
+      "seed": 4242
+    }
+  }
+}

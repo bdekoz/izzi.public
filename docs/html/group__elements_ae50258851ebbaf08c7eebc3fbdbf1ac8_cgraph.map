@@ -1,0 +1,7 @@
+<map id="svg::element_base::make_transform_attribute" name="svg::element_base::make_transform_attribute">
+<area shape="rect" id="Node000001" title="Common transforms include rotate(180)" alt="" coords="5,5,166,42"/>
+<area shape="rect" id="Node000002" href="$namespacesvg.html#ac91e1a80dd6b2df85fd06a07320bc6ce" title="Escape unescaped data for a double&#45;quoted XML attribute value." alt="" coords="214,12,378,36"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="166,21,198,21,198,26,166,26"/>
+<area shape="rect" id="Node000003" href="$namespacesvg_1_1detail.html#a0dabd749799988c1aae4474d923c6fd1" title="Escape unescaped character data at its XML serialization boundary. Existing entity spellings are data..." alt="" coords="426,12,577,36"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="379,21,410,21,410,26,379,26"/>
+</map>

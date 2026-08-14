@@ -1,0 +1,86 @@
+{
+  "schema_version": "izzi-4d-synthesis-1",
+  "package_id": "izzi-4d-synthesis-round-01-20260810",
+  "status": "CANDIDATE-NOT-PROMOTED",
+  "source_manifest": "outputs/review/feedback/visual/3d-synthesis/round-01/manifest.json",
+  "design_reference_root": "resources/asama-loops",
+  "output_root": "outputs/review/feedback/visual/4d-synthesis/round-01",
+  "profile": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "codec": "h264",
+    "pixel_format": "yuv420p",
+    "audio": false
+  },
+  "episode_contract": {
+    "episodes_per_visual_pass": 10,
+    "duration_seconds": [60, 240],
+    "segment_seconds": [12, 30],
+    "duration_sampling": "DETERMINISTIC-UNIFORM-WHOLE-SECONDS"
+  },
+  "wildness_contract": {
+    "motion": [0.2, 1.0],
+    "color": [0.15, 1.0],
+    "composition": [0.2, 1.0]
+  },
+  "motif_vocabulary": {
+    "composition": [
+      "center-orbit",
+      "edge-entry",
+      "bilateral-mirror",
+      "quad-mirror",
+      "banded-field",
+      "split-field",
+      "layered-registration",
+      "negative-space-inset"
+    ],
+    "motion": [
+      "swipe",
+      "band-scan",
+      "radial-pulse",
+      "orbit",
+      "drift",
+      "dot-expand",
+      "strobe",
+      "glitch-sync"
+    ],
+    "structure": [
+      "hold-reveal-hold",
+      "continuous-loop",
+      "layered-accumulation",
+      "alternating-fields",
+      "serial-assembly",
+      "glitch-interruption"
+    ],
+    "selection": "DETERMINISTIC-SEEDED-UNIFORM"
+  },
+  "visual_passes": [
+    {
+      "pass_id": "guilloche",
+      "field_grammar": "roulette"
+    },
+    {
+      "pass_id": "moire",
+      "field_grammar": "moire"
+    },
+    {
+      "pass_id": "surface-tension",
+      "field_grammar": "surface-tension"
+    }
+  ],
+  "seed": 40810,
+  "typography_policy": {
+    "numeric_roles": "RECORDED-NUMERIC-CAPABLE-FACE",
+    "letter_roles": "RECORDED-EXPERIMENTAL-FACE-ALLOWED",
+    "rejected_numeric_face_reuse": false
+  },
+  "authority": {
+    "local_generation_authorized": true,
+    "human_visual_acceptance": "PENDING",
+    "accessibility_review": "PENDING",
+    "baseline_promotion_authorized": false,
+    "publication_authorized": false,
+    "external_transfer_authorized": false
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "$schema": "https://bdekoz.github.io/izzi.public/examples/seedance2/ten-scene-authoring.proposed.schema.json",
+  "schema_version": 1,
+  "project_id": "seedance-hamonshu-10s",
+  "canvas": {
+    "width_px": 1280,
+    "height_px": 720,
+    "background": "#081820",
+    "safe_area_px": {
+      "top": 58,
+      "right": 64,
+      "bottom": 58,
+      "left": 64
+    }
+  },
+  "timeline": {
+    "frame_rate": {
+      "numerator": 30,
+      "denominator": 1
+    },
+    "frame_count": 300
+  },
+  "title": {
+    "text": "PACIFIC SIGNAL",
+    "subtitle": "HAMONSHU WAVE REVEAL / 10 SECOND STUDY",
+    "language": "en-US",
+    "accessible_name": "Pacific Signal title card",
+    "description": "A warm-white title on a deep Pacific blue field is revealed through Hamonshu wave linework.",
+    "field_background": "#173A55",
+    "layout": {
+      "horizontal": "left",
+      "vertical": "center",
+      "max_width_px": 1024
+    },
+    "typography": {
+      "family": "Atkinson Hyperlegible Next",
+      "weight": 800,
+      "size_px": 92,
+      "line_height": 1.05,
+      "letter_spacing_em": 0.01
+    },
+    "color": "#FCFBF7"
+  },
+  "transition": {
+    "kind": "hamonshu",
+    "mode": "mask-reveal",
+    "start_frame": 45,
+    "frame_count": 90,
+    "easing": "smoothstep",
+    "seed": 4242,
+    "reduced_motion": "cross-fade",
+    "accent_color": "#7FE1D1",
+    "hamonshu": {
+      "pattern": {
+        "first_page": 1,
+        "last_page": 1,
+        "motif": 1
+      },
+      "density": 1.0,
+      "curvature": 1.3,
+      "phase_radians": 0.0,
+      "rotation_radians": 0.0,
+      "reflected": false,
+      "samples_per_curve": 48
+    }
+  },
+  "output": {
+    "directory": "examples/seedance2/generated",
+    "frame_pattern": "frame-%08d",
+    "formats": [
+      "svg",
+      "png",
+      "mkv"
+    ],
+    "still_asset_id": "hamonshu-title-still",
+    "manifest": "manifest.json"
+  },
+  "delivery": {
+    "adapter": "seedance2ai-v1",
+    "asset_role": "start-frame",
+    "asset_id": "hamonshu-title-still",
+    "request": {
+      "quality_tier": "standard",
+      "channel": "standard",
+      "prompt": "Begin on the supplied Pacific Signal title field, then move into a quiet night ocean scene. Keep the exact title only in the opening frame.",
+      "aspect_ratio": "16:9",
+      "duration": "10",
+      "resolution": "720p",
+      "generate_audio": false,
+      "fixed_lens": true,
+      "seed": 4242
+    }
+  }
+}

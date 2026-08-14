@@ -1,0 +1,404 @@
+{
+  "schema_version": "izzi-visual-review-1",
+  "review_id": "izzi-generative-review-20260810",
+  "status": "CANDIDATE-NOT-PROMOTED",
+  "entries": [
+    {
+      "entry_id": "static-guilloche",
+      "category": "static",
+      "subject": "guilloche",
+      "feedback_round": "round-05",
+      "source_path": "outputs/review/feedback/visual/guilloche/round-05/static",
+      "manifest_path": "outputs/review/feedback/visual/guilloche/round-05/static/manifest.json",
+      "current_path": "visual/guilloche/static",
+      "artifact_contract": {
+        "glob": "png/*.png",
+        "count": 30,
+        "media_kind": "PNG"
+      },
+      "feedback_contract": {
+        "number_proofs": 10,
+        "word_proofs": 10,
+        "combination_proofs": 10,
+        "canonical_text_corpus_size": 11,
+        "portrait": [1080, 1920]
+      },
+      "human_review_state": "PENDING"
+    },
+    {
+      "entry_id": "static-moire",
+      "category": "static",
+      "subject": "moire",
+      "feedback_round": "round-01",
+      "source_path": "outputs/ad-hoc/moire.v1",
+      "manifest_path": "outputs/ad-hoc/moire.v1/manifest.json",
+      "current_path": "visual/moire/static",
+      "artifact_contract": {
+        "glob": "png/*.png",
+        "count": 10,
+        "media_kind": "PNG"
+      },
+      "feedback_contract": {
+        "starter_geometry_proofs": 10,
+        "archive_geometry_used": false,
+        "portrait": [1080, 1920]
+      },
+      "human_review_state": "PENDING"
+    },
+    {
+      "entry_id": "static-surface-tension",
+      "category": "static",
+      "subject": "surface-tension",
+      "feedback_round": "round-01",
+      "source_path": "outputs/ad-hoc/surface-tension.v1",
+      "manifest_path": "outputs/ad-hoc/surface-tension.v1/manifest.json",
+      "current_path": "visual/surface-tension/static",
+      "artifact_contract": {
+        "glob": "png/*.png",
+        "count": 10,
+        "media_kind": "PNG"
+      },
+      "feedback_contract": {
+        "starter_geometry_proofs": 10,
+        "archive_geometry_used": false,
+        "portrait": [1080, 1920]
+      },
+      "human_review_state": "PENDING"
+    },
+    {
+      "entry_id": "title-guilloche",
+      "category": "title-card-transitions",
+      "subject": "guilloche",
+      "feedback_round": "round-05",
+      "source_path": "outputs/review/feedback/visual/guilloche/round-05/title-card-transitions",
+      "manifest_path": "outputs/review/feedback/visual/guilloche/round-05/title-card-transitions/manifest.json",
+      "current_path": "visual/guilloche/title-card-transitions",
+      "artifact_contract": {
+        "glob": "*.mkv",
+        "count": 10,
+        "media_kind": "MKV"
+      },
+      "feedback_contract": {
+        "semantic_title_cards": 10,
+        "duration_seconds": 2,
+        "number_first": true,
+        "portrait": [1080, 1920]
+      },
+      "human_review_state": "PENDING"
+    },
+    {
+      "entry_id": "title-moire",
+      "category": "title-card-transitions",
+      "subject": "moire",
+      "feedback_round": "round-01",
+      "source_path": "outputs/ad-hoc/moire.v1/motion-tests/title-card-transitions",
+      "manifest_path": "outputs/ad-hoc/moire.v1/motion-tests/manifest.json",
+      "current_path": "visual/moire/title-card-transitions",
+      "artifact_contract": {
+        "glob": "*.mkv",
+        "count": 3,
+        "media_kind": "MKV"
+      },
+      "feedback_contract": {
+        "semantic_title_canaries": 3,
+        "duration_seconds": 10,
+        "number_first": true,
+        "portrait": [1080, 1920]
+      },
+      "human_review_state": "PENDING"
+    },
+    {
+      "entry_id": "title-surface-tension",
+      "category": "title-card-transitions",
+      "subject": "surface-tension",
+      "feedback_round": "round-01",
+      "source_path": "outputs/ad-hoc/surface-tension.v1/motion-tests/title-card-transitions",
+      "manifest_path": "outputs/ad-hoc/surface-tension.v1/motion-tests/manifest.json",
+      "current_path": "visual/surface-tension/title-card-transitions",
+      "artifact_contract": {
+        "glob": "*.mkv",
+        "count": 3,
+        "media_kind": "MKV"
+      },
+      "feedback_contract": {
+        "semantic_title_canaries": 3,
+        "duration_seconds": 10,
+        "number_first": true,
+        "portrait": [1080, 1920]
+      },
+      "human_review_state": "PENDING"
+    },
+    {
+      "entry_id": "wild-guilloche",
+      "category": "wild-motion",
+      "subject": "guilloche",
+      "feedback_round": "round-05",
+      "source_path": "outputs/review/feedback/visual/guilloche/round-05/wild-motion",
+      "manifest_path": "outputs/review/feedback/visual/guilloche/round-05/wild-motion/manifest.json",
+      "current_path": "visual/guilloche/wild-motion",
+      "artifact_contract": {
+        "glob": "*.mkv",
+        "count": 10,
+        "media_kind": "MKV"
+      },
+      "feedback_contract": {
+        "text_free_wild_loops": 10,
+        "duration_seconds": 2,
+        "portrait": [1080, 1920]
+      },
+      "human_review_state": "PENDING"
+    },
+    {
+      "entry_id": "wild-moire",
+      "category": "wild-motion",
+      "subject": "moire",
+      "feedback_round": "round-02",
+      "source_path": "outputs/review/feedback/visual/moire/round-02/wild-motion",
+      "manifest_path": "outputs/review/feedback/visual/moire/round-02/manifest.json",
+      "current_path": "visual/moire/wild-motion",
+      "artifact_contract": {
+        "glob": "*.mkv",
+        "count": 10,
+        "media_kind": "MKV"
+      },
+      "feedback_contract": {
+        "text_free_wild_loops": 10,
+        "duration_seconds": 10,
+        "variation_axes": ["composition", "color", "density", "direction", "speed"],
+        "portrait": [1080, 1920]
+      },
+      "human_review_state": "PENDING"
+    },
+    {
+      "entry_id": "wild-surface-tension",
+      "category": "wild-motion",
+      "subject": "surface-tension",
+      "feedback_round": "round-02",
+      "source_path": "outputs/review/feedback/visual/surface-tension/round-02/wild-motion",
+      "manifest_path": "outputs/review/feedback/visual/surface-tension/round-02/manifest.json",
+      "current_path": "visual/surface-tension/wild-motion",
+      "artifact_contract": {
+        "glob": "*.mkv",
+        "count": 10,
+        "media_kind": "MKV"
+      },
+      "feedback_contract": {
+        "text_free_wild_loops": 10,
+        "duration_seconds": 10,
+        "variation_axes": ["composition", "color", "density", "direction", "speed"],
+        "portrait": [1080, 1920]
+      },
+      "human_review_state": "PENDING"
+    },
+    {
+      "entry_id": "synthesis-3d-guilloche",
+      "category": "3d-synthesis",
+      "subject": "guilloche",
+      "feedback_round": "round-01",
+      "source_path": "outputs/review/feedback/visual/3d-synthesis/round-01/guilloche",
+      "manifest_path": "outputs/review/feedback/visual/3d-synthesis/round-01/manifest.json",
+      "current_path": "visual/guilloche/3d-synthesis",
+      "artifact_contract": {
+        "glob": "svg/*.svg",
+        "count": 9,
+        "media_kind": "SVG"
+      },
+      "feedback_contract": {
+        "field_grammars": 1,
+        "glyph_grammars": 3,
+        "content_kinds": 3,
+        "specimens": 9,
+        "portrait": [1080, 1920]
+      },
+      "human_review_state": "PENDING"
+    },
+    {
+      "entry_id": "synthesis-3d-moire",
+      "category": "3d-synthesis",
+      "subject": "moire",
+      "feedback_round": "round-01",
+      "source_path": "outputs/review/feedback/visual/3d-synthesis/round-01/moire",
+      "manifest_path": "outputs/review/feedback/visual/3d-synthesis/round-01/manifest.json",
+      "current_path": "visual/moire/3d-synthesis",
+      "artifact_contract": {
+        "glob": "svg/*.svg",
+        "count": 9,
+        "media_kind": "SVG"
+      },
+      "feedback_contract": {
+        "field_grammars": 1,
+        "glyph_grammars": 3,
+        "content_kinds": 3,
+        "specimens": 9,
+        "portrait": [1080, 1920]
+      },
+      "human_review_state": "PENDING"
+    },
+    {
+      "entry_id": "synthesis-3d-surface-tension",
+      "category": "3d-synthesis",
+      "subject": "surface-tension",
+      "feedback_round": "round-01",
+      "source_path": "outputs/review/feedback/visual/3d-synthesis/round-01/surface-tension",
+      "manifest_path": "outputs/review/feedback/visual/3d-synthesis/round-01/manifest.json",
+      "current_path": "visual/surface-tension/3d-synthesis",
+      "artifact_contract": {
+        "glob": "svg/*.svg",
+        "count": 9,
+        "media_kind": "SVG"
+      },
+      "feedback_contract": {
+        "field_grammars": 1,
+        "glyph_grammars": 3,
+        "content_kinds": 3,
+        "specimens": 9,
+        "portrait": [1080, 1920]
+      },
+      "human_review_state": "PENDING"
+    },
+    {
+      "entry_id": "synthesis-4d-guilloche",
+      "category": "4d-synthesis",
+      "subject": "guilloche",
+      "feedback_round": "round-01",
+      "source_path": "outputs/review/feedback/visual/4d-synthesis/round-01/guilloche",
+      "manifest_path": "outputs/review/feedback/visual/4d-synthesis/round-01/guilloche/manifest.json",
+      "current_path": "visual/guilloche/4d-synthesis",
+      "artifact_contract": {
+        "glob": "episode-*.mkv",
+        "count": 10,
+        "media_kind": "MKV"
+      },
+      "feedback_contract": {
+        "episodes": 10,
+        "duration_range_seconds": [60, 240],
+        "variation_axes": ["motion", "color", "composition"],
+        "portrait": [1080, 1920]
+      },
+      "human_review_state": "PENDING"
+    },
+    {
+      "entry_id": "synthesis-4d-moire",
+      "category": "4d-synthesis",
+      "subject": "moire",
+      "feedback_round": "round-01",
+      "source_path": "outputs/review/feedback/visual/4d-synthesis/round-01/moire",
+      "manifest_path": "outputs/review/feedback/visual/4d-synthesis/round-01/moire/manifest.json",
+      "current_path": "visual/moire/4d-synthesis",
+      "artifact_contract": {
+        "glob": "episode-*.mkv",
+        "count": 10,
+        "media_kind": "MKV"
+      },
+      "feedback_contract": {
+        "episodes": 10,
+        "duration_range_seconds": [60, 240],
+        "variation_axes": ["motion", "color", "composition"],
+        "portrait": [1080, 1920]
+      },
+      "human_review_state": "PENDING"
+    },
+    {
+      "entry_id": "synthesis-4d-surface-tension",
+      "category": "4d-synthesis",
+      "subject": "surface-tension",
+      "feedback_round": "round-01",
+      "source_path": "outputs/review/feedback/visual/4d-synthesis/round-01/surface-tension",
+      "manifest_path": "outputs/review/feedback/visual/4d-synthesis/round-01/surface-tension/manifest.json",
+      "current_path": "visual/surface-tension/4d-synthesis",
+      "artifact_contract": {
+        "glob": "episode-*.mkv",
+        "count": 10,
+        "media_kind": "MKV"
+      },
+      "feedback_contract": {
+        "episodes": 10,
+        "duration_range_seconds": [60, 240],
+        "variation_axes": ["motion", "color", "composition"],
+        "portrait": [1080, 1920]
+      },
+      "human_review_state": "PENDING"
+    },
+    {
+      "entry_id": "audio-duotone-111",
+      "category": "audio",
+      "subject": "duotone-111",
+      "feedback_round": "round-01",
+      "source_path": "outputs/ad-hoc/duotone-111/audio-random-defaults",
+      "manifest_path": "outputs/ad-hoc/duotone-111/audio-random-defaults/review-set.manifest.json",
+      "current_path": "audio/duotone-111",
+      "artifact_contract": {
+        "glob": "episode-*/full-episode-random-default.wav",
+        "count": 3,
+        "media_kind": "WAV"
+      },
+      "feedback_contract": {
+        "complete_episodes": 3,
+        "duration_range_seconds": [60, 180],
+        "voices": "PROVISIONAL-RANDOM-DEFAULTS"
+      },
+      "human_review_state": "PENDING"
+    },
+    {
+      "entry_id": "audio-here-lies-trouble",
+      "category": "audio",
+      "subject": "here-lies-trouble",
+      "feedback_round": "round-01",
+      "source_path": "outputs/ad-hoc/here-lies-trouble/audio-random-defaults",
+      "manifest_path": "outputs/ad-hoc/here-lies-trouble/audio-random-defaults/review-set.manifest.json",
+      "current_path": "audio/here-lies-trouble",
+      "artifact_contract": {
+        "glob": "episode-*/full-episode-random-default.wav",
+        "count": 3,
+        "media_kind": "WAV"
+      },
+      "feedback_contract": {
+        "complete_episodes": 3,
+        "duration_range_seconds": [60, 180],
+        "voices": "PROVISIONAL-RANDOM-DEFAULTS"
+      },
+      "human_review_state": "PENDING"
+    }
+  ],
+  "overview_panels": [
+    {
+      "label": "guilloche / round 05",
+      "path": "outputs/review/feedback/visual/guilloche/round-05/guilloche-v4-review-index.png"
+    },
+    {
+      "label": "moire / static round 01",
+      "path": "outputs/ad-hoc/moire.v1/moire-v1-category-grid.png"
+    },
+    {
+      "label": "surface tension / static round 01",
+      "path": "outputs/ad-hoc/surface-tension.v1/surface-tension-v1-category-grid.png"
+    },
+    {
+      "label": "guilloche / 4d synthesis / round 01",
+      "path": "outputs/review/feedback/visual/4d-synthesis/round-01/guilloche/guilloche-4d-synthesis-grid.png"
+    },
+    {
+      "label": "moire / 4d synthesis / round 01",
+      "path": "outputs/review/feedback/visual/4d-synthesis/round-01/moire/moire-4d-synthesis-grid.png"
+    },
+    {
+      "label": "surface tension / 4d synthesis / round 01",
+      "path": "outputs/review/feedback/visual/4d-synthesis/round-01/surface-tension/surface-tension-4d-synthesis-grid.png"
+    },
+    {
+      "label": "duotone 111 / three audio episodes",
+      "path": "outputs/ad-hoc/duotone-111/audio-random-defaults/review-timelines.png"
+    },
+    {
+      "label": "here lies trouble / three audio episodes",
+      "path": "outputs/ad-hoc/here-lies-trouble/audio-random-defaults/review-timelines.png"
+    }
+  ],
+  "authority": {
+    "local_generation_authorized": true,
+    "human_acceptance": "PENDING",
+    "baseline_promotion_authorized": false,
+    "publication_authorized": false,
+    "external_transfer_authorized": false
+  }
+}

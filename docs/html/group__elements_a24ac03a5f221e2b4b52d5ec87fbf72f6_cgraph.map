@@ -1,0 +1,10 @@
+<map id="svg::text_path_element::add_text" name="svg::text_path_element::add_text">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,23,154,60"/>
+<area shape="rect" id="Node000002" href="$namespacesvg.html#ac91e1a80dd6b2df85fd06a07320bc6ce" title="Escape unescaped data for a double&#45;quoted XML attribute value." alt="" coords="202,5,366,29"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="154,30,186,26,187,31,155,35"/>
+<area shape="rect" id="Node000004" href="$namespacesvg.html#a26bf6966511ae3c348843c1881b190d8" title="Escape unescaped data for an XML text node." alt="" coords="215,53,352,77"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="155,47,200,53,200,58,154,53"/>
+<area shape="rect" id="Node000003" href="$namespacesvg_1_1detail.html#a0dabd749799988c1aae4474d923c6fd1" title="Escape unescaped character data at its XML serialization boundary. Existing entity spellings are data..." alt="" coords="414,29,565,53"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="367,24,399,28,398,33,366,29"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="353,55,398,49,399,54,353,60"/>
+</map>

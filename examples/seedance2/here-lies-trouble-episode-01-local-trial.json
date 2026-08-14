@@ -1,0 +1,78 @@
+{
+  "schema_version": "izzi.here-lies-trouble-local-episode-trial/1",
+  "project_id": "here-lies-trouble",
+  "episode_index": 1,
+  "scene_id": "hlt1-episode-01-proposed",
+  "status": "USER-AUTHORIZED-LOCAL-ENGINEERING-TRIAL",
+  "visual": {
+    "source_path": "outputs/review/feedback/visual/here-lies-trouble/neon-addict-stage-01/style-frames/sample-01-frogtown-source.png",
+    "source_sha256": "78b79a6f1cb67162293c7ff901ca53d90a4d7c44d179b649d4d9103b95b86d42",
+    "accepted_proof_path": "outputs/review/feedback/visual/here-lies-trouble/neon-addict-stage-01/style-frames/sample-01-frogtown-720.png",
+    "accepted_proof_sha256": "1b90af5c2d9aaf5425c04b5fb2a7b92e8559ef23d37c5ab973770b23c3319c15",
+    "location": "FROGTOWN-LOS-ANGELES-RIVER-BIKE-CORRIDOR",
+    "human_review_state": "USER-ACCEPTED",
+    "animal_pattern_direction": "RESTRAINED",
+    "motion": {
+      "kind": "CONTINUOUS-RESTRAINED-CAMERA-DRIFT",
+      "maximum_zoom": 1.055,
+      "horizontal_period_seconds": 37,
+      "vertical_period_seconds": 53,
+      "new_character_motion": false,
+      "new_scene_content": false
+    }
+  },
+  "audio": {
+    "path": "outputs/ad-hoc/here-lies-trouble/audio-random-defaults/episode-01/full-episode-random-default.wav",
+    "sha256": "d0bde9a7a59196308af9bc8cc29daa6144620162d61d8a557787874d3deec72f",
+    "source_manifest_path": "outputs/ad-hoc/here-lies-trouble/audio-random-defaults/episode-01/manifest.json",
+    "source_manifest_sha256": "4a08591aaf703cc0293af89b15e2f2526517dbfe9944fc449d5ea3385f45a204",
+    "duration_seconds": 165,
+    "sample_rate": 16000,
+    "channels": 1,
+    "assignment_method": "DETERMINISTIC-RANDOM-NEUTRAL-TARGET-PER-SPEECH-WINDOW",
+    "voice_codes": ["V01", "V02", "V03"],
+    "character_assignments": null,
+    "human_voice_selection": "NOT-ASKED",
+    "unchanged_non_speech_inside_complete_derivative_possible": true
+  },
+  "title_card": {
+    "duration_seconds": 3,
+    "visible_text": "1",
+    "background": "#ece8e7",
+    "foreground": "#173a55",
+    "typeface_query": "Madredeus",
+    "style": "madredeus-guilloche-v5",
+    "specification_version": "2.3"
+  },
+  "video": {
+    "width": 720,
+    "height": 1280,
+    "frame_rate": 30,
+    "pixel_format": "yuv420p",
+    "video_codec": "h264",
+    "audio_codec": "flac",
+    "title_frames": 90,
+    "content_frames": 4950,
+    "total_frames": 5040,
+    "content_duration_seconds": 165,
+    "total_duration_seconds": 168
+  },
+  "output": {
+    "directory": "outputs/review/feedback/visual/here-lies-trouble/neon-addict-stage-01/episode-01-local-trial",
+    "mkv_name": "here-lies-trouble-episode-01-local-trial.mkv",
+    "title_card_name": "title-card-v5-madredeus.png",
+    "probe_name": "ffprobe.json",
+    "manifest_name": "manifest.json",
+    "review_directory": "review",
+    "review_stable_id": "here-lies-trouble-episode-01-local-trial"
+  },
+  "authority": {
+    "local_render_authorized": true,
+    "provider_submission_authorized": false,
+    "additional_spending_authorized": false,
+    "audio_transfer_authorized": false,
+    "publication_authorized": false,
+    "baseline_promotion_authorized": false,
+    "training_conversion_transfer_authorized": false
+  }
+}

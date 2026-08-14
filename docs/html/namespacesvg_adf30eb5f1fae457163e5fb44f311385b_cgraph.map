@@ -1,0 +1,30 @@
+<map id="svg::make_line_rays" name="svg::make_line_rays">
+<area shape="rect" id="Node000001" title="Lines radiating from center point (x,y)." alt="" coords="5,189,136,213"/>
+<area shape="rect" id="Node000002" href="$group__elements.html#a306eac4c5a7ea755ab6375a65489366f" title=" " alt="" coords="376,5,502,42"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="74,188,88,157,111,118,142,78,182,45,225,27,272,16,318,12,360,12,360,18,318,18,272,22,227,32,185,50,146,81,115,121,93,160,79,190"/>
+<area shape="rect" id="Node000005" href="$group__elements.html#ada0333b46b2547c6152f3f5811016a12" title=" " alt="" coords="184,60,317,97"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="83,187,126,149,182,107,190,102,193,107,185,111,129,153,87,191"/>
+<area shape="rect" id="Node000007" href="$group__elements.html#a238b38ca99a1cf6c2baf80c8e4338d99" title=" " alt="" coords="184,121,317,158"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="107,186,179,161,181,166,109,191"/>
+<area shape="rect" id="Node000009" href="$group__elements.html#gaab139e518fe9d07003dbcc1fdfdad955" title=" " alt="" coords="186,183,315,219"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="136,198,170,198,170,204,136,204"/>
+<area shape="rect" id="Node000011" href="$group__elements.html#ga4769af15793cb308d426abb5fd552df5" title=" " alt="" coords="187,244,314,281"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="109,211,181,236,179,241,107,216"/>
+<area shape="rect" id="Node000012" href="$group__elements.html#a5c8c4f93df6e84523f788aa7f98bcab8" title="For groups of elements that have the same name." alt="" coords="186,305,315,342"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="87,211,129,249,185,291,193,295,190,300,182,295,126,253,83,215"/>
+<area shape="rect" id="Node000014" href="$group__elements.html#aa6b4ba04be5858b4943235801f034943" title=" " alt="" coords="187,367,314,403"/>
+<area shape="poly" id="edge14_Node000001_Node000014" title=" " alt="" coords="80,212,119,277,150,317,185,352,190,356,187,360,182,356,146,320,115,280,76,215"/>
+<area shape="rect" id="Node000003" href="$namespacesvg.html#ac91e1a80dd6b2df85fd06a07320bc6ce" title="Escape unescaped data for a double&#45;quoted XML attribute value." alt="" coords="560,162,725,186"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="492,40,514,52,575,101,623,149,619,153,572,105,511,57,490,45"/>
+<area shape="rect" id="Node000004" href="$namespacesvg_1_1detail.html#a0dabd749799988c1aae4474d923c6fd1" title="Escape unescaped character data at its XML serialization boundary. Existing entity spellings are data..." alt="" coords="773,162,924,186"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="725,172,757,172,757,177,725,177"/>
+<area shape="rect" id="Node000006" href="$group__elements.html#ad893ef9c13a15464c96d8a85c08af30f" title=" " alt="" coords="365,66,512,90"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="318,76,350,76,350,81,318,81"/>
+<area shape="rect" id="Node000008" href="$namespacesvg.html#ac10e7d47d031b121174fc0e65232980f" title="Convert point_2t to string." alt="" coords="391,128,486,152"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="318,137,376,137,376,142,318,142"/>
+<area shape="rect" id="Node000010" href="$group__elements.html#a71cf2eb89a562527f14c4ca4c027c2b9" title=" " alt="" coords="374,183,503,219"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="316,198,359,198,359,204,316,204"/>
+<area shape="rect" id="Node000013" href="$group__elements.html#ab84e1bc08d2d2a71ab05521af65d7585" title=" " alt="" coords="374,275,503,311"/>
+<area shape="poly" id="edge12_Node000012_Node000013" title=" " alt="" coords="315,310,359,303,360,309,316,316"/>
+<area shape="poly" id="edge13_Node000013_Node000003" title=" " alt="" coords="471,272,606,192,609,196,473,276"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="svg::text_element::start_tspan_x" name="svg::text_element::start_tspan_x">
+<area shape="rect" id="Node000001" title="For text list output, use tspan for line breaks. This span creates a new vertical line space for ever..." alt="" coords="5,5,132,42"/>
+<area shape="rect" id="Node000002" href="$namespacesvg.html#ac91e1a80dd6b2df85fd06a07320bc6ce" title="Escape unescaped data for a double&#45;quoted XML attribute value." alt="" coords="180,12,344,36"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="132,21,164,21,164,26,132,26"/>
+<area shape="rect" id="Node000003" href="$namespacesvg_1_1detail.html#a0dabd749799988c1aae4474d923c6fd1" title="Escape unescaped character data at its XML serialization boundary. Existing entity spellings are data..." alt="" coords="392,12,543,36"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="345,21,376,21,376,26,345,26"/>
+</map>
