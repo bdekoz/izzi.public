@@ -10,7 +10,7 @@ vertical video, and web workflows.
 **DOCUMENTATION**
 
 - **API reference:** [Doxygen](https://bdekoz.github.io/izzi.public/docs/html/)
-  - **Generative Families**
+  - **Generative families**
     - [Pattern](https://bdekoz.github.io/izzi.public/docs/generative_patterns.html)
       — hamonshu, guilloche, moire, surface tension, radial, damped
       harmonograph, grignani, roulette

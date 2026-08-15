@@ -267,8 +267,9 @@ SVGs/tables (full reference inventory in switch step 1).
 
 ### Orchestration steps (dry-run first, ordered)
 
-1. **Reference inventory** — extract every `{% include ... %}` from the
-   site pages; build the authoritative include-name list.
+1. **Reference inventory** — extract every Jekyll `include` directive
+   ({% raw %}`{% include ... %}`{% endraw %}) from the site pages; build the
+   authoritative include-name list.
 2. **Legacy-name map** — extend
    `scripts/build-alpha60-visualizations.py` with a `--legacy-names` map:
    each include name → (data source glob, kind, title/description). The
