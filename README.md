@@ -23,7 +23,7 @@ vertical video, and web workflows.
 - **Workflows**
   - [Visual](https://bdekoz.github.io/izzi.public/docs/visual_workflow.md)
   - [Audio](https://bdekoz.github.io/izzi.public/docs/audio_workflow.md)
-- [Examples detail](https://situationshipin.space/review/izzi-generation-20260814/)
+- [Examples](https://situationshipin.space/review/izzi-generation-20260814/)
 
 **PREREQUISITES**
 
