@@ -1,6 +1,6 @@
 # Izzi v3 release planning — documentation audit
 
-Date: 2026-08-15 (audit performed 2026-08-14)
+Date: 2026-08-14 (release executed 2026-08-15)
 
 Status: `RELEASE-PLANNING; DOCUMENTATION-AUDIT-COMPLETE; AWAITING-APPROVAL`
 

@@ -338,3 +338,13 @@ User directed: no legacy-name map — perform a **cold cutover**. Executed:
 Decision 1 (option a, cold) is therefore **complete**; the site now renders
 izzi-generated includes, and the GitHub Actions workflow regenerates on
 future `data/*.json` / `*.geojson` check-ins.
+
+### R4 CI receipt (2026-08-14/15)
+
+- Site Jekyll deploy on the cutover (`b865ad8`): **success**.
+- `regenerate-includes` workflow verified: first run failed at the private
+  repo checkout (404); fixed by vendoring the pipeline into
+  `ci/izzi/` (adapter + generator + WASM facade) and rewiring the workflow;
+  generator state made deterministic and the push made race-safe
+  (rebase-before-push). Re-verified: push-triggered and dispatch runs both
+  **success** (`73076fc`).
