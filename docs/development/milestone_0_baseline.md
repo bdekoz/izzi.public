@@ -123,9 +123,11 @@ promoted machine baseline is not human visual acceptance. The current PNG,
 SVG, and PDF must receive an affirmative reviewer receipt before they become an
 accepted visual reference.
 
-Note (2026-08-15): the promoted baseline predates later additions; the
-current generation candidates carry 115 top-level examples (danmaku,
-guilloche/plate, color, movement, and visualization examples added since).
+Note (2026-08-15): the generation baseline was promoted on 2026-08-14 from
+the regenerated candidate (izzi `ecff9fc4`): **118 examples, 185 SVGs, 104
+visual examples, 0 varied** across two runs (color determinism holds). The
+prior promoted baseline (106 examples) is preserved under
+`tests/baselines/generation/history/`.
 
 ### Corrected visual candidates
 

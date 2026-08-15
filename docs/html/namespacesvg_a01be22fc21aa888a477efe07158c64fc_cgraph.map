@@ -1,5 +1,40 @@
 <map id="svg::generate_path_points" name="svg::generate_path_points">
-<area shape="rect" id="Node000001" title="Generate the path&#39;s sample points in path space (origin = segment start). Unwired families/kind fall ..." alt="" coords="5,5,134,42"/>
-<area shape="rect" id="Node000002" href="$namespacesvg.html#a63a04b67b3afe59728b9ba5336f7a7db" title="Sample a trochoid from a circle rolling along a straight line." alt="" coords="182,12,319,36"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="134,21,166,21,166,26,134,26"/>
+<area shape="rect" id="Node000001" title="Generate the path&#39;s sample points in path space (origin = segment start). Roulette,..." alt="" coords="5,196,134,233"/>
+<area shape="rect" id="Node000002" href="$structsvg_1_1hamonshu_1_1pattern__box.html#aabeea0c0823e1f8e3335235002758990" title=" " alt="" coords="182,80,336,117"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="90,193,130,160,180,127,190,121,193,126,183,131,134,165,93,198"/>
+<area shape="rect" id="Node000003" href="$namespacesvg_1_1hamonshu.html#a9195121a6c079b4b6f7c890519e652e2" title="Generate one source&#45;indexed Hamonshu motif with explicit form parameters." alt="" coords="187,141,330,178"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="133,193,178,180,179,185,135,198"/>
+<area shape="rect" id="Node000004" href="$namespacesvg.html#ab942e119658d206db925e549f48e9331" title="Parse polyline path data (&quot;M x y L x y ...&quot;) into sample points." alt="" coords="185,202,333,226"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="134,212,169,212,169,217,134,217"/>
+<area shape="rect" id="Node000005" href="$namespaceizzi_1_1surface__tension.html#add0ac505b7f77c4c95992e641b2be1be" title=" " alt="" coords="192,251,326,287"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="135,230,179,243,178,248,133,235"/>
+<area shape="rect" id="Node000019" href="$namespacesvg.html#a63a04b67b3afe59728b9ba5336f7a7db" title="Sample a trochoid from a circle rolling along a straight line." alt="" coords="190,312,328,336"/>
+<area shape="poly" id="edge19_Node000001_Node000019" title=" " alt="" coords="92,231,133,265,183,297,196,304,194,308,180,302,129,269,89,235"/>
+<area shape="rect" id="Node000006" href="$namespaceizzi_1_1surface__tension_1_1detail.html#a27fd6ec09034da71a30d8c3e552fc7ca" title=" " alt="" coords="395,5,534,42"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="320,248,334,237,349,214,356,191,357,146,358,100,366,77,382,53,384,50,388,54,386,56,370,79,363,101,362,146,362,192,354,216,338,240,324,252"/>
+<area shape="rect" id="Node000007" href="$namespaceizzi_1_1surface__tension_1_1detail.html#ab201d9b8428148b89b1989951186061c" title=" " alt="" coords="384,67,545,103"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="319,248,334,236,346,221,352,207,357,176,362,146,369,130,382,114,386,110,389,114,386,117,374,132,367,147,363,177,358,208,350,224,338,240,322,252"/>
+<area shape="rect" id="Node000008" href="$namespaceizzi_1_1surface__tension_1_1detail.html#add1a59c73d79fee5099786726987df90" title=" " alt="" coords="398,128,532,165"/>
+<area shape="poly" id="edge7_Node000005_Node000008" title=" " alt="" coords="315,248,334,236,349,221,358,206,367,191,382,175,389,170,392,175,386,179,371,194,362,209,353,224,338,240,318,252"/>
+<area shape="rect" id="Node000009" href="$namespaceizzi_1_1surface__tension_1_1detail.html#acb63f5883ec4788a578a98c0656fad72" title=" " alt="" coords="389,189,540,226"/>
+<area shape="poly" id="edge8_Node000005_Node000009" title=" " alt="" coords="322,248,386,228,387,233,324,253"/>
+<area shape="rect" id="Node000010" href="$namespaceizzi_1_1surface__tension_1_1detail.html#a8b8dbe862009d0d3d593eb4e6cd5e301" title=" " alt="" coords="398,251,532,287"/>
+<area shape="poly" id="edge9_Node000005_Node000010" title=" " alt="" coords="326,266,382,266,382,272,326,272"/>
+<area shape="rect" id="Node000012" href="$namespaceizzi_1_1surface__tension_1_1detail.html#af599dc2234ea5906fb0e675d3b1b7d6d" title=" " alt="" coords="398,312,532,349"/>
+<area shape="poly" id="edge11_Node000005_Node000012" title=" " alt="" coords="324,285,387,305,386,310,322,290"/>
+<area shape="rect" id="Node000013" href="$namespaceizzi_1_1surface__tension_1_1detail.html#a8b3191a339d3b4b170e62da585742dbf" title=" " alt="" coords="396,373,533,410"/>
+<area shape="poly" id="edge12_Node000005_Node000013" title=" " alt="" coords="318,286,338,298,353,314,362,329,371,344,386,359,392,363,389,368,382,363,367,347,358,332,349,317,334,302,315,290"/>
+<area shape="rect" id="Node000017" href="$namespaceizzi_1_1surface__tension_1_1detail.html#a341a7449526947ca2835653bb46b5933" title=" " alt="" coords="398,435,532,471"/>
+<area shape="poly" id="edge17_Node000005_Node000017" title=" " alt="" coords="322,286,338,298,350,314,358,330,363,361,367,391,374,406,386,421,389,424,386,428,382,424,369,408,362,392,357,362,352,331,346,317,334,302,319,290"/>
+<area shape="rect" id="Node000018" href="$namespaceizzi_1_1surface__tension_1_1detail.html#a26c7ead170a6a971a0ddf361ddab1239" title=" " alt="" coords="398,496,532,533"/>
+<area shape="poly" id="edge18_Node000005_Node000018" title=" " alt="" coords="324,286,338,298,354,322,362,346,362,392,363,437,370,459,386,482,388,484,384,488,382,485,366,461,358,438,357,392,356,347,349,324,334,301,320,290"/>
+<area shape="rect" id="Node000011" href="$namespaceizzi_1_1surface__tension_1_1detail.html#ad9f99a965405fd069e5c45edaa185084" title=" " alt="" coords="605,251,739,287"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="532,266,589,266,589,272,532,272"/>
+<area shape="rect" id="Node000014" href="$namespaceizzi_1_1surface__tension_1_1detail.html#a516defa50d0c2899ed23295079e6f473" title=" " alt="" coords="593,345,751,382"/>
+<area shape="poly" id="edge13_Node000013_Node000014" title=" " alt="" coords="533,380,578,374,578,379,534,385"/>
+<area shape="rect" id="Node000015" href="$namespaceizzi_1_1surface__tension_1_1detail.html#abd72cb7f2bb7dcf99d62fa965dbe57f8" title=" " alt="" coords="799,373,970,410"/>
+<area shape="poly" id="edge16_Node000013_Node000015" title=" " alt="" coords="533,391,593,392,751,392,783,391,783,397,751,397,593,397,533,396"/>
+<area shape="poly" id="edge14_Node000014_Node000015" title=" " alt="" coords="751,371,783,376,783,381,750,377"/>
+<area shape="rect" id="Node000016" href="$namespaceizzi_1_1surface__tension_1_1detail.html#a0c0ae19671736598b9c08a52d86d541b" title=" " alt="" coords="1018,373,1152,410"/>
+<area shape="poly" id="edge15_Node000015_Node000016" title=" " alt="" coords="970,389,1002,389,1002,394,970,394"/>
 </map>

@@ -22,7 +22,9 @@ Header: `src/izzi-svg-movement.h`.
 - `struct movement_segment` — id, path, start, end, duration, easing.
 - `struct movement_document` — viewport, duration, camera, layers.
 - `generate_path_points(path, origin)` — deterministic sample points
-  (roulette trochoid wired; other families fall back to a straight line).
+  (roulette trochoid, hamonshu catalogue motifs via `make_motif_path`, and
+  surface-tension field contours via `resolve(scene_spec)` wired; unknown
+  kinds fall back to a straight line).
 - `sample_path(path, start, end, t01)` / `sample_segment(segment, t)` —
   point at time, mapped onto the segment's start/end (endpoints exact).
 - `emit_movement_json(doc)` — compact serialization (schema
@@ -56,8 +58,12 @@ Status: `ASSESSED-FIRST-PASS`.
 
 Open items (2026-08-14 movement proposal):
 
-- Wire surface-tension and hamonshu point generators into
-  `generate_path_points` (currently straight-line fallback).
+- ~~Wire surface-tension and hamonshu point generators~~ — **done**
+  (2026-08-15): hamonshu kinds sample the real catalogue motif geometry
+  (e.g., `nested-current-scrolls` → 808 points); surface-tension kinds run
+  the deterministic field/contour extraction (minimal single-source scene,
+  level 0.3). Per-kind scene presets (matching the plate examples) remain a
+  follow-up.
 - `movement_from_json` parser and SRT/subtitle timing integration.
 - `scripts/extract-movement.py` for video-to-camera-movement extraction.
 - Portal `generation-movement-20260814` index (gated on portal

@@ -255,10 +255,11 @@ portal-repo authorization; git check-in/push **authorized 2026-08-14**.
 ### Open-item implementation (2026-08-14, second round)
 
 - **D1 — surface-tension/hamonshu sampling**: `generate_path_points` now
-  samples the named kinds (`paired-drops`, `vertical-chain`, `ripple`,
-  `wave`, `nested-current-scrolls`) with deterministic parametric
-  sine/arc shapes (`amplitude`/`frequency` params); deep header-level
-  generation wiring stays staged.
+  samples the named kinds with **real family geometry** (R3, 2026-08-15):
+  hamonshu catalogue motifs via `make_motif_path` (nested-current-scrolls →
+  808 points) and surface-tension field contours via `resolve(scene_spec)`
+  (paired-drops / vertical-chain → 348 points, level 0.3); deterministic
+  and byte-stable. Per-kind scene presets remain a follow-up.
 - **D2 — `movement_from_json`**: implemented (rapidjson); emit→parse→emit
   round-trip verified byte-identical.
 - **D3 — `scripts/extract-movement.py`**: implemented; camera-movement

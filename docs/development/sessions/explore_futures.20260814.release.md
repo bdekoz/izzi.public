@@ -76,8 +76,7 @@ A **new major version (v3)** is warranted by breaking changes landed after
 ## v3 release plan (skeleton)
 
 1. Apply the documentation fix list (items 1-6 above).
-2. Refresh the public mirror (`publish-public-mirror.sh --push
-   --regen-doxygen`) after the docs land, and re-run the mirror audit.
+2. Sync the documentation (REQUIRED — see Release requirements below).
 3. Decide baseline promotion: the regenerated candidates
    (`WI-COLOR-FAMILY-20260814`, `WI-MOVEMENT-VISUALIZATION-20260814`) are
    reviewed; promotion requires human acceptance (or defer).
@@ -87,6 +86,23 @@ A **new major version (v3)** is warranted by breaking changes landed after
    matching v2 tags) + `CHANGELOG.md` v3 entry.
 6. Tag `v3.20260815` and push; portal indexes already live (palette,
    visualization, movement).
+
+## Release requirements (mandatory gates)
+
+A release is not complete until every gate below passes:
+
+1. **Documentation sync (izzi → izzi.public) — REQUIRED.** Run
+   `publish-public-mirror.sh --push --regen-doxygen` so the public mirror
+   carries the released `docs/`, Doxygen `docs/html`, and root docs, then
+   re-run the mirror link audit (0 broken links / stale URLs). The release
+   tag is **not cut until the mirror is refreshed and audited**. This
+   applies to every izzi release, not only v3.
+2. `make check` PASS (migration contract CANONICAL-READY).
+3. `make check-wasm` PASS (cartofreako).
+4. Link audits (docs relative + Doxygen HTML) at 0 broken.
+5. Portal validator PASS for any new review indexes.
+6. Baseline decision recorded (promotion or deferral with receipt).
+7. `CHANGELOG.md` entry + version bump committed before tagging.
 
 ## Gates / decisions
 

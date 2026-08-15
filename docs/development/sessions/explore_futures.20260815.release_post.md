@@ -1,4 +1,4 @@
-# Remaining items — detailed implementation plan
+# Release post — detailed implementation plan
 
 Date: 2026-08-15
 
@@ -31,35 +31,11 @@ tree, or document the deferred decision.
 Verification: `tests/generation-baseline/compare.py` PASS against the
 promoted manifest; link audit; `make check`.
 
-## R2 — Alpha60 producer migration (large item)
+## R2 — moved
 
-Goal: migrate the five consumers of `a60-svg-collection-augment.h`
-(`a60-meta-collection-factory.cc`, `a60-cache-recache-synthesize-uniques.cc`,
-`a60-btiha-geojson.h`, `a60-ip-analysis.h`,
-`a60-collection-analyze-multi-year.cc`) onto the izzi facades, then retire
-the legacy augment header.
-
-1. **Inventory** — enumerate each consumer's render entry points and output
-   shapes (weighed-duration / weighed-by-torrent augments, cartography and
-   slice layouts, metadata augments) and their inputs (unique-BTIHA JSON,
-   GeoJSON, IP analysis).
-2. **Shape map** — assign every augment shape to an izzi emitter:
-   visualization (grids/tables/line graphs), movement (camera/path
-   augments), color (augment palettes), pattern (existing families).
-3. **Adapter extension** — extend `build-alpha60-visualizations.py` for the
-   augment shapes (weighed-by-torrent series done; cartography/slices next),
-   with per-source sha-256 provenance.
-4. **Producer rewiring** — route each consumer's render step through the
-   pipeline (documents → `izzi_visualization_render` / WASM driver) or
-   replace the inline render call with facade emitters; keep the data
-   products (JSON/GeoJSON) unchanged.
-5. **Retirement gate** — after one full downstream render cycle on
-   regenerated outputs passes review, remove
-   `a60-svg-collection-augment.h` and the legacy render path together (no
-   compatibility aliases), then rebuild alpha60 and re-run the wasm checks.
-
-Verification per stage: alpha60 production build, determinism (two-run byte
-identity), accessibility contract, `make check-wasm`.
+The alpha60 producer migration (R2) is documented as its own complete
+conversion plan in
+[`explore_futures.20260815.alpha60-complete-conversion.md`](explore_futures.20260815.alpha60-complete-conversion.md).
 
 ## R3 — Movement/visualization polish
 
@@ -108,20 +84,20 @@ includes.
 - R2 header removal requires the one-cycle downstream gate.
 - Zero provider spend; local-first; dry-run-before-apply throughout.
 
-## Time estimates (R1-R5, 2026-08-14)
+## Time estimates (release-post items, 2026-08-14)
 
 | Item | Work | Estimate |
 | --- | --- | --- |
 | R1 — baseline promotion | compare.py per candidate (~1-2 min each), delta review (typography/color/movement/visualization changes), promotion with history, doc count updates | 1.5-3 h (dominated by delta review; human acceptance required) |
-| R2 — alpha60 producer migration | inventory 5 consumers (1-2 h); shape map to emitters (2-4 h); adapter extension (2-3 h); producer rewiring in 5 C++ files (8-16 h); retirement gate + alpha60 rebuild + wasm checks (2-4 h) | ~2-3 working days (15-25 h) |
 | R3 — movement/visualization polish | surface-tension + hamonshu point-generator wiring (4-6 h), CTest + doc updates + candidate refresh (1-2 h) | 5-8 h |
 | R4 — site switch-over verification | CI Jekyll build watch + fix (0.5-1 h), workflow regeneration verification + receipt (0.5-1 h) | 1-2 h (CI wait included) |
 | R5 — docs/release follow-ups | post-promotion numbers, mirror refresh (~10 min), portal index updates | 1-2 h |
 
 Ordering: R4 first (fast, unblocks CI confidence), then R1 (promotion gate),
-then R3 (polish), then R2 (large, its own project), with R5 following each
-landed change. Total focused effort: roughly **4-6 working days**, dominated
-by R2.
+then R3 (polish), with R5 following each landed change. Total focused effort
+for the release-post items: roughly **0.5-1 working day** (R1 1.5-3 h, R3
+5-8 h, R4 1-2 h, R5 1-2 h). R2's estimate (~2-3 working days) lives in the
+alpha60 complete-conversion doc.
 
 ## Execution status (2026-08-14/15)
 
@@ -141,8 +117,30 @@ by R2.
 
 ### R5 — complete
 
-- Post-promotion numbers: n/a (R1 promotion deferred, gated on human
-  review).
+- Post-promotion numbers: updated with the promoted baseline (118 examples,
+  185 SVGs, 104 visual, 0 varied) in `milestone_0_baseline.md` and the
+  generation README.
 - Public mirror refresh performed after the doc changes
   (`publish-public-mirror.sh --push`).
 - Portal: no new review artifacts this round; existing indexes stay current.
+
+### R3 — complete (2026-08-15)
+
+- `generate_path_points` now wires real family geometry: hamonshu catalogue
+  motifs (`make_motif_path` + path parsing; `nested-current-scrolls` → 808
+  points) and surface-tension field contours (`resolve(scene_spec)` minimal
+  scene, level 0.3; `paired-drops` / `vertical-chain` → 348 points each).
+- Verified: `make movement-check` PASS, emit→parse→emit round-trip
+  byte-identical, two-run determinism.
+- Docs updated; movement/visualization baseline candidate refreshed
+  (unpromoted; promotion remains gated).
+- Follow-up: per-kind surface-tension scene presets matching the plate
+  examples.
+
+### R1 — complete (2026-08-15)
+
+- Promoted the regenerated candidate to `current` (old 106-example baseline
+  archived to history); new baseline: 118 examples, 185 SVGs, 104 visual, 0
+  varied (izzi `59f38a40`).
+- Makefile visual-fidelity pinned hashes updated; graph-corpus
+  characterization baseline regenerated; `make check` PASS.

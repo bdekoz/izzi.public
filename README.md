@@ -1,24 +1,28 @@
 # izzi
 
-Izzi is a C++20 header-only library for creating a selected, practical subset
-of SVG. It supports graphing, cartography, generative design, scientific
-documentation, visual thinking, and frame generation for print, video, and web
-workflows.
+Izzi is a C++20 header-only library for directly creating a selected, practical subset
+of SVG. 
+
+It supports graphing, cartography, generative design, generative art, scientific
+documentation, visual thinking, and artifact generation for large-format inkjet prints, multi-channel animation, 
+vertical video, and web workflows.
 
 **DOCUMENTATION**
 
-- API reference: [Doxygen](https://bdekoz.github.io/izzi.public/docs/html/)
-- [Generative pattern families](https://bdekoz.github.io/izzi.public/docs/generative_patterns.html)
-  — hamonshu, guilloche, moire, surface tension, radial, damped harmonograph,
-  grignani, roulette
-- [Generative color families](https://bdekoz.github.io/izzi.public/docs/generative_colors.html)
-  — palettes, bands, RGB/HSV quantization, perceptual tints
-- [Generative movement families](https://bdekoz.github.io/izzi.public/docs/generative_movement.html)
-  — one-path and multi-path movement along generated SVG paths
-- [Generative visualization families](https://bdekoz.github.io/izzi.public/docs/generative_visualization.html)
-  — grids, tables, line/chord/kusama graphs
-- [Visual workflow](https://bdekoz.github.io/izzi.public/docs/visual_workflow.md) and
-  [audio workflow](https://bdekoz.github.io/izzi.public/docs/audio_workflow.md)
+- **API reference:** [Doxygen](https://bdekoz.github.io/izzi.public/docs/html/)
+  - **Generative Families**
+    - [Pattern](https://bdekoz.github.io/izzi.public/docs/generative_patterns.html)
+      — hamonshu, guilloche, moire, surface tension, radial, damped
+      harmonograph, grignani, roulette
+    - [Color](https://bdekoz.github.io/izzi.public/docs/generative_colors.html)
+      — palettes, bands, RGB/HSV quantization, perceptual tints
+    - [Movement](https://bdekoz.github.io/izzi.public/docs/generative_movement.html)
+      — one-path and multi-path movement along generated SVG paths
+    - [Visualization](https://bdekoz.github.io/izzi.public/docs/generative_visualization.html)
+      — grids, tables, line/chord/kusama graphs
+- **Workflows**
+  - [Visual](https://bdekoz.github.io/izzi.public/docs/visual_workflow.md)
+  - [Audio](https://bdekoz.github.io/izzi.public/docs/audio_workflow.md)
 - [Examples detail](https://situationshipin.space/review/izzi-generation-20260814/)
 
 **PREREQUISITES**

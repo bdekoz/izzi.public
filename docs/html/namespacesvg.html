@@ -749,8 +749,10 @@ Functions</h2></td></tr>
 <tr class="memdesc:a8956ce9cc10b1b8598cb5f2a097e0efd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Make black/white/wcag markers with sizes 4x4 and 2x2.  <br /></td></tr>
 <tr class="memitem:a4170b769989c442aadbc83a66ea274b1" id="r_a4170b769989c442aadbc83a66ea274b1"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4170b769989c442aadbc83a66ea274b1">apply_easing</a> (const double t01, const <a class="el" href="#aac8832e14fc7bba92e26379968b4b129">easing</a> ease)</td></tr>
 <tr class="memdesc:a4170b769989c442aadbc83a66ea274b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apply a timing curve to t in [0,1].  <br /></td></tr>
+<tr class="memitem:ab942e119658d206db925e549f48e9331" id="r_ab942e119658d206db925e549f48e9331"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="#af074bb68ac49143551503d72f2bff83e">point_2t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab942e119658d206db925e549f48e9331">parse_path_points</a> (const std::string &amp;data)</td></tr>
+<tr class="memdesc:ab942e119658d206db925e549f48e9331"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse polyline path data ("M x y L x y ...") into sample points.  <br /></td></tr>
 <tr class="memitem:a01be22fc21aa888a477efe07158c64fc" id="r_a01be22fc21aa888a477efe07158c64fc"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="#af074bb68ac49143551503d72f2bff83e">point_2t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a01be22fc21aa888a477efe07158c64fc">generate_path_points</a> (const <a class="el" href="structsvg_1_1movement__path.html">movement_path</a> &amp;path, const <a class="el" href="#af074bb68ac49143551503d72f2bff83e">point_2t</a> origin)</td></tr>
-<tr class="memdesc:a01be22fc21aa888a477efe07158c64fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate the path's sample points in path space (origin = segment start). Unwired families/kind fall back to a straight line so every movement document remains sampleable; wiring to surface-tension/hamonshu point generators is staged.  <br /></td></tr>
+<tr class="memdesc:a01be22fc21aa888a477efe07158c64fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate the path's sample points in path space (origin = segment start). Roulette, hamonshu (catalogue motif), and surface-tension (field contour) kinds are wired; unknown kinds fall back to a straight line so every movement document remains sampleable.  <br /></td></tr>
 <tr class="memitem:a77de21032a921728da1f26b05782feb0" id="r_a77de21032a921728da1f26b05782feb0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#af074bb68ac49143551503d72f2bff83e">point_2t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a77de21032a921728da1f26b05782feb0">sample_path</a> (const <a class="el" href="structsvg_1_1movement__path.html">movement_path</a> &amp;path, const <a class="el" href="#af074bb68ac49143551503d72f2bff83e">point_2t</a> start, const <a class="el" href="#af074bb68ac49143551503d72f2bff83e">point_2t</a> end, const double t01)</td></tr>
 <tr class="memdesc:a77de21032a921728da1f26b05782feb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sample a movement path at t01 in [0,1], mapping the generated path onto the segment's start/end (affine per axis; degenerate spans lerp).  <br /></td></tr>
 <tr class="memitem:a5ff710b712270cadc12f89df34e2b07d" id="r_a5ff710b712270cadc12f89df34e2b07d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#af074bb68ac49143551503d72f2bff83e">point_2t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5ff710b712270cadc12f89df34e2b07d">sample_segment</a> (const <a class="el" href="structsvg_1_1movement__segment.html">movement_segment</a> &amp;segment, const double t)</td></tr>
@@ -6116,6 +6118,33 @@ template&lt;typename _Spectrm&gt; </div>
 
 </div>
 </div>
+<a id="ab942e119658d206db925e549f48e9331" name="ab942e119658d206db925e549f48e9331"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab942e119658d206db925e549f48e9331">&#9670;&#160;</a></span>parse_path_points()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; <a class="el" href="#af074bb68ac49143551503d72f2bff83e">point_2t</a> &gt; svg::parse_path_points </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>data</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Parse polyline path data ("M x y L x y ...") into sample points. </p>
+
+</div>
+</div>
 <a id="a01be22fc21aa888a477efe07158c64fc" name="a01be22fc21aa888a477efe07158c64fc"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a01be22fc21aa888a477efe07158c64fc">&#9670;&#160;</a></span>generate_path_points()</h2>
 
@@ -6143,12 +6172,12 @@ template&lt;typename _Spectrm&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Generate the path's sample points in path space (origin = segment start). Unwired families/kind fall back to a straight line so every movement document remains sampleable; wiring to surface-tension/hamonshu point generators is staged. </p>
+<p>Generate the path's sample points in path space (origin = segment start). Roulette, hamonshu (catalogue motif), and surface-tension (field contour) kinds are wired; unknown kinds fall back to a straight line so every movement document remains sampleable. </p>
 <div id="dynsection-54" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
 <div id="dynsection-54-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-54-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="namespacesvg_a01be22fc21aa888a477efe07158c64fc_cgraph.svg" width="324" height="48"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="namespacesvg_a01be22fc21aa888a477efe07158c64fc_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
 </div>
@@ -6195,7 +6224,7 @@ template&lt;typename _Spectrm&gt; </div>
 <div id="dynsection-55-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-55-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="namespacesvg_a77de21032a921728da1f26b05782feb0_cgraph.svg" width="491" height="48"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="namespacesvg_a77de21032a921728da1f26b05782feb0_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
 </div>
@@ -6232,7 +6261,7 @@ template&lt;typename _Spectrm&gt; </div>
 <div id="dynsection-56-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-56-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="namespacesvg_a5ff710b712270cadc12f89df34e2b07d_cgraph.svg" width="100%" height="367"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="namespacesvg_a5ff710b712270cadc12f89df34e2b07d_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
 </div>

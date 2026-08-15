@@ -4,12 +4,15 @@
 
 * API docs [doxygen](https://bdekoz.github.io/izzi.public/docs/html/)
 * [Examples](https://bdekoz.github.io/izzi.public/docs/examples_detail.md)
-* [Generative pattern families](docs/generative_patterns.md) — hamonshu, guilloche, moire, surface tension, radial, damped harmonograph, grignani, roulette
-* [Generative color families](docs/generative_colors.md) — palettes, bands, RGB/HSV quantization, perceptual tints
-* [Generative movement families](docs/generative_movement.md) — one-path and multi-path movement along generated SVG paths
-* [Generative visualization families](docs/generative_visualization.md) — grids, tables, line/chord/kusama graphs
-* [Visual workflow](docs/visual_workflow.md)
-* [Audio workflow](docs/audio_workflow.md)
+* **API reference:** [Doxygen](https://bdekoz.github.io/izzi.public/docs/html/)
+  * **Generative Families**
+    * [Pattern](docs/generative_patterns.md) — hamonshu, guilloche, moire, surface tension, radial, damped harmonograph, grignani, roulette
+    * [Color](docs/generative_colors.md) — palettes, bands, RGB/HSV quantization, perceptual tints
+    * [Movement](docs/generative_movement.md) — one-path and multi-path movement along generated SVG paths
+    * [Visualization](docs/generative_visualization.md) — grids, tables, line/chord/kusama graphs
+* **Workflows**
+  * [Visual](docs/visual_workflow.md)
+  * [Audio](docs/audio_workflow.md)
 
 ## Development
 
