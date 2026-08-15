@@ -2,7 +2,7 @@
 
 Date: 2026-08-15
 
-Status: `PLANNED; SEPARATE-PROJECT; AWAITING-APPROVAL; ZERO-SPEND`
+Status: `PHASES-1-5-COMPLETE-20260815; RETIREMENT-EXECUTED; ZERO-SPEND`
 
 The alpha60 producer migration (R2), moved out of
 `explore_futures.20260814.release_post.md` into this dedicated plan. It
@@ -93,6 +93,28 @@ wasm checks 2-4 h.
   and human review.
 - Zero provider spend; local-first; dry-run-before-apply.
 
+## src.js compatibility (per current alpha60-results-animation usage)
+
+Requirement: the izzi-generated SVG and table outputs must keep working with
+the site's vendored `src.js` consumers, exactly as used today:
+
+- `izzi-table-sort-wcag-22.js` (vendored at
+  `alpha60-results-animation/resources/izzi-table-sort-wcag-22.js`, loaded
+  from `docs/animation.md`) sorts the `_includes` tables. The izzi table
+  contract already matches: `class="sortable"`, `<caption class="sr-only">`,
+  and `<th scope="col">` headers — this contract must not change.
+- `izzi-map-leaflet-geojson-v7.x.js` (the map layer) consumes the
+  `data/*.geojson` products by URL. The conversion keeps those products
+  byte-identical, so the map consumer is unaffected.
+- The izzi SVGs are self-contained (no external references), deterministic,
+  and accessible (`<title>`/`<desc>`/`role="img"`), so pages embedding them
+  as includes/images keep working.
+
+Verification: (a) table-markup contract check on regenerated `_includes`;
+(b) GeoJSON product sha-256 parity; (c) SVG self-containment check; (d) the
+R4 CI Jekyll deploy + `regenerate-includes` workflow as the integration
+gate.
+
 ## Execution (2026-08-14, "read and process")
 
 ### Phase 1 — Inventory (recorded)
@@ -158,6 +180,32 @@ a **country-ranked line**. Regeneration + sha-256 provenance re-run.
 
 Producer rewiring (the five C++ consumers onto the pipeline/facades) is the
 separate-project gate: **not started** — requires explicit approval.
+
+### Phase 4 — implemented (2026-08-15)
+
+- **Pilot consumer** (`a60-cache-recache-synthesize-uniques.cc`): the legacy
+  inline augment render stage is removed; `--stages=render` now writes a
+  pipeline render-spec (visuals via the izzi pipeline). Build-verified and
+  behavior-verified (render-spec JSON emitted).
+- **All five consumers** rewired: `a60-meta-collection-factory.cc`
+  (`setup_render` replaced with member init), `a60-ip-analysis.h`
+  (augment render call removed), `a60-collection-analyze-multi-year.cc`
+  (compiles clean), `a60-btiha-geojson.h` (dependency include fixed).
+- **Prerequisites** (the alpha60 tree did not build at HEAD): `a60-svg.h` →
+  `izzi-svg.h` include migration (10 files), legacy color wrapper migrated
+  to `color_band_cache` + `color_cursor`, missing `a60-geojson.h` /
+  `a60-svg-collection.h` dependencies added, `svg::select` disambiguated.
+
+### Phase 5 — retirement executed (2026-08-15)
+
+- `src/a60-svg-collection-augment.h` **deleted**; the legacy inline augment
+  render path is gone (no `--legacy-render`).
+- Full `alpha60` production-local build **PASS** (all CMake targets).
+- Downstream cycle: the site's `_includes` are already izzi-generated (cold
+  cutover) and the `regenerate-includes` workflow + Jekyll deploy pass; the
+  `src.js` consumers (table-sort on the izzi table contract; leaflet map on
+  the unchanged GeoJSON products) remain compatible per the requirement
+  above.
 
 ## Phase 4 decision gate — pilot plan (proposal, 2026-08-14)
 
