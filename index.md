@@ -11,8 +11,8 @@
   * [Movement](docs/generative_movement.md) — one-path and multi-path movement along generated SVG paths
   * [Visualization](docs/generative_visualization.md) — grids, tables, line/chord/kusama graphs
 * **Workflows**
-  * [Visual](docs/visual_workflow.md)
-  * [Audio](docs/audio_workflow.md)
+  * [Visual](docs/visual_workflow/)
+  * [Audio](docs/audio_workflow/)
 
 ## Development
 

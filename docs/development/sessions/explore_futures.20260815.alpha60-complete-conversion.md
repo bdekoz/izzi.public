@@ -203,6 +203,46 @@ happen before the gate.
 
 **Total: ~0.5-1 working day** to the Phase 4 decision gate.
 
+## Pilot assessment — decision-gate evidence (2026-08-14)
+
+Pilot: `augment_weighed_by_torrent` for `altered-carbon-resleeved`
+(83 media objects from
+`data/altered-carbon-resleeved-cumulative-btiha-media-objects.json`,
+sha-256 `76c7dd3e…`).
+
+### Results
+
+- **Data fidelity: PASS** — the izzi weighed-by-torrent document carries 83
+  points whose `size_total` values are byte-identical to the source JSON
+  (first three: 4.830381763, 0.729931714, 2.787039635), i.e., the pipeline
+  faithfully represents the shared data.
+- **Determinism: PASS** — two isolated renders of the izzi document are
+  byte-identical.
+- **Accessibility: PASS** — the rendered SVG carries `<title>`, `<desc>`,
+  and `role="img"`.
+- **Provenance: PASS** — source sha-256 recorded per document; the legacy
+  producer's analysis log (`altered-carbon-resleeved-unique-btiha-cumulative.log`,
+  sha-256 `83d20fae…`) was captured from `a60-meta-collection-factory`.
+
+### Finding (legacy visual reproduction)
+
+Reproducing the legacy producer's augment **SVG** locally was blocked by the
+recache pipeline's cache-layout dependency
+(`a60-cache-recache-synthesize-uniques` requires the elapsed-hour/current
+timestamp sample trees; the torrent cache alone does not satisfy it), so the
+pilot compared the izzi render against the **shared data + analysis log**
+rather than a byte-level visual diff. This is a producer-environment
+dependency for Phase 4/5, not an izzi-side gap.
+
+### Decision-gate summary
+
+The izzi pipeline is data-faithful, deterministic, accessible, and
+provenance-bound for the pilot shape; the remaining Phase 4 risk is
+producer-side (cache layout, styling parity for cartography/metadata
+overlays). Recommendation: approve Phase 4 rewiring with the pilot pattern,
+phased per consumer, with the legacy-SVG visual diff deferred until the
+producer cache-layout dependency is resolved.
+
 
 Before starting, assess which one of the consumers would be the easiest test conversion pilot. Preference is a60-meta-collection-factory.cc
 

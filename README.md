@@ -21,8 +21,8 @@ vertical video, and web workflows.
   - [Visualization](https://bdekoz.github.io/izzi.public/docs/generative_visualization.html)
     — grids, tables, line/chord/kusama graphs
 - **Workflows**
-  - [Visual](https://bdekoz.github.io/izzi.public/docs/visual_workflow.md)
-  - [Audio](https://bdekoz.github.io/izzi.public/docs/audio_workflow.md)
+  - [Visual](https://bdekoz.github.io/izzi.public/docs/visual_workflow/)
+  - [Audio](https://bdekoz.github.io/izzi.public/docs/audio_workflow/)
 - [Examples](https://situationshipin.space/review/izzi-generation-20260814/)
 
 **PREREQUISITES**
