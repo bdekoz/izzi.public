@@ -10,16 +10,16 @@ vertical video, and web workflows.
 **DOCUMENTATION**
 
 - **API reference:** [Doxygen](https://bdekoz.github.io/izzi.public/docs/html/)
-  - **Generative families**
-    - [Pattern](https://bdekoz.github.io/izzi.public/docs/generative_patterns.html)
-      — hamonshu, guilloche, moire, surface tension, radial, damped
-      harmonograph, grignani, roulette
-    - [Color](https://bdekoz.github.io/izzi.public/docs/generative_colors.html)
-      — palettes, bands, RGB/HSV quantization, perceptual tints
-    - [Movement](https://bdekoz.github.io/izzi.public/docs/generative_movement.html)
-      — one-path and multi-path movement along generated SVG paths
-    - [Visualization](https://bdekoz.github.io/izzi.public/docs/generative_visualization.html)
-      — grids, tables, line/chord/kusama graphs
+- **Generative families**
+  - [Pattern](https://bdekoz.github.io/izzi.public/docs/generative_patterns.html)
+    — hamonshu, guilloche, moire, surface tension, radial, damped
+    harmonograph, grignani, roulette
+  - [Color](https://bdekoz.github.io/izzi.public/docs/generative_colors.html)
+    — palettes, bands, RGB/HSV quantization, perceptual tints
+  - [Movement](https://bdekoz.github.io/izzi.public/docs/generative_movement.html)
+    — one-path and multi-path movement along generated SVG paths
+  - [Visualization](https://bdekoz.github.io/izzi.public/docs/generative_visualization.html)
+    — grids, tables, line/chord/kusama graphs
 - **Workflows**
   - [Visual](https://bdekoz.github.io/izzi.public/docs/visual_workflow.md)
   - [Audio](https://bdekoz.github.io/izzi.public/docs/audio_workflow.md)

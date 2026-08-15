@@ -19,7 +19,7 @@ vertical (`scripts/compose-vector-overlay.py`,
 generative-family documentation and no danmaku-style examples.
 
 Requested scope (full-page discussion in
-`explore_futures.20260814.md`):
+`explore_futures.20260814.planning_review_class.md`):
 
 1. Add `docs/generative_patterns/danmu.md` describing
    `izzi-svg-text-overlay.h` and its relation to the W3C proposal.

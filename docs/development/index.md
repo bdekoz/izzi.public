@@ -24,7 +24,7 @@ Dated exploration logs live in [`sessions/`](sessions/):
   [2026-08-11](sessions/explore_futures.20260811.md) ·
   [2026-08-12](sessions/explore_futures.20260812.md) ·
   [restart here](sessions/explore_futures.20260812.restart_here.md) ·
-  [2026-08-14](sessions/explore_futures.20260814.md)
+  [2026-08-14](sessions/explore_futures.20260814.planning_review_class.md)
 
 ## Cross-cutting
 

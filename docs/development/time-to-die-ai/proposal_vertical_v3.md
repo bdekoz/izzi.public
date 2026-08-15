@@ -70,7 +70,7 @@ one continuous arc:
 - G4-style human review of episodes 01-03; a `KEEP` promotes them to
   baseline.
 - Use this walkthrough as the template for the **plan vertical** review class
-  (proposed in `docs/development/sessions/explore_futures.20260814.md`), so the next
+  (proposed in `docs/development/sessions/explore_futures.20260814.planning_review_class.md`), so the next
   vertical starts with a reviewed plan instead of a draft loop.
 - Optional follow-ups: a real PGS subtitle pipeline, WASM byte-parity for the
   overlay header, and Higgs TTS where authorized.
