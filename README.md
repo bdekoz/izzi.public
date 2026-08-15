@@ -49,24 +49,34 @@ subtitle capability):
 
 **BUILDING AND TESTING**
 
-The CMake target is `izzi::izzi`. Configure a normal out-of-tree build with:
+The library target is `izzi::izzi`. The canonical entry points are the
+Makefile wrappers:
 
 ```sh
-cmake -S . -B build/local -G Ninja \
-  -DCMAKE_CXX_COMPILER=c++ \
-  -DBUILD_TESTING=ON
+make configure          # cmake -S . -B build/cmake -DBUILD_TESTING=ON
+make all                # build the library and tests
+make check              # full suite: migration contract CANONICAL-READY,
+                        # package contract, generation, and family gates
+```
+
+Or configure an out-of-tree build directly:
+
+```sh
+cmake -S . -B build/local -G Ninja -DCMAKE_CXX_COMPILER=c++ -DBUILD_TESTING=ON
 cmake --build build/local
 ```
 
-Run the current GCC and Clang header/ODR baselines with:
+Run the full suite under both GCC and Clang:
 
 ```sh
 make check-compilers
 ```
 
-The present baseline intentionally exposes known failures. Read the
-[`Milestone 0 baseline`](docs/development/milestone_0_baseline.md) before interpreting the
-result, and see [`CONTRIBUTING.md`](CONTRIBUTING.md) for focused tests and visual
+`make check` is expected to pass cleanly on the current tree. The Milestone 0
+baseline (`docs/development/milestone_0_baseline.md`) is a historical record
+of the migration-era known failures, retained for provenance only. See
+[`CONTRIBUTING.md`](CONTRIBUTING.md) for focused tests, family gates
+(`color-check`, `movement-check`, `visualization-check`), and visual
 candidate generation.
 
 

@@ -109,14 +109,17 @@ $(function() {
 <li>Atkinson Hyperlegible fonts installed locally (<span class="tt">/home/bkoz/.fonts/atkinson_hyperlegible.2026/</span>) for legible subtitle and label rendering.</li>
 </ul>
 <p><b>BUILDING AND TESTING</b></p>
-<p>The CMake target is <span class="tt">izzi::izzi</span>. Configure a normal out-of-tree build with:</p>
-<div class="fragment"><div class="line">cmake -S . -B build/local -G Ninja \</div>
-<div class="line">  -DCMAKE_CXX_COMPILER=c++ \</div>
-<div class="line">  -DBUILD_TESTING=ON</div>
+<p>The library target is <span class="tt">izzi::izzi</span>. The canonical entry points are the Makefile wrappers:</p>
+<div class="fragment"><div class="line">make configure          # cmake -S . -B build/cmake -DBUILD_TESTING=ON</div>
+<div class="line">make all                # build the library and tests</div>
+<div class="line">make check              # full suite: migration contract CANONICAL-READY,</div>
+<div class="line">                        # package contract, generation, and family gates</div>
+</div><!-- fragment --><p>Or configure an out-of-tree build directly:</p>
+<div class="fragment"><div class="line">cmake -S . -B build/local -G Ninja -DCMAKE_CXX_COMPILER=c++ -DBUILD_TESTING=ON</div>
 <div class="line">cmake --build build/local</div>
-</div><!-- fragment --><p>Run the current GCC and Clang header/ODR baselines with:</p>
+</div><!-- fragment --><p>Run the full suite under both GCC and Clang:</p>
 <div class="fragment"><div class="line">make check-compilers</div>
-</div><!-- fragment --><p>The present baseline intentionally exposes known failures. Read the <span class="tt">Milestone 0 baseline</span> before interpreting the result, and see <span class="tt">CONTRIBUTING.md</span> for focused tests and visual candidate generation.</p>
+</div><!-- fragment --><p><span class="tt">make check</span> is expected to pass cleanly on the current tree. The Milestone 0 baseline (<span class="tt">docs/development/milestone_0_baseline.md</span>) is a historical record of the migration-era known failures, retained for provenance only. See <span class="tt">CONTRIBUTING.md</span> for focused tests, family gates (<span class="tt">color-check</span>, <span class="tt">movement-check</span>, <span class="tt">visualization-check</span>), and visual candidate generation.</p>
 <p><b>INSTALLING AND CONSUMING</b></p>
 <p>Install the canonical header-only package to a local prefix and consume it through the exported target:</p>
 <div class="fragment"><div class="line">cmake -S . -B build/install \</div>
