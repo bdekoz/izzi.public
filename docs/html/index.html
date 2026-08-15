@@ -138,14 +138,6 @@ $(function() {
 <p><b>USING</b></p>
 <p>Source Documentation <a href="https://bdekoz.github.io/izzi.public/">here</a>.</p>
 <p>See the files in the <a href="https://bdekoz.github.io/izzi.public/examples/">examples</a> subdirectory.</p>
-<p><b>HAMONSHU WAVE CURVES</b></p>
-<p><a href="https://bdekoz.github.io/izzi.public/docs/html/izzi-svg-curves-hamonshu_8h.html"><span class="tt">src/izzi-svg-curves-hamonshu.h</span></a> provides a C++20, header-only catalogue and deterministic procedural SVG paths for 153 wave studies indexed to Mori Yuzan's 1903 <em>Hamonshu</em>, volume 2. The <span class="tt">svg::hamonshu::motif_config</span> API parameterizes line density, curvature, phase, rotation, reflection, and sampling resolution. It emits normalized motif linework inside a caller-supplied <span class="tt">svg::hamonshu::pattern_box</span>; clipping, styling, and SVG layer assembly remain with the caller.</p>
-<p><a href="https://bdekoz.github.io/izzi.public/examples/curves-hamonshu.cc"><span class="tt">examples/curves-hamonshu.cc</span></a> validates the public API and renders the thirteen curated source motifs at seven curvature ratios with one fixed ink style. Build and run it from the repository root:</p>
-<div class="fragment"><div class="line">g++ -Isrc -std=c++20 -Wall -Wextra -Wpedantic -Werror \</div>
-<div class="line">  examples/curves-hamonshu.cc -o /tmp/curves-hamonshu</div>
-<div class="line">(cd /tmp &amp;&amp; ./curves-hamonshu)</div>
-</div><!-- fragment --><p>The generated <span class="tt">curves-hamonshu.svg</span> is a monochrome parameter grid containing one titled group per selected source specimen and curvature ratio. The Smithsonian Libraries scan is CC0; the descriptive English labels are not translations of historical captions.</p>
-<p>The <a href="https://bdekoz.github.io/izzi.public/docs/generative_patterns/hamonshu.md">Hamonshū wave-pattern catalogue and rendering notes</a> document the source-page convention, motif naming, procedural interpretation, cartographic clipping, rebuild workflow, and provenance.</p>
 <p><b>PUBLISHING THE PUBLIC SITE</b></p>
 <p>The public docs site (<a href="https://bdekoz.github.io/izzi.public/">https://bdekoz.github.io/izzi.public/</a>) is a curated snapshot of this repository: <span class="tt">docs/</span>, <span class="tt">examples/</span>, and the root landing files, with <span class="tt">src/</span> and other private trees excluded. Refresh it with:</p>
 <div class="fragment"><div class="line">scripts/publish-public-mirror.sh --push</div>

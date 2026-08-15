@@ -51,6 +51,29 @@ cartofreako ocean generator: 13 selected source motifs at seven curvature
 ratios, for 91 variations. Keeping that selection beside the full catalogue
 prevents the two consumers from drifting apart.
 
+### Example: parameter-grid render
+
+`src/izzi-svg-curves-hamonshu.h` provides a C++20, header-only catalogue and
+deterministic procedural SVG paths for the 153 wave studies indexed to Mori
+Yūzan's 1903 *Hamonshū*, volume 2. The `svg::hamonshu::motif_config` API
+parameterizes line density, curvature, phase, rotation, reflection, and
+sampling resolution, and emits normalized motif linework inside a
+caller-supplied `svg::hamonshu::pattern_box`; clipping, styling, and SVG
+layer assembly remain with the caller.
+
+Build and run the curated parameter grid from the repository root:
+
+```sh
+g++ -Isrc -std=c++20 -Wall -Wextra -Wpedantic -Werror \
+  examples/curves-hamonshu.cc -o /tmp/curves-hamonshu
+(cd /tmp && ./curves-hamonshu)
+```
+
+The generated `curves-hamonshu.svg` is a monochrome parameter grid containing
+one titled group per selected source specimen and curvature ratio. The
+Smithsonian Libraries scan is CC0; the descriptive English labels are not
+translations of historical captions.
+
 ### Page and name conventions
 
 The cartofreako provenance PDF has 28 scan pages, while the bound work
