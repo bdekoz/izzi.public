@@ -9,13 +9,13 @@ test_color_spectrum(std::string ofile)
   area<> a = svg::k::square8bisb_096_v;
   svg_element obj(ofile, a);
 
-  svg_element emb = display_color_qis(active_spectrum(), a, k::apercu_typo);
+  svg_element emb = display_color_qis(active_spectrum(), a, k::default_typo);
   obj.add_element(emb);
 
   // Text label.
   auto rspace = 10;
   const string title = "color spectrum size: " + std::to_string(color_max_size);
-  sized_text(obj, k::apercu_typo, 24, title, rspace, rspace);
+  sized_text(obj, k::default_typo, 24, title, rspace, rspace);
 }
 
 

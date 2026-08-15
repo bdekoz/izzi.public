@@ -14,5 +14,7 @@ var searchData=
   ['interfere_11',['interfere',['../namespaceizzi_1_1moire.html#ae97136016d3efe2477f1004bd62d1231aceff088dfeb78b82780f12c4f2b08b48',1,'izzi::moire::interfere'],['../namespaceizzi_1_1surface__tension.html#a61d70fb91980bd6b1b8048fc055426bcaceff088dfeb78b82780f12c4f2b08b48',1,'izzi::surface_tension::interfere']]],
   ['internationalorange_12',['internationalorange',['../namespacesvg.html#a0e622bba4eee0e6528a9261d6aa251d1a528f731a4d64ef8ce815e38e9f7112f1',1,'svg']]],
   ['italic_13',['italic',['../structsvg_1_1typography.html#aba5bf3a1484966319aebc9443746e98ca030c5b6d1e5715105943ac111d9671bf',1,'svg::typography']]],
-  ['ivory_14',['ivory',['../namespacesvg.html#a0e622bba4eee0e6528a9261d6aa251d1ac55c68625ca1da0e1d4a922fc8cb373e',1,'svg']]]
+  ['ivory_14',['ivory',['../namespacesvg.html#a0e622bba4eee0e6528a9261d6aa251d1ac55c68625ca1da0e1d4a922fc8cb373e',1,'svg']]],
+  ['izzi_15',['izzi',['../namespacesvg.html#a1b02070a985c92aaea4bcedce5aafbc9a81b1a151f9b1283329007d7adf4ee304',1,'svg']]],
+  ['izzi_5fhue_16',['izzi_hue',['../namespacesvg.html#a1b02070a985c92aaea4bcedce5aafbc9afcea59aeabf6a417dd4ef01116725263',1,'svg']]]
 ];

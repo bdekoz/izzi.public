@@ -1,0 +1,7 @@
+<map id="svg::sample_path" name="svg::sample_path">
+<area shape="rect" id="Node000001" title="Sample a movement path at t01 in [0,1], mapping the generated path onto the segment&#39;s start/end (affi..." alt="" coords="5,12,124,36"/>
+<area shape="rect" id="Node000002" href="$namespacesvg.html#a01be22fc21aa888a477efe07158c64fc" title="Generate the path&#39;s sample points in path space (origin = segment start). Unwired families/kind fall ..." alt="" coords="172,5,300,42"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="124,21,156,21,156,26,124,26"/>
+<area shape="rect" id="Node000003" href="$namespacesvg.html#a63a04b67b3afe59728b9ba5336f7a7db" title="Sample a trochoid from a circle rolling along a straight line." alt="" coords="348,12,485,36"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="300,21,332,21,332,26,300,26"/>
+</map>

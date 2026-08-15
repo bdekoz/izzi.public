@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['xml_5fcontext_0',['xml_context',['../namespacesvg_1_1detail.html#afc7ed6853a57e4a7564ab31f60b7d8bf',1,'svg::detail']]]
+  ['visualization_5fkind_0',['visualization_kind',['../namespacesvg.html#a85424dde0d1dcd35e40a82ff8ef874c2',1,'svg']]]
 ];

@@ -1,0 +1,9 @@
+<map id="izzi::text_overlay::emit_manifest_json" name="izzi::text_overlay::emit_manifest_json">
+<area shape="rect" id="Node000001" title="Emit the manifest JSON with document policy, lane/timing metadata, and glyph/font provenance for ever..." alt="" coords="5,67,140,103"/>
+<area shape="rect" id="Node000002" href="$namespaceizzi_1_1text__overlay.html#ae4efb6163f16012db503767b8af24419" title="Escape a string for a JSON string literal (valid UTF&#45;8 passes through)." alt="" coords="188,5,300,42"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="125,64,175,45,177,50,127,69"/>
+<area shape="rect" id="Node000003" href="$namespaceizzi_1_1text__overlay.html#ae19393cb9dd797956bf53f12dae62180" title=" " alt="" coords="188,67,300,103"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="140,82,172,82,172,88,140,88"/>
+<area shape="rect" id="Node000004" href="$namespaceizzi_1_1text__overlay.html#a925283021cbca155ac387b2bc4ec12b0" title="Deterministic number formatting: trailing zeros trimmed, no exponent." alt="" coords="188,128,300,165"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="127,101,177,120,175,125,125,106"/>
+</map>

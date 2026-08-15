@@ -1,0 +1,11 @@
+<map id="svg::sample_segment" name="svg::sample_segment">
+<area shape="rect" id="Node000001" title="Sample a movement segment: t is in seconds, eased within [0, duration]." alt="" coords="5,29,147,53"/>
+<area shape="rect" id="Node000002" href="$namespacesvg.html#a4170b769989c442aadbc83a66ea274b1" title="Apply a timing curve to t in [0,1]." alt="" coords="195,5,315,29"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="147,29,179,25,180,30,147,34"/>
+<area shape="rect" id="Node000003" href="$namespacesvg.html#a77de21032a921728da1f26b05782feb0" title="Sample a movement path at t01 in [0,1], mapping the generated path onto the segment&#39;s start/end (affi..." alt="" coords="196,53,314,77"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="147,48,180,53,180,58,147,53"/>
+<area shape="rect" id="Node000004" href="$namespacesvg.html#a01be22fc21aa888a477efe07158c64fc" title="Generate the path&#39;s sample points in path space (origin = segment start). Unwired families/kind fall ..." alt="" coords="363,47,491,84"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="315,62,348,62,348,68,315,68"/>
+<area shape="rect" id="Node000005" href="$namespacesvg.html#a63a04b67b3afe59728b9ba5336f7a7db" title="Sample a trochoid from a circle rolling along a straight line." alt="" coords="539,53,677,77"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="492,62,524,62,524,68,492,68"/>
+</map>

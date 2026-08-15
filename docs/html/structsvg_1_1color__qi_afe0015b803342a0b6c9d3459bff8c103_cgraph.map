@@ -1,0 +1,7 @@
+<map id="svg::color_qi::color_qi" name="svg::color_qi::color_qi">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,29,146,53"/>
+<area shape="rect" id="Node000002" href="$structsvg_1_1color__qi.html#a114affda0c048cdacf115fe5ee6cce3d" title=" " alt="" coords="201,5,342,29"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="146,30,185,25,186,30,146,35"/>
+<area shape="rect" id="Node000003" href="$namespacesvg.html#a94bdf4e161d2cfbca10d4c3509202711" title="Constexpr enum&#45;&gt;RGB lookup; defined in izzi&#45;svg&#45;color&#45;rgb&#45;map.inc." alt="" coords="194,53,349,77"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="146,47,179,51,178,56,146,52"/>
+</map>

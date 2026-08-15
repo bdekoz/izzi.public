@@ -1,0 +1,40 @@
+<map id="svg::color_band_cache::color_band_cache" name="svg::color_band_cache::color_band_cache">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,218,152,254"/>
+<area shape="rect" id="Node000002" href="$namespacesvg.html#a73cbb0a9d5ccf208eb25c70155c4a491" title="Forwarding function with explicit model and seed." alt="" coords="200,199,342,222"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="152,224,184,219,185,225,152,229"/>
+<area shape="rect" id="Node000005" href="$namespacesvg.html#acc2b8f8809f00a00d21252535298d0b5" title=" " alt="" coords="390,248,550,272"/>
+<area shape="poly" id="edge20_Node000001_Node000005" title=" " alt="" coords="152,238,375,251,374,257,152,243"/>
+<area shape="rect" id="Node000003" href="$namespacesvg.html#afbb69e6e3429f0e574994b3a761d2a30" title="Legacy mutable working spectrum (default izzi hue palette). Kept for the ODR shared&#45;state contract in..." alt="" coords="402,199,539,222"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="343,208,386,208,386,213,343,213"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="322,220,405,241,404,246,321,226"/>
+<area shape="rect" id="Node000010" href="$namespacesvg.html#aec90b6e5147d2141dd00eaabceed3b30" title=" " alt="" coords="390,101,550,125"/>
+<area shape="poly" id="edge10_Node000002_Node000010" title=" " alt="" coords="296,196,429,130,432,134,298,201"/>
+<area shape="rect" id="Node000004" href="$namespacesvg.html#ae9528c0e964c1af42024aa29a8be32ca" title="Explicit, pure spectrum selection by tag (constexpr; no hidden state)." alt="" coords="815,199,914,222"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="539,208,800,208,800,213,539,213"/>
+<area shape="poly" id="edge8_Node000005_Node000004" title=" " alt="" coords="512,270,561,282,622,291,689,292,722,289,754,281,800,259,838,231,841,235,803,264,756,286,723,294,689,298,622,296,560,287,510,275"/>
+<area shape="rect" id="Node000006" href="$namespacesvg.html#a99a15ab72c4c248f53762ccccc3cbe40" title="Gamma&#45;corrected weighted combine in linear&#45;light sRGB." alt="" coords="613,347,740,384"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="495,270,600,325,623,337,621,342,597,330,493,274"/>
+<area shape="rect" id="Node000009" href="$namespacesvg.html#ac10e7d47d031b121174fc0e65232980f" title="Convert point_2t to string." alt="" coords="629,248,724,272"/>
+<area shape="poly" id="edge9_Node000005_Node000009" title=" " alt="" coords="551,257,613,257,613,262,551,262"/>
+<area shape="rect" id="Node000007" href="$namespacesvg.html#a357e4d05b9fd77c3698262af045cd659" title="Linear&#45;light intensity (0..1) to sRGB gamma&#45;encoded channel." alt="" coords="803,377,927,401"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="741,371,788,377,788,382,740,376"/>
+<area shape="rect" id="Node000008" href="$namespacesvg.html#af61d6f859ade621753bec05b5ea18d31" title="sRGB gamma&#45;encoded channel (0..1) to linear&#45;light intensity." alt="" coords="803,329,927,353"/>
+<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="740,354,788,348,788,354,741,360"/>
+<area shape="rect" id="Node000011" href="$namespacesvg.html#ad15806ae856c597bdb6a2e928ca31481" title="Forwarding function." alt="" coords="625,5,728,29"/>
+<area shape="poly" id="edge11_Node000010_Node000011" title=" " alt="" coords="489,99,537,69,597,39,614,32,616,37,599,44,540,74,492,103"/>
+<area shape="rect" id="Node000014" href="$namespacesvg.html#a4fd801fd99a48d6fb49a4e311bac998a" title="Return a variant on saturation/value only." alt="" coords="609,53,744,77"/>
+<area shape="poly" id="edge14_Node000010_Node000014" title=" " alt="" coords="524,98,607,78,608,84,525,103"/>
+<area shape="rect" id="Node000015" href="$namespacesvg.html#ad67ecd83790645f7943ddcd9e3edda2d" title="Loop through spectrum starting at position c (explicit spectrum). Iff klr is not found,..." alt="" coords="625,149,728,173"/>
+<area shape="poly" id="edge15_Node000010_Node000015" title=" " alt="" coords="525,123,610,143,609,148,524,128"/>
+<area shape="rect" id="Node000016" href="$structsvg_1_1color__qf.html#ad36639997243ba6e24f5655b76338640" title="Back to RGB https://www.rapidtables.com/convert/color/hsv&#45;to&#45;rgb.html." alt="" coords="598,101,755,125"/>
+<area shape="poly" id="edge17_Node000010_Node000016" title=" " alt="" coords="551,110,582,110,582,116,551,116"/>
+<area shape="rect" id="Node000012" href="$namespacesvg.html#ace451856d4faf4d251a5a49aba625c3e" title="Default compare distances from k1,k2 to black." alt="" coords="808,5,922,29"/>
+<area shape="poly" id="edge12_Node000011_Node000012" title=" " alt="" coords="729,14,792,14,792,20,729,20"/>
+<area shape="rect" id="Node000013" href="$namespacesvg.html#ac96d0e1435f308aecc6e4c362a2c769d" title=" " alt="" coords="975,5,1118,29"/>
+<area shape="poly" id="edge13_Node000012_Node000013" title=" " alt="" coords="922,14,960,14,960,20,922,20"/>
+<area shape="poly" id="edge16_Node000015_Node000004" title=" " alt="" coords="725,171,803,192,801,197,724,176"/>
+<area shape="rect" id="Node000017" href="$structsvg_1_1color__qf.html#afda5a84e91104dc0aabf79b1d3907f7a" title="Convert HSV to RGB." alt="" coords="806,95,924,132"/>
+<area shape="poly" id="edge18_Node000016_Node000017" title=" " alt="" coords="755,110,791,110,791,116,755,116"/>
+<area shape="rect" id="Node000018" href="$structsvg_1_1color__qf.html#ab57a5acd0eef888a11a358edd433633e" title="Value between 0.0 (black) and 1.0." alt="" coords="976,101,1117,125"/>
+<area shape="poly" id="edge19_Node000017_Node000018" title=" " alt="" coords="924,110,961,110,961,116,924,116"/>
+</map>

@@ -59,4 +59,4 @@ The guilloche, moire, and surface-tension previews are the canonical named
 plates from their plate examples (`variant-data-orbit-experimental.svg`,
 `moire-01-linear-close-beat.svg`, `surface-tension-01-paired-drops.svg`).
 
-Status: `FIRST-PASS-SORT; HAMONSHU-CATALOGUE-MERGED-INTO-FAMILY-ENTRY; VISUAL-TESTER-GALLERY-ADDED; NOT-SHARED`
+Status: `FIRST-PASS-SORT; HAMONSHU-CATALOGUE-MERGED-INTO-FAMILY-ENTRY; VISUAL-TESTER-GALLERY-ADDED; SHARED-VIA-PUBLIC-MIRROR`

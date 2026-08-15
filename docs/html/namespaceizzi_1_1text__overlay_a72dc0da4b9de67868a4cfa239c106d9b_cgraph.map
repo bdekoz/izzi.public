@@ -1,0 +1,9 @@
+<map id="izzi::text_overlay::emit_overlay_svg" name="izzi::text_overlay::emit_overlay_svg">
+<area shape="rect" id="Node000001" title="Emit the overlay SVG: transparent background, one &lt;g&gt; per run carrying W3C lane/timing data&#45;* provena..." alt="" coords="5,67,128,103"/>
+<area shape="rect" id="Node000002" href="$namespaceizzi_1_1text__overlay.html#acafd2b8bb0b504824d26c6c3e208dc84" title="Escape a string for use inside a double&#45;quoted XML attribute." alt="" coords="176,5,321,42"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="122,64,177,45,178,50,124,69"/>
+<area shape="rect" id="Node000003" href="$namespaceizzi_1_1text__overlay.html#ae19393cb9dd797956bf53f12dae62180" title=" " alt="" coords="192,67,304,103"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="128,82,176,82,176,88,128,88"/>
+<area shape="rect" id="Node000004" href="$namespaceizzi_1_1text__overlay.html#a925283021cbca155ac387b2bc4ec12b0" title="Deterministic number formatting: trailing zeros trimmed, no exponent." alt="" coords="192,128,304,165"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="124,101,178,120,177,125,122,106"/>
+</map>

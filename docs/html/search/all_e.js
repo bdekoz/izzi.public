@@ -6,8 +6,8 @@ var searchData=
   ['navy_3',['navy',['../namespacesvg.html#a0e622bba4eee0e6528a9261d6aa251d1af3311d3d14c8437553bf3e3f90920736',1,'svg']]],
   ['nest_5finner_5felement_4',['nest_inner_element',['../namespacesvg.html#a14179ddf3ee33f17012b21b473bcc827',1,'svg']]],
   ['nest_5finner_5fsvg_5felement_5fcentered_5',['nest_inner_svg_element_centered',['../namespacesvg.html#aa07a5304f7966198fab897e7b8ac98fb',1,'svg']]],
-  ['next_5fcolor_6',['next_color',['../namespacesvg.html#a554dc780ece47a3937550a8bd113b604',1,'svg']]],
-  ['next_5fin_5fcolor_5fband_7',['next_in_color_band',['../namespacesvg.html#ae25614aaac6374dd8f78d382dfaa4fd2',1,'svg']]],
+  ['next_6',['next',['../structsvg_1_1color__band__cache.html#a95429a39dcca962e06d743baa9be653e',1,'svg::color_band_cache::next()'],['../structsvg_1_1color__cursor.html#a5764632eb0dd6c2af4133d22eca74772',1,'svg::color_cursor::next()']]],
+  ['next_5fcolor_7',['next_color',['../namespacesvg.html#ad67ecd83790645f7943ddcd9e3edda2d',1,'svg::next_color(const color_qi klr, const _Spectrm &amp;spectrum)'],['../namespacesvg.html#a554dc780ece47a3937550a8bd113b604',1,'svg::next_color(const color_qi klr)']]],
   ['no_5farea_8',['no_area',['../namespacesvg_1_1constants.html#a7ea99d84ad1fa1bcbeb32c206b43c19b',1,'svg::constants']]],
   ['no_5fstroke_5fstyle_9',['no_stroke_style',['../namespacesvg_1_1constants.html#a1c4966a8fd0c1c2d1b3481e10ffda704',1,'svg::constants']]],
   ['no_5fstyle_10',['no_style',['../namespacesvg_1_1constants.html#a94e31e0f92ab672062d8ebb87e2c8975',1,'svg::constants']]],
@@ -17,5 +17,5 @@ var searchData=
   ['normal_14',['normal',['../structsvg_1_1typography.html#ac41cf6a133f5b21757130ce5ba72b3d7afea087517c26fadd409bd4b9dc642555',1,'svg::typography::normal'],['../structsvg_1_1typography.html#aba5bf3a1484966319aebc9443746e98cafea087517c26fadd409bd4b9dc642555',1,'svg::typography::normal']]],
   ['normal_5foffset_5fstep_15',['normal_offset_step',['../structizzi_1_1guilloche_1_1family__spec.html#a5b5f897ac21ab33132f5b3597a612c32',1,'izzi::guilloche::family_spec']]],
   ['normalize_16',['normalize',['../namespacesvg.html#abc4e003ae532dd33d70b48faa2e4d0ff',1,'svg']]],
-  ['number_17',['number',['../structizzi_1_1guilloche_1_1scene__content.html#ad0d07a2010a25db67807016b54a6e161',1,'izzi::guilloche::scene_content::number'],['../namespaceizzi_1_1guilloche.html#a1dade0a941c4540783ce6676e77a3b9aab1bc248a7ff2b2e95569f56de68615df',1,'izzi::guilloche::number']]]
+  ['number_17',['number',['../structizzi_1_1guilloche_1_1scene__content.html#ad0d07a2010a25db67807016b54a6e161',1,'izzi::guilloche::scene_content::number'],['../namespaceizzi_1_1text__overlay.html#a925283021cbca155ac387b2bc4ec12b0',1,'izzi::text_overlay::number()'],['../namespaceizzi_1_1guilloche.html#a1dade0a941c4540783ce6676e77a3b9aab1bc248a7ff2b2e95569f56de68615df',1,'izzi::guilloche::number']]]
 ];

@@ -82,12 +82,22 @@ $(function() {
 <ul>
 <li>API reference: <a href="https://bdekoz.github.io/izzi.public/docs/html/">Doxygen</a></li>
 <li><a href="https://bdekoz.github.io/izzi.public/docs/generative_patterns.html">Generative pattern families</a> — hamonshu, guilloche, moire, surface tension, radial, damped harmonograph, grignani, roulette</li>
+<li><a href="https://bdekoz.github.io/izzi.public/docs/generative_colors.html">Generative color families</a> — palettes, bands, RGB/HSV quantization, perceptual tints</li>
+<li><a href="https://bdekoz.github.io/izzi.public/docs/generative_movement.html">Generative movement families</a> — one-path and multi-path movement along generated SVG paths</li>
+<li><a href="https://bdekoz.github.io/izzi.public/docs/generative_visualization.html">Generative visualization families</a> — grids, tables, line/chord/kusama graphs</li>
 <li><a href="https://bdekoz.github.io/izzi.public/docs/visual_workflow.md">Visual workflow</a> and <a href="https://bdekoz.github.io/izzi.public/docs/audio_workflow.md">audio workflow</a></li>
 <li><a href="https://situationshipin.space/review/izzi-generation-20260814/">Examples detail</a></li>
 </ul>
 <p><b>PREREQUISITES</b></p>
 <p>Development and use is hosted on top-of-tree Linux. At the moment, this means Fedora 41 or Alma 9 operating systems on multi-core x86_64 hardware.</p>
 <p>Some familiarity with Linux, contemporary C++20, and SVG is assumed.</p>
+<p><b>Text / subtitle / OCR machinery</b> (used by the time-to-die vertical and the subtitle capability):</p>
+<ul>
+<li><span class="tt">tesseract</span> 5.x — OCR of frames and PDFs into bullet-text and subtitle content (already the default OCR engine in the time-to-die draft scripts).</li>
+<li><span class="tt">ffmpeg</span> / <span class="tt">ffprobe</span> with <span class="tt">libass</span> — probe clip geometry/duration, extract frames, and burn SRT/WebVTT subtitles.</li>
+<li><span class="tt">python3</span> (stdlib) and <span class="tt">node</span> — OCR orchestration and subtitle serialization helpers.</li>
+<li>Atkinson Hyperlegible fonts installed locally (<span class="tt">/home/bkoz/.fonts/atkinson_hyperlegible.2026/</span>) for legible subtitle and label rendering.</li>
+</ul>
 <p><b>BUILDING AND TESTING</b></p>
 <p>The CMake target is <span class="tt">izzi::izzi</span>. Configure a normal out-of-tree build with:</p>
 <div class="fragment"><div class="line">cmake -S . -B build/local -G Ninja \</div>
@@ -122,7 +132,11 @@ $(function() {
 <div class="line">  examples/curves-hamonshu.cc -o /tmp/curves-hamonshu</div>
 <div class="line">(cd /tmp &amp;&amp; ./curves-hamonshu)</div>
 </div><!-- fragment --><p>The generated <span class="tt">curves-hamonshu.svg</span> is a monochrome parameter grid containing one titled group per selected source specimen and curvature ratio. The Smithsonian Libraries scan is CC0; the descriptive English labels are not translations of historical captions.</p>
-<p>The <a href="https://bdekoz.github.io/izzi.public/docs/generative_patterns/hamonshu.md">Hamonshū wave-pattern catalogue and rendering notes</a> document the source-page convention, motif naming, procedural interpretation, cartographic clipping, rebuild workflow, and provenance. </p>
+<p>The <a href="https://bdekoz.github.io/izzi.public/docs/generative_patterns/hamonshu.md">Hamonshū wave-pattern catalogue and rendering notes</a> document the source-page convention, motif naming, procedural interpretation, cartographic clipping, rebuild workflow, and provenance.</p>
+<p><b>PUBLISHING THE PUBLIC SITE</b></p>
+<p>The public docs site (<a href="https://bdekoz.github.io/izzi.public/">https://bdekoz.github.io/izzi.public/</a>) is a curated snapshot of this repository: <span class="tt">docs/</span>, <span class="tt">examples/</span>, and the root landing files, with <span class="tt">src/</span> and other private trees excluded. Refresh it with:</p>
+<div class="fragment"><div class="line">scripts/publish-public-mirror.sh --push</div>
+</div><!-- fragment --><p>Add <span class="tt">--regen-doxygen</span> to regenerate <span class="tt">docs/html</span> (with <span class="tt">SOURCE_BROWSER = NO</span>, source-listing pages stripped) and commit that to this repository first. Use <span class="tt">--dry-run</span> to build and audit the snapshot without changing any repository. </p>
 </div></div><!-- PageDoc -->
 <a href="doxygen_crawl.html"></a>
 </div><!-- contents -->

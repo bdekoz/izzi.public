@@ -9,7 +9,7 @@ test_color(std::string ofile)
   area<> a = svg::k::square8bis_096;
   svg_element obj(ofile, a);
 
-  typography typo = k::apercu_typo;
+  typography typo = k::default_typo;
   typo._M_style = k::w_style;
   typo._M_size = 24;
   typo._M_align = typography::align::left;
@@ -23,7 +23,7 @@ test_color(std::string ofile)
       color::wcag_lgray, color::wcag_gray, color::wcag_dgray
     };
 
-  svg_element emb = display_color_qis(spectrum, a, k::apercu_typo);
+  svg_element emb = display_color_qis(spectrum, a, k::default_typo);
   obj.add_element(emb);
 }
 

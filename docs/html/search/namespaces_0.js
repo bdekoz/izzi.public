@@ -9,5 +9,6 @@ var searchData=
   ['izzi_3a_3amoire_6',['moire',['../namespaceizzi_1_1moire.html',1,'izzi']]],
   ['izzi_3a_3amoire_3a_3adetail_7',['detail',['../namespaceizzi_1_1moire_1_1detail.html',1,'izzi::moire']]],
   ['izzi_3a_3asurface_5ftension_8',['surface_tension',['../namespaceizzi_1_1surface__tension.html',1,'izzi']]],
-  ['izzi_3a_3asurface_5ftension_3a_3adetail_9',['detail',['../namespaceizzi_1_1surface__tension_1_1detail.html',1,'izzi::surface_tension']]]
+  ['izzi_3a_3asurface_5ftension_3a_3adetail_9',['detail',['../namespaceizzi_1_1surface__tension_1_1detail.html',1,'izzi::surface_tension']]],
+  ['izzi_3a_3atext_5foverlay_10',['text_overlay',['../namespaceizzi_1_1text__overlay.html',1,'izzi']]]
 ];

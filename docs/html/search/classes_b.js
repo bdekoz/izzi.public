@@ -22,5 +22,6 @@ var searchData=
   ['ripple_5fconfig_19',['ripple_config',['../structsvg_1_1ripple__config.html',1,'svg']]],
   ['rose_5fspec_20',['rose_spec',['../structizzi_1_1guilloche_1_1rose__spec.html',1,'izzi::guilloche']]],
   ['roulette_5fconfig_21',['roulette_config',['../structsvg_1_1roulette__config.html',1,'svg']]],
-  ['roulette_5fspec_22',['roulette_spec',['../structizzi_1_1guilloche_1_1roulette__spec.html',1,'izzi::guilloche']]]
+  ['roulette_5fspec_22',['roulette_spec',['../structizzi_1_1guilloche_1_1roulette__spec.html',1,'izzi::guilloche']]],
+  ['run_23',['run',['../structizzi_1_1text__overlay_1_1run.html',1,'izzi::text_overlay']]]
 ];

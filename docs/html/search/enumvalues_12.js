@@ -4,7 +4,7 @@ var searchData=
   ['satellite_1',['satellite',['../namespacesvg_1_1graph.html#acbe4fcc2a0e384bd58a39475fb76d261a53bb79002a8ade0bc488f4469ce3fcd7',1,'svg::graph::satellite'],['../namespacesvg.html#ac8061963317131e6bd4d517ed84880bca53bb79002a8ade0bc488f4469ce3fcd7',1,'svg::satellite']]],
   ['science_2',['science',['../namespacesvg.html#a0e622bba4eee0e6528a9261d6aa251d1afb5c7f9bb4b32ce2f3bff4662f1ab27b',1,'svg']]],
   ['screen_3',['screen',['../namespaceizzi_1_1guilloche.html#a4a7a2e58353a56f0e4944bb02eff9de4a599eba19aa93a929cb8589f148b8a6c4',1,'izzi::guilloche::screen'],['../namespaceizzi_1_1moire.html#a906917fbb3add22040bb08cbaf83e18da599eba19aa93a929cb8589f148b8a6c4',1,'izzi::moire::screen'],['../namespaceizzi_1_1surface__tension.html#a5c83572f5d7e3035a6630633ac37512aa599eba19aa93a929cb8589f148b8a6c4',1,'izzi::surface_tension::screen']]],
-  ['scroll_4',['scroll',['../namespacesvg_1_1hamonshu.html#a6ef0408fcb2cb24c37c7db772489a6dea089b0cdd8835d09cb1cabf38b3ce9c09',1,'svg::hamonshu']]],
+  ['scroll_4',['scroll',['../namespacesvg_1_1hamonshu.html#a6ef0408fcb2cb24c37c7db772489a6dea089b0cdd8835d09cb1cabf38b3ce9c09',1,'svg::hamonshu::scroll'],['../namespaceizzi_1_1text__overlay.html#ad83be998b50e861b646908d6309826d7a089b0cdd8835d09cb1cabf38b3ce9c09',1,'izzi::text_overlay::scroll']]],
   ['seiheki_5',['seiheki',['../namespacesvg.html#a0e622bba4eee0e6528a9261d6aa251d1a2b9d7312f9d6c9eef7dc783e66f11026',1,'svg']]],
   ['seijiiro_6',['seijiiro',['../namespacesvg.html#a0e622bba4eee0e6528a9261d6aa251d1ab79fc1074d3c2858c3794080e16a2369',1,'svg']]],
   ['shinbashiiro_7',['shinbashiiro',['../namespacesvg.html#a0e622bba4eee0e6528a9261d6aa251d1ab81971f6241fe6688d83c58565ed883d',1,'svg']]],

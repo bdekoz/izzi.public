@@ -24,5 +24,5 @@ var searchData=
   ['gray90_21',['gray90',['../namespacesvg.html#a0e622bba4eee0e6528a9261d6aa251d1ab59c9e6f73e479e98218d76f765354e6',1,'svg']]],
   ['green_22',['green',['../namespacesvg.html#a0e622bba4eee0e6528a9261d6aa251d1a9f27410725ab8cc8854a2769c7a516b8',1,'svg']]],
   ['greenyellow_23',['greenyellow',['../namespacesvg.html#a0e622bba4eee0e6528a9261d6aa251d1add675e7d49f43ce4437518439af03897',1,'svg']]],
-  ['grid_24',['grid',['../namespacesvg.html#ac8061963317131e6bd4d517ed84880bcaff4a008470319a22d9cf3d14af485977',1,'svg']]]
+  ['grid_24',['grid',['../namespacesvg.html#ac8061963317131e6bd4d517ed84880bcaff4a008470319a22d9cf3d14af485977',1,'svg::grid'],['../namespacesvg.html#a85424dde0d1dcd35e40a82ff8ef874c2aff4a008470319a22d9cf3d14af485977',1,'svg::grid']]]
 ];

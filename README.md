@@ -11,6 +11,12 @@ workflows.
 - [Generative pattern families](https://bdekoz.github.io/izzi.public/docs/generative_patterns.html)
   — hamonshu, guilloche, moire, surface tension, radial, damped harmonograph,
   grignani, roulette
+- [Generative color families](https://bdekoz.github.io/izzi.public/docs/generative_colors.html)
+  — palettes, bands, RGB/HSV quantization, perceptual tints
+- [Generative movement families](https://bdekoz.github.io/izzi.public/docs/generative_movement.html)
+  — one-path and multi-path movement along generated SVG paths
+- [Generative visualization families](https://bdekoz.github.io/izzi.public/docs/generative_visualization.html)
+  — grids, tables, line/chord/kusama graphs
 - [Visual workflow](https://bdekoz.github.io/izzi.public/docs/visual_workflow.md) and
   [audio workflow](https://bdekoz.github.io/izzi.public/docs/audio_workflow.md)
 - [Examples detail](https://situationshipin.space/review/izzi-generation-20260814/)
@@ -22,6 +28,19 @@ this means Fedora 41 or Alma 9 operating systems on multi-core
 x86_64 hardware.
 
 Some familiarity with Linux, contemporary C++20, and SVG is assumed.
+
+**Text / subtitle / OCR machinery** (used by the time-to-die vertical and the
+subtitle capability):
+
+- `tesseract` 5.x — OCR of frames and PDFs into bullet-text and subtitle
+  content (already the default OCR engine in the time-to-die draft scripts).
+- `ffmpeg` / `ffprobe` with `libass` — probe clip geometry/duration, extract
+  frames, and burn SRT/WebVTT subtitles.
+- `python3` (stdlib) and `node` — OCR orchestration and subtitle
+  serialization helpers.
+- Atkinson Hyperlegible fonts installed locally
+  (`/home/bkoz/.fonts/atkinson_hyperlegible.2026/`) for legible subtitle and
+  label rendering.
 
 
 **BUILDING AND TESTING**

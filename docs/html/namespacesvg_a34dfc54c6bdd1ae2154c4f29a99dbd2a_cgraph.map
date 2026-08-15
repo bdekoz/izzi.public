@@ -1,0 +1,16 @@
+<map id="svg::make_color_band_v1" name="svg::make_color_band_v1">
+<area shape="rect" id="Node000001" title="Default&#45;seed convenience overload for the RGB model." alt="" coords="5,108,166,132"/>
+<area shape="rect" id="Node000002" href="$namespacesvg.html#acc2b8f8809f00a00d21252535298d0b5" title=" " alt="" coords="214,83,374,106"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="165,107,198,103,198,109,166,113"/>
+<area shape="rect" id="Node000006" href="$namespacesvg.html#ae9528c0e964c1af42024aa29a8be32ca" title="Explicit, pure spectrum selection by tag (constexpr; no hidden state)." alt="" coords="436,132,535,156"/>
+<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="166,122,421,137,421,143,166,127"/>
+<area shape="rect" id="Node000003" href="$namespacesvg.html#a99a15ab72c4c248f53762ccccc3cbe40" title="Gamma&#45;corrected weighted combine in linear&#45;light sRGB." alt="" coords="422,23,549,60"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="338,80,406,60,408,65,340,85"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="344,104,423,125,421,130,342,110"/>
+<area shape="rect" id="Node000007" href="$namespacesvg.html#ac10e7d47d031b121174fc0e65232980f" title="Convert point_2t to string." alt="" coords="438,84,533,108"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="374,92,423,93,422,98,374,98"/>
+<area shape="rect" id="Node000004" href="$namespacesvg.html#a357e4d05b9fd77c3698262af045cd659" title="Linear&#45;light intensity (0..1) to sRGB gamma&#45;encoded channel." alt="" coords="597,5,722,29"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="549,30,582,25,582,30,550,35"/>
+<area shape="rect" id="Node000005" href="$namespacesvg.html#af61d6f859ade621753bec05b5ea18d31" title="sRGB gamma&#45;encoded channel (0..1) to linear&#45;light intensity." alt="" coords="597,53,722,77"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="550,47,582,52,582,57,549,53"/>
+</map>

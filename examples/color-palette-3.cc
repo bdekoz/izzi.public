@@ -11,11 +11,12 @@ test_color(std::string ofile)
 
   auto [ klr, sz ] = cband_g;
 
+  color_cursor cursor(klr);
   color_qis greens;
   for (uint i = 0; i < sz; ++i)
-    greens.push_back(start_at_color(klr));
+    greens.push_back(cursor.next(spectrum<palette_kind::izzi_hue>()));
 
-  svg_element emb = display_color_qis(greens, a, k::apercu_typo);
+  svg_element emb = display_color_qis(greens, a, k::default_typo);
   obj.add_element(emb);
 }
 

@@ -23,7 +23,7 @@ test_color(std::string ofile)
   // Gray background.
   auto r = make_rect_centered(cp, sgray, {width, height});
   obj.add_element(r);
-  svg_element emb = display_color_qis(spectrum, a, k::apercu_typo);
+  svg_element emb = display_color_qis(spectrum, a, k::default_typo);
   obj.add_element(emb);
 }
 

@@ -11,10 +11,10 @@
 <!-- Node0 -->
 <g id="Node000000" class="node">
 <title>Node0</title>
-<g id="a_Node000000"><a xlink:href="structsvg_1_1graph_1_1radial__orbit__spec.html" target="_top" xlink:title=" ">
+<g id="a_Node000000"><a xlink:href="structsvg_1_1graph_1_1linear__chord__spec.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="89.5,-27.5 0,-27.5 0,0 89.5,0 89.5,-27.5"/>
-<text xml:space="preserve" text-anchor="start" x="8" y="-15.9" font-family="SourceSans" font-size="8.00">svg::graph::radial</text>
-<text xml:space="preserve" text-anchor="middle" x="44.75" y="-6.15" font-family="SourceSans" font-size="8.00">_orbit_spec</text>
+<text xml:space="preserve" text-anchor="start" x="8" y="-15.9" font-family="SourceSans" font-size="8.00">svg::graph::linear</text>
+<text xml:space="preserve" text-anchor="middle" x="44.75" y="-6.15" font-family="SourceSans" font-size="8.00">_chord_spec</text>
 </a>
 </g>
 </g>

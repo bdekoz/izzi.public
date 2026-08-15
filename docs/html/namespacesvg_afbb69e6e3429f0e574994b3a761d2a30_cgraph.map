@@ -1,0 +1,5 @@
+<map id="svg::active_spectrum" name="svg::active_spectrum">
+<area shape="rect" id="Node000001" title="Legacy mutable working spectrum (default izzi hue palette). Kept for the ODR shared&#45;state contract in..." alt="" coords="5,5,143,29"/>
+<area shape="rect" id="Node000002" href="$namespacesvg.html#ae9528c0e964c1af42024aa29a8be32ca" title="Explicit, pure spectrum selection by tag (constexpr; no hidden state)." alt="" coords="191,5,290,29"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="143,14,175,14,175,20,143,20"/>
+</map>

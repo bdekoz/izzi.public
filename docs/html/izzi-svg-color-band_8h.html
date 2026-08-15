@@ -78,8 +78,10 @@ $(function() {
 <div id="doc-content">
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">izzi-svg-color-band.h File Reference</div></div>
@@ -87,14 +89,20 @@ $(function() {
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="izzi-svg-color-palette_8h.html">izzi-svg-color-palette.h</a>&quot;</code><br />
 <code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;set&gt;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Include dependency graph for izzi-svg-color-band.h:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="izzi-svg-color-band_8h__incl.svg" width="463" height="276"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="izzi-svg-color-band_8h__incl.svg" width="100%" height="516"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 </div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:svg_3A_3Acolor_5Fband_5Fcache" id="r_svg_3A_3Acolor_5Fband_5Fcache"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsvg_1_1color__band__cache.html">svg::color_band_cache</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Explicit per-(size, model, seed) band cache (replaces the hidden function-local statics of the former next_in_color_band).  <a href="structsvg_1_1color__band__cache.html#details">More...</a><br /></td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-namespaces" class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:svg" id="r_svg"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesvg.html">svg</a></td></tr>
@@ -104,15 +112,23 @@ Typedefs</h2></td></tr>
 <tr class="memitem:a3ca20e3b21a6022d558f7f5a85c2f31b" id="r_a3ca20e3b21a6022d558f7f5a85c2f31b"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesvg.html#a3ca20e3b21a6022d558f7f5a85c2f31b">svg::colorband</a> = std::tuple&lt;<a class="el" href="namespacesvg.html#a0e622bba4eee0e6528a9261d6aa251d1">color</a>, ushort&gt;</td></tr>
 <tr class="memdesc:a3ca20e3b21a6022d558f7f5a85c2f31b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specific regions of spectrum as bands of color. Each band has a starting hue and a number of known good samples. This is then used to seed a generator that computes more of similar hues.  <br /></td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-enum-members" class="groupheader"><a id="enum-members" name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:acbe0193d2c87c950a7fbd8c0b9b2a7a2" id="r_acbe0193d2c87c950a7fbd8c0b9b2a7a2"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesvg.html#acbe0193d2c87c950a7fbd8c0b9b2a7a2">svg::band_model</a> { <a class="el" href="namespacesvg.html#acbe0193d2c87c950a7fbd8c0b9b2a7a2aef70a6546536ccd835479f6cddc0188e">svg::rgb</a>
+, <a class="el" href="namespacesvg.html#acbe0193d2c87c950a7fbd8c0b9b2a7a2a587e6a7556ea454af6a44bc6c021dba7">svg::hsv</a>
+ }</td></tr>
+<tr class="memdesc:acbe0193d2c87c950a7fbd8c0b9b2a7a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Band generation model: interpolate in RGB (linear-light sRGB) or HSV (Appendix B.5 of the 2026-08-14 color proposal).  <a href="namespacesvg.html#acbe0193d2c87c950a7fbd8c0b9b2a7a2">More...</a><br /></td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a80195ef46b7ed340c7a3f2a4b5eb6874" id="r_a80195ef46b7ed340c7a3f2a4b5eb6874"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacesvg.html#a437287c508ad0dbdfe56362eb43d3c0a">color_qis</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesvg.html#a80195ef46b7ed340c7a3f2a4b5eb6874">svg::make_color_band_v1</a> (const <a class="el" href="namespacesvg.html#a3ca20e3b21a6022d558f7f5a85c2f31b">colorband</a> &amp;cb, const ushort neededh, auto &amp;spectrum)</td></tr>
-<tr class="memitem:a5dd92fa5ad40a62e238ee50bcc46f4b0" id="r_a5dd92fa5ad40a62e238ee50bcc46f4b0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacesvg.html#a437287c508ad0dbdfe56362eb43d3c0a">color_qis</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesvg.html#a5dd92fa5ad40a62e238ee50bcc46f4b0">svg::make_color_band_v2</a> (const <a class="el" href="namespacesvg.html#a3ca20e3b21a6022d558f7f5a85c2f31b">colorband</a> &amp;cb, const ushort neededh)</td></tr>
-<tr class="memdesc:a5dd92fa5ad40a62e238ee50bcc46f4b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Algorithm is HSV generation.  <br /></td></tr>
-<tr class="memitem:a79320da4cd41236a7eb7dd609b282888" id="r_a79320da4cd41236a7eb7dd609b282888"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacesvg.html#a437287c508ad0dbdfe56362eb43d3c0a">color_qis</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesvg.html#a79320da4cd41236a7eb7dd609b282888">svg::make_color_band</a> (const <a class="el" href="namespacesvg.html#a3ca20e3b21a6022d558f7f5a85c2f31b">colorband</a> &amp;cb, const ushort neededh)</td></tr>
-<tr class="memdesc:a79320da4cd41236a7eb7dd609b282888"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forwarding function.  <br /></td></tr>
-<tr class="memitem:ae25614aaac6374dd8f78d382dfaa4fd2" id="r_ae25614aaac6374dd8f78d382dfaa4fd2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structsvg_1_1color__qi.html">color_qi</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesvg.html#ae25614aaac6374dd8f78d382dfaa4fd2">svg::next_in_color_band</a> (const <a class="el" href="namespacesvg.html#a3ca20e3b21a6022d558f7f5a85c2f31b">colorband</a> &amp;cb, const ushort bandn=400)</td></tr>
-<tr class="memdesc:ae25614aaac6374dd8f78d382dfaa4fd2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flip through color band colors.  <br /></td></tr>
+<tr class="memitem:acc2b8f8809f00a00d21252535298d0b5" id="r_acc2b8f8809f00a00d21252535298d0b5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacesvg.html#a437287c508ad0dbdfe56362eb43d3c0a">color_qis</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesvg.html#acc2b8f8809f00a00d21252535298d0b5">svg::make_color_band_v1</a> (const <a class="el" href="namespacesvg.html#a3ca20e3b21a6022d558f7f5a85c2f31b">colorband</a> &amp;cb, const ushort neededh, const auto &amp;<a class="el" href="namespacesvg.html#ae9528c0e964c1af42024aa29a8be32ca">spectrum</a>, std::mt19937_64 &amp;rg)</td></tr>
+<tr class="memitem:a34dfc54c6bdd1ae2154c4f29a99dbd2a" id="r_a34dfc54c6bdd1ae2154c4f29a99dbd2a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacesvg.html#a437287c508ad0dbdfe56362eb43d3c0a">color_qis</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesvg.html#a34dfc54c6bdd1ae2154c4f29a99dbd2a">svg::make_color_band_v1</a> (const <a class="el" href="namespacesvg.html#a3ca20e3b21a6022d558f7f5a85c2f31b">colorband</a> &amp;cb, const ushort neededh, const auto &amp;<a class="el" href="namespacesvg.html#ae9528c0e964c1af42024aa29a8be32ca">spectrum</a>, std::mt19937_64::result_type seed=<a class="el" href="namespacesvg.html#ad50b72f8f7772f34d631033792235d19">color_default_seed</a>)</td></tr>
+<tr class="memdesc:a34dfc54c6bdd1ae2154c4f29a99dbd2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default-seed convenience overload for the RGB model.  <br /></td></tr>
+<tr class="memitem:aec90b6e5147d2141dd00eaabceed3b30" id="r_aec90b6e5147d2141dd00eaabceed3b30"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacesvg.html#a437287c508ad0dbdfe56362eb43d3c0a">color_qis</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesvg.html#aec90b6e5147d2141dd00eaabceed3b30">svg::make_color_band_v2</a> (const <a class="el" href="namespacesvg.html#a3ca20e3b21a6022d558f7f5a85c2f31b">colorband</a> &amp;cb, const ushort neededh, std::mt19937_64 &amp;rg)</td></tr>
+<tr class="memitem:a485a94a181dccfe4bc346161e443a339" id="r_a485a94a181dccfe4bc346161e443a339"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacesvg.html#a437287c508ad0dbdfe56362eb43d3c0a">color_qis</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesvg.html#a485a94a181dccfe4bc346161e443a339">svg::make_color_band_v2</a> (const <a class="el" href="namespacesvg.html#a3ca20e3b21a6022d558f7f5a85c2f31b">colorband</a> &amp;cb, const ushort neededh, std::mt19937_64::result_type seed=<a class="el" href="namespacesvg.html#ad50b72f8f7772f34d631033792235d19">color_default_seed</a>)</td></tr>
+<tr class="memdesc:a485a94a181dccfe4bc346161e443a339"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default-seed convenience overload for the HSV model.  <br /></td></tr>
+<tr class="memitem:a73cbb0a9d5ccf208eb25c70155c4a491" id="r_a73cbb0a9d5ccf208eb25c70155c4a491"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacesvg.html#a437287c508ad0dbdfe56362eb43d3c0a">color_qis</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesvg.html#a73cbb0a9d5ccf208eb25c70155c4a491">svg::make_color_band</a> (const <a class="el" href="namespacesvg.html#a3ca20e3b21a6022d558f7f5a85c2f31b">colorband</a> &amp;cb, const ushort neededh, <a class="el" href="namespacesvg.html#acbe0193d2c87c950a7fbd8c0b9b2a7a2">band_model</a> model=<a class="el" href="namespacesvg.html#acbe0193d2c87c950a7fbd8c0b9b2a7a2aef70a6546536ccd835479f6cddc0188e">band_model::rgb</a>, std::mt19937_64::result_type seed=<a class="el" href="namespacesvg.html#ad50b72f8f7772f34d631033792235d19">color_default_seed</a>)</td></tr>
+<tr class="memdesc:a73cbb0a9d5ccf208eb25c70155c4a491"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forwarding function with explicit model and seed.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>

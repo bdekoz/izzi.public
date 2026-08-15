@@ -17,7 +17,7 @@ var searchData=
   ['blur_14',['blur',['../namespacesvg.html#ac8061963317131e6bd4d517ed84880bcaaefcd320422617869da103b5eed7041c',1,'svg']]],
   ['bold_15',['bold',['../structsvg_1_1typography.html#ac41cf6a133f5b21757130ce5ba72b3d7a69dcab4a73aeec2113f69b61e6263da8',1,'svg::typography']]],
   ['botan_16',['botan',['../namespacesvg.html#a0e622bba4eee0e6528a9261d6aa251d1a9ad589c7127a1842632a92bd0c1d9977',1,'svg']]],
-  ['bottom_17',['bottom',['../namespacesvg.html#ac8061963317131e6bd4d517ed84880bca71f262d796bed1ab30e8a2d5a8ddee6f',1,'svg']]],
+  ['bottom_17',['bottom',['../namespacesvg.html#ac8061963317131e6bd4d517ed84880bca71f262d796bed1ab30e8a2d5a8ddee6f',1,'svg::bottom'],['../namespaceizzi_1_1text__overlay.html#ad83be998b50e861b646908d6309826d7a71f262d796bed1ab30e8a2d5a8ddee6f',1,'izzi::text_overlay::bottom']]],
   ['braid_18',['braid',['../namespacesvg_1_1hamonshu.html#a6ef0408fcb2cb24c37c7db772489a6dea7566120cc98f85dba933e2538acd9885',1,'svg::hamonshu']]],
   ['breaker_19',['breaker',['../namespacesvg_1_1hamonshu.html#a6ef0408fcb2cb24c37c7db772489a6dea90b1eae09c89d32298407705052d84f3',1,'svg::hamonshu']]],
   ['bubble_20',['bubble',['../namespacesvg_1_1hamonshu.html#a6ef0408fcb2cb24c37c7db772489a6deaa3fa9e0b6b24b1cada4b756c0d240444',1,'svg::hamonshu']]],

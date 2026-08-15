@@ -1,0 +1,22 @@
+<map id="svg::add_visualization_accessibility" name="svg::add_visualization_accessibility">
+<area shape="rect" id="Node000001" title="Accessibility contract for every emitted visualization: &lt;title&gt;, &lt;desc&gt;, and role=&quot;img&quot; (approved imp..." alt="" coords="5,86,149,123"/>
+<area shape="rect" id="Node000002" href="$group__elements.html#a4a6af4e23b9f79f07d58780c128c5638" title=" " alt="" coords="197,62,374,86"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="149,91,185,86,186,91,150,97"/>
+<area shape="rect" id="Node000007" href="$group__elements.html#a26869d2a66e57c0d83f2df21d25cd875" title=" " alt="" coords="212,113,358,150"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="149,111,197,117,196,123,149,116"/>
+<area shape="rect" id="Node000003" href="$group__elements.html#ada0333b46b2547c6152f3f5811016a12" title=" " alt="" coords="603,13,737,50"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="306,59,357,32,388,20,421,10,464,4,508,3,589,11,588,16,507,8,464,9,423,15,390,25,359,37,308,64"/>
+<area shape="rect" id="Node000005" href="$group__elements.html#ga03da556ae8f749df1cf8463111e996d3" title=" " alt="" coords="422,25,555,62"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="368,59,407,53,408,58,369,64"/>
+<area shape="rect" id="Node000006" href="$group__elements.html#a90ffdd73579c45cd0740dc9efa2f5445" title=" " alt="" coords="422,86,555,123"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="369,84,408,90,407,95,368,89"/>
+<area shape="rect" id="Node000004" href="$group__elements.html#ad893ef9c13a15464c96d8a85c08af30f" title=" " alt="" coords="785,19,932,43"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="737,29,769,29,769,34,737,34"/>
+<area shape="rect" id="Node000008" href="$group__elements.html#a7995b78d94e1c299065c9dd3569fef7c" title=" " alt="" coords="422,148,555,184"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="360,141,407,149,406,155,359,146"/>
+<area shape="poly" id="edge8_Node000008_Node000003" title=" " alt="" coords="534,145,554,133,600,96,639,59,643,63,604,100,557,137,536,149"/>
+<area shape="rect" id="Node000009" href="$group__elements.html#ga3d62381f8edcccd3d91f82af55f11274" title=" " alt="" coords="610,117,730,154"/>
+<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="555,152,595,145,596,150,556,157"/>
+<area shape="rect" id="Node000010" href="$group__elements.html#a41dcaa1132c502cb86c01aae1e7b9ff2" title=" " alt="" coords="610,178,730,215"/>
+<area shape="poly" id="edge10_Node000008_Node000010" title=" " alt="" coords="556,175,596,181,595,187,555,180"/>
+</map>

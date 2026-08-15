@@ -1,0 +1,21 @@
+<map id="svg::make_color_band_v2" name="svg::make_color_band_v2">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,77,166,101"/>
+<area shape="rect" id="Node000002" href="$namespacesvg.html#ad15806ae856c597bdb6a2e928ca31481" title="Forwarding function." alt="" coords="240,5,344,29"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="117,74,213,39,234,32,236,37,215,44,119,79"/>
+<area shape="rect" id="Node000005" href="$namespacesvg.html#a4fd801fd99a48d6fb49a4e311bac998a" title="Return a variant on saturation/value only." alt="" coords="224,53,360,77"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="166,77,208,72,209,77,166,82"/>
+<area shape="rect" id="Node000006" href="$namespacesvg.html#ad67ecd83790645f7943ddcd9e3edda2d" title="Loop through spectrum starting at position c (explicit spectrum). Iff klr is not found,..." alt="" coords="240,101,344,125"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="166,96,225,103,224,108,166,101"/>
+<area shape="rect" id="Node000008" href="$structsvg_1_1color__qf.html#ad36639997243ba6e24f5655b76338640" title="Back to RGB https://www.rapidtables.com/convert/color/hsv&#45;to&#45;rgb.html." alt="" coords="214,151,370,174"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="119,99,215,135,238,143,237,148,213,140,118,104"/>
+<area shape="rect" id="Node000003" href="$namespacesvg.html#ace451856d4faf4d251a5a49aba625c3e" title="Default compare distances from k1,k2 to black." alt="" coords="420,5,534,29"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="344,14,404,14,404,20,344,20"/>
+<area shape="rect" id="Node000004" href="$namespacesvg.html#ac96d0e1435f308aecc6e4c362a2c769d" title=" " alt="" coords="583,5,727,29"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="534,14,567,14,567,20,534,20"/>
+<area shape="rect" id="Node000007" href="$namespacesvg.html#ae9528c0e964c1af42024aa29a8be32ca" title="Explicit, pure spectrum selection by tag (constexpr; no hidden state)." alt="" coords="427,99,526,122"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="344,110,412,109,412,114,344,115"/>
+<area shape="rect" id="Node000009" href="$structsvg_1_1color__qf.html#afda5a84e91104dc0aabf79b1d3907f7a" title="Convert HSV to RGB." alt="" coords="418,147,535,184"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="370,161,403,161,403,167,370,166"/>
+<area shape="rect" id="Node000010" href="$structsvg_1_1color__qf.html#ab57a5acd0eef888a11a358edd433633e" title="Value between 0.0 (black) and 1.0." alt="" coords="584,153,726,177"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="536,162,569,162,569,168,536,168"/>
+</map>

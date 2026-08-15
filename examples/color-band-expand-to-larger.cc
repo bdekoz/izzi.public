@@ -7,7 +7,7 @@ test_color(std::string s, const svg::colorband& cbp, const uint sizen)
   const svg::area<> a = { 1920, 1080 };
 
   color_qis klrs = make_color_band(cbp, sizen);
-  svg_element emb = display_color_qis(klrs, a, k::apercu_typo);
+  svg_element emb = display_color_qis(klrs, a, k::default_typo);
   svg::svg_element obj(s, a);
   obj.add_element(emb);
 }

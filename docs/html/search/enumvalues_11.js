@@ -14,11 +14,13 @@ var searchData=
   ['redorange_11',['redorange',['../namespacesvg.html#a0e622bba4eee0e6528a9261d6aa251d1a2c84d97638de6e4e9c3ddff03f92cd51',1,'svg']]],
   ['redwisteria_12',['redwisteria',['../namespacesvg.html#a0e622bba4eee0e6528a9261d6aa251d1aa748cf2661f3eccccd59f1299834a6d5',1,'svg']]],
   ['repeat_13',['repeat',['../namespaceizzi_1_1moire.html#ae97136016d3efe2477f1004bd62d1231a32cf6da134a8b268cf4ab6b79a9a5ad9',1,'izzi::moire::repeat'],['../namespaceizzi_1_1surface__tension.html#a61d70fb91980bd6b1b8048fc055426bca32cf6da134a8b268cf4ab6b79a9a5ad9',1,'izzi::surface_tension::repeat']]],
-  ['right_14',['right',['../structsvg_1_1typography.html#a93bca2e6c4e32784def555d27487f886a7c4f29407893c334a6cb7a87bf045c0d',1,'svg::typography']]],
-  ['ripple_15',['ripple',['../namespacesvg_1_1hamonshu.html#a6ef0408fcb2cb24c37c7db772489a6dea2a263b152b6dcf8f6dd2e5ddfb3de3a4',1,'svg::hamonshu']]],
-  ['rokusho_16',['rokusho',['../namespacesvg.html#a0e622bba4eee0e6528a9261d6aa251d1ae6885b33bb3745c23b3a04cdb5732856',1,'svg']]],
-  ['rosette_17',['rosette',['../namespaceizzi_1_1guilloche.html#a3da839b4953fb9615a23332b85f858bfa9551ea1bf14aa978c3f9df1eb443b8d0',1,'izzi::guilloche']]],
-  ['royalblue_18',['royalblue',['../namespacesvg.html#a0e622bba4eee0e6528a9261d6aa251d1a231f2b387a5d04315a8c8aff6e042ee7',1,'svg']]],
-  ['ruriiro_19',['ruriiro',['../namespacesvg.html#a0e622bba4eee0e6528a9261d6aa251d1ae42b64f7834ad8d8a694495c67698bfa',1,'svg']]],
-  ['rurikon_20',['rurikon',['../namespacesvg.html#a0e622bba4eee0e6528a9261d6aa251d1a779846124c805daa03e1fdbe887f5288',1,'svg']]]
+  ['reverse_14',['reverse',['../namespaceizzi_1_1text__overlay.html#ad83be998b50e861b646908d6309826d7a4d9c2073afa3c2abb817dceb22c34de6',1,'izzi::text_overlay']]],
+  ['rgb_15',['rgb',['../namespacesvg.html#acbe0193d2c87c950a7fbd8c0b9b2a7a2aef70a6546536ccd835479f6cddc0188e',1,'svg']]],
+  ['right_16',['right',['../structsvg_1_1typography.html#a93bca2e6c4e32784def555d27487f886a7c4f29407893c334a6cb7a87bf045c0d',1,'svg::typography']]],
+  ['ripple_17',['ripple',['../namespacesvg_1_1hamonshu.html#a6ef0408fcb2cb24c37c7db772489a6dea2a263b152b6dcf8f6dd2e5ddfb3de3a4',1,'svg::hamonshu']]],
+  ['rokusho_18',['rokusho',['../namespacesvg.html#a0e622bba4eee0e6528a9261d6aa251d1ae6885b33bb3745c23b3a04cdb5732856',1,'svg']]],
+  ['rosette_19',['rosette',['../namespaceizzi_1_1guilloche.html#a3da839b4953fb9615a23332b85f858bfa9551ea1bf14aa978c3f9df1eb443b8d0',1,'izzi::guilloche']]],
+  ['royalblue_20',['royalblue',['../namespacesvg.html#a0e622bba4eee0e6528a9261d6aa251d1a231f2b387a5d04315a8c8aff6e042ee7',1,'svg']]],
+  ['ruriiro_21',['ruriiro',['../namespacesvg.html#a0e622bba4eee0e6528a9261d6aa251d1ae42b64f7834ad8d8a694495c67698bfa',1,'svg']]],
+  ['rurikon_22',['rurikon',['../namespacesvg.html#a0e622bba4eee0e6528a9261d6aa251d1a779846124c805daa03e1fdbe887f5288',1,'svg']]]
 ];

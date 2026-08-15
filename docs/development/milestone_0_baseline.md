@@ -123,6 +123,10 @@ promoted machine baseline is not human visual acceptance. The current PNG,
 SVG, and PDF must receive an affirmative reviewer receipt before they become an
 accepted visual reference.
 
+Note (2026-08-15): the promoted baseline predates later additions; the
+current generation candidates carry 115 top-level examples (danmaku,
+guilloche/plate, color, movement, and visualization examples added since).
+
 ### Corrected visual candidates
 
 Later work preserves separate, unpromoted candidates rather than rewriting the

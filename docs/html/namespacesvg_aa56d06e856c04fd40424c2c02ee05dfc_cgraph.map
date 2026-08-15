@@ -1,11 +1,9 @@
 <map id="svg::random_color" name="svg::random_color">
-<area shape="rect" id="Node000001" title="Random entry from array above." alt="" coords="5,5,128,29"/>
-<area shape="rect" id="Node000002" href="$namespacesvg.html#a86299e1b709e10d8ddbe9fe4e5231dc5" title="Oklab https://bottosson.github.io/posts/oklab/." alt="" coords="176,5,313,29"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="128,14,160,14,160,20,128,20"/>
-<area shape="rect" id="Node000003" href="$namespacesvg.html#ad15806ae856c597bdb6a2e928ca31481" title="Forwarding function." alt="" coords="361,5,464,29"/>
+<area shape="rect" id="Node000001" title="Default working&#45;spectrum overload (deterministic default seed)." alt="" coords="5,29,128,53"/>
+<area shape="rect" id="Node000002" href="$namespacesvg.html#afbb69e6e3429f0e574994b3a761d2a30" title="Legacy mutable working spectrum (default izzi hue palette). Kept for the ODR shared&#45;state contract in..." alt="" coords="176,5,313,29"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="128,30,160,26,161,31,128,36"/>
+<area shape="rect" id="Node000004" href="$namespacesvg.html#a2d3d8b598d3ba163e2253dd508dde50b" title="Random entry with explicit seeded RNG." alt="" coords="183,53,306,77"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="128,47,168,52,167,57,128,52"/>
+<area shape="rect" id="Node000003" href="$namespacesvg.html#ae9528c0e964c1af42024aa29a8be32ca" title="Explicit, pure spectrum selection by tag (constexpr; no hidden state)." alt="" coords="361,5,460,29"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="314,14,346,14,346,20,314,20"/>
-<area shape="rect" id="Node000004" href="$namespacesvg.html#ace451856d4faf4d251a5a49aba625c3e" title="Default compare distances from k1,k2 to black." alt="" coords="512,5,627,29"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="465,14,497,14,497,20,465,20"/>
-<area shape="rect" id="Node000005" href="$namespacesvg.html#ac96d0e1435f308aecc6e4c362a2c769d" title=" " alt="" coords="675,5,818,29"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="627,14,659,14,659,20,627,20"/>
 </map>
