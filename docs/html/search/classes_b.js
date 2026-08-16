@@ -1,27 +1,9 @@
 var searchData=
 [
-  ['radial_5fdataset_0',['radial_dataset',['../structsvg_1_1graph_1_1radial__dataset.html',1,'svg::graph']]],
-  ['radial_5fgradient_1',['radial_gradient',['../group__elements.html#structsvg_1_1radial__gradient',1,'svg']]],
-  ['radial_5finscription_5flayout_2',['radial_inscription_layout',['../structizzi_1_1guilloche_1_1radial__inscription__layout.html',1,'izzi::guilloche']]],
-  ['radial_5forbit_5fspec_3',['radial_orbit_spec',['../structsvg_1_1graph_1_1radial__orbit__spec.html',1,'svg::graph']]],
-  ['radius_4',['radius',['../structsvg_1_1graph_1_1radius.html',1,'svg::graph']]],
-  ['rect_5felement_5',['rect_element',['../group__elements.html#structsvg_1_1rect__element',1,'svg']]],
-  ['relation_5fnode_6',['relation_node',['../structsvg_1_1graph_1_1relation__node.html',1,'svg::graph']]],
-  ['render_5fstate_5fbase_7',['render_state_base',['../structsvg_1_1render__state__base.html',1,'svg']]],
-  ['resolution_5fprovenance_8',['resolution_provenance',['../structsvg_1_1graph_1_1resolution__provenance.html',1,'svg::graph']]],
-  ['resolved_5fcontour_9',['resolved_contour',['../structizzi_1_1surface__tension_1_1resolved__contour.html',1,'izzi::surface_tension']]],
-  ['resolved_5fendpoint_5ftone_10',['resolved_endpoint_tone',['../structizzi_1_1guilloche_1_1resolved__endpoint__tone.html',1,'izzi::guilloche']]],
-  ['resolved_5fgraph_5fjson_5fresult_11',['resolved_graph_json_result',['../structsvg_1_1graph_1_1resolved__graph__json__result.html',1,'svg::graph']]],
-  ['resolved_5finscription_12',['resolved_inscription',['../structizzi_1_1guilloche_1_1resolved__inscription.html',1,'izzi::guilloche']]],
-  ['resolved_5fpath_13',['resolved_path',['../structizzi_1_1guilloche_1_1resolved__path.html',1,'izzi::guilloche::resolved_path'],['../structizzi_1_1moire_1_1resolved__path.html',1,'izzi::moire::resolved_path']]],
-  ['resolved_5fscene_14',['resolved_scene',['../structizzi_1_1guilloche_1_1resolved__scene.html',1,'izzi::guilloche::resolved_scene'],['../structizzi_1_1moire_1_1resolved__scene.html',1,'izzi::moire::resolved_scene'],['../structizzi_1_1surface__tension_1_1resolved__scene.html',1,'izzi::surface_tension::resolved_scene']]],
-  ['resolved_5fscene_5fjson_5fresult_15',['resolved_scene_json_result',['../structizzi_1_1guilloche_1_1resolved__scene__json__result.html',1,'izzi::guilloche']]],
-  ['resource_5fbudget_16',['resource_budget',['../structizzi_1_1guilloche_1_1resource__budget.html',1,'izzi::guilloche::resource_budget'],['../structizzi_1_1moire_1_1resource__budget.html',1,'izzi::moire::resource_budget'],['../structizzi_1_1surface__tension_1_1resource__budget.html',1,'izzi::surface_tension::resource_budget']]],
-  ['resource_5ferror_17',['resource_error',['../classizzi_1_1guilloche_1_1resource__error.html',1,'izzi::guilloche::resource_error'],['../classizzi_1_1moire_1_1resource__error.html',1,'izzi::moire::resource_error'],['../classizzi_1_1surface__tension_1_1resource__error.html',1,'izzi::surface_tension::resource_error']]],
-  ['ribbon_5fconfig_18',['ribbon_config',['../structsvg_1_1ribbon__config.html',1,'svg']]],
-  ['ripple_5fconfig_19',['ripple_config',['../structsvg_1_1ripple__config.html',1,'svg']]],
-  ['rose_5fspec_20',['rose_spec',['../structizzi_1_1guilloche_1_1rose__spec.html',1,'izzi::guilloche']]],
-  ['roulette_5fconfig_21',['roulette_config',['../structsvg_1_1roulette__config.html',1,'svg']]],
-  ['roulette_5fspec_22',['roulette_spec',['../structizzi_1_1guilloche_1_1roulette__spec.html',1,'izzi::guilloche']]],
-  ['run_23',['run',['../structizzi_1_1text__overlay_1_1run.html',1,'izzi::text_overlay']]]
+  ['object_5felement_0',['object_element',['../group__elements.html#structsvg_1_1object__element',1,'svg']]],
+  ['orbit_5fitem_1',['orbit_item',['../structsvg_1_1graph_1_1orbit__item.html',1,'svg::graph']]],
+  ['ornament_5festimate_2',['ornament_estimate',['../structizzi_1_1guilloche_1_1detail_1_1ornament__estimate.html',1,'izzi::guilloche::detail']]],
+  ['ornamented_5finscription_5fspec_3',['ornamented_inscription_spec',['../structizzi_1_1guilloche_1_1ornamented__inscription__spec.html',1,'izzi::guilloche']]],
+  ['ostringstream_4',['ostringstream',['../classsvg_1_1ostringstream.html',1,'svg']]],
+  ['output_5frequest_5',['output_request',['../structsvg_1_1graph_1_1output__request.html',1,'svg::graph']]]
 ];

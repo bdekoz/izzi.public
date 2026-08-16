@@ -10,7 +10,7 @@ First-pass sort for the guilloche renderer family.
 - Here Lies Trouble title card (madredeus type, light gray, guilloche style):
   `scripts/render-hlt-title-card-madredeus.py`; sample
   `…/episode-01-local-trial/title-card-v5-madredeus.png` (SHA-256
-  `6a112554…`). Font: `resources/typeFONTBAT/007_madredeus/madredeus.ttf`
+  `6a112554…`). Font: `resources.static/typeFONTBAT/007_madredeus/madredeus.ttf`
   (non-commercial license; readme must accompany the font).
 
 Status: `FIRST-PASS-SORT; NO-REMOVAL`

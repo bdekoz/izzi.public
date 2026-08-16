@@ -1,0 +1,9 @@
+<map id="izzi::graph::detail::render_manifest" name="izzi::graph::detail::render_manifest">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,67,124,103"/>
+<area shape="rect" id="Node000002" href="$namespaceizzi_1_1graph_1_1detail.html#ac041d3e84ebdd7d20dbea84b8fbe7073" title=" " alt="" coords="172,5,290,42"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="115,64,164,45,166,50,117,69"/>
+<area shape="rect" id="Node000003" href="$namespaceizzi_1_1guilloche.html#ae22f9126ef60170c60d517282766d687" title=" " alt="" coords="173,67,289,103"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="124,82,157,82,157,88,124,88"/>
+<area shape="rect" id="Node000004" href="$namespaceizzi_1_1graph_1_1detail.html#a20a21105ddedd61cc7988254f157290d" title=" " alt="" coords="172,128,290,165"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="117,101,166,120,164,125,115,106"/>
+</map>

@@ -24,18 +24,18 @@ Dated exploration logs live in [`sessions/`](sessions/):
   [2026-08-11](sessions/explore_futures.20260811.md) ·
   [2026-08-12](sessions/explore_futures.20260812.md) ·
   [restart here](sessions/explore_futures.20260812.restart_here.md) ·
-  [2026-08-14](sessions/explore_futures.20260814.planning_review_class.md)
+  [2026-08-14](sessions/explore_futures.20260814.planning_review_class.md) ·
+  [2026-08-15 restart](sessions/explore_futures.20260815.restart_here.md) ·
+  [2026-08-16 guilloche](sessions/explore_futures.20260816.dutch_guilloche.md)
 
 ## Cross-cutting
 
-- [Milestone 0 baseline](milestone_0_baseline.md)
-- [Vertical-series visual form](vertical-form.md)
-- [Vector text overlay proposal](vector-text-overlay-proposal.md)
+- [Milestone 0 baseline](sessions/milestone_0_baseline.md)
+- [Vertical-series visual form](sessions/vertical-form.md)
+- [Vector text overlay proposal](sessions/vector-text-overlay-proposal.md)
 
 ## Archive
 
-Historical or superseded material lives in [`archive/`](archive/):
-[seedance proposal](archive/seedance.md) ·
-[seedance auth guide](archive/seedance-auth.md) ·
-[alpha60 results audit](archive/alpha60-results-audit.md) ·
-[original explore prompt](archive/explore_futures.md).
+Historical or superseded material lives alongside the current notes:
+[seedance proposal](seedance/seedance.md) ·
+[seedance auth guide](seedance/seedance-auth.md).

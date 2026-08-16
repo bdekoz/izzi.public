@@ -3,7 +3,7 @@ propose a new review class, "plan new project", alongside existing review classe
 base in on inputs to the following new vertical project "time-to-die-ai"
 
 project resources:
-/home/bkoz/src/izzi/resources/time-to-die-ai
+/home/bkoz/src/izzi/resources.rizal/time-to-die-ai
 
 annotated as
 

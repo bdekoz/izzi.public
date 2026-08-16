@@ -41,7 +41,7 @@ anything beyond the exact scope below.
   (941x1672, SHA-256
   `78b79a6f1cb67162293c7ff901ca53d90a4d7c44d179b649d4d9103b95b86d42`).
 - Motion aesthetic seeds: the five Blade Runner clips in
-  `resources/blade-runner/motion-aesthetic-seeds.json` remain local-only. Only
+  `resources.static/blade-runner/motion-aesthetic-seeds.json` remain local-only. Only
   the derived `motion_grammar` text compiled from the three canary
   specifications is eligible for prompts. Blade Runner frames, clips, titles,
   and names are never sent to the provider; prompts must not name the film.

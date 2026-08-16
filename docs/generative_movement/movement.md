@@ -39,7 +39,7 @@ use seeded generation.
 ## Tests and examples
 
 - `examples/movement-asama-loops.cc` — re-creates the
-  `resources/asama-loops/asama-01-roji-1.0-5px.mkv` alley pan: camera along
+  `resources.rizal/asama-loops/asama-01-roji-1.0-5px.mkv` alley pan: camera along
   a roulette trochoid (194.733 s) plus ripple/raindrop/wave layers; emits
   `movement-asama-01-roji.json` and a deterministic SVG path preview.
   Registered as `movement.asama-loops.demo` (CTest) and `make

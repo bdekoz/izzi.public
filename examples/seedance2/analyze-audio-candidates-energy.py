@@ -28,7 +28,7 @@ from PIL import Image, ImageDraw, ImageFont
 HERE = Path(__file__).resolve().parent
 REPOSITORY = HERE.parents[1]
 SOURCE_RELATIVE = Path(
-    "resources/here-lies-trouble/seed-audio-corpus/here-lies-trouble-1.20260415.mp3"
+    "resources.rizal/here-lies-trouble/seed-audio-corpus/here-lies-trouble-1.20260415.mp3"
 )
 SOURCE = REPOSITORY / SOURCE_RELATIVE
 EXPECTED_SOURCE_SHA256 = (

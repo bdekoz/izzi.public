@@ -35,7 +35,7 @@ jq -e '
   and ([.episodes[].content_duration_seconds]
        | all((type == "number") and (floor == .) and . >= 60 and . <= 180))
   and ([.episodes[].source]
-       | all(startswith("resources/asama-loops/") and endswith(".mkv")))
+       | all(startswith("resources.rizal/asama-loops/") and endswith(".mkv")))
   and ([.episodes[].source] | unique | length) == 10
   and .summary.episode_count == 10
   and .summary.title_seconds == 30

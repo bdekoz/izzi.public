@@ -24,7 +24,8 @@
     "palette": { "$ref": "#/$defs/palette" },
     "budget": { "$ref": "#/$defs/budget" },
     "review": { "$ref": "#/$defs/review" },
-    "extensions": { "$ref": "#/$defs/extensions" }
+    "extensions": { "$ref": "#/$defs/extensions" },
+    "pattern": { "$ref": "#/$defs/pattern" }
   },
   "$defs": {
     "id": {
@@ -235,6 +236,29 @@
         "pattern": "^[A-Za-z][A-Za-z0-9_.-]*:[A-Za-z0-9_.-]+$"
       },
       "additionalProperties": true
+    },
+    "pattern": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["class", "family"],
+      "properties": {
+        "class": {
+          "enum": ["radial", "banded", "lattice", "framed", "overlay"]
+        },
+        "family": {
+          "enum": [
+            "rosette",
+            "sunburst",
+            "band-guilloche",
+            "medallion",
+            "vignette",
+            "multicolor-line",
+            "flinque",
+            "fish-scale",
+            "barleycorn"
+          ]
+        }
+      }
     }
   }
 }

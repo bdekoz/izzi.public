@@ -10,9 +10,9 @@ Trouble audio pipeline.
   dual-mono power-preserving, 48 kHz mono per window.
 - Ambience: target −32 LUFS integrated, sidechain duck 5 dB under dialogue
   (`sidechaincompress threshold=0.05:ratio=4:attack=20:release=400:makeup=1:mix=1`).
-- Source corpus: `resources/here-lies-trouble/seed-audio-corpus/`
+- Source corpus: `resources.rizal/here-lies-trouble/seed-audio-corpus/`
   (`here-lies-trouble-1/2.20260415.mp3` + transcripts); ambience-only sources
-  in `resources/here-lies-trouble/seed-audio-nature/`.
+  in `resources.rizal/here-lies-trouble/seed-audio-nature/`.
 
 ## Voice codes
 

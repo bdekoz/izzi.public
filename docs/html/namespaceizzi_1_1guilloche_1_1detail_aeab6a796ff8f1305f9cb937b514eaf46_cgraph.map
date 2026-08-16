@@ -1,5 +1,6 @@
 <map id="izzi::guilloche::detail::validate_scene" name="izzi::guilloche::detail::validate_scene">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,125,142,162"/>
+<area shape="poly" id="edge10_Node000001_Node000001" title=" " alt="" coords="38,126,35,116,41,107,54,101,74,99,95,101,107,108,104,112,93,106,73,104,55,106,44,111,41,116,43,124"/>
 <area shape="rect" id="Node000002" href="$namespaceizzi_1_1guilloche_1_1detail.html#a01ab0bb61bd09ef54154151fdc730512" title=" " alt="" coords="194,8,330,45"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="95,123,137,89,188,55,198,49,200,54,191,59,140,93,98,127"/>
 <area shape="rect" id="Node000003" href="$namespaceizzi_1_1guilloche_1_1detail.html#aac1a6b8a486636ce7726466e0858f08a" title=" " alt="" coords="190,69,335,106"/>

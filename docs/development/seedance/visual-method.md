@@ -41,9 +41,9 @@ the image back into an illustration.
 
 The companion documents remain:
 
-- [Seedance account and delivery proposal](../archive/seedance.md);
+- [Seedance account and delivery proposal](seedance.md);
 - [audio-first installment workflow](audio.md);
-- [audio authentication and local-key guidance](../archive/seedance-auth.md);
+- [audio authentication and local-key guidance](seedance-auth.md);
 - [2026-08-09 Izzi evolution plan](../sessions/explore_futures.20260809.md).
 
 ## Central decision
@@ -218,7 +218,7 @@ or transition; they are not automatically defects to remove.
 The recommended resource layout is:
 
 ```text
-resources/duotone-111/seed-images/
+resources.static/duotone-111/seed-images/
 ├── noir-thriller/
 │   ├── README.md
 │   ├── style-pack.json
@@ -264,7 +264,7 @@ selection, replacement, publication, and credit decisions inspectable.
 
 ## Noir input audit, 2026-08-10
 
-The active material is currently stored in `resources/noir-vibezz/`, rather
+The active material is currently stored in `resources.static/noir-vibezz/`, rather
 than copied into the empty role directories. Referencing it in place is the
 fastest non-destructive path and avoids duplicating roughly 62 MiB of source
 images. The observed pool contains 58 readable landscape PNG frames in six
@@ -609,7 +609,7 @@ three clips receive explicit `ACCEPT`, `REVISE`, or `REJECT` decisions and the
 ## Observed Noir Stage 2: photographic-medium correction
 
 The review export
-`resources/izzi-review-izzi-review-2026-08-11.5.json` contains three `REVISE`
+`resources.static/izzi-review-izzi-review-2026-08-11.5.json` contains three `REVISE`
 decisions. Its canonical review identifier validates as
 `sha256:30316e28cd308d1701f914cd1f47c2901bbc449c38b16033c1475118c79a7f75`,
 and all three reviewed artifact hashes match portal build `.5`. The exact

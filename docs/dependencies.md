@@ -34,7 +34,7 @@ listed below.
 
 ## Media assets (gitignored, not committed)
 
-- Seed corpus: `resources/time-to-die-ai/` (~803 MiB; videos, screenshots,
+- Seed corpus: `resources.rizal/time-to-die-ai/` (~803 MiB; videos, screenshots,
   danmu-text-dyads, PDFs, WAVs).
 - Provider render: `build/private/seedance2-runs/ai-time-to-die-t5-round-01-20260814/`.
 - MediaPipe model asset: `build/private/mediapipe/face_landmarker.task`.

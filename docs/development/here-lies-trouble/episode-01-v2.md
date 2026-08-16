@@ -221,7 +221,7 @@ seed, and cost remain unset; motion generation and submission are false. No
 motion artifact exists yet.
 
 Each specification also references hash-bound Blade Runner motion-aesthetic
-seeds (`resources/blade-runner/motion-aesthetic-seeds.json`) and carries a
+seeds (`resources.static/blade-runner/motion-aesthetic-seeds.json`) and carries a
 derived `motion_grammar` block; only the derived descriptor text is eligible
 for prompts, and the film clips stay local-only. See
 `docs/development/blade-runner/motion-seeds.md`.

@@ -2,7 +2,7 @@
 
 First-pass sort of style pack and style-frame material.
 
-- Style packs live under `resources/here-lies-trouble/seed-images/`
+- Style packs live under `resources.static/here-lies-trouble/seed-images/`
   (e.g., `noir-thriller/`, `tokyo-psychedelia/`), each with anchors, rejects,
   supporting material, and a `style-pack.json`.
 - Accepted Frogtown style frame:

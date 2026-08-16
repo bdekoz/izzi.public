@@ -5,12 +5,12 @@ audio.
 
 ## Extract
 
-- Raw speech: `resources/here-lies-trouble/seed-audio-corpus/*.20260415.mp3`
+- Raw speech: `resources.rizal/here-lies-trouble/seed-audio-corpus/*.20260415.mp3`
   (16 kHz mono), hash-bound in manifests (e.g., episode-01 source
   SHA-256 `32e98463…`).
 - Transcripts: `seed-audio-corpus/*.20260415.txt` — speaker-labeled turns with
   MM:SS timestamps; transcript quotations are kept out of published manifests.
-- Ambience: `resources/here-lies-trouble/seed-audio-nature/` (river selected:
+- Ambience: `resources.rizal/here-lies-trouble/seed-audio-nature/` (river selected:
   SHA-256 `12027e87…`, offset 2 s, decode-once policy).
 
 ## Transform

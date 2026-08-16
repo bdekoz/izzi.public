@@ -29,7 +29,7 @@
       "speaker_diarization": "NOT-PERFORMED"
     },
     "ambience": {
-      "path": "resources/here-lies-trouble/seed-audio-nature/Sounds of Nature - The River.mp3",
+      "path": "resources.rizal/here-lies-trouble/seed-audio-nature/Sounds of Nature - The River.mp3",
       "sha256": "12027e8728997645d0da87d89e77c7ee06dbb1f5c0b1765ba3961f53281cd53f",
       "provenance_status": "USER-CONFIRMED-RESOURCE",
       "decode_once_before_mix": true

@@ -17,7 +17,7 @@ promote a production baseline, or accept a corrected episode that does not yet
 exist.
 
 The source export
-`resources/izzi-review-izzi-review-2026-08-11.6.json` is preserved unchanged.
+`resources.static/izzi-review-izzi-review-2026-08-11.6.json` is preserved unchanged.
 Its SHA-256 is
 `4bd63f46ca176cba26b75d9371400c3ef1c5f562cd61f6ed47e87ece1bf332a4`,
 and its canonical review identifier validates. The export contains 62 records:

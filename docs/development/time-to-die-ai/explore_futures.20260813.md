@@ -45,7 +45,7 @@ inspection` portal class.
 |---|---|
 | Project display name | `ai-time-to-die` |
 | Portal family slug | `ai-time-to-die` |
-| Resource root (unchanged) | `resources/time-to-die-ai/` |
+| Resource root (unchanged) | `resources.rizal/time-to-die-ai/` |
 | Proposal source | `docs/development/time-to-die-ai/proposal_vertical_v1.md` |
 | First artifact id | `ai-time-to-die-draft-1-attempted-render` |
 | Review category | `proofs` (existing class; new `plan new project` class deferred) |
@@ -71,7 +71,7 @@ existing resource tree keeps its name.
 - Existing proof pattern to copy:
   `hlt-episode-01-cut-v1` (`build/private/pilot-production/master/hlt-episode-01-pilot.mkv`
   → 360×640 MP4, SHA-256 bound, `UNREVIEWED`/`NOT-PROMOTED`).
-- Corpus present: `resources/time-to-die-ai/` ≈ 803 MiB (Blade Runner 4k
+- Corpus present: `resources.rizal/time-to-die-ai/` ≈ 803 MiB (Blade Runner 4k
   cuts 4/5, codex screenshots/screengrab, danmu-text-dyads, audit-usage PDFs,
   shinkansen WAVs, just-dreams).
 - Local tooling verified: ffmpeg, ffprobe, node, python3; MeanVC2 venv at

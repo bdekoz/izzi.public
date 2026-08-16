@@ -1,12 +1,9 @@
 var searchData=
 [
-  ['glyph_0',['glyph',['../structizzi_1_1text__overlay_1_1glyph.html',1,'izzi::text_overlay']]],
-  ['glyph_5fornament_5fspec_1',['glyph_ornament_spec',['../structizzi_1_1guilloche_1_1glyph__ornament__spec.html',1,'izzi::guilloche']]],
-  ['gradient_5felement_2',['gradient_element',['../group__elements.html#structsvg_1_1gradient__element',1,'svg']]],
-  ['graph_5fdocument_3',['graph_document',['../structsvg_1_1graph_1_1graph__document.html',1,'svg::graph']]],
-  ['graph_5fjson_5fcontext_4',['graph_json_context',['../structsvg_1_1graph_1_1graph__json__context.html',1,'svg::graph']]],
-  ['graph_5fjson_5fresult_5',['graph_json_result',['../structsvg_1_1graph_1_1graph__json__result.html',1,'svg::graph']]],
-  ['graph_5frstate_6',['graph_rstate',['../structsvg_1_1graph__rstate.html',1,'svg']]],
-  ['graph_5fscene_7',['graph_scene',['../structsvg_1_1graph_1_1graph__scene.html',1,'svg::graph']]],
-  ['group_5felement_8',['group_element',['../group__elements.html#structsvg_1_1group__element',1,'svg']]]
+  ['family_5fspec_0',['family_spec',['../structizzi_1_1guilloche_1_1family__spec.html',1,'izzi::guilloche::family_spec'],['../structizzi_1_1moire_1_1family__spec.html',1,'izzi::moire::family_spec']]],
+  ['filter_5felement_1',['filter_element',['../group__elements.html#structsvg_1_1filter__element',1,'svg']]],
+  ['fish_5fscale_5fspec_2',['fish_scale_spec',['../structizzi_1_1guilloche_1_1fish__scale__spec.html',1,'izzi::guilloche']]],
+  ['flinque_5foverlay_5fspec_3',['flinque_overlay_spec',['../structizzi_1_1guilloche_1_1flinque__overlay__spec.html',1,'izzi::guilloche']]],
+  ['flow_5fdataset_4',['flow_dataset',['../structsvg_1_1graph_1_1flow__dataset.html',1,'svg::graph']]],
+  ['foreign_5felement_5',['foreign_element',['../group__elements.html#structsvg_1_1foreign__element',1,'svg']]]
 ];

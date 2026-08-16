@@ -15,7 +15,7 @@ for current planning; the resume pointer is
 ## Corpus definition
 
 Source cuts are the two recordings in the audio source corpus
-(`resources/here-lies-trouble/seed-audio-corpus/*.mp3`):
+(`resources.rizal/here-lies-trouble/seed-audio-corpus/*.mp3`):
 
 | Recording | Duration | Episodes (165 s each) |
 | --- | ---: | --- |

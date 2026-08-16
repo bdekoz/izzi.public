@@ -1,0 +1,119 @@
+# Restart here — 2026-08-15 cold-restart handoff
+
+Recorded: 2026-08-15 America/Los_Angeles (14:14)
+Purpose: resume all izzi/situationshipin.space work from a cold start without
+re-deriving context.
+
+## Repositories
+
+| Repo | Path | Branch | HEAD | State |
+|---|---|---|---|---|
+| izzi | `/home/bkoz/src/izzi` | `main` | `eb063eb4` | **ahead of origin by 1** (smoke-test commit not pushed); working tree clean |
+| situationshipin.space | `/home/bkoz/src/situationshipin.space` | `main` | `bfb533e` | clean, pushed, GitHub Pages deployed (success) |
+
+GitHub: `bdekoz/izzi` (private), `bdekoz/situationshipin.space` (Pages).
+
+## Completed today (do not redo)
+
+1. **Vendor-vs-local analysis + seedance2ai audit** — committed `c2457397`,
+   pushed. Files in `docs/development/sessions/`:
+   - `explore_futures.20260815.vendor_alternatives.md`
+   - `explore_futures.20260815.vendor_audit_seedance2ai.md`
+   - `explore_futures.20260815.seedance2ai_job_log.csv`
+   - `explore_futures.20260815.support_email_draft.md`
+   - `explore_futures.20260815.vendor_or_local.md`
+2. **Support email sent** (user-confirmed) to `support@seedance2ai.io` with
+   the audit + CSV + 7 questions. **No response yet.**
+3. **Generation family refresh targets** — committed `3039a471`, pushed:
+   `make movement-review`, `pattern-review`, `color-review`,
+   `visualization-review`, `synthesis-review`, `generation-families-review`,
+   plus `examples/movement-camera-preview.cc` and family render scripts.
+4. **Portal generation-family refresh** — site `15b2413` (live): make-check
+   generation (26 passes), palette (15), 3d-synthesis grid at izzi
+   `069fbc36`.
+5. **Site cleanup** — site `bfb533e` (live): removed 5 dated 08-10
+   generation-family proof/index items + media, provider-input staging,
+   higgs proxies; fixed family index thumbnail 404s by hand; catalog 350
+   items; validator PASS.
+6. **Resources host-local split** — izzi `71f32c74`, pushed:
+   - `resources/` -> `resources.static/` (committed; 332 tracked files)
+   - `resources.rizal/` (gitignored sidecar; ~2.96 GB host-local corpora)
+   - resolver `scripts/resources_path.py` (`$RESOURCES_ROOT` ->
+     `resources.<hostname>/` -> `resources.static/`)
+   - `make resources-check` (invariants) + `make resources-smoke`
+7. **Smoke test** — izzi `eb063eb4` (**NOT pushed**): `make resources-smoke`
+   passes (28 paths, resolver, 10 CLI parses; Higgs CLI SKIPs when
+   `soundfile` is absent from the interpreter).
+
+## Standing gates and conventions
+
+- **No provider spend** until the seedance2ai.io support review completes
+  and support responds (fal.ai canary remains gated).
+- Commit/push are usually requested explicitly by the user ("commit",
+  "git push"); dyads (`snapshot dyad begin` / `snapshot dyad end`) are
+  recorded on request in `examples.rizal/local-objects/dyads/` (gitignored).
+- Session docs follow
+  `docs/development/sessions/explore_futures.<date>.<topic>.md`; historical
+  session docs are not rewritten.
+- Resources: static content committed under `resources.static/`; host-local
+  media under `resources.rizal/`; never `git add` the sidecar.
+
+## Next tasks (in order)
+
+### T1 — Refresh movement + visualization families on the portal (recommended next)
+
+These two generation-family indexes are still at old izzi commits
+(movement `d6256263`, visualization `ecff9fc4`) while the rest of the
+families are at top of tree. Unblocked now that the renderers exist.
+
+1. izzi: `make movement-review` and `make visualization-review` (outputs
+   under `outputs/review/feedback/visual/movement|visualization/round-01/`).
+2. site:
+   `node scripts/publish-movement-index.mjs --izzi-commit <HEAD> --artifacts-dir <movement round-01 dir>`
+   and
+   `node scripts/publish-visualization-index.mjs --izzi-commit <HEAD> --artifacts-dir <visualization round-01 dir>`.
+3. **Fix the publish-script thumbnail bug** while in the site repo:
+   `publish-palette-index.mjs`, `publish-movement-index.mjs`,
+   `publish-visualization-index.mjs`, `publish-hamonshu-style-index.mjs`
+   emit `../../review/media|izzi/...` from `review/media/<family>/`, which
+   404s; pages were hand-fixed on the site, but scripts still regress.
+4. `node scripts/update-build-manifest.mjs` + `node scripts/check-review-site.mjs`,
+   commit, push; verify live.
+
+### T2 — Seedance support follow-up (external, waiting)
+
+When support responds: reconcile the 6,087-credit ledger against the audit's
+seven questions (task IDs, geometry rules, rate card, idempotency reuse,
+sunk 110-credit segment 5). Only after that review completes does the
+fal.ai 1080p canary decision gate open (still requires separate spend
+authorization).
+
+### T3 — Quick wins (any order)
+
+- Push izzi `eb063eb4` (`git push` in `/home/bkoz/src/izzi`).
+- Wire `resources-check` into CI (Makefile/CI target).
+- Add a stale-file/broken-reference check to
+  `situationshipin.space/scripts/check-review-site.mjs` so cleanup stays
+  enforced (helper logic: catalog published paths + all HTML src/href vs
+  files under `review/`; watch the `u[1:]` slice for `/review/` URLs).
+
+### T4 — Deferred / optional
+
+- Run heavy media-consuming flows end-to-end as final post-split validation:
+  `render-time-to-die-draft*.py`, `build-hlt-voice-reference-bank.py`,
+  hamonshu publish (all inputs verified by `make resources-smoke`).
+- Create `resources.eureka` / `resources.ord` sidecars only if those hosts
+  ever need izzi media.
+- Portal movement/visualization indexes, once refreshed (T1), will let the
+  `make <family>-review` + publish loop cover all five families.
+
+## Key file map
+
+- Resources split: `scripts/resources_path.py`, `scripts/check-resources.py`,
+  `scripts/smoke-resources-flows.py`, `.gitignore`
+- Family targets: `Makefile` (movement-review, pattern-review, color-review,
+  visualization-review, synthesis-review, generation-families-review,
+  resources-check, resources-smoke)
+- Portal publish scripts: `situationshipin.space/scripts/` (publish-* per
+  family, check-review-site.mjs, update-build-manifest.mjs)
+- Dyads: `examples.rizal/local-objects/dyads/`

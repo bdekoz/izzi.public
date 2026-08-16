@@ -3,7 +3,7 @@ var searchData=
   ['label_0',['label',['../namespaceizzi_1_1guilloche.html#afbcd28fe9c1ae982e1100e13e53a597dad304ba20e96d87411588eeabac850e34',1,'izzi::guilloche']]],
   ['large_1',['large',['../namespacesvg.html#adc7e4c413a77264dd28e589407293de8aafacdb0a401ccdf6b48551bbc00e8a74',1,'svg']]],
   ['last_2',['last',['../namespacesvg.html#a0e622bba4eee0e6528a9261d6aa251d1a98bd1c45684cf587ac2347a92dd7bb51',1,'svg']]],
-  ['lattice_3',['lattice',['../namespacesvg_1_1hamonshu.html#a6ef0408fcb2cb24c37c7db772489a6deaaa33451da4827e9bd90b3c408f7d7dce',1,'svg::hamonshu']]],
+  ['lattice_3',['lattice',['../namespacesvg_1_1hamonshu.html#a6ef0408fcb2cb24c37c7db772489a6deaaa33451da4827e9bd90b3c408f7d7dce',1,'svg::hamonshu::lattice'],['../namespaceizzi_1_1guilloche.html#aa3a8cda5e3a9c90dc13eb79643a7d5ceaaa33451da4827e9bd90b3c408f7d7dce',1,'izzi::guilloche::lattice']]],
   ['lauburu_4',['lauburu',['../namespacesvg.html#a7c30513e0ec17ac816f135b43687f7eaa3469f801079b56bae4eb6f6f6e209733',1,'svg']]],
   ['lavender_5',['lavender',['../namespacesvg.html#a0e622bba4eee0e6528a9261d6aa251d1a153fa52654465ad67f045dc293f3b16e',1,'svg']]],
   ['left_6',['left',['../structsvg_1_1typography.html#a93bca2e6c4e32784def555d27487f886a811882fecd5c7618d7099ebbd39ea254',1,'svg::typography']]],

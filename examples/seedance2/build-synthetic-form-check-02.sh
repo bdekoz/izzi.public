@@ -63,9 +63,9 @@ jq -e '
            and (.blank_band == "top" or .blank_band == "bottom")
            and .primary.path != .secondary.path
            and (.primary.path
-                | startswith("resources/asama-loops/") and endswith(".mkv"))
+                | startswith("resources.rizal/asama-loops/") and endswith(".mkv"))
            and (.secondary.path
-                | startswith("resources/asama-loops/") and endswith(".mkv"))))
+                | startswith("resources.rizal/asama-loops/") and endswith(".mkv"))))
   and .summary.episode_count == 10
   and .summary.unchanged_content_episode_count == 3
   and .summary.dual_landscape_episode_count == 7

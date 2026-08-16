@@ -1,9 +1,10 @@
 var searchData=
 [
-  ['object_5felement_0',['object_element',['../group__elements.html#structsvg_1_1object__element',1,'svg']]],
-  ['orbit_5fitem_1',['orbit_item',['../structsvg_1_1graph_1_1orbit__item.html',1,'svg::graph']]],
-  ['ornament_5festimate_2',['ornament_estimate',['../structizzi_1_1guilloche_1_1detail_1_1ornament__estimate.html',1,'izzi::guilloche::detail']]],
-  ['ornamented_5finscription_5fspec_3',['ornamented_inscription_spec',['../structizzi_1_1guilloche_1_1ornamented__inscription__spec.html',1,'izzi::guilloche']]],
-  ['ostringstream_4',['ostringstream',['../classsvg_1_1ostringstream.html',1,'svg']]],
-  ['output_5frequest_5',['output_request',['../structsvg_1_1graph_1_1output__request.html',1,'svg::graph']]]
+  ['layer_5fspec_0',['layer_spec',['../structizzi_1_1moire_1_1layer__spec.html',1,'izzi::moire']]],
+  ['layout_5fresult_1',['layout_result',['../structsvg_1_1graph_1_1layout__result.html',1,'svg::graph']]],
+  ['line_5felement_2',['line_element',['../group__elements.html#structsvg_1_1line__element',1,'svg']]],
+  ['linear_5fchord_5fspec_3',['linear_chord_spec',['../structsvg_1_1graph_1_1linear__chord__spec.html',1,'svg::graph']]],
+  ['linear_5fgradient_4',['linear_gradient',['../group__elements.html#structsvg_1_1linear__gradient',1,'svg']]],
+  ['link_5felement_5',['link_element',['../group__elements.html#structsvg_1_1link__element',1,'svg']]],
+  ['lissajous_5fspec_6',['lissajous_spec',['../structizzi_1_1guilloche_1_1lissajous__spec.html',1,'izzi::guilloche']]]
 ];

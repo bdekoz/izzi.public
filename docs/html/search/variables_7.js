@@ -10,7 +10,9 @@ var searchData=
   ['glyph_5fset_7',['glyph_set',['../structizzi_1_1guilloche_1_1resolved__inscription.html#ad28e1b70c566f78f151b456d1556a142',1,'izzi::guilloche::resolved_inscription']]],
   ['glyph_5fset_5fhash_8',['glyph_set_hash',['../structizzi_1_1text__overlay_1_1run.html#aad3a384f77f5b811d804876b21222aab',1,'izzi::text_overlay::run']]],
   ['glyphs_9',['glyphs',['../structizzi_1_1text__overlay_1_1run.html#a8570b9388b5182f033d2b6611d9c6dd8',1,'izzi::text_overlay::run']]],
-  ['graph_5farea_10',['graph_area',['../structsvg_1_1graph__rstate.html#a55c46fb98e02a286080350ac7fe354d1',1,'svg::graph_rstate']]],
-  ['grid_5fcolumns_11',['grid_columns',['../structizzi_1_1surface__tension_1_1scene__spec.html#a316b180fe0b35a6e04561391c39f362b',1,'izzi::surface_tension::scene_spec']]],
-  ['grid_5frows_12',['grid_rows',['../structizzi_1_1surface__tension_1_1scene__spec.html#a2247d9e011d8bdb1ebcb7154f9940afd',1,'izzi::surface_tension::scene_spec']]]
+  ['grain_5fheight_10',['grain_height',['../structizzi_1_1guilloche_1_1barleycorn__spec.html#a9d96b53187be2b3405308faef82b0ad6',1,'izzi::guilloche::barleycorn_spec']]],
+  ['grain_5fwidth_11',['grain_width',['../structizzi_1_1guilloche_1_1barleycorn__spec.html#afadbc5a84f658f81de09c0a3100c2199',1,'izzi::guilloche::barleycorn_spec']]],
+  ['graph_5farea_12',['graph_area',['../structsvg_1_1graph__rstate.html#a55c46fb98e02a286080350ac7fe354d1',1,'svg::graph_rstate']]],
+  ['grid_5fcolumns_13',['grid_columns',['../structizzi_1_1surface__tension_1_1scene__spec.html#a316b180fe0b35a6e04561391c39f362b',1,'izzi::surface_tension::scene_spec']]],
+  ['grid_5frows_14',['grid_rows',['../structizzi_1_1surface__tension_1_1scene__spec.html#a2247d9e011d8bdb1ebcb7154f9940afd',1,'izzi::surface_tension::scene_spec']]]
 ];

@@ -3,7 +3,7 @@
   "package_id": "izzi-4d-synthesis-round-01-20260810",
   "status": "CANDIDATE-NOT-PROMOTED",
   "source_manifest": "outputs/review/feedback/visual/3d-synthesis/round-01/manifest.json",
-  "design_reference_root": "resources/asama-loops",
+  "design_reference_root": "resources.rizal/asama-loops",
   "output_root": "outputs/review/feedback/visual/4d-synthesis/round-01",
   "profile": {
     "width": 1080,

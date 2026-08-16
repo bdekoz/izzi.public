@@ -19,7 +19,7 @@ var searchData=
   ['al_16',['al',['../namespacesvg_1_1constants.html#a8367d729b134b34ffe866dd756b1dab4',1,'svg::constants']]],
   ['allow_5foverlap_17',['allow_overlap',['../structizzi_1_1text__overlay_1_1document.html#a18afdcd8fae747ccb2b0c7d39b375a00',1,'izzi::text_overlay::document']]],
   ['alt_18',['alt',['../structsvg_1_1collection__rstate.html#a344ab1e64e172e1d22ed23ba6dc3f40b',1,'svg::collection_rstate']]],
-  ['amplitude_19',['amplitude',['../structsvg_1_1ripple__config.html#ac0291a65fe8ab024d412fd19abd024b5',1,'svg::ripple_config::amplitude'],['../structizzi_1_1guilloche_1_1wave__spec.html#a56963ca239d24fcd37ca367c7317fcae',1,'izzi::guilloche::wave_spec::amplitude']]],
+  ['amplitude_19',['amplitude',['../structsvg_1_1ripple__config.html#ac0291a65fe8ab024d412fd19abd024b5',1,'svg::ripple_config::amplitude'],['../structizzi_1_1guilloche_1_1wave__spec.html#a56963ca239d24fcd37ca367c7317fcae',1,'izzi::guilloche::wave_spec::amplitude'],['../structizzi_1_1guilloche_1_1harmonic__wave__spec.html#a1249434de454c25c582af2146706c8e9',1,'izzi::guilloche::harmonic_wave_spec::amplitude']]],
   ['angle_20',['angle',['../structizzi_1_1moire_1_1family__spec.html#a27591170aee570cb057956eaad27bf6c',1,'izzi::moire::family_spec::angle'],['../structizzi_1_1surface__tension_1_1source__spec.html#ad67881ab80f0090284747b1029266057',1,'izzi::surface_tension::source_spec::angle']]],
   ['angles_21',['angles',['../structsvg_1_1graph_1_1radial__orbit__spec.html#a520ffbb402803e15c00d60b291b2ced3',1,'svg::graph::radial_orbit_spec']]],
   ['angular_5fspan_22',['angular_span',['../structizzi_1_1moire_1_1family__spec.html#a0dfcb9209840af1eef5f59218a4361c1',1,'izzi::moire::family_spec']]],

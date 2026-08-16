@@ -71,7 +71,7 @@ the revision ledger.
 | Portal voice bank (29 Kokoro voices; zf_xiaoyi V29 KEEP #27) | PUBLIC | OBSERVED |
 | Portal reference set (26 guilloche/moire/surface-tension images) | PUBLIC | OBSERVED |
 | `examples.rizal/local-objects/dyads/` + draft-9 KEEP mirror | ARCHIVAL | OBSERVED |
-| `resources/time-to-die-ai/` corpus (28 files, 841,586,395 bytes) | REPOSITORY | OBSERVED |
+| `resources.rizal/time-to-die-ai/` corpus (28 files, 841,586,395 bytes) | REPOSITORY | OBSERVED |
 
 ## Outcomes and contribution
 

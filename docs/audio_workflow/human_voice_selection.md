@@ -231,7 +231,7 @@ or use in a different project.
 Store selection events locally at:
 
 ```text
-resources/.private/human-voice-selections.jsonl
+resources.static/.private/human-voice-selections.jsonl
 ```
 
 The `.private` directory is ignored by Git. Keep the file mode restricted to the
@@ -336,7 +336,7 @@ After participant selections are valid, record animal casting separately in a
 private append-only file such as:
 
 ```text
-resources/.private/here-lies-trouble-character-casting.jsonl
+resources.static/.private/here-lies-trouble-character-casting.jsonl
 ```
 
 Each casting event should reference the participant code, valid selection event

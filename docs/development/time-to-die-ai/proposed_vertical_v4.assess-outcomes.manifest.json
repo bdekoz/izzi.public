@@ -135,7 +135,7 @@
     },
     {
       "source_id": "SRC-11",
-      "reference": "resources/time-to-die-ai/ corpus (28 files, 841,586,395 bytes)",
+      "reference": "resources.rizal/time-to-die-ai/ corpus (28 files, 841,586,395 bytes)",
       "kind": "REPOSITORY",
       "status": "OBSERVED"
     }

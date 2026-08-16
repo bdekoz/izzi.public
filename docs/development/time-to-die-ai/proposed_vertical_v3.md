@@ -14,7 +14,7 @@ published on situationshipin.space; a `KEEP` on it unlocks production.
 ## Corpus definition
 
 The canonical source is the single seed-video cut in the project corpus
-(`resources/time-to-die-ai/seed-video-corpus/`):
+(`resources.rizal/time-to-die-ai/seed-video-corpus/`):
 
 | Source | Duration | Role |
 | --- | ---: | --- |

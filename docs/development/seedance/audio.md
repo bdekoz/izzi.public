@@ -9,7 +9,7 @@
 - Privacy default: offline analysis only; provider transfer is disabled
 
 This is a narrower companion to the
-[Seedance account and delivery proposal](../archive/seedance.md). The user
+[Seedance account and delivery proposal](seedance.md). The user
 provides one editorial `vertical_name` (the series name), one `visual_style`, and
 one local audio path. Izzi proposes acoustic moments; the user reviews them, and
 only explicit user-sourced decisions can lock exactly ten distinct ten-second
@@ -25,7 +25,7 @@ not prove topical, narrative, or statistical representativeness.
 Use this immutable local source for the first implementation test:
 
 ```text
-path: resources/here-lies-trouble/seed-audio-corpus/here-lies-trouble-1.20260415.mp3
+path: resources.rizal/here-lies-trouble/seed-audio-corpus/here-lies-trouble-1.20260415.mp3
 sha256: 32e984630b27abbe1acb505002e36059047a3a671de5526f872cffd24cb30d1e
 codec: MP3
 channels: 1 (mono)
@@ -97,7 +97,7 @@ Minimal input:
   "schema_version": 1,
   "vertical_name": "Here Lies Trouble",
   "visual_style": "Circa-1913 scientific phantasmagoria: restrained white linework, deep black fields, cyan accents, and calm geometric motion.",
-  "audio_path": "resources/here-lies-trouble/seed-audio-corpus/here-lies-trouble-1.20260415.mp3"
+  "audio_path": "resources.rizal/here-lies-trouble/seed-audio-corpus/here-lies-trouble-1.20260415.mp3"
 }
 ```
 
@@ -245,7 +245,7 @@ measured candidates and an affirmative decision record.
     "vertical_name": "Here Lies Trouble",
     "visual_style": "Circa-1913 scientific phantasmagoria: restrained white linework, deep black fields, cyan accents, and calm geometric motion.",
     "audio": {
-      "path": "resources/here-lies-trouble/seed-audio-corpus/here-lies-trouble-1.20260415.mp3",
+      "path": "resources.rizal/here-lies-trouble/seed-audio-corpus/here-lies-trouble-1.20260415.mp3",
       "sha256": "32e984630b27abbe1acb505002e36059047a3a671de5526f872cffd24cb30d1e",
       "codec": "mp3",
       "channels": 1,
@@ -417,7 +417,7 @@ Each released installment is exactly 1080×1920 pixels, 30/1 fps, 300 frames,
 and 10 seconds. Use H.264/yuv420p in Matroska for the local master. Provider
 video is an input to post-production, not duration or text authority. Normalize
 or reject it against the
-[existing MKV output contract](../archive/seedance.md#mkv-output-contract),
+[existing MKV output contract](seedance.md#mkv-output-contract),
 using its 9:16 vertical-master profile.
 
 Preserve the original MP3 by hash. Cut each excerpt from the decoded analysis

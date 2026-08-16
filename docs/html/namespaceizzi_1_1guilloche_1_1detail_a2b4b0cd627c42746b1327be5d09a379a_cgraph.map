@@ -1,0 +1,19 @@
+<map id="izzi::guilloche::detail::resolve_vignette_paths" name="izzi::guilloche::detail::resolve_vignette_paths">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,121,160,158"/>
+<area shape="rect" id="Node000002" href="$namespaceizzi_1_1guilloche_1_1detail.html#ad053b6543b66460c6636bade56ed5ccc" title=" " alt="" coords="208,65,358,102"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="150,118,200,104,201,109,151,123"/>
+<area shape="rect" id="Node000003" href="$namespaceizzi_1_1guilloche_1_1detail.html#a01ab0bb61bd09ef54154151fdc730512" title=" " alt="" coords="406,5,542,42"/>
+<area shape="poly" id="edge5_Node000001_Node000003" title=" " alt="" coords="102,119,148,83,176,65,207,51,253,37,301,27,391,20,391,25,302,33,254,42,209,55,179,70,151,87,106,123"/>
+<area shape="rect" id="Node000004" href="$namespaceizzi_1_1guilloche_1_1detail.html#aa2e3cb80bde026ce4a045068023f69c2" title=" " alt="" coords="406,128,542,165"/>
+<area shape="poly" id="edge9_Node000001_Node000004" title=" " alt="" coords="160,138,391,142,391,148,160,144"/>
+<area shape="rect" id="Node000006" href="$namespaceizzi_1_1guilloche_1_1detail.html#a514575ae7234cf68b9a6e3eaf623756a" title=" " alt="" coords="215,177,351,214"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="151,156,201,170,200,175,150,161"/>
+<area shape="rect" id="Node000007" href="$namespaceizzi_1_1guilloche_1_1detail.html#aedc4d89b5b52b269d1ec7f66810a1389" title=" " alt="" coords="406,211,542,247"/>
+<area shape="poly" id="edge10_Node000001_Node000007" title=" " alt="" coords="104,157,150,193,178,211,209,224,254,235,301,240,391,238,391,243,301,245,253,240,207,229,176,215,146,198,101,161"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="343,62,398,45,400,50,345,67"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="342,100,403,120,401,125,340,105"/>
+<area shape="rect" id="Node000005" href="$namespaceizzi_1_1guilloche_1_1detail.html#a34e3a693fe98f4db4258fc7c9a5f00de" title=" " alt="" coords="406,67,542,103"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="358,82,391,82,391,87,358,87"/>
+<area shape="poly" id="edge7_Node000006_Node000004" title=" " alt="" coords="351,176,390,165,391,170,352,181"/>
+<area shape="poly" id="edge8_Node000006_Node000007" title=" " alt="" coords="352,205,391,212,390,217,351,210"/>
+</map>

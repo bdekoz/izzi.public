@@ -1,15 +1,12 @@
 var searchData=
 [
-  ['path_5felement_0',['path_element',['../group__elements.html#structsvg_1_1path__element',1,'svg']]],
-  ['pattern_5fbox_1',['pattern_box',['../structsvg_1_1hamonshu_1_1pattern__box.html',1,'svg::hamonshu']]],
-  ['pattern_5fcontext_2',['pattern_context',['../structsvg_1_1hamonshu_1_1detail_1_1pattern__context.html',1,'svg::hamonshu::detail']]],
-  ['pattern_5fspec_3',['pattern_spec',['../structsvg_1_1hamonshu_1_1pattern__spec.html',1,'svg::hamonshu']]],
-  ['plate_5fspec_4',['plate_spec',['../structizzi_1_1guilloche_1_1plate__spec.html',1,'izzi::guilloche']]],
-  ['point_5',['Point',['../structPoint.html',1,'']]],
-  ['point_6',['point',['../structizzi_1_1guilloche_1_1point.html',1,'izzi::guilloche::point'],['../structizzi_1_1moire_1_1point.html',1,'izzi::moire::point'],['../structizzi_1_1surface__tension_1_1point.html',1,'izzi::surface_tension::point'],['../structsvg_1_1graph_1_1point.html',1,'svg::graph::point']]],
-  ['point_5fcluster_7',['point_cluster',['../classpoint__cluster.html',1,'']]],
-  ['pointequal_8',['PointEqual',['../structsvg_1_1PointEqual.html',1,'svg']]],
-  ['pointhash_9',['PointHash',['../structsvg_1_1PointHash.html',1,'svg']]],
-  ['polygon_5felement_10',['polygon_element',['../group__elements.html#structsvg_1_1polygon__element',1,'svg']]],
-  ['polyline_5felement_11',['polyline_element',['../group__elements.html#structsvg_1_1polyline__element',1,'svg']]]
+  ['marker_5felement_0',['marker_element',['../group__elements.html#structsvg_1_1marker__element',1,'svg']]],
+  ['medallion_5fspec_1',['medallion_spec',['../structizzi_1_1guilloche_1_1medallion__spec.html',1,'izzi::guilloche']]],
+  ['modulation_5fspec_2',['modulation_spec',['../structizzi_1_1guilloche_1_1modulation__spec.html',1,'izzi::guilloche']]],
+  ['motif_5fconfig_3',['motif_config',['../structsvg_1_1hamonshu_1_1motif__config.html',1,'svg::hamonshu']]],
+  ['motion_5fspec_4',['motion_spec',['../structizzi_1_1guilloche_1_1motion__spec.html',1,'izzi::guilloche']]],
+  ['movement_5fdocument_5',['movement_document',['../structsvg_1_1movement__document.html',1,'svg']]],
+  ['movement_5fpath_6',['movement_path',['../structsvg_1_1movement__path.html',1,'svg']]],
+  ['movement_5fsegment_7',['movement_segment',['../structsvg_1_1movement__segment.html',1,'svg']]],
+  ['multicolor_5fline_5fspec_8',['multicolor_line_spec',['../structizzi_1_1guilloche_1_1multicolor__line__spec.html',1,'izzi::guilloche']]]
 ];

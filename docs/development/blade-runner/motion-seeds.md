@@ -5,7 +5,7 @@ Status: `INVESTIGATION-COMPLETE; SEED-RECORDS-DRAFTED; SCHEMA-EXTENDED;
 CANARY-SPECS-WIRED; CHECKER-PASS; HUMAN-REVIEW-PENDING; NOT-SHARED`
 
 This document investigates whether the five local 1080p Blade Runner Final Cut
-clips in `resources/blade-runner/output/ssk.1080p/` can serve as seeds for
+clips in `resources.rizal/blade-runner/output/ssk.1080p/` can serve as seeds for
 describing motion aesthetics in the Izzi motion-canary workflow. It records
 what the clips measurably are, derives a per-clip motion-aesthetic reading from
 observed metadata, proposes a hash-bound seed contract, and keeps the film
@@ -26,7 +26,7 @@ subtitle track, Matroska container. Each is an unbroken single take: the
 | cut-4 | 6373 | 79.038 | 1894 | `7c0652f78d7d8135ba1f054e611cf70667e3e086977bcd9905ebf3f0054bb530` |
 | cut-5 | 6588 | 16.023 | 383 | `83f51e7484e93b56a66e2c5ee2f9d08bd4b7b775c44b9de23747376855f68514` |
 
-Paths: `resources/blade-runner/output/ssk.1080p/Blade.Runner.Final-Cut.4k-cut-N-1080p.1.mkv`.
+Paths: `resources.rizal/blade-runner/output/ssk.1080p/Blade.Runner.Final-Cut.4k-cut-N-1080p.1.mkv`.
 
 ## Measurement method
 
@@ -103,7 +103,7 @@ Suggested per-clip seed record:
 {
   "seed_id": "br-final-cut-cut-1",
   "source": {
-    "path": "resources/blade-runner/output/ssk.1080p/Blade.Runner.Final-Cut.4k-cut-1-1080p.1.mkv",
+    "path": "resources.rizal/blade-runner/output/ssk.1080p/Blade.Runner.Final-Cut.4k-cut-1-1080p.1.mkv",
     "sha256": "1864690809c75fbdced98b9feeb4bd2ed8ab5696b07cc3b0d4bb92fb36efc2da"
   },
   "measured": {
@@ -157,7 +157,7 @@ Illustrative mapping for the three Frogtown v2 canaries:
 
 ## Implementation status
 
-- `resources/blade-runner/motion-aesthetic-seeds.json` contains the five
+- `resources.static/blade-runner/motion-aesthetic-seeds.json` contains the five
   hash-bound seed records (source, measured metadata, `motion_grammar`,
   `review.status`).
 - `schemas/izzi.here-lies-trouble-motion-canary.schema.json` was extended with

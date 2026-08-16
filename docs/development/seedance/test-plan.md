@@ -101,7 +101,7 @@ The partial map-experiment JSON hash is
 Style workbook:
 
 ```text
-path: resources/duotone-111/kw-seedance-inputs.20260808.xlsx
+path: resources.rizal/duotone-111/kw-seedance-inputs.20260808.xlsx
 sha256: c3f1e2813f6d34eedb6049cd0a965720a9f8ac651d9c92216d0ebc11056c3146
 worksheet: Sheet1
 creative rows: 2
@@ -280,7 +280,7 @@ lineage.
 Audio:
 
 ```text
-path: resources/here-lies-trouble/seed-audio-corpus/here-lies-trouble-1.20260415.mp3
+path: resources.rizal/here-lies-trouble/seed-audio-corpus/here-lies-trouble-1.20260415.mp3
 sha256: 32e984630b27abbe1acb505002e36059047a3a671de5526f872cffd24cb30d1e
 duration: 1805.832 seconds (30:05.832)
 format: MP3, 16 kHz, mono
@@ -289,7 +289,7 @@ format: MP3, 16 kHz, mono
 Transcript:
 
 ```text
-path: resources/here-lies-trouble/seed-audio-corpus/here-lies-trouble-1.20260415.txt
+path: resources.rizal/here-lies-trouble/seed-audio-corpus/here-lies-trouble-1.20260415.txt
 sha256: 7ed51330acad89f4e769d47907fc4a8a3fb2e1f11e31d67a494b06da8ed5d7c9
 extent: 487 lines, 5,095 words
 structure: timestamped Speaker 1–5 and Unknown Speaker turns
