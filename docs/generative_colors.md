@@ -41,7 +41,7 @@ removed from the portal.
 | `palette-ciecam16j70` | CIECAM16 at fixed lightness J=70 (88 swatches) | LIVE (same index) |
 | `palette-esri-s-bathymetry` | ESRI shallow bathymetry ramp (7 swatches) | LIVE (same index) |
 | `palette-esri-m-bathymetry` | ESRI mid bathymetry ramp (11 swatches) | LIVE (same index) |
-| `color-band-expand-to-larger` | three 100-swatch band sweeps (deterministic after the seeded-RNG fix) | LIVE (same index) |
+| `color-band-expand-to-larger-v2` | four 100-swatch band sweeps (blue/orange/purple/red), HSV-sorted (issue #70) | LIVE (same index) |
 | `color-tint-perceptual-1/2` | perceptual tint exercises | LIVE (same index) |
 | `color-rgb-hsv-2/3` | RGB↔HSV quantization grids (up to 266 swatches) | LIVE (same index) |
 

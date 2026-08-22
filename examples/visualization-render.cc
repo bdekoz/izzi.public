@@ -68,6 +68,12 @@ main(int argc, char* argv[])
 	doc.points.push_back({ point[0].GetDouble(),
 			       point[1].GetDouble() });
 
+  if (json.HasMember("weekend_x_ranges") && json["weekend_x_ranges"].IsArray())
+    for (const auto& span : json["weekend_x_ranges"].GetArray())
+      if (span.IsArray() && span.Size() == 2)
+	doc.weekend_ranges.push_back({ span[0].GetDouble(),
+				       span[1].GetDouble() });
+
   if (json.HasMember("headers") && json["headers"].IsArray())
     for (const auto& header : json["headers"].GetArray())
       doc.headers.push_back(header.GetString());
