@@ -19,7 +19,7 @@ spend credits.
 > the existing local key apply only to `.io`. Never send that key to `.ai` and
 > never change the adapter hostname as a migration shortcut. The newly reviewed
 > `.ai` site exposes different model names and credit rates, and no public video
-> API/key contract was found. See `docs/development/sessions/explore_futures.20260811.md` for the
+> API/key contract was found. See `docs/development/sessions/20260811.md` for the
 > comparison and the required account-domain preflight.
 
 The availability of a user-controlled account is user-supplied context. Codex

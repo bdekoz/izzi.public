@@ -18,21 +18,22 @@ situationshipin.space; the portal holds the reviewed copies.
 
 Dated exploration logs live in [`sessions/`](sessions/):
 
-- [2026-08-08](sessions/explore_futures.20260808.md) ·
-  [2026-08-09](sessions/explore_futures.20260809.md) ·
-  [2026-08-10](sessions/explore_futures.20260810.md) ·
-  [2026-08-11](sessions/explore_futures.20260811.md) ·
-  [2026-08-12](sessions/explore_futures.20260812.md) ·
-  [restart here](sessions/explore_futures.20260812.restart_here.md) ·
-  [2026-08-14](sessions/explore_futures.20260814.planning_review_class.md) ·
-  [2026-08-15 restart](sessions/explore_futures.20260815.restart_here.md) ·
-  [2026-08-16 guilloche](sessions/explore_futures.20260816.dutch_guilloche.md)
+- [2026-08-08](sessions/20260808.md) ·
+  [2026-08-09](sessions/20260809.md) ·
+  [2026-08-10](sessions/20260810.md) ·
+  [2026-08-11](sessions/20260811.md) ·
+  [2026-08-12](sessions/20260812.md) ·
+  [restart here](sessions/20260812.restart_here.md) ·
+  [2026-08-14](sessions/20260814.planning_review_class.md) ·
+  [2026-08-15 restart](sessions/20260815.restart_here.md) ·
+  [2026-08-16 guilloche](sessions/20260816.dutch_guilloche.md)
 
 ## Cross-cutting
 
-- [Milestone 0 baseline](sessions/milestone_0_baseline.md)
-- [Vertical-series visual form](sessions/vertical-form.md)
-- [Vector text overlay proposal](sessions/vector-text-overlay-proposal.md)
+- [Milestone 0 baseline](sessions/20260808.milestone_0_baseline.md)
+- [Vertical-series visual form](sessions/20260809.vertical-form.md)
+- [Vector text overlay proposal](sessions/20260814.vector-text-overlay-proposal.md)
+- [Transcription enrichment workflow](../transcription-enrichment_workflow.md)
 
 ## Archive
 

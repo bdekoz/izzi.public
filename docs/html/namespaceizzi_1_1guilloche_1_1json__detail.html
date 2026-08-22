@@ -102,8 +102,10 @@ Functions</h2></td></tr>
 <tr class="memitem:aff13783685ee246a1430020f6b113872" id="r_aff13783685ee246a1430020f6b113872"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aff13783685ee246a1430020f6b113872">in_range</a> (const double value, const double minimum, const double maximum)</td></tr>
 <tr class="memitem:a33dcaec795dc03d312bc9d8b12120126" id="r_a33dcaec795dc03d312bc9d8b12120126"><td class="memItemLeft" align="right" valign="top">std::optional&lt; std::array&lt; std::size_t, 2 &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a33dcaec795dc03d312bc9d8b12120126">read_size_pair</a> (const <a class="el" href="#a68fc8a6f5d91b6be8567aeac9948aee0">json_value</a> *value, const std::string &amp;pointer, std::vector&lt; <a class="el" href="structizzi_1_1guilloche_1_1scene__json__diagnostic.html">scene_json_diagnostic</a> &gt; &amp;diagnostics, const std::size_t maximum)</td></tr>
 <tr class="memitem:a636ef47e410553043774b180c6d758b9" id="r_a636ef47e410553043774b180c6d758b9"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="structizzi_1_1guilloche_1_1point.html">point</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a636ef47e410553043774b180c6d758b9">read_point</a> (const <a class="el" href="#a68fc8a6f5d91b6be8567aeac9948aee0">json_value</a> *value, const std::string &amp;pointer, std::vector&lt; <a class="el" href="structizzi_1_1guilloche_1_1scene__json__diagnostic.html">scene_json_diagnostic</a> &gt; &amp;diagnostics)</td></tr>
+<tr class="memitem:ac5edd87ce6e322e339caf3780f64bcad" id="r_ac5edd87ce6e322e339caf3780f64bcad"><td class="memItemLeft" align="right" valign="top">std::optional&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac5edd87ce6e322e339caf3780f64bcad">read_boolean</a> (const <a class="el" href="#a68fc8a6f5d91b6be8567aeac9948aee0">json_value</a> *value, const std::string &amp;pointer, std::vector&lt; <a class="el" href="structizzi_1_1guilloche_1_1scene__json__diagnostic.html">scene_json_diagnostic</a> &gt; &amp;diagnostics)</td></tr>
 <tr class="memitem:a6abbc7bb6ad6c04e90383ffaa3c1f6cc" id="r_a6abbc7bb6ad6c04e90383ffaa3c1f6cc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6abbc7bb6ad6c04e90383ffaa3c1f6cc">valid_identifier</a> (const std::string_view value)</td></tr>
 <tr class="memitem:aeca3c2b5708ef36946197b2428e365ee" id="r_aeca3c2b5708ef36946197b2428e365ee"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeca3c2b5708ef36946197b2428e365ee">valid_color</a> (const std::string_view value)</td></tr>
+<tr class="memitem:a31c8ea8188ee5e10b950b193d9fd7f29" id="r_a31c8ea8188ee5e10b950b193d9fd7f29"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structizzi_1_1guilloche_1_1composition__spec.html">composition_spec</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a31c8ea8188ee5e10b950b193d9fd7f29">read_authored_geometries</a> (const <a class="el" href="#a68fc8a6f5d91b6be8567aeac9948aee0">json_value</a> *value, const <a class="el" href="structizzi_1_1guilloche_1_1point.html">point</a> default_origin, const double default_radius, std::vector&lt; <a class="el" href="structizzi_1_1guilloche_1_1scene__json__diagnostic.html">scene_json_diagnostic</a> &gt; &amp;diagnostics)</td></tr>
 <tr class="memitem:a3f499126ff76d7d7695a9813f0f37c66" id="r_a3f499126ff76d7d7695a9813f0f37c66"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3f499126ff76d7d7695a9813f0f37c66">valid_number_text</a> (const std::string_view value)</td></tr>
 <tr class="memitem:aad24aa0b547e142bfea805838e7528a1" id="r_aad24aa0b547e142bfea805838e7528a1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aad24aa0b547e142bfea805838e7528a1">valid_hash</a> (const std::string_view value)</td></tr>
 <tr class="memitem:a2313b0a8ec47a0809f2dd058a15d9cba" id="r_a2313b0a8ec47a0809f2dd058a15d9cba"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2313b0a8ec47a0809f2dd058a15d9cba">valid_extension_name</a> (const std::string_view value)</td></tr>
@@ -613,6 +615,46 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ac5edd87ce6e322e339caf3780f64bcad" name="ac5edd87ce6e322e339caf3780f64bcad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5edd87ce6e322e339caf3780f64bcad">&#9670;&#160;</a></span>read_boolean()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::optional&lt; bool &gt; izzi::guilloche::json_detail::read_boolean </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="#a68fc8a6f5d91b6be8567aeac9948aee0">json_value</a> *</td>          <td class="paramname"><span class="paramname"><em>value</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>pointer</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="structizzi_1_1guilloche_1_1scene__json__diagnostic.html">scene_json_diagnostic</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>diagnostics</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel nodiscard">nodiscard</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div id="dynsection-8" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-8-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="namespaceizzi_1_1guilloche_1_1json__detail_ac5edd87ce6e322e339caf3780f64bcad_cgraph.svg" width="344" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
 <a id="a6abbc7bb6ad6c04e90383ffaa3c1f6cc" name="a6abbc7bb6ad6c04e90383ffaa3c1f6cc"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6abbc7bb6ad6c04e90383ffaa3c1f6cc">&#9670;&#160;</a></span>valid_identifier()</h2>
 
@@ -660,6 +702,51 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="a31c8ea8188ee5e10b950b193d9fd7f29" name="a31c8ea8188ee5e10b950b193d9fd7f29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31c8ea8188ee5e10b950b193d9fd7f29">&#9670;&#160;</a></span>read_authored_geometries()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; <a class="el" href="structizzi_1_1guilloche_1_1composition__spec.html">composition_spec</a> &gt; izzi::guilloche::json_detail::read_authored_geometries </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="#a68fc8a6f5d91b6be8567aeac9948aee0">json_value</a> *</td>          <td class="paramname"><span class="paramname"><em>value</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structizzi_1_1guilloche_1_1point.html">point</a></td>          <td class="paramname"><span class="paramname"><em>default_origin</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double</td>          <td class="paramname"><span class="paramname"><em>default_radius</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="structizzi_1_1guilloche_1_1scene__json__diagnostic.html">scene_json_diagnostic</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>diagnostics</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel nodiscard">nodiscard</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div id="dynsection-9" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-9-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="namespaceizzi_1_1guilloche_1_1json__detail_a31c8ea8188ee5e10b950b193d9fd7f29_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
 
 </div>
 </div>
@@ -766,10 +853,10 @@ template&lt;typename Writer&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<div id="dynsection-8" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
-<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-10" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-8-content" class="dyncontent" style="display:none;">
+<div id="dynsection-10-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="namespaceizzi_1_1guilloche_1_1json__detail_a7e8a2f9cf072775bf8d8d9b987e4aa50_cgraph.svg" width="196" height="72"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
@@ -797,10 +884,10 @@ template&lt;typename Writer&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<div id="dynsection-9" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
-<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-11" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-9-content" class="dyncontent" style="display:none;">
+<div id="dynsection-11-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="namespaceizzi_1_1guilloche_1_1json__detail_ad95b7fc31385e5a2f79f80a618209367_cgraph.svg" width="391" height="72"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
@@ -966,10 +1053,10 @@ template&lt;typename Writer&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<div id="dynsection-10" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
-<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-12" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-10-content" class="dyncontent" style="display:none;">
+<div id="dynsection-12-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="namespaceizzi_1_1guilloche_1_1json__detail_a373dfefe3a333f41f402ceaac5a60117_cgraph.svg" width="392" height="171"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
@@ -1001,10 +1088,10 @@ template&lt;typename Writer&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<div id="dynsection-11" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
-<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-13" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-11-content" class="dyncontent" style="display:none;">
+<div id="dynsection-13-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="namespaceizzi_1_1guilloche_1_1json__detail_a9659d9fc8f2b8acd9a11c9ebd6f5e2bc_cgraph.svg" width="348" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
@@ -1070,10 +1157,10 @@ template&lt;typename Writer&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<div id="dynsection-12" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
-<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-14" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-12-content" class="dyncontent" style="display:none;">
+<div id="dynsection-14-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="namespaceizzi_1_1guilloche_1_1json__detail_a1c3b6b66774a7660cf2bdc91a9091656_cgraph.svg" width="350" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
@@ -1105,10 +1192,10 @@ template&lt;typename Writer&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<div id="dynsection-13" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
-<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-15" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-13-content" class="dyncontent" style="display:none;">
+<div id="dynsection-15-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="namespaceizzi_1_1guilloche_1_1json__detail_aa09add80b80affdb57f601120501d0be_cgraph.svg" width="338" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 

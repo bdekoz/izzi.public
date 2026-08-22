@@ -5,19 +5,19 @@ First-pass index for the generative visualization surface implemented in
 content. The section mirrors the pattern, color, and movement sections as a
 parallel tree.
 
-## Document map
+## docs/generative_visualization index
 
 | File | Content |
 | --- | --- |
-| `docs/generative_visualization/index.md` | Directory entry page mirroring this index |
-| `docs/generative_visualization/visualization.md` | Family entry: visualization (grids, tables, line/chord/kusama graphs) |
-| `docs/generative_visualization/assessment_plan.md` | Assessment plan and per-family entry template |
+| `index.md` | Directory entry page mirroring this index |
+| `visualization.md` | Family entry: visualization (grids, tables, line/chord/kusama graphs) |
+| `assessment_plan.md` | Assessment plan and per-family entry template |
 
 ## Family index (izzi/src)
 
 | Family | Headers | Docs / notes |
 | --- | --- | --- |
-| visualization | `src/izzi-svg-visualization.h` | `docs/generative_visualization/visualization.md`; proposal `docs/development/sessions/explore_futures.20260814.visualization_grammar.md` |
+| visualization | `src/izzi-svg-visualization.h` | `docs/generative_visualization/visualization.md`; proposal `docs/development/sessions/20260814.visualization_grammar.md` |
 
 ## Visual-tester gallery
 

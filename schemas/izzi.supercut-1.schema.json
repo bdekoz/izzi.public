@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Izzi supercut batch spec",
+  "description": "Batch contract for scripts/izzi-supercut.py; the C++ types in src/izzi-media-supercut.h mirror this contract.",
+  "type": "object",
+  "required": ["cuts"],
+  "properties": {
+    "cuts": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["input", "begin", "length", "cut_number"],
+        "properties": {
+          "input": {
+            "type": "string",
+            "minLength": 1
+          },
+          "begin": {
+            "type": "number",
+            "minimum": 0
+          },
+          "length": {
+            "type": "number",
+            "exclusiveMinimum": 0
+          },
+          "cut_number": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "tiers": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string",
+              "enum": ["orig", "1080p", "proxy"]
+            },
+            "uniqueItems": true
+          },
+          "accurate_seek": {
+            "type": "boolean",
+            "default": false
+          },
+          "fps": {
+            "type": ["number", "null"],
+            "exclusiveMinimum": 0
+          },
+          "output_root": {
+            "type": "string",
+            "default": "./output"
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

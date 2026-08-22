@@ -14,7 +14,8 @@ Header: `src/izzi-svg-visualization.h`.
 ## API surface
 
 - `enum class visualization_kind` and `struct visualization_document`.
-- `emit_line_graph(doc, ofile)` — make_line_graph pipeline (axes/labels).
+- `emit_line_graph(doc, ofile)` — make_line_graph pipeline (axes/labels);
+  reference example: [Andor line graph](https://alpha60-devops.github.io/alpha60-results-star-wars-universe/docs/andor.html).
 - `emit_grid(doc, ofile)` — deterministic N-column rect grid.
 - `emit_table_html(doc)` — accessible HTML table string.
 - `emit_chord_graph(doc, ofile)` — first-pass pure bipartite layout
@@ -78,7 +79,7 @@ Open items:
 
 ## Links
 
-- Proposal: `docs/development/sessions/explore_futures.20260814.visualization_grammar.md`
-- Migration: `docs/development/sessions/explore_futures.20260814.migration.md`
+- Proposal: `docs/development/sessions/20260814.visualization_grammar.md`
+- Migration: `docs/development/sessions/20260814.migration.md`
 - Sibling sections: `docs/generative_patterns/`, `docs/generative_colors/`,
   `docs/generative_movement/`

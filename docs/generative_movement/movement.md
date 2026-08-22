@@ -71,5 +71,5 @@ Open items (2026-08-14 movement proposal):
 
 ## Links
 
-- Proposal: `docs/development/sessions/explore_futures.20260814.movement.md`
+- Proposal: `docs/development/sessions/20260814.movement.md`
 - Pattern families: `docs/generative_patterns/`; color: `docs/generative_colors/`

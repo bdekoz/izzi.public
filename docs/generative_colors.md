@@ -5,20 +5,20 @@ First-pass index for the generative color and palette surface implemented in
 content. The section mirrors the structure of
 [generative pattern families](generative_patterns.md) as a parallel tree.
 
-## Document map
+## docs/generative_colors index
 
 | File | Content |
 | --- | --- |
-| `docs/generative_colors/index.md` | Directory entry page mirroring this index |
-| `docs/generative_colors/color.md` | Family entry: color (palettes, bands, RGB/HSV quantization, perceptual tint helpers) |
-| `docs/generative_colors/assessment_plan.md` | Assessment plan and per-family entry template |
-| `docs/generative_colors/images/` | Rendered previews from the parameter-space visual testers (gallery below; regenerated per the 2026-08-14 color proposal) |
+| `index.md` | Directory entry page mirroring this index |
+| `color.md` | Family entry: color (palettes, bands, RGB/HSV quantization, perceptual tint helpers) |
+| `assessment_plan.md` | Assessment plan and per-family entry template |
+| `images/` | Rendered previews from the parameter-space visual testers (gallery below; regenerated per the 2026-08-14 color proposal) |
 
 ## Family index (izzi/src)
 
 | Family | Headers | Docs / notes |
 | --- | --- | --- |
-| color | `src/izzi-svg-color.h`, `src/izzi-svg-color-palette.h`, `src/izzi-svg-color-band.h` (grid renderer `display_color_qis` in `src/izzi-svg-render-basics.h`) | `docs/generative_colors/color.md`; proposal `docs/development/sessions/explore_futures.20260814.color.md` |
+| color | `src/izzi-svg-color.h`, `src/izzi-svg-color-palette.h`, `src/izzi-svg-color-band.h` (grid renderer `display_color_qis` in `src/izzi-svg-render-basics.h`) | `docs/generative_colors/color.md`; proposal `docs/development/sessions/20260814.color.md` |
 
 ## Visual-tester gallery
 

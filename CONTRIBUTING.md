@@ -44,7 +44,7 @@ make check-install
 The current isolated-header/ODR baseline intentionally fails the same 23 of 35
 tests under both observed compilers. Do not hide, skip, or normalize those
 failures. See
-[`docs/development/sessions/milestone_0_baseline.md`](docs/development/sessions/milestone_0_baseline.md) for the exact
+[`docs/development/sessions/20260808.milestone_0_baseline.md`](docs/development/sessions/20260808.milestone_0_baseline.md) for the exact
 inventory. A change is a regression if it adds a failing header/test or makes
 the compiler outcomes diverge without an explicit, reviewed reason.
 

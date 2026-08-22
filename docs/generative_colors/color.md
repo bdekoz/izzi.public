@@ -96,7 +96,7 @@ determinism fix are planned (Plan B of the 2026-08-14 proposal):
 Status: `ASSESSED-FIRST-PASS`.
 
 Open items (2026-08-14 proposal
-[`explore_futures.20260814.color.md`](../development/sessions/explore_futures.20260814.color.md)):
+[`20260814.color.md`](../development/sessions/20260814.color.md)):
 
 - Seeded-RNG determinism fix closing `M0-DETERMINISM-001`.
 - Constexpr data module (`.inc`) and `constexpr` `color_qi`/tables; explicit
@@ -111,7 +111,7 @@ Open items (2026-08-14 proposal
 
 ## Links
 
-- Proposal: `docs/development/sessions/explore_futures.20260814.color.md`
+- Proposal: `docs/development/sessions/20260814.color.md`
 - Generation baseline: `tests/baselines/generation/current/`
 - House typography direction: `docs/dependencies.md`,
   `docs/visual_workflow/visual_experiments_method.md`

@@ -4,22 +4,23 @@ First-pass index for the generative curve and pattern families implemented in
 `izzi/src/`. This is a pointer index only; the family entries hold the
 content.
 
-## Document map
+## docs/generative_patterns index
 
 | File | Content |
 | --- | --- |
-| `docs/generative_patterns/index.md` | Directory entry page mirroring this index |
-| `docs/generative_patterns/assessment_plan.md` | Assessment plan and per-family entry template |
-| `docs/generative_patterns/hamonshu.md` | Family entry: hamonshu, including the Hamonshū volume 2 wave-pattern catalogue and rendering notes |
-| `docs/generative_patterns/guilloche.md` | Family entry: guilloche |
-| `docs/generative_patterns/moire.md` | Family entry: moire |
-| `docs/generative_patterns/danmu.md` | Family entry: danmu (danmaku text overlay), incl. W3C Bullet Chatting relation |
-| `docs/generative_patterns/surface_tension.md` | Family entry: surface tension |
-| `docs/generative_patterns/radial.md` | Family entry: radial |
-| `docs/generative_patterns/harmonograph.md` | Family entry: damped harmonograph |
-| `docs/generative_patterns/grignani.md` | Family entry: grignani |
-| `docs/generative_patterns/roulette.md` | Family entry: roulette |
-| `docs/generative_patterns/images/` | Rendered previews from the parameter-space visual testers (gallery below) |
+| `index.md` | Directory entry page mirroring this index |
+| `assessment_plan.md` | Assessment plan and per-family entry template |
+| `hamonshu.md` | Family entry: hamonshu, including the Hamonshū volume 2 wave-pattern catalogue and rendering notes |
+| `guilloche.md` | Family entry: guilloche |
+| `moire.md` | Family entry: moire |
+| `danmu.md` | Family entry: danmu (danmaku text overlay), incl. W3C Bullet Chatting relation |
+| `surface_tension.md` | Family entry: surface tension |
+| `keyframes.md` | Family entry: deterministic keyframes, route-derived framing, and K4 asset/review handoff |
+| `radial.md` | Family entry: radial |
+| `harmonograph.md` | Family entry: damped harmonograph |
+| `grignani.md` | Family entry: grignani |
+| `roulette.md` | Family entry: roulette |
+| `images/` | Rendered previews from the parameter-space visual testers (gallery below) |
 | `docs/visual_workflow/visual_experiments_method.md` | Form-first method for visual experiments (cross-cutting, not family-specific) |
 
 ## Family index (izzi/src)

@@ -6,6 +6,7 @@ var searchData=
   ['no_5fstroke_5fstyle_3',['no_stroke_style',['../namespacesvg_1_1constants.html#a1c4966a8fd0c1c2d1b3481e10ffda704',1,'svg::constants']]],
   ['no_5fstyle_4',['no_style',['../namespacesvg_1_1constants.html#a94e31e0f92ab672062d8ebb87e2c8975',1,'svg::constants']]],
   ['nodes_5',['nodes',['../structsvg_1_1graph_1_1flow__dataset.html#ab82f9272b7a99d31386a18f3e6ea5572',1,'svg::graph::flow_dataset::nodes'],['../structsvg_1_1graph_1_1graph__scene.html#a985acfd1d0ad17a25a82a0b3a149e410',1,'svg::graph::graph_scene::nodes']]],
-  ['normal_5foffset_5fstep_6',['normal_offset_step',['../structizzi_1_1guilloche_1_1family__spec.html#a5b5f897ac21ab33132f5b3597a612c32',1,'izzi::guilloche::family_spec']]],
-  ['number_7',['number',['../structizzi_1_1guilloche_1_1scene__content.html#ad0d07a2010a25db67807016b54a6e161',1,'izzi::guilloche::scene_content']]]
+  ['normal_5foffset_5fratio_6',['normal_offset_ratio',['../structizzi_1_1guilloche_1_1p1__band__guilloche__tuning.html#ab5f269d7893b1eeaa3e91d767ab6f259',1,'izzi::guilloche::p1_band_guilloche_tuning']]],
+  ['normal_5foffset_5fstep_7',['normal_offset_step',['../structizzi_1_1guilloche_1_1family__spec.html#a5b5f897ac21ab33132f5b3597a612c32',1,'izzi::guilloche::family_spec']]],
+  ['number_8',['number',['../structizzi_1_1guilloche_1_1scene__content.html#ad0d07a2010a25db67807016b54a6e161',1,'izzi::guilloche::scene_content']]]
 ];

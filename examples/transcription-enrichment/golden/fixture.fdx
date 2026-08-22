@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<FinalDraft DocumentType="Script" Template="No" Version="1">
+  <Title>FIXTURE SHOW</Title>
+  <Content>
+    <Paragraph Type="Scene Heading">
+      <Text>INT. KITCHEN -- DAY</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>Transcribed enrichment draft 1. Dialogue verbatim from the canonical source transcript; format-only enrichment.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>SPEAKER 1</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>Hello from the fixture.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>SPEAKER 2</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>The second line is verbatim too.</Text>
+    </Paragraph>
+  </Content>
+</FinalDraft>

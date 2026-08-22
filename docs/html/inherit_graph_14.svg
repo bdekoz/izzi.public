@@ -11,10 +11,10 @@
 <!-- Node0 -->
 <g id="Node000000" class="node">
 <title>Node0</title>
-<g id="a_Node000000"><a xlink:href="structizzi_1_1guilloche_1_1glyph__ornament__spec.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="101.5,-27.5 0,-27.5 0,0 101.5,0 101.5,-27.5"/>
-<text xml:space="preserve" text-anchor="start" x="8" y="-15.9" font-family="SourceSans" font-size="8.00">izzi::guilloche::glyph</text>
-<text xml:space="preserve" text-anchor="middle" x="50.75" y="-6.15" font-family="SourceSans" font-size="8.00">_ornament_spec</text>
+<g id="a_Node000000"><a xlink:href="structizzi_1_1guilloche_1_1dutch__stack__tuning.html" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="#666666" points="102.25,-27.5 0,-27.5 0,0 102.25,0 102.25,-27.5"/>
+<text xml:space="preserve" text-anchor="start" x="8" y="-15.9" font-family="SourceSans" font-size="8.00">izzi::guilloche::dutch</text>
+<text xml:space="preserve" text-anchor="middle" x="51.12" y="-6.15" font-family="SourceSans" font-size="8.00">_stack_tuning</text>
 </a>
 </g>
 </g>

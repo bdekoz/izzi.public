@@ -16,7 +16,7 @@ JSON schemas.
 the `.io` hostname in this proposal, reuse the `.io` key there, or interpret an
 account at one domain as an account at the other. The current comparison and
 new-domain preflight are in
-[`explore_futures.20260811.md`](../sessions/explore_futures.20260811.md).
+[`20260811.md`](../sessions/20260811.md).
 
 The later audio-first clarification is specified in
 [`explore_futures_seedance_audio.md`](../seedance/audio.md). In

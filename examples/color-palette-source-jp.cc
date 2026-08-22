@@ -20,8 +20,14 @@ int main()
   test_color("color-palette-source-jp", spectrum);
 
   auto spectrums(spectrum);
-  std::sort(spectrums.begin(), spectrums.end(), svg::color_qf_lt);
-  std::reverse(spectrums.begin(), spectrums.end());
+  std::sort(spectrums.begin(), spectrums.end(),
+            [](const auto& left, const auto& right) {
+              const svg::color_qf lh(left);
+              const svg::color_qf rh(right);
+              if (lh.h != rh.h) return lh.h < rh.h;
+              if (lh.s != rh.s) return lh.s < rh.s;
+              return lh.v < rh.v;
+            });
   test_color("color-palette-source-jp-sorted", spectrums);
   return 0;
 }

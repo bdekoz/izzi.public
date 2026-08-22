@@ -1,0 +1,8 @@
+<map id="izzi::surface_tension::detail::s2_variation" name="izzi::surface_tension::detail::s2_variation">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,140,42"/>
+<area shape="rect" id="Node000002" href="$namespaceizzi_1_1surface__tension_1_1detail.html#a0c0ae19671736598b9c08a52d86d541b" title=" " alt="" coords="407,5,541,42"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="140,19,188,18,359,18,391,19,391,24,359,24,188,24,140,25"/>
+<area shape="rect" id="Node000003" href="$namespaceizzi_1_1surface__tension_1_1detail.html#abd72cb7f2bb7dcf99d62fa965dbe57f8" title=" " alt="" coords="188,33,359,70"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="140,30,173,35,172,40,139,36"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="359,37,391,32,392,38,360,42"/>
+</map>

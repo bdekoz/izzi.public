@@ -26,6 +26,33 @@ inline constexpr std::array<std::string_view, 10> plate_names {{
   "moire-10-wild-collision",
 }};
 
+inline constexpr std::array<std::string_view, 6> m1_plate_names {{
+  "moire-m1-01-fine-linear-grid",
+  "moire-m1-02-stepped-elliptic-field",
+  "moire-m1-03-radial-aperture",
+  "moire-m1-04-interference-texture",
+  "moire-m1-05-destabilized-texture",
+  "moire-m1-06-glitch-texture",
+}};
+
+inline constexpr std::array<std::string_view, 6> m2_plate_names {{
+  "moire-m2-01-dot-grid",
+  "moire-m2-02-negative-positive",
+  "moire-m2-03-square-grid",
+  "moire-m2-04-slanted-line-grid",
+  "moire-m2-05-rotated-line-grid",
+  "moire-m2-06-variable-grid",
+}};
+
+inline constexpr std::array<std::string_view, 6> m3_plate_names {{
+  "moire-m3-01-line-dot-hybrid",
+  "moire-m3-02-orbit-square-hybrid",
+  "moire-m3-03-radial-slant-hybrid",
+  "moire-m3-04-grid-interference",
+  "moire-m3-05-grid-destabilization",
+  "moire-m3-06-polarity-glitch",
+}};
+
 family_spec
 linear_family(const double spacing, const double angle, const double phase = 0)
 {
@@ -75,7 +102,7 @@ radial_family(const point origin, const double angle = -pi / 2)
 
 layer_spec
 layer(std::string id, std::string color, family_spec family,
-      const double opacity = 0.62, const double stroke_width = 0.8)
+      const double opacity = 0.62, const double stroke_width = 2.0)
 {
   return {
     std::move(id), std::move(color), stroke_width, opacity,
@@ -246,6 +273,381 @@ make_scene(const std::size_t index)
   return scene;
 }
 
+scene_spec
+m1_base_scene(const std::size_t index)
+{
+  scene_spec scene;
+  scene.id = std::string(m1_plate_names.at(index));
+  scene.title = "Izzi moiré M1 tuned plate " + std::to_string(index + 1);
+  scene.description
+    = "Independently authored fine-grid mathematical interference study.";
+  scene.width = 1080;
+  scene.height = 1920;
+  scene.background_color = "#02030A";
+  scene.profile = render_profile::experimental;
+  scene.mode = degeneration::interfere;
+  scene.degeneration_amount = make_m1_degeneration_amount(scene.mode);
+  scene.seed = 2026091400ULL + index + 1;
+  scene.budget = {2'000, 1'000'000, 64 * 1024 * 1024};
+  return scene;
+}
+
+scene_spec
+make_m1_scene(const std::size_t index)
+{
+  scene_spec scene = m1_base_scene(index);
+  switch (index)
+    {
+    case 0:
+      {
+        m1_linear_tuning blue;
+        blue.angle = pi / 2 - 0.035;
+        blue.wave_frequency = 1.25;
+        m1_linear_tuning rose;
+        rose.spacing = 11.15;
+        rose.angle = pi / 2 + 0.028;
+        rose.phase = 0.32;
+        rose.wave_frequency = 1.47;
+        scene.layers.push_back(
+          layer("m1-blue-grid", "#1C82E1", make_m1_linear(blue), 0.52, 0.64));
+        scene.layers.push_back(
+          layer("m1-rose-grid", "#EF476F", make_m1_linear(rose), 0.5, 0.64));
+      }
+      break;
+    case 1:
+      {
+        m1_concentric_tuning blue;
+        blue.origin = {500, 920};
+        blue.aspect_ratio = 0.62;
+        blue.aspect_step = 0.0012;
+        blue.angle = 0.08;
+        m1_concentric_tuning gold;
+        gold.origin = {580, 1'000};
+        gold.spacing = 8.85;
+        gold.aspect_ratio = 0.68;
+        gold.aspect_step = -0.00065;
+        gold.angle = -0.1;
+        gold.phase = 0.25;
+        scene.layers.push_back(
+          layer("m1-blue-ellipses", "#1678C8",
+                make_m1_concentric(blue), 0.48, 0.6));
+        scene.layers.push_back(
+          layer("m1-gold-ellipses", "#F0B429",
+                make_m1_concentric(gold), 0.45, 0.6));
+      }
+      break;
+    case 2:
+      {
+        m1_radial_tuning cyan;
+        cyan.origin = {490, 920};
+        cyan.angle = -pi / 2 - 0.035;
+        cyan.angular_span = 1.82 * pi;
+        m1_radial_tuning magenta;
+        magenta.origin = {590, 1'000};
+        magenta.angle = -pi / 2 + 0.045;
+        magenta.angular_span = 1.86 * pi;
+        magenta.phase = 0.018;
+        scene.layers.push_back(
+          layer("m1-cyan-aperture", "#20C9D9",
+                make_m1_radial(cyan), 0.4, 0.6));
+        scene.layers.push_back(
+          layer("m1-magenta-aperture", "#F72585",
+                make_m1_radial(magenta), 0.4, 0.6));
+      }
+      break;
+    case 3:
+    case 4:
+    case 5:
+      {
+        static constexpr std::array<degeneration, 3> modes {{
+          degeneration::interfere,
+          degeneration::destabilize,
+          degeneration::glitch,
+        }};
+        scene.mode = modes[index - 3];
+        scene.degeneration_amount
+          = make_m1_degeneration_amount(scene.mode);
+        m1_linear_tuning blue;
+        blue.wave_amplitude = 3.2;
+        blue.wave_frequency = 2.6;
+        blue.phase_step = 0.014;
+        m1_linear_tuning white;
+        white.spacing = 11.3;
+        white.angle = pi / 2 + 0.052;
+        white.phase = 0.4;
+        white.wave_amplitude = 3.6;
+        white.wave_frequency = 2.83;
+        white.phase_step = -0.012;
+        scene.layers.push_back(
+          layer("m1-blue-texture", "#1C82E1",
+                make_m1_linear(blue), 0.48, 0.62));
+        scene.layers.push_back(
+          layer("m1-white-texture", "#F7F4EB",
+                make_m1_linear(white), 0.34, 0.58));
+      }
+      break;
+    default:
+      throw std::out_of_range("moire M1 plate index is out of range");
+    }
+  return scene;
+}
+
+scene_spec
+m2_base_scene(const std::size_t index)
+{
+  scene_spec scene;
+  scene.id = std::string(m2_plate_names.at(index));
+  scene.title = "Izzi moiré M2 extension plate " + std::to_string(index + 1);
+  scene.description
+    = "Independently authored mathematical grid and interference study.";
+  scene.width = 1080;
+  scene.height = 1920;
+  scene.background_color = "#02030A";
+  scene.profile = render_profile::experimental;
+  scene.mode = degeneration::repeat;
+  scene.degeneration_amount = 0;
+  scene.seed = 2026102300ULL + index + 1;
+  scene.budget = {4'000, 1'000'000, 64 * 1024 * 1024};
+  return scene;
+}
+
+scene_spec
+make_m2_scene(const std::size_t index)
+{
+  scene_spec scene = m2_base_scene(index);
+  switch (index)
+    {
+    case 0:
+      {
+        m2_dot_grid_tuning cyan;
+        cyan.angle = -0.018;
+        m2_dot_grid_tuning rose;
+        rose.cell_size = 28.7;
+        rose.angle = 0.022;
+        rose.phase = 0.35;
+        scene.layers.push_back(
+          layer("m2-cyan-dots", "#20C9D9",
+                make_m2_dot_grid(cyan), 0.55, 0.72));
+        scene.layers.push_back(
+          layer("m2-rose-dots", "#F72585",
+                make_m2_dot_grid(rose), 0.48, 0.68));
+      }
+      break;
+    case 1:
+      {
+        m2_negative_positive_tuning blue;
+        blue.grid_skew = 0.1;
+        m2_negative_positive_tuning amber;
+        amber.cell_size = 32.8;
+        amber.inverted = true;
+        amber.parity = 3;
+        amber.angle = 0.026;
+        scene.layers.push_back(
+          layer("m2-blue-polarity", "#1C82E1",
+                make_m2_negative_positive(blue), 0.48, 0.62));
+        scene.layers.push_back(
+          layer("m2-amber-polarity", "#F5B700",
+                make_m2_negative_positive(amber), 0.45, 0.58));
+      }
+      break;
+    case 2:
+      {
+        m2_square_grid_tuning cyan;
+        cyan.angle = -0.02;
+        cyan.grid_skew = 0.025;
+        m2_square_grid_tuning white;
+        white.cell_size = 30.65;
+        white.angle = 0.024;
+        white.grid_skew = -0.02;
+        scene.layers.push_back(
+          layer("m2-cyan-squares", "#20C9D9",
+                make_m2_square_grid(cyan), 0.42, 0.56));
+        scene.layers.push_back(
+          layer("m2-white-squares", "#F7F4EB",
+                make_m2_square_grid(white), 0.34, 0.52));
+      }
+      break;
+    case 3:
+      {
+        m2_slanted_line_grid_tuning blue;
+        blue.angle = pi / 2 - 0.018;
+        blue.grid_skew = 0.075;
+        m2_slanted_line_grid_tuning rose;
+        rose.spacing = 12.35;
+        rose.angle = pi / 2 + 0.012;
+        rose.grid_skew = -0.06;
+        rose.phase = 0.3;
+        scene.layers.push_back(
+          layer("m2-blue-slants", "#1C82E1",
+                make_m2_slanted_line_grid(blue), 0.5, 0.62));
+        scene.layers.push_back(
+          layer("m2-rose-slants", "#EF476F",
+                make_m2_slanted_line_grid(rose), 0.46, 0.6));
+      }
+      break;
+    case 4:
+      {
+        m2_rotated_line_grid_tuning cyan;
+        cyan.angle = pi / 2 - 0.012;
+        cyan.rotation_step = 0.00065;
+        m2_rotated_line_grid_tuning gold;
+        gold.spacing = 12.25;
+        gold.angle = pi / 2 + 0.014;
+        gold.rotation_step = -0.00082;
+        gold.phase = 0.28;
+        scene.layers.push_back(
+          layer("m2-cyan-rotation", "#20C9D9",
+                make_m2_rotated_line_grid(cyan), 0.48, 0.6));
+        scene.layers.push_back(
+          layer("m2-gold-rotation", "#F0B429",
+                make_m2_rotated_line_grid(gold), 0.44, 0.58));
+      }
+      break;
+    case 5:
+      {
+        m2_variable_grid_tuning blue;
+        blue.variable_density = 0.42;
+        m2_variable_grid_tuning white;
+        white.spacing = 11.8;
+        white.angle = 0.015;
+        white.phase = 0.32;
+        white.variable_density = 0.68;
+        scene.layers.push_back(
+          layer("m2-blue-density", "#1C82E1",
+                make_m2_variable_grid(blue), 0.5, 0.62));
+        scene.layers.push_back(
+          layer("m2-white-density", "#F7F4EB",
+                make_m2_variable_grid(white), 0.34, 0.56));
+      }
+      break;
+    default:
+      throw std::out_of_range("moire M2 plate index is out of range");
+    }
+  return scene;
+}
+
+m3_hybrid_tuning
+m3_tuning(const std::size_t index)
+{
+  m3_hybrid_tuning tuning;
+  tuning.id = std::string(m3_plate_names.at(index));
+  tuning.title = "Izzi moiré M3 hybrid plate " + std::to_string(index + 1);
+  tuning.description
+    = "Independently authored two-family mathematical beat study.";
+  tuning.seed = 2026111700ULL + index + 1;
+  tuning.budget = {4'000, 1'000'000, 64 * 1024 * 1024};
+  return tuning;
+}
+
+scene_spec
+make_m3_scene(const std::size_t index)
+{
+  switch (index)
+    {
+    case 0:
+      {
+        m1_linear_tuning lines;
+        lines.angle = 0.02;
+        lines.wave_amplitude = 1.4;
+        m2_dot_grid_tuning dots;
+        dots.angle = 0.035;
+        dots.cell_size = 27.6;
+        m3_hybrid_tuning tuning = m3_tuning(index);
+        tuning.first_color = "#1C82E1";
+        tuning.second_color = "#F72585";
+        return make_m3_hybrid(
+          make_m1_linear(lines), make_m2_dot_grid(dots), tuning);
+      }
+    case 1:
+      {
+        m1_concentric_tuning rings;
+        rings.origin = {515, 935};
+        rings.angle = 0.08;
+        m2_square_grid_tuning squares;
+        squares.angle = 0.11;
+        squares.cell_size = 29.4;
+        m3_hybrid_tuning tuning = m3_tuning(index);
+        tuning.first_color = "#20C9D9";
+        tuning.second_color = "#F0B429";
+        return make_m3_hybrid(
+          make_m1_concentric(rings), make_m2_square_grid(squares), tuning);
+      }
+    case 2:
+      {
+        m1_radial_tuning rays;
+        rays.origin = {525, 945};
+        rays.angle = -0.12;
+        rays.angular_span = 1.84 * pi;
+        m2_slanted_line_grid_tuning lines;
+        lines.angle = -0.09;
+        lines.spacing = 11.8;
+        lines.grid_skew = 0.05;
+        m3_hybrid_tuning tuning = m3_tuning(index);
+        tuning.first_color = "#7B61FF";
+        tuning.second_color = "#F7F4EB";
+        return make_m3_hybrid(
+          make_m1_radial(rays), make_m2_slanted_line_grid(lines), tuning);
+      }
+    case 3:
+      {
+        m2_dot_grid_tuning blue;
+        blue.angle = -0.012;
+        family_spec first = make_m2_dot_grid(blue);
+        m2_dot_grid_tuning rose;
+        rose.cell_size = 28.1;
+        rose.angle = 0.018;
+        rose.phase = 0.28;
+        family_spec second = make_m2_dot_grid(rose);
+        m3_hybrid_tuning tuning = m3_tuning(index);
+        tuning.mode = degeneration::interfere;
+        tuning.degeneration_amount
+          = make_m3_degeneration_amount(first.kind, second.kind, tuning.mode);
+        tuning.first_color = "#1C82E1";
+        tuning.second_color = "#EF476F";
+        return make_m3_hybrid(std::move(first), std::move(second), tuning);
+      }
+    case 4:
+      {
+        m2_square_grid_tuning cyan;
+        cyan.angle = -0.018;
+        family_spec first = make_m2_square_grid(cyan);
+        m2_square_grid_tuning white;
+        white.cell_size = 30.5;
+        white.angle = 0.021;
+        white.grid_skew = -0.025;
+        family_spec second = make_m2_square_grid(white);
+        m3_hybrid_tuning tuning = m3_tuning(index);
+        tuning.mode = degeneration::destabilize;
+        tuning.degeneration_amount
+          = make_m3_degeneration_amount(first.kind, second.kind, tuning.mode);
+        tuning.first_color = "#20C9D9";
+        tuning.second_color = "#F7F4EB";
+        return make_m3_hybrid(std::move(first), std::move(second), tuning);
+      }
+    case 5:
+      {
+        m2_negative_positive_tuning blue;
+        blue.grid_skew = 0.08;
+        family_spec first = make_m2_negative_positive(blue);
+        m2_negative_positive_tuning amber;
+        amber.cell_size = 32.6;
+        amber.angle = 0.024;
+        amber.inverted = true;
+        amber.parity = 3;
+        family_spec second = make_m2_negative_positive(amber);
+        m3_hybrid_tuning tuning = m3_tuning(index);
+        tuning.mode = degeneration::glitch;
+        tuning.degeneration_amount
+          = make_m3_degeneration_amount(first.kind, second.kind, tuning.mode);
+        tuning.first_color = "#1557A0";
+        tuning.second_color = "#F5B700";
+        return make_m3_hybrid(std::move(first), std::move(second), tuning);
+      }
+    default:
+      throw std::out_of_range("moire M3 plate index is out of range");
+    }
+}
+
 void
 write_file(const std::filesystem::path& path, const std::string_view contents)
 {
@@ -279,6 +681,30 @@ main(const int argc, char** argv)
           const scene_spec scene = make_scene(index);
           const std::filesystem::path output
             = output_directory / (std::string(plate_names[index]) + ".svg");
+          write_file(output, render_svg(scene));
+          std::cout << output.string() << '\n';
+        }
+      for (std::size_t index = 0; index < m1_plate_names.size(); ++index)
+        {
+          const scene_spec scene = make_m1_scene(index);
+          const std::filesystem::path output
+            = output_directory / (std::string(m1_plate_names[index]) + ".svg");
+          write_file(output, render_svg(scene));
+          std::cout << output.string() << '\n';
+        }
+      for (std::size_t index = 0; index < m2_plate_names.size(); ++index)
+        {
+          const scene_spec scene = make_m2_scene(index);
+          const std::filesystem::path output
+            = output_directory / (std::string(m2_plate_names[index]) + ".svg");
+          write_file(output, render_svg(scene));
+          std::cout << output.string() << '\n';
+        }
+      for (std::size_t index = 0; index < m3_plate_names.size(); ++index)
+        {
+          const scene_spec scene = make_m3_scene(index);
+          const std::filesystem::path output
+            = output_directory / (std::string(m3_plate_names[index]) + ".svg");
           write_file(output, render_svg(scene));
           std::cout << output.string() << '\n';
         }

@@ -1,5 +1,7 @@
 # Audio workflow
 
+Parent workflow: [Workflows](workflows.md).
+
 First-pass index for the Here Lies Trouble audio development workflow. This is
 a pointer index only: nothing was moved, removed, or rewritten. Each entry
 lists where the working material currently lives so future passes can split or
@@ -15,6 +17,7 @@ merge without losing evidence.
 | `docs/audio_workflow/analyze_expand_voice_reference_bank.md` | Reference-bank analysis and expansion |
 | `docs/audio_workflow/tool_higgs.md` | Higgs TTS 2 (high compute; eureka GPU host) |
 | `docs/audio_workflow/tool_meanvc2_kokoro.md` | Low-compute local pass: MeanVC2 transformation + Kokoro target voices |
+| `docs/audio_workflow/annotation_schema.md` | RESPONSE annotations, VAD alignment, MeanVC2 timing notes |
 | `docs/audio_workflow/audio_workflow_experiments.md` | First-pass unclassified material and experiments |
 
 ## Current working material (2026-08-12)
@@ -32,7 +35,8 @@ merge without losing evidence.
   `scripts/generate-hlt-frogtown-v2-higgs-audio.py`,
   `scripts/build-hlt-frogtown-v2-higgs-30s-review.py`,
   `scripts/check-local-audio-auditions.py`,
-  `scripts/check-local-audio-full-episodes.py`.
+  `scripts/check-local-audio-full-episodes.py`,
+  `scripts/check-response-annotations.py`.
 - Evidence: receipts and dyads under `docs/training-conversion/`; failure
   loops under `docs/training-conversion/failure-loops/`; trace under
   `docs/training-conversion/training-conversion-2026-08-08-izzi-futures.trace.jsonl`.

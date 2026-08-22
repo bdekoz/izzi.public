@@ -59,6 +59,8 @@ main(int argc, char* argv[])
       && json["viewport"].Size() == 2)
     doc.viewport = { json["viewport"][0].GetDouble(),
 		     json["viewport"][1].GetDouble() };
+  if (json.HasMember("columns") && json["columns"].IsUint())
+    doc.columns = json["columns"].GetUint();
 
   if (json.HasMember("points") && json["points"].IsArray())
     for (const auto& point : json["points"].GetArray())

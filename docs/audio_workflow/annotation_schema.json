@@ -1,0 +1,94 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "izzi response annotation track (normalized)",
+  "schema_version": "izzi-response-annotation/1",
+  "definitions": {
+    "action": {
+      "type": "object",
+      "required": ["verb"],
+      "properties": {
+        "verb": {
+          "type": "string",
+          "enum": [
+            "snort",
+            "pause",
+            "sniff a flower",
+            "watch a butterfly",
+            "look at animal"
+          ]
+        },
+        "name": {
+          "type": ["string", "null"],
+          "pattern": "^[a-z0-9-]+$"
+        }
+      },
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": {
+            "properties": {"verb": {"const": "look at animal"}},
+            "required": ["verb"]
+          },
+          "then": {
+            "required": ["name"],
+            "properties": {"name": {"type": "string"}}
+          }
+        },
+        {
+          "if": {
+            "properties": {"verb": {"const": "look at animal"}},
+            "required": ["verb"]
+          },
+          "else": {
+            "properties": {"name": {"const": null}}
+          }
+        }
+      ]
+    },
+    "annotation": {
+      "type": "object",
+      "required": [
+        "ordinal",
+        "action",
+        "begin_s",
+        "end_s",
+        "transcript_line",
+        "vad_window_index"
+      ],
+      "properties": {
+        "ordinal": {"type": "integer", "minimum": 1},
+        "action": {"$ref": "#/definitions/action"},
+        "begin_s": {"type": "number", "minimum": 0},
+        "end_s": {"type": ["number", "null"]},
+        "transcript_line": {"type": "string"},
+        "vad_window_index": {"type": ["integer", "null"], "minimum": 0},
+        "note": {"type": ["string", "null"], "maxLength": 500}
+      },
+      "additionalProperties": false
+    },
+    "vad_window": {
+      "type": "object",
+      "required": ["index", "begin_s", "end_s"],
+      "properties": {
+        "index": {"type": "integer", "minimum": 0},
+        "begin_s": {"type": "number", "minimum": 0},
+        "end_s": {"type": "number"},
+        "speech": {"type": ["boolean", "null"]}
+      },
+      "additionalProperties": false
+    }
+  },
+  "type": "object",
+  "required": ["schema_version", "transcript", "annotations"],
+  "properties": {
+    "schema_version": {"const": "izzi-response-annotation/1"},
+    "transcript": {"type": "string"},
+    "source_transcript_sha256": {
+      "type": ["string", "null"],
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "annotations": {"type": "array", "items": {"$ref": "#/definitions/annotation"}},
+    "vad_windows": {"type": "array", "items": {"$ref": "#/definitions/vad_window"}}
+  },
+  "additionalProperties": false
+}

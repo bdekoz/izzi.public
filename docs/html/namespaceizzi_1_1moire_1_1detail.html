@@ -87,6 +87,7 @@ $(function() {
 Functions</h2></td></tr>
 <tr class="memitem:a645c0bfdf1b47b71ef5c51dcaa50db13" id="r_a645c0bfdf1b47b71ef5c51dcaa50db13"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a645c0bfdf1b47b71ef5c51dcaa50db13">require</a> (const bool condition, const std::string &amp;message)</td></tr>
 <tr class="memitem:a927a4963b9df73479d143944e09e9318" id="r_a927a4963b9df73479d143944e09e9318"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a927a4963b9df73479d143944e09e9318">finite</a> (const <a class="el" href="structizzi_1_1moire_1_1point.html">point</a> value)</td></tr>
+<tr class="memitem:afe5c294af12c63481817df0ef84c1dcc" id="r_afe5c294af12c63481817df0ef84c1dcc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afe5c294af12c63481817df0ef84c1dcc">valid_field_kind</a> (const <a class="el" href="namespaceizzi_1_1moire.html#a67c49399b049f3992965b077f9f7624b">field_kind</a> value)</td></tr>
 <tr class="memitem:ab17f2d33f97e8579d4be76595fe7e693" id="r_ab17f2d33f97e8579d4be76595fe7e693"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab17f2d33f97e8579d4be76595fe7e693">valid_id</a> (const std::string_view value)</td></tr>
 <tr class="memitem:ad1c6073842a50706a6ae1c427046d3bb" id="r_ad1c6073842a50706a6ae1c427046d3bb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad1c6073842a50706a6ae1c427046d3bb">valid_color</a> (const std::string_view value)</td></tr>
 <tr class="memitem:a78ca978fdf984d18d33f0154524e8c5c" id="r_a78ca978fdf984d18d33f0154524e8c5c"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a78ca978fdf984d18d33f0154524e8c5c">checked_add</a> (const std::size_t left, const std::size_t right, const std::string_view context)</td></tr>
@@ -96,10 +97,22 @@ Functions</h2></td></tr>
 <tr class="memitem:a35ba76ed65d04731bb786d94973bd4ba" id="r_a35ba76ed65d04731bb786d94973bd4ba"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a35ba76ed65d04731bb786d94973bd4ba">escape_xml</a> (const std::string_view value)</td></tr>
 <tr class="memitem:a9d8bca75c32bc27878aac3316ebe2701" id="r_a9d8bca75c32bc27878aac3316ebe2701"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9d8bca75c32bc27878aac3316ebe2701">format_number</a> (double value)</td></tr>
 <tr class="memitem:a551f7338548adb7c6a79abe40ac0a541" id="r_a551f7338548adb7c6a79abe40ac0a541"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structizzi_1_1moire_1_1point.html">point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a551f7338548adb7c6a79abe40ac0a541">distort</a> (<a class="el" href="structizzi_1_1moire_1_1point.html">point</a> value, const <a class="el" href="structizzi_1_1moire_1_1scene__spec.html">scene_spec</a> &amp;scene, const <a class="el" href="structizzi_1_1moire_1_1family__spec.html">family_spec</a> &amp;family, const std::size_t line_index, const std::size_t sample_index, const double progress)</td></tr>
+<tr class="memitem:a8f0622eefba14a5ff026285a4746a40e" id="r_a8f0622eefba14a5ff026285a4746a40e"><td class="memItemLeft" align="right" valign="top">std::pair&lt; std::size_t, std::size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8f0622eefba14a5ff026285a4746a40e">grid_dimensions</a> (const <a class="el" href="structizzi_1_1moire_1_1scene__spec.html">scene_spec</a> &amp;scene, const <a class="el" href="structizzi_1_1moire_1_1family__spec.html">family_spec</a> &amp;family)</td></tr>
+<tr class="memitem:a29a61e3373e5f46f1df4cfd1537a7fbe" id="r_a29a61e3373e5f46f1df4cfd1537a7fbe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structizzi_1_1moire_1_1point.html">point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a29a61e3373e5f46f1df4cfd1537a7fbe">grid_center</a> (const <a class="el" href="structizzi_1_1moire_1_1scene__spec.html">scene_spec</a> &amp;scene, const <a class="el" href="structizzi_1_1moire_1_1family__spec.html">family_spec</a> &amp;family, const std::size_t cell_index)</td></tr>
 <tr class="memitem:a1ea603ea7eb8b92601edf9288734d535" id="r_a1ea603ea7eb8b92601edf9288734d535"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceizzi_1_1moire.html#a75c31cf09cfa0e4652b349d1f279e5b9">path</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1ea603ea7eb8b92601edf9288734d535">sample_linear</a> (const <a class="el" href="structizzi_1_1moire_1_1scene__spec.html">scene_spec</a> &amp;scene, const <a class="el" href="structizzi_1_1moire_1_1family__spec.html">family_spec</a> &amp;family, const std::size_t line_index)</td></tr>
 <tr class="memitem:a2d0381da0b9cd4edd86e37147f39deca" id="r_a2d0381da0b9cd4edd86e37147f39deca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceizzi_1_1moire.html#a75c31cf09cfa0e4652b349d1f279e5b9">path</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2d0381da0b9cd4edd86e37147f39deca">sample_concentric</a> (const <a class="el" href="structizzi_1_1moire_1_1scene__spec.html">scene_spec</a> &amp;scene, const <a class="el" href="structizzi_1_1moire_1_1family__spec.html">family_spec</a> &amp;family, const std::size_t line_index)</td></tr>
 <tr class="memitem:ad9cec99f4532352daf7feb3487e6e5e8" id="r_ad9cec99f4532352daf7feb3487e6e5e8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceizzi_1_1moire.html#a75c31cf09cfa0e4652b349d1f279e5b9">path</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad9cec99f4532352daf7feb3487e6e5e8">sample_radial</a> (const <a class="el" href="structizzi_1_1moire_1_1scene__spec.html">scene_spec</a> &amp;scene, const <a class="el" href="structizzi_1_1moire_1_1family__spec.html">family_spec</a> &amp;family, const std::size_t line_index)</td></tr>
+<tr class="memitem:a77b41c216ed801640d2ac166b9d83564" id="r_a77b41c216ed801640d2ac166b9d83564"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceizzi_1_1moire.html#a75c31cf09cfa0e4652b349d1f279e5b9">path</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a77b41c216ed801640d2ac166b9d83564">sample_dot_grid</a> (const <a class="el" href="structizzi_1_1moire_1_1scene__spec.html">scene_spec</a> &amp;scene, const <a class="el" href="structizzi_1_1moire_1_1family__spec.html">family_spec</a> &amp;family, const std::size_t line_index)</td></tr>
+<tr class="memitem:af0613775c75cd9c391e9b214408d7c8c" id="r_af0613775c75cd9c391e9b214408d7c8c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceizzi_1_1moire.html#a75c31cf09cfa0e4652b349d1f279e5b9">path</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af0613775c75cd9c391e9b214408d7c8c">sample_negative_positive</a> (const <a class="el" href="structizzi_1_1moire_1_1scene__spec.html">scene_spec</a> &amp;scene, const <a class="el" href="structizzi_1_1moire_1_1family__spec.html">family_spec</a> &amp;family, const std::size_t line_index)</td></tr>
+<tr class="memitem:aa06eabba5faba0e407794c532466a525" id="r_aa06eabba5faba0e407794c532466a525"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceizzi_1_1moire.html#a75c31cf09cfa0e4652b349d1f279e5b9">path</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa06eabba5faba0e407794c532466a525">sample_square_grid</a> (const <a class="el" href="structizzi_1_1moire_1_1scene__spec.html">scene_spec</a> &amp;scene, const <a class="el" href="structizzi_1_1moire_1_1family__spec.html">family_spec</a> &amp;family, const std::size_t line_index)</td></tr>
+<tr class="memitem:a4fc8428ffea30413421810679e72edf5" id="r_a4fc8428ffea30413421810679e72edf5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceizzi_1_1moire.html#a75c31cf09cfa0e4652b349d1f279e5b9">path</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4fc8428ffea30413421810679e72edf5">sample_slanted_line_grid</a> (const <a class="el" href="structizzi_1_1moire_1_1scene__spec.html">scene_spec</a> &amp;scene, const <a class="el" href="structizzi_1_1moire_1_1family__spec.html">family_spec</a> &amp;family, const std::size_t line_index)</td></tr>
+<tr class="memitem:a64ea14437dd6bd63e89beb01f9c98dcb" id="r_a64ea14437dd6bd63e89beb01f9c98dcb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceizzi_1_1moire.html#a75c31cf09cfa0e4652b349d1f279e5b9">path</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a64ea14437dd6bd63e89beb01f9c98dcb">sample_rotated_line_grid</a> (const <a class="el" href="structizzi_1_1moire_1_1scene__spec.html">scene_spec</a> &amp;scene, const <a class="el" href="structizzi_1_1moire_1_1family__spec.html">family_spec</a> &amp;family, const std::size_t line_index)</td></tr>
+<tr class="memitem:a977e7b63fa2e242c7a3291f676fd086b" id="r_a977e7b63fa2e242c7a3291f676fd086b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceizzi_1_1moire.html#a75c31cf09cfa0e4652b349d1f279e5b9">path</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a977e7b63fa2e242c7a3291f676fd086b">sample_variable_grid</a> (const <a class="el" href="structizzi_1_1moire_1_1scene__spec.html">scene_spec</a> &amp;scene, const <a class="el" href="structizzi_1_1moire_1_1family__spec.html">family_spec</a> &amp;family, const std::size_t line_index)</td></tr>
 <tr class="memitem:a269eef3ddd3b1e3bcd28873589e1c255" id="r_a269eef3ddd3b1e3bcd28873589e1c255"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceizzi_1_1moire.html#a75c31cf09cfa0e4652b349d1f279e5b9">path</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a269eef3ddd3b1e3bcd28873589e1c255">sample</a> (const <a class="el" href="structizzi_1_1moire_1_1scene__spec.html">scene_spec</a> &amp;scene, const <a class="el" href="structizzi_1_1moire_1_1family__spec.html">family_spec</a> &amp;family, const std::size_t line_index)</td></tr>
+<tr class="memitem:a8149e20b948c939c83bbcf10989893af" id="r_a8149e20b948c939c83bbcf10989893af"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8149e20b948c939c83bbcf10989893af">points_per_path</a> (const <a class="el" href="structizzi_1_1moire_1_1family__spec.html">family_spec</a> &amp;family)</td></tr>
+<tr class="memitem:a9b8a253090cecfdafcc0497931149e9c" id="r_a9b8a253090cecfdafcc0497931149e9c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9b8a253090cecfdafcc0497931149e9c">closed_field</a> (const <a class="el" href="namespaceizzi_1_1moire.html#a67c49399b049f3992965b077f9f7624b">field_kind</a> kind)</td></tr>
+<tr class="memitem:a17a2dbe26ee1dcf564212f1bd7ff47dd" id="r_a17a2dbe26ee1dcf564212f1bd7ff47dd"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a17a2dbe26ee1dcf564212f1bd7ff47dd">beat_spacing</a> (const <a class="el" href="structizzi_1_1moire_1_1family__spec.html">family_spec</a> &amp;family)</td></tr>
+<tr class="memitem:acfbd07b6194bbe57e8cd4898a3c16797" id="r_acfbd07b6194bbe57e8cd4898a3c16797"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acfbd07b6194bbe57e8cd4898a3c16797">beat_angle</a> (const <a class="el" href="structizzi_1_1moire_1_1family__spec.html">family_spec</a> &amp;family)</td></tr>
 <tr class="memitem:a70f43b523ba469530a8bbc5752c85957" id="r_a70f43b523ba469530a8bbc5752c85957"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a70f43b523ba469530a8bbc5752c85957">beat_period</a> (const <a class="el" href="structizzi_1_1moire_1_1family__spec.html">family_spec</a> &amp;left, const <a class="el" href="structizzi_1_1moire_1_1family__spec.html">family_spec</a> &amp;right)</td></tr>
 <tr class="memitem:ac725882c8118e0be9ca20c403dfa52a0" id="r_ac725882c8118e0be9ca20c403dfa52a0"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac725882c8118e0be9ca20c403dfa52a0">path_data</a> (const <a class="el" href="structizzi_1_1moire_1_1resolved__path.html">resolved_path</a> &amp;value)</td></tr>
 </table>
@@ -146,6 +159,31 @@ Functions</h2></td></tr>
           <td class="memname">bool izzi::moire::detail::finite </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="structizzi_1_1moire_1_1point.html">point</a></td>          <td class="paramname"><span class="paramname"><em>value</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afe5c294af12c63481817df0ef84c1dcc" name="afe5c294af12c63481817df0ef84c1dcc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe5c294af12c63481817df0ef84c1dcc">&#9670;&#160;</a></span>valid_field_kind()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool izzi::moire::detail::valid_field_kind </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespaceizzi_1_1moire.html#a67c49399b049f3992965b077f9f7624b">field_kind</a></td>          <td class="paramname"><span class="paramname"><em>value</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -437,6 +475,75 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a8f0622eefba14a5ff026285a4746a40e" name="a8f0622eefba14a5ff026285a4746a40e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f0622eefba14a5ff026285a4746a40e">&#9670;&#160;</a></span>grid_dimensions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::pair&lt; std::size_t, std::size_t &gt; izzi::moire::detail::grid_dimensions </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structizzi_1_1moire_1_1scene__spec.html">scene_spec</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>scene</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structizzi_1_1moire_1_1family__spec.html">family_spec</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>family</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a29a61e3373e5f46f1df4cfd1537a7fbe" name="a29a61e3373e5f46f1df4cfd1537a7fbe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29a61e3373e5f46f1df4cfd1537a7fbe">&#9670;&#160;</a></span>grid_center()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structizzi_1_1moire_1_1point.html">point</a> izzi::moire::detail::grid_center </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structizzi_1_1moire_1_1scene__spec.html">scene_spec</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>scene</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structizzi_1_1moire_1_1family__spec.html">family_spec</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>family</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::size_t</td>          <td class="paramname"><span class="paramname"><em>cell_index</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div id="dynsection-2" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="namespaceizzi_1_1moire_1_1detail_a29a61e3373e5f46f1df4cfd1537a7fbe_cgraph.svg" width="294" height="48"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
 <a id="a1ea603ea7eb8b92601edf9288734d535" name="a1ea603ea7eb8b92601edf9288734d535"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1ea603ea7eb8b92601edf9288734d535">&#9670;&#160;</a></span>sample_linear()</h2>
 
@@ -468,10 +575,10 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<div id="dynsection-2" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-3" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="namespaceizzi_1_1moire_1_1detail_a1ea603ea7eb8b92601edf9288734d535_cgraph.svg" width="663" height="48"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
@@ -508,10 +615,10 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<div id="dynsection-3" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-4" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="namespaceizzi_1_1moire_1_1detail_a2d0381da0b9cd4edd86e37147f39deca_cgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
@@ -548,11 +655,251 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<div id="dynsection-4" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-5" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="namespaceizzi_1_1moire_1_1detail_ad9cec99f4532352daf7feb3487e6e5e8_cgraph.svg" width="663" height="48"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a77b41c216ed801640d2ac166b9d83564" name="a77b41c216ed801640d2ac166b9d83564"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77b41c216ed801640d2ac166b9d83564">&#9670;&#160;</a></span>sample_dot_grid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceizzi_1_1moire.html#a75c31cf09cfa0e4652b349d1f279e5b9">path</a> izzi::moire::detail::sample_dot_grid </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structizzi_1_1moire_1_1scene__spec.html">scene_spec</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>scene</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structizzi_1_1moire_1_1family__spec.html">family_spec</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>family</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::size_t</td>          <td class="paramname"><span class="paramname"><em>line_index</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div id="dynsection-6" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="namespaceizzi_1_1moire_1_1detail_a77b41c216ed801640d2ac166b9d83564_cgraph.svg" width="666" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="af0613775c75cd9c391e9b214408d7c8c" name="af0613775c75cd9c391e9b214408d7c8c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0613775c75cd9c391e9b214408d7c8c">&#9670;&#160;</a></span>sample_negative_positive()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceizzi_1_1moire.html#a75c31cf09cfa0e4652b349d1f279e5b9">path</a> izzi::moire::detail::sample_negative_positive </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structizzi_1_1moire_1_1scene__spec.html">scene_spec</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>scene</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structizzi_1_1moire_1_1family__spec.html">family_spec</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>family</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::size_t</td>          <td class="paramname"><span class="paramname"><em>line_index</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div id="dynsection-7" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="namespaceizzi_1_1moire_1_1detail_af0613775c75cd9c391e9b214408d7c8c_cgraph.svg" width="100%" height="420"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="aa06eabba5faba0e407794c532466a525" name="aa06eabba5faba0e407794c532466a525"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa06eabba5faba0e407794c532466a525">&#9670;&#160;</a></span>sample_square_grid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceizzi_1_1moire.html#a75c31cf09cfa0e4652b349d1f279e5b9">path</a> izzi::moire::detail::sample_square_grid </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structizzi_1_1moire_1_1scene__spec.html">scene_spec</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>scene</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structizzi_1_1moire_1_1family__spec.html">family_spec</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>family</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::size_t</td>          <td class="paramname"><span class="paramname"><em>line_index</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div id="dynsection-8" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-8-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="namespaceizzi_1_1moire_1_1detail_aa06eabba5faba0e407794c532466a525_cgraph.svg" width="100%" height="382"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a4fc8428ffea30413421810679e72edf5" name="a4fc8428ffea30413421810679e72edf5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4fc8428ffea30413421810679e72edf5">&#9670;&#160;</a></span>sample_slanted_line_grid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceizzi_1_1moire.html#a75c31cf09cfa0e4652b349d1f279e5b9">path</a> izzi::moire::detail::sample_slanted_line_grid </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structizzi_1_1moire_1_1scene__spec.html">scene_spec</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>scene</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structizzi_1_1moire_1_1family__spec.html">family_spec</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>family</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::size_t</td>          <td class="paramname"><span class="paramname"><em>line_index</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div id="dynsection-9" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-9-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="namespaceizzi_1_1moire_1_1detail_a4fc8428ffea30413421810679e72edf5_cgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a64ea14437dd6bd63e89beb01f9c98dcb" name="a64ea14437dd6bd63e89beb01f9c98dcb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64ea14437dd6bd63e89beb01f9c98dcb">&#9670;&#160;</a></span>sample_rotated_line_grid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceizzi_1_1moire.html#a75c31cf09cfa0e4652b349d1f279e5b9">path</a> izzi::moire::detail::sample_rotated_line_grid </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structizzi_1_1moire_1_1scene__spec.html">scene_spec</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>scene</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structizzi_1_1moire_1_1family__spec.html">family_spec</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>family</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::size_t</td>          <td class="paramname"><span class="paramname"><em>line_index</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div id="dynsection-10" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-10-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="namespaceizzi_1_1moire_1_1detail_a64ea14437dd6bd63e89beb01f9c98dcb_cgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a977e7b63fa2e242c7a3291f676fd086b" name="a977e7b63fa2e242c7a3291f676fd086b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a977e7b63fa2e242c7a3291f676fd086b">&#9670;&#160;</a></span>sample_variable_grid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceizzi_1_1moire.html#a75c31cf09cfa0e4652b349d1f279e5b9">path</a> izzi::moire::detail::sample_variable_grid </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structizzi_1_1moire_1_1scene__spec.html">scene_spec</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>scene</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structizzi_1_1moire_1_1family__spec.html">family_spec</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>family</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::size_t</td>          <td class="paramname"><span class="paramname"><em>line_index</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div id="dynsection-11" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-11-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="namespaceizzi_1_1moire_1_1detail_a977e7b63fa2e242c7a3291f676fd086b_cgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
 </div>
@@ -588,12 +935,112 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<div id="dynsection-5" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-12" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="namespaceizzi_1_1moire_1_1detail_a269eef3ddd3b1e3bcd28873589e1c255_cgraph.svg" width="100%" height="428"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div id="dynsection-12-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="namespaceizzi_1_1moire_1_1detail_a269eef3ddd3b1e3bcd28873589e1c255_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
+
+</div>
+</div>
+<a id="a8149e20b948c939c83bbcf10989893af" name="a8149e20b948c939c83bbcf10989893af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8149e20b948c939c83bbcf10989893af">&#9670;&#160;</a></span>points_per_path()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::size_t izzi::moire::detail::points_per_path </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structizzi_1_1moire_1_1family__spec.html">family_spec</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>family</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9b8a253090cecfdafcc0497931149e9c" name="a9b8a253090cecfdafcc0497931149e9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b8a253090cecfdafcc0497931149e9c">&#9670;&#160;</a></span>closed_field()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool izzi::moire::detail::closed_field </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespaceizzi_1_1moire.html#a67c49399b049f3992965b077f9f7624b">field_kind</a></td>          <td class="paramname"><span class="paramname"><em>kind</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a17a2dbe26ee1dcf564212f1bd7ff47dd" name="a17a2dbe26ee1dcf564212f1bd7ff47dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17a2dbe26ee1dcf564212f1bd7ff47dd">&#9670;&#160;</a></span>beat_spacing()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double izzi::moire::detail::beat_spacing </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structizzi_1_1moire_1_1family__spec.html">family_spec</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>family</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acfbd07b6194bbe57e8cd4898a3c16797" name="acfbd07b6194bbe57e8cd4898a3c16797"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acfbd07b6194bbe57e8cd4898a3c16797">&#9670;&#160;</a></span>beat_angle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double izzi::moire::detail::beat_angle </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structizzi_1_1moire_1_1family__spec.html">family_spec</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>family</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -623,6 +1070,12 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<div id="dynsection-13" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-13-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="namespaceizzi_1_1moire_1_1detail_a70f43b523ba469530a8bbc5752c85957_cgraph.svg" width="292" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
 
 </div>
 </div>
@@ -648,10 +1101,10 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<div id="dynsection-6" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
-<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-14" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div id="dynsection-14-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="namespaceizzi_1_1moire_1_1detail_ac725882c8118e0be9ca20c403dfa52a0_cgraph.svg" width="292" height="48"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 

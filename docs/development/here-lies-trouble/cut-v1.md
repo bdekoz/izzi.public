@@ -10,7 +10,7 @@ with a three-episode pilot, then estimates time and Seedance credit spend for
 the full corpus. It supersedes
 [`explore_futures_here_lies_trouble_full_vertical.20260812.md`](full-vertical.md)
 for current planning; the resume pointer is
-[`explore_futures.20260812.restart_here.md`](../sessions/explore_futures.20260812.restart_here.md).
+[`20260812.restart_here.md`](../sessions/20260812.restart_here.md).
 
 ## Corpus definition
 
@@ -410,7 +410,7 @@ any provider spend.
 
 ## Evidence anchors
 
-- Resume pointer: `docs/development/sessions/explore_futures.20260812.restart_here.md`
+- Resume pointer: `docs/development/sessions/20260812.restart_here.md`
 - Full-vertical arc: `docs/development/here-lies-trouble/full-vertical.md`
 - Audio workflow: `docs/audio_workflow.md` + `docs/audio_workflow/`
 - Higgs: `docs/audio_workflow/tool_higgs.md`, `docs/development/seedance/audio-higgs.md`

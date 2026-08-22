@@ -1,9 +1,25 @@
 var searchData=
 [
-  ['object_5felement_0',['object_element',['../group__elements.html#structsvg_1_1object__element',1,'svg']]],
-  ['orbit_5fitem_1',['orbit_item',['../structsvg_1_1graph_1_1orbit__item.html',1,'svg::graph']]],
-  ['ornament_5festimate_2',['ornament_estimate',['../structizzi_1_1guilloche_1_1detail_1_1ornament__estimate.html',1,'izzi::guilloche::detail']]],
-  ['ornamented_5finscription_5fspec_3',['ornamented_inscription_spec',['../structizzi_1_1guilloche_1_1ornamented__inscription__spec.html',1,'izzi::guilloche']]],
-  ['ostringstream_4',['ostringstream',['../classsvg_1_1ostringstream.html',1,'svg']]],
-  ['output_5frequest_5',['output_request',['../structsvg_1_1graph_1_1output__request.html',1,'svg::graph']]]
+  ['m1_5fconcentric_5ftuning_0',['m1_concentric_tuning',['../structizzi_1_1moire_1_1m1__concentric__tuning.html',1,'izzi::moire']]],
+  ['m1_5fdegeneration_5ftuning_1',['m1_degeneration_tuning',['../structizzi_1_1moire_1_1m1__degeneration__tuning.html',1,'izzi::moire']]],
+  ['m1_5flinear_5ftuning_2',['m1_linear_tuning',['../structizzi_1_1moire_1_1m1__linear__tuning.html',1,'izzi::moire']]],
+  ['m1_5fradial_5ftuning_3',['m1_radial_tuning',['../structizzi_1_1moire_1_1m1__radial__tuning.html',1,'izzi::moire']]],
+  ['m2_5fdot_5fgrid_5ftuning_4',['m2_dot_grid_tuning',['../structizzi_1_1moire_1_1m2__dot__grid__tuning.html',1,'izzi::moire']]],
+  ['m2_5fnegative_5fpositive_5ftuning_5',['m2_negative_positive_tuning',['../structizzi_1_1moire_1_1m2__negative__positive__tuning.html',1,'izzi::moire']]],
+  ['m2_5frotated_5fline_5fgrid_5ftuning_6',['m2_rotated_line_grid_tuning',['../structizzi_1_1moire_1_1m2__rotated__line__grid__tuning.html',1,'izzi::moire']]],
+  ['m2_5fslanted_5fline_5fgrid_5ftuning_7',['m2_slanted_line_grid_tuning',['../structizzi_1_1moire_1_1m2__slanted__line__grid__tuning.html',1,'izzi::moire']]],
+  ['m2_5fsquare_5fgrid_5ftuning_8',['m2_square_grid_tuning',['../structizzi_1_1moire_1_1m2__square__grid__tuning.html',1,'izzi::moire']]],
+  ['m2_5fvariable_5fgrid_5ftuning_9',['m2_variable_grid_tuning',['../structizzi_1_1moire_1_1m2__variable__grid__tuning.html',1,'izzi::moire']]],
+  ['m3_5fdegeneration_5ftuning_10',['m3_degeneration_tuning',['../structizzi_1_1moire_1_1m3__degeneration__tuning.html',1,'izzi::moire']]],
+  ['m3_5fhybrid_5ftuning_11',['m3_hybrid_tuning',['../structizzi_1_1moire_1_1m3__hybrid__tuning.html',1,'izzi::moire']]],
+  ['marker_5felement_12',['marker_element',['../group__elements.html#structsvg_1_1marker__element',1,'svg']]],
+  ['medallion_5fspec_13',['medallion_spec',['../structizzi_1_1guilloche_1_1medallion__spec.html',1,'izzi::guilloche']]],
+  ['modulation_5fspec_14',['modulation_spec',['../structizzi_1_1guilloche_1_1modulation__spec.html',1,'izzi::guilloche']]],
+  ['motif_5fconfig_15',['motif_config',['../structsvg_1_1hamonshu_1_1motif__config.html',1,'svg::hamonshu']]],
+  ['motif_5fspec_16',['motif_spec',['../structizzi_1_1keyframes_1_1motif__spec.html',1,'izzi::keyframes']]],
+  ['motion_5fspec_17',['motion_spec',['../structizzi_1_1guilloche_1_1motion__spec.html',1,'izzi::guilloche']]],
+  ['movement_5fdocument_18',['movement_document',['../structsvg_1_1movement__document.html',1,'svg']]],
+  ['movement_5fpath_19',['movement_path',['../structsvg_1_1movement__path.html',1,'svg']]],
+  ['movement_5fsegment_20',['movement_segment',['../structsvg_1_1movement__segment.html',1,'svg']]],
+  ['multicolor_5fline_5fspec_21',['multicolor_line_spec',['../structizzi_1_1guilloche_1_1multicolor__line__spec.html',1,'izzi::guilloche']]]
 ];

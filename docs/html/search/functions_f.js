@@ -24,9 +24,11 @@ var searchData=
   ['point_5fcluster_21',['point_cluster',['../classpoint__cluster.html#af4a36e95bbd7544175c3811f94e243c5',1,'point_cluster']]],
   ['point_5fto_5fring_5fhalo_22',['point_to_ring_halo',['../namespacesvg.html#a05ce09ad64d647467f52dcbebeb0c6ac',1,'svg']]],
   ['pointer_5ftoken_23',['pointer_token',['../namespacesvg_1_1graph_1_1json__detail.html#a72aecd92996018a49e3566b2294d07d9',1,'svg::graph::json_detail']]],
-  ['points_5fto_5fvrangenamed_24',['points_to_vrangenamed',['../namespacesvg.html#ae317364014df49ea84470872b1bf7f8c',1,'svg']]],
-  ['polar_5fpoint_25',['polar_point',['../namespacesvg_1_1graph_1_1detail.html#a0b073c153aeee30ab04c62ccf383b746',1,'svg::graph::detail']]],
-  ['polyline_5felement_26',['polyline_element',['../group__elements.html#a1b904a9214dce89842d72d3f3aa8ba42',1,'svg::polyline_element::polyline_element()'],['../group__elements.html#afb4492854c3c25ee742d69ea4425abd4',1,'svg::polyline_element::polyline_element(const vrange &amp;points)']]],
-  ['print_5fclusters_27',['print_clusters',['../izzi-points-cluster_8h.html#a9f401c071d7d27427359269de8720449',1,'izzi-points-cluster.h']]],
-  ['project_5fradial_28',['project_radial',['../namespaceizzi_1_1graph_1_1detail.html#a63f9dd57128cb0ee50a1a3403b91a924',1,'izzi::graph::detail']]]
+  ['points_5fper_5fpath_24',['points_per_path',['../namespaceizzi_1_1moire_1_1detail.html#a8149e20b948c939c83bbcf10989893af',1,'izzi::moire::detail']]],
+  ['points_5fto_5fvrangenamed_25',['points_to_vrangenamed',['../namespacesvg.html#ae317364014df49ea84470872b1bf7f8c',1,'svg']]],
+  ['polar_26',['polar',['../namespaceizzi_1_1keyframes_1_1detail.html#ad0990d7dd441c9e8b8298716929cb808',1,'izzi::keyframes::detail']]],
+  ['polar_5fpoint_27',['polar_point',['../namespacesvg_1_1graph_1_1detail.html#a0b073c153aeee30ab04c62ccf383b746',1,'svg::graph::detail']]],
+  ['polyline_5felement_28',['polyline_element',['../group__elements.html#a1b904a9214dce89842d72d3f3aa8ba42',1,'svg::polyline_element::polyline_element()'],['../group__elements.html#afb4492854c3c25ee742d69ea4425abd4',1,'svg::polyline_element::polyline_element(const vrange &amp;points)']]],
+  ['print_5fclusters_29',['print_clusters',['../izzi-points-cluster_8h.html#a9f401c071d7d27427359269de8720449',1,'izzi-points-cluster.h']]],
+  ['project_5fradial_30',['project_radial',['../namespaceizzi_1_1graph_1_1detail.html#a63f9dd57128cb0ee50a1a3403b91a924',1,'izzi::graph::detail']]]
 ];

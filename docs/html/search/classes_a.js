@@ -1,12 +1,11 @@
 var searchData=
 [
-  ['marker_5felement_0',['marker_element',['../group__elements.html#structsvg_1_1marker__element',1,'svg']]],
-  ['medallion_5fspec_1',['medallion_spec',['../structizzi_1_1guilloche_1_1medallion__spec.html',1,'izzi::guilloche']]],
-  ['modulation_5fspec_2',['modulation_spec',['../structizzi_1_1guilloche_1_1modulation__spec.html',1,'izzi::guilloche']]],
-  ['motif_5fconfig_3',['motif_config',['../structsvg_1_1hamonshu_1_1motif__config.html',1,'svg::hamonshu']]],
-  ['motion_5fspec_4',['motion_spec',['../structizzi_1_1guilloche_1_1motion__spec.html',1,'izzi::guilloche']]],
-  ['movement_5fdocument_5',['movement_document',['../structsvg_1_1movement__document.html',1,'svg']]],
-  ['movement_5fpath_6',['movement_path',['../structsvg_1_1movement__path.html',1,'svg']]],
-  ['movement_5fsegment_7',['movement_segment',['../structsvg_1_1movement__segment.html',1,'svg']]],
-  ['multicolor_5fline_5fspec_8',['multicolor_line_spec',['../structizzi_1_1guilloche_1_1multicolor__line__spec.html',1,'izzi::guilloche']]]
+  ['latent_5fimage_5fspec_0',['latent_image_spec',['../structizzi_1_1guilloche_1_1latent__image__spec.html',1,'izzi::guilloche']]],
+  ['layer_5fspec_1',['layer_spec',['../structizzi_1_1moire_1_1layer__spec.html',1,'izzi::moire']]],
+  ['layout_5fresult_2',['layout_result',['../structsvg_1_1graph_1_1layout__result.html',1,'svg::graph']]],
+  ['line_5felement_3',['line_element',['../group__elements.html#structsvg_1_1line__element',1,'svg']]],
+  ['linear_5fchord_5fspec_4',['linear_chord_spec',['../structsvg_1_1graph_1_1linear__chord__spec.html',1,'svg::graph']]],
+  ['linear_5fgradient_5',['linear_gradient',['../group__elements.html#structsvg_1_1linear__gradient',1,'svg']]],
+  ['link_5felement_6',['link_element',['../group__elements.html#structsvg_1_1link__element',1,'svg']]],
+  ['lissajous_5fspec_7',['lissajous_spec',['../structizzi_1_1guilloche_1_1lissajous__spec.html',1,'izzi::guilloche']]]
 ];

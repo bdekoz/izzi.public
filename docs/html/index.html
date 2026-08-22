@@ -81,6 +81,14 @@ $(function() {
 <p>It supports graphing, cartography, generative design, generative art, scientific documentation, visual thinking, and artifact generation for large-format inkjet prints, multi-channel animation, vertical video, and web workflows.</p>
 <p><b>DOCUMENTATION</b></p>
 <ul>
+<li><b>Intro</b><ul>
+<li>Prerequisites</li>
+<li>Building and testing</li>
+<li>Installing and consuming</li>
+<li>Typed graph boundary</li>
+<li>Using</li>
+</ul>
+</li>
 <li><b>API reference:</b> <a href="https://bdekoz.github.io/izzi.public/docs/html/">Doxygen</a></li>
 <li><b>Generative families</b><ul>
 <li><a href="https://bdekoz.github.io/izzi.public/docs/generative_patterns.html">Pattern</a> — hamonshu, guilloche, moire, surface tension, radial, damped harmonograph, grignani, roulette</li>
@@ -90,13 +98,14 @@ $(function() {
 </ul>
 </li>
 <li><b>Workflows</b><ul>
+<li>Workflows</li>
 <li><a href="https://bdekoz.github.io/izzi.public/docs/visual_workflow/">Visual</a></li>
 <li><a href="https://bdekoz.github.io/izzi.public/docs/audio_workflow/">Audio</a></li>
 </ul>
 </li>
 <li><a href="https://situationshipin.space/review/izzi-generation-20260814/">Examples</a></li>
 </ul>
-<p><b>PREREQUISITES</b></p>
+<h1>PREREQUISITES</h1>
 <p>Development and use is hosted on top-of-tree Linux. At the moment, this means Fedora 41 or Alma 9 operating systems on multi-core x86_64 hardware.</p>
 <p>Some familiarity with Linux, contemporary C++20, and SVG is assumed.</p>
 <p><b>Text / subtitle / OCR machinery</b> (used by the time-to-die vertical and the subtitle capability):</p>
@@ -106,7 +115,7 @@ $(function() {
 <li><span class="tt">python3</span> (stdlib) and <span class="tt">node</span> — OCR orchestration and subtitle serialization helpers.</li>
 <li>Atkinson Hyperlegible fonts installed locally (<span class="tt">/home/bkoz/.fonts/atkinson_hyperlegible.2026/</span>) for legible subtitle and label rendering.</li>
 </ul>
-<p><b>BUILDING AND TESTING</b></p>
+<h1>BUILDING AND TESTING</h1>
 <p>The library target is <span class="tt">izzi::izzi</span>. The canonical entry points are the Makefile wrappers:</p>
 <div class="fragment"><div class="line">make configure          # cmake -S . -B build/cmake -DBUILD_TESTING=ON</div>
 <div class="line">make all                # build the library and tests</div>
@@ -117,8 +126,8 @@ $(function() {
 <div class="line">cmake --build build/local</div>
 </div><!-- fragment --><p>Run the full suite under both GCC and Clang:</p>
 <div class="fragment"><div class="line">make check-compilers</div>
-</div><!-- fragment --><p><span class="tt">make check</span> is expected to pass cleanly on the current tree. The Milestone 0 baseline (<span class="tt">docs/development/milestone_0_baseline.md</span>) is a historical record of the migration-era known failures, retained for provenance only. See <span class="tt">CONTRIBUTING.md</span> for focused tests, family gates (<span class="tt">color-check</span>, <span class="tt">movement-check</span>, <span class="tt">visualization-check</span>), and visual candidate generation.</p>
-<p><b>INSTALLING AND CONSUMING</b></p>
+</div><!-- fragment --><p><span class="tt">make check</span> is expected to pass cleanly on the current tree. The Milestone 0 baseline (<span class="tt">docs/development/sessions/20260808.milestone_0_baseline.md</span>) is a historical record of the migration-era known failures, retained for provenance only. See <span class="tt">CONTRIBUTING.md</span> for focused tests, family gates (<span class="tt">color-check</span>, <span class="tt">movement-check</span>, <span class="tt">visualization-check</span>), and visual candidate generation.</p>
+<h1>INSTALLING AND CONSUMING</h1>
 <p>Install the canonical header-only package to a local prefix and consume it through the exported target:</p>
 <div class="fragment"><div class="line">cmake -S . -B build/install \</div>
 <div class="line">  -DBUILD_TESTING=OFF \</div>
@@ -129,11 +138,11 @@ $(function() {
 <div class="line">target_link_libraries(my-program PRIVATE izzi::izzi)</div>
 </div><!-- fragment --><p>The default installation contains canonical <span class="tt">izzi-*</span> headers and the versioned include fragments. New code should include <span class="tt">izzi-svg.h</span>. Run <span class="tt">make check-install</span> to verify build-tree discovery, relocated canonical installation, exact inventories, and external consumers.</p>
 <p>The graph authoring and resolved-document schemas are installed below <span class="tt">share/izzi/schemas</span>. They are versioned independently from the CMake package.</p>
-<p><b>TYPED GRAPH BOUNDARY</b></p>
+<h1>TYPED GRAPH BOUNDARY</h1>
 <p><a href="https://bdekoz.github.io/izzi.public/docs/html/izzi-svg-graph_8h.html"><span class="tt">src/izzi-svg-graph.h</span></a> separates graph data, layout specification, deterministic layout, and rendering. It currently provides typed radial-orbit and flattened linear-chord data/specifications and produces a renderer-neutral scene with stable IDs, geometry, marginal totals, reading order, accessibility intent, and structured diagnostics. The retained compact MMRL orbit language is available as <span class="tt">svg::graph::radial_orbit_spec::mmrl_defaults()</span> and the named <span class="tt">kusama</span> preset.</p>
 <p><a href="https://bdekoz.github.io/izzi.public/docs/html/izzi-svg-graph-json_8h.html"><span class="tt">src/izzi-svg-graph-json.h</span></a> strictly parses <span class="tt">izzi.graph/1</span> authoring JSON from a caller-supplied string. It performs no file I/O, rejects unknown members and incompatible data/layout kinds, and emits an <span class="tt">izzi.graph-resolved/1</span> document in deterministic member order. Every default, resolved scene coordinate, semantic reading order, and caller-supplied input and schema hash is materialized. See <span class="tt">tests/data/graph/</span> for compact radial and linear-chord inputs. The public schemas are <span class="tt">schemas/izzi.graph-1.schema.json</span> and <span class="tt">schemas/izzi.graph-resolved-1.schema.json</span>.</p>
 <p>This boundary does not replace the existing radial/Kusama and chord renderers yet. Their compatibility adapters and visual parity work are a separate migration stage, so a valid scene is not a claim that historical output has already been reproduced or that a graph conforms to WCAG 2.2.</p>
-<p><b>USING</b></p>
+<h1>USING</h1>
 <p>Source Documentation <a href="https://bdekoz.github.io/izzi.public/">here</a>.</p>
 <p>See the files in the <a href="https://bdekoz.github.io/izzi.public/examples/">examples</a> subdirectory.</p>
 <p><b>PUBLISHING THE PUBLIC SITE</b></p>

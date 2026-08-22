@@ -19,5 +19,7 @@ var searchData=
   ['glyph_5factive_5fcell_5fcount_16',['glyph_active_cell_count',['../namespaceizzi_1_1guilloche_1_1detail.html#a0a7e7d64bb1e708a6925b48a950bc870',1,'izzi::guilloche::detail']]],
   ['glyph_5fbits_17',['glyph_bits',['../namespaceizzi_1_1guilloche_1_1detail.html#a2d419f80a77a6f2bdc2c742ffa306f5b',1,'izzi::guilloche::detail']]],
   ['glyph_5fboundary_5fedge_5fcount_18',['glyph_boundary_edge_count',['../namespaceizzi_1_1guilloche_1_1detail.html#af2367746d1324a6710b976ac5a4847c6',1,'izzi::guilloche::detail']]],
-  ['glyph_5fcell_5factive_19',['glyph_cell_active',['../namespaceizzi_1_1guilloche_1_1detail.html#a5eae3e65426bbf53475c4d3fc48b2ba8',1,'izzi::guilloche::detail']]]
+  ['glyph_5fcell_5factive_19',['glyph_cell_active',['../namespaceizzi_1_1guilloche_1_1detail.html#a5eae3e65426bbf53475c4d3fc48b2ba8',1,'izzi::guilloche::detail']]],
+  ['grid_5fcenter_20',['grid_center',['../namespaceizzi_1_1moire_1_1detail.html#a29a61e3373e5f46f1df4cfd1537a7fbe',1,'izzi::moire::detail']]],
+  ['grid_5fdimensions_21',['grid_dimensions',['../namespaceizzi_1_1moire_1_1detail.html#a8f0622eefba14a5ff026285a4746a40e',1,'izzi::moire::detail']]]
 ];

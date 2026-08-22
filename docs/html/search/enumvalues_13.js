@@ -13,5 +13,6 @@ var searchData=
   ['tooltip_10',['tooltip',['../namespacesvg.html#ac8061963317131e6bd4d517ed84880bcaddbfc1b6aa0ad4d79c5dac7aa3b44888',1,'svg']]],
   ['top_11',['top',['../namespacesvg.html#ac8061963317131e6bd4d517ed84880bcab28354b543375bfa94dabaeda722927f',1,'svg::top'],['../namespaceizzi_1_1text__overlay.html#ad83be998b50e861b646908d6309826d7ab28354b543375bfa94dabaeda722927f',1,'izzi::text_overlay::top']]],
   ['tor_12',['tor',['../namespacesvg.html#ac8061963317131e6bd4d517ed84880bca7c0b1b361a964c9f5a2c89bec5740412',1,'svg']]],
-  ['triangle_13',['triangle',['../namespacesvg.html#a7c30513e0ec17ac816f135b43687f7eaacef44b46f16ae8ecf664df4266ffdbf9',1,'svg']]]
+  ['transition_13',['transition',['../namespaceizzi_1_1transcription__enrichment.html#ae0b0659a7a36a6c361d8decd2c9f0d5aa1e3057527650f36abc8cfa0131920cda',1,'izzi::transcription_enrichment']]],
+  ['triangle_14',['triangle',['../namespacesvg.html#a7c30513e0ec17ac816f135b43687f7eaacef44b46f16ae8ecf664df4266ffdbf9',1,'svg']]]
 ];

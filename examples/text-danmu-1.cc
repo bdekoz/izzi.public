@@ -14,6 +14,7 @@
 #include <izzi-svg-text-overlay.h>
 
 #include <cstdlib>
+#include <array>
 #include <filesystem>
 #include <fstream>
 #include <iostream>
@@ -73,26 +74,24 @@ document
 make_document()
 {
   constexpr double advance = 1.0;
-  constexpr double lane_h = 240.0;
-  constexpr double area_top = 300.0;
 
   auto add_run = [](document& doc, const std::string& id,
-		    const std::string& source, const int lane,
-		    const double start, const double delay)
+		    const std::string& source, const double lane_y,
+		    const double duration, const double font_size,
+		    const std::string& fill)
     {
-      constexpr double em = 46.0;
       run r;
       r.id = id;
       r.source = source;
       r.m = mode::scroll;
-      r.lane = lane;
-      r.start = start;
-      r.duration = 10.0;  // medium pace
-      r.delay = delay;
-      r.font_size = em;
-      r.lane_y = area_top + lane * lane_h;
-      r.fill = "#FFFFFF";
-      r.fill_opacity = 0.92;
+      r.lane = 0;
+      r.start = 0.0;
+      r.duration = duration;
+      r.delay = 0.0;
+      r.font_size = font_size;
+      r.lane_y = lane_y;
+      r.fill = fill;
+      r.fill_opacity = 1.0;
       r.shaper = "builtin-stroke-set";
       r.shaper_version = "danmu-1";
       double x = 0.0;
@@ -100,16 +99,16 @@ make_document()
 	{
 	  if (ch == ' ')
 	    {
-	      x += advance * em;
+	      x += advance * font_size;
 	      continue;
 	    }
 	  glyph g;
 	  g.d = demo_glyph(ch);
 	  g.x = x;
-	  g.y = r.lane_y + 0.8 * em;
-	  g.scale = em;
+	  g.y = lane_y + 0.8 * font_size;
+	  g.scale = font_size;
 	  r.glyphs.push_back(g);
-	  x += advance * em;
+	  x += advance * font_size;
 	}
       r.width = x;
       doc.runs.push_back(std::move(r));
@@ -118,18 +117,45 @@ make_document()
   document doc;
   doc.width = 1080.0;
   doc.height = 1920.0;
-  doc.area_percent = 60.0;   // bulletchatlist.area
-  doc.allow_overlap = false; // bulletchatlist.allowOverlap
-  doc.seed = "danmaku-20260814-1";
-  // Staggered starts and two mid-lane (negative-delay) entrances.
-  add_run(doc, "danmu-1-scroll-01", "IZZI 2026", 0, 0.0, 0.0);
-  add_run(doc, "danmu-1-scroll-02", "KOKI 111", 1, 0.6, -2.5);
-  add_run(doc, "danmu-1-scroll-03", "ZOI 202", 2, 1.2, 0.0);
-  add_run(doc, "danmu-1-scroll-04", "IZI KOK", 3, 1.8, -1.5);
-  add_run(doc, "danmu-1-scroll-05", "IIZ 001", 4, 2.4, 0.0);
-  add_run(doc, "danmu-1-scroll-06", "ZOO 220", 5, 3.0, -3.0);
-  add_run(doc, "danmu-1-scroll-07", "OKI 100", 2, 3.6, 0.0);
-  add_run(doc, "danmu-1-scroll-08", "IZ 022", 4, 4.2, -1.0);
+  doc.area_percent = 100.0;
+  doc.allow_overlap = false;
+  doc.seed = "danmaku-20260816-grid-1";
+
+  // Four 480px bands, each demonstrating one variation axis with three
+  // steps while the other axes stay at the black-24pt baseline.
+  const std::array<std::string, 3> sources {"IZZI 2026", "KOKI 111", "ZOI 202"};
+
+  // Band 1: line spacing.
+  {
+    const std::array<double, 3> ys {80.0, 220.0, 400.0};
+    for (std::size_t index = 0; index < 3; ++index)
+      add_run(doc, "spacing-" + std::to_string(index), sources[index],
+	      ys[index], 10.0, 24.0, "#000000");
+  }
+  // Band 2: speed.
+  {
+    const std::array<double, 3> durations {6.0, 10.0, 14.0};
+    const std::array<double, 3> ys {560.0, 700.0, 840.0};
+    for (std::size_t index = 0; index < 3; ++index)
+      add_run(doc, "speed-" + std::to_string(index), sources[index],
+	      ys[index], durations[index], 24.0, "#000000");
+  }
+  // Band 3: color (black and ink grays).
+  {
+    const std::array<std::string, 3> colors {"#000000", "#333333", "#666666"};
+    const std::array<double, 3> ys {1040.0, 1180.0, 1320.0};
+    for (std::size_t index = 0; index < 3; ++index)
+      add_run(doc, "color-" + std::to_string(index), sources[index],
+	      ys[index], 10.0, 24.0, colors[index]);
+  }
+  // Band 4: size.
+  {
+    const std::array<double, 3> sizes {20.0, 24.0, 28.0};
+    const std::array<double, 3> ys {1520.0, 1660.0, 1800.0};
+    for (std::size_t index = 0; index < 3; ++index)
+      add_run(doc, "size-" + std::to_string(index), sources[index],
+	      ys[index], 10.0, sizes[index], "#000000");
+  }
   return doc;
 }
 

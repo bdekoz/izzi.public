@@ -42,7 +42,7 @@ Key types and entry points:
   `emit_manifest_json(const document&)` — the two serializers.
 
 Izzi performs no font shaping here: per the design rule in
-`docs/development/sessions/explore_futures.20260809.md`, resolved outlines
+`docs/development/sessions/20260809.md`, resolved outlines
 come from a versioned stroke-glyph set or an external shaping adapter, and
 every resolved run records its provenance. Because the header is pure
 string serialization, native C++ and WebAssembly emit the same normalized

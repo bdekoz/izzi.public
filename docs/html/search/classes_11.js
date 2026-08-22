@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['wave_5fspec_0',['wave_spec',['../structizzi_1_1guilloche_1_1wave__spec.html',1,'izzi::guilloche']]],
-  ['weighted_5frelation_1',['weighted_relation',['../structsvg_1_1graph_1_1weighted__relation.html',1,'svg::graph']]],
-  ['weightedpoint_2',['WeightedPoint',['../structWeightedPoint.html',1,'']]]
+  ['video_5felement_0',['video_element',['../group__elements.html#structsvg_1_1video__element',1,'svg']]],
+  ['vignette_5fspec_1',['vignette_spec',['../structizzi_1_1guilloche_1_1vignette__spec.html',1,'izzi::guilloche']]],
+  ['visualization_5fdocument_2',['visualization_document',['../structsvg_1_1visualization__document.html',1,'svg']]],
+  ['voronoi_5fcell_3',['voronoi_cell',['../structvoronoi__cell.html',1,'']]]
 ];

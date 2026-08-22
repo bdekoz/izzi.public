@@ -9,6 +9,12 @@ vertical video, and web workflows.
 
 **DOCUMENTATION**
 
+- **Intro**
+  - [Prerequisites](#prerequisites)
+  - [Building and testing](#building-and-testing)
+  - [Installing and consuming](#installing-and-consuming)
+  - [Typed graph boundary](#typed-graph-boundary)
+  - [Using](#using)
 - **API reference:** [Doxygen](https://bdekoz.github.io/izzi.public/docs/html/)
 - **Generative families**
   - [Pattern](https://bdekoz.github.io/izzi.public/docs/generative_patterns.html)
@@ -21,11 +27,12 @@ vertical video, and web workflows.
   - [Visualization](https://bdekoz.github.io/izzi.public/docs/generative_visualization.html)
     — grids, tables, line/chord/kusama graphs
 - **Workflows**
+  - [Workflows](docs/workflows.md)
   - [Visual](https://bdekoz.github.io/izzi.public/docs/visual_workflow/)
   - [Audio](https://bdekoz.github.io/izzi.public/docs/audio_workflow/)
 - [Examples](https://situationshipin.space/review/izzi-generation-20260814/)
 
-**PREREQUISITES**
+## PREREQUISITES
 
 Development and use is hosted on top-of-tree Linux. At the moment,
 this means Fedora 41 or Alma 9 operating systems on multi-core
@@ -47,7 +54,7 @@ subtitle capability):
   label rendering.
 
 
-**BUILDING AND TESTING**
+## BUILDING AND TESTING
 
 The library target is `izzi::izzi`. The canonical entry points are the
 Makefile wrappers:
@@ -73,14 +80,14 @@ make check-compilers
 ```
 
 `make check` is expected to pass cleanly on the current tree. The Milestone 0
-baseline (`docs/development/milestone_0_baseline.md`) is a historical record
+baseline (`docs/development/sessions/20260808.milestone_0_baseline.md`) is a historical record
 of the migration-era known failures, retained for provenance only. See
 [`CONTRIBUTING.md`](CONTRIBUTING.md) for focused tests, family gates
 (`color-check`, `movement-check`, `visualization-check`), and visual
 candidate generation.
 
 
-**INSTALLING AND CONSUMING**
+## INSTALLING AND CONSUMING
 
 Install the canonical header-only package to a local prefix and consume it
 through the exported target:
@@ -108,7 +115,7 @@ The graph authoring and resolved-document schemas are installed below
 `share/izzi/schemas`. They are versioned independently from the CMake package.
 
 
-**TYPED GRAPH BOUNDARY**
+## TYPED GRAPH BOUNDARY
 
 [`src/izzi-svg-graph.h`](https://bdekoz.github.io/izzi.public/docs/html/izzi-svg-graph_8h.html)
 separates graph data, layout
@@ -137,7 +144,7 @@ migration stage, so a valid scene is not a claim that historical output has
 already been reproduced or that a graph conforms to WCAG 2.2.
 
 
-**USING**
+## USING
 
 Source Documentation [here](https://bdekoz.github.io/izzi.public/).
 

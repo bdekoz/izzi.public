@@ -7,7 +7,7 @@ This directory contains two offline, deterministic 10-second motion studies:
 
 Both clips are 1280×720, 30 fps, H.264 in a Matroska container, with no audio. The corresponding poster PNG is the fully revealed exact-title frame intended for use as a start-frame reference. The MKV is a transition proof and post-production asset; neither file calls a video-generation service.
 
-The JSON files follow the proposed `title-sequence-1` shape in [the futures report](../../docs/development/sessions/explore_futures.20260808.md). The example C++ program performs strict checks for the fields it consumes, but it is not the future full JSON Schema implementation.
+The JSON files follow the proposed `title-sequence-1` shape in [the futures report](../../docs/development/sessions/20260808.md). The example C++ program performs strict checks for the fields it consumes, but it is not the future full JSON Schema implementation.
 
 Build from any working directory:
 

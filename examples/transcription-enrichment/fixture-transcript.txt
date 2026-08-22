@@ -1,0 +1,5 @@
+Speaker 1  00:00
+Hello from the fixture.
+
+Speaker 2  00:05
+The second line is verbatim too.

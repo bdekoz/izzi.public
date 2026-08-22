@@ -1,0 +1,13 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" title=" " alt="" coords="5,104,105,128"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="153,104,271,128"/>
+<area shape="poly" id="edge1_Node000000_Node000001" title=" " alt="" coords="120,113,152,113,152,118,120,118"/>
+<area shape="rect" id="Node000002" href="$classizzi_1_1guilloche_1_1resource__error.html" title=" " alt="" coords="322,5,474,42"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="244,93,318,52,345,40,347,45,320,57,246,98"/>
+<area shape="rect" id="Node000003" href="$classizzi_1_1keyframes_1_1resource__error.html" title=" " alt="" coords="319,67,477,103"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="286,101,319,95,319,101,287,106"/>
+<area shape="rect" id="Node000004" href="$classizzi_1_1moire_1_1resource__error.html" title=" " alt="" coords="332,128,464,165"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="286,125,332,133,331,138,286,130"/>
+<area shape="rect" id="Node000005" href="$classizzi_1_1surface__tension_1_1resource__error.html" title=" " alt="" coords="331,189,465,226"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="246,133,320,175,347,186,345,191,318,179,244,138"/>
+</map>

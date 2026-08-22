@@ -44,7 +44,7 @@ The companion documents remain:
 - [Seedance account and delivery proposal](seedance.md);
 - [audio-first installment workflow](audio.md);
 - [audio authentication and local-key guidance](seedance-auth.md);
-- [2026-08-09 Izzi evolution plan](../sessions/explore_futures.20260809.md).
+- [2026-08-09 Izzi evolution plan](../sessions/20260809.md).
 
 ## Central decision
 

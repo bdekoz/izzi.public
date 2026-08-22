@@ -27,6 +27,20 @@ inline constexpr std::array<std::string_view, 10> plate_names {{
   "surface-tension-10-wild-surface-storm",
 }};
 
+inline constexpr std::array<std::string_view, 3> s1_plate_names {{
+  "surface-tension-s1-01-crossed-folds",
+  "surface-tension-s1-02-tilted-chain",
+  "surface-tension-s1-03-boundary-veil",
+}};
+
+inline constexpr std::array<std::string_view, 5> s2_plate_names {{
+  "surface-tension-s2-01-pattern-ring",
+  "surface-tension-s2-02-pattern-lattice",
+  "surface-tension-s2-03-pattern-rotating-array",
+  "surface-tension-s2-04-object-clusters",
+  "surface-tension-s2-05-surface-field",
+}};
+
 std::vector<double>
 standard_levels()
 {
@@ -198,6 +212,188 @@ make_scene(const std::size_t index)
   return scene;
 }
 
+scene_spec
+make_s1_plate(const std::size_t index)
+{
+  if (index >= s1_plate_names.size())
+    throw std::out_of_range(
+      "S1 surface-tension plate index is out of range");
+
+  s1_tuning tuning;
+  scene_spec scene;
+  scene.id = std::string(s1_plate_names[index]);
+  scene.title = "Izzi surface-tension S1 tuned plate "
+                + std::to_string(index + 1);
+  scene.description
+    = "Independently authored scalar-field membrane and level-set study.";
+  scene.width = 1080;
+  scene.height = 1920;
+  scene.background_color = "#02030A";
+  scene.profile = render_profile::experimental;
+  scene.seed = 2026111500ULL + index + 1;
+  scene.grid_columns = 108;
+  scene.grid_rows = 192;
+  scene.budget = {500'000, 500'000, 1'000'000, 64 * 1024 * 1024};
+  scene.layers = {
+    make_s1_contour_layer("s1-blue-membranes", "#1976D2", 0.82, 0.68,
+                          blend_mode::screen, false, tuning.level_sets),
+    make_s1_contour_layer("s1-rose-membranes", "#F04480", 0.68, 0.52,
+                          blend_mode::screen, true, tuning.level_sets),
+  };
+
+  const auto tuned_source
+    = [&](std::string id, const point center, const double radius,
+          const std::size_t source_index) {
+        return make_s1_source(std::move(id), center, radius, source_index,
+                              scene.seed, tuning.sources);
+      };
+
+  switch (index)
+    {
+    case 0:
+      scene.mode = degeneration::interfere;
+      scene.sources = {
+        tuned_source("fold-northwest", {250, 500}, 360, 0),
+        tuned_source("fold-northeast", {790, 650}, 390, 1),
+        tuned_source("fold-southwest", {330, 1'310}, 410, 2),
+        tuned_source("fold-southeast", {800, 1'460}, 350, 3),
+      };
+      break;
+    case 1:
+      scene.mode = degeneration::destabilize;
+      tuning.sources.angle_step = 0.74;
+      tuning.sources.base_angle = -0.42;
+      tuning.sources.primary_aspect_ratio = 1.72;
+      tuning.sources.secondary_aspect_ratio = 0.58;
+      tuning.surfaces.surface_exponent = 0.76;
+      scene.sources = {
+        tuned_source("chain-one", {430, 280}, 270, 0),
+        tuned_source("chain-two", {650, 530}, 300, 1),
+        tuned_source("chain-three", {420, 800}, 310, 2),
+        tuned_source("chain-four", {650, 1'070}, 320, 3),
+        tuned_source("chain-five", {430, 1'340}, 310, 4),
+        tuned_source("chain-six", {640, 1'620}, 275, 5),
+      };
+      break;
+    case 2:
+      scene.mode = degeneration::glitch;
+      tuning.sources.radius_scale = 1.18;
+      tuning.sources.angle_step = 0.91;
+      tuning.sources.primary_aspect_ratio = 1.9;
+      tuning.sources.secondary_aspect_ratio = 0.52;
+      tuning.surfaces.boundary_attraction = 0.24;
+      tuning.surfaces.surface_exponent = 0.7;
+      scene.sources = {
+        tuned_source("veil-west", {80, 460}, 430, 0),
+        tuned_source("veil-north", {570, 180}, 390, 1),
+        tuned_source("veil-center", {520, 950}, 470, 2),
+        tuned_source("veil-east", {1'020, 1'240}, 440, 3),
+        tuned_source("veil-south", {470, 1'820}, 410, 4),
+      };
+      break;
+    default:
+      throw std::out_of_range(
+        "S1 surface-tension plate index is out of range");
+    }
+  const degeneration mode = scene.mode;
+  return make_s1_tuned_scene(std::move(scene), mode, tuning);
+}
+
+scene_spec
+make_s2_plate(const std::size_t index)
+{
+  if (index >= s2_plate_names.size())
+    throw std::out_of_range(
+      "S2 surface-tension plate index is out of range");
+
+  scene_spec scene;
+  scene.id = std::string(s2_plate_names[index]);
+  scene.title = "Izzi surface-tension S2 plate "
+                + std::to_string(index + 1);
+  scene.description
+    = "Independently authored deterministic scalar-field source composition.";
+  scene.width = 1080;
+  scene.height = 1920;
+  scene.background_color = "#02030A";
+  scene.profile = render_profile::experimental;
+  scene.mode = degeneration::interfere;
+  scene.degeneration_amount = 0.12;
+  scene.seed = 2026120200ULL + index + 1;
+  scene.grid_columns = 108;
+  scene.grid_rows = 192;
+  scene.surface_exponent = 0.92;
+  scene.boundary_attraction = 0.06;
+  scene.budget = {500'000, 500'000, 1'000'000, 64 * 1024 * 1024};
+  scene.layers = {
+    {"s2-blue-membranes", "#1976D2", 0.9, 0.68, blend_mode::screen,
+     {}, 0, standard_levels()},
+    {"s2-rose-membranes", "#F04480", 0.72, 0.52, blend_mode::screen,
+     {3, -2}, 0.014, standard_levels()},
+  };
+
+  switch (index)
+    {
+    case 0:
+      scene.sources = make_s2_ring_sources(
+        "s2-ring", {540, 960}, scene.seed);
+      break;
+    case 1:
+      {
+        s2_lattice_tuning tuning;
+        tuning.columns = 4;
+        tuning.rows = 7;
+        tuning.spacing = {250, 240};
+        scene.sources = make_s2_lattice_sources(
+          "s2-lattice", {150, 220}, scene.seed, tuning);
+      }
+      break;
+    case 2:
+      {
+        s2_rotating_array_tuning tuning;
+        tuning.source_count = 16;
+        tuning.orbit_wave = 110;
+        tuning.orientation_turn = 0.55;
+        scene.sources = make_s2_rotating_array_sources(
+          "s2-rotor", {540, 960}, scene.seed, tuning);
+      }
+      break;
+    case 3:
+      {
+        s2_object_cluster_tuning first_tuning;
+        first_tuning.phase = -0.25;
+        std::vector<source_spec> first = make_s2_object_cluster_sources(
+          "s2-object-upper", {390, 700}, scene.seed, first_tuning);
+        s2_object_cluster_tuning second_tuning;
+        second_tuning.phase = 0.72;
+        second_tuning.cluster_radius = 250;
+        std::vector<source_spec> second = make_s2_object_cluster_sources(
+          "s2-object-lower", {690, 1'290},
+          scene.seed ^ 0x9e3779b97f4a7c15ULL, second_tuning);
+        scene.sources = std::move(first);
+        scene.sources.insert(scene.sources.end(),
+                             second.begin(), second.end());
+      }
+      break;
+    case 4:
+      {
+        s2_surface_field_tuning tuning;
+        tuning.columns = 4;
+        tuning.rows = 7;
+        tuning.spacing = {260, 245};
+        tuning.source_radius = 235;
+        tuning.shared_tilt = 0.48;
+        tuning.shared_aspect_ratio = 1.95;
+        scene.sources = make_s2_surface_field_sources(
+          "s2-surface", {140, 210}, scene.seed, tuning);
+      }
+      break;
+    default:
+      throw std::out_of_range(
+        "S2 surface-tension plate index is out of range");
+    }
+  return scene;
+}
+
 void
 write_file(const std::filesystem::path& path, const std::string_view contents)
 {
@@ -222,9 +418,41 @@ main(const int argc, char** argv)
             std::cout << name << '\n';
           return EXIT_SUCCESS;
         }
+      if (argc == 3 && std::string_view(argv[1]) == "--s1")
+        {
+          const std::filesystem::path output_directory(argv[2]);
+          std::filesystem::create_directories(output_directory);
+          for (std::size_t index = 0; index < s1_plate_names.size(); ++index)
+            {
+              const scene_spec scene = make_s1_plate(index);
+              const std::filesystem::path output
+                = output_directory
+                  / (std::string(s1_plate_names[index]) + ".svg");
+              write_file(output, render_svg(scene));
+              std::cout << output.string() << '\n';
+            }
+          return EXIT_SUCCESS;
+        }
+      if (argc == 3 && std::string_view(argv[1]) == "--s2")
+        {
+          const std::filesystem::path output_directory(argv[2]);
+          std::filesystem::create_directories(output_directory);
+          for (std::size_t index = 0; index < s2_plate_names.size(); ++index)
+            {
+              const scene_spec scene = make_s2_plate(index);
+              const std::filesystem::path output
+                = output_directory
+                  / (std::string(s2_plate_names[index]) + ".svg");
+              write_file(output, render_svg(scene));
+              std::cout << output.string() << '\n';
+            }
+          return EXIT_SUCCESS;
+        }
       if (argc != 2)
         throw std::invalid_argument(
-          "usage: surface-tension-plates OUTPUT-DIRECTORY");
+          "usage: surface-tension-plates OUTPUT-DIRECTORY |"
+          " surface-tension-plates --s1 OUTPUT-DIRECTORY |"
+          " surface-tension-plates --s2 OUTPUT-DIRECTORY");
       const std::filesystem::path output_directory(argv[1]);
       std::filesystem::create_directories(output_directory);
       for (std::size_t index = 0; index < plate_names.size(); ++index)

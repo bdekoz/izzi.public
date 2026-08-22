@@ -1,10 +1,7 @@
 var searchData=
 [
-  ['layer_5fspec_0',['layer_spec',['../structizzi_1_1moire_1_1layer__spec.html',1,'izzi::moire']]],
-  ['layout_5fresult_1',['layout_result',['../structsvg_1_1graph_1_1layout__result.html',1,'svg::graph']]],
-  ['line_5felement_2',['line_element',['../group__elements.html#structsvg_1_1line__element',1,'svg']]],
-  ['linear_5fchord_5fspec_3',['linear_chord_spec',['../structsvg_1_1graph_1_1linear__chord__spec.html',1,'svg::graph']]],
-  ['linear_5fgradient_4',['linear_gradient',['../group__elements.html#structsvg_1_1linear__gradient',1,'svg']]],
-  ['link_5felement_5',['link_element',['../group__elements.html#structsvg_1_1link__element',1,'svg']]],
-  ['lissajous_5fspec_6',['lissajous_spec',['../structizzi_1_1guilloche_1_1lissajous__spec.html',1,'izzi::guilloche']]]
+  ['k1_5fneon_5fgrammar_0',['k1_neon_grammar',['../structizzi_1_1keyframes_1_1k1__neon__grammar.html',1,'izzi::keyframes']]],
+  ['k2_5fframing_1',['k2_framing',['../structizzi_1_1keyframes_1_1k2__framing.html',1,'izzi::keyframes']]],
+  ['k2_5froute_5fspec_2',['k2_route_spec',['../structizzi_1_1keyframes_1_1k2__route__spec.html',1,'izzi::keyframes']]],
+  ['keyframe_5fspec_3',['keyframe_spec',['../structizzi_1_1keyframes_1_1keyframe__spec.html',1,'izzi::keyframes']]]
 ];

@@ -1,0 +1,16 @@
+<map id="izzi::guilloche::detail::resolve_latent_image_paths" name="izzi::guilloche::detail::resolve_latent_image_paths">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,112,186,149"/>
+<area shape="rect" id="Node000002" href="$namespaceizzi_1_1guilloche_1_1detail.html#ad053b6543b66460c6636bade56ed5ccc" title=" " alt="" coords="243,51,393,87"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="164,109,233,89,235,95,165,114"/>
+<area shape="rect" id="Node000006" href="$namespaceizzi_1_1guilloche_1_1detail.html#a21b8e0fde6be2a516082770cebdfa3c8" title=" " alt="" coords="250,112,386,149"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="186,128,234,128,234,133,186,133"/>
+<area shape="rect" id="Node000007" href="$namespaceizzi_1_1guilloche_1_1detail.html#aa0297e46d808e34446f8495e24d2f3f5" title=" " alt="" coords="234,173,402,210"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="165,147,235,166,233,171,164,152"/>
+<area shape="rect" id="Node000003" href="$namespaceizzi_1_1guilloche_1_1detail.html#a01ab0bb61bd09ef54154151fdc730512" title=" " alt="" coords="450,5,586,42"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="393,49,434,40,435,45,394,55"/>
+<area shape="rect" id="Node000004" href="$namespaceizzi_1_1guilloche_1_1detail.html#aa2e3cb80bde026ce4a045068023f69c2" title=" " alt="" coords="450,143,586,179"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="375,85,403,97,472,132,470,137,401,102,372,90"/>
+<area shape="rect" id="Node000005" href="$namespaceizzi_1_1guilloche_1_1detail.html#a34e3a693fe98f4db4258fc7c9a5f00de" title=" " alt="" coords="450,67,586,103"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="394,72,435,76,434,81,393,78"/>
+<area shape="poly" id="edge7_Node000007_Node000004" title=" " alt="" coords="402,176,435,171,435,176,403,181"/>
+</map>
