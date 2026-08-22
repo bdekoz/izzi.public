@@ -23,7 +23,7 @@ parallel tree.
 
 | Example | Content | Preview status |
 | --- | --- | --- |
-| `visualization-alpha60-includes` | line-graph + accessible table re-creating the alpha60-results `_includes` shape | LIVE — [generation-visualization-20260814](https://situationshipin.space/review/media/generation-visualization-20260814/) |
+| `visualization-alpha60-includes` | line-graph + accessible table re-creating the alpha60-results `_includes` shape | LIVE — [generation-visualization-20260814](https://situationshipin.space/review/generation-visualization-20260814/) |
 | `visualization-render` | JSON document render CLI (drives the facade from `izzi.visualization/1`) | CURRENT |
 
 Status: `SECTION-CURRENT-20260814; FACADE-AND-PIPELINE-IMPLEMENTED;

@@ -1,11 +1,8 @@
 # izzi
 
-Izzi is a C++20 header-only library for directly creating a selected, practical subset
-of SVG. 
+Izzi is a C++20 header-only library for directly creating SVG elements using a shrewdly-selected, irreverent-allowing subset of the full Scalable Vector Graphics [standard](https://www.w3.org/TR/SVG2/). 
 
-It supports graphing, cartography, generative design, generative art, scientific
-documentation, visual thinking, and artifact generation for large-format inkjet prints, multi-channel animation, 
-vertical video, and web workflows.
+It supports graphing, cartography, scientific documentation, generative design, generative art, visual thinking, physical artifact generation for large-format inkjet printers, multi-channel animation, vertical video, and web workflows.
 
 **DOCUMENTATION**
 

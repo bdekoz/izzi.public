@@ -4,6 +4,7 @@ The section index lives at [visual workflow](../visual_workflow.md).
 
 Notable entries in this directory:
 
+- [Supercut usage](../supercut.md)
 - [Visual method](method.md)
 - [Visual experiments method](visual_experiments_method.md)
 - [Guilloche renderer and title cards](tool_guilloche.md)

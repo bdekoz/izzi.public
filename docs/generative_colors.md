@@ -22,19 +22,29 @@ content. The section mirrors the structure of
 
 ## Visual-tester gallery
 
-Each example's parameter-space explorer renders a swatch grid or band sweep.
-Previews are regenerated from current source during the color render step
-(Plan C of the 2026-08-14 proposal) and land in
-`docs/generative_colors/images/`; the promoted generation baseline is stale
-and is not copied.
+Each palette object behind the `palette_kind` selection tag in
+`src/izzi-svg-color-palette.h` has an individual review page; the band, tint,
+and RGB↔HSV parameter-space exercises are carried forward from the
+2026-08-14 proposal. Previews are regenerated from current source during the
+color render step (Plan C of the 2026-08-14 proposal) and land in
+`docs/generative_colors/images/`; the prior 2026-08-14 generation baseline is
+removed from the portal.
 
 | Example | Content | Preview status |
 | --- | --- | --- |
-| `color-palette-1..5` | curated basic palettes (2–133 swatches) | LIVE — [palette-20260814-index](https://situationshipin.space/review/media/palette-20260814/) |
-| `color-palette-source-*` (renamed from `color-palette-6-*`) | source palettes: izzi (154), jp (118), ciecam02 (73), ciecam16j70 (89), colorbrewer2 3/9 | LIVE (same index) |
-| `color-band-*` | band sweeps (deterministic after the seeded-RNG fix) | LIVE (same index) |
-| `color-rgb-hsv-2/3` | RGB↔HSV quantization grids (up to 266 swatches) | LIVE (same index) |
+| `palette-izzi` | full default izzi palette (234 swatches) | LIVE — [palette-20260822-index](https://situationshipin.space/review/palette-20260822-index/) |
+| `palette-izzi-hue` | hue-only izzi palette, black/white/gray removed (213 swatches) | LIVE (same index) |
+| `palette-jp` | traditional colors of Japan (117 swatches) | LIVE (same index) |
+| `palette-colorbrewer2s3s/7s/9s` | ColorBrewer 2.0 single-hue 3/7/9-class sequential ramps | LIVE (same index) |
+| `palette-ciecam02` | CIECAM02 category-constrained set (72 swatches) | LIVE (same index) |
+| `palette-ciecam16` | CIECAM16 palette (60 swatches) | LIVE (same index) |
+| `palette-ciecam16j70` | CIECAM16 at fixed lightness J=70 (88 swatches) | LIVE (same index) |
+| `palette-esri-s-bathymetry` | ESRI shallow bathymetry ramp (7 swatches) | LIVE (same index) |
+| `palette-esri-m-bathymetry` | ESRI mid bathymetry ramp (11 swatches) | LIVE (same index) |
+| `color-band-expand-to-larger` | three 100-swatch band sweeps (deterministic after the seeded-RNG fix) | LIVE (same index) |
 | `color-tint-perceptual-1/2` | perceptual tint exercises | LIVE (same index) |
+| `color-rgb-hsv-2/3` | RGB↔HSV quantization grids (up to 266 swatches) | LIVE (same index) |
 
-Status: `SECTION-CURRENT-20260814; FAMILY-ENTRY-ASSESSED;
-PORTAL-INDEX-LIVE; SHARED-VIA-PUBLIC-MIRROR`
+Status: `SECTION-CURRENT-20260822; PALETTE-KIND-PAGES-COMPLETE;
+PORTAL-INDEX-LIVE; PRIOR-20260814-BASELINE-REMOVED;
+SHARED-VIA-PUBLIC-MIRROR`

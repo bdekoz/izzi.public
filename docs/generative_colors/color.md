@@ -106,8 +106,9 @@ Open items (2026-08-14 proposal
 - Default typography convergence to Atkinson Hyperlegible; resource
   `/home/bkoz/.fonts/atkinson_hyperlegible.2026/` (32 files, all families
   and weights).
-- Fresh gallery previews under `docs/generative_colors/images/` and the
-  `palette-20260814-index` portal review item.
+- Fresh gallery previews under `docs/generative_colors/images/` and one
+  portal review page per `palette_kind` palette (`palette-20260822-index`,
+  replacing the removed `palette-20260814-index`).
 
 ## Links
 

@@ -23,7 +23,7 @@ and [generative color families](generative_colors.md) as a parallel tree.
 
 | Example | Content | Preview status |
 | --- | --- | --- |
-| `movement-asama-loops` | camera track along a roulette trochoid + ripple/raindrop/wave layers; JSON + SVG path preview | LIVE — [generation-movement-20260814](https://situationshipin.space/review/media/generation-movement-20260814/) |
+| `movement-asama-loops` | camera track along a roulette trochoid + ripple/raindrop/wave layers; JSON + SVG path preview | LIVE — [generation-movement-20260814](https://situationshipin.space/review/generation-movement-20260814/) |
 
 Status: `SECTION-CURRENT-20260814; API-EXAMPLE-IMPLEMENTED;
 PORTAL-INDEX-LIVE; SHARED-VIA-PUBLIC-MIRROR`
