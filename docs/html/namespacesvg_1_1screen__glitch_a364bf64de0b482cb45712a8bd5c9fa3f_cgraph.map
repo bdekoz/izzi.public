@@ -1,0 +1,26 @@
+<map id="svg::screen_glitch::plan_json" name="svg::screen_glitch::plan_json">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,169,125,206"/>
+<area shape="rect" id="Node000002" href="$namespacesvg_1_1screen__glitch.html#ad0769f4b0d339b6444af59e017483c5c" title="Validate and serialize every composition and typed parameter field." alt="" coords="173,85,292,122"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="102,167,182,127,179,132,105,171"/>
+<area shape="rect" id="Node000006" href="$namespacesvg_1_1screen__glitch.html#ab248f8d92ac25f611bb6c1b36dda85b5" title="Validate and resolve a frame at frame/rate + offset, for the supplied domain." alt="" coords="173,223,292,259"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="124,204,161,216,156,219,125,209"/>
+<area shape="rect" id="Node000003" href="$namespacesvg_1_1screen__glitch.html#ab29815e4ffbfde18fe8296dab8352cfa" title=" " alt="" coords="507,136,627,173"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="292,109,460,133,494,140,489,142,459,138,293,114"/>
+<area shape="rect" id="Node000004" href="$namespacesvg_1_1screen__glitch_1_1json.html#af60bdc0b1462d071fb2b1868439e7ddf" title=" " alt="" coords="340,29,459,66"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="288,82,330,70,326,73,291,87"/>
+<area shape="poly" id="edge5_Node000004_Node000004" title=" " alt="" coords="368,28,366,20,370,11,382,5,400,3,419,5,431,14,426,14,417,10,400,8,384,10,374,15,371,20,373,30"/>
+<area shape="rect" id="Node000005" href="$namespacesvg_1_1screen__glitch_1_1json.html#ae73736781b947e8f0d7bb5941267fd39" title=" " alt="" coords="507,29,627,66"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="459,45,495,47,490,49,461,50"/>
+<area shape="poly" id="edge13_Node000006_Node000003" title=" " alt="" coords="258,220,295,197,339,177,417,160,494,154,489,156,418,165,341,182,298,202,261,224"/>
+<area shape="rect" id="Node000007" href="$namespacesvg_1_1screen__glitch.html#a480be041892df6b9d0b93f351f6274f0" title=" " alt="" coords="340,192,459,229"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="292,228,327,223,322,225,294,233"/>
+<area shape="rect" id="Node000008" href="$namespacesvg_1_1screen__glitch.html#ae17a820cc2722506e0c253f50ece164d" title=" " alt="" coords="340,253,459,290"/>
+<area shape="poly" id="edge8_Node000006_Node000008" title=" " alt="" coords="292,249,327,257,322,258,293,255"/>
+<area shape="rect" id="Node000010" href="$namespacesvg_1_1screen__glitch.html#a63f9a6bf769d8e723776c135bd1afada" title=" " alt="" coords="340,315,459,351"/>
+<area shape="poly" id="edge11_Node000006_Node000010" title=" " alt="" coords="266,257,341,300,351,307,346,307,339,305,265,262"/>
+<area shape="rect" id="Node000011" href="$namespacesvg_1_1screen__glitch.html#adc1e0a0d9e9c674ed098678a63b02de1" title=" " alt="" coords="340,376,459,413"/>
+<area shape="poly" id="edge12_Node000006_Node000011" title=" " alt="" coords="248,257,288,308,313,336,342,362,347,368,342,367,338,366,310,340,284,312,246,262"/>
+<area shape="poly" id="edge10_Node000008_Node000003" title=" " alt="" coords="438,251,458,239,532,184,536,182,461,243,440,255"/>
+<area shape="rect" id="Node000009" href="$namespacesvg_1_1screen__glitch.html#a5e2d8f928ccc4ee49cd1fbb7cf247f90" title=" " alt="" coords="507,253,627,290"/>
+<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="460,269,495,271,489,272,460,274"/>
+</map>

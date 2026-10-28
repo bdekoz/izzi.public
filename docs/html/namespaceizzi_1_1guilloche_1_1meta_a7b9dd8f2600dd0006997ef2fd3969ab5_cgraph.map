@@ -1,0 +1,8 @@
+<map id="izzi::guilloche::meta::niche" name="izzi::guilloche::meta::niche">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,29,139,66"/>
+<area shape="poly" id="edge3_Node000001_Node000001" title=" " alt="" coords="38,29,35,20,41,11,53,5,72,3,92,5,106,14,100,14,91,10,72,8,54,10,44,15,41,20,43,29"/>
+<area shape="rect" id="Node000002" href="$namespaceizzi_1_1guilloche_1_1meta.html#aa687f1c7e73f4cd44cff36b05b0bdfea" title=" " alt="" coords="187,29,320,66"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="139,45,174,47,169,48,139,50"/>
+<area shape="rect" id="Node000003" href="$namespaceizzi_1_1guilloche_1_1detail.html#a12df44d23df642a525d8f781094d148d" title=" " alt="" coords="368,29,504,66"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="320,45,355,48,350,48,320,50"/>
+</map>

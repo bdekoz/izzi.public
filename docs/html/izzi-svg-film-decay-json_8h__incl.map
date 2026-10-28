@@ -1,0 +1,73 @@
+<map id="/home/bkoz/src/izzi/src/izzi&#45;svg&#45;film&#45;decay&#45;json.h" name="/home/bkoz/src/izzi/src/izzi&#45;svg&#45;film&#45;decay&#45;json.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="1407,5,1554,55"/>
+<area shape="rect" id="Node000002" href="$izzi-svg-film-decay_8h.html" title=" " alt="" coords="1168,103,1302,127"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1411,55,1283,100,1282,95,1406,56"/>
+<area shape="rect" id="Node000032" title=" " alt="" coords="1326,103,1467,127"/>
+<area shape="poly" id="edge35_Node000001_Node000032" title=" " alt="" coords="1458,54,1420,94,1417,90,1453,57"/>
+<area shape="rect" id="Node000033" title=" " alt="" coords="1492,103,1640,127"/>
+<area shape="poly" id="edge36_Node000001_Node000033" title=" " alt="" coords="1506,53,1546,93,1541,91,1505,58"/>
+<area shape="rect" id="Node000034" title=" " alt="" coords="1664,103,1814,127"/>
+<area shape="poly" id="edge37_Node000001_Node000034" title=" " alt="" coords="1555,52,1692,98,1687,98,1554,58"/>
+<area shape="rect" id="Node000003" href="$izzi-film-decay-fields_8h.html" title=" " alt="" coords="552,318,697,342"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="1165,119,1103,127,1027,137,946,153,867,177,802,207,742,243,650,310,648,306,739,239,800,202,865,172,944,148,1026,131,1103,121,1171,118"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="1133,474,1198,498"/>
+<area shape="poly" id="edge33_Node000002_Node000011" title=" " alt="" coords="1225,126,1203,151,1179,181,1159,217,1153,237,1151,257,1151,331,1156,400,1163,460,1159,457,1150,401,1146,331,1146,257,1148,236,1154,215,1174,178,1199,147,1220,128"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="1223,474,1261,498"/>
+<area shape="poly" id="edge34_Node000002_Node000012" title=" " alt="" coords="1232,125,1214,183,1205,219,1202,257,1202,331,1205,367,1213,401,1233,462,1228,459,1208,403,1200,367,1197,331,1197,257,1200,219,1208,181,1228,129"/>
+<area shape="rect" id="Node000026" href="$izzi-film-decay-variants_8h.html" title=" " alt="" coords="877,175,1036,198"/>
+<area shape="poly" id="edge26_Node000002_Node000026" title=" " alt="" coords="1188,128,1017,173,1015,168,1193,127"/>
+<area shape="rect" id="Node000028" title=" " alt="" coords="1237,175,1308,198"/>
+<area shape="poly" id="edge29_Node000002_Node000028" title=" " alt="" coords="1242,125,1262,162,1257,160,1240,129"/>
+<area shape="rect" id="Node000029" title=" " alt="" coords="1332,175,1389,198"/>
+<area shape="poly" id="edge30_Node000002_Node000029" title=" " alt="" coords="1256,125,1330,167,1325,167,1255,130"/>
+<area shape="rect" id="Node000030" title=" " alt="" coords="1413,175,1468,198"/>
+<area shape="poly" id="edge31_Node000002_Node000030" title=" " alt="" coords="1268,125,1401,171,1396,171,1268,130"/>
+<area shape="rect" id="Node000031" title=" " alt="" coords="1492,175,1568,198"/>
+<area shape="poly" id="edge32_Node000002_Node000031" title=" " alt="" coords="1283,125,1479,172,1474,173,1282,130"/>
+<area shape="rect" id="Node000004" href="$izzi-levels-contours-regions_8h.html" title=" " alt="" coords="776,390,903,426"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="657,340,778,384,772,384,656,345"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="401,474,450,498"/>
+<area shape="poly" id="edge15_Node000003_Node000006" title=" " alt="" coords="655,340,688,359,703,372,715,388,722,409,715,428,688,454,661,469,634,475,605,476,542,472,506,472,466,477,466,471,506,467,542,467,605,471,633,470,660,464,685,449,710,425,717,409,710,391,699,376,685,363,654,345"/>
+<area shape="rect" id="Node000016" title=" " alt="" coords="927,396,986,420"/>
+<area shape="poly" id="edge16_Node000003_Node000016" title=" " alt="" coords="697,339,802,358,916,387,920,391,915,390,914,392,801,364,697,344"/>
+<area shape="rect" id="Node000017" title=" " alt="" coords="1009,396,1074,420"/>
+<area shape="poly" id="edge17_Node000003_Node000017" title=" " alt="" coords="697,335,838,354,919,368,999,387,1004,391,999,391,997,392,918,374,837,359,697,341"/>
+<area shape="rect" id="Node000018" title=" " alt="" coords="5,396,60,420"/>
+<area shape="poly" id="edge18_Node000003_Node000018" title=" " alt="" coords="549,332,456,338,335,348,203,365,72,392,70,393,67,388,71,387,202,359,334,342,455,333,555,331"/>
+<area shape="rect" id="Node000019" title=" " alt="" coords="83,396,152,420"/>
+<area shape="poly" id="edge19_Node000003_Node000019" title=" " alt="" coords="549,336,375,355,269,371,165,392,161,393,159,388,164,387,268,366,374,350,554,334"/>
+<area shape="rect" id="Node000020" title=" " alt="" coords="177,396,243,420"/>
+<area shape="poly" id="edge20_Node000003_Node000020" title=" " alt="" coords="549,339,414,360,334,374,256,392,252,393,250,388,255,387,333,369,413,354,554,338"/>
+<area shape="rect" id="Node000021" title=" " alt="" coords="267,396,331,420"/>
+<area shape="poly" id="edge21_Node000003_Node000021" title=" " alt="" coords="553,343,455,364,344,392,341,393,339,388,342,387,454,359,558,342"/>
+<area shape="rect" id="Node000022" title=" " alt="" coords="356,396,408,420"/>
+<area shape="poly" id="edge22_Node000003_Node000022" title=" " alt="" coords="582,342,505,365,421,392,420,393,419,387,420,387,504,360,577,343"/>
+<area shape="rect" id="Node000023" title=" " alt="" coords="433,396,515,420"/>
+<area shape="poly" id="edge23_Node000003_Node000023" title=" " alt="" coords="605,341,510,391,508,386,600,343"/>
+<area shape="rect" id="Node000024" title=" " alt="" coords="539,396,617,420"/>
+<area shape="poly" id="edge24_Node000003_Node000024" title=" " alt="" coords="620,341,594,385,591,381,615,344"/>
+<area shape="rect" id="Node000025" title=" " alt="" coords="642,396,701,420"/>
+<area shape="poly" id="edge25_Node000003_Node000025" title=" " alt="" coords="633,340,659,384,654,382,630,345"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="1036,474,1109,498"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="894,424,1027,469,1021,469,893,429"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="778,422,757,429,612,451,548,460,466,476,465,471,547,455,612,445,756,424,772,423"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="474,474,530,498"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="778,422,545,476,544,471,773,423"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="553,474,616,498"/>
+<area shape="poly" id="edge7_Node000004_Node000008" title=" " alt="" coords="783,427,631,474,630,469,777,427"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="639,474,690,498"/>
+<area shape="poly" id="edge8_Node000004_Node000009" title=" " alt="" coords="801,426,705,470,703,465,796,427"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="714,474,759,498"/>
+<area shape="poly" id="edge9_Node000004_Node000010" title=" " alt="" coords="818,426,765,467,763,462,813,428"/>
+<area shape="poly" id="edge10_Node000004_Node000011" title=" " alt="" coords="904,421,1121,474,1115,473,903,427"/>
+<area shape="poly" id="edge11_Node000004_Node000012" title=" " alt="" coords="904,421,916,424,996,437,1061,445,1126,454,1210,474,1205,474,1125,459,1060,450,996,442,915,429,903,427"/>
+<area shape="rect" id="Node000013" title=" " alt="" coords="783,474,858,498"/>
+<area shape="poly" id="edge12_Node000004_Node000013" title=" " alt="" coords="837,425,829,461,825,457,833,428"/>
+<area shape="rect" id="Node000014" title=" " alt="" coords="882,474,933,498"/>
+<area shape="poly" id="edge13_Node000004_Node000014" title=" " alt="" coords="856,424,890,463,885,462,854,429"/>
+<area shape="rect" id="Node000015" title=" " alt="" coords="957,474,1012,498"/>
+<area shape="poly" id="edge14_Node000004_Node000015" title=" " alt="" coords="874,424,952,467,947,466,872,429"/>
+<area shape="rect" id="Node000027" href="$izzi-film-blister-fields_8h.html" title=" " alt="" coords="806,246,952,270"/>
+<area shape="poly" id="edge27_Node000026_Node000027" title=" " alt="" coords="946,198,904,238,901,233,942,200"/>
+<area shape="poly" id="edge28_Node000027_Node000003" title=" " alt="" coords="836,271,681,316,679,311,841,270"/>
+</map>

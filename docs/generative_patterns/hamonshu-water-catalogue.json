@@ -1,0 +1,1620 @@
+{
+  "version": 1,
+  "title": "Hamonshū graphic water forms",
+  "review_date": "2026-09-28",
+  "review_method": "Manual visual review of every local PNG, using six-scan contact sheets and selected full-size spreads. Multi-label classification of scans, not individually cropped motifs. The group names are modern descriptive labels, not translations of historical names.",
+  "scope": {
+    "volumes": [
+      1,
+      2,
+      3
+    ],
+    "scan_count": 86,
+    "excluded_content": "Calligraphy, titles, colophons, marginal writing and writing equipment are not pattern examples. Only water ornament on mixed pages is indexed.",
+    "source_mutations": false
+  },
+  "pdfs": [
+    {
+      "volume": 1,
+      "source": "resources.rizal/hamonshu/hamonshu_1.pdf"
+    },
+    {
+      "volume": 2,
+      "source": "resources.rizal/hamonshu/hamonshu_2.pdf"
+    },
+    {
+      "volume": 3,
+      "source": "resources.rizal/hamonshu/hamonshu_3.pdf"
+    }
+  ],
+  "groups": [
+    {
+      "id": "flow",
+      "name": "Currents and waterlines",
+      "description": "Long meanders, flowing parallel lines, drifting pools and gently layered swells.",
+      "construction": "Shared-displacement bands; cubic or harmonic centerlines; related contour families.",
+      "representative": {
+        "volume": 3,
+        "scan": 18,
+        "box": [
+          0.08,
+          0.43,
+          0.45,
+          0.61
+        ]
+      }
+    },
+    {
+      "id": "crest",
+      "name": "Crests and breakers",
+      "description": "Overturning hooks, curling tips, upright breaking waves and layered wave fronts.",
+      "construction": "Parametric crest paths with a return curl; nested contours and optional foam.",
+      "representative": {
+        "volume": 3,
+        "scan": 22,
+        "box": [
+          0.52,
+          0.22,
+          0.9,
+          0.9
+        ]
+      }
+    },
+    {
+      "id": "eddy",
+      "name": "Eddies, scrolls and spirals",
+      "description": "Coiled currents, opposing scrolls, whirlpools and spiral medallions.",
+      "construction": "Spiral segments joined to flow paths; paired handedness and unequal curl radii.",
+      "representative": {
+        "volume": 3,
+        "scan": 16,
+        "box": [
+          0.54,
+          0.23,
+          0.9,
+          0.51
+        ]
+      }
+    },
+    {
+      "id": "arc",
+      "name": "Ripples, scallops and nested arcs",
+      "description": "Repeated arc bundles, ripple rings, scales and small rounded swells.",
+      "construction": "Nested arcs and partial rings; staggered repeats with explicit open and closed forms.",
+      "representative": {
+        "volume": 3,
+        "scan": 17,
+        "box": [
+          0.08,
+          0.58,
+          0.44,
+          0.78
+        ]
+      }
+    },
+    {
+      "id": "foam",
+      "name": "Foam, spray, droplets and cells",
+      "description": "Detached water marks, dotted spray, bead chains, bubbly rims and cellular water textures.",
+      "construction": "Sparse secondary marks following a parent crest; bounded point and small-loop motifs.",
+      "representative": {
+        "volume": 3,
+        "scan": 16,
+        "box": [
+          0.54,
+          0.55,
+          0.9,
+          0.89
+        ]
+      }
+    },
+    {
+      "id": "weave",
+      "name": "Braids, lattices and herringbone",
+      "description": "Interlaced current ribbons, diagonal blocks, linked bands and geometric repeats.",
+      "construction": "Two related line directions or a crossing graph; preserve intended over-under order.",
+      "representative": {
+        "volume": 3,
+        "scan": 20,
+        "box": [
+          0.54,
+          0.56,
+          0.9,
+          0.88
+        ]
+      }
+    },
+    {
+      "id": "fan",
+      "name": "Fans, fountains and feathered jets",
+      "description": "Splayed line bundles, upward jets and bilateral feather-like water forms.",
+      "construction": "Diverging paths from an attachment region; bounded branching and a tip envelope.",
+      "representative": {
+        "volume": 3,
+        "scan": 22,
+        "box": [
+          0.08,
+          0.24,
+          0.29,
+          0.57
+        ]
+      }
+    }
+  ],
+  "arrangements": {
+    "band": "Continuous horizontal or vertical strip.",
+    "field": "Area-filling texture or a large water panel.",
+    "medallion": "Circular, oval or otherwise enclosed emblem.",
+    "cluster": "Separate grouped motifs or isolated water forms.",
+    "border": "An explicitly narrow edge ornament.",
+    "spread": "Artwork presented across a facing-page spread; check the scan before assuming gutter continuity."
+  },
+  "content_statuses": {
+    "water": "Graphic water study; ignore all marginal writing.",
+    "mixed_text": "Use only the graphic water region specified in notes.",
+    "mixed_cover": "Cover water ornament only; ignore the title and other labels.",
+    "water_cover": "Back-cover water ornament; duplicated vocabulary.",
+    "excluded_text": "No graphic water study; retained only for inventory completeness."
+  },
+  "records": [
+    {
+      "id": "v1-s001",
+      "volume": 1,
+      "scan": 1,
+      "source": "resources.rizal/hamonshu/hamonshu_1.pages/hamonshu_1-001.png",
+      "content_status": "mixed_cover",
+      "form_groups": [
+        "eddy"
+      ],
+      "arrangements": [
+        "cluster"
+      ],
+      "notes": "Spiral clusters on the cover; exclude the title strip and pasted label."
+    },
+    {
+      "id": "v1-s002",
+      "volume": 1,
+      "scan": 2,
+      "source": "resources.rizal/hamonshu/hamonshu_1.pages/hamonshu_1-002.png",
+      "content_status": "excluded_text",
+      "form_groups": [],
+      "arrangements": [],
+      "notes": "Calligraphy and blank facing page; no water motif."
+    },
+    {
+      "id": "v1-s003",
+      "volume": 1,
+      "scan": 3,
+      "source": "resources.rizal/hamonshu/hamonshu_1.pages/hamonshu_1-003.png",
+      "content_status": "mixed_text",
+      "form_groups": [
+        "flow",
+        "eddy",
+        "crest"
+      ],
+      "arrangements": [
+        "field"
+      ],
+      "notes": "Use only the graphic water panel on the left; exclude the calligraphy page."
+    },
+    {
+      "id": "v1-s004",
+      "volume": 1,
+      "scan": 4,
+      "source": "resources.rizal/hamonshu/hamonshu_1.pages/hamonshu_1-004.png",
+      "content_status": "water",
+      "form_groups": [
+        "arc",
+        "foam",
+        "crest",
+        "flow"
+      ],
+      "arrangements": [
+        "field",
+        "cluster"
+      ],
+      "notes": "Scalloped clusters, foam-tipped swells and flowing wave panels."
+    },
+    {
+      "id": "v1-s005",
+      "volume": 1,
+      "scan": 5,
+      "source": "resources.rizal/hamonshu/hamonshu_1.pages/hamonshu_1-005.png",
+      "content_status": "water",
+      "form_groups": [
+        "arc",
+        "foam",
+        "crest",
+        "weave"
+      ],
+      "arrangements": [
+        "cluster",
+        "band"
+      ],
+      "notes": "Small arch/ridge specimens, dotted sprays and angular repeat studies."
+    },
+    {
+      "id": "v1-s006",
+      "volume": 1,
+      "scan": 6,
+      "source": "resources.rizal/hamonshu/hamonshu_1.pages/hamonshu_1-006.png",
+      "content_status": "water",
+      "form_groups": [
+        "eddy",
+        "flow",
+        "crest"
+      ],
+      "arrangements": [
+        "field",
+        "band"
+      ],
+      "notes": "Layered eddy channels, loose curling currents and long crest horizons."
+    },
+    {
+      "id": "v1-s007",
+      "volume": 1,
+      "scan": 7,
+      "source": "resources.rizal/hamonshu/hamonshu_1.pages/hamonshu_1-007.png",
+      "content_status": "water",
+      "form_groups": [
+        "flow",
+        "eddy"
+      ],
+      "arrangements": [
+        "medallion",
+        "band"
+      ],
+      "notes": "Waterline medallions, spiral disks and a vertical scroll strip."
+    },
+    {
+      "id": "v1-s008",
+      "volume": 1,
+      "scan": 8,
+      "source": "resources.rizal/hamonshu/hamonshu_1.pages/hamonshu_1-008.png",
+      "content_status": "water",
+      "form_groups": [
+        "eddy",
+        "foam"
+      ],
+      "arrangements": [
+        "medallion",
+        "spread"
+      ],
+      "notes": "Small rotating curl disks and a large ornamental water roundel spanning the gutter."
+    },
+    {
+      "id": "v1-s009",
+      "volume": 1,
+      "scan": 9,
+      "source": "resources.rizal/hamonshu/hamonshu_1.pages/hamonshu_1-009.png",
+      "content_status": "water",
+      "form_groups": [
+        "crest",
+        "foam",
+        "arc"
+      ],
+      "arrangements": [
+        "field",
+        "band"
+      ],
+      "notes": "Sloping crest bands, opposing curls and a scallop/foam field."
+    },
+    {
+      "id": "v1-s010",
+      "volume": 1,
+      "scan": 10,
+      "source": "resources.rizal/hamonshu/hamonshu_1.pages/hamonshu_1-010.png",
+      "content_status": "water",
+      "form_groups": [
+        "crest",
+        "foam",
+        "flow"
+      ],
+      "arrangements": [
+        "field",
+        "band"
+      ],
+      "notes": "Breaking sprays and dense overlapping wave contours."
+    },
+    {
+      "id": "v1-s011",
+      "volume": 1,
+      "scan": 11,
+      "source": "resources.rizal/hamonshu/hamonshu_1.pages/hamonshu_1-011.png",
+      "content_status": "water",
+      "form_groups": [
+        "eddy",
+        "foam",
+        "flow"
+      ],
+      "arrangements": [
+        "field",
+        "cluster"
+      ],
+      "notes": "Ornamental curl sprays and isolated elongated spiral currents."
+    },
+    {
+      "id": "v1-s012",
+      "volume": 1,
+      "scan": 12,
+      "source": "resources.rizal/hamonshu/hamonshu_1.pages/hamonshu_1-012.png",
+      "content_status": "water",
+      "form_groups": [
+        "eddy",
+        "flow",
+        "crest"
+      ],
+      "arrangements": [
+        "cluster",
+        "band"
+      ],
+      "notes": "Long hooked currents and separated curl/crest studies."
+    },
+    {
+      "id": "v1-s013",
+      "volume": 1,
+      "scan": 13,
+      "source": "resources.rizal/hamonshu/hamonshu_1.pages/hamonshu_1-013.png",
+      "content_status": "water",
+      "form_groups": [
+        "eddy",
+        "foam"
+      ],
+      "arrangements": [
+        "medallion",
+        "spread"
+      ],
+      "notes": "Water wreaths and foam/curl disks, including a gutter-spanning circle."
+    },
+    {
+      "id": "v1-s014",
+      "volume": 1,
+      "scan": 14,
+      "source": "resources.rizal/hamonshu/hamonshu_1.pages/hamonshu_1-014.png",
+      "content_status": "water",
+      "form_groups": [
+        "flow",
+        "eddy"
+      ],
+      "arrangements": [
+        "medallion"
+      ],
+      "notes": "Roundels with dense waves, connected curls and spiral centers."
+    },
+    {
+      "id": "v1-s015",
+      "volume": 1,
+      "scan": 15,
+      "source": "resources.rizal/hamonshu/hamonshu_1.pages/hamonshu_1-015.png",
+      "content_status": "water",
+      "form_groups": [
+        "arc",
+        "weave",
+        "fan",
+        "foam"
+      ],
+      "arrangements": [
+        "cluster",
+        "field"
+      ],
+      "notes": "Angular lattice, vertical fountain, rounded scallops and foam studies."
+    },
+    {
+      "id": "v1-s016",
+      "volume": 1,
+      "scan": 16,
+      "source": "resources.rizal/hamonshu/hamonshu_1.pages/hamonshu_1-016.png",
+      "content_status": "water",
+      "form_groups": [
+        "flow",
+        "eddy",
+        "arc"
+      ],
+      "arrangements": [
+        "cluster",
+        "band"
+      ],
+      "notes": "Braided diagonal ribbons, curl-ended roundels and repeated nested arcs."
+    },
+    {
+      "id": "v1-s017",
+      "volume": 1,
+      "scan": 17,
+      "source": "resources.rizal/hamonshu/hamonshu_1.pages/hamonshu_1-017.png",
+      "content_status": "water",
+      "form_groups": [
+        "flow",
+        "weave"
+      ],
+      "arrangements": [
+        "field",
+        "band"
+      ],
+      "notes": "Fine parallel currents, oblique short strokes and lozenge-like ripples."
+    },
+    {
+      "id": "v1-s018",
+      "volume": 1,
+      "scan": 18,
+      "source": "resources.rizal/hamonshu/hamonshu_1.pages/hamonshu_1-018.png",
+      "content_status": "water",
+      "form_groups": [
+        "flow",
+        "crest",
+        "eddy"
+      ],
+      "arrangements": [
+        "field",
+        "band"
+      ],
+      "notes": "Sparse ripple marks, elongated crest rows and thin interwoven current lines."
+    },
+    {
+      "id": "v1-s019",
+      "volume": 1,
+      "scan": 19,
+      "source": "resources.rizal/hamonshu/hamonshu_1.pages/hamonshu_1-019.png",
+      "content_status": "water",
+      "form_groups": [
+        "crest",
+        "foam",
+        "flow"
+      ],
+      "arrangements": [
+        "cluster",
+        "band"
+      ],
+      "notes": "Foam-tipped breakers, low swell groups and sparse breaking ridges."
+    },
+    {
+      "id": "v1-s020",
+      "volume": 1,
+      "scan": 20,
+      "source": "resources.rizal/hamonshu/hamonshu_1.pages/hamonshu_1-020.png",
+      "content_status": "water",
+      "form_groups": [
+        "crest",
+        "flow",
+        "weave"
+      ],
+      "arrangements": [
+        "field",
+        "cluster"
+      ],
+      "notes": "Fine contour swells, diagonal crossing streams and interleaved waves."
+    },
+    {
+      "id": "v1-s021",
+      "volume": 1,
+      "scan": 21,
+      "source": "resources.rizal/hamonshu/hamonshu_1.pages/hamonshu_1-021.png",
+      "content_status": "water",
+      "form_groups": [
+        "eddy",
+        "fan",
+        "foam"
+      ],
+      "arrangements": [
+        "cluster",
+        "medallion",
+        "border"
+      ],
+      "notes": "Ornamental curl masses, a rotating fan, and vertical fountain/scroll borders."
+    },
+    {
+      "id": "v1-s022",
+      "volume": 1,
+      "scan": 22,
+      "source": "resources.rizal/hamonshu/hamonshu_1.pages/hamonshu_1-022.png",
+      "content_status": "water",
+      "form_groups": [
+        "eddy",
+        "crest",
+        "flow",
+        "foam"
+      ],
+      "arrangements": [
+        "band",
+        "cluster"
+      ],
+      "notes": "Dark curling crests, meandering currents and a large row of simple hooks."
+    },
+    {
+      "id": "v1-s023",
+      "volume": 1,
+      "scan": 23,
+      "source": "resources.rizal/hamonshu/hamonshu_1.pages/hamonshu_1-023.png",
+      "content_status": "water",
+      "form_groups": [
+        "crest",
+        "eddy",
+        "flow"
+      ],
+      "arrangements": [
+        "band",
+        "field"
+      ],
+      "notes": "Tall open breaker, broad eddy pools and long ornamental meanders."
+    },
+    {
+      "id": "v1-s024",
+      "volume": 1,
+      "scan": 24,
+      "source": "resources.rizal/hamonshu/hamonshu_1.pages/hamonshu_1-024.png",
+      "content_status": "water",
+      "form_groups": [
+        "flow",
+        "eddy",
+        "weave"
+      ],
+      "arrangements": [
+        "band",
+        "cluster"
+      ],
+      "notes": "Long sparse waterlines, repeated hooked borders and oblique woven ripples."
+    },
+    {
+      "id": "v1-s025",
+      "volume": 1,
+      "scan": 25,
+      "source": "resources.rizal/hamonshu/hamonshu_1.pages/hamonshu_1-025.png",
+      "content_status": "water",
+      "form_groups": [
+        "eddy",
+        "foam",
+        "flow"
+      ],
+      "arrangements": [
+        "cluster",
+        "band"
+      ],
+      "notes": "Unequal scroll sprays, linked curl ornament and fine horizon/current bands."
+    },
+    {
+      "id": "v1-s026",
+      "volume": 1,
+      "scan": 26,
+      "source": "resources.rizal/hamonshu/hamonshu_1.pages/hamonshu_1-026.png",
+      "content_status": "water",
+      "form_groups": [
+        "eddy",
+        "foam",
+        "arc",
+        "flow"
+      ],
+      "arrangements": [
+        "field",
+        "band"
+      ],
+      "notes": "Linked curls, arc-and-spray groups and long curling stream ends."
+    },
+    {
+      "id": "v1-s027",
+      "volume": 1,
+      "scan": 27,
+      "source": "resources.rizal/hamonshu/hamonshu_1.pages/hamonshu_1-027.png",
+      "content_status": "water",
+      "form_groups": [
+        "crest",
+        "arc",
+        "eddy"
+      ],
+      "arrangements": [
+        "medallion",
+        "field"
+      ],
+      "notes": "Fan-shaped water panel, circular breaker inset, nested swells and eddies."
+    },
+    {
+      "id": "v1-s028",
+      "volume": 1,
+      "scan": 28,
+      "source": "resources.rizal/hamonshu/hamonshu_1.pages/hamonshu_1-028.png",
+      "content_status": "mixed_text",
+      "form_groups": [
+        "flow",
+        "crest"
+      ],
+      "arrangements": [
+        "field"
+      ],
+      "notes": "Use the dense water panel on the right; exclude the left colophon."
+    },
+    {
+      "id": "v1-s029",
+      "volume": 1,
+      "scan": 29,
+      "source": "resources.rizal/hamonshu/hamonshu_1.pages/hamonshu_1-029.png",
+      "content_status": "water_cover",
+      "form_groups": [
+        "eddy"
+      ],
+      "arrangements": [
+        "cluster"
+      ],
+      "notes": "Back-cover spiral clusters; duplicate cover vocabulary, not a new specimen family."
+    },
+    {
+      "id": "v2-s001",
+      "volume": 2,
+      "scan": 1,
+      "source": "resources.rizal/hamonshu/hamonshu_2.pages/hamonshu_2-001.png",
+      "content_status": "mixed_cover",
+      "form_groups": [
+        "eddy"
+      ],
+      "arrangements": [
+        "cluster"
+      ],
+      "notes": "Spiral cover ornament; exclude the title strip and pasted label."
+    },
+    {
+      "id": "v2-s002",
+      "volume": 2,
+      "scan": 2,
+      "source": "resources.rizal/hamonshu/hamonshu_2.pages/hamonshu_2-002.png",
+      "content_status": "water",
+      "form_groups": [
+        "flow",
+        "eddy"
+      ],
+      "arrangements": [
+        "field"
+      ],
+      "notes": "Open current channels with curling terminals; blank facing page."
+    },
+    {
+      "id": "v2-s003",
+      "volume": 2,
+      "scan": 3,
+      "source": "resources.rizal/hamonshu/hamonshu_2.pages/hamonshu_2-003.png",
+      "content_status": "water",
+      "form_groups": [
+        "flow",
+        "crest",
+        "foam"
+      ],
+      "arrangements": [
+        "field",
+        "band"
+      ],
+      "notes": "Dense currents, breaking wave sprays and towering contour crests."
+    },
+    {
+      "id": "v2-s004",
+      "volume": 2,
+      "scan": 4,
+      "source": "resources.rizal/hamonshu/hamonshu_2.pages/hamonshu_2-004.png",
+      "content_status": "water",
+      "form_groups": [
+        "foam",
+        "weave",
+        "fan",
+        "crest"
+      ],
+      "arrangements": [
+        "field",
+        "border"
+      ],
+      "notes": "Spray inset, herringbone field, fountain-like curl repeat and opposed breakers."
+    },
+    {
+      "id": "v2-s005",
+      "volume": 2,
+      "scan": 5,
+      "source": "resources.rizal/hamonshu/hamonshu_2.pages/hamonshu_2-005.png",
+      "content_status": "water",
+      "form_groups": [
+        "flow",
+        "eddy"
+      ],
+      "arrangements": [
+        "band",
+        "spread",
+        "field"
+      ],
+      "notes": "Long continuous hooked bands and a dense current field crossing the gutter."
+    },
+    {
+      "id": "v2-s006",
+      "volume": 2,
+      "scan": 6,
+      "source": "resources.rizal/hamonshu/hamonshu_2.pages/hamonshu_2-006.png",
+      "content_status": "water",
+      "form_groups": [
+        "eddy",
+        "foam",
+        "flow",
+        "weave"
+      ],
+      "arrangements": [
+        "field",
+        "band"
+      ],
+      "notes": "Loose spiral/foam fields, ripple dashes and a diamond-crossing band."
+    },
+    {
+      "id": "v2-s007",
+      "volume": 2,
+      "scan": 7,
+      "source": "resources.rizal/hamonshu/hamonshu_2.pages/hamonshu_2-007.png",
+      "content_status": "water",
+      "form_groups": [
+        "weave",
+        "flow",
+        "crest"
+      ],
+      "arrangements": [
+        "band",
+        "field"
+      ],
+      "notes": "Braided ribbons, dotted lozenges, small hook repeats and marching breaker silhouettes."
+    },
+    {
+      "id": "v2-s008",
+      "volume": 2,
+      "scan": 8,
+      "source": "resources.rizal/hamonshu/hamonshu_2.pages/hamonshu_2-008.png",
+      "content_status": "water",
+      "form_groups": [
+        "eddy",
+        "foam",
+        "fan"
+      ],
+      "arrangements": [
+        "medallion",
+        "border",
+        "cluster"
+      ],
+      "notes": "Boxed currents, a symmetric scroll fountain, curl wreath and foam disks."
+    },
+    {
+      "id": "v2-s009",
+      "volume": 2,
+      "scan": 9,
+      "source": "resources.rizal/hamonshu/hamonshu_2.pages/hamonshu_2-009.png",
+      "content_status": "water",
+      "form_groups": [
+        "eddy",
+        "crest",
+        "flow"
+      ],
+      "arrangements": [
+        "field",
+        "band"
+      ],
+      "notes": "Woodgrain eddies, cascading folds, ranked crests and a broad S-current."
+    },
+    {
+      "id": "v2-s010",
+      "volume": 2,
+      "scan": 10,
+      "source": "resources.rizal/hamonshu/hamonshu_2.pages/hamonshu_2-010.png",
+      "content_status": "water",
+      "form_groups": [
+        "flow",
+        "crest",
+        "eddy",
+        "fan"
+      ],
+      "arrangements": [
+        "band",
+        "cluster"
+      ],
+      "notes": "Distant waves, a crest ridge, an elliptical eddy and fan-ended current."
+    },
+    {
+      "id": "v2-s011",
+      "volume": 2,
+      "scan": 11,
+      "source": "resources.rizal/hamonshu/hamonshu_2.pages/hamonshu_2-011.png",
+      "content_status": "water",
+      "form_groups": [
+        "arc",
+        "eddy",
+        "weave",
+        "flow"
+      ],
+      "arrangements": [
+        "medallion",
+        "border"
+      ],
+      "notes": "Nested arc and spiral medallions, short patterned strips and knotted waterlines."
+    },
+    {
+      "id": "v2-s012",
+      "volume": 2,
+      "scan": 12,
+      "source": "resources.rizal/hamonshu/hamonshu_2.pages/hamonshu_2-012.png",
+      "content_status": "water",
+      "form_groups": [
+        "eddy",
+        "foam",
+        "arc",
+        "crest"
+      ],
+      "arrangements": [
+        "medallion"
+      ],
+      "notes": "Foam/curl disks contrasted with densely lined and scallop-filled circles."
+    },
+    {
+      "id": "v2-s013",
+      "volume": 2,
+      "scan": 13,
+      "source": "resources.rizal/hamonshu/hamonshu_2.pages/hamonshu_2-013.png",
+      "content_status": "water",
+      "form_groups": [
+        "eddy",
+        "foam",
+        "arc",
+        "crest"
+      ],
+      "arrangements": [
+        "medallion",
+        "cluster",
+        "spread"
+      ],
+      "notes": "Curl disks, a large unequal scrolling current across the gutter, ripple pools and small crests."
+    },
+    {
+      "id": "v2-s014",
+      "volume": 2,
+      "scan": 14,
+      "source": "resources.rizal/hamonshu/hamonshu_2.pages/hamonshu_2-014.png",
+      "content_status": "water",
+      "form_groups": [
+        "foam"
+      ],
+      "arrangements": [
+        "spread",
+        "field"
+      ],
+      "notes": "Continuous irregular foam constellation and detached droplets across both pages."
+    },
+    {
+      "id": "v2-s015",
+      "volume": 2,
+      "scan": 15,
+      "source": "resources.rizal/hamonshu/hamonshu_2.pages/hamonshu_2-015.png",
+      "content_status": "water",
+      "form_groups": [
+        "fan",
+        "arc",
+        "foam"
+      ],
+      "arrangements": [
+        "border",
+        "cluster"
+      ],
+      "notes": "Arch and spear fountains, small scallop borders and symmetrical crest sprays."
+    },
+    {
+      "id": "v2-s016",
+      "volume": 2,
+      "scan": 16,
+      "source": "resources.rizal/hamonshu/hamonshu_2.pages/hamonshu_2-016.png",
+      "content_status": "water",
+      "form_groups": [
+        "eddy",
+        "flow",
+        "weave"
+      ],
+      "arrangements": [
+        "cluster",
+        "band"
+      ],
+      "notes": "Small ornamental current clouds, linked curls and loose spiral channels."
+    },
+    {
+      "id": "v2-s017",
+      "volume": 2,
+      "scan": 17,
+      "source": "resources.rizal/hamonshu/hamonshu_2.pages/hamonshu_2-017.png",
+      "content_status": "water",
+      "form_groups": [
+        "weave",
+        "flow",
+        "crest",
+        "foam"
+      ],
+      "arrangements": [
+        "field",
+        "band"
+      ],
+      "notes": "Diamond and eye repeats, feathered current bands, crests and island-like open channels."
+    },
+    {
+      "id": "v2-s018",
+      "volume": 2,
+      "scan": 18,
+      "source": "resources.rizal/hamonshu/hamonshu_2.pages/hamonshu_2-018.png",
+      "content_status": "water",
+      "form_groups": [
+        "flow",
+        "foam",
+        "crest"
+      ],
+      "arrangements": [
+        "field",
+        "band"
+      ],
+      "notes": "Broken waterlines, large open foam cells and bold diagonal breakers."
+    },
+    {
+      "id": "v2-s019",
+      "volume": 2,
+      "scan": 19,
+      "source": "resources.rizal/hamonshu/hamonshu_2.pages/hamonshu_2-019.png",
+      "content_status": "water",
+      "form_groups": [
+        "crest",
+        "flow",
+        "foam"
+      ],
+      "arrangements": [
+        "field",
+        "band"
+      ],
+      "notes": "Interlocking crests, fine rolling seas, separated currents and colliding sprays."
+    },
+    {
+      "id": "v2-s020",
+      "volume": 2,
+      "scan": 20,
+      "source": "resources.rizal/hamonshu/hamonshu_2.pages/hamonshu_2-020.png",
+      "content_status": "water",
+      "form_groups": [
+        "arc",
+        "crest",
+        "flow"
+      ],
+      "arrangements": [
+        "field",
+        "band"
+      ],
+      "notes": "Scallop sea with dark breakers, long meander and diagonal crest ridges."
+    },
+    {
+      "id": "v2-s021",
+      "volume": 2,
+      "scan": 21,
+      "source": "resources.rizal/hamonshu/hamonshu_2.pages/hamonshu_2-021.png",
+      "content_status": "water",
+      "form_groups": [
+        "eddy",
+        "crest",
+        "foam"
+      ],
+      "arrangements": [
+        "field",
+        "cluster"
+      ],
+      "notes": "Spiral and crest textures, shaded wave mountains, drifting currents and spray-tailed curls."
+    },
+    {
+      "id": "v2-s022",
+      "volume": 2,
+      "scan": 22,
+      "source": "resources.rizal/hamonshu/hamonshu_2.pages/hamonshu_2-022.png",
+      "content_status": "water",
+      "form_groups": [
+        "flow",
+        "eddy",
+        "crest",
+        "foam"
+      ],
+      "arrangements": [
+        "field",
+        "band"
+      ],
+      "notes": "Layered eddy channels, beaded swells, foam breakers and an oval current band."
+    },
+    {
+      "id": "v2-s023",
+      "volume": 2,
+      "scan": 23,
+      "source": "resources.rizal/hamonshu/hamonshu_2.pages/hamonshu_2-023.png",
+      "content_status": "water",
+      "form_groups": [
+        "flow",
+        "eddy",
+        "crest"
+      ],
+      "arrangements": [
+        "spread",
+        "field",
+        "band"
+      ],
+      "notes": "Large river-bend study and long hooked or spiral-margin currents."
+    },
+    {
+      "id": "v2-s024",
+      "volume": 2,
+      "scan": 24,
+      "source": "resources.rizal/hamonshu/hamonshu_2.pages/hamonshu_2-024.png",
+      "content_status": "water",
+      "form_groups": [
+        "foam",
+        "crest",
+        "arc"
+      ],
+      "arrangements": [
+        "field",
+        "cluster"
+      ],
+      "notes": "Positive/negative foam, fountain-like arcs, rock-and-wave study and low swells."
+    },
+    {
+      "id": "v2-s025",
+      "volume": 2,
+      "scan": 25,
+      "source": "resources.rizal/hamonshu/hamonshu_2.pages/hamonshu_2-025.png",
+      "content_status": "water",
+      "form_groups": [
+        "flow",
+        "eddy",
+        "crest"
+      ],
+      "arrangements": [
+        "band",
+        "spread"
+      ],
+      "notes": "Three continuous ornamental currents crossing the gutter: curling crests, loops and marching hooks."
+    },
+    {
+      "id": "v2-s026",
+      "volume": 2,
+      "scan": 26,
+      "source": "resources.rizal/hamonshu/hamonshu_2.pages/hamonshu_2-026.png",
+      "content_status": "water",
+      "form_groups": [
+        "eddy",
+        "flow",
+        "crest",
+        "foam"
+      ],
+      "arrangements": [
+        "cluster",
+        "band",
+        "field"
+      ],
+      "notes": "Spiral pools, feathered currents, ring cells and curling wave bands."
+    },
+    {
+      "id": "v2-s027",
+      "volume": 2,
+      "scan": 27,
+      "source": "resources.rizal/hamonshu/hamonshu_2.pages/hamonshu_2-027.png",
+      "content_status": "mixed_text",
+      "form_groups": [
+        "eddy",
+        "arc",
+        "weave",
+        "crest"
+      ],
+      "arrangements": [
+        "field",
+        "cluster"
+      ],
+      "notes": "Use the right-page collage of water patterns only; exclude the left-page colophon."
+    },
+    {
+      "id": "v2-s028",
+      "volume": 2,
+      "scan": 28,
+      "source": "resources.rizal/hamonshu/hamonshu_2.pages/hamonshu_2-028.png",
+      "content_status": "water_cover",
+      "form_groups": [
+        "eddy"
+      ],
+      "arrangements": [
+        "cluster"
+      ],
+      "notes": "Back-cover spiral ornament; repeated cover design, not a new family."
+    },
+    {
+      "id": "v3-s001",
+      "volume": 3,
+      "scan": 1,
+      "source": "resources.rizal/hamonshu/hamonshu_3.pages/hamonshu_3-001.png",
+      "content_status": "mixed_cover",
+      "form_groups": [
+        "eddy"
+      ],
+      "arrangements": [
+        "cluster"
+      ],
+      "notes": "Cover spiral ornament only; exclude the title strip."
+    },
+    {
+      "id": "v3-s002",
+      "volume": 3,
+      "scan": 2,
+      "source": "resources.rizal/hamonshu/hamonshu_3.pages/hamonshu_3-002.png",
+      "content_status": "water",
+      "form_groups": [
+        "flow",
+        "eddy"
+      ],
+      "arrangements": [
+        "field",
+        "medallion"
+      ],
+      "notes": "Circular waterline field within a curling frame on the left; right page blank."
+    },
+    {
+      "id": "v3-s003",
+      "volume": 3,
+      "scan": 3,
+      "source": "resources.rizal/hamonshu/hamonshu_3.pages/hamonshu_3-003.png",
+      "content_status": "water",
+      "form_groups": [
+        "crest",
+        "foam",
+        "flow"
+      ],
+      "arrangements": [
+        "field",
+        "band"
+      ],
+      "notes": "Contour breakers and dark dotted wave fields."
+    },
+    {
+      "id": "v3-s004",
+      "volume": 3,
+      "scan": 4,
+      "source": "resources.rizal/hamonshu/hamonshu_3.pages/hamonshu_3-004.png",
+      "content_status": "water",
+      "form_groups": [
+        "flow",
+        "arc",
+        "eddy",
+        "foam"
+      ],
+      "arrangements": [
+        "cluster",
+        "field"
+      ],
+      "notes": "Thin horizons, nested arcs, loose foamed curls and dense foam islands."
+    },
+    {
+      "id": "v3-s005",
+      "volume": 3,
+      "scan": 5,
+      "source": "resources.rizal/hamonshu/hamonshu_3.pages/hamonshu_3-005.png",
+      "content_status": "water",
+      "form_groups": [
+        "flow",
+        "crest"
+      ],
+      "arrangements": [
+        "field",
+        "spread"
+      ],
+      "notes": "Paired full-page fields of broad, densely nested overlapping swells."
+    },
+    {
+      "id": "v3-s006",
+      "volume": 3,
+      "scan": 6,
+      "source": "resources.rizal/hamonshu/hamonshu_3.pages/hamonshu_3-006.png",
+      "content_status": "water",
+      "form_groups": [
+        "crest",
+        "eddy",
+        "flow"
+      ],
+      "arrangements": [
+        "field",
+        "band"
+      ],
+      "notes": "Curl-tipped horizons, linked scroll fields and broken ripple lines."
+    },
+    {
+      "id": "v3-s007",
+      "volume": 3,
+      "scan": 7,
+      "source": "resources.rizal/hamonshu/hamonshu_3.pages/hamonshu_3-007.png",
+      "content_status": "water",
+      "form_groups": [
+        "eddy",
+        "flow",
+        "weave"
+      ],
+      "arrangements": [
+        "band",
+        "cluster",
+        "border"
+      ],
+      "notes": "Scroll ornament, curl borders, meanders, looped current bands and diamond eddy repeats."
+    },
+    {
+      "id": "v3-s008",
+      "volume": 3,
+      "scan": 8,
+      "source": "resources.rizal/hamonshu/hamonshu_3.pages/hamonshu_3-008.png",
+      "content_status": "water",
+      "form_groups": [
+        "eddy",
+        "flow",
+        "foam",
+        "crest"
+      ],
+      "arrangements": [
+        "band",
+        "field"
+      ],
+      "notes": "Elongated pools, dark and light spiral ribbons, diagonal hooks and droplets."
+    },
+    {
+      "id": "v3-s009",
+      "volume": 3,
+      "scan": 9,
+      "source": "resources.rizal/hamonshu/hamonshu_3.pages/hamonshu_3-009.png",
+      "content_status": "water",
+      "form_groups": [
+        "crest",
+        "foam",
+        "flow"
+      ],
+      "arrangements": [
+        "field",
+        "cluster"
+      ],
+      "notes": "Fine stacked wave blocks, loosely drawn foamed breakers and foam channels."
+    },
+    {
+      "id": "v3-s010",
+      "volume": 3,
+      "scan": 10,
+      "source": "resources.rizal/hamonshu/hamonshu_3.pages/hamonshu_3-010.png",
+      "content_status": "water",
+      "form_groups": [
+        "eddy",
+        "flow",
+        "weave",
+        "arc"
+      ],
+      "arrangements": [
+        "field"
+      ],
+      "notes": "Woodgrain-like whirlpools, interlaced scrolls with scallop infill and uneven currents."
+    },
+    {
+      "id": "v3-s011",
+      "volume": 3,
+      "scan": 11,
+      "source": "resources.rizal/hamonshu/hamonshu_3.pages/hamonshu_3-011.png",
+      "content_status": "water",
+      "form_groups": [
+        "flow",
+        "crest",
+        "eddy"
+      ],
+      "arrangements": [
+        "field",
+        "band"
+      ],
+      "notes": "Long scroll currents, sweeping wave fields, fine bands and a bold spiral band."
+    },
+    {
+      "id": "v3-s012",
+      "volume": 3,
+      "scan": 12,
+      "source": "resources.rizal/hamonshu/hamonshu_3.pages/hamonshu_3-012.png",
+      "content_status": "water",
+      "form_groups": [
+        "crest",
+        "eddy",
+        "flow"
+      ],
+      "arrangements": [
+        "band",
+        "cluster"
+      ],
+      "notes": "Small crest rows, interlaced hooks, loose breakers and feathered waves."
+    },
+    {
+      "id": "v3-s013",
+      "volume": 3,
+      "scan": 13,
+      "source": "resources.rizal/hamonshu/hamonshu_3.pages/hamonshu_3-013.png",
+      "content_status": "water",
+      "form_groups": [
+        "crest",
+        "flow",
+        "eddy",
+        "arc"
+      ],
+      "arrangements": [
+        "cluster",
+        "medallion",
+        "band"
+      ],
+      "notes": "Small wave emblems, nested crest clusters, oval water fields and three-armed scrolls."
+    },
+    {
+      "id": "v3-s014",
+      "volume": 3,
+      "scan": 14,
+      "source": "resources.rizal/hamonshu/hamonshu_3.pages/hamonshu_3-014.png",
+      "content_status": "water",
+      "form_groups": [
+        "eddy",
+        "flow",
+        "crest",
+        "foam"
+      ],
+      "arrangements": [
+        "medallion",
+        "cluster"
+      ],
+      "notes": "Circular crests, scrolls, waterline fills and droplet emblems."
+    },
+    {
+      "id": "v3-s015",
+      "volume": 3,
+      "scan": 15,
+      "source": "resources.rizal/hamonshu/hamonshu_3.pages/hamonshu_3-015.png",
+      "content_status": "water",
+      "form_groups": [
+        "eddy",
+        "flow",
+        "foam",
+        "crest"
+      ],
+      "arrangements": [
+        "medallion",
+        "cluster"
+      ],
+      "notes": "Oval current coils, foamed wave clusters and large asymmetric swirling pools."
+    },
+    {
+      "id": "v3-s016",
+      "volume": 3,
+      "scan": 16,
+      "source": "resources.rizal/hamonshu/hamonshu_3.pages/hamonshu_3-016.png",
+      "content_status": "water",
+      "form_groups": [
+        "eddy",
+        "arc",
+        "crest",
+        "foam"
+      ],
+      "arrangements": [
+        "medallion",
+        "field",
+        "band"
+      ],
+      "notes": "Spiral emblems, scalloped arcs, small swells and bold elongated eddies over a foam field."
+    },
+    {
+      "id": "v3-s017",
+      "volume": 3,
+      "scan": 17,
+      "source": "resources.rizal/hamonshu/hamonshu_3.pages/hamonshu_3-017.png",
+      "content_status": "water",
+      "form_groups": [
+        "flow",
+        "foam",
+        "arc",
+        "crest"
+      ],
+      "arrangements": [
+        "band",
+        "cluster",
+        "spread"
+      ],
+      "notes": "Cross-spread current ribbon with droplets, layered arc clusters and curling breakers."
+    },
+    {
+      "id": "v3-s018",
+      "volume": 3,
+      "scan": 18,
+      "source": "resources.rizal/hamonshu/hamonshu_3.pages/hamonshu_3-018.png",
+      "content_status": "water",
+      "form_groups": [
+        "flow",
+        "eddy",
+        "crest",
+        "foam"
+      ],
+      "arrangements": [
+        "band",
+        "cluster"
+      ],
+      "notes": "Thin meandering currents, two-ended eddies, foamed breakers and a fine swirling wave field."
+    },
+    {
+      "id": "v3-s019",
+      "volume": 3,
+      "scan": 19,
+      "source": "resources.rizal/hamonshu/hamonshu_3.pages/hamonshu_3-019.png",
+      "content_status": "water",
+      "form_groups": [
+        "crest",
+        "foam",
+        "arc",
+        "flow"
+      ],
+      "arrangements": [
+        "medallion",
+        "cluster"
+      ],
+      "notes": "Crest ring and diamond emblems, beaded scallops, small hooked waves and meandering currents."
+    },
+    {
+      "id": "v3-s020",
+      "volume": 3,
+      "scan": 20,
+      "source": "resources.rizal/hamonshu/hamonshu_3.pages/hamonshu_3-020.png",
+      "content_status": "water",
+      "form_groups": [
+        "crest",
+        "foam",
+        "flow",
+        "weave"
+      ],
+      "arrangements": [
+        "field",
+        "band"
+      ],
+      "notes": "Dense foamed waves, sparse droplet crests and diagonal interleaved bundles of waterlines."
+    },
+    {
+      "id": "v3-s021",
+      "volume": 3,
+      "scan": 21,
+      "source": "resources.rizal/hamonshu/hamonshu_3.pages/hamonshu_3-021.png",
+      "content_status": "water",
+      "form_groups": [
+        "flow",
+        "eddy",
+        "weave",
+        "crest",
+        "foam"
+      ],
+      "arrangements": [
+        "field",
+        "band",
+        "border"
+      ],
+      "notes": "Bold looped currents, thin linked borders, framed scrolls, contour waves and foam crests."
+    },
+    {
+      "id": "v3-s022",
+      "volume": 3,
+      "scan": 22,
+      "source": "resources.rizal/hamonshu/hamonshu_3.pages/hamonshu_3-022.png",
+      "content_status": "water",
+      "form_groups": [
+        "fan",
+        "eddy",
+        "flow",
+        "foam",
+        "crest"
+      ],
+      "arrangements": [
+        "cluster",
+        "field",
+        "border"
+      ],
+      "notes": "Fountain jets, tall hook-tipped lines, loose droplet field and a large curling breaker."
+    },
+    {
+      "id": "v3-s023",
+      "volume": 3,
+      "scan": 23,
+      "source": "resources.rizal/hamonshu/hamonshu_3.pages/hamonshu_3-023.png",
+      "content_status": "water",
+      "form_groups": [
+        "flow",
+        "crest",
+        "foam",
+        "fan"
+      ],
+      "arrangements": [
+        "field",
+        "cluster",
+        "band"
+      ],
+      "notes": "Meandering currents, layered long swells, upright foaming jet and dense breaking water."
+    },
+    {
+      "id": "v3-s024",
+      "volume": 3,
+      "scan": 24,
+      "source": "resources.rizal/hamonshu/hamonshu_3.pages/hamonshu_3-024.png",
+      "content_status": "water",
+      "form_groups": [
+        "flow",
+        "crest",
+        "eddy"
+      ],
+      "arrangements": [
+        "field",
+        "cluster"
+      ],
+      "notes": "Short strokes following currents, broad curl-tipped waves and loose meander emblems."
+    },
+    {
+      "id": "v3-s025",
+      "volume": 3,
+      "scan": 25,
+      "source": "resources.rizal/hamonshu/hamonshu_3.pages/hamonshu_3-025.png",
+      "content_status": "water",
+      "form_groups": [
+        "fan",
+        "flow",
+        "crest",
+        "foam"
+      ],
+      "arrangements": [
+        "border",
+        "cluster",
+        "band"
+      ],
+      "notes": "Feathered fountain border, fine meanders, sparse swells and foamed breakers."
+    },
+    {
+      "id": "v3-s026",
+      "volume": 3,
+      "scan": 26,
+      "source": "resources.rizal/hamonshu/hamonshu_3.pages/hamonshu_3-026.png",
+      "content_status": "water",
+      "form_groups": [
+        "flow",
+        "crest",
+        "foam",
+        "eddy"
+      ],
+      "arrangements": [
+        "band",
+        "spread"
+      ],
+      "notes": "Water-patterned flowing ribbons; classify their graphic fills, not the depicted paper substrate."
+    },
+    {
+      "id": "v3-s027",
+      "volume": 3,
+      "scan": 27,
+      "source": "resources.rizal/hamonshu/hamonshu_3.pages/hamonshu_3-027.png",
+      "content_status": "mixed_text",
+      "form_groups": [
+        "flow",
+        "crest",
+        "foam"
+      ],
+      "arrangements": [
+        "band",
+        "cluster"
+      ],
+      "notes": "Use only the water-filled ribbon on the right; exclude left-page calligraphy and the writing equipment."
+    },
+    {
+      "id": "v3-s028",
+      "volume": 3,
+      "scan": 28,
+      "source": "resources.rizal/hamonshu/hamonshu_3.pages/hamonshu_3-028.png",
+      "content_status": "excluded_text",
+      "form_groups": [],
+      "arrangements": [],
+      "notes": "Colophon and calligraphy only; excluded from the graphic water catalogue."
+    },
+    {
+      "id": "v3-s029",
+      "volume": 3,
+      "scan": 29,
+      "source": "resources.rizal/hamonshu/hamonshu_3.pages/hamonshu_3-029.png",
+      "content_status": "water_cover",
+      "form_groups": [
+        "eddy"
+      ],
+      "arrangements": [
+        "cluster"
+      ],
+      "notes": "Back-cover spiral ornament; repeated cover design, not a new family."
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+<map id="izzi::guilloche::lenticular_detail::prefix_view" name="izzi::guilloche::lenticular_detail::prefix_view">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,235,162,271"/>
+<area shape="rect" id="Node000002" href="$namespaceizzi_1_1guilloche.html#a6f86d37ef5909ec7f60f7ed2e029bdf1" title=" " alt="" coords="210,124,374,148"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="116,232,256,153,256,158,119,236"/>
+<area shape="rect" id="Node000006" href="$namespaceizzi_1_1guilloche_1_1detail.html#aa2e3cb80bde026ce4a045068023f69c2" title=" " alt="" coords="606,179,743,215"/>
+<area shape="poly" id="edge9_Node000001_Node000006" title=" " alt="" coords="162,251,343,246,451,238,558,225,594,220,600,219,559,230,452,244,344,252,162,256"/>
+<area shape="rect" id="Node000008" href="$namespaceizzi_1_1guilloche_1_1lenticular__detail.html#a11f0e5a1bbaa9f76c8896554a72d9f9a" title=" " alt="" coords="214,291,370,327"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="155,269,209,286,204,287,154,275"/>
+<area shape="rect" id="Node000003" href="$namespaceizzi_1_1guilloche_1_1detail.html#a0f39ea69d480939646bd0f6bbf954414" title=" " alt="" coords="422,5,558,42"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="313,121,421,59,444,49,439,51,423,63,315,126"/>
+<area shape="rect" id="Node000004" href="$namespaceizzi_1_1guilloche_1_1detail.html#aa7ee1d2e8673d6d8b091f7f5cc4e68ab" title=" " alt="" coords="606,89,743,126"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="334,121,422,102,490,99,558,102,593,105,588,106,558,108,490,105,422,108,335,126"/>
+<area shape="rect" id="Node000005" href="$namespaceizzi_1_1guilloche_1_1detail.html#aab7f3d5aac86808755dc7eecb7618cbc" title=" " alt="" coords="422,117,558,154"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="374,133,409,135,404,136,375,138"/>
+<area shape="rect" id="Node000007" href="$namespaceizzi_1_1guilloche.html#ae22f9126ef60170c60d517282766d687" title=" " alt="" coords="432,179,548,215"/>
+<area shape="poly" id="edge7_Node000002_Node000007" title=" " alt="" coords="333,145,420,174,414,175,333,151"/>
+<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="558,123,593,120,588,121,559,128"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="548,152,605,173,600,173,547,157"/>
+</map>

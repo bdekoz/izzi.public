@@ -1,0 +1,7 @@
+{
+  "form_id": "satellite/transport-burst-recovery",
+  "parameters": {"amount": 1, "concealment": "hold", "burstiness": 0},
+  "seed": 20260930,
+  "domain": [0, 0, 640, 360],
+  "source_sequence": "examples/screen-glitch/source-sequence.json"
+}

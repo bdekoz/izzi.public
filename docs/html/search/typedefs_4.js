@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['id_5frstate_5fumap_0',['id_rstate_umap',['../namespacesvg.html#a2899de20df3a397ba8f52ffdd26a1344',1,'svg']]],
-  ['id_5fvalue_5fumap_1',['id_value_umap',['../namespacesvg.html#a11fc43ec6feb4bfda303b00d0e3b7fca',1,'svg']]],
-  ['itype_2',['itype',['../structsvg_1_1color__qi.html#aca2e01ff1f6b9c1a01f6e1fde89b4f97',1,'svg::color_qi']]]
+  ['flat_5fface_0',['flat_face',['../namespacesvg_1_1polyhedral.html#a676f5635e582f052020ce3b2558a79a2',1,'svg::polyhedral']]],
+  ['frame_5fcontext_1',['frame_context',['../namespacesvg_1_1screen__glitch.html#a947172eeb642d6f30ea86b2dea5ef6ac',1,'svg::screen_glitch']]],
+  ['ftype_2',['ftype',['../structsvg_1_1color__qf.html#a7d632f87f71dd224733efd02856429c2',1,'svg::color_qf']]]
 ];

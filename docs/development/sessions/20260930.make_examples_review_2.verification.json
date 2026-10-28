@@ -1,0 +1,151 @@
+{
+  "schema_version": 1,
+  "recorded_on": "2026-09-30",
+  "scope": "Immediate current-meta-renderer repair and review presentation changes. The library-wide registry, standardized parameter plates and new wild/crossover studies remain planned.",
+  "pdf": {
+    "path": "outputs/izzi-examples-2026-09-30.pdf",
+    "sha256": "59959cf7d994baab7575338810209351d89eb5c884e21220e89ec77ab08b1d9a",
+    "bytes": 250889308,
+    "page_count": 808,
+    "artwork_plates": 807,
+    "title_pages": 1
+  },
+  "source_versions": {
+    "catalog_sha256": "584c7b6f17b0abf654538c0d11deae95a9f7a9f86cda78b2548865815d56f93c",
+    "compiler_identity_sha256": "17033d39c218547ffd12053344a91b3b50b769bf06a977109351716f416c3374",
+    "generator_sha256": "d479c369c69acf2ec5afc597f2c3b694a7cc75134040ab8c2d0167b6354dbd8e",
+    "logo_path": "docs/image/izzi-wind-square-v2.svg",
+    "logo_sha256": "5c7bc5a9770809f061e24013dae44e5db53830538494ea138b5cb84945d643e6",
+    "presentation_sha256": "13c1ff815fe96864076193474c2958784198a612a19b92f4257704982654b770",
+    "project_version": "3.20260816",
+    "repository_commit": "f6ba22222b2244ecdaf07e90bfc4f09f77d8c9a8",
+    "source_fingerprint": "28ad0c40e2246603ae3ed385a6be6514cbe9d10e334cf732dfff78edadc4277f",
+    "working_tree_modified": true
+  },
+  "checks": {
+    "complete_mode_regression_tests": 19,
+    "existing_artwork_checks": 443,
+    "current_meta_recipes": 76,
+    "current_meta_two_run_repeatability": "STABLE",
+    "current_meta_matches_latest_review_geometry_paint_camera": 76,
+    "source_inputs_current": true,
+    "raw_svg_outputs": 811,
+    "new_svg_paths": 40,
+    "previous_svg_paths_present_in_this_repair": 771,
+    "consolidated_duplicate_pages": 4,
+    "passing_previews": 807,
+    "hidden_render_failures": 0,
+    "pdf_source_checks": {
+      "status": "PASS",
+      "searchable_plate_ids": 807,
+      "source_links": 1614,
+      "searchable_consolidation_aliases": 4,
+      "printed_page_numbers_match_pdf": true,
+      "title_date_and_revision_match": true
+    },
+    "pdf_visible_raster_dimensions": "PASS: checked by render_paged_pdf for every visible raster resource"
+  },
+  "known_preexisting_example_failures": {
+    "compile": [
+      "fuller-studies"
+    ],
+    "runtime": [
+      "film-decay-plates",
+      "geojson-matrix-render",
+      "line-graph-4",
+      "movement-camera-preview",
+      "visualization-chord-swarm-aggregate",
+      "visualization-chord-swarm-record",
+      "visualization-render"
+    ]
+  },
+  "selected_pages": [
+    {
+      "plate_id": "izzi-30586f20717b",
+      "page": 455,
+      "svg_path": "svg/guilloche-enrichment-plates/build/guilloche-enrichment/plates/fox-detail.svg"
+    },
+    {
+      "plate_id": "izzi-7f883410a6e5",
+      "page": 461,
+      "svg_path": "svg/guilloche-enrichment-plates/build/guilloche-enrichment/plates/grooved-brain-detail.svg"
+    },
+    {
+      "plate_id": "izzi-b1e46ab15fcf",
+      "page": 483,
+      "svg_path": "svg/guilloche-enrichment-plates/build/guilloche-enrichment/plates/lettuce-detail.svg"
+    },
+    {
+      "plate_id": "izzi-117c11201ca9",
+      "page": 491,
+      "svg_path": "svg/guilloche-enrichment-plates/build/guilloche-enrichment/plates/muqarnas-alhambra-dos-hermanas.svg"
+    },
+    {
+      "plate_id": "izzi-6d13f97e5e5b",
+      "page": 492,
+      "svg_path": "svg/guilloche-enrichment-plates/build/guilloche-enrichment/plates/muqarnas-shah-entrance-iwan.svg"
+    },
+    {
+      "plate_id": "izzi-70d35e66aa7e",
+      "page": 510,
+      "svg_path": "svg/guilloche-enrichment-plates/build/guilloche-enrichment/plates/saguaro-detail.svg"
+    },
+    {
+      "plate_id": "izzi-f7aae18405b3",
+      "page": 536,
+      "svg_path": "svg/guilloche-enrichment-plates/build/guilloche-enrichment/plates/wisteria-detail.svg"
+    }
+  ],
+  "review_selection_report": "build/examples-review/reports/review-selection.json",
+  "native_executable_sha256": "952900b7e6c8521aa724b2823f663e98a2c93fd4ff31c35abd28cef0dc786def",
+  "human_review": "New catalog PDF not yet reviewed by human. Prior film high pass remains scoped to that reel.",
+  "compatibility_note": "Historical path/ID retention and the four interim aliases describe this repair only. The user waived previous-plate compatibility for the subsequent library-wide re-formation.",
+  "check_scripts": [
+    {
+      "path": "tests/generation-baseline/test-complete-examples.py",
+      "sha256": "a5a24b09e5c611c1fa9b785fafdd5ccd88a8dd0f9f0d12d84642242747181df9"
+    },
+    {
+      "path": "tests/generation-baseline/check-review-edits.py",
+      "sha256": "6604f6e0448724ca0f0f7d13f21046b7b4acb84698575ef9afc15f7bafeefcd2"
+    }
+  ],
+  "visual_spot_checks": [
+    {
+      "page": 1,
+      "path": "outputs/meta-guilloche-2/examples-review-fix/final-pdf-pages/page-001.png",
+      "sha256": "9abab10862ba9257a4c88932d1863a5b099d193f73bf19fe1119c4defd386620",
+      "status": "Inspected: Izzi logo, date and source versions legible."
+    },
+    {
+      "page": 399,
+      "path": "outputs/meta-guilloche-2/examples-review-fix/final-pdf-pages/page-399.png",
+      "sha256": "814d9d74bca9781634e9a496562d2c1f4729f35bc2ea297c8cfc205230373fe2",
+      "status": "Inspected: current geometry, separate legible legend, no unintended viewport change."
+    },
+    {
+      "page": 461,
+      "path": "outputs/meta-guilloche-2/examples-review-fix/final-pdf-pages/page-461.png",
+      "sha256": "b4c1ae0d791ebbedd58d267eb7e08dfebc49c99849ae413921c6a7698e1b5d9a",
+      "status": "Inspected: current geometry, separate legible legend, no unintended viewport change."
+    },
+    {
+      "page": 492,
+      "path": "outputs/meta-guilloche-2/examples-review-fix/final-pdf-pages/page-492.png",
+      "sha256": "e24cd614d6445635cc54561a39e8257fe5f8f5dacc412afb0c395119b7074e80",
+      "status": "Inspected: current geometry, separate legible legend, no unintended viewport change."
+    },
+    {
+      "page": 510,
+      "path": "outputs/meta-guilloche-2/examples-review-fix/final-pdf-pages/page-510.png",
+      "sha256": "e35120feb6bf132fafc5b73750afed4b5edf34a013b36d20207a512f3257993f",
+      "status": "Inspected: current geometry, separate legible legend, no unintended viewport change."
+    },
+    {
+      "page": 536,
+      "path": "outputs/meta-guilloche-2/examples-review-fix/final-pdf-pages/page-536.png",
+      "sha256": "15d67acb39f0da3e6cf06ea8a025db61395bbd418f69e79078f2ee9b5a6241b6",
+      "status": "Inspected: current geometry, separate legible legend, no unintended viewport change."
+    }
+  ]
+}

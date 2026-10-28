@@ -1,0 +1,11 @@
+<map id="svg::matrix_detail::abbreviated" name="svg::matrix_detail::abbreviated">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,27,124,64"/>
+<area shape="rect" id="Node000002" href="$namespacesvg_1_1matrix__detail.html#a2e64ac36b7b1f6b987e378ef2874985c" title=" " alt="" coords="172,27,290,64"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="124,43,159,45,154,46,124,48"/>
+<area shape="rect" id="Node000003" href="$namespacesvg.html#a26bf6966511ae3c348843c1881b190d8" title="Escape unescaped data for an XML text node." alt="" coords="338,5,475,29"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="290,33,325,30,320,31,291,38"/>
+<area shape="rect" id="Node000005" href="$namespacesvg_1_1matrix__detail.html#a9b04b8deb3f92b0924e2d7ff9dcf5baa" title=" " alt="" coords="348,54,466,90"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="290,51,335,61,329,61,290,57"/>
+<area shape="rect" id="Node000004" href="$namespacesvg_1_1detail.html#a0dabd749799988c1aae4474d923c6fd1" title="Escape unescaped character data at its XML serialization boundary. Existing entity spellings are data..." alt="" coords="523,5,675,29"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="476,15,511,17,505,17,476,20"/>
+</map>

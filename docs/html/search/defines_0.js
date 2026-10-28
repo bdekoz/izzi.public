@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['rapidjson_5fhas_5fstdstring_0',['RAPIDJSON_HAS_STDSTRING',['../izzi-json-basics_8h.html#a2f2eef0ee4477f3fe5874703a66e997f',1,'izzi-json-basics.h']]]
+  ['budget_0',['BUDGET',['../izzi-svg-screen-glitch-json_8h.html#a18abdcff8061cf1436ed0ea654f9a7a9',1,'izzi-svg-screen-glitch-json.h']]]
 ];

@@ -68,7 +68,7 @@ base_scene(const std::size_t index)
     = "Independent scalar-field and level-set study; no archive geometry used.";
   scene.width = 1080;
   scene.height = 1920;
-  scene.background_color = "#02030A";
+  scene.background_color = "#FFFFFF";
   scene.profile = render_profile::experimental;
   scene.mode = degeneration::interfere;
   scene.degeneration_amount = 0.25;
@@ -79,9 +79,9 @@ base_scene(const std::size_t index)
   scene.boundary_attraction = 0;
   scene.budget = {500'000, 500'000, 1'000'000, 64 * 1024 * 1024};
   scene.layers = {
-    {"blue-membranes", "#1976D2", 1.15, 0.7, blend_mode::screen,
+    {"blue-membranes", "#1976D2", 1.15, 0.7, blend_mode::multiply,
      {}, 0, standard_levels()},
-    {"rose-membranes", "#F04480", 0.9, 0.58, blend_mode::screen,
+    {"rose-membranes", "#F04480", 0.9, 0.58, blend_mode::multiply,
      {4, -3}, 0.018, standard_levels()},
   };
   return scene;
@@ -202,7 +202,7 @@ make_scene(const std::size_t index)
             index_value * 0.47));
         }
       scene.layers.push_back({
-        "white-fractures", "#F7F4EB", 0.55, 0.28, blend_mode::screen,
+        "white-fractures", "#374151", 0.55, 0.28, blend_mode::multiply,
         {-5, 4}, -0.02, {0.24, 0.46, 0.70, 1.02, 1.42},
       });
       break;
@@ -228,7 +228,7 @@ make_s1_plate(const std::size_t index)
     = "Independently authored scalar-field membrane and level-set study.";
   scene.width = 1080;
   scene.height = 1920;
-  scene.background_color = "#02030A";
+  scene.background_color = "#FFFFFF";
   scene.profile = render_profile::experimental;
   scene.seed = 2026111500ULL + index + 1;
   scene.grid_columns = 108;
@@ -236,9 +236,9 @@ make_s1_plate(const std::size_t index)
   scene.budget = {500'000, 500'000, 1'000'000, 64 * 1024 * 1024};
   scene.layers = {
     make_s1_contour_layer("s1-blue-membranes", "#1976D2", 0.82, 0.68,
-                          blend_mode::screen, false, tuning.level_sets),
+                          blend_mode::multiply, false, tuning.level_sets),
     make_s1_contour_layer("s1-rose-membranes", "#F04480", 0.68, 0.52,
-                          blend_mode::screen, true, tuning.level_sets),
+                          blend_mode::multiply, true, tuning.level_sets),
   };
 
   const auto tuned_source
@@ -314,7 +314,7 @@ make_s2_plate(const std::size_t index)
     = "Independently authored deterministic scalar-field source composition.";
   scene.width = 1080;
   scene.height = 1920;
-  scene.background_color = "#02030A";
+  scene.background_color = "#FFFFFF";
   scene.profile = render_profile::experimental;
   scene.mode = degeneration::interfere;
   scene.degeneration_amount = 0.12;
@@ -325,9 +325,9 @@ make_s2_plate(const std::size_t index)
   scene.boundary_attraction = 0.06;
   scene.budget = {500'000, 500'000, 1'000'000, 64 * 1024 * 1024};
   scene.layers = {
-    {"s2-blue-membranes", "#1976D2", 0.9, 0.68, blend_mode::screen,
+    {"s2-blue-membranes", "#1976D2", 0.9, 0.68, blend_mode::multiply,
      {}, 0, standard_levels()},
-    {"s2-rose-membranes", "#F04480", 0.72, 0.52, blend_mode::screen,
+    {"s2-rose-membranes", "#F04480", 0.72, 0.52, blend_mode::multiply,
      {3, -2}, 0.014, standard_levels()},
   };
 
@@ -394,6 +394,40 @@ make_s2_plate(const std::size_t index)
   return scene;
 }
 
+// Fit the complete sampled field, including its boundary contours, inside
+// a print-safe art box. Do not crop or change the scalar-field calculation.
+std::string
+review_svg(const scene_spec& spec)
+{
+  auto scene = resolve(spec);
+  double x0 = 1e30, y0 = 1e30, x1 = -1e30, y1 = -1e30;
+  for (const auto& contour : scene.contours)
+    for (const auto& segment : contour.segments)
+      for (const auto p : {segment.first, segment.second})
+        {
+          x0 = std::min(x0, p.x); x1 = std::max(x1, p.x);
+          y0 = std::min(y0, p.y); y1 = std::max(y1, p.y);
+        }
+  if (scene.contours.empty() || x1 < x0)
+    throw std::runtime_error("surface-tension review has no visible contours");
+  const double fit = std::min(900 / std::max(1.0, x1-x0),
+                              1580 / std::max(1.0, y1-y0));
+  for (auto& contour : scene.contours)
+    for (auto& segment : contour.segments)
+      for (auto* p : {&segment.first, &segment.second})
+        *p = {540 + (p->x - (x0+x1)/2)*fit,
+              980 + (p->y - (y0+y1)/2)*fit};
+  std::string svg = render_svg(scene);
+  const std::string label =
+    "<g font-family=\"Atkinson Hyperlegible, sans-serif\" fill=\"#172b3a\">"
+    "<text x=\"90\" y=\"80\" font-size=\"27\">" + detail::escape_xml(scene.id)
+    + "</text><text x=\"90\" y=\"124\" font-size=\"22\">scalar-field contours | fitted without cropping</text>"
+    "<text x=\"90\" y=\"1830\" font-size=\"22\">fit=" + detail::format_number(fit)
+    + " | 900 x 1580 art box | original line weights</text></g>";
+  svg.insert(svg.rfind("</svg>"), label);
+  return svg;
+}
+
 void
 write_file(const std::filesystem::path& path, const std::string_view contents)
 {
@@ -428,7 +462,7 @@ main(const int argc, char** argv)
               const std::filesystem::path output
                 = output_directory
                   / (std::string(s1_plate_names[index]) + ".svg");
-              write_file(output, render_svg(scene));
+              write_file(output, review_svg(scene));
               std::cout << output.string() << '\n';
             }
           return EXIT_SUCCESS;
@@ -443,7 +477,7 @@ main(const int argc, char** argv)
               const std::filesystem::path output
                 = output_directory
                   / (std::string(s2_plate_names[index]) + ".svg");
-              write_file(output, render_svg(scene));
+              write_file(output, review_svg(scene));
               std::cout << output.string() << '\n';
             }
           return EXIT_SUCCESS;
@@ -460,7 +494,7 @@ main(const int argc, char** argv)
           const scene_spec scene = make_scene(index);
           const std::filesystem::path output
             = output_directory / (std::string(plate_names[index]) + ".svg");
-          write_file(output, render_svg(scene));
+          write_file(output, review_svg(scene));
           std::cout << output.string() << '\n';
         }
     }

@@ -1,0 +1,35 @@
+<map id="izzi::review::append_ribbons" name="izzi::review::append_ribbons">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,197,136,234"/>
+<area shape="poly" id="edge5_Node000001_Node000001" title=" " alt="" coords="30,197,27,188,33,179,48,173,71,171,95,173,110,181,105,183,93,178,70,176,49,178,37,183,33,189,36,197"/>
+<area shape="rect" id="Node000002" href="$namespaceizzi_1_1review.html#ac841e601500800756726103f3656f995" title=" " alt="" coords="207,36,368,60"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="79,196,118,133,147,98,182,69,196,64,192,68,185,74,151,102,122,136,83,198"/>
+<area shape="rect" id="Node000004" href="$izzi-svg-curves-damped-harmonograph_8h.html#ac6ba75d50d4747fd47afc14569f3655d" title=" " alt="" coords="184,84,391,108"/>
+<area shape="poly" id="edge6_Node000001_Node000004" title=" " alt="" coords="86,195,127,155,154,135,182,117,201,111,197,115,185,122,157,139,131,159,91,198"/>
+<area shape="rect" id="Node000005" href="$izzi-svg-curves-damped-harmonograph_8h.html#a017763f258ba1e81c0fa64c5160fef2c" title=" " alt="" coords="192,132,382,156"/>
+<area shape="poly" id="edge7_Node000001_Node000005" title=" " alt="" coords="110,195,183,165,213,158,208,161,185,170,113,199"/>
+<area shape="rect" id="Node000006" href="$namespacesvg.html#a12539aecea1c58ea00511d5e508bfd4a" title=" " alt="" coords="211,180,364,204"/>
+<area shape="poly" id="edge8_Node000001_Node000006" title=" " alt="" coords="135,206,197,200,193,203,137,211"/>
+<area shape="rect" id="Node000010" href="$namespacesvg.html#a1965c75955a376f43cdc67a876fbd6bc" title=" " alt="" coords="210,228,365,252"/>
+<area shape="poly" id="edge12_Node000001_Node000010" title=" " alt="" coords="135,220,197,228,192,231,137,225"/>
+<area shape="rect" id="Node000011" href="$namespaceizzi_1_1review.html#a5df14380f0ffabaab50797cf2fd978cb" title=" " alt="" coords="222,276,352,300"/>
+<area shape="poly" id="edge16_Node000001_Node000011" title=" " alt="" coords="111,232,185,261,213,271,208,272,183,266,111,237"/>
+<area shape="rect" id="Node000012" href="$namespaceizzi_1_1review.html#a4c98d890ab2dd6571731b78ce057b309" title=" " alt="" coords="221,324,354,348"/>
+<area shape="poly" id="edge17_Node000001_Node000012" title=" " alt="" coords="89,232,131,272,157,292,185,309,209,321,204,321,182,314,154,297,127,276,88,237"/>
+<area shape="rect" id="Node000013" href="$namespaceizzi_1_1review.html#aac19cda5518724e64dae60453db437c7" title=" " alt="" coords="219,372,356,396"/>
+<area shape="poly" id="edge18_Node000001_Node000013" title=" " alt="" coords="82,232,122,295,151,329,185,357,207,370,202,370,182,362,147,333,118,298,80,237"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="251,35,244,27,248,17,263,11,287,9,314,12,329,20,324,22,313,17,287,14,264,16,252,21,249,26,257,35"/>
+<area shape="rect" id="Node000003" href="$namespaceizzi_1_1review.html#a734327c267521cc97844c5e6e26797c7" title=" " alt="" coords="439,29,577,66"/>
+<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="367,45,426,47,421,49,369,50"/>
+<area shape="poly" id="edge4_Node000003_Node000003" title=" " alt="" coords="467,28,464,20,470,11,485,5,508,3,533,5,549,14,543,14,531,10,508,8,486,10,474,15,469,21,473,30"/>
+<area shape="rect" id="Node000007" href="$namespacesvg.html#afe2fcf5f034762001fec1bef63eb6552" title=" " alt="" coords="447,156,569,180"/>
+<area shape="poly" id="edge9_Node000006_Node000007" title=" " alt="" coords="364,181,434,175,429,177,365,186"/>
+<area shape="rect" id="Node000008" href="$namespacesvg.html#abc4e003ae532dd33d70b48faa2e4d0ff" title="Helper: Normalize a vector tuple." alt="" coords="457,204,559,228"/>
+<area shape="poly" id="edge10_Node000006_Node000008" title=" " alt="" coords="364,197,444,208,439,209,365,203"/>
+<area shape="rect" id="Node000009" href="$namespacesvg.html#a813caf6c5c3ee13aab6b019d29040284" title=" " alt="" coords="452,252,565,276"/>
+<area shape="poly" id="edge11_Node000006_Node000009" title=" " alt="" coords="352,201,392,213,416,225,440,237,458,246,452,246,438,242,414,230,390,218,352,207"/>
+<area shape="poly" id="edge13_Node000010_Node000007" title=" " alt="" coords="351,225,390,213,414,202,438,189,457,184,453,186,440,194,416,207,392,218,353,230"/>
+<area shape="poly" id="edge14_Node000010_Node000008" title=" " alt="" coords="365,229,444,222,439,224,366,234"/>
+<area shape="poly" id="edge15_Node000010_Node000009" title=" " alt="" coords="365,245,439,255,433,256,366,251"/>
+<area shape="rect" id="Node000014" href="$namespaceizzi_1_1review.html#aa71249e36ce187893a6ff18557e8b410" title=" " alt="" coords="456,372,560,396"/>
+<area shape="poly" id="edge19_Node000013_Node000014" title=" " alt="" coords="356,381,443,384,438,384,357,386"/>
+</map>

@@ -14,18 +14,42 @@
     "review"
   ],
   "properties": {
-    "$schema": { "type": "string" },
-    "schema_version": { "const": "izzi.guilloche-scene/1" },
-    "scene_id": { "$ref": "#/$defs/id" },
-    "canvas": { "$ref": "#/$defs/canvas" },
-    "content": { "$ref": "#/$defs/content" },
-    "treatment": { "$ref": "#/$defs/treatment" },
-    "layout": { "$ref": "#/$defs/radial_layout" },
-    "palette": { "$ref": "#/$defs/palette" },
-    "budget": { "$ref": "#/$defs/budget" },
-    "review": { "$ref": "#/$defs/review" },
-    "extensions": { "$ref": "#/$defs/extensions" },
-    "pattern": { "$ref": "#/$defs/pattern" }
+    "$schema": {
+      "type": "string"
+    },
+    "schema_version": {
+      "const": "izzi.guilloche-scene/1"
+    },
+    "scene_id": {
+      "$ref": "#/$defs/id"
+    },
+    "canvas": {
+      "$ref": "#/$defs/canvas"
+    },
+    "content": {
+      "$ref": "#/$defs/content"
+    },
+    "treatment": {
+      "$ref": "#/$defs/treatment"
+    },
+    "layout": {
+      "$ref": "#/$defs/radial_layout"
+    },
+    "palette": {
+      "$ref": "#/$defs/palette"
+    },
+    "budget": {
+      "$ref": "#/$defs/budget"
+    },
+    "review": {
+      "$ref": "#/$defs/review"
+    },
+    "extensions": {
+      "$ref": "#/$defs/extensions"
+    },
+    "pattern": {
+      "$ref": "#/$defs/pattern"
+    }
   },
   "$defs": {
     "id": {
@@ -46,59 +70,115 @@
     "canvas": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["width", "height", "background"],
+      "required": [
+        "width",
+        "height",
+        "background"
+      ],
       "properties": {
-        "width": { "type": "integer", "minimum": 64, "maximum": 16384 },
-        "height": { "type": "integer", "minimum": 64, "maximum": 16384 },
-        "background": { "$ref": "#/$defs/color" }
+        "width": {
+          "type": "integer",
+          "minimum": 64,
+          "maximum": 16384
+        },
+        "height": {
+          "type": "integer",
+          "minimum": 64,
+          "maximum": 16384
+        },
+        "background": {
+          "$ref": "#/$defs/color"
+        },
+        "transparent": {
+          "type": "boolean",
+          "default": false
+        }
       }
     },
     "number_content": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["kind", "number", "accessible_label"],
+      "required": [
+        "kind",
+        "number",
+        "accessible_label"
+      ],
       "properties": {
-        "kind": { "const": "number" },
+        "kind": {
+          "const": "number"
+        },
         "number": {
           "type": "string",
           "minLength": 1,
           "maxLength": 64,
           "pattern": "^[0-9][0-9 .,+-]*$"
         },
-        "accessible_label": { "$ref": "#/$defs/text" }
+        "accessible_label": {
+          "$ref": "#/$defs/text"
+        }
       }
     },
     "word_content": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["kind", "word", "accessible_label"],
+      "required": [
+        "kind",
+        "word",
+        "accessible_label"
+      ],
       "properties": {
-        "kind": { "const": "word" },
-        "word": { "$ref": "#/$defs/text" },
-        "accessible_label": { "$ref": "#/$defs/text" }
+        "kind": {
+          "const": "word"
+        },
+        "word": {
+          "$ref": "#/$defs/text"
+        },
+        "accessible_label": {
+          "$ref": "#/$defs/text"
+        }
       }
     },
     "word_number_content": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["kind", "word", "number", "accessible_label"],
+      "required": [
+        "kind",
+        "word",
+        "number",
+        "accessible_label"
+      ],
       "properties": {
-        "kind": { "const": "word-number" },
-        "word": { "$ref": "#/$defs/text" },
+        "kind": {
+          "const": "word-number"
+        },
+        "word": {
+          "$ref": "#/$defs/text"
+        },
         "number": {
           "type": "string",
           "minLength": 1,
           "maxLength": 64,
           "pattern": "^[0-9][0-9 .,+-]*$"
         },
-        "accessible_label": { "$ref": "#/$defs/text" }
+        "accessible_label": {
+          "$ref": "#/$defs/text"
+        }
       }
     },
     "content": {
       "oneOf": [
-        { "$ref": "#/$defs/number_content" },
-        { "$ref": "#/$defs/word_content" },
-        { "$ref": "#/$defs/word_number_content" }
+        {
+          "$ref": "#/$defs/no_content"
+        },
+        {
+          "$ref": "#/$defs/number_content"
+        },
+        {
+          "$ref": "#/$defs/word_content"
+        },
+        {
+          "$ref": "#/$defs/word_number_content"
+        }
       ]
     },
     "bounded_pair": {
@@ -106,8 +186,16 @@
       "minItems": 2,
       "maxItems": 2,
       "prefixItems": [
-        { "type": "integer", "minimum": 1, "maximum": 64 },
-        { "type": "integer", "minimum": 1, "maximum": 64 }
+        {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 64
+        },
+        {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 64
+        }
       ],
       "items": false
     },
@@ -124,22 +212,35 @@
       ],
       "properties": {
         "kind": {
-          "enum": ["cycloid-outline", "floral-cells", "floral-cycloid"]
+          "enum": [
+            "cycloid-outline",
+            "floral-cells",
+            "floral-cycloid"
+          ]
         },
         "seed": {
           "type": "integer",
           "minimum": 0,
           "maximum": 9007199254740991
         },
-        "floral_group_range": { "$ref": "#/$defs/bounded_pair" },
-        "petal_range": { "$ref": "#/$defs/bounded_pair" },
+        "floral_group_range": {
+          "$ref": "#/$defs/bounded_pair"
+        },
+        "petal_range": {
+          "$ref": "#/$defs/bounded_pair"
+        },
         "cycloid_amplitude": {
           "type": "number",
           "minimum": 0,
           "maximum": 256
         },
         "density": {
-          "enum": ["accessible", "standard", "experimental", "wild"]
+          "enum": [
+            "accessible",
+            "standard",
+            "experimental",
+            "wild"
+          ]
         }
       }
     },
@@ -148,38 +249,88 @@
       "minItems": 2,
       "maxItems": 2,
       "prefixItems": [
-        { "type": "number", "minimum": 0, "maximum": 16384 },
-        { "type": "number", "minimum": 0, "maximum": 16384 }
+        {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 16384
+        },
+        {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 16384
+        }
       ],
       "items": false
+    },
+    "no_content": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "kind",
+        "accessible_label"
+      ],
+      "properties": {
+        "kind": {
+          "const": "none"
+        },
+        "accessible_label": {
+          "$ref": "#/$defs/text"
+        }
+      }
     },
     "radial_layout": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["kind", "symmetry_order", "center", "radius"],
+      "required": [
+        "kind",
+        "symmetry_order",
+        "center",
+        "radius"
+      ],
       "properties": {
-        "kind": { "const": "radial" },
+        "kind": {
+          "const": "radial"
+        },
         "symmetry_order": {
           "type": "integer",
           "minimum": 2,
           "maximum": 24
         },
-        "center": { "$ref": "#/$defs/point" },
+        "center": {
+          "$ref": "#/$defs/point"
+        },
         "radius": {
           "type": "number",
           "exclusiveMinimum": 0,
           "maximum": 8192
         },
-        "geometries": { "$ref": "#/$defs/geometries" }
+        "geometries": {
+          "$ref": "#/$defs/geometries"
+        },
+        "include_radial_field": {
+          "type": "boolean",
+          "default": true
+        }
       }
     },
     "harmonic": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["multiple", "gain"],
+      "required": [
+        "multiple",
+        "gain"
+      ],
       "properties": {
-        "multiple": { "type": "integer", "minimum": 1, "maximum": 128 },
-        "gain": { "type": "number", "minimum": -8, "maximum": 8 }
+        "multiple": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 128
+        },
+        "gain": {
+          "type": "number",
+          "minimum": -8,
+          "maximum": 8
+        }
       }
     },
     "geometries": {
@@ -187,219 +338,1207 @@
       "maxItems": 64,
       "items": {
         "oneOf": [
-          { "$ref": "#/$defs/sunburst" },
-          { "$ref": "#/$defs/band_guilloche" },
-          { "$ref": "#/$defs/latent_image" },
-          { "$ref": "#/$defs/fish_scale_field" },
-          { "$ref": "#/$defs/barleycorn_field" },
-          { "$ref": "#/$defs/medallion" },
-          { "$ref": "#/$defs/vignette" },
-          { "$ref": "#/$defs/multicolor_line" },
-          { "$ref": "#/$defs/flinque" }
+          {
+            "$ref": "#/$defs/lobed_contour"
+          },
+          {
+            "$ref": "#/$defs/basketweave_field"
+          },
+          {
+            "$ref": "#/$defs/hobnail_field"
+          },
+          {
+            "$ref": "#/$defs/directed_wave"
+          },
+          {
+            "$ref": "#/$defs/sunburst"
+          },
+          {
+            "$ref": "#/$defs/band_guilloche"
+          },
+          {
+            "$ref": "#/$defs/latent_image"
+          },
+          {
+            "$ref": "#/$defs/fish_scale_field"
+          },
+          {
+            "$ref": "#/$defs/barleycorn_field"
+          },
+          {
+            "$ref": "#/$defs/medallion"
+          },
+          {
+            "$ref": "#/$defs/vignette"
+          },
+          {
+            "$ref": "#/$defs/multicolor_line"
+          },
+          {
+            "$ref": "#/$defs/flinque"
+          },
+          {
+            "$ref": "#/$defs/organic_field"
+          },
+          {
+            "$ref": "#/$defs/arabesque_field"
+          },
+          {
+            "$ref": "#/$defs/water_field"
+          },
+          {
+            "$ref": "#/$defs/optical_field"
+          },
+          {
+            "$ref": "#/$defs/elliptic_loop"
+          },
+          {
+            "$ref": "#/$defs/contour_loop"
+          }
         ]
+      }
+    },
+    "contour_mode": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "frequency",
+        "amplitude"
+      ],
+      "properties": {
+        "frequency": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 64
+        },
+        "amplitude": {
+          "type": "number",
+          "minimum": -0.45,
+          "maximum": 0.45
+        },
+        "phase": {
+          "type": "number"
+        }
+      }
+    },
+    "lobed_contour": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "kind"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "kind": {
+          "const": "lobed_contour"
+        },
+        "origin": {
+          "$ref": "#/$defs/point"
+        },
+        "plate_index": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 7
+        },
+        "radius": {
+          "type": "number",
+          "exclusiveMinimum": 0,
+          "maximum": 8192
+        },
+        "modes": {
+          "type": "array",
+          "maxItems": 8,
+          "items": {
+            "$ref": "#/$defs/contour_mode"
+          }
+        },
+        "rotation": {
+          "type": "number"
+        },
+        "samples": {
+          "type": "integer",
+          "minimum": 16,
+          "maximum": 16384
+        },
+        "rings": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 512
+        },
+        "ring_spacing": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "deformation": {
+          "$ref": "#/$defs/deformation"
+        }
+      }
+    },
+    "basketweave_field": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "kind"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "kind": {
+          "const": "basketweave_field"
+        },
+        "origin": {
+          "$ref": "#/$defs/point"
+        },
+        "plate_index": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 7
+        },
+        "rows": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 512
+        },
+        "columns": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 512
+        },
+        "pitch": {
+          "type": "number",
+          "exclusiveMinimum": 0,
+          "maximum": 8192
+        },
+        "rotation": {
+          "type": "number"
+        },
+        "samples": {
+          "type": "integer",
+          "minimum": 2,
+          "maximum": 256
+        },
+        "band_width": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "width_ratios": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 4,
+          "items": {
+            "type": "number",
+            "exclusiveMinimum": 0
+          }
+        },
+        "strands": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 16
+        },
+        "clearance": {
+          "type": "number",
+          "minimum": 0
+        },
+        "parity": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "periodic": {
+          "type": "boolean"
+        },
+        "deformation": {
+          "$ref": "#/$defs/deformation"
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "periodic": {
+                "const": true
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "rows": {
+                "multipleOf": 2
+              },
+              "columns": {
+                "multipleOf": 2
+              }
+            }
+          }
+        }
+      ]
+    },
+    "hobnail_field": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "kind"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "kind": {
+          "const": "hobnail_field"
+        },
+        "origin": {
+          "$ref": "#/$defs/point"
+        },
+        "plate_index": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 7
+        },
+        "rows": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 512
+        },
+        "columns": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 512
+        },
+        "pitch": {
+          "type": "number",
+          "exclusiveMinimum": 0,
+          "maximum": 8192
+        },
+        "rotation": {
+          "type": "number"
+        },
+        "samples": {
+          "type": "integer",
+          "minimum": 2,
+          "maximum": 256
+        },
+        "contours": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 32
+        },
+        "deformation": {
+          "$ref": "#/$defs/deformation"
+        }
+      }
+    },
+    "directed_wave": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "kind"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "kind": {
+          "const": "directed_wave"
+        },
+        "origin": {
+          "$ref": "#/$defs/point"
+        },
+        "plate_index": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 7
+        },
+        "span": {
+          "type": "number",
+          "exclusiveMinimum": 0,
+          "maximum": 16384
+        },
+        "amplitude": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 8192
+        },
+        "frequency": {
+          "type": "number",
+          "exclusiveMinimum": 0,
+          "maximum": 1024
+        },
+        "phase": {
+          "type": "number"
+        },
+        "envelope": {
+          "type": "number",
+          "minimum": -0.9,
+          "maximum": 0.9
+        },
+        "chirp": {
+          "type": "number",
+          "minimum": -128,
+          "maximum": 128
+        },
+        "samples": {
+          "type": "integer",
+          "minimum": 8,
+          "maximum": 16384
+        },
+        "rows": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 512
+        },
+        "spacing": {
+          "type": "number",
+          "exclusiveMinimum": 0,
+          "maximum": 8192
+        },
+        "deformation": {
+          "$ref": "#/$defs/deformation"
+        }
       }
     },
     "sunburst": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["id", "kind"],
+      "required": [
+        "id",
+        "kind"
+      ],
       "properties": {
-        "id": { "$ref": "#/$defs/id" },
-        "kind": { "const": "sunburst" },
-        "origin": { "$ref": "#/$defs/point" },
-        "plate_index": { "type": "integer", "minimum": 0, "maximum": 7, "default": 0 },
-        "outer_radius": { "type": "number", "exclusiveMinimum": 0, "maximum": 8192 },
-        "rays": { "type": "integer", "minimum": 1, "maximum": 20000, "default": 120 },
-        "ray_tiers": { "type": "integer", "minimum": 1, "maximum": 256, "default": 2 },
-        "inner_radius_fraction": { "type": "number", "minimum": 0, "exclusiveMaximum": 1, "default": 0.18 },
-        "phase": { "type": "number", "default": 0 },
-        "scale_step": { "type": "number", "default": 0.035 },
-        "samples": { "type": "integer", "minimum": 2, "maximum": 4096, "default": 2 }
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "kind": {
+          "const": "sunburst"
+        },
+        "origin": {
+          "$ref": "#/$defs/point"
+        },
+        "plate_index": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 7,
+          "default": 0
+        },
+        "outer_radius": {
+          "type": "number",
+          "exclusiveMinimum": 0,
+          "maximum": 8192
+        },
+        "rays": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 20000,
+          "default": 120
+        },
+        "ray_tiers": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 256,
+          "default": 2
+        },
+        "inner_radius_fraction": {
+          "type": "number",
+          "minimum": 0,
+          "exclusiveMaximum": 1,
+          "default": 0.18
+        },
+        "phase": {
+          "type": "number",
+          "default": 0
+        },
+        "scale_step": {
+          "type": "number",
+          "default": 0.035
+        },
+        "samples": {
+          "type": "integer",
+          "minimum": 2,
+          "maximum": 4096,
+          "default": 2
+        },
+        "deformation": {
+          "$ref": "#/$defs/deformation"
+        }
       }
     },
     "band_guilloche": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["id", "kind"],
+      "required": [
+        "id",
+        "kind"
+      ],
       "properties": {
-        "id": { "$ref": "#/$defs/id" },
-        "kind": { "const": "band_guilloche" },
-        "origin": { "$ref": "#/$defs/point" },
-        "plate_index": { "type": "integer", "minimum": 0, "maximum": 7, "default": 0 },
-        "span": { "type": "number", "exclusiveMinimum": 0, "maximum": 16384 },
-        "amplitude": { "type": "number", "minimum": 0, "maximum": 8192 },
-        "fundamental_frequency": { "type": "number", "exclusiveMinimum": 0, "maximum": 1024, "default": 12 },
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "kind": {
+          "const": "band_guilloche"
+        },
+        "origin": {
+          "$ref": "#/$defs/point"
+        },
+        "plate_index": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 7,
+          "default": 0
+        },
+        "span": {
+          "type": "number",
+          "exclusiveMinimum": 0,
+          "maximum": 16384
+        },
+        "amplitude": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 8192
+        },
+        "fundamental_frequency": {
+          "type": "number",
+          "exclusiveMinimum": 0,
+          "maximum": 1024,
+          "default": 12
+        },
         "harmonics": {
           "type": "array",
           "maxItems": 32,
-          "default": [{ "multiple": 2, "gain": 0.28 }, { "multiple": 3, "gain": 0.12 }],
-          "items": { "$ref": "#/$defs/harmonic" }
+          "default": [
+            {
+              "multiple": 2,
+              "gain": 0.28
+            },
+            {
+              "multiple": 3,
+              "gain": 0.12
+            }
+          ],
+          "items": {
+            "$ref": "#/$defs/harmonic"
+          }
         },
-        "phase": { "type": "number", "default": 0 },
-        "line_count": { "type": "integer", "minimum": 1, "maximum": 20000, "default": 11 },
-        "phase_step": { "type": "number", "default": 0.16 },
-        "normal_offset_ratio": { "type": "number", "minimum": 0, "maximum": 32, "default": 0.2 },
-        "rows": { "type": "integer", "minimum": 1, "maximum": 20000, "default": 5 },
-        "row_spacing": { "type": "number", "minimum": 0, "maximum": 16384, "default": 0 },
-        "samples": { "type": "integer", "minimum": 8, "maximum": 16384, "default": 384 }
+        "phase": {
+          "type": "number",
+          "default": 0
+        },
+        "line_count": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 20000,
+          "default": 11
+        },
+        "phase_step": {
+          "type": "number",
+          "default": 0.16
+        },
+        "normal_offset_ratio": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 32,
+          "default": 0.2
+        },
+        "envelope": {
+          "type": "number",
+          "minimum": -0.9,
+          "maximum": 0.9
+        },
+        "chirp": {
+          "type": "number",
+          "minimum": -128,
+          "maximum": 128
+        },
+        "rows": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 20000,
+          "default": 5
+        },
+        "row_spacing": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 16384,
+          "default": 0
+        },
+        "samples": {
+          "type": "integer",
+          "minimum": 8,
+          "maximum": 16384,
+          "default": 384
+        },
+        "deformation": {
+          "$ref": "#/$defs/deformation"
+        }
       }
     },
     "latent_image": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["id", "kind"],
+      "required": [
+        "id",
+        "kind"
+      ],
       "properties": {
-        "id": { "$ref": "#/$defs/id" },
-        "kind": { "const": "latent_image" },
-        "origin": { "$ref": "#/$defs/point" },
-        "plate_index": { "type": "integer", "minimum": 0, "maximum": 7, "default": 0 },
-        "span": { "type": "number", "exclusiveMinimum": 0, "maximum": 16384 },
-        "line_spacing": { "type": "number", "minimum": 0.25, "maximum": 1024, "default": 6 },
-        "cell_size": { "type": "number", "minimum": 1, "maximum": 8192, "default": 72 },
-        "primary_angle": { "type": "number", "minimum": -1.0471975511965976, "maximum": 1.0471975511965976, "default": -0.2 },
-        "secondary_angle": { "type": "number", "minimum": -1.0471975511965976, "maximum": 1.0471975511965976, "default": 0.2 },
-        "phase": { "type": "number", "minimum": -1.0471975511965976, "maximum": 1.0471975511965976, "default": 0 },
-        "samples": { "type": "integer", "minimum": 2, "maximum": 4096, "default": 8 }
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "kind": {
+          "const": "latent_image"
+        },
+        "origin": {
+          "$ref": "#/$defs/point"
+        },
+        "plate_index": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 7,
+          "default": 0
+        },
+        "span": {
+          "type": "number",
+          "exclusiveMinimum": 0,
+          "maximum": 16384
+        },
+        "line_spacing": {
+          "type": "number",
+          "minimum": 0.25,
+          "maximum": 1024,
+          "default": 6
+        },
+        "cell_size": {
+          "type": "number",
+          "minimum": 1,
+          "maximum": 8192,
+          "default": 72
+        },
+        "primary_angle": {
+          "type": "number",
+          "minimum": -1.0471975511965976,
+          "maximum": 1.0471975511965976,
+          "default": -0.2
+        },
+        "secondary_angle": {
+          "type": "number",
+          "minimum": -1.0471975511965976,
+          "maximum": 1.0471975511965976,
+          "default": 0.2
+        },
+        "phase": {
+          "type": "number",
+          "minimum": -1.0471975511965976,
+          "maximum": 1.0471975511965976,
+          "default": 0
+        },
+        "samples": {
+          "type": "integer",
+          "minimum": 2,
+          "maximum": 4096,
+          "default": 8
+        },
+        "deformation": {
+          "$ref": "#/$defs/deformation"
+        }
       }
     },
     "fish_scale_field": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["id", "kind"],
+      "required": [
+        "id",
+        "kind"
+      ],
       "properties": {
-        "id": { "$ref": "#/$defs/id" },
-        "kind": { "const": "fish_scale_field" },
-        "origin": { "$ref": "#/$defs/point" },
-        "plate_index": { "type": "integer", "minimum": 0, "maximum": 7, "default": 0 },
-        "cell_size": { "type": "number", "exclusiveMinimum": 0, "maximum": 8192 },
-        "rows": { "type": "integer", "minimum": 1, "maximum": 512, "default": 36 },
-        "columns": { "type": "integer", "minimum": 1, "maximum": 512, "default": 28 },
-        "scale_width": { "type": "number", "exclusiveMinimum": 0, "default": 1 },
-        "scale_height": { "type": "number", "exclusiveMinimum": 0, "default": 0.72 },
-        "overlap": { "type": "number", "minimum": 0, "exclusiveMaximum": 1, "default": 0.44 },
-        "stagger": { "type": "number", "minimum": 0, "maximum": 1, "default": 0.5 },
-        "seam_depth": { "type": "number", "minimum": 0, "maximum": 1, "default": 0.12 },
-        "phase": { "type": "number", "default": 0 },
-        "samples": { "type": "integer", "minimum": 2, "maximum": 4096, "default": 48 }
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "kind": {
+          "const": "fish_scale_field"
+        },
+        "origin": {
+          "$ref": "#/$defs/point"
+        },
+        "plate_index": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 7,
+          "default": 0
+        },
+        "cell_size": {
+          "type": "number",
+          "exclusiveMinimum": 0,
+          "maximum": 8192
+        },
+        "rows": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 512,
+          "default": 36
+        },
+        "columns": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 512,
+          "default": 28
+        },
+        "scale_width": {
+          "type": "number",
+          "exclusiveMinimum": 0,
+          "default": 1
+        },
+        "scale_height": {
+          "type": "number",
+          "exclusiveMinimum": 0,
+          "default": 0.72
+        },
+        "overlap": {
+          "type": "number",
+          "minimum": 0,
+          "exclusiveMaximum": 1,
+          "default": 0.44
+        },
+        "stagger": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "default": 0.5
+        },
+        "seam_depth": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "default": 0.12
+        },
+        "phase": {
+          "type": "number",
+          "default": 0
+        },
+        "samples": {
+          "type": "integer",
+          "minimum": 2,
+          "maximum": 4096,
+          "default": 48
+        },
+        "deformation": {
+          "$ref": "#/$defs/deformation"
+        }
       }
     },
     "barleycorn_field": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["id", "kind"],
+      "required": [
+        "id",
+        "kind"
+      ],
       "properties": {
-        "id": { "$ref": "#/$defs/id" },
-        "kind": { "const": "barleycorn_field" },
-        "origin": { "$ref": "#/$defs/point" },
-        "plate_index": { "type": "integer", "minimum": 0, "maximum": 7, "default": 0 },
-        "cell_size": { "type": "number", "exclusiveMinimum": 0, "maximum": 8192 },
-        "rows": { "type": "integer", "minimum": 1, "maximum": 512, "default": 26 },
-        "columns": { "type": "integer", "minimum": 1, "maximum": 512, "default": 40 },
-        "grain_width": { "type": "number", "exclusiveMinimum": 0, "default": 0.64 },
-        "grain_height": { "type": "number", "exclusiveMinimum": 0, "default": 1 },
-        "overlap": { "type": "number", "minimum": 0, "exclusiveMaximum": 1, "default": 0.18 },
-        "stagger": { "type": "number", "minimum": 0, "maximum": 1, "default": 0.5 },
-        "relief": { "type": "number", "minimum": 0, "maximum": 1, "default": 0.65 },
-        "phase": { "type": "number", "default": 0 },
-        "samples": { "type": "integer", "minimum": 2, "maximum": 4096, "default": 48 }
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "kind": {
+          "const": "barleycorn_field"
+        },
+        "origin": {
+          "$ref": "#/$defs/point"
+        },
+        "plate_index": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 7,
+          "default": 0
+        },
+        "cell_size": {
+          "type": "number",
+          "exclusiveMinimum": 0,
+          "maximum": 8192
+        },
+        "rows": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 512,
+          "default": 26
+        },
+        "columns": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 512,
+          "default": 40
+        },
+        "grain_width": {
+          "type": "number",
+          "exclusiveMinimum": 0,
+          "default": 0.64
+        },
+        "grain_height": {
+          "type": "number",
+          "exclusiveMinimum": 0,
+          "default": 1
+        },
+        "overlap": {
+          "type": "number",
+          "minimum": 0,
+          "exclusiveMaximum": 1,
+          "default": 0.18
+        },
+        "stagger": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "default": 0.5
+        },
+        "relief": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "default": 0.65
+        },
+        "phase": {
+          "type": "number",
+          "default": 0
+        },
+        "samples": {
+          "type": "integer",
+          "minimum": 2,
+          "maximum": 4096,
+          "default": 48
+        },
+        "deformation": {
+          "$ref": "#/$defs/deformation"
+        }
       }
     },
     "medallion": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["id", "kind"],
+      "required": [
+        "id",
+        "kind"
+      ],
       "properties": {
-        "id": { "$ref": "#/$defs/id" },
-        "kind": { "const": "medallion" },
-        "origin": { "$ref": "#/$defs/point" },
-        "plate_index": { "type": "integer", "minimum": 0, "maximum": 7, "default": 0 },
-        "radius": { "type": "number", "exclusiveMinimum": 0, "maximum": 8192 },
-        "ring_plates": { "type": "integer", "minimum": 1, "maximum": 256, "default": 6 },
-        "ring_spacing": { "type": "number", "minimum": 0, "maximum": 1, "default": 0.028 },
-        "ring_stroke_width_ratio": { "type": "number", "minimum": 0, "maximum": 1, "default": 0.0045 },
-        "inset_radius_fraction": { "type": "number", "exclusiveMinimum": 0, "maximum": 1, "default": 0.76 },
-        "inset_scene_index": { "type": "integer", "minimum": 0, "maximum": 1024, "default": 0 }
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "kind": {
+          "const": "medallion"
+        },
+        "origin": {
+          "$ref": "#/$defs/point"
+        },
+        "plate_index": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 7,
+          "default": 0
+        },
+        "radius": {
+          "type": "number",
+          "exclusiveMinimum": 0,
+          "maximum": 8192
+        },
+        "ring_plates": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 256,
+          "default": 6
+        },
+        "ring_spacing": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "default": 0.028
+        },
+        "ring_stroke_width_ratio": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "default": 0.0045
+        },
+        "inset_radius_fraction": {
+          "type": "number",
+          "exclusiveMinimum": 0,
+          "maximum": 1,
+          "default": 0.76
+        },
+        "inset_scene_index": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 1024,
+          "default": 0
+        },
+        "deformation": {
+          "$ref": "#/$defs/deformation"
+        }
       }
     },
     "vignette": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["id", "kind"],
+      "required": [
+        "id",
+        "kind"
+      ],
       "properties": {
-        "id": { "$ref": "#/$defs/id" },
-        "kind": { "const": "vignette" },
-        "origin": { "$ref": "#/$defs/point" },
-        "plate_index": { "type": "integer", "minimum": 0, "maximum": 7, "default": 0 },
-        "radius": { "type": "number", "exclusiveMinimum": 0, "maximum": 8192 },
-        "feather": { "type": "number", "exclusiveMinimum": 0, "maximum": 1, "default": 0.18 },
-        "falloff": { "type": "number", "exclusiveMinimum": 0, "default": 1.6 },
-        "inset": { "type": "number", "minimum": 0, "exclusiveMaximum": 1, "default": 0.035 },
-        "inner_color": { "allOf": [{ "$ref": "#/$defs/color" }], "default": "#070912" },
-        "outer_color": { "allOf": [{ "$ref": "#/$defs/color" }], "default": "#070912" },
-        "inner_opacity": { "type": "number", "minimum": 0, "maximum": 1, "default": 0.04 },
-        "outer_opacity": { "type": "number", "minimum": 0, "maximum": 1, "default": 0.82 },
-        "steps": { "type": "integer", "minimum": 1, "maximum": 256, "default": 24 },
-        "annular_steps": { "type": "boolean", "default": true }
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "kind": {
+          "const": "vignette"
+        },
+        "origin": {
+          "$ref": "#/$defs/point"
+        },
+        "plate_index": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 7,
+          "default": 0
+        },
+        "radius": {
+          "type": "number",
+          "exclusiveMinimum": 0,
+          "maximum": 8192
+        },
+        "feather": {
+          "type": "number",
+          "exclusiveMinimum": 0,
+          "maximum": 1,
+          "default": 0.18
+        },
+        "falloff": {
+          "type": "number",
+          "exclusiveMinimum": 0,
+          "default": 1.6
+        },
+        "inset": {
+          "type": "number",
+          "minimum": 0,
+          "exclusiveMaximum": 1,
+          "default": 0.035
+        },
+        "inner_color": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/color"
+            }
+          ],
+          "default": "#070912"
+        },
+        "outer_color": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/color"
+            }
+          ],
+          "default": "#070912"
+        },
+        "inner_opacity": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "default": 0.04
+        },
+        "outer_opacity": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "default": 0.82
+        },
+        "steps": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 256,
+          "default": 24
+        },
+        "annular_steps": {
+          "type": "boolean",
+          "default": true
+        },
+        "deformation": {
+          "$ref": "#/$defs/deformation"
+        }
       }
     },
     "multicolor_line": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["id", "kind"],
+      "required": [
+        "id",
+        "kind"
+      ],
       "properties": {
-        "id": { "$ref": "#/$defs/id" },
-        "kind": { "const": "multicolor_line" },
-        "origin": { "$ref": "#/$defs/point" },
-        "plate_index": { "type": "integer", "minimum": 0, "maximum": 7, "default": 0 },
-        "span": { "type": "number", "exclusiveMinimum": 0, "maximum": 16384 },
-        "line_count": { "type": "integer", "minimum": 1, "maximum": 20000, "default": 17 },
-        "spacing_fraction": { "type": "number", "minimum": 0, "default": 0.006 },
-        "curvature_fraction": { "type": "number", "default": 0.12 },
-        "curvature_cycles": { "type": "number", "exclusiveMinimum": 0, "default": 0.5 },
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "kind": {
+          "const": "multicolor_line"
+        },
+        "origin": {
+          "$ref": "#/$defs/point"
+        },
+        "plate_index": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 7,
+          "default": 0
+        },
+        "span": {
+          "type": "number",
+          "exclusiveMinimum": 0,
+          "maximum": 16384
+        },
+        "line_count": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 20000,
+          "default": 17
+        },
+        "spacing_fraction": {
+          "type": "number",
+          "minimum": 0,
+          "default": 0.006
+        },
+        "curvature_fraction": {
+          "type": "number",
+          "default": 0.12
+        },
+        "curvature_cycles": {
+          "type": "number",
+          "exclusiveMinimum": 0,
+          "default": 0.5
+        },
         "ramp": {
           "type": "array",
           "minItems": 1,
           "maxItems": 8,
-          "default": ["#2DE2E6", "#9D7BFF", "#FF3CAC", "#FFB000"],
-          "items": { "$ref": "#/$defs/color" }
+          "default": [
+            "#2DE2E6",
+            "#9D7BFF",
+            "#FF3CAC",
+            "#FFB000"
+          ],
+          "items": {
+            "$ref": "#/$defs/color"
+          }
         },
-        "interpolation": { "enum": ["discrete", "linear", "smoothstep"], "default": "smoothstep" },
-        "blend": { "enum": ["normal", "multiply", "screen"], "default": "screen" },
-        "apply_blend": { "type": "boolean", "default": true },
-        "samples": { "type": "integer", "minimum": 2, "maximum": 16384, "default": 160 }
+        "interpolation": {
+          "enum": [
+            "discrete",
+            "linear",
+            "smoothstep"
+          ],
+          "default": "smoothstep"
+        },
+        "blend": {
+          "enum": [
+            "normal",
+            "multiply",
+            "screen"
+          ],
+          "default": "screen"
+        },
+        "apply_blend": {
+          "type": "boolean",
+          "default": true
+        },
+        "samples": {
+          "type": "integer",
+          "minimum": 2,
+          "maximum": 16384,
+          "default": 160
+        },
+        "deformation": {
+          "$ref": "#/$defs/deformation"
+        }
       }
     },
     "flinque": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["id", "kind"],
+      "required": [
+        "id",
+        "kind"
+      ],
       "properties": {
-        "id": { "$ref": "#/$defs/id" },
-        "kind": { "const": "flinque" },
-        "origin": { "$ref": "#/$defs/point" },
-        "plate_index": { "type": "integer", "minimum": 0, "maximum": 7, "default": 0 },
-        "radius": { "type": "number", "exclusiveMinimum": 0, "maximum": 8192 },
-        "tint": { "allOf": [{ "$ref": "#/$defs/color" }], "default": "#2DE2E6" },
-        "opacity": { "type": "number", "minimum": 0, "maximum": 1, "default": 0.18 },
-        "overlay_radius": { "type": "number", "exclusiveMinimum": 0, "default": 0.86 },
-        "rays": { "type": "integer", "minimum": 1, "maximum": 20000, "default": 96 },
-        "ray_tiers": { "type": "integer", "minimum": 1, "maximum": 256, "default": 2 },
-        "phase": { "type": "number", "default": 0 },
-        "tier_scale_step": { "type": "number", "default": 0.035 },
-        "samples": { "type": "integer", "minimum": 2, "maximum": 4096, "default": 2 }
-      }
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "kind": {
+          "const": "flinque"
+        },
+        "origin": {
+          "$ref": "#/$defs/point"
+        },
+        "plate_index": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 7,
+          "default": 0
+        },
+        "radius": {
+          "type": "number",
+          "exclusiveMinimum": 0,
+          "maximum": 8192
+        },
+        "tint": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/color"
+            }
+          ],
+          "default": "#2DE2E6"
+        },
+        "opacity": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "default": 0.18
+        },
+        "overlay_radius": {
+          "type": "number",
+          "exclusiveMinimum": 0,
+          "default": 0.86
+        },
+        "rays": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 20000,
+          "default": 96
+        },
+        "ray_tiers": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 256,
+          "default": 2
+        },
+        "phase": {
+          "type": "number",
+          "default": 0
+        },
+        "tier_scale_step": {
+          "type": "number",
+          "default": 0.035
+        },
+        "samples": {
+          "type": "integer",
+          "minimum": 2,
+          "maximum": 8192,
+          "default": 2
+        },
+        "engraving": {
+          "enum": [
+            "rays",
+            "lotus",
+            "swirl",
+            "eccentric"
+          ]
+        },
+        "rings": {
+          "type": "integer",
+          "minimum": 2,
+          "maximum": 256
+        },
+        "deformation": {
+          "$ref": "#/$defs/deformation"
+        },
+        "aperture_radius": {
+          "type": "number",
+          "exclusiveMinimum": 0,
+          "maximum": 8192
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "required": [
+              "engraving"
+            ],
+            "properties": {
+              "engraving": {
+                "enum": [
+                  "lotus",
+                  "swirl",
+                  "eccentric"
+                ]
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "samples": {
+                "type": "integer",
+                "minimum": 256,
+                "maximum": 8192
+              }
+            },
+            "not": {
+              "anyOf": [
+                {
+                  "required": [
+                    "rays"
+                  ]
+                },
+                {
+                  "required": [
+                    "ray_tiers"
+                  ]
+                },
+                {
+                  "required": [
+                    "tier_scale_step"
+                  ]
+                },
+                {
+                  "required": [
+                    "overlay_radius"
+                  ]
+                }
+              ]
+            }
+          },
+          "else": {
+            "properties": {
+              "samples": {
+                "maximum": 4096
+              }
+            },
+            "not": {
+              "anyOf": [
+                {
+                  "required": [
+                    "rings"
+                  ]
+                },
+                {
+                  "required": [
+                    "aperture_radius"
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      ]
     },
     "palette": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["colors"],
+      "required": [
+        "colors"
+      ],
       "properties": {
         "colors": {
           "type": "array",
           "minItems": 1,
           "maxItems": 8,
           "uniqueItems": true,
-          "items": { "$ref": "#/$defs/color" }
+          "items": {
+            "$ref": "#/$defs/color"
+          }
         },
         "stroke_width": {
           "type": "number",
@@ -411,13 +1550,23 @@
           "minimum": 0.05,
           "maximum": 1
         },
-        "blend": { "enum": ["normal", "multiply", "screen"] }
+        "blend": {
+          "enum": [
+            "normal",
+            "multiply",
+            "screen"
+          ]
+        }
       }
     },
     "budget": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["maximum_paths", "maximum_points", "maximum_svg_bytes"],
+      "required": [
+        "maximum_paths",
+        "maximum_points",
+        "maximum_svg_bytes"
+      ],
       "properties": {
         "maximum_paths": {
           "type": "integer",
@@ -439,12 +1588,21 @@
     "review": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["profile", "human_acceptance"],
+      "required": [
+        "profile",
+        "human_acceptance"
+      ],
       "properties": {
         "profile": {
-          "enum": ["accessible-static", "motion-safe", "experimental"]
+          "enum": [
+            "accessible-static",
+            "motion-safe",
+            "experimental"
+          ]
         },
-        "human_acceptance": { "const": "PENDING" }
+        "human_acceptance": {
+          "const": "PENDING"
+        }
       }
     },
     "extensions": {
@@ -457,10 +1615,19 @@
     "pattern": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["class", "family"],
+      "required": [
+        "class",
+        "family"
+      ],
       "properties": {
         "class": {
-          "enum": ["radial", "banded", "lattice", "framed", "overlay"]
+          "enum": [
+            "radial",
+            "banded",
+            "lattice",
+            "framed",
+            "overlay"
+          ]
         },
         "family": {
           "enum": [
@@ -479,10 +1646,652 @@
             "dutch-quad",
             "dutch-hexagon",
             "dutch-mandala",
-            "dutch-triptych"
+            "dutch-triptych",
+            "lobed-contour",
+            "basketweave",
+            "hobnail",
+            "foliate",
+            "botanical",
+            "coral",
+            "anemone",
+            "arabesque",
+            "water",
+            "optical-treatment"
           ]
         }
       }
+    },
+    "organic_field": {
+      "type": "object",
+      "required": [
+        "id",
+        "kind",
+        "preset"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "kind": {
+          "const": "organic_field"
+        },
+        "origin": {
+          "$ref": "#/$defs/point"
+        },
+        "plate_index": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 7
+        },
+        "preset": {
+          "enum": [
+            "running-vine",
+            "scroll",
+            "palmette",
+            "feather-palm",
+            "fan-palm",
+            "ginkgo",
+            "cannabis",
+            "papyrus",
+            "saguaro",
+            "willow",
+            "staghorn",
+            "lettuce",
+            "carnation",
+            "bubble",
+            "sun",
+            "fox",
+            "grooved-brain",
+            "sea-fan",
+            "pink-tipped-anemone",
+            "saddle-carpet-anemone"
+          ]
+        },
+        "span": {
+          "type": "number",
+          "exclusiveMinimum": 0,
+          "maximum": 8192
+        },
+        "branches": {
+          "type": "integer",
+          "minimum": 3,
+          "maximum": 32
+        },
+        "detail": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 4
+        },
+        "samples": {
+          "type": "integer",
+          "minimum": 24,
+          "maximum": 512
+        },
+        "asymmetry": {
+          "type": "number",
+          "minimum": -0.45,
+          "maximum": 0.45
+        },
+        "seed": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 18446744073709551615
+        },
+        "deformation": {
+          "$ref": "#/$defs/deformation"
+        },
+        "leaflets": {
+          "enum": [
+            5,
+            7,
+            9
+          ]
+        },
+        "stems": {
+          "enum": [
+            1,
+            3
+          ]
+        },
+        "branch_depth": {
+          "type": "integer",
+          "minimum": 2,
+          "maximum": 5
+        },
+        "interlace": {
+          "type": "boolean",
+          "default": false
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "preset": {
+                "not": {
+                  "const": "cannabis"
+                }
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "leaflets": {
+                "const": 7
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "preset": {
+                "not": {
+                  "const": "papyrus"
+                }
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "stems": {
+                "const": 1
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "preset": {
+                "not": {
+                  "enum": [
+                    "staghorn",
+                    "carnation"
+                  ]
+                }
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "branch_depth": {
+                "const": 4
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "preset": {
+                "not": {
+                  "const": "running-vine"
+                }
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "interlace": {
+                "const": false
+              }
+            }
+          }
+        }
+      ]
+    },
+    "arabesque_field": {
+      "type": "object",
+      "required": [
+        "id",
+        "kind"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "kind": {
+          "const": "arabesque_field"
+        },
+        "origin": {
+          "$ref": "#/$defs/point"
+        },
+        "plate_index": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 7
+        },
+        "recipe": {
+          "enum": [
+            "star8",
+            "hex6",
+            "girih10"
+          ]
+        },
+        "rows": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 32
+        },
+        "columns": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 32
+        },
+        "samples": {
+          "type": "integer",
+          "minimum": 2,
+          "maximum": 64
+        },
+        "pitch": {
+          "type": "number",
+          "exclusiveMinimum": 0,
+          "maximum": 8192
+        },
+        "clearance": {
+          "type": "number",
+          "minimum": 0
+        },
+        "interlace": {
+          "type": "boolean"
+        },
+        "construction": {
+          "type": "boolean"
+        },
+        "deformation": {
+          "$ref": "#/$defs/deformation"
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "required": [
+              "recipe"
+            ],
+            "properties": {
+              "recipe": {
+                "const": "girih10"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "rows": {
+                "const": 1
+              },
+              "columns": {
+                "const": 1
+              }
+            }
+          }
+        }
+      ]
+    },
+    "deformation": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "kind": {
+          "enum": [
+            "triangular",
+            "angular"
+          ]
+        },
+        "amplitude_x": {
+          "type": "number",
+          "minimum": -0.08,
+          "maximum": 0.08
+        },
+        "amplitude_y": {
+          "type": "number",
+          "minimum": -0.08,
+          "maximum": 0.08
+        },
+        "period_x": {
+          "type": "number",
+          "minimum": 1,
+          "maximum": 8192
+        },
+        "period_y": {
+          "type": "number",
+          "minimum": 1,
+          "maximum": 8192
+        },
+        "frequency": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 8
+        },
+        "phase": {
+          "type": "number"
+        },
+        "seeded_variation": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 0.08
+        },
+        "motion_amount": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "seed": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 18446744073709551615
+        }
+      }
+    },
+    "water_field": {
+      "type": "object",
+      "required": [
+        "id",
+        "kind",
+        "form"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "origin": {
+          "$ref": "#/$defs/point"
+        },
+        "plate_index": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 7
+        },
+        "deformation": {
+          "$ref": "#/$defs/deformation"
+        },
+        "kind": {
+          "const": "water_field"
+        },
+        "form": {
+          "enum": [
+            "current",
+            "eddy",
+            "arc",
+            "breaker",
+            "foam",
+            "braid",
+            "fan"
+          ]
+        },
+        "span": {
+          "type": "number",
+          "exclusiveMinimum": 0,
+          "maximum": 8192
+        },
+        "density": {
+          "type": "number",
+          "minimum": 0.25,
+          "maximum": 4
+        },
+        "curvature": {
+          "type": "number",
+          "minimum": 0.2,
+          "maximum": 4
+        },
+        "phase": {
+          "type": "number"
+        },
+        "rotation": {
+          "type": "number"
+        },
+        "samples": {
+          "type": "integer",
+          "minimum": 96,
+          "maximum": 3072
+        },
+        "clearance": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 16
+        }
+      }
+    },
+    "optical_field": {
+      "type": "object",
+      "required": [
+        "id",
+        "kind",
+        "treatment"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "origin": {
+          "$ref": "#/$defs/point"
+        },
+        "plate_index": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 7
+        },
+        "deformation": {
+          "$ref": "#/$defs/deformation"
+        },
+        "kind": {
+          "const": "optical_field"
+        },
+        "treatment": {
+          "enum": [
+            "current-interference",
+            "leaf-interference",
+            "facet-tones",
+            "cafe-wall",
+            "peripheral-drift",
+            "ouchi"
+          ]
+        },
+        "control": {
+          "type": "boolean"
+        },
+        "span": {
+          "type": "number",
+          "exclusiveMinimum": 0,
+          "maximum": 8192
+        },
+        "pitch": {
+          "type": "number",
+          "minimum": 3,
+          "maximum": 24
+        },
+        "angle": {
+          "type": "number",
+          "minimum": -0.3,
+          "maximum": 0.3
+        },
+        "bend": {
+          "type": "number",
+          "minimum": -30,
+          "maximum": 30
+        },
+        "displacement": {
+          "type": "number",
+          "minimum": -30,
+          "maximum": 30
+        },
+        "samples": {
+          "type": "integer",
+          "minimum": 32,
+          "maximum": 1024
+        }
+      }
+    },
+    "elliptic_loop": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "kind"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "kind": {
+          "const": "elliptic_loop"
+        },
+        "origin": {
+          "$ref": "#/$defs/point"
+        },
+        "plate_index": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 7
+        },
+        "x_radius": {
+          "type": "number",
+          "exclusiveMinimum": 0,
+          "maximum": 8192
+        },
+        "y_radius": {
+          "type": "number",
+          "exclusiveMinimum": 0,
+          "maximum": 8192
+        },
+        "normal_amplitude": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 2048
+        },
+        "tangent_amplitude": {
+          "type": "number",
+          "minimum": -2048,
+          "maximum": 2048
+        },
+        "cycles": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 256
+        },
+        "phase": {
+          "type": "number"
+        },
+        "secondary": {
+          "type": "number",
+          "minimum": -0.5,
+          "maximum": 0.5
+        },
+        "samples": {
+          "type": "integer",
+          "minimum": 32,
+          "maximum": 32768
+        },
+        "strands": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 128
+        },
+        "phase_step": {
+          "type": "number"
+        }
+      },
+      "$comment": "Native validation additionally requires samples >= 32*cycles*(secondary != 0 ? 2 : 1)."
+    },
+    "contour_loop": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "kind"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "kind": {
+          "const": "contour_loop"
+        },
+        "origin": {
+          "$ref": "#/$defs/point"
+        },
+        "plate_index": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 7
+        },
+        "normal_amplitude": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 2048
+        },
+        "tangent_amplitude": {
+          "type": "number",
+          "minimum": -2048,
+          "maximum": 2048
+        },
+        "cycles": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 256
+        },
+        "phase": {
+          "type": "number"
+        },
+        "secondary": {
+          "type": "number",
+          "minimum": -0.5,
+          "maximum": 0.5
+        },
+        "samples": {
+          "type": "integer",
+          "minimum": 32,
+          "maximum": 32768
+        },
+        "strands": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 128
+        },
+        "phase_step": {
+          "type": "number"
+        },
+        "radius": {
+          "type": "number",
+          "exclusiveMinimum": 0,
+          "maximum": 8192
+        },
+        "x_scale": {
+          "type": "number",
+          "minimum": 0.05,
+          "maximum": 8
+        },
+        "y_scale": {
+          "type": "number",
+          "minimum": 0.05,
+          "maximum": 8
+        },
+        "rotation": {
+          "type": "number"
+        },
+        "modes": {
+          "type": "array",
+          "maxItems": 8,
+          "items": {
+            "$ref": "#/$defs/contour_mode"
+          }
+        },
+        "phase_modulation": {
+          "type": "number",
+          "minimum": -16,
+          "maximum": 16
+        },
+        "phase_frequency": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 64
+        }
+      },
+      "$comment": "Native validation also requires sum(abs(mode amplitudes)) <= .45, radius*max(x_scale,y_scale) <= 8192, and samples >= 32*(max(1, mode frequencies) + (cycles+ceil(abs(phase_modulation)*phase_frequency))*(secondary != 0 ? 2 : 1))."
     }
   }
 }

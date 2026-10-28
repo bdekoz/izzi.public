@@ -1,0 +1,13 @@
+<map id="izzi::guilloche::meta::drawing::curve" name="izzi::guilloche::meta::drawing::curve">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,36,139,73"/>
+<area shape="rect" id="Node000002" href="$structizzi_1_1guilloche_1_1meta_1_1drawing.html#ae32ea417028bf9d6d32f32caea12030b" title=" " alt="" coords="187,5,320,42"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="138,41,174,37,169,38,140,46"/>
+<area shape="rect" id="Node000005" href="$namespaceizzi_1_1guilloche_1_1meta.html#aa687f1c7e73f4cd44cff36b05b0bdfea" title=" " alt="" coords="187,67,320,103"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="139,63,174,71,169,72,139,68"/>
+<area shape="rect" id="Node000003" href="$namespaceizzi_1_1guilloche_1_1meta.html#a313c5749e9728fdfd0a5c5eb146c8554" title=" " alt="" coords="370,5,503,42"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="320,21,357,23,351,24,320,26"/>
+<area shape="rect" id="Node000004" href="$namespacesvg.html#ac10e7d47d031b121174fc0e65232980f" title="Convert point_2t to string." alt="" coords="552,12,648,36"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="503,21,539,23,534,24,503,26"/>
+<area shape="rect" id="Node000006" href="$namespaceizzi_1_1guilloche_1_1detail.html#a12df44d23df642a525d8f781094d148d" title=" " alt="" coords="368,67,504,103"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="320,82,355,85,350,85,320,88"/>
+</map>

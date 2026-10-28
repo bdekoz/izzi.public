@@ -26,6 +26,29 @@ constexpr double header_height = 50;
 constexpr double cell_width = 150;
 constexpr double cell_height = 96;
 constexpr double cell_padding = 11;
+constexpr double page_margin = 16;
+
+// Fit all curvature variants with the same row scale, preserving comparison
+// while allowing the library's intentionally overflowing motifs to stay whole.
+double
+row_fit_scale(const hamonshu::pattern_spec& spec)
+{
+  const double width = cell_width - 2 * cell_padding;
+  const double height = cell_height - 2 * cell_padding;
+  double extent = 1;
+  for (const double curvature : curvature_ratios)
+    {
+      hamonshu::motif_config config;
+      config.curvature = curvature;
+      const auto geometry = hamonshu::make_motif_geometry(spec, {0, 0, width, height}, config);
+      const auto& bounds = geometry.bounds;
+      for (const double x : {bounds.left, bounds.right})
+        extent = std::max(extent, std::abs(x - width / 2) / (width / 2));
+      for (const double y : {bounds.top, bounds.bottom})
+        extent = std::max(extent, std::abs(y - height / 2) / (height / 2));
+    }
+  return 1 / extent;
+}
 
 template<typename Function>
 void
@@ -219,8 +242,8 @@ render_parameter_grid(const std::string& output_name)
   validate_public_api();
 
   const svg::area<> canvas {
-    label_width + curvature_ratios.size() * cell_width,
-    header_height + selected_motifs.size() * cell_height,
+    label_width + curvature_ratios.size() * cell_width + 2 * page_margin,
+    header_height + selected_motifs.size() * cell_height + 2 * page_margin,
   };
   svg::svg_element document(
     output_name,
@@ -248,7 +271,8 @@ render_parameter_grid(const std::string& output_name)
   };
 
   svg::group_element grid;
-  grid.start_element("hamonshu-parameter-grid");
+  grid.start_element("hamonshu-parameter-grid",
+                     "translate(16 16)");
   grid.add_raw(text_markup(label_width - 12, header_height - 17,
                            "source motif / form ratio", "end", 11));
   for (std::size_t column = 0;
@@ -269,6 +293,7 @@ render_parameter_grid(const std::string& output_name)
   for (std::size_t row = 0; row != selected_motifs.size(); ++row)
     {
       const auto& spec = hamonshu::curated_pattern(selected_motifs[row]);
+      const double fit = row_fit_scale(spec);
       const double top = header_height + row * cell_height;
       grid.add_raw(text_markup(label_width - 12,
                                top + cell_height / 2 + 4,
@@ -329,10 +354,16 @@ render_parameter_grid(const std::string& output_name)
           svg::group_element cell;
           cell.start_element(id);
           cell.add_title(configuration_title(spec, config));
+          const double center_x = left + cell_width / 2;
+          const double center_y = top + cell_height / 2;
+          const std::string transform = "translate("
+            + std::to_string(center_x) + " " + std::to_string(center_y)
+            + ") scale(" + std::to_string(fit) + ") translate("
+            + std::to_string(-center_x) + " " + std::to_string(-center_y) + ")";
           cell.add_element(svg::make_path(
             path_data, motif_style, id + "-path", true,
-            "clip-path=\"url(#" + clip_id
-              + ")\" stroke-linecap=\"round\" "
+            "transform=\"" + transform
+              + "\" vector-effect=\"non-scaling-stroke\" stroke-linecap=\"round\" "
                 "stroke-linejoin=\"round\""));
           cell.finish_element();
           grid.add_element(cell);

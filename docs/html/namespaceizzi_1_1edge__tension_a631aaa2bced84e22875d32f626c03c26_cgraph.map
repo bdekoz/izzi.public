@@ -1,0 +1,7 @@
+<map id="izzi::edge_tension::span" name="izzi::edge_tension::span">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,36,127,73"/>
+<area shape="rect" id="Node000002" href="$namespaceizzi_1_1edge__tension.html#abb54ea00bd94b982ec59d30b969d4e13" title=" " alt="" coords="175,5,296,42"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="126,41,162,36,157,38,128,46"/>
+<area shape="rect" id="Node000003" href="$namespaceizzi_1_1edge__tension.html#a955026135bbfdf332ef9952ea856579d" title=" " alt="" coords="175,67,296,103"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="127,63,162,71,157,72,127,68"/>
+</map>

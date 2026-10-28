@@ -27,7 +27,7 @@ test_chart()
   const string bchrome("chrome");
   const string afieldpost("/metrics/SpeedIndexProgress");
   const string afx("/" + bfirefox + afieldpost);
-  const string achrome("" + bchrome + afieldpost);
+  const string achrome("/" + bchrome + afieldpost);
   const string f1("timestamp");
   const string f2("percent");
 

@@ -1,0 +1,14 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" title=" " alt="" coords="5,144,108,167"/>
+<area shape="rect" id="Node000001" href="$structsvg_1_1video__glitch_1_1film_1_1json__detail_1_1is__optional_3_01std_1_1optional_3_01T_01_4_01_4.html" title=" " alt="" coords="156,5,309,68"/>
+<area shape="poly" id="edge13_Node000000_Node000001" title=" " alt="" coords="83,132,154,77,175,67,171,70,157,82,87,136"/>
+<area shape="rect" id="Node000003" href="$structsvg_1_1video__glitch_1_1film_1_1json__detail_1_1is__vector_3_01std_1_1vector_3_01T_00_01A_01_4_01_4.html" title=" " alt="" coords="162,92,302,155"/>
+<area shape="poly" id="edge14_Node000000_Node000003" title=" " alt="" coords="122,141,164,135,160,138,124,146"/>
+<area shape="rect" id="Node000004" href="$structsvg_1_1video__glitch_1_1film_1_1json__detail_1_1is__optional.html" title=" " alt="" coords="170,178,295,228"/>
+<area shape="poly" id="edge15_Node000000_Node000004" title=" " alt="" coords="117,169,172,185,167,187,117,174"/>
+<area shape="rect" id="Node000005" href="$structsvg_1_1video__glitch_1_1film_1_1json__detail_1_1is__vector.html" title=" " alt="" coords="170,252,295,302"/>
+<area shape="poly" id="edge16_Node000000_Node000005" title=" " alt="" coords="81,175,116,207,157,238,176,251,171,251,154,243,113,211,80,181"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="8,80,105,103"/>
+<area shape="poly" id="edge17_Node000002_Node000001" title=" " alt="" coords="110,72,157,59,153,63,113,77"/>
+<area shape="poly" id="edge18_Node000002_Node000003" title=" " alt="" coords="120,100,164,109,160,112,121,105"/>
+</map>

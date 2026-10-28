@@ -1,5 +1,10 @@
 # Family: movement (paths, camera, serialization)
 
+For distortion of native artwork, see [video glitch](video-glitch.md): seven
+signal/artifact families, process parameters, and the `izzi.video-glitch/1`
+contract. Its event ramps are self-contained, so the geometry API does not
+inherit the movement header's media/JSON dependencies.
+
 Header: `src/izzi-svg-movement.h`.
 
 ## Terminology

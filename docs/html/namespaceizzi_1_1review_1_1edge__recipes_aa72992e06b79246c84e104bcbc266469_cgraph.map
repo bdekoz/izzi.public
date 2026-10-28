@@ -1,0 +1,15 @@
+<map id="izzi::review::edge_recipes::saddle" name="izzi::review::edge_recipes::saddle">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,95,122,132"/>
+<area shape="rect" id="Node000002" href="$namespaceizzi_1_1review_1_1edge__recipes.html#aff5edc43e9df68d88cbb136ad63bf52f" title=" " alt="" coords="357,95,473,132"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="77,93,115,53,140,34,169,19,207,7,239,3,272,7,310,19,334,31,356,47,393,84,387,83,353,51,331,36,308,24,270,12,239,8,208,12,171,24,143,38,118,57,81,96"/>
+<area shape="rect" id="Node000003" href="$namespaceizzi_1_1review_1_1edge__recipes.html#a6135c5b0675e559d4848fda8420b768c" title=" " alt="" coords="181,34,298,71"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="117,93,172,75,168,78,120,97"/>
+<area shape="rect" id="Node000004" href="$namespaceizzi_1_1review_1_1edge__recipes.html#a9ea753e1cea2c98bb28535fd0dea730c" title=" " alt="" coords="181,95,298,132"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="121,111,168,112,164,115,123,116"/>
+<area shape="rect" id="Node000005" href="$namespaceizzi_1_1review_1_1edge__recipes.html#a1aa60478476071ff6c1157f8efeb161d" title=" " alt="" coords="170,157,309,193"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="118,130,173,150,168,152,118,135"/>
+<area shape="rect" id="Node000006" href="$namespaceizzi_1_1review_1_1edge__recipes.html#a0c2c9f109e4e515d3e6e56c083af348d" title=" " alt="" coords="181,218,298,255"/>
+<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="83,130,123,167,171,203,180,211,175,210,168,208,119,171,82,135"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="297,111,344,113,339,114,298,116"/>
+<area shape="poly" id="edge6_Node000005_Node000002" title=" " alt="" coords="293,154,344,139,349,137,295,159"/>
+</map>

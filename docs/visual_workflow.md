@@ -2,9 +2,10 @@
 
 Parent workflow: [Workflows](workflows.md).
 
-First-pass index for the Here Lies Trouble visual workflow, approved under
-`docs/visual_workflow/reorganization_proposal.md`. The directory pages stay
-pointer-only; the Supercut usage guide was moved here from
+Index for visual workflows, including Here Lies Trouble and native
+guilloche reels. The directory organization follows
+`docs/visual_workflow/reorganization_proposal.md`, with tool-specific
+guidance linked below. The Supercut usage guide was moved here from
 `docs/workflows.md` in the 2026-08-22 documentation pass.
 
 ## Supercut usage
@@ -57,7 +58,8 @@ smoke derivation.
 | `docs/visual_workflow/motion_grammar.md` | Motion seeds, canary grammar, camera tracks |
 | `docs/visual_workflow/camera_tracking_routes.md` | Route waypoints and derived camera tracks |
 | `docs/visual_workflow/tool_seedance.md` | Provider image-to-video adapter and delivery contract |
-| `docs/visual_workflow/tool_guilloche.md` | Guilloche v4 renderer and title cards |
+| `docs/visual_workflow/tool_guilloche.md` | Native guilloche reviews and compact reels; v4 renderer and title cards |
+| [DOCX word titles](visual_workflow/tool_docx_word_titles.md) | Configurable word holds, title skipping, paragraph MKVs, layered review reels and 1080p vertical Instagram exports |
 | `docs/visual_workflow/etl.md` | Keyframes, filmstrips, proxies, hashing, episode assembly |
 | `docs/visual_workflow/proofs.md` | Review surface pattern (filmstrip + proxy pages) |
 | `docs/visual_workflow/visual_workflow_experiments.md` | First-pass unclassified material |

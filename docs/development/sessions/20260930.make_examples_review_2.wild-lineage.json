@@ -1,0 +1,471 @@
+{
+  "schema_version": 1,
+  "recorded_on": "2026-09-30",
+  "purpose": "Evidence for transferring the reviewed wild composition and motion method to new forms and two-/three-family crossovers.",
+  "sources": [
+    {
+      "path": "outputs/guilloche-exploits-in-the-wild/production.json",
+      "sha256": "8c413a99bc6555adf91e876e8e1adda0a3667211351303b6fbfd3d11b632fb23"
+    },
+    {
+      "path": "outputs/guilloche-exploits-in-the-wild/draft-2/logs/resolved-plate-controls.json",
+      "sha256": "00cb4e1a73e7e4ac2617f9280543592c269f3e500b59f733d2933c3fe654c256"
+    },
+    {
+      "path": "outputs/guilloche-exploits-in-the-wild/review/human-feedback.json",
+      "sha256": "724e19aea347ebe9607f8a00a7efe771043ac19e2894d96988b0b4831f016961"
+    },
+    {
+      "path": "examples/guilloche-plates.cc",
+      "sha256": "58e85ca46dc340eea42430598a5e9c12d73033e692046a6721ee40c0eaeea933"
+    },
+    {
+      "path": "src/izzi-svg-reference-motion.h",
+      "sha256": "cc07fe3042ae76519eb2310f545cd7c3c64c4293cd2bf5cf6df08d907261f940"
+    }
+  ],
+  "reviewed_movie": {
+    "path": "outputs/guilloche-exploits-in-the-wild/deliveries/guilloche-exploits-in-the-wild-draft-1-vertical.mkv",
+    "sha256_from_production_praxis": "ced24ac79e6d8b2dccaa7f504dfcee863c528532ef61df096606538e497b4a85"
+  },
+  "delightful_label_search": "No exact delightful label found in the inspected wild production/review records or guilloche documentation. The label in unrelated AI Blade Runners keyframe plans is not attributed to these plates.",
+  "entries": [
+    {
+      "plate_id": "izzi-3d8190459c67",
+      "historical_pdf_page": 445,
+      "recipe": "wild-01-variation-05-counter-orbit",
+      "review": {
+        "timestamp": "02:55",
+        "seconds": 175,
+        "action": "keep",
+        "note": "Perfect; preserve this plate.",
+        "index": 17,
+        "page": 445,
+        "plate_id": "izzi-3d8190459c67",
+        "requested": "wild 01 variation 05 counter orbit"
+      },
+      "native_baseline_declarations": [
+        "api=izzi-guilloche-1; profile=experimental; seed=11105; frame=0/1; paths=541; points=320621"
+      ],
+      "baseline_svg_sha256": "1dc1f52593cc3bf9d4636f619c8a0def0d7b308fad72fda625e8d0ef21e1443d",
+      "baseline_geometry_sha256": "bb00ac344fd007dddd8d30b57f8efa739b09aa4bf6d2d6b991cccf854204c52c",
+      "native_generator_source_at_production": {
+        "path": "examples/guilloche-plates.cc",
+        "sha256": "58e85ca46dc340eea42430598a5e9c12d73033e692046a6721ee40c0eaeea933",
+        "bytes": 39094
+      },
+      "original_motion": {
+        "system": "orbit",
+        "entry_end_frame": 83,
+        "entry_seconds": 2.7666666666666666,
+        "middle_frames": [
+          90,
+          210
+        ],
+        "exit_frames": [
+          210,
+          300
+        ],
+        "start_width": 6.0,
+        "peak_width": 720.0,
+        "end_width": 108.0,
+        "easing": "smoothstep-3u2-2u3",
+        "scale_axes": "uniform",
+        "orbit_degrees": 17.59974,
+        "lattice_pixels": 7.78133,
+        "phase_start_degrees": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "phase_rates_degrees_per_second": [
+          0.66379,
+          -0.99856,
+          1.10041
+        ],
+        "phase_sweep_seconds": 4.0,
+        "radial_amplitude_fraction": 0.025,
+        "radial_cycles": 1.0,
+        "breathing_width_amplitude": 0.3,
+        "breathing_opacity_amplitude": 0.18,
+        "handoff_degrees": 5.0,
+        "handoff_min_opacity": 0.45,
+        "handoff_scale_amplitude": 0.04,
+        "handoff_glitch_pixels": 3.0
+      },
+      "draft_2_motion": {
+        "radial_twist_degrees": 0,
+        "breathing_size_amplitude": 0,
+        "cycles": 1,
+        "spin_degrees": 0,
+        "system": "orbit",
+        "entry_end_frame": 83,
+        "entry_seconds": 2.7666666666666666,
+        "middle_frames": [
+          90,
+          210
+        ],
+        "exit_frames": [
+          210,
+          300
+        ],
+        "start_width": 6,
+        "peak_width": 918,
+        "end_width": 108,
+        "easing": "smoothstep-3u2-2u3",
+        "scale_axes": "uniform",
+        "orbit_degrees": 17.59974,
+        "lattice_pixels": 7.78133,
+        "phase_start_degrees": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "phase_rates_degrees_per_second": [
+          0.66379,
+          -0.99856,
+          1.10041
+        ],
+        "phase_sweep_seconds": 4.0,
+        "radial_amplitude_fraction": 0.025,
+        "radial_cycles": 1.0,
+        "breathing_width_amplitude": 0.3,
+        "breathing_opacity_amplitude": 0.18,
+        "handoff_degrees": 5.0,
+        "handoff_min_opacity": 0.45,
+        "handoff_scale_amplitude": 0.04,
+        "handoff_glitch_pixels": 3.0
+      },
+      "draft_2_framing": {
+        "mode": "finite",
+        "orientation_degrees": 0
+      },
+      "observed_original_paint": {
+        "#22F0FF": {
+          "opacity": [
+            0.29
+          ],
+          "stroke_widths": [
+            "0.72"
+          ]
+        },
+        "#FF1F8F": {
+          "opacity": [
+            0.275
+          ],
+          "stroke_widths": [
+            "0.68"
+          ]
+        },
+        "#FFC400": {
+          "opacity": [
+            0.24
+          ],
+          "stroke_widths": [
+            "0.64"
+          ]
+        },
+        "#FFFFFF": {
+          "opacity": [
+            1
+          ],
+          "stroke_widths": []
+        }
+      },
+      "decoded_review_frame": {
+        "path": "outputs/meta-guilloche-2/examples-review-fix/praised-wild/perfect-page-445-at-175s.png",
+        "sha256": "4a75023a4765788098b5688083f4032114b004471545161a5d142d182202278d",
+        "time_seconds": 175
+      },
+      "scope": "Human Perfect feedback applies to the original Draft 1 passage. Draft 2 retains its motion character with framing changes; new families and crossovers are proposed, not approved."
+    },
+    {
+      "plate_id": "izzi-394d13e6bb65",
+      "historical_pdf_page": 425,
+      "recipe": "variant-lissajous-moire-compatibility",
+      "review": {
+        "timestamp": "04:54",
+        "seconds": 294,
+        "action": "keep",
+        "note": "Perfect; preserve this plate.",
+        "index": 29,
+        "page": 425,
+        "plate_id": "izzi-394d13e6bb65",
+        "requested": "variant lissajous moire compatibility"
+      },
+      "native_baseline_declarations": [
+        "api=izzi-guilloche-1; profile=compatibility; seed=20260809; frame=0/1; paths=12; points=5772"
+      ],
+      "baseline_svg_sha256": "03ff714a6cd4dccc50f4fab3425060b73bdd7c70c4d3bdd655ca7ddf7d55156d",
+      "baseline_geometry_sha256": "fd73581658fb38ffd7fe3af5c8b1e3498e7ff6f9b989a1a50f23fe9fc463e62c",
+      "native_generator_source_at_production": {
+        "path": "examples/guilloche-plates.cc",
+        "sha256": "58e85ca46dc340eea42430598a5e9c12d73033e692046a6721ee40c0eaeea933",
+        "bytes": 39094
+      },
+      "original_motion": {
+        "system": "shape_handoff",
+        "entry_end_frame": 78,
+        "entry_seconds": 2.6,
+        "middle_frames": [
+          90,
+          210
+        ],
+        "exit_frames": [
+          210,
+          300
+        ],
+        "start_width": 6.0,
+        "peak_width": 720.0,
+        "end_width": 108.0,
+        "easing": "smoothstep-3u2-2u3",
+        "scale_axes": "uniform",
+        "orbit_degrees": 19.68945,
+        "lattice_pixels": 5.58205,
+        "phase_start_degrees": [
+          0.0,
+          0.0
+        ],
+        "phase_rates_degrees_per_second": [
+          0.89053,
+          -0.97306
+        ],
+        "phase_sweep_seconds": 4.0,
+        "radial_amplitude_fraction": 0.025,
+        "radial_cycles": 1.0,
+        "breathing_width_amplitude": 0.3,
+        "breathing_opacity_amplitude": 0.18,
+        "handoff_degrees": 5.0,
+        "handoff_min_opacity": 0.45,
+        "handoff_scale_amplitude": 0.04,
+        "handoff_glitch_pixels": 3.0
+      },
+      "draft_2_motion": {
+        "radial_twist_degrees": 0,
+        "breathing_size_amplitude": 0,
+        "cycles": 1,
+        "spin_degrees": 0,
+        "system": "shape_handoff",
+        "entry_end_frame": 78,
+        "entry_seconds": 2.6,
+        "middle_frames": [
+          90,
+          210
+        ],
+        "exit_frames": [
+          210,
+          300
+        ],
+        "start_width": 3744.3633245292085,
+        "peak_width": 4193.686923472714,
+        "end_width": 3744.3633245292085,
+        "easing": "smoothstep-3u2-2u3",
+        "scale_axes": "uniform",
+        "orbit_degrees": 19.68945,
+        "lattice_pixels": 5.58205,
+        "phase_start_degrees": [
+          0.0,
+          0.0
+        ],
+        "phase_rates_degrees_per_second": [
+          0.89053,
+          -0.97306
+        ],
+        "phase_sweep_seconds": 4.0,
+        "radial_amplitude_fraction": 0.025,
+        "radial_cycles": 1.0,
+        "breathing_width_amplitude": 0.3,
+        "breathing_opacity_amplitude": 0.18,
+        "handoff_degrees": 5.0,
+        "handoff_min_opacity": 0.45,
+        "handoff_scale_amplitude": 0.04,
+        "handoff_glitch_pixels": 3.0
+      },
+      "draft_2_framing": {
+        "mode": "full_screen",
+        "orientation_degrees": 0,
+        "cover_safety_factor": 1.6,
+        "camera_peak_zoom": 1.12
+      },
+      "observed_original_paint": {
+        "#2DE2E6": {
+          "opacity": [
+            0.78
+          ],
+          "stroke_widths": [
+            "1.6875"
+          ]
+        },
+        "#FF3CAC": {
+          "opacity": [
+            0.72
+          ],
+          "stroke_widths": [
+            "1.62"
+          ]
+        },
+        "#FFFFFF": {
+          "opacity": [
+            1
+          ],
+          "stroke_widths": []
+        }
+      },
+      "decoded_review_frame": {
+        "path": "outputs/meta-guilloche-2/examples-review-fix/praised-wild/perfect-page-425-at-294s.png",
+        "sha256": "ef5434e807eee82eb30ca09f2a2d45b8f4a30ef0d336297147a564e1cc64507a",
+        "time_seconds": 294
+      },
+      "scope": "Human Perfect feedback applies to the original Draft 1 passage. Draft 2 retains its motion character with framing changes; new families and crossovers are proposed, not approved."
+    },
+    {
+      "plate_id": "izzi-3db758a34f44",
+      "historical_pdf_page": 441,
+      "recipe": "wild-01-variation-01-centered-dual",
+      "review": {
+        "timestamp": "05:05",
+        "seconds": 305,
+        "action": "keep",
+        "note": "Perfect; preserve this plate.",
+        "index": 30,
+        "page": 441,
+        "plate_id": "izzi-3db758a34f44",
+        "requested": "wild 01 variation 01 centered dual"
+      },
+      "native_baseline_declarations": [
+        "api=izzi-guilloche-1; profile=experimental; seed=11101; frame=0/1; paths=321; points=190481"
+      ],
+      "baseline_svg_sha256": "f7fea47add146eaae2e39fd2aab639bc94d71f9d1dfd87438a5a99a8a7bab8c6",
+      "baseline_geometry_sha256": "a7136c7df6cf58cee01c1376fdc203ecdec01bc8d806b6994f680c738a479795",
+      "native_generator_source_at_production": {
+        "path": "examples/guilloche-plates.cc",
+        "sha256": "58e85ca46dc340eea42430598a5e9c12d73033e692046a6721ee40c0eaeea933",
+        "bytes": 39094
+      },
+      "original_motion": {
+        "system": "orbit",
+        "entry_end_frame": 82,
+        "entry_seconds": 2.7333333333333334,
+        "middle_frames": [
+          90,
+          210
+        ],
+        "exit_frames": [
+          210,
+          300
+        ],
+        "start_width": 6.0,
+        "peak_width": 720.0,
+        "end_width": 108.0,
+        "easing": "smoothstep-3u2-2u3",
+        "scale_axes": "uniform",
+        "orbit_degrees": 23.16333,
+        "lattice_pixels": 5.31819,
+        "phase_start_degrees": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "phase_rates_degrees_per_second": [
+          0.86818,
+          -1.16397,
+          1.36308
+        ],
+        "phase_sweep_seconds": 4.0,
+        "radial_amplitude_fraction": 0.025,
+        "radial_cycles": 1.0,
+        "breathing_width_amplitude": 0.3,
+        "breathing_opacity_amplitude": 0.18,
+        "handoff_degrees": 5.0,
+        "handoff_min_opacity": 0.45,
+        "handoff_scale_amplitude": 0.04,
+        "handoff_glitch_pixels": 3.0
+      },
+      "draft_2_motion": {
+        "radial_twist_degrees": 0,
+        "breathing_size_amplitude": 0,
+        "cycles": 1,
+        "spin_degrees": 0,
+        "system": "orbit",
+        "entry_end_frame": 82,
+        "entry_seconds": 2.7333333333333334,
+        "middle_frames": [
+          90,
+          210
+        ],
+        "exit_frames": [
+          210,
+          300
+        ],
+        "start_width": 6,
+        "peak_width": 918,
+        "end_width": 108,
+        "easing": "smoothstep-3u2-2u3",
+        "scale_axes": "uniform",
+        "orbit_degrees": 23.16333,
+        "lattice_pixels": 5.31819,
+        "phase_start_degrees": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "phase_rates_degrees_per_second": [
+          0.86818,
+          -1.16397,
+          1.36308
+        ],
+        "phase_sweep_seconds": 4.0,
+        "radial_amplitude_fraction": 0.025,
+        "radial_cycles": 1.0,
+        "breathing_width_amplitude": 0.3,
+        "breathing_opacity_amplitude": 0.18,
+        "handoff_degrees": 5.0,
+        "handoff_min_opacity": 0.45,
+        "handoff_scale_amplitude": 0.04,
+        "handoff_glitch_pixels": 3.0
+      },
+      "draft_2_framing": {
+        "mode": "finite",
+        "orientation_degrees": 0
+      },
+      "observed_original_paint": {
+        "#22F0FF": {
+          "opacity": [
+            0.29
+          ],
+          "stroke_widths": [
+            "0.72"
+          ]
+        },
+        "#FF1F8F": {
+          "opacity": [
+            0.275
+          ],
+          "stroke_widths": [
+            "0.68"
+          ]
+        },
+        "#FFC400": {
+          "opacity": [
+            0.24
+          ],
+          "stroke_widths": [
+            "0.64"
+          ]
+        },
+        "#FFFFFF": {
+          "opacity": [
+            1
+          ],
+          "stroke_widths": []
+        }
+      },
+      "decoded_review_frame": {
+        "path": "outputs/meta-guilloche-2/examples-review-fix/praised-wild/perfect-page-441-at-305s.png",
+        "sha256": "ebf7d6822b33095699a43414589d4b22ac9f278e78779dc6613fa5206779ed13",
+        "time_seconds": 305
+      },
+      "scope": "Human Perfect feedback applies to the original Draft 1 passage. Draft 2 retains its motion character with framing changes; new families and crossovers are proposed, not approved."
+    }
+  ]
+}

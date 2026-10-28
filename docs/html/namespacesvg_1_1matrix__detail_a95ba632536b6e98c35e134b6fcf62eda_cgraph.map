@@ -1,0 +1,15 @@
+<map id="svg::matrix_detail::polygon" name="svg::matrix_detail::polygon">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,128,124,165"/>
+<area shape="rect" id="Node000002" href="$group__elements.html#a710b07abb3539d8f830f2b171eefb3c7" title=" " alt="" coords="172,5,314,42"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="82,126,121,89,170,52,182,48,178,51,173,57,124,93,86,129"/>
+<area shape="rect" id="Node000003" href="$group__elements.html#acafbdd950c6c2639c9d376c3eab696e5" title=" " alt="" coords="176,67,310,103"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="119,125,175,107,171,111,121,130"/>
+<area shape="rect" id="Node000004" href="$group__elements.html#a238b38ca99a1cf6c2baf80c8e4338d99" title=" " alt="" coords="176,128,310,165"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="123,144,163,145,158,148,125,149"/>
+<area shape="rect" id="Node000006" href="$group__elements.html#gaa6bdd5f4f406caa8506a262b57ea9755" title=" " alt="" coords="172,189,314,226"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="120,163,175,183,170,185,120,168"/>
+<area shape="rect" id="Node000007" href="$group__elements.html#aefb2e543d081381601f714a743d04d7a" title=" " alt="" coords="172,251,314,287"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="85,163,124,199,173,236,182,243,177,243,170,241,121,203,83,168"/>
+<area shape="rect" id="Node000005" href="$namespacesvg.html#ac10e7d47d031b121174fc0e65232980f" title="Convert point_2t to string." alt="" coords="362,134,457,158"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="310,144,349,146,344,147,310,149"/>
+</map>

@@ -1,0 +1,72 @@
+{
+  "schema": "izzi.edge-tension-state/1",
+  "updated": "2026-10-26",
+  "technical_status": "complete",
+  "implementation_tasks_remaining": [],
+  "implementation_revision": "bb7759a42bf2a974516f35682d1f4a6f5f65813a",
+  "verification_revision": "e7e2607032108de7bbded2812d64803f1dd0d3e2",
+  "contact_sheet_approval_revision": "37c7613c691b09ed756753a63456262aa8c1156e",
+  "verification": {
+    "status": "PASS",
+    "fresh_gcc_tests": 8,
+    "edge_native_replay_matches": 608,
+    "legacy_native_replay_matches": 8,
+    "periodic_checks": 24,
+    "edge_headers_still_match_verified_hashes": true
+  },
+  "study": {
+    "forms": 16,
+    "plates": 80,
+    "sweep_cells": 672,
+    "selected_pdf_pages": 82,
+    "full_book_pdf_pages": 1209
+  },
+  "human_review": {
+    "baseline_contact_sheet": "accepted",
+    "parameter_grids": "pending",
+    "reviewer_statement": "review contact sheet looks good",
+    "accepted_image_sha256": "df9c4d35320110a971918d90dd178c8aab9578d003f8d2ee9cc351c8b1947629"
+  },
+  "evidence": [
+    {
+      "path": "docs/development/sessions/20261025.tension_revisited/verification-20261026.json",
+      "sha256": "7ad737fd056c17cfc32f261061b759e2f4d51d5a2ae9d6f22352818ad011269f"
+    },
+    {
+      "path": "docs/development/sessions/20261025.tension_revisited/human-review-20261026.json",
+      "sha256": "d5390553acb59cdcb547265751834af928485b168b767a061a7d9d6f411cd252"
+    },
+    {
+      "path": "docs/development/sessions/20261025.tension_revisited/baseline-contact-approved-20261026.png",
+      "sha256": "df9c4d35320110a971918d90dd178c8aab9578d003f8d2ee9cc351c8b1947629"
+    }
+  ],
+  "review_locations": {
+    "selected_pdf": "outputs/edge-tension-study.pdf",
+    "study_html": "build/edge-tension-study/index.html",
+    "baseline_gallery": "build/edge-tension-study/gallery/index.html"
+  },
+  "remaining_work": [
+    {
+      "id": "parameter-grid-review",
+      "status": "pending",
+      "action": "Review G1/G2 shape variation, D spacing, C two-/three-ink separation, and P opacity/registration across all eighty study plates; record acceptance or concrete adjustments."
+    },
+    {
+      "id": "shared-book-refresh",
+      "status": "after ongoing shared changes settle",
+      "action": "Rerun focused checks and regenerate selected/full study books for the final shared catalog tree; verify coverage, source fingerprints, page mappings, and delivery hashes.",
+      "commands": [
+        "make edge-tension-check CXX=/usr/bin/g++",
+        "make edge-tension-study CXX=/usr/bin/g++",
+        "make examples-study CXX=/usr/bin/g++"
+      ]
+    }
+  ],
+  "optional_extensions": [
+    "Whole-fan compositions in the independent composition book",
+    "Guilloche adapter",
+    "Surface-field deformation"
+  ],
+  "checkpoint_scope": "Consolidates existing technical verification and contact-sheet acceptance; no new runtime checks or book regeneration in this save-state checkpoint."
+}

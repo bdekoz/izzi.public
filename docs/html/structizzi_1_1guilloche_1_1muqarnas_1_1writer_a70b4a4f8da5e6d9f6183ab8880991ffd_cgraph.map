@@ -1,0 +1,9 @@
+<map id="izzi::guilloche::muqarnas::writer::outline" name="izzi::guilloche::muqarnas::writer::outline">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,166,42"/>
+<area shape="rect" id="Node000002" href="$structizzi_1_1guilloche_1_1muqarnas_1_1writer.html#a561946a9ebb1bbb409581fd64bdc1748" title=" " alt="" coords="214,5,374,42"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="166,21,201,23,195,24,166,26"/>
+<area shape="rect" id="Node000003" href="$namespaceizzi_1_1guilloche_1_1muqarnas.html#a11650124d9ed83b31b211beb8b227116" title=" " alt="" coords="422,5,582,42"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="374,21,409,24,404,24,374,26"/>
+<area shape="rect" id="Node000004" href="$namespacesvg.html#ac10e7d47d031b121174fc0e65232980f" title="Convert point_2t to string." alt="" coords="630,12,726,36"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="583,21,617,24,612,24,583,26"/>
+</map>

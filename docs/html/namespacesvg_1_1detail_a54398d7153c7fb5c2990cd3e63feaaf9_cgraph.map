@@ -1,0 +1,13 @@
+<map id="svg::detail::make_histogram_tick_plan" name="svg::detail::make_histogram_tick_plan">
+<area shape="rect" id="Node000001" title="Derive a deterministic histogram tick surface from the visible domain. Major steps are selected from ..." alt="" coords="5,89,182,126"/>
+<area shape="rect" id="Node000002" href="$namespacesvg_1_1detail.html#a6039d1afa1b3671fdd85c74b96ead918" title=" " alt="" coords="230,5,372,42"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="140,86,241,46,238,50,142,91"/>
+<area shape="rect" id="Node000003" href="$namespacesvg_1_1detail.html#a567e53316c381d51a53166081c6ccf17" title=" " alt="" coords="420,68,592,92"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="182,99,406,84,403,89,183,104"/>
+<area shape="rect" id="Node000004" href="$namespacesvg_1_1detail.html#a0e9c63e4c4d9c4a112cc4e3262d84eeb" title=" " alt="" coords="230,117,372,154"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="182,117,217,123,211,125,183,122"/>
+<area shape="rect" id="Node000005" href="$namespacesvg_1_1detail.html#a7bd6eab0b35862b3c5f4580ccc5b23f6" title=" " alt="" coords="230,179,372,215"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="139,124,244,171,240,173,138,129"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="371,40,448,63,442,64,371,45"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="347,176,371,164,426,131,473,102,478,100,429,135,373,169,349,181"/>
+</map>

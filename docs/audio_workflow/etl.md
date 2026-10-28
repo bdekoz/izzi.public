@@ -15,6 +15,12 @@ audio.
 
 ## Transform
 
+- General-purpose local recognition:
+  `scripts/transcribe-audio.py`, with
+  [usage and output contracts](tool_transcribe_audio.md) and
+  [runnable speech examples](../../examples/audio-transcription/README.md).
+  Argument 1 is the media path; model, channel, audio stream, and excerpt are
+  configurable. Source-relative transcript times and raw hypotheses are retained.
 - Scene cuts / VAD windows:
   `scripts/izzi-audio-excerpt-select.py` + candidates JSON under
   `outputs/ad-hoc/here-lies-trouble/scene-cuts/`; windowing method

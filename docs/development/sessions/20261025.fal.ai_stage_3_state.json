@@ -1,0 +1,1240 @@
+{
+  "schema_version": 1,
+  "captured_at_utc": "2026-10-26T04:49:56+00:00",
+  "captured_at_pacific": "2026-10-25T21:49:56-07:00",
+  "project": "Here Lies Trouble / Runyon Canyon Mullholand Drive",
+  "session_status": "saved_for_exit",
+  "workspace": "/home/bkoz/src/izzi",
+  "git": {
+    "branch": "main",
+    "head_at_capture": "c3310f316c2b4defda07867ee5d5d72b39dbbaca",
+    "origin_main_at_capture": "c3310f316c2b4defda07867ee5d5d72b39dbbaca",
+    "stage3_implementation_commit": "38a0d49178da815d912dfebf7a2c27c9160ab822",
+    "shared_worktree_status_at_capture": [
+      "M CMakeLists.txt",
+      " M Makefile",
+      " M docs/development/examples-workflows.md",
+      " M docs/development/sessions/20261025_tension_revisited.md",
+      " M docs/generative_patterns.md",
+      " M docs/generative_patterns/index.md",
+      " M examples.data/review/source-inventory.json",
+      " M index.md",
+      " M scripts/render-examples.py",
+      " M scripts/review_catalog.py",
+      " M src/izzi-review-catalog.h",
+      " M src/izzi-review-descriptor.h",
+      " M tests/CMakeLists.txt",
+      " M tests/review-catalog.py",
+      "?? docs/development/sessions/20261025_tension_revisited/crop-bounds.json",
+      "?? docs/development/sessions/20261025_tension_revisited/existing-output-verification.json",
+      "?? docs/generative_patterns/edge_tension.md",
+      "?? examples/edge-tension-plates.cc",
+      "?? src/izzi-review-edge-tension.h",
+      "?? src/izzi-svg-edge-tension.h",
+      "?? tests/edge-tension-periodic.py",
+      "?? tests/edge-tension.cc",
+      "?? tests/odr/edge-tension-left.cc",
+      "?? tests/odr/edge-tension-right.cc"
+    ],
+    "other_work": "Existing changes belong to other ongoing work; do not reset, stash, stage, or commit them as part of stage 3."
+  },
+  "documents": {
+    "resume": "docs/development/sessions/20261025.fal.ai_stage_3_resume.md",
+    "plan": "docs/development/sessions/20261025.fal.ai_stage_3_plan.md",
+    "production_details": "docs/development/sessions/20261025.fal.ai_stage_3_production_details.md"
+  },
+  "transcript": {
+    "path": "outputs/transcription-enrichment/here-lies-trouble/here-lies-trouble.20261024.third-draft.txt",
+    "sha256": "576ddf1f071aa1b43f1dc3ef17a3078915ce9754aae81046d7301f0fee17a02f",
+    "parent_path": "outputs/transcription-enrichment/here-lies-trouble/here-lies-trouble.20261024.second-draft.txt",
+    "parent_sha256": "dc631ae8098cc1ce123bdfb30f995c8b7c3d774a84f83838c8cd79a0adbfce3b",
+    "bytes": 45015,
+    "logical_lines": 595,
+    "speaker_turns": 191,
+    "speaker_counts": {
+      "1": 50,
+      "2": 54,
+      "3": 43,
+      "4": 44
+    },
+    "dialogue_words": 7950,
+    "ledger": "outputs/transcription-enrichment/here-lies-trouble/here-lies-trouble.20261024.third-draft.ledger.json",
+    "grammar_edit_record": "outputs/transcription-enrichment/here-lies-trouble/revisions/here-lies-trouble.20261025.grammar-pass.json",
+    "local_grammar_corrections": 191,
+    "edited_lines": 90,
+    "uncertain_source_spans_retained": 26,
+    "opening_four_turns_unchanged": true
+  },
+  "accepted_baseline": {
+    "id": "hlt-stage3-runyon-20261025-v1",
+    "run_directory": "outputs/here-lies-trouble/stage-3-20261025",
+    "original_transcript_snapshot": "outputs/here-lies-trouble/stage-3-20261025/inputs/canonical-transcript.txt",
+    "original_transcript_sha256": "504e3b1460daf44f4d18a8ecb3e15ef5f430c7b781358b9cc493199d4651dfb2",
+    "comparison": "outputs/here-lies-trouble/stage-3-20261025/review/comparison-30s.mp4",
+    "comparison_sha256": "2d5f6350c78c6a644c4ac5ed1b84c534b5b4fef172d7faa7a3fe88b39fc44f2f",
+    "visuals_accepted": [
+      "fal",
+      "seedance"
+    ],
+    "voice_option": "coherent-us-precise",
+    "voice_performance_review": "not_separately_approved",
+    "geometry": [
+      1080,
+      1920
+    ],
+    "fps": 24,
+    "seconds_per_provider": 30,
+    "jobs": [
+      {
+        "provider": "fal",
+        "segment": 1,
+        "id": "01a17553-1643-7732-badd-be7e485b17e8",
+        "status": "completed",
+        "credits_used": null,
+        "record_directory": "outputs/here-lies-trouble/stage-3-20261025/providers/fal/segment-01"
+      },
+      {
+        "provider": "fal",
+        "segment": 2,
+        "id": "01a17559-d24f-72e3-b4e0-67525bcbc137",
+        "status": "completed",
+        "credits_used": null,
+        "record_directory": "outputs/here-lies-trouble/stage-3-20261025/providers/fal/segment-02"
+      },
+      {
+        "provider": "seedance",
+        "segment": 1,
+        "id": "sd2_bMazyw8PnxYG",
+        "status": "completed",
+        "credits_used": 900,
+        "record_directory": "outputs/here-lies-trouble/stage-3-20261025/providers/seedance/segment-01"
+      },
+      {
+        "provider": "seedance",
+        "segment": 2,
+        "id": "sd2_ZOkxBDXJRzq9",
+        "status": "completed",
+        "credits_used": 900,
+        "record_directory": "outputs/here-lies-trouble/stage-3-20261025/providers/seedance/segment-02"
+      }
+    ]
+  },
+  "runner": {
+    "path": "scripts/hlt-stage3-canary.py",
+    "sha256": "de6fdf1b5c3b000cfc60cca7ac416f239f843f2fa803e3e2d03e3edddb751045",
+    "resume_check": "python3 scripts/hlt-stage3-canary.py validate",
+    "active_processes_at_capture": []
+  },
+  "verification": {
+    "source_hashes": "PASS",
+    "third_draft_ledger_roundtrip": "PASS",
+    "grammar_edit_record_replay": "PASS",
+    "speaker_order_and_four_labels": "PASS",
+    "accepted_media_hashes": "PASS",
+    "provider_original_hashes": "PASS",
+    "saved_full_canary_validation": "PASS",
+    "validation_record": "outputs/here-lies-trouble/stage-3-20261025/validation.json"
+  },
+  "rendering_cost_research": {
+    "as_of": "2026-10-25",
+    "reference": "docs/development/sessions/20261025.fal.ai_stage_3_production_details.md#cost-saving-review--2026-10-25",
+    "off_peak": "No published off-peak discount found for fal.ai/Seedance2ai; Seedance 2.0 excluded from BytePlus Flex.",
+    "fal_native_1080p_usd_per_second": 0.682,
+    "seedance2ai_observed_credits_per_second": 60,
+    "byteplus_direct_native_1080p_estimated_usd_per_second": 0.37422,
+    "byteplus_project_canary": "not_run",
+    "full_episode_audio_duration": "not_measured",
+    "full_episode_budget": "not_approved"
+  },
+  "resume_order": [
+    "Review the 26 uncertain transcription spans against source audio; make only explicitly recorded corrections.",
+    "Finalize four-voice casting and pronunciation, synthesize the complete dialogue locally, and verify every source span.",
+    "Measure full audio duration and obtain a current production quote; select a provider.",
+    "Consider a separately scoped BytePlus 1080p comparison if pursuing the direct-API savings.",
+    "Render the complete episode in bounded continuity groups after production scope and funding are established.",
+    "Archive source revisions, accepted media, provider evidence, model/voice assets, runner, and checksum inventory to durable storage."
+  ],
+  "artifact_storage": {
+    "git_ignored_roots": [
+      "outputs/here-lies-trouble/stage-3-20261025",
+      "outputs/transcription-enrichment/here-lies-trouble",
+      "build/"
+    ],
+    "external_archive_confirmed": false,
+    "inventory_scope": "Local stage-3 run and transcription-enrichment directory, regular files only. Model assets under build/ and original style resources are referenced by production details and are not covered by this inventory.",
+    "file_count": 214,
+    "total_bytes": 506238629
+  },
+  "artifact_inventory": [
+    {
+      "path": "outputs/here-lies-trouble/stage-3-20261025/audio/cache/version.txt",
+      "bytes": 1,
+      "sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+    },
+    {
+      "path": "outputs/here-lies-trouble/stage-3-20261025/audio/coherent-us/asr-vad.json",
+      "bytes": 799,
+      "sha256": "2aa1f5c169f40967694a86410164b9be893173e88c24a42942c229db48004467"
+    },
+    {
+      "path": "outputs/here-lies-trouble/stage-3-20261025/audio/coherent-us/asr.json",
+      "bytes": 10567,
+      "sha256": "f16d17ae9bb5e42b7eeee3683b395dad3112868d76d65f0957094c70ae733c9f"
+    },
+    {
+      "path": "outputs/here-lies-trouble/stage-3-20261025/audio/coherent-us/dialogue-30s.raw.wav",
+      "bytes": 2160044,
+      "sha256": "428e0ea7f1ae9f4faa588b5161628a319f33b3ec51ea2c9b0d7c4ec844a85cc3"
+    },
+    {
+      "path": "outputs/here-lies-trouble/stage-3-20261025/audio/coherent-us/dialogue-30s.wav",
+      "bytes": 8640102,
+      "sha256": "b0045b6081afc54714d2ba0d4026330128c8be1464d20742c184cbb800e82d63"
+    },
+    {
+      "path": "outputs/here-lies-trouble/stage-3-20261025/audio/coherent-us/loudness-delivery.json",
+      "bytes": 263,
+      "sha256": "7a07a82225e6dca3fe6f6a15bfa857bbacf8c8753acc2adf7c52da521288252c"
+    },
+    {
+      "path": "outputs/here-lies-trouble/stage-3-20261025/audio/coherent-us/loudness-input.json",
+      "bytes": 263,
+      "sha256": "6b7a6c8a7aad822befd547d611b97877aff2caf1d6bfaa2d9562f6b637c20f79"
+    },
+    {
+      "path": "outputs/here-lies-trouble/stage-3-20261025/audio/coherent-us/manifest.json",
+      "bytes": 2192,
+      "sha256": "0f9b35eb5dda661c15a8fd85e7a62b9986edb066ee5c51e2befeefff95880e33"
+    },
+    {
+      "path": "outputs/here-lies-trouble/stage-3-20261025/audio/coherent-us/turn-01.wav",
+      "bytes": 459044,
+      "sha256": "1c176026eb12030cfba53fadf5d73a331007f60763076173129eaac337aa2bde"
+    },
+    {
+      "path": "outputs/here-lies-trouble/stage-3-20261025/audio/coherent-us/turn-02.wav",
+      "bytes": 329444,
+      "sha256": "8dcf9d19c44b90931f7708b0da9d03373550ab5472f7417c784b4b8dca5f4ec2"
+    },
+    {
+      "path": "outputs/here-lies-trouble/stage-3-20261025/audio/coherent-us/turn-03.wav",
+      "bytes": 684044,
+      "sha256": "5bcc9883434e389d6262e6b3dbffa4a3523dd7e795120dd00b74b6c395075840"
+    },
+    {
+      "path": "outputs/here-lies-trouble/stage-3-20261025/audio/coherent-us/turn-04.wav",
+      "bytes": 439244,
+      "sha256": "02a56509e76213423a2cca9dea38c8aa001a40ef315b5f7aa172dcb4e07898b5"
+    },
+    {
+      "path": "outputs/here-lies-trouble/stage-3-20261025/audio/coherent-us-precise/asr-vad.json",
+      "bytes": 804,
+      "sha256": "09f4f1eb55e26cd6b548d936b71e0f78f273c0ba079d3415725096974012b721"
+    },
+    {
+      "path": "outputs/here-lies-trouble/stage-3-20261025/audio/coherent-us-precise/asr.json",
+      "bytes": 11605,
+      "sha256": "34f5ff35fe5cabad270de44d347fffdbe6ad493ca39e4cfb4730465b481d3d13"
+    },
+    {
+      "path": "outputs/here-lies-trouble/stage-3-20261025/audio/coherent-us-precise/dialogue-30s.raw.wav",
+      "bytes": 2160044,
+      "sha256": "8798cea97a7f2774ee54ee58092a229e7799eb8c9e5cc8d89b3b7c9bf2e31fac"
+    },
+    {
+      "path": "outputs/here-lies-trouble/stage-3-20261025/audio/coherent-us-precise/dialogue-30s.wav",
+      "bytes": 8640102,
+      "sha256": "2333a79ac08175565a2a0e8309cf7ce1b2e313488bfe59cf920637c5cd5a1b89"
+    },
+    {
+      "path": "outputs/here-lies-trouble/stage-3-20261025/audio/coherent-us-precise/loudness-delivery.json",
+      "bytes": 263,
+      "sha256": "79d4ac703d66bbe5c3c9d3e2004043313e2d707bc1a187c922e0d0da5f5e6b2d"
+    },
+    {
+      "path": "outputs/here-lies-trouble/stage-3-20261025/audio/coherent-us-precise/loudness-input.json",
+      "bytes": 263,
+      "sha256": "58cef255278304cdcfa14f36f670d9ee06d0348c2575993dba2146a75a09a477"
+    },
+    {
+      "path": "outputs/here-lies-trouble/stage-3-20261025/audio/coherent-us-precise/manifest.json",
+      "bytes": 2440,
+      "sha256": "6ac416d3c29d844a2b515413c913bf7e10d5c2d4e51e174ec9931721b455f86a"
+    },
+    {
+      "path": "outputs/here-lies-trouble/stage-3-20261025/audio/coherent-us-precise/turn-01.wav",
+      "bytes": 451844,
+      "sha256": "c446cd9611907b4f771878ce0961708cfff73cbced9459e7bf2570be0d006f38"
+    },
+    {
+      "path": "outputs/here-lies-trouble/stage-3-20261025/audio/coherent-us-precise/turn-02.wav",
+      "bytes": 331244,
+      "sha256": "6dc7f335c092ac8b072f14027b5c4bdeb6bd741d0f95ca71e185701e27319d8c"
+    },
+    {
+      "path": "outputs/here-lies-trouble/stage-3-20261025/audio/coherent-us-precise/turn-03.wav",
+      "bytes": 684044,
+      "sha256": "056d40104f84d830ff3c284e42bafbd376ff3e805141cd000080e06c18c6a506"
+    },
+    {
+      "path": "outputs/here-lies-trouble/stage-3-20261025/audio/coherent-us-precise/turn-04.wav",
+      "bytes": 439244,
+      "sha256": "486e75358a7488f77dc0afc6ab8c44d515ef161198053af6b6855e403106f94c"
+    },
+    {
+      "path": "outputs/here-lies-trouble/stage-3-20261025/audio/legacy-bank/asr-vad.json",
+      "bytes": 732,
+      "sha256": "30aa82789e5548cdc4204a70c813600cd72dfe19a0fee0b4d03f1e61b23a3e44"
+    },
+    {
+      "path": "outputs/here-lies-trouble/stage-3-20261025/audio/legacy-bank/asr.json",
+      "bytes": 10545,
+      "sha256": "1823c95195c2485e1821bf076151853e8c14f1525de3997d7e254f3af550beec"
+    },
+    {
+      "path": "outputs/here-lies-trouble/stage-3-20261025/audio/legacy-bank/dialogue-30s.raw.wav",
+      "bytes": 2160044,
+      "sha256": "7621de66f50b82588e28fa5572ab2b79b295f31a07eec76badd65a4ec538a753"
+    },
+    {
+      "path": "outputs/here-lies-trouble/stage-3-20261025/audio/legacy-bank/dialogue-30s.wav",
+      "bytes": 8640102,
+      "sha256": "32284d326b4b672a86bbd0bec87122d2f648ed6f48ef58042c32953f59915c7b"
+    },
+    {
+      "path": "outputs/here-lies-trouble/stage-3-20261025/audio/legacy-bank/loudness-delivery.json",
+      "bytes": 264,
+      "sha256": "62cf9fa3b7c4e8d222583d12bd6dbb8e8b086f3a66c9bafbb11318d27d451822"
+    },
+    {
+      "path": "outputs/here-lies-trouble/stage-3-20261025/audio/legacy-bank/loudness-input.json",
+      "bytes": 263,
+      "sha256": "43d0cc3109f37e5e095579a572aab81d6587add6d889fe7d19ecdef9928282c0"
+    },
+    {
+      "path": "outputs/here-lies-trouble/stage-3-20261025/audio/legacy-bank/manifest.json",
+      "bytes": 2192,
+      "sha256": "4ce53002e3b6489f38c7d0bc0e6b4b6198f3cfbda3130cf91abad6b726406edc"
+    },
+    {
+      "path": "outputs/here-lies-trouble/stage-3-20261025/audio/legacy-bank/turn-01.wav",
+      "bytes": 392444,
+      "sha256": "e934e673f74d3f7cb36be5d517226934d37b6a0f2ddc6aa665260b528ccc55e4"
+    },
+    {
+      "path": "outputs/here-lies-trouble/stage-3-20261025/audio/legacy-bank/turn-02.wav",
+      "bytes": 329444,
+      "sha256": "5939db7b86042c496d04e15947ff6b6aeb96b0b81d2c4eecce6a442441c97222"
+    },
+    {
+      "path": "outputs/here-lies-trouble/stage-3-20261025/audio/legacy-bank/turn-03.wav",
+      "bytes": 419444,
+      "sha256": "2b31f1c1d9c8dad8b3fd39257181b17d1e1fbc574f9097b060c498aeefcf1608"
+    },
+    {
+      "path": "outputs/here-lies-trouble/stage-3-20261025/audio/legacy-bank/turn-04.wav",
+      "bytes": 439244,
+      "sha256": "fac109467a3ca85cf27e7a0f0159f3bd125f6849f66d92f12f7b5d167fd451b5"
+    },
+    {
+      "path": "outputs/here-lies-trouble/stage-3-20261025/audio/word-fidelity.json",
+      "bytes": 1774,
+      "sha256": "fbd3a2c191430fa84d774aebc685bc8c777ff379b8434c96fd69babd2a509be9"
+    },
+    {
+      "path": "outputs/here-lies-trouble/stage-3-20261025/balance-after.json",
+      "bytes": 218,
+      "sha256": "e8ccf13ade457262302f1663f940149ad43ec4ea73298bfed5c177dd07da32ab"
+    },
+    {
+      "path": "outputs/here-lies-trouble/stage-3-20261025/canary-text.json",
+      "bytes": 906,
+      "sha256": "9aa28893faede9656b071ded048578e68bf8bc855573518973b2e4e2c6ac5ad1"
+    },
+    {
+      "path": "outputs/here-lies-trouble/stage-3-20261025/canary.ass",
+      "bytes": 1495,
+      "sha256": "c91d210a528942fcb35ba654629c75295714601add3388467d0a27215761719c"
+    },
+    {
+      "path": "outputs/here-lies-trouble/stage-3-20261025/canary.srt",
+      "bytes": 703,
+      "sha256": "a9f752749c34b1c93b9968aaf9671736e7d3021f7e13363fce2d97a30505f42d"
+    },
+    {
+      "path": "outputs/here-lies-trouble/stage-3-20261025/captions.json",
+      "bytes": 1002,
+      "sha256": "02d97a09a225b846919ee97de6b110ff2c30bd636aec4999edc904679f7345c5"
+    },
+    {
+      "path": "outputs/here-lies-trouble/stage-3-20261025/full-text-ledger.json",
+      "bytes": 122070,
+      "sha256": "5f78ba7186092006e0ab5a96f4690123cc3dd43740219ea78ecbd16002452716"
+    },
+    {
+      "path": "outputs/here-lies-trouble/stage-3-20261025/inputs/canonical-transcript.txt",
+      "bytes": 46184,
+      "sha256": "504e3b1460daf44f4d18a8ecb3e15ef5f430c7b781358b9cc493199d4651dfb2"
+    },
+    {
+      "path": "outputs/here-lies-trouble/stage-3-20261025/inputs/keyframe-prompts.json",
+      "bytes": 3045,
+      "sha256": "5d4f75616194f10b25e6f65d15e903efbf70dc28248e2593318ae9317f4d1481"
+    },
+    {
+      "path": "outputs/here-lies-trouble/stage-3-20261025/inputs/runyon-keyframe.png",
+      "bytes": 3105473,
+      "sha256": "69bac64a0ac720dac06ea964f102a6fe5ded0a71cbb461674c9dda5604bf0777"
+    },
+    {
+      "path": "outputs/here-lies-trouble/stage-3-20261025/inputs/upload.json",
+      "bytes": 216,
+      "sha256": "66f2edc20eea2d82032aaaa2625edc797b221c19e5a9270d9d1c271a31ff99b5"
+    },
+    {
+      "path": "outputs/here-lies-trouble/stage-3-20261025/motion-prompt.txt",
+      "bytes": 1405,
+      "sha256": "a831808df1c96d54168d3ded95dd2c4a55d24dbbb02c5b7628961699a16bb81c"
+    },
+    {
+      "path": "outputs/here-lies-trouble/stage-3-20261025/providers/fal/segment-01/ffprobe.json",
+      "bytes": 2183,
+      "sha256": "c9198a4c3465ee94ec92055a1125616b8e525870e61a8be6c1c2efcb041cf1c9"
+    },
+    {
+      "path": "outputs/here-lies-trouble/stage-3-20261025/providers/fal/segment-01/last-frame-upload.json",
+      "bytes": 171,
+      "sha256": "cb52af548fe6308e93ed1b6764285f62a982becf58d7f6665ef3a556a3ffdd02"
+    },
+    {
+      "path": "outputs/here-lies-trouble/stage-3-20261025/providers/fal/segment-01/last-frame.png",
+      "bytes": 2026977,
+      "sha256": "22b842c4f74b0ac93253cca08fe8bb61011f10872ddb3f5387000ba02baa9298"
+    },
+    {
+      "path": "outputs/here-lies-trouble/stage-3-20261025/providers/fal/segment-01/mid-frame.png",
+      "bytes": 1949658,
+      "sha256": "9bbe09c017d057a8f599757cb891ca0258ab1fa3e18faf3b3559799c71043a8c"
+    },
+    {
+      "path": "outputs/here-lies-trouble/stage-3-20261025/providers/fal/segment-01/motion-metrics.json",
+      "bytes": 210,
+      "sha256": "dddcf6194a018da44fe882e275830eedbd931809bc6f48115fdde1bb0d0f8e52"
+    },
+    {
+      "path": "outputs/here-lies-trouble/stage-3-20261025/providers/fal/segment-01/provider-original.mp4",
+      "bytes": 40260423,
+      "sha256": "a2901d29576dd5ee77431eaa2b9b8284aee23f7e6fcdf2a53ad4266679c8d5f0"
+    },
+    {
+      "path": "outputs/here-lies-trouble/stage-3-20261025/providers/fal/segment-01/request.json",
+      "bytes": 1642,
+      "sha256": "89d0432d6884b2574e70fcb97e9f9100f5546938657992a01a1fa599a26e4397"
+    },
+    {
+      "path": "outputs/here-lies-trouble/stage-3-20261025/providers/fal/segment-01/result.json",
+      "bytes": 217,
+      "sha256": "582fd81520cbc9133dfae15ae08db7fa7255a2f7c1988697f8c973edda2c3215"
+    },
+    {
+      "path": "outputs/here-lies-trouble/stage-3-20261025/providers/fal/segment-01/status.json",
+      "bytes": 506,
+      "sha256": "13acd0e8675e260723c34e0ecab07efb1123cb7162b02f455634cc58539c4d8f"
+    },
+    {
+      "path": "outputs/here-lies-trouble/stage-3-20261025/providers/fal/segment-01/submit-intent.json",
+      "bytes": 384,
+      "sha256": "e92082ab4b6ca16521c9cdadb3d3e0fdde85e66e17d67801114f3b152042eb79"
+    },
+    {
+      "path": "outputs/here-lies-trouble/stage-3-20261025/providers/fal/segment-01/submit.json",
+      "bytes": 539,
+      "sha256": "8161ae442474317b692de45875802a028ed77e0e485a6996838ea7ab82e6ce53"
+    },
+    {
+      "path": "outputs/here-lies-trouble/stage-3-20261025/providers/fal/segment-01/summary.json",
+      "bytes": 364,
+      "sha256": "5c57d25bb570f0dbd1a46e6fdb8d909d01e3705e49adce18247c1e00fa765cd0"
+    },
+    {
+      "path": "outputs/here-lies-trouble/stage-3-20261025/providers/fal/segment-02/ffprobe.json",
+      "bytes": 2109,
+      "sha256": "15fba2448506ae5e7baa1f2ee2d241cf9bf34d7ce63996b2503227b6b50e1aa5"
+    },
+    {
+      "path": "outputs/here-lies-trouble/stage-3-20261025/providers/fal/segment-02/last-frame.png",
+      "bytes": 2039101,
+      "sha256": "5eef5d1bede8d8b2868ceacf83a1f48d3461d4966274be17a42dd613c1c8ad4a"
+    },
+    {
+      "path": "outputs/here-lies-trouble/stage-3-20261025/providers/fal/segment-02/provider-original.mp4",
+      "bytes": 40663952,
+      "sha256": "81d295aa83ee484fb4bb1dc2bc3749a6c7ce2999c1c252bf9c93e03af57624ba"
+    },
+    {
+      "path": "outputs/here-lies-trouble/stage-3-20261025/providers/fal/segment-02/request.json",
+      "bytes": 1767,
+      "sha256": "8ecef52fbb192a4fbe4f6bbfcb68ec594d3a6e09cbae3dfa1feae2f2d8c4366a"
+    },
+    {
+      "path": "outputs/here-lies-trouble/stage-3-20261025/providers/fal/segment-02/result.json",
+      "bytes": 217,
+      "sha256": "49acff4b39bdb9dc6e61f6e06625df4f9962f1d1891c4c3ccc0cd616a608ce74"
+    },
+    {
+      "path": "outputs/here-lies-trouble/stage-3-20261025/providers/fal/segment-02/status.json",
+      "bytes": 507,
+      "sha256": "5eb4d9b7c63082dcb1d10a92d5bb9d9a22565456102b37a4856fa2b340cc4a3e"
+    },
+    {
+      "path": "outputs/here-lies-trouble/stage-3-20261025/providers/fal/segment-02/submit-intent.json",
+      "bytes": 384,
+      "sha256": "b85087c7ae3e3db59054ac984012be0dde11adcac9849951fccd838eac5ae3ed"
+    },
+    {
+      "path": "outputs/here-lies-trouble/stage-3-20261025/providers/fal/segment-02/submit.json",
+      "bytes": 539,
+      "sha256": "2a6858e142df54f81f82b74582c472e8d9cfa4133793f4da976b075ff784f112"
+    },
+    {
+      "path": "outputs/here-lies-trouble/stage-3-20261025/providers/fal/segment-02/summary.json",
+      "bytes": 364,
+      "sha256": "d34e8995bec7f86d93698965e747aa132fd0a6325a2e5e96b26d60f4e0350ecb"
+    },
+    {
+      "path": "outputs/here-lies-trouble/stage-3-20261025/providers/seedance/segment-01/ffprobe.json",
+      "bytes": 2148,
+      "sha256": "97a9b25713fa99e0c55b2411b028fc18586454e82d376bdc54e3ab630b8bbf66"
+    },
+    {
+      "path": "outputs/here-lies-trouble/stage-3-20261025/providers/seedance/segment-01/last-frame-comparison.json",
+      "bytes": 161,
+      "sha256": "01ea896384dee73ac583941634504e61432e6a1e9650a24aa1de75559f3d6bc1"
+    },
+    {
+      "path": "outputs/here-lies-trouble/stage-3-20261025/providers/seedance/segment-01/last-frame-upload.json",
+      "bytes": 440,
+      "sha256": "826d92beaa3399398e94f8cffffe8cbd917925bcbc71d9fcde1e143c32dcc8ce"
+    },
+    {
+      "path": "outputs/here-lies-trouble/stage-3-20261025/providers/seedance/segment-01/last-frame.png",
+      "bytes": 2178124,
+      "sha256": "39a6edccaf32446d805ead5252eee6bcaa550218ce0841721a32361b6e5a57d2"
+    },
+    {
+      "path": "outputs/here-lies-trouble/stage-3-20261025/providers/seedance/segment-01/motion-metrics.json",
+      "bytes": 217,
+      "sha256": "1ab356735a546820c9162df431dc5223888846e2fe95e8cc63ac9e807abf79ab"
+    },
+    {
+      "path": "outputs/here-lies-trouble/stage-3-20261025/providers/seedance/segment-01/provider-last-frame.png",
+      "bytes": 806292,
+      "sha256": "d77c477d6aa21ece369a9958c5a1642f82a9ac4864c3053708d9e2e360ffb96a"
+    },
+    {
+      "path": "outputs/here-lies-trouble/stage-3-20261025/providers/seedance/segment-01/provider-original.mp4",
+      "bytes": 25074864,
+      "sha256": "a678e6d1b18f0c77abb70ac36c6592260e3367cea519c406ea201899423a055a"
+    },
+    {
+      "path": "outputs/here-lies-trouble/stage-3-20261025/providers/seedance/segment-01/request.json",
+      "bytes": 1743,
+      "sha256": "e252ee1a0760e4d6450bc3c3c9681377b06ffc8d0deb4022833b34e80d3fff3d"
+    },
+    {
+      "path": "outputs/here-lies-trouble/stage-3-20261025/providers/seedance/segment-01/result.json",
+      "bytes": 755,
+      "sha256": "52f0810ef199fb66eb5c7bee11062c7737c77ee5ff0c9ff1cfab8202a6d208f5"
+    },
+    {
+      "path": "outputs/here-lies-trouble/stage-3-20261025/providers/seedance/segment-01/status.json",
+      "bytes": 755,
+      "sha256": "52f0810ef199fb66eb5c7bee11062c7737c77ee5ff0c9ff1cfab8202a6d208f5"
+    },
+    {
+      "path": "outputs/here-lies-trouble/stage-3-20261025/providers/seedance/segment-01/submit-intent.json",
+      "bytes": 387,
+      "sha256": "6052b3a8e7f01c79f4a34052824697f86f62c714e7c23fb7d30b921314563ecb"
+    },
+    {
+      "path": "outputs/here-lies-trouble/stage-3-20261025/providers/seedance/segment-01/submit.json",
+      "bytes": 154,
+      "sha256": "7d32be303d3be38aa86bed4f607d9cf36a2160fbd4201b9d6607c143f17ba762"
+    },
+    {
+      "path": "outputs/here-lies-trouble/stage-3-20261025/providers/seedance/segment-01/summary.json",
+      "bytes": 365,
+      "sha256": "d12601119875daca3c3880eea0470340317bcc9eb58dbbc29c97b82cb88955b4"
+    },
+    {
+      "path": "outputs/here-lies-trouble/stage-3-20261025/providers/seedance/segment-02/ffprobe.json",
+      "bytes": 2148,
+      "sha256": "7e02939b533e61ebd7edaf342b37270a422d5016c5248906e3bfc35f0096b8b1"
+    },
+    {
+      "path": "outputs/here-lies-trouble/stage-3-20261025/providers/seedance/segment-02/last-frame.png",
+      "bytes": 2121015,
+      "sha256": "34cc8710602ef0f2db92226ba5c05f07d75c45b62ab4e20e15ac8d49eb774fd2"
+    },
+    {
+      "path": "outputs/here-lies-trouble/stage-3-20261025/providers/seedance/segment-02/provider-original.mp4",
+      "bytes": 23948060,
+      "sha256": "05ccf18c13a832d9dcc6b0040d9d5658ceeb009e0af1b0f9d74e0f74c343f660"
+    },
+    {
+      "path": "outputs/here-lies-trouble/stage-3-20261025/providers/seedance/segment-02/request.json",
+      "bytes": 1919,
+      "sha256": "5d1116d40873c7af52f6a8045cef198df9c1b0382e6c66f88ad4145c69942d59"
+    },
+    {
+      "path": "outputs/here-lies-trouble/stage-3-20261025/providers/seedance/segment-02/result.json",
+      "bytes": 1766,
+      "sha256": "1c629b5a311ab9c7edd0fa07e9fab4a24a6002843cb47e5e05bc88b4f6eca413"
+    },
+    {
+      "path": "outputs/here-lies-trouble/stage-3-20261025/providers/seedance/segment-02/status.json",
+      "bytes": 1766,
+      "sha256": "1c629b5a311ab9c7edd0fa07e9fab4a24a6002843cb47e5e05bc88b4f6eca413"
+    },
+    {
+      "path": "outputs/here-lies-trouble/stage-3-20261025/providers/seedance/segment-02/submit-intent.json",
+      "bytes": 387,
+      "sha256": "9119b7e33bfdc4b80185dbdd785549de8ca9421d30df8f7f24ced4aac5323d7b"
+    },
+    {
+      "path": "outputs/here-lies-trouble/stage-3-20261025/providers/seedance/segment-02/submit.json",
+      "bytes": 154,
+      "sha256": "0c97f434b872ecfd7e28dc991fe021c6690733f55c2a12ee5454d674b1c1835f"
+    },
+    {
+      "path": "outputs/here-lies-trouble/stage-3-20261025/providers/seedance/segment-02/summary.json",
+      "bytes": 365,
+      "sha256": "fc4512c03645693ccfc245238b957fef15b09f3a32ea4b6c85473ea9aee805b0"
+    },
+    {
+      "path": "outputs/here-lies-trouble/stage-3-20261025/review/comparison-30s.mp4",
+      "bytes": 94745537,
+      "sha256": "2d5f6350c78c6a644c4ac5ed1b84c534b5b4fef172d7faa7a3fe88b39fc44f2f"
+    },
+    {
+      "path": "outputs/here-lies-trouble/stage-3-20261025/review/comparison-preview.png",
+      "bytes": 4772983,
+      "sha256": "00caca9b79f6fca7acb4f818a60fa9ad579a4061d719225c8f0c4e31d1820022"
+    },
+    {
+      "path": "outputs/here-lies-trouble/stage-3-20261025/review/comparison.json",
+      "bytes": 535,
+      "sha256": "5fea8fe3b222cf7a0683b768bfe63f7dcd7e3b491980ee80e61f290b98d3771a"
+    },
+    {
+      "path": "outputs/here-lies-trouble/stage-3-20261025/review/fal-30s-captioned.mp4",
+      "bytes": 57464126,
+      "sha256": "de986705989431f6e596477849c5b252e26a479865e602cd9b53f86ae7b8cd00"
+    },
+    {
+      "path": "outputs/here-lies-trouble/stage-3-20261025/review/fal-30s-silent.mp4",
+      "bytes": 60517343,
+      "sha256": "643fa96ede33e3deb63292f0406eff7e3e9aef44c9a82aa48f91ab5249ac1a0c"
+    },
+    {
+      "path": "outputs/here-lies-trouble/stage-3-20261025/review/fal-caption-check.png",
+      "bytes": 2269088,
+      "sha256": "45ef5f578b30de547a490585af5b61061086478242ddd183467b1427aadf35fb"
+    },
+    {
+      "path": "outputs/here-lies-trouble/stage-3-20261025/review/fal-delivery-ffprobe.json",
+      "bytes": 3583,
+      "sha256": "306cb6048c742f6bca924755e1decb97e180dc1ac3586b8ea5a58c4a38ab6d36"
+    },
+    {
+      "path": "outputs/here-lies-trouble/stage-3-20261025/review/fal-delivery.json",
+      "bytes": 558,
+      "sha256": "4ab0eb2d622a06b36148a1fdef1a9a568b0d531a5cc72435f56215e5085e8369"
+    },
+    {
+      "path": "outputs/here-lies-trouble/stage-3-20261025/review/fal-filmstrip.png",
+      "bytes": 1240252,
+      "sha256": "a6f0628e044df0d2e68d0b4f3080cdf46cbfc369448fcf6217438c97ba6a8160"
+    },
+    {
+      "path": "outputs/here-lies-trouble/stage-3-20261025/review/fal-join.png",
+      "bytes": 766365,
+      "sha256": "97f6195faf008884e840cae1465feb4ff09d243fbf1a01f50a8e9c9f64df6384"
+    },
+    {
+      "path": "outputs/here-lies-trouble/stage-3-20261025/review/human-review.json",
+      "bytes": 886,
+      "sha256": "7c76eed69d49656893cebddb9c14effb83d371f3558785e29b7af3cd3e5d27ac"
+    },
+    {
+      "path": "outputs/here-lies-trouble/stage-3-20261025/review/seedance-12.5s.png",
+      "bytes": 2153582,
+      "sha256": "0621aca52453ad1c0a7370dc0c0f8a56bd83137f301bfb0a3a4ccbb89afc9226"
+    },
+    {
+      "path": "outputs/here-lies-trouble/stage-3-20261025/review/seedance-30s-captioned.mp4",
+      "bytes": 43062028,
+      "sha256": "63e96d3bc4f4063c9c3a178ca5889df0cede4b6e90de7e3f53bc831d06966144"
+    },
+    {
+      "path": "outputs/here-lies-trouble/stage-3-20261025/review/seedance-30s-silent.mp4",
+      "bytes": 45290440,
+      "sha256": "ab14dda295780f3a0613f35c9ce593ec922b83c560a944aeff36fae358d46b78"
+    },
+    {
+      "path": "outputs/here-lies-trouble/stage-3-20261025/review/seedance-delivery-ffprobe.json",
+      "bytes": 3514,
+      "sha256": "1763749d550f1d8a7036ca865f83709efe2e08d944a8fc677a11ee101725635e"
+    },
+    {
+      "path": "outputs/here-lies-trouble/stage-3-20261025/review/seedance-delivery.json",
+      "bytes": 563,
+      "sha256": "97c418a7253cfbd5207fae776ed0b5b4993be279b799dad088f69bb93ddd2b8e"
+    },
+    {
+      "path": "outputs/here-lies-trouble/stage-3-20261025/review/seedance-filmstrip.png",
+      "bytes": 1275494,
+      "sha256": "dd3ced6093eecb919d5b51c9abdc8021b7d394811dc4dc16e39890ecee720f4c"
+    },
+    {
+      "path": "outputs/here-lies-trouble/stage-3-20261025/review/seedance-join.png",
+      "bytes": 763765,
+      "sha256": "13140e6e63ecd606cbf58249d8095039d6b498a3b6b85623afbc4ecd8d728877"
+    },
+    {
+      "path": "outputs/here-lies-trouble/stage-3-20261025/validation.json",
+      "bytes": 3109,
+      "sha256": "99ec6534befa6fd73e8d7ec25094ef729260ee804a4e583bee13d34dfba02029"
+    },
+    {
+      "path": "outputs/transcription-enrichment/here-lies-trouble/here-lies-trouble-canonical-source-transcript.20260818.final-draft.fdx",
+      "bytes": 89738,
+      "sha256": "d366c6a246d1a29a45ced0b6ab2b8d7d734b476d3bed03543a503d9bb7755f1b"
+    },
+    {
+      "path": "outputs/transcription-enrichment/here-lies-trouble/here-lies-trouble-canonical-source-transcript.20260818.final-draft.fountain",
+      "bytes": 49875,
+      "sha256": "12a8acb9ce65982a9c8e0431411a64f7c5a049b1bc14fef969e709d56b679506"
+    },
+    {
+      "path": "outputs/transcription-enrichment/here-lies-trouble/here-lies-trouble-canonical-source-transcript.20260818.final-draft.pages/here-lies-trouble-canonical-source-transcript.20260818.final-draft-001.png",
+      "bytes": 83267,
+      "sha256": "1a9120964df9fd1eed46a733c5bc8ac8d3455f24cbfc84422b07349d4332ef56"
+    },
+    {
+      "path": "outputs/transcription-enrichment/here-lies-trouble/here-lies-trouble-canonical-source-transcript.20260818.final-draft.pages/here-lies-trouble-canonical-source-transcript.20260818.final-draft-002.png",
+      "bytes": 97671,
+      "sha256": "53f1d16d6b2ea1dcb551fa2eaec3556728326d2e6fa71a3158040478813de6f7"
+    },
+    {
+      "path": "outputs/transcription-enrichment/here-lies-trouble/here-lies-trouble-canonical-source-transcript.20260818.final-draft.pages/here-lies-trouble-canonical-source-transcript.20260818.final-draft-003.png",
+      "bytes": 90150,
+      "sha256": "d7f81ad52635580fe21c7dc6ab647b13da15e10417eb03f843e025a1ad09f8c0"
+    },
+    {
+      "path": "outputs/transcription-enrichment/here-lies-trouble/here-lies-trouble-canonical-source-transcript.20260818.final-draft.pages/here-lies-trouble-canonical-source-transcript.20260818.final-draft-004.png",
+      "bytes": 87122,
+      "sha256": "ccaa6c60bc1b9566d4a001458ec8d1cc3e9ff01b762ba7caa080abf0ac365d1e"
+    },
+    {
+      "path": "outputs/transcription-enrichment/here-lies-trouble/here-lies-trouble-canonical-source-transcript.20260818.final-draft.pages/here-lies-trouble-canonical-source-transcript.20260818.final-draft-005.png",
+      "bytes": 110063,
+      "sha256": "871fbdd814da6543b26e3a9d7d6450e4b039fe08f19500bcd2f346c39debb087"
+    },
+    {
+      "path": "outputs/transcription-enrichment/here-lies-trouble/here-lies-trouble-canonical-source-transcript.20260818.final-draft.pages/here-lies-trouble-canonical-source-transcript.20260818.final-draft-006.png",
+      "bytes": 95702,
+      "sha256": "54aea54b2347cccb640a20a42d343817679ba6df22e9db77931676c40697fe3e"
+    },
+    {
+      "path": "outputs/transcription-enrichment/here-lies-trouble/here-lies-trouble-canonical-source-transcript.20260818.final-draft.pages/here-lies-trouble-canonical-source-transcript.20260818.final-draft-007.png",
+      "bytes": 103329,
+      "sha256": "5aaeb6e04101b2149a9b3279f29458431b2b44c568da531cad4f01521f8cce72"
+    },
+    {
+      "path": "outputs/transcription-enrichment/here-lies-trouble/here-lies-trouble-canonical-source-transcript.20260818.final-draft.pages/here-lies-trouble-canonical-source-transcript.20260818.final-draft-008.png",
+      "bytes": 93779,
+      "sha256": "b848d43a1f3d5f5f4e77d68e0819ab6b86421f9d937f4354ce77048089cb6951"
+    },
+    {
+      "path": "outputs/transcription-enrichment/here-lies-trouble/here-lies-trouble-canonical-source-transcript.20260818.final-draft.pages/here-lies-trouble-canonical-source-transcript.20260818.final-draft-009.png",
+      "bytes": 102776,
+      "sha256": "f6365b02f977de8715d04696bc55bc905dbc46e96b0a2788b07c2fdba5a8a862"
+    },
+    {
+      "path": "outputs/transcription-enrichment/here-lies-trouble/here-lies-trouble-canonical-source-transcript.20260818.final-draft.pages/here-lies-trouble-canonical-source-transcript.20260818.final-draft-010.png",
+      "bytes": 91295,
+      "sha256": "cd1121b488cec31b4405670bdddc85dac2834c52b1b418e0485575811c26273c"
+    },
+    {
+      "path": "outputs/transcription-enrichment/here-lies-trouble/here-lies-trouble-canonical-source-transcript.20260818.final-draft.pages/here-lies-trouble-canonical-source-transcript.20260818.final-draft-011.png",
+      "bytes": 113516,
+      "sha256": "72d67aefd157528892939c163ccbc264d6d6f5cee8f9a954af8a45991d06436a"
+    },
+    {
+      "path": "outputs/transcription-enrichment/here-lies-trouble/here-lies-trouble-canonical-source-transcript.20260818.final-draft.pages/here-lies-trouble-canonical-source-transcript.20260818.final-draft-012.png",
+      "bytes": 118916,
+      "sha256": "40b7aaeb6d5e47320750bd733d4c537302a59edfed422ff308d6976d53f8dc1b"
+    },
+    {
+      "path": "outputs/transcription-enrichment/here-lies-trouble/here-lies-trouble-canonical-source-transcript.20260818.final-draft.pages/here-lies-trouble-canonical-source-transcript.20260818.final-draft-013.png",
+      "bytes": 89564,
+      "sha256": "14ffe2d3a6d59d18a986a8055bb0994c9226c8e91f8bfca1441b52a4d3b06fd3"
+    },
+    {
+      "path": "outputs/transcription-enrichment/here-lies-trouble/here-lies-trouble-canonical-source-transcript.20260818.final-draft.pages/here-lies-trouble-canonical-source-transcript.20260818.final-draft-014.png",
+      "bytes": 91955,
+      "sha256": "18d9dc2177d0492dcc1a5d00d2677023dab3feee0db9a9df7b98160444f3dd88"
+    },
+    {
+      "path": "outputs/transcription-enrichment/here-lies-trouble/here-lies-trouble-canonical-source-transcript.20260818.final-draft.pages/here-lies-trouble-canonical-source-transcript.20260818.final-draft-015.png",
+      "bytes": 87720,
+      "sha256": "dcd2d53a01af9bf6420c1ce8084a905caa63a49b5cd1918f7ff9685589d9446d"
+    },
+    {
+      "path": "outputs/transcription-enrichment/here-lies-trouble/here-lies-trouble-canonical-source-transcript.20260818.final-draft.pages/here-lies-trouble-canonical-source-transcript.20260818.final-draft-016.png",
+      "bytes": 101685,
+      "sha256": "e1dc5c00aac22d5e818daef3b242133c0bed94912006e39235e50670052c5190"
+    },
+    {
+      "path": "outputs/transcription-enrichment/here-lies-trouble/here-lies-trouble-canonical-source-transcript.20260818.final-draft.pages/here-lies-trouble-canonical-source-transcript.20260818.final-draft-017.png",
+      "bytes": 83571,
+      "sha256": "556ef8eea80ebeaa72608d3a79f19392c9a5efc9fc8f86e011489135fc6b1088"
+    },
+    {
+      "path": "outputs/transcription-enrichment/here-lies-trouble/here-lies-trouble-canonical-source-transcript.20260818.final-draft.pages/here-lies-trouble-canonical-source-transcript.20260818.final-draft-018.png",
+      "bytes": 90548,
+      "sha256": "3b108fc549148a4d557eb3116de2fbc239441a2c5481db0c6cab29e6feb8cef6"
+    },
+    {
+      "path": "outputs/transcription-enrichment/here-lies-trouble/here-lies-trouble-canonical-source-transcript.20260818.final-draft.pages/here-lies-trouble-canonical-source-transcript.20260818.final-draft-019.png",
+      "bytes": 101391,
+      "sha256": "a427beab27ff57df57eefa7a3efc6671d5e2ecf2508a8b292fc9eb817c3eda65"
+    },
+    {
+      "path": "outputs/transcription-enrichment/here-lies-trouble/here-lies-trouble-canonical-source-transcript.20260818.final-draft.pages/here-lies-trouble-canonical-source-transcript.20260818.final-draft-020.png",
+      "bytes": 93503,
+      "sha256": "496f04f3459e225e47b1812137f0a6f6afda8b7fda690cf587895edf76175b38"
+    },
+    {
+      "path": "outputs/transcription-enrichment/here-lies-trouble/here-lies-trouble-canonical-source-transcript.20260818.final-draft.pages/here-lies-trouble-canonical-source-transcript.20260818.final-draft-021.png",
+      "bytes": 88980,
+      "sha256": "c0b1ffcc627e50b17bbb6f796cdf22395ee32128cb674543c14d46f474ebb043"
+    },
+    {
+      "path": "outputs/transcription-enrichment/here-lies-trouble/here-lies-trouble-canonical-source-transcript.20260818.final-draft.pages/here-lies-trouble-canonical-source-transcript.20260818.final-draft-022.png",
+      "bytes": 86662,
+      "sha256": "742b2c855ff3a2e77e4edd9bda19d836fa8b6736bcc90363af3c197a91adf0e0"
+    },
+    {
+      "path": "outputs/transcription-enrichment/here-lies-trouble/here-lies-trouble-canonical-source-transcript.20260818.final-draft.pages/here-lies-trouble-canonical-source-transcript.20260818.final-draft-023.png",
+      "bytes": 89858,
+      "sha256": "c676c196ea8bef5af801903f76073f7a8ea2bd0b9e1ebca78d8fe9a32c406721"
+    },
+    {
+      "path": "outputs/transcription-enrichment/here-lies-trouble/here-lies-trouble-canonical-source-transcript.20260818.final-draft.pages/here-lies-trouble-canonical-source-transcript.20260818.final-draft-024.png",
+      "bytes": 107600,
+      "sha256": "5b2d498e104d3a7e94ee29b4e0708f39f05a1acdfc1e31947365dc420523bffb"
+    },
+    {
+      "path": "outputs/transcription-enrichment/here-lies-trouble/here-lies-trouble-canonical-source-transcript.20260818.final-draft.pages/here-lies-trouble-canonical-source-transcript.20260818.final-draft-025.png",
+      "bytes": 112883,
+      "sha256": "87d87983aa701d3447bde5e1e91ae18b8b697457b5d1104e18005ea7386ea606"
+    },
+    {
+      "path": "outputs/transcription-enrichment/here-lies-trouble/here-lies-trouble-canonical-source-transcript.20260818.final-draft.pages/here-lies-trouble-canonical-source-transcript.20260818.final-draft-026.png",
+      "bytes": 92372,
+      "sha256": "51ca7492e4f757aed823744966e4184bf1066bb8fee2a0496d0399fb8cd3ca57"
+    },
+    {
+      "path": "outputs/transcription-enrichment/here-lies-trouble/here-lies-trouble-canonical-source-transcript.20260818.final-draft.pages/here-lies-trouble-canonical-source-transcript.20260818.final-draft-027.png",
+      "bytes": 120843,
+      "sha256": "ddee75e506a2a122d41a5838b7f58c5ee6346d57f208334047bb91e3265c1164"
+    },
+    {
+      "path": "outputs/transcription-enrichment/here-lies-trouble/here-lies-trouble-canonical-source-transcript.20260818.final-draft.pages/here-lies-trouble-canonical-source-transcript.20260818.final-draft-028.png",
+      "bytes": 79510,
+      "sha256": "8f046e36bc2d79b4c4ec573b6abdc494ab53da6aaf6cfd13f1b3093c02a7261d"
+    },
+    {
+      "path": "outputs/transcription-enrichment/here-lies-trouble/here-lies-trouble-canonical-source-transcript.20260818.final-draft.pages/here-lies-trouble-canonical-source-transcript.20260818.final-draft-029.png",
+      "bytes": 99625,
+      "sha256": "ae722f98be4e024d0d9aecc955d78c120b2ff9ce5c06ad5ba59d07469b6cca91"
+    },
+    {
+      "path": "outputs/transcription-enrichment/here-lies-trouble/here-lies-trouble-canonical-source-transcript.20260818.final-draft.pages/here-lies-trouble-canonical-source-transcript.20260818.final-draft-030.png",
+      "bytes": 95221,
+      "sha256": "4009430de6ea965501d598c738d882ce3b3089df593e8e5d986252b6c05fd2c0"
+    },
+    {
+      "path": "outputs/transcription-enrichment/here-lies-trouble/here-lies-trouble-canonical-source-transcript.20260818.final-draft.pages/here-lies-trouble-canonical-source-transcript.20260818.final-draft-031.png",
+      "bytes": 114686,
+      "sha256": "fefb6847c93adac8f461891bfb54649fe979e27206bf27fec94112463aeb4577"
+    },
+    {
+      "path": "outputs/transcription-enrichment/here-lies-trouble/here-lies-trouble-canonical-source-transcript.20260818.final-draft.pages/here-lies-trouble-canonical-source-transcript.20260818.final-draft-032.png",
+      "bytes": 85255,
+      "sha256": "cfa4c66c3ca26d65ee726815c29a1401bd8778051466686b0560a1da70bb8a5b"
+    },
+    {
+      "path": "outputs/transcription-enrichment/here-lies-trouble/here-lies-trouble-canonical-source-transcript.20260818.final-draft.pages/here-lies-trouble-canonical-source-transcript.20260818.final-draft-033.png",
+      "bytes": 78527,
+      "sha256": "a8eb7d2ff2122c72070e43d7100bbb2f82b397e864d1b557b0104188c0d36104"
+    },
+    {
+      "path": "outputs/transcription-enrichment/here-lies-trouble/here-lies-trouble-canonical-source-transcript.20260818.final-draft.pages/here-lies-trouble-canonical-source-transcript.20260818.final-draft-034.png",
+      "bytes": 99533,
+      "sha256": "5fd3116c2ed206ae9f6c220c4eabebcab4d1595601a7b362244175063652a9e1"
+    },
+    {
+      "path": "outputs/transcription-enrichment/here-lies-trouble/here-lies-trouble-canonical-source-transcript.20260818.final-draft.pages/here-lies-trouble-canonical-source-transcript.20260818.final-draft-035.png",
+      "bytes": 85693,
+      "sha256": "4e6ad55083f189251443f1bffd6ebceb57951103f4381859731bbb665af2e184"
+    },
+    {
+      "path": "outputs/transcription-enrichment/here-lies-trouble/here-lies-trouble-canonical-source-transcript.20260818.final-draft.pages/here-lies-trouble-canonical-source-transcript.20260818.final-draft-036.png",
+      "bytes": 93886,
+      "sha256": "9d1d71b86129d45f15c494d693d1cb1b77508020904261d7013fa541e7e27006"
+    },
+    {
+      "path": "outputs/transcription-enrichment/here-lies-trouble/here-lies-trouble-canonical-source-transcript.20260818.final-draft.pages/here-lies-trouble-canonical-source-transcript.20260818.final-draft-037.png",
+      "bytes": 95490,
+      "sha256": "041a1235756eefb99742197a43720de779ed3e7a41d9fc3b1137f459950a0a9b"
+    },
+    {
+      "path": "outputs/transcription-enrichment/here-lies-trouble/here-lies-trouble-canonical-source-transcript.20260818.final-draft.pages/here-lies-trouble-canonical-source-transcript.20260818.final-draft-038.png",
+      "bytes": 90412,
+      "sha256": "da86183fe7848ceab4a2c6c93acde95be2c116c7d07b53730b432951cf7077a1"
+    },
+    {
+      "path": "outputs/transcription-enrichment/here-lies-trouble/here-lies-trouble-canonical-source-transcript.20260818.final-draft.pages/here-lies-trouble-canonical-source-transcript.20260818.final-draft-039.png",
+      "bytes": 117982,
+      "sha256": "d82e40f801c29cd4b0f67ae809ccf25dd41bbcd2e0b23a9424f4fe9c6f5b900d"
+    },
+    {
+      "path": "outputs/transcription-enrichment/here-lies-trouble/here-lies-trouble-canonical-source-transcript.20260818.final-draft.pages/here-lies-trouble-canonical-source-transcript.20260818.final-draft-040.png",
+      "bytes": 113491,
+      "sha256": "68d67119406f54c5dc3cf027f4970f21bfb667337f77857b5578cf03f56f1efe"
+    },
+    {
+      "path": "outputs/transcription-enrichment/here-lies-trouble/here-lies-trouble-canonical-source-transcript.20260818.final-draft.pages/here-lies-trouble-canonical-source-transcript.20260818.final-draft-041.png",
+      "bytes": 89215,
+      "sha256": "12eebc7e4ab243eb54aacfb9a4ad726c29111d98a129561991237f8a812e803c"
+    },
+    {
+      "path": "outputs/transcription-enrichment/here-lies-trouble/here-lies-trouble-canonical-source-transcript.20260818.final-draft.pages/here-lies-trouble-canonical-source-transcript.20260818.final-draft-042.png",
+      "bytes": 87568,
+      "sha256": "f90dbbc58b5fea8d77332f51272dbff73b0b19de5daed16649cbf672721cd425"
+    },
+    {
+      "path": "outputs/transcription-enrichment/here-lies-trouble/here-lies-trouble-canonical-source-transcript.20260818.final-draft.pages/here-lies-trouble-canonical-source-transcript.20260818.final-draft-043.png",
+      "bytes": 115063,
+      "sha256": "6cc5c856e945ff8e7a530add834f1114d2eab4b7814923702311985de607163f"
+    },
+    {
+      "path": "outputs/transcription-enrichment/here-lies-trouble/here-lies-trouble-canonical-source-transcript.20260818.final-draft.pages/here-lies-trouble-canonical-source-transcript.20260818.final-draft-044.png",
+      "bytes": 71119,
+      "sha256": "b268aad939185c0e0ae66753997e23f21dfbda3b428c99b9dd32f9e7f2a4ce12"
+    },
+    {
+      "path": "outputs/transcription-enrichment/here-lies-trouble/here-lies-trouble-canonical-source-transcript.20260818.final-draft.pdf",
+      "bytes": 64765,
+      "sha256": "b58612d740fed3542e059c9b5b812340dd18a6f63b7a821abf239e1acb737021"
+    },
+    {
+      "path": "outputs/transcription-enrichment/here-lies-trouble/here-lies-trouble-canonical-source-transcript.20260818.final-draft.provenance.json",
+      "bytes": 98823,
+      "sha256": "a00a783c648711acb30a04030d16c4558efb06096b74d618395d474c25300ede"
+    },
+    {
+      "path": "outputs/transcription-enrichment/here-lies-trouble/here-lies-trouble.20260415.final-draft.fdx",
+      "bytes": 89738,
+      "sha256": "d366c6a246d1a29a45ced0b6ab2b8d7d734b476d3bed03543a503d9bb7755f1b"
+    },
+    {
+      "path": "outputs/transcription-enrichment/here-lies-trouble/here-lies-trouble.20260415.final-draft.fountain",
+      "bytes": 49875,
+      "sha256": "12a8acb9ce65982a9c8e0431411a64f7c5a049b1bc14fef969e709d56b679506"
+    },
+    {
+      "path": "outputs/transcription-enrichment/here-lies-trouble/here-lies-trouble.20260415.final-draft.pages/here-lies-trouble.20260415.final-draft-001.png",
+      "bytes": 83267,
+      "sha256": "1a9120964df9fd1eed46a733c5bc8ac8d3455f24cbfc84422b07349d4332ef56"
+    },
+    {
+      "path": "outputs/transcription-enrichment/here-lies-trouble/here-lies-trouble.20260415.final-draft.pages/here-lies-trouble.20260415.final-draft-002.png",
+      "bytes": 97671,
+      "sha256": "53f1d16d6b2ea1dcb551fa2eaec3556728326d2e6fa71a3158040478813de6f7"
+    },
+    {
+      "path": "outputs/transcription-enrichment/here-lies-trouble/here-lies-trouble.20260415.final-draft.pages/here-lies-trouble.20260415.final-draft-003.png",
+      "bytes": 90150,
+      "sha256": "d7f81ad52635580fe21c7dc6ab647b13da15e10417eb03f843e025a1ad09f8c0"
+    },
+    {
+      "path": "outputs/transcription-enrichment/here-lies-trouble/here-lies-trouble.20260415.final-draft.pages/here-lies-trouble.20260415.final-draft-004.png",
+      "bytes": 87122,
+      "sha256": "ccaa6c60bc1b9566d4a001458ec8d1cc3e9ff01b762ba7caa080abf0ac365d1e"
+    },
+    {
+      "path": "outputs/transcription-enrichment/here-lies-trouble/here-lies-trouble.20260415.final-draft.pages/here-lies-trouble.20260415.final-draft-005.png",
+      "bytes": 110063,
+      "sha256": "871fbdd814da6543b26e3a9d7d6450e4b039fe08f19500bcd2f346c39debb087"
+    },
+    {
+      "path": "outputs/transcription-enrichment/here-lies-trouble/here-lies-trouble.20260415.final-draft.pages/here-lies-trouble.20260415.final-draft-006.png",
+      "bytes": 95702,
+      "sha256": "54aea54b2347cccb640a20a42d343817679ba6df22e9db77931676c40697fe3e"
+    },
+    {
+      "path": "outputs/transcription-enrichment/here-lies-trouble/here-lies-trouble.20260415.final-draft.pages/here-lies-trouble.20260415.final-draft-007.png",
+      "bytes": 103329,
+      "sha256": "5aaeb6e04101b2149a9b3279f29458431b2b44c568da531cad4f01521f8cce72"
+    },
+    {
+      "path": "outputs/transcription-enrichment/here-lies-trouble/here-lies-trouble.20260415.final-draft.pages/here-lies-trouble.20260415.final-draft-008.png",
+      "bytes": 93779,
+      "sha256": "b848d43a1f3d5f5f4e77d68e0819ab6b86421f9d937f4354ce77048089cb6951"
+    },
+    {
+      "path": "outputs/transcription-enrichment/here-lies-trouble/here-lies-trouble.20260415.final-draft.pages/here-lies-trouble.20260415.final-draft-009.png",
+      "bytes": 102776,
+      "sha256": "f6365b02f977de8715d04696bc55bc905dbc46e96b0a2788b07c2fdba5a8a862"
+    },
+    {
+      "path": "outputs/transcription-enrichment/here-lies-trouble/here-lies-trouble.20260415.final-draft.pages/here-lies-trouble.20260415.final-draft-010.png",
+      "bytes": 91295,
+      "sha256": "cd1121b488cec31b4405670bdddc85dac2834c52b1b418e0485575811c26273c"
+    },
+    {
+      "path": "outputs/transcription-enrichment/here-lies-trouble/here-lies-trouble.20260415.final-draft.pages/here-lies-trouble.20260415.final-draft-011.png",
+      "bytes": 113516,
+      "sha256": "72d67aefd157528892939c163ccbc264d6d6f5cee8f9a954af8a45991d06436a"
+    },
+    {
+      "path": "outputs/transcription-enrichment/here-lies-trouble/here-lies-trouble.20260415.final-draft.pages/here-lies-trouble.20260415.final-draft-012.png",
+      "bytes": 118916,
+      "sha256": "40b7aaeb6d5e47320750bd733d4c537302a59edfed422ff308d6976d53f8dc1b"
+    },
+    {
+      "path": "outputs/transcription-enrichment/here-lies-trouble/here-lies-trouble.20260415.final-draft.pages/here-lies-trouble.20260415.final-draft-013.png",
+      "bytes": 89564,
+      "sha256": "14ffe2d3a6d59d18a986a8055bb0994c9226c8e91f8bfca1441b52a4d3b06fd3"
+    },
+    {
+      "path": "outputs/transcription-enrichment/here-lies-trouble/here-lies-trouble.20260415.final-draft.pages/here-lies-trouble.20260415.final-draft-014.png",
+      "bytes": 91955,
+      "sha256": "18d9dc2177d0492dcc1a5d00d2677023dab3feee0db9a9df7b98160444f3dd88"
+    },
+    {
+      "path": "outputs/transcription-enrichment/here-lies-trouble/here-lies-trouble.20260415.final-draft.pages/here-lies-trouble.20260415.final-draft-015.png",
+      "bytes": 87720,
+      "sha256": "dcd2d53a01af9bf6420c1ce8084a905caa63a49b5cd1918f7ff9685589d9446d"
+    },
+    {
+      "path": "outputs/transcription-enrichment/here-lies-trouble/here-lies-trouble.20260415.final-draft.pages/here-lies-trouble.20260415.final-draft-016.png",
+      "bytes": 101685,
+      "sha256": "e1dc5c00aac22d5e818daef3b242133c0bed94912006e39235e50670052c5190"
+    },
+    {
+      "path": "outputs/transcription-enrichment/here-lies-trouble/here-lies-trouble.20260415.final-draft.pages/here-lies-trouble.20260415.final-draft-017.png",
+      "bytes": 83571,
+      "sha256": "556ef8eea80ebeaa72608d3a79f19392c9a5efc9fc8f86e011489135fc6b1088"
+    },
+    {
+      "path": "outputs/transcription-enrichment/here-lies-trouble/here-lies-trouble.20260415.final-draft.pages/here-lies-trouble.20260415.final-draft-018.png",
+      "bytes": 90548,
+      "sha256": "3b108fc549148a4d557eb3116de2fbc239441a2c5481db0c6cab29e6feb8cef6"
+    },
+    {
+      "path": "outputs/transcription-enrichment/here-lies-trouble/here-lies-trouble.20260415.final-draft.pages/here-lies-trouble.20260415.final-draft-019.png",
+      "bytes": 101391,
+      "sha256": "a427beab27ff57df57eefa7a3efc6671d5e2ecf2508a8b292fc9eb817c3eda65"
+    },
+    {
+      "path": "outputs/transcription-enrichment/here-lies-trouble/here-lies-trouble.20260415.final-draft.pages/here-lies-trouble.20260415.final-draft-020.png",
+      "bytes": 93503,
+      "sha256": "496f04f3459e225e47b1812137f0a6f6afda8b7fda690cf587895edf76175b38"
+    },
+    {
+      "path": "outputs/transcription-enrichment/here-lies-trouble/here-lies-trouble.20260415.final-draft.pages/here-lies-trouble.20260415.final-draft-021.png",
+      "bytes": 88980,
+      "sha256": "c0b1ffcc627e50b17bbb6f796cdf22395ee32128cb674543c14d46f474ebb043"
+    },
+    {
+      "path": "outputs/transcription-enrichment/here-lies-trouble/here-lies-trouble.20260415.final-draft.pages/here-lies-trouble.20260415.final-draft-022.png",
+      "bytes": 86662,
+      "sha256": "742b2c855ff3a2e77e4edd9bda19d836fa8b6736bcc90363af3c197a91adf0e0"
+    },
+    {
+      "path": "outputs/transcription-enrichment/here-lies-trouble/here-lies-trouble.20260415.final-draft.pages/here-lies-trouble.20260415.final-draft-023.png",
+      "bytes": 89858,
+      "sha256": "c676c196ea8bef5af801903f76073f7a8ea2bd0b9e1ebca78d8fe9a32c406721"
+    },
+    {
+      "path": "outputs/transcription-enrichment/here-lies-trouble/here-lies-trouble.20260415.final-draft.pages/here-lies-trouble.20260415.final-draft-024.png",
+      "bytes": 107600,
+      "sha256": "5b2d498e104d3a7e94ee29b4e0708f39f05a1acdfc1e31947365dc420523bffb"
+    },
+    {
+      "path": "outputs/transcription-enrichment/here-lies-trouble/here-lies-trouble.20260415.final-draft.pages/here-lies-trouble.20260415.final-draft-025.png",
+      "bytes": 112883,
+      "sha256": "87d87983aa701d3447bde5e1e91ae18b8b697457b5d1104e18005ea7386ea606"
+    },
+    {
+      "path": "outputs/transcription-enrichment/here-lies-trouble/here-lies-trouble.20260415.final-draft.pages/here-lies-trouble.20260415.final-draft-026.png",
+      "bytes": 92372,
+      "sha256": "51ca7492e4f757aed823744966e4184bf1066bb8fee2a0496d0399fb8cd3ca57"
+    },
+    {
+      "path": "outputs/transcription-enrichment/here-lies-trouble/here-lies-trouble.20260415.final-draft.pages/here-lies-trouble.20260415.final-draft-027.png",
+      "bytes": 120843,
+      "sha256": "ddee75e506a2a122d41a5838b7f58c5ee6346d57f208334047bb91e3265c1164"
+    },
+    {
+      "path": "outputs/transcription-enrichment/here-lies-trouble/here-lies-trouble.20260415.final-draft.pages/here-lies-trouble.20260415.final-draft-028.png",
+      "bytes": 79510,
+      "sha256": "8f046e36bc2d79b4c4ec573b6abdc494ab53da6aaf6cfd13f1b3093c02a7261d"
+    },
+    {
+      "path": "outputs/transcription-enrichment/here-lies-trouble/here-lies-trouble.20260415.final-draft.pages/here-lies-trouble.20260415.final-draft-029.png",
+      "bytes": 99625,
+      "sha256": "ae722f98be4e024d0d9aecc955d78c120b2ff9ce5c06ad5ba59d07469b6cca91"
+    },
+    {
+      "path": "outputs/transcription-enrichment/here-lies-trouble/here-lies-trouble.20260415.final-draft.pages/here-lies-trouble.20260415.final-draft-030.png",
+      "bytes": 95221,
+      "sha256": "4009430de6ea965501d598c738d882ce3b3089df593e8e5d986252b6c05fd2c0"
+    },
+    {
+      "path": "outputs/transcription-enrichment/here-lies-trouble/here-lies-trouble.20260415.final-draft.pages/here-lies-trouble.20260415.final-draft-031.png",
+      "bytes": 114686,
+      "sha256": "fefb6847c93adac8f461891bfb54649fe979e27206bf27fec94112463aeb4577"
+    },
+    {
+      "path": "outputs/transcription-enrichment/here-lies-trouble/here-lies-trouble.20260415.final-draft.pages/here-lies-trouble.20260415.final-draft-032.png",
+      "bytes": 85255,
+      "sha256": "cfa4c66c3ca26d65ee726815c29a1401bd8778051466686b0560a1da70bb8a5b"
+    },
+    {
+      "path": "outputs/transcription-enrichment/here-lies-trouble/here-lies-trouble.20260415.final-draft.pages/here-lies-trouble.20260415.final-draft-033.png",
+      "bytes": 78527,
+      "sha256": "a8eb7d2ff2122c72070e43d7100bbb2f82b397e864d1b557b0104188c0d36104"
+    },
+    {
+      "path": "outputs/transcription-enrichment/here-lies-trouble/here-lies-trouble.20260415.final-draft.pages/here-lies-trouble.20260415.final-draft-034.png",
+      "bytes": 99533,
+      "sha256": "5fd3116c2ed206ae9f6c220c4eabebcab4d1595601a7b362244175063652a9e1"
+    },
+    {
+      "path": "outputs/transcription-enrichment/here-lies-trouble/here-lies-trouble.20260415.final-draft.pages/here-lies-trouble.20260415.final-draft-035.png",
+      "bytes": 85693,
+      "sha256": "4e6ad55083f189251443f1bffd6ebceb57951103f4381859731bbb665af2e184"
+    },
+    {
+      "path": "outputs/transcription-enrichment/here-lies-trouble/here-lies-trouble.20260415.final-draft.pages/here-lies-trouble.20260415.final-draft-036.png",
+      "bytes": 93886,
+      "sha256": "9d1d71b86129d45f15c494d693d1cb1b77508020904261d7013fa541e7e27006"
+    },
+    {
+      "path": "outputs/transcription-enrichment/here-lies-trouble/here-lies-trouble.20260415.final-draft.pages/here-lies-trouble.20260415.final-draft-037.png",
+      "bytes": 95490,
+      "sha256": "041a1235756eefb99742197a43720de779ed3e7a41d9fc3b1137f459950a0a9b"
+    },
+    {
+      "path": "outputs/transcription-enrichment/here-lies-trouble/here-lies-trouble.20260415.final-draft.pages/here-lies-trouble.20260415.final-draft-038.png",
+      "bytes": 90412,
+      "sha256": "da86183fe7848ceab4a2c6c93acde95be2c116c7d07b53730b432951cf7077a1"
+    },
+    {
+      "path": "outputs/transcription-enrichment/here-lies-trouble/here-lies-trouble.20260415.final-draft.pages/here-lies-trouble.20260415.final-draft-039.png",
+      "bytes": 117982,
+      "sha256": "d82e40f801c29cd4b0f67ae809ccf25dd41bbcd2e0b23a9424f4fe9c6f5b900d"
+    },
+    {
+      "path": "outputs/transcription-enrichment/here-lies-trouble/here-lies-trouble.20260415.final-draft.pages/here-lies-trouble.20260415.final-draft-040.png",
+      "bytes": 113491,
+      "sha256": "68d67119406f54c5dc3cf027f4970f21bfb667337f77857b5578cf03f56f1efe"
+    },
+    {
+      "path": "outputs/transcription-enrichment/here-lies-trouble/here-lies-trouble.20260415.final-draft.pages/here-lies-trouble.20260415.final-draft-041.png",
+      "bytes": 89215,
+      "sha256": "12eebc7e4ab243eb54aacfb9a4ad726c29111d98a129561991237f8a812e803c"
+    },
+    {
+      "path": "outputs/transcription-enrichment/here-lies-trouble/here-lies-trouble.20260415.final-draft.pages/here-lies-trouble.20260415.final-draft-042.png",
+      "bytes": 87568,
+      "sha256": "f90dbbc58b5fea8d77332f51272dbff73b0b19de5daed16649cbf672721cd425"
+    },
+    {
+      "path": "outputs/transcription-enrichment/here-lies-trouble/here-lies-trouble.20260415.final-draft.pages/here-lies-trouble.20260415.final-draft-043.png",
+      "bytes": 115063,
+      "sha256": "6cc5c856e945ff8e7a530add834f1114d2eab4b7814923702311985de607163f"
+    },
+    {
+      "path": "outputs/transcription-enrichment/here-lies-trouble/here-lies-trouble.20260415.final-draft.pages/here-lies-trouble.20260415.final-draft-044.png",
+      "bytes": 71119,
+      "sha256": "b268aad939185c0e0ae66753997e23f21dfbda3b428c99b9dd32f9e7f2a4ce12"
+    },
+    {
+      "path": "outputs/transcription-enrichment/here-lies-trouble/here-lies-trouble.20260415.final-draft.pdf",
+      "bytes": 64765,
+      "sha256": "5904bcde3b999f723414c581ebfc1de2edb5f6a9282315e7ad37156851aae33f"
+    },
+    {
+      "path": "outputs/transcription-enrichment/here-lies-trouble/here-lies-trouble.20260415.final-draft.provenance.json",
+      "bytes": 98781,
+      "sha256": "17b2c8add77edd1bd3a335a18f317dd632c5106107e65412a826d54acc2debdb"
+    },
+    {
+      "path": "outputs/transcription-enrichment/here-lies-trouble/here-lies-trouble.20261024.first-draft.stabilization-20261025.json",
+      "bytes": 2059,
+      "sha256": "1fdd739ac1d1b076b2ad6a559c9cdda2adb24f50d663faa9393a04e3547328ca"
+    },
+    {
+      "path": "outputs/transcription-enrichment/here-lies-trouble/here-lies-trouble.20261024.first-draft.txt",
+      "bytes": 45109,
+      "sha256": "dc631ae8098cc1ce123bdfb30f995c8b7c3d774a84f83838c8cd79a0adbfce3b"
+    },
+    {
+      "path": "outputs/transcription-enrichment/here-lies-trouble/here-lies-trouble.20261024.second-draft.ledger.json",
+      "bytes": 120010,
+      "sha256": "7859e56162700de587dd803e2184937c7243168d3e572364f63aff6eb00481b4"
+    },
+    {
+      "path": "outputs/transcription-enrichment/here-lies-trouble/here-lies-trouble.20261024.second-draft.txt",
+      "bytes": 45109,
+      "sha256": "dc631ae8098cc1ce123bdfb30f995c8b7c3d774a84f83838c8cd79a0adbfce3b"
+    },
+    {
+      "path": "outputs/transcription-enrichment/here-lies-trouble/here-lies-trouble.20261024.third-draft.ledger.json",
+      "bytes": 71706,
+      "sha256": "6b1d9bbe8e35f9e0dff32d982b9aad7df7fe5d70fb1abf05612f89be68daba87"
+    },
+    {
+      "path": "outputs/transcription-enrichment/here-lies-trouble/here-lies-trouble.20261024.third-draft.txt",
+      "bytes": 45015,
+      "sha256": "576ddf1f071aa1b43f1dc3ef17a3078915ce9754aae81046d7301f0fee17a02f"
+    },
+    {
+      "path": "outputs/transcription-enrichment/here-lies-trouble/revisions/here-lies-trouble.20261025.four-voices.before-like-cleanup.txt",
+      "bytes": 46140,
+      "sha256": "08f3e8be295c93e6f43736b26ce24cba5eaed83df78906a85e0a22a8e7aa91b3"
+    },
+    {
+      "path": "outputs/transcription-enrichment/here-lies-trouble/revisions/here-lies-trouble.20261025.grammar-pass.json",
+      "bytes": 107543,
+      "sha256": "2e2c75f84552555b64fa9377f6dae3d35fe072b09ed814e2828dd54394dd3d15"
+    },
+    {
+      "path": "outputs/transcription-enrichment/here-lies-trouble/revisions/here-lies-trouble.20261025.like-cleanup.candidate.txt",
+      "bytes": 45109,
+      "sha256": "dc631ae8098cc1ce123bdfb30f995c8b7c3d774a84f83838c8cd79a0adbfce3b"
+    },
+    {
+      "path": "outputs/transcription-enrichment/here-lies-trouble/revisions/here-lies-trouble.20261025.like-cleanup.json",
+      "bytes": 69412,
+      "sha256": "2d38a313f462bcae696f0cb7431728161b540048378be21de4a3c051f1f6ea9a"
+    }
+  ]
+}

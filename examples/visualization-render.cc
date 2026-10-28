@@ -1,6 +1,7 @@
 #include "izzi-svg.h"
 #include "izzi-json-basics.h"
 #include "izzi-svg-visualization.h"
+#include "izzi-svg-graphs-bar.h"
 
 #include <iostream>
 
@@ -39,6 +40,10 @@ main(int argc, char* argv[])
   get_string("title", doc.title);
   get_string("description", doc.description);
   get_string("source", doc.source);
+  get_string("x_label", doc.x_label);
+  get_string("y_label", doc.y_label);
+  get_string("y_ticu", doc.y_ticu);
+  get_string("secondary_label", doc.secondary_label);
   string stem = "visualization";
   get_string("stem", stem);
 
@@ -48,6 +53,10 @@ main(int argc, char* argv[])
     doc.kind = visualization_kind::grid;
   else if (kind == "table")
     doc.kind = visualization_kind::table;
+  else if (kind == "bar-graph")
+    doc.kind = visualization_kind::bar_graph;
+  else if (kind == "bar-histogram")
+    doc.kind = visualization_kind::bar_histogram;
   else if (kind == "chord-graph")
     doc.kind = visualization_kind::chord_graph;
   else if (kind == "kusama-graph")
@@ -61,12 +70,34 @@ main(int argc, char* argv[])
 		     json["viewport"][1].GetDouble() };
   if (json.HasMember("columns") && json["columns"].IsUint())
     doc.columns = json["columns"].GetUint();
+  if (json.HasMember("y_scale") && json["y_scale"].IsNumber())
+    doc.y_scale = json["y_scale"].GetDouble();
+  if (json.HasMember("markers") && json["markers"].IsBool())
+    doc.markers = json["markers"].GetBool();
 
   if (json.HasMember("points") && json["points"].IsArray())
     for (const auto& point : json["points"].GetArray())
       if (point.IsArray() && point.Size() == 2)
 	doc.points.push_back({ point[0].GetDouble(),
 			       point[1].GetDouble() });
+  if (json.HasMember("points_secondary") && json["points_secondary"].IsArray())
+    for (const auto& point : json["points_secondary"].GetArray())
+      if (point.IsArray() && point.Size() == 2)
+	doc.points_secondary.push_back({ point[0].GetDouble(),
+					 point[1].GetDouble() });
+  if (json.HasMember("bins") && json["bins"].IsArray())
+    for (const auto& bin : json["bins"].GetArray())
+      if (bin.IsArray() && bin.Size() == 3
+	  && bin[0].IsNumber() && bin[1].IsNumber()
+	  && bin[2].IsNumber())
+	doc.bins.push_back({ bin[0].GetDouble(), bin[1].GetDouble(),
+			     bin[2].GetDouble() });
+
+  if (json.HasMember("bars") && json["bars"].IsArray())
+    for (const auto& bar : json["bars"].GetArray())
+      if (bar.IsArray() && bar.Size() == 2
+	  && bar[0].IsString() && bar[1].IsNumber())
+	doc.bars.push_back({ bar[0].GetString(), bar[1].GetDouble() });
 
   if (json.HasMember("weekend_x_ranges") && json["weekend_x_ranges"].IsArray())
     for (const auto& span : json["weekend_x_ranges"].GetArray())
@@ -97,6 +128,10 @@ main(int argc, char* argv[])
     {
       svg_element rendered = doc.kind == visualization_kind::grid
 	? emit_grid(doc, stem)
+	: doc.kind == visualization_kind::bar_graph
+	? emit_bar_graph(doc, stem)
+	: doc.kind == visualization_kind::bar_histogram
+	? emit_bar_histogram(doc, stem)
 	: doc.kind == visualization_kind::kusama_graph
 	? emit_kusama_graph(doc, stem)
 	: doc.kind == visualization_kind::chord_graph

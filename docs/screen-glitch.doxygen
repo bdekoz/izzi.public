@@ -1,0 +1,11 @@
+# Run from docs/: doxygen screen-glitch.doxygen
+# A focused reference edition for the composition API and native controls.
+@INCLUDE = izzi.doxygen
+PROJECT_NAME = "Izzi Screen Glitch"
+INPUT = ../src/izzi-svg-screen-glitch.h ../src/izzi-svg-screen-glitch-json.h ../src/izzi-screen-receiver.h
+HTML_OUTPUT = html/screen-glitch
+USE_MDFILE_AS_MAINPAGE =
+WARN_LOGFILE = /tmp/izzi-screen-glitch-doxygen-warnings.log
+SOURCE_BROWSER = NO
+VERBATIM_HEADERS = NO
+SHOW_INCLUDE_FILES = NO

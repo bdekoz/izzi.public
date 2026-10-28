@@ -1,0 +1,59 @@
+<map id="izzi::edge_tension::resolve" name="izzi::edge_tension::resolve">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,375,127,411"/>
+<area shape="rect" id="Node000002" href="$namespaceizzi_1_1edge__tension.html#a207d63d913b5f3ea89b1d20872ae9678" title=" " alt="" coords="344,341,465,378"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="126,385,330,365,327,369,128,390"/>
+<area shape="rect" id="Node000003" href="$namespaceizzi_1_1edge__tension_1_1detail.html#a4e8a0aa64ea1db1c499c0b431633af3c" title=" " alt="" coords="527,207,648,243"/>
+<area shape="poly" id="edge15_Node000001_Node000003" title=" " alt="" coords="121,372,174,354,513,246,511,251,175,360,125,376"/>
+<area shape="rect" id="Node000004" href="$namespaceizzi_1_1edge__tension_1_1detail.html#a19c4793f492334d81effa82ce123c770" title=" " alt="" coords="344,403,465,439"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="126,395,330,413,327,417,128,401"/>
+<area shape="rect" id="Node000005" href="$namespaceizzi_1_1edge__tension_1_1detail.html#ac010dc910a53ec3cd296e74bdc147211" title=" " alt="" coords="175,519,296,555"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="81,409,123,456,176,504,183,510,178,511,173,508,119,459,82,414"/>
+<area shape="rect" id="Node000007" href="$namespaceizzi_1_1edge__tension_1_1detail.html#aa72f69bba6475d9464002894cd47d86b" title=" " alt="" coords="344,179,465,215"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="70,373,83,339,105,297,134,254,153,236,173,220,210,202,251,192,291,187,331,188,327,191,291,193,252,197,212,207,176,225,156,240,138,258,109,300,88,341,76,375"/>
+<area shape="rect" id="Node000008" href="$namespaceizzi_1_1edge__tension_1_1detail.html#a706130e6a08840ae08dabaea21fb6807" title=" " alt="" coords="175,580,296,617"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="75,409,114,484,142,527,177,566,181,570,176,571,173,570,138,530,109,486,75,414"/>
+<area shape="rect" id="Node000009" href="$namespaceizzi_1_1edge__tension_1_1detail.html#a8b707a9c22d6122220dc7498ebe9ccbb" title=" " alt="" coords="344,5,465,42"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="64,374,68,312,82,226,95,180,114,135,140,93,173,58,208,35,248,22,290,15,331,15,327,18,290,21,250,27,211,40,176,62,144,97,119,137,100,182,87,228,73,313,70,374"/>
+<area shape="rect" id="Node000010" href="$namespaceizzi_1_1edge__tension_1_1detail.html#a008863a3e46b3980c8cbd7382a208dff" title=" " alt="" coords="175,235,296,271"/>
+<area shape="poly" id="edge11_Node000001_Node000010" title=" " alt="" coords="83,373,123,332,173,288,191,278,188,282,176,292,127,336,87,375"/>
+<area shape="rect" id="Node000011" href="$namespaceizzi_1_1edge__tension_1_1detail.html#ade33dcd2f2d668a51c9fd5299aea9abd" title=" " alt="" coords="344,117,465,154"/>
+<area shape="poly" id="edge13_Node000001_Node000011" title=" " alt="" coords="69,374,80,334,101,283,131,230,150,206,173,186,209,164,249,149,290,139,330,135,326,139,291,145,251,154,212,169,176,190,154,210,135,233,105,285,85,336,74,375"/>
+<area shape="rect" id="Node000012" href="$namespaceizzi_1_1edge__tension.html#a53b32aea9fda00d0aedfb9b24f03f548" title=" " alt="" coords="175,457,296,494"/>
+<area shape="poly" id="edge16_Node000001_Node000012" title=" " alt="" coords="105,409,185,449,180,451,106,415"/>
+<area shape="rect" id="Node000019" href="$namespaceizzi_1_1edge__tension.html#a1f3a94b877daf43ed3c38c92588bbce4" title=" " alt="" coords="175,641,296,678"/>
+<area shape="poly" id="edge28_Node000001_Node000019" title=" " alt="" coords="71,409,86,454,106,511,136,572,155,601,177,627,180,632,175,632,173,631,151,604,131,575,101,513,81,456,71,415"/>
+<area shape="rect" id="Node000020" href="$namespaceizzi_1_1edge__tension.html#aefb8a02eb39f3d142b28835c4f67f35e" title=" " alt="" coords="175,703,296,739"/>
+<area shape="poly" id="edge29_Node000001_Node000020" title=" " alt="" coords="69,409,81,464,99,537,130,617,151,654,177,689,180,693,174,693,173,692,147,657,125,619,94,539,75,465,69,414"/>
+<area shape="rect" id="Node000021" href="$namespaceizzi_1_1edge__tension_1_1detail.html#a6236e35b5716916a36d87ded60ac2080" title=" " alt="" coords="175,72,296,109"/>
+<area shape="poly" id="edge30_Node000001_Node000021" title=" " alt="" coords="68,374,79,326,99,262,130,191,150,157,173,126,185,116,183,121,177,129,154,160,135,194,104,264,84,328,73,375"/>
+<area shape="rect" id="Node000022" href="$namespaceizzi_1_1edge__tension_1_1detail.html#a470ea0934468c33c88cfa4327eea4a57" title=" " alt="" coords="175,764,296,801"/>
+<area shape="poly" id="edge35_Node000001_Node000022" title=" " alt="" coords="68,409,76,474,92,563,106,612,124,661,147,708,177,750,179,754,174,753,173,753,143,710,119,663,100,613,87,564,71,475,68,414"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="436,339,464,320,555,252,551,255,467,324,439,343"/>
+<area shape="rect" id="Node000006" href="$namespaceizzi_1_1edge__tension.html#a955026135bbfdf332ef9952ea856579d" title=" " alt="" coords="527,805,648,842"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="283,553,298,566,316,598,322,629,321,659,317,688,314,717,315,744,325,770,346,796,383,820,425,832,469,836,509,837,514,837,469,841,424,837,380,824,342,800,320,773,310,745,309,716,312,688,316,659,317,629,311,600,294,569,283,558"/>
+<area shape="poly" id="edge7_Node000007_Node000003" title=" " alt="" coords="465,204,514,212,509,214,467,209"/>
+<area shape="poly" id="edge10_Node000009_Node000003" title=" " alt="" coords="440,40,467,59,498,92,527,127,570,193,565,193,523,130,494,95,464,63,441,45"/>
+<area shape="poly" id="edge12_Node000010_Node000003" title=" " alt="" coords="295,246,513,229,509,233,297,251"/>
+<area shape="poly" id="edge14_Node000011_Node000003" title=" " alt="" coords="444,152,537,198,532,200,445,157"/>
+<area shape="poly" id="edge23_Node000012_Node000003" title=" " alt="" coords="295,481,336,482,380,479,424,469,464,449,487,430,508,408,540,356,563,303,577,261,580,256,568,305,545,358,512,411,491,434,467,454,426,474,381,484,337,488,297,486"/>
+<area shape="poly" id="edge17_Node000012_Node000004" title=" " alt="" coords="293,454,333,443,329,446,296,459"/>
+<area shape="rect" id="Node000013" href="$namespaceizzi_1_1edge__tension.html#ad4253d065b40830fc2c10d5b3a77e6d4" title=" " alt="" coords="344,688,465,725"/>
+<area shape="poly" id="edge18_Node000012_Node000013" title=" " alt="" coords="283,492,298,505,312,526,320,547,324,587,327,626,333,646,346,667,355,679,350,678,342,671,328,648,321,627,318,587,315,548,308,529,294,508,283,497"/>
+<area shape="rect" id="Node000014" href="$namespaceizzi_1_1edge__tension.html#a6d8337a28f503b60b816ba8e2e9d628e" title=" " alt="" coords="513,638,662,662"/>
+<area shape="poly" id="edge22_Node000012_Node000014" title=" " alt="" coords="282,492,298,505,310,521,316,537,320,568,325,597,333,610,346,623,380,642,419,654,459,659,500,662,495,663,459,664,418,659,378,647,342,627,328,613,320,599,315,569,311,538,305,523,294,508,282,497"/>
+<area shape="rect" id="Node000015" href="$namespaceizzi_1_1edge__tension.html#a6e8da994afffd80f5745957445997595" title=" " alt="" coords="344,576,465,613"/>
+<area shape="poly" id="edge20_Node000012_Node000015" title=" " alt="" coords="278,492,298,504,313,519,322,534,331,547,346,562,352,568,347,568,342,566,327,551,318,536,309,523,294,508,278,497"/>
+<area shape="rect" id="Node000016" href="$namespaceizzi_1_1edge__tension.html#a08f495ff200644e28ad1d0866cdd0646" title=" " alt="" coords="344,515,465,551"/>
+<area shape="poly" id="edge24_Node000012_Node000016" title=" " alt="" coords="291,492,336,508,331,510,292,497"/>
+<area shape="rect" id="Node000017" href="$namespaceizzi_1_1edge__tension.html#a631aaa2bced84e22875d32f626c03c26" title=" " alt="" coords="344,749,465,786"/>
+<area shape="poly" id="edge25_Node000012_Node000017" title=" " alt="" coords="283,492,298,505,316,536,324,565,325,594,323,622,320,649,321,677,329,706,346,735,348,739,343,738,342,739,324,708,316,678,315,649,317,621,320,594,319,566,311,538,294,508,283,497"/>
+<area shape="poly" id="edge19_Node000013_Node000014" title=" " alt="" coords="465,685,534,666,529,668,467,690"/>
+<area shape="poly" id="edge21_Node000015_Node000014" title=" " alt="" coords="466,610,534,633,529,634,466,616"/>
+<area shape="poly" id="edge27_Node000017_Node000006" title=" " alt="" coords="466,784,515,801,509,800,466,789"/>
+<area shape="rect" id="Node000018" href="$namespaceizzi_1_1edge__tension.html#abb54ea00bd94b982ec59d30b969d4e13" title=" " alt="" coords="527,744,648,781"/>
+<area shape="poly" id="edge26_Node000017_Node000018" title=" " alt="" coords="466,763,514,764,509,765,466,769"/>
+<area shape="poly" id="edge34_Node000021_Node000003" title=" " alt="" coords="295,81,379,81,424,88,466,103,497,121,525,144,568,194,563,194,521,148,494,125,464,107,422,94,378,86,298,85"/>
+<area shape="poly" id="edge31_Node000021_Node000007" title=" " alt="" coords="261,107,345,164,354,170,349,172,343,169,262,112"/>
+<area shape="poly" id="edge32_Node000021_Node000009" title=" " alt="" coords="282,69,344,46,340,50,286,73"/>
+<area shape="poly" id="edge33_Node000021_Node000011" title=" " alt="" coords="295,104,331,114,326,117,297,109"/>
+</map>

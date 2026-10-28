@@ -1,0 +1,1905 @@
+{
+  "schema": "izzi.film-decay-study-atlas/1",
+  "rows": 6,
+  "columns": 6,
+  "comparison": "one baseline plus five one-control variants per row",
+  "source_sha256": "d9118867e6d8cf9b2d1b4de6d4e9800db919081946623f73cf44998f3da94398",
+  "native_binary_sha256": "2a73e7459a6502479df840cabed0d89f1f4bcf0f2764477ad9a3e62ff09f4e45",
+  "sources": {
+    "examples/film-decay-study.h": "bd44efa370a2d8dd2b9aa6848032ec696ea7822bca9fec949a453c0e792f298e",
+    "examples/film-decay-plates.cc": "0edc57e9a7a18dc1e320d05807b5c204e5ca424855396392d5017fbeeb096674",
+    "scripts/render-film-decay-studies.py": "b9edeb954f1ccb25c1a92b940fdeafad352c8657f97fec2092f8a8bf7b5d75fa",
+    "src/izzi-levels-contours-regions.h": "c797c4932700396bed07737eca611c2c247bc51bd9b4c38e84c37452266c481d"
+  },
+  "cairosvg_version": "2.9.0",
+  "cells": [
+    {
+      "schema": "izzi.film-decay-study/1",
+      "pattern": "blister-field",
+      "row": 1,
+      "column": 1,
+      "reference_cut": 1,
+      "seed": 20260929,
+      "output_frame": 23,
+      "output_fps": 30,
+      "source": "fixed-native-tonal-rosette-v2",
+      "reference_rate": [
+        24000,
+        1001
+      ],
+      "reference_tick": 18,
+      "hold_pattern": [
+        2
+      ],
+      "material_frame": 9,
+      "grid_columns": 384,
+      "active_picture": [
+        728,
+        540
+      ],
+      "controls": {
+        "scale": 0.32,
+        "rim": 0.105,
+        "pores": 0.75,
+        "lace": 0.58,
+        "stain": 0.55
+      },
+      "extensions": {
+        "polarity": {
+          "enabled": true,
+          "amount": 0.025
+        },
+        "displacement": {
+          "enabled": true,
+          "amount": 0.004
+        },
+        "stretch": {
+          "enabled": true,
+          "amount": 0.012
+        }
+      },
+      "artistic_boost": false,
+      "boundary_points": 241064,
+      "rings": 4965,
+      "svg_bytes": 4327768,
+      "retained_area": -1,
+      "svg_sha256": "f3712ef15e53982d4a90f8bfc93d2284db3c706a9aaa083bf2a7ab3b12c052f7"
+    },
+    {
+      "schema": "izzi.film-decay-study/1",
+      "pattern": "blister-field",
+      "row": 1,
+      "column": 2,
+      "reference_cut": 1,
+      "seed": 20260929,
+      "output_frame": 23,
+      "output_fps": 30,
+      "source": "fixed-native-tonal-rosette-v2",
+      "reference_rate": [
+        24000,
+        1001
+      ],
+      "reference_tick": 18,
+      "hold_pattern": [
+        2
+      ],
+      "material_frame": 9,
+      "grid_columns": 384,
+      "active_picture": [
+        728,
+        540
+      ],
+      "controls": {
+        "scale": 0.18,
+        "rim": 0.105,
+        "pores": 0.75,
+        "lace": 0.58,
+        "stain": 0.55
+      },
+      "extensions": {
+        "polarity": {
+          "enabled": true,
+          "amount": 0.025
+        },
+        "displacement": {
+          "enabled": true,
+          "amount": 0.004
+        },
+        "stretch": {
+          "enabled": true,
+          "amount": 0.012
+        }
+      },
+      "artistic_boost": false,
+      "boundary_points": 284028,
+      "rings": 5288,
+      "svg_bytes": 4926531,
+      "retained_area": -1,
+      "svg_sha256": "84bf3cb37b59a8e9d080f762823bb8edf42ea1712c86d13031586ad09a6deb1b"
+    },
+    {
+      "schema": "izzi.film-decay-study/1",
+      "pattern": "blister-field",
+      "row": 1,
+      "column": 3,
+      "reference_cut": 1,
+      "seed": 20260929,
+      "output_frame": 23,
+      "output_fps": 30,
+      "source": "fixed-native-tonal-rosette-v2",
+      "reference_rate": [
+        24000,
+        1001
+      ],
+      "reference_tick": 18,
+      "hold_pattern": [
+        2
+      ],
+      "material_frame": 9,
+      "grid_columns": 384,
+      "active_picture": [
+        728,
+        540
+      ],
+      "controls": {
+        "scale": 0.32,
+        "rim": 0.21,
+        "pores": 0.75,
+        "lace": 0.58,
+        "stain": 0.55
+      },
+      "extensions": {
+        "polarity": {
+          "enabled": true,
+          "amount": 0.025
+        },
+        "displacement": {
+          "enabled": true,
+          "amount": 0.004
+        },
+        "stretch": {
+          "enabled": true,
+          "amount": 0.012
+        }
+      },
+      "artistic_boost": false,
+      "boundary_points": 230092,
+      "rings": 4989,
+      "svg_bytes": 4174606,
+      "retained_area": -1,
+      "svg_sha256": "cda2955e68135aea07bd66e7f9da84095647363d01d219ec091b9531f24fca1e"
+    },
+    {
+      "schema": "izzi.film-decay-study/1",
+      "pattern": "blister-field",
+      "row": 1,
+      "column": 4,
+      "reference_cut": 1,
+      "seed": 20260929,
+      "output_frame": 23,
+      "output_fps": 30,
+      "source": "fixed-native-tonal-rosette-v2",
+      "reference_rate": [
+        24000,
+        1001
+      ],
+      "reference_tick": 18,
+      "hold_pattern": [
+        2
+      ],
+      "material_frame": 9,
+      "grid_columns": 384,
+      "active_picture": [
+        728,
+        540
+      ],
+      "controls": {
+        "scale": 0.32,
+        "rim": 0.105,
+        "pores": 1.65,
+        "lace": 0.58,
+        "stain": 0.55
+      },
+      "extensions": {
+        "polarity": {
+          "enabled": true,
+          "amount": 0.025
+        },
+        "displacement": {
+          "enabled": true,
+          "amount": 0.004
+        },
+        "stretch": {
+          "enabled": true,
+          "amount": 0.012
+        }
+      },
+      "artistic_boost": false,
+      "boundary_points": 241064,
+      "rings": 4965,
+      "svg_bytes": 5036279,
+      "retained_area": -1,
+      "svg_sha256": "9961486d0199f092c7f1ba8d6ac0ec0e3510b87800d7e31722bac9ffa08d4ca1"
+    },
+    {
+      "schema": "izzi.film-decay-study/1",
+      "pattern": "blister-field",
+      "row": 1,
+      "column": 5,
+      "reference_cut": 1,
+      "seed": 20260929,
+      "output_frame": 23,
+      "output_fps": 30,
+      "source": "fixed-native-tonal-rosette-v2",
+      "reference_rate": [
+        24000,
+        1001
+      ],
+      "reference_tick": 18,
+      "hold_pattern": [
+        2
+      ],
+      "material_frame": 9,
+      "grid_columns": 384,
+      "active_picture": [
+        728,
+        540
+      ],
+      "controls": {
+        "scale": 0.32,
+        "rim": 0.105,
+        "pores": 0.75,
+        "lace": 1.55,
+        "stain": 0.55
+      },
+      "extensions": {
+        "polarity": {
+          "enabled": true,
+          "amount": 0.025
+        },
+        "displacement": {
+          "enabled": true,
+          "amount": 0.004
+        },
+        "stretch": {
+          "enabled": true,
+          "amount": 0.012
+        }
+      },
+      "artistic_boost": false,
+      "boundary_points": 262614,
+      "rings": 2579,
+      "svg_bytes": 4618488,
+      "retained_area": -1,
+      "svg_sha256": "ca6f67d0a5dfbc5e8e6ac12cac62df0b7e498138c52455fcf5d6be79158725c4"
+    },
+    {
+      "schema": "izzi.film-decay-study/1",
+      "pattern": "blister-field",
+      "row": 1,
+      "column": 6,
+      "reference_cut": 1,
+      "seed": 20260929,
+      "output_frame": 23,
+      "output_fps": 30,
+      "source": "fixed-native-tonal-rosette-v2",
+      "reference_rate": [
+        24000,
+        1001
+      ],
+      "reference_tick": 18,
+      "hold_pattern": [
+        2
+      ],
+      "material_frame": 9,
+      "grid_columns": 384,
+      "active_picture": [
+        728,
+        540
+      ],
+      "controls": {
+        "scale": 0.32,
+        "rim": 0.105,
+        "pores": 0.75,
+        "lace": 0.58,
+        "stain": 0.95
+      },
+      "extensions": {
+        "polarity": {
+          "enabled": true,
+          "amount": 0.025
+        },
+        "displacement": {
+          "enabled": true,
+          "amount": 0.004
+        },
+        "stretch": {
+          "enabled": true,
+          "amount": 0.012
+        }
+      },
+      "artistic_boost": false,
+      "boundary_points": 241064,
+      "rings": 4965,
+      "svg_bytes": 4414036,
+      "retained_area": -1,
+      "svg_sha256": "a64ed313a31a92c5fde2bdf1749833a4f1896bb42715c42b5e79e474cfb0bdaa"
+    },
+    {
+      "schema": "izzi.film-decay-study/1",
+      "pattern": "density-tide",
+      "row": 2,
+      "column": 1,
+      "reference_cut": 2,
+      "seed": 20260929,
+      "output_frame": 23,
+      "output_fps": 30,
+      "source": "fixed-native-tonal-rosette-v2",
+      "reference_rate": [
+        24000,
+        1001
+      ],
+      "reference_tick": 18,
+      "hold_pattern": [
+        3
+      ],
+      "material_frame": 6,
+      "grid_columns": 384,
+      "active_picture": [
+        728,
+        540
+      ],
+      "controls": {
+        "scale": 0.52,
+        "veil": 0.62,
+        "density": 0.3,
+        "lace": 0.48,
+        "feather": 0.32
+      },
+      "extensions": {
+        "polarity": {
+          "enabled": true,
+          "amount": 0.025
+        },
+        "displacement": {
+          "enabled": true,
+          "amount": 0.004
+        },
+        "stretch": {
+          "enabled": true,
+          "amount": 0.012
+        }
+      },
+      "artistic_boost": false,
+      "boundary_points": 164504,
+      "rings": 2508,
+      "svg_bytes": 2950764,
+      "retained_area": -1,
+      "svg_sha256": "a9276c55cea4f1f8fc4478e8fe966b8fdeb50c1e6b2770d724ab2473ad85b01a"
+    },
+    {
+      "schema": "izzi.film-decay-study/1",
+      "pattern": "density-tide",
+      "row": 2,
+      "column": 2,
+      "reference_cut": 2,
+      "seed": 20260929,
+      "output_frame": 23,
+      "output_fps": 30,
+      "source": "fixed-native-tonal-rosette-v2",
+      "reference_rate": [
+        24000,
+        1001
+      ],
+      "reference_tick": 18,
+      "hold_pattern": [
+        3
+      ],
+      "material_frame": 6,
+      "grid_columns": 384,
+      "active_picture": [
+        728,
+        540
+      ],
+      "controls": {
+        "scale": 0.27,
+        "veil": 0.62,
+        "density": 0.3,
+        "lace": 0.48,
+        "feather": 0.32
+      },
+      "extensions": {
+        "polarity": {
+          "enabled": true,
+          "amount": 0.025
+        },
+        "displacement": {
+          "enabled": true,
+          "amount": 0.004
+        },
+        "stretch": {
+          "enabled": true,
+          "amount": 0.012
+        }
+      },
+      "artistic_boost": false,
+      "boundary_points": 200252,
+      "rings": 1999,
+      "svg_bytes": 3434136,
+      "retained_area": -1,
+      "svg_sha256": "17db1ee531f694891f68347de9f68420c47eec0d3915fdd9904c49abc98d77dd"
+    },
+    {
+      "schema": "izzi.film-decay-study/1",
+      "pattern": "density-tide",
+      "row": 2,
+      "column": 3,
+      "reference_cut": 2,
+      "seed": 20260929,
+      "output_frame": 23,
+      "output_fps": 30,
+      "source": "fixed-native-tonal-rosette-v2",
+      "reference_rate": [
+        24000,
+        1001
+      ],
+      "reference_tick": 18,
+      "hold_pattern": [
+        3
+      ],
+      "material_frame": 6,
+      "grid_columns": 384,
+      "active_picture": [
+        728,
+        540
+      ],
+      "controls": {
+        "scale": 0.52,
+        "veil": 0.9,
+        "density": 0.3,
+        "lace": 0.48,
+        "feather": 0.32
+      },
+      "extensions": {
+        "polarity": {
+          "enabled": true,
+          "amount": 0.025
+        },
+        "displacement": {
+          "enabled": true,
+          "amount": 0.004
+        },
+        "stretch": {
+          "enabled": true,
+          "amount": 0.012
+        }
+      },
+      "artistic_boost": false,
+      "boundary_points": 164504,
+      "rings": 2508,
+      "svg_bytes": 2950800,
+      "retained_area": -1,
+      "svg_sha256": "433e6866a2af17399f5d7b890a5e86c7ce93e13afc6b4a86c1d8e49c89e36847"
+    },
+    {
+      "schema": "izzi.film-decay-study/1",
+      "pattern": "density-tide",
+      "row": 2,
+      "column": 4,
+      "reference_cut": 2,
+      "seed": 20260929,
+      "output_frame": 23,
+      "output_fps": 30,
+      "source": "fixed-native-tonal-rosette-v2",
+      "reference_rate": [
+        24000,
+        1001
+      ],
+      "reference_tick": 18,
+      "hold_pattern": [
+        3
+      ],
+      "material_frame": 6,
+      "grid_columns": 384,
+      "active_picture": [
+        728,
+        540
+      ],
+      "controls": {
+        "scale": 0.52,
+        "veil": 0.62,
+        "density": 1.15,
+        "lace": 0.48,
+        "feather": 0.32
+      },
+      "extensions": {
+        "polarity": {
+          "enabled": true,
+          "amount": 0.025
+        },
+        "displacement": {
+          "enabled": true,
+          "amount": 0.004
+        },
+        "stretch": {
+          "enabled": true,
+          "amount": 0.012
+        }
+      },
+      "artistic_boost": false,
+      "boundary_points": 164504,
+      "rings": 2508,
+      "svg_bytes": 2950713,
+      "retained_area": -1,
+      "svg_sha256": "e05b289e702f11d20ecda0b0dc6e0d2c57272158234310a69ab3007cea6025b6"
+    },
+    {
+      "schema": "izzi.film-decay-study/1",
+      "pattern": "density-tide",
+      "row": 2,
+      "column": 5,
+      "reference_cut": 2,
+      "seed": 20260929,
+      "output_frame": 23,
+      "output_fps": 30,
+      "source": "fixed-native-tonal-rosette-v2",
+      "reference_rate": [
+        24000,
+        1001
+      ],
+      "reference_tick": 18,
+      "hold_pattern": [
+        3
+      ],
+      "material_frame": 6,
+      "grid_columns": 384,
+      "active_picture": [
+        728,
+        540
+      ],
+      "controls": {
+        "scale": 0.52,
+        "veil": 0.62,
+        "density": 0.3,
+        "lace": 1.5,
+        "feather": 0.32
+      },
+      "extensions": {
+        "polarity": {
+          "enabled": true,
+          "amount": 0.025
+        },
+        "displacement": {
+          "enabled": true,
+          "amount": 0.004
+        },
+        "stretch": {
+          "enabled": true,
+          "amount": 0.012
+        }
+      },
+      "artistic_boost": false,
+      "boundary_points": 183234,
+      "rings": 1016,
+      "svg_bytes": 3203493,
+      "retained_area": -1,
+      "svg_sha256": "a082f02949969d76e3432a578a934ec7fb54351e4f9ae52798de9fe43fef28fb"
+    },
+    {
+      "schema": "izzi.film-decay-study/1",
+      "pattern": "density-tide",
+      "row": 2,
+      "column": 6,
+      "reference_cut": 2,
+      "seed": 20260929,
+      "output_frame": 23,
+      "output_fps": 30,
+      "source": "fixed-native-tonal-rosette-v2",
+      "reference_rate": [
+        24000,
+        1001
+      ],
+      "reference_tick": 18,
+      "hold_pattern": [
+        3
+      ],
+      "material_frame": 6,
+      "grid_columns": 384,
+      "active_picture": [
+        728,
+        540
+      ],
+      "controls": {
+        "scale": 0.52,
+        "veil": 0.62,
+        "density": 0.3,
+        "lace": 0.48,
+        "feather": 0.09
+      },
+      "extensions": {
+        "polarity": {
+          "enabled": true,
+          "amount": 0.025
+        },
+        "displacement": {
+          "enabled": true,
+          "amount": 0.004
+        },
+        "stretch": {
+          "enabled": true,
+          "amount": 0.012
+        }
+      },
+      "artistic_boost": false,
+      "boundary_points": 143224,
+      "rings": 734,
+      "svg_bytes": 2575828,
+      "retained_area": -1,
+      "svg_sha256": "a699bd6a15227bda52e0d2116195d081dabd6c15c5404547be61fd7eb2be6bb6"
+    },
+    {
+      "schema": "izzi.film-decay-study/1",
+      "pattern": "density-flutter",
+      "row": 3,
+      "column": 1,
+      "reference_cut": 3,
+      "seed": 20260929,
+      "output_frame": 23,
+      "output_fps": 30,
+      "source": "fixed-native-tonal-rosette-v2",
+      "reference_rate": [
+        24000,
+        1001
+      ],
+      "reference_tick": 18,
+      "hold_pattern": [
+        3
+      ],
+      "material_frame": 6,
+      "grid_columns": 384,
+      "active_picture": [
+        728,
+        540
+      ],
+      "controls": {
+        "scale": 0.55,
+        "veil": 0.82,
+        "contrast": 0.24,
+        "abrasion": 0.65,
+        "polarity_boost": 0
+      },
+      "extensions": {
+        "polarity": {
+          "enabled": true,
+          "amount": 0.025
+        },
+        "displacement": {
+          "enabled": true,
+          "amount": 0.004
+        },
+        "stretch": {
+          "enabled": true,
+          "amount": 0.012
+        }
+      },
+      "artistic_boost": false,
+      "boundary_points": 109654,
+      "rings": 132,
+      "svg_bytes": 2376685,
+      "retained_area": -1,
+      "svg_sha256": "51a2b9f52e1622aef18577071a7c14aab5c999fa6f6c6716e22a187d6d0db281"
+    },
+    {
+      "schema": "izzi.film-decay-study/1",
+      "pattern": "density-flutter",
+      "row": 3,
+      "column": 2,
+      "reference_cut": 3,
+      "seed": 20260929,
+      "output_frame": 23,
+      "output_fps": 30,
+      "source": "fixed-native-tonal-rosette-v2",
+      "reference_rate": [
+        24000,
+        1001
+      ],
+      "reference_tick": 18,
+      "hold_pattern": [
+        3
+      ],
+      "material_frame": 6,
+      "grid_columns": 384,
+      "active_picture": [
+        728,
+        540
+      ],
+      "controls": {
+        "scale": 0.27,
+        "veil": 0.82,
+        "contrast": 0.24,
+        "abrasion": 0.65,
+        "polarity_boost": 0
+      },
+      "extensions": {
+        "polarity": {
+          "enabled": true,
+          "amount": 0.025
+        },
+        "displacement": {
+          "enabled": true,
+          "amount": 0.004
+        },
+        "stretch": {
+          "enabled": true,
+          "amount": 0.012
+        }
+      },
+      "artistic_boost": false,
+      "boundary_points": 185082,
+      "rings": 281,
+      "svg_bytes": 3396549,
+      "retained_area": -1,
+      "svg_sha256": "7d078ba237885f3e0a8dfa0d7fbc34f693f7b1cde8f8e19770ca9eb4dc3f5742"
+    },
+    {
+      "schema": "izzi.film-decay-study/1",
+      "pattern": "density-flutter",
+      "row": 3,
+      "column": 3,
+      "reference_cut": 3,
+      "seed": 20260929,
+      "output_frame": 23,
+      "output_fps": 30,
+      "source": "fixed-native-tonal-rosette-v2",
+      "reference_rate": [
+        24000,
+        1001
+      ],
+      "reference_tick": 18,
+      "hold_pattern": [
+        3
+      ],
+      "material_frame": 6,
+      "grid_columns": 384,
+      "active_picture": [
+        728,
+        540
+      ],
+      "controls": {
+        "scale": 0.55,
+        "veil": 0.97,
+        "contrast": 0.24,
+        "abrasion": 0.65,
+        "polarity_boost": 0
+      },
+      "extensions": {
+        "polarity": {
+          "enabled": true,
+          "amount": 0.025
+        },
+        "displacement": {
+          "enabled": true,
+          "amount": 0.004
+        },
+        "stretch": {
+          "enabled": true,
+          "amount": 0.012
+        }
+      },
+      "artistic_boost": false,
+      "boundary_points": 109654,
+      "rings": 132,
+      "svg_bytes": 2376685,
+      "retained_area": -1,
+      "svg_sha256": "c346ca99415a4d15f85913e1923634ab69e968b5e8c803bdc528f7db79d77869"
+    },
+    {
+      "schema": "izzi.film-decay-study/1",
+      "pattern": "density-flutter",
+      "row": 3,
+      "column": 4,
+      "reference_cut": 3,
+      "seed": 20260929,
+      "output_frame": 23,
+      "output_fps": 30,
+      "source": "fixed-native-tonal-rosette-v2",
+      "reference_rate": [
+        24000,
+        1001
+      ],
+      "reference_tick": 18,
+      "hold_pattern": [
+        3
+      ],
+      "material_frame": 6,
+      "grid_columns": 384,
+      "active_picture": [
+        728,
+        540
+      ],
+      "controls": {
+        "scale": 0.55,
+        "veil": 0.82,
+        "contrast": 1.35,
+        "abrasion": 0.65,
+        "polarity_boost": 0
+      },
+      "extensions": {
+        "polarity": {
+          "enabled": true,
+          "amount": 0.025
+        },
+        "displacement": {
+          "enabled": true,
+          "amount": 0.004
+        },
+        "stretch": {
+          "enabled": true,
+          "amount": 0.012
+        }
+      },
+      "artistic_boost": false,
+      "boundary_points": 109654,
+      "rings": 132,
+      "svg_bytes": 2376637,
+      "retained_area": -1,
+      "svg_sha256": "b92b6bf155bc5fb3dfe7fa9ec55c5bc346ae8f5d6feca587a83d0791bb30ab34"
+    },
+    {
+      "schema": "izzi.film-decay-study/1",
+      "pattern": "density-flutter",
+      "row": 3,
+      "column": 5,
+      "reference_cut": 3,
+      "seed": 20260929,
+      "output_frame": 23,
+      "output_fps": 30,
+      "source": "fixed-native-tonal-rosette-v2",
+      "reference_rate": [
+        24000,
+        1001
+      ],
+      "reference_tick": 18,
+      "hold_pattern": [
+        3
+      ],
+      "material_frame": 6,
+      "grid_columns": 384,
+      "active_picture": [
+        728,
+        540
+      ],
+      "controls": {
+        "scale": 0.55,
+        "veil": 0.82,
+        "contrast": 0.24,
+        "abrasion": 1.7,
+        "polarity_boost": 0
+      },
+      "extensions": {
+        "polarity": {
+          "enabled": true,
+          "amount": 0.025
+        },
+        "displacement": {
+          "enabled": true,
+          "amount": 0.004
+        },
+        "stretch": {
+          "enabled": true,
+          "amount": 0.012
+        }
+      },
+      "artistic_boost": false,
+      "boundary_points": 109654,
+      "rings": 132,
+      "svg_bytes": 2420928,
+      "retained_area": -1,
+      "svg_sha256": "10be3c0fd28c80bb415ec4ccb589f1c15a0bbabb1dcf4bf60471dc1def81e78c"
+    },
+    {
+      "schema": "izzi.film-decay-study/1",
+      "pattern": "density-flutter",
+      "row": 3,
+      "column": 6,
+      "reference_cut": 3,
+      "seed": 20260929,
+      "output_frame": 23,
+      "output_fps": 30,
+      "source": "fixed-native-tonal-rosette-v2",
+      "reference_rate": [
+        24000,
+        1001
+      ],
+      "reference_tick": 18,
+      "hold_pattern": [
+        3
+      ],
+      "material_frame": 6,
+      "grid_columns": 384,
+      "active_picture": [
+        728,
+        540
+      ],
+      "controls": {
+        "scale": 0.55,
+        "veil": 0.82,
+        "contrast": 0.24,
+        "abrasion": 0.65,
+        "polarity_boost": 1
+      },
+      "extensions": {
+        "polarity": {
+          "enabled": true,
+          "amount": 0.025
+        },
+        "displacement": {
+          "enabled": true,
+          "amount": 0.004
+        },
+        "stretch": {
+          "enabled": true,
+          "amount": 0.012
+        }
+      },
+      "artistic_boost": true,
+      "boundary_points": 109654,
+      "rings": 132,
+      "svg_bytes": 2376718,
+      "retained_area": -1,
+      "svg_sha256": "66f506404234ae5fbc9003762d52d6f72ce3a335e171cfa3ce4e36a0d18457e7"
+    },
+    {
+      "schema": "izzi.film-decay-study/1",
+      "pattern": "torn-ribbon",
+      "row": 4,
+      "column": 1,
+      "reference_cut": 4,
+      "seed": 20260929,
+      "output_frame": 23,
+      "output_fps": 30,
+      "source": "fixed-native-tonal-rosette-v2",
+      "reference_rate": [
+        24000,
+        1001
+      ],
+      "reference_tick": 18,
+      "hold_pattern": [
+        4,
+        2
+      ],
+      "material_frame": 6,
+      "grid_columns": 384,
+      "active_picture": [
+        728,
+        540
+      ],
+      "controls": {
+        "width": 0.085,
+        "raggedness": 0.72,
+        "tears": 2,
+        "displacement_boost": 0,
+        "pitting": 0.65
+      },
+      "extensions": {
+        "polarity": {
+          "enabled": true,
+          "amount": 0.025
+        },
+        "displacement": {
+          "enabled": true,
+          "amount": 0.004
+        },
+        "stretch": {
+          "enabled": true,
+          "amount": 0.012
+        }
+      },
+      "artistic_boost": false,
+      "boundary_points": 22454,
+      "rings": 27,
+      "svg_bytes": 1109930,
+      "retained_area": -1,
+      "svg_sha256": "ed872103889629f26d2e7c74450fbbe2e078162d5c71d9991f3d3de08b3ac62e"
+    },
+    {
+      "schema": "izzi.film-decay-study/1",
+      "pattern": "torn-ribbon",
+      "row": 4,
+      "column": 2,
+      "reference_cut": 4,
+      "seed": 20260929,
+      "output_frame": 23,
+      "output_fps": 30,
+      "source": "fixed-native-tonal-rosette-v2",
+      "reference_rate": [
+        24000,
+        1001
+      ],
+      "reference_tick": 18,
+      "hold_pattern": [
+        4,
+        2
+      ],
+      "material_frame": 6,
+      "grid_columns": 384,
+      "active_picture": [
+        728,
+        540
+      ],
+      "controls": {
+        "width": 0.17,
+        "raggedness": 0.72,
+        "tears": 2,
+        "displacement_boost": 0,
+        "pitting": 0.65
+      },
+      "extensions": {
+        "polarity": {
+          "enabled": true,
+          "amount": 0.025
+        },
+        "displacement": {
+          "enabled": true,
+          "amount": 0.004
+        },
+        "stretch": {
+          "enabled": true,
+          "amount": 0.012
+        }
+      },
+      "artistic_boost": false,
+      "boundary_points": 18562,
+      "rings": 30,
+      "svg_bytes": 1004637,
+      "retained_area": -1,
+      "svg_sha256": "87759973818a0d6dcdbb464ce1d88ec9980462479093268535b13c67c809f918"
+    },
+    {
+      "schema": "izzi.film-decay-study/1",
+      "pattern": "torn-ribbon",
+      "row": 4,
+      "column": 3,
+      "reference_cut": 4,
+      "seed": 20260929,
+      "output_frame": 23,
+      "output_fps": 30,
+      "source": "fixed-native-tonal-rosette-v2",
+      "reference_rate": [
+        24000,
+        1001
+      ],
+      "reference_tick": 18,
+      "hold_pattern": [
+        4,
+        2
+      ],
+      "material_frame": 6,
+      "grid_columns": 384,
+      "active_picture": [
+        728,
+        540
+      ],
+      "controls": {
+        "width": 0.085,
+        "raggedness": 1.6,
+        "tears": 2,
+        "displacement_boost": 0,
+        "pitting": 0.65
+      },
+      "extensions": {
+        "polarity": {
+          "enabled": true,
+          "amount": 0.025
+        },
+        "displacement": {
+          "enabled": true,
+          "amount": 0.004
+        },
+        "stretch": {
+          "enabled": true,
+          "amount": 0.012
+        }
+      },
+      "artistic_boost": false,
+      "boundary_points": 26314,
+      "rings": 44,
+      "svg_bytes": 1161033,
+      "retained_area": -1,
+      "svg_sha256": "0a62160b8c8d982c39f74b57efa1fafb5df814fba62e949e10480d9009ed4891"
+    },
+    {
+      "schema": "izzi.film-decay-study/1",
+      "pattern": "torn-ribbon",
+      "row": 4,
+      "column": 4,
+      "reference_cut": 4,
+      "seed": 20260929,
+      "output_frame": 23,
+      "output_fps": 30,
+      "source": "fixed-native-tonal-rosette-v2",
+      "reference_rate": [
+        24000,
+        1001
+      ],
+      "reference_tick": 18,
+      "hold_pattern": [
+        4,
+        2
+      ],
+      "material_frame": 6,
+      "grid_columns": 384,
+      "active_picture": [
+        728,
+        540
+      ],
+      "controls": {
+        "width": 0.085,
+        "raggedness": 0.72,
+        "tears": 4,
+        "displacement_boost": 0,
+        "pitting": 0.65
+      },
+      "extensions": {
+        "polarity": {
+          "enabled": true,
+          "amount": 0.025
+        },
+        "displacement": {
+          "enabled": true,
+          "amount": 0.004
+        },
+        "stretch": {
+          "enabled": true,
+          "amount": 0.012
+        }
+      },
+      "artistic_boost": false,
+      "boundary_points": 36150,
+      "rings": 54,
+      "svg_bytes": 1362409,
+      "retained_area": -1,
+      "svg_sha256": "e98a207c863cd6c5b8ace6bf884cca05ea1bec43a1fe15c8b898d5c37297d0a8"
+    },
+    {
+      "schema": "izzi.film-decay-study/1",
+      "pattern": "torn-ribbon",
+      "row": 4,
+      "column": 5,
+      "reference_cut": 4,
+      "seed": 20260929,
+      "output_frame": 23,
+      "output_fps": 30,
+      "source": "fixed-native-tonal-rosette-v2",
+      "reference_rate": [
+        24000,
+        1001
+      ],
+      "reference_tick": 18,
+      "hold_pattern": [
+        4,
+        2
+      ],
+      "material_frame": 6,
+      "grid_columns": 384,
+      "active_picture": [
+        728,
+        540
+      ],
+      "controls": {
+        "width": 0.085,
+        "raggedness": 0.72,
+        "tears": 2,
+        "displacement_boost": 0.13,
+        "pitting": 0.65
+      },
+      "extensions": {
+        "polarity": {
+          "enabled": true,
+          "amount": 0.025
+        },
+        "displacement": {
+          "enabled": true,
+          "amount": 0.004
+        },
+        "stretch": {
+          "enabled": true,
+          "amount": 0.012
+        }
+      },
+      "artistic_boost": true,
+      "boundary_points": 22454,
+      "rings": 27,
+      "svg_bytes": 1109931,
+      "retained_area": -1,
+      "svg_sha256": "19d8fe9c0982de550985016124f01a604d8394ba3aa2e6ccf563ff5a146d5c1c"
+    },
+    {
+      "schema": "izzi.film-decay-study/1",
+      "pattern": "torn-ribbon",
+      "row": 4,
+      "column": 6,
+      "reference_cut": 4,
+      "seed": 20260929,
+      "output_frame": 23,
+      "output_fps": 30,
+      "source": "fixed-native-tonal-rosette-v2",
+      "reference_rate": [
+        24000,
+        1001
+      ],
+      "reference_tick": 18,
+      "hold_pattern": [
+        4,
+        2
+      ],
+      "material_frame": 6,
+      "grid_columns": 384,
+      "active_picture": [
+        728,
+        540
+      ],
+      "controls": {
+        "width": 0.085,
+        "raggedness": 0.72,
+        "tears": 2,
+        "displacement_boost": 0,
+        "pitting": 1.7
+      },
+      "extensions": {
+        "polarity": {
+          "enabled": true,
+          "amount": 0.025
+        },
+        "displacement": {
+          "enabled": true,
+          "amount": 0.004
+        },
+        "stretch": {
+          "enabled": true,
+          "amount": 0.012
+        }
+      },
+      "artistic_boost": false,
+      "boundary_points": 22454,
+      "rings": 27,
+      "svg_bytes": 1644311,
+      "retained_area": -1,
+      "svg_sha256": "34ce5d845d4b1a37907bd3de904d1775361980b63a6730ebc7436f83877a5fea"
+    },
+    {
+      "schema": "izzi.film-decay-study/1",
+      "pattern": "surviving-islands",
+      "row": 5,
+      "column": 1,
+      "reference_cut": 5,
+      "seed": 20260929,
+      "output_frame": 23,
+      "output_fps": 30,
+      "source": "fixed-native-tonal-rosette-v2",
+      "reference_rate": [
+        24000,
+        1001
+      ],
+      "reference_tick": 18,
+      "hold_pattern": [
+        3
+      ],
+      "material_frame": 6,
+      "grid_columns": 384,
+      "active_picture": [
+        728,
+        540
+      ],
+      "controls": {
+        "retention": 0.58,
+        "scale": 0.34,
+        "bridges": 0.28,
+        "pores": 0.55,
+        "stretch_boost": 0
+      },
+      "extensions": {
+        "polarity": {
+          "enabled": true,
+          "amount": 0.025
+        },
+        "displacement": {
+          "enabled": true,
+          "amount": 0.004
+        },
+        "stretch": {
+          "enabled": true,
+          "amount": 0.012
+        }
+      },
+      "artistic_boost": false,
+      "boundary_points": 58421,
+      "rings": 1233,
+      "svg_bytes": 1567236,
+      "retained_area": 0.582129314629,
+      "svg_sha256": "117486975813f6627ffa2dd83f667436a2d57849bc3c53a441ac42c488419bca"
+    },
+    {
+      "schema": "izzi.film-decay-study/1",
+      "pattern": "surviving-islands",
+      "row": 5,
+      "column": 2,
+      "reference_cut": 5,
+      "seed": 20260929,
+      "output_frame": 23,
+      "output_fps": 30,
+      "source": "fixed-native-tonal-rosette-v2",
+      "reference_rate": [
+        24000,
+        1001
+      ],
+      "reference_tick": 18,
+      "hold_pattern": [
+        3
+      ],
+      "material_frame": 6,
+      "grid_columns": 384,
+      "active_picture": [
+        728,
+        540
+      ],
+      "controls": {
+        "retention": 0.3,
+        "scale": 0.34,
+        "bridges": 0.28,
+        "pores": 0.55,
+        "stretch_boost": 0
+      },
+      "extensions": {
+        "polarity": {
+          "enabled": true,
+          "amount": 0.025
+        },
+        "displacement": {
+          "enabled": true,
+          "amount": 0.004
+        },
+        "stretch": {
+          "enabled": true,
+          "amount": 0.012
+        }
+      },
+      "artistic_boost": false,
+      "boundary_points": 53511,
+      "rings": 1255,
+      "svg_bytes": 1437147,
+      "retained_area": 0.30180135814,
+      "svg_sha256": "daf551015586d30fe0b8a8d152eefd305762a902e8b99cdfcaebb29d0bab3af3"
+    },
+    {
+      "schema": "izzi.film-decay-study/1",
+      "pattern": "surviving-islands",
+      "row": 5,
+      "column": 3,
+      "reference_cut": 5,
+      "seed": 20260929,
+      "output_frame": 23,
+      "output_fps": 30,
+      "source": "fixed-native-tonal-rosette-v2",
+      "reference_rate": [
+        24000,
+        1001
+      ],
+      "reference_tick": 18,
+      "hold_pattern": [
+        3
+      ],
+      "material_frame": 6,
+      "grid_columns": 384,
+      "active_picture": [
+        728,
+        540
+      ],
+      "controls": {
+        "retention": 0.58,
+        "scale": 0.19,
+        "bridges": 0.28,
+        "pores": 0.55,
+        "stretch_boost": 0
+      },
+      "extensions": {
+        "polarity": {
+          "enabled": true,
+          "amount": 0.025
+        },
+        "displacement": {
+          "enabled": true,
+          "amount": 0.004
+        },
+        "stretch": {
+          "enabled": true,
+          "amount": 0.012
+        }
+      },
+      "artistic_boost": false,
+      "boundary_points": 104009,
+      "rings": 1874,
+      "svg_bytes": 2332110,
+      "retained_area": 0.580820184927,
+      "svg_sha256": "2da14d8f47bb825c716cb23c145b29203a0018e51e709df749ed63d768304b85"
+    },
+    {
+      "schema": "izzi.film-decay-study/1",
+      "pattern": "surviving-islands",
+      "row": 5,
+      "column": 4,
+      "reference_cut": 5,
+      "seed": 20260929,
+      "output_frame": 23,
+      "output_fps": 30,
+      "source": "fixed-native-tonal-rosette-v2",
+      "reference_rate": [
+        24000,
+        1001
+      ],
+      "reference_tick": 18,
+      "hold_pattern": [
+        3
+      ],
+      "material_frame": 6,
+      "grid_columns": 384,
+      "active_picture": [
+        728,
+        540
+      ],
+      "controls": {
+        "retention": 0.58,
+        "scale": 0.34,
+        "bridges": 0.95,
+        "pores": 0.55,
+        "stretch_boost": 0
+      },
+      "extensions": {
+        "polarity": {
+          "enabled": true,
+          "amount": 0.025
+        },
+        "displacement": {
+          "enabled": true,
+          "amount": 0.004
+        },
+        "stretch": {
+          "enabled": true,
+          "amount": 0.012
+        }
+      },
+      "artistic_boost": false,
+      "boundary_points": 61381,
+      "rings": 1339,
+      "svg_bytes": 1617051,
+      "retained_area": 0.581948070227,
+      "svg_sha256": "f77811940ca29893ed10c027c454c21cb1c3114c91677152ec09c54ef54c040b"
+    },
+    {
+      "schema": "izzi.film-decay-study/1",
+      "pattern": "surviving-islands",
+      "row": 5,
+      "column": 5,
+      "reference_cut": 5,
+      "seed": 20260929,
+      "output_frame": 23,
+      "output_fps": 30,
+      "source": "fixed-native-tonal-rosette-v2",
+      "reference_rate": [
+        24000,
+        1001
+      ],
+      "reference_tick": 18,
+      "hold_pattern": [
+        3
+      ],
+      "material_frame": 6,
+      "grid_columns": 384,
+      "active_picture": [
+        728,
+        540
+      ],
+      "controls": {
+        "retention": 0.58,
+        "scale": 0.34,
+        "bridges": 0.28,
+        "pores": 1.6,
+        "stretch_boost": 0
+      },
+      "extensions": {
+        "polarity": {
+          "enabled": true,
+          "amount": 0.025
+        },
+        "displacement": {
+          "enabled": true,
+          "amount": 0.004
+        },
+        "stretch": {
+          "enabled": true,
+          "amount": 0.012
+        }
+      },
+      "artistic_boost": false,
+      "boundary_points": 58421,
+      "rings": 1233,
+      "svg_bytes": 2148411,
+      "retained_area": 0.582129314629,
+      "svg_sha256": "e454d790eb54b3b719b24f1e46a79e67a00d5aa952095b435e0c2a29bb67ac49"
+    },
+    {
+      "schema": "izzi.film-decay-study/1",
+      "pattern": "surviving-islands",
+      "row": 5,
+      "column": 6,
+      "reference_cut": 5,
+      "seed": 20260929,
+      "output_frame": 23,
+      "output_fps": 30,
+      "source": "fixed-native-tonal-rosette-v2",
+      "reference_rate": [
+        24000,
+        1001
+      ],
+      "reference_tick": 18,
+      "hold_pattern": [
+        3
+      ],
+      "material_frame": 6,
+      "grid_columns": 384,
+      "active_picture": [
+        728,
+        540
+      ],
+      "controls": {
+        "retention": 0.58,
+        "scale": 0.34,
+        "bridges": 0.28,
+        "pores": 0.55,
+        "stretch_boost": 0.3
+      },
+      "extensions": {
+        "polarity": {
+          "enabled": true,
+          "amount": 0.025
+        },
+        "displacement": {
+          "enabled": true,
+          "amount": 0.004
+        },
+        "stretch": {
+          "enabled": true,
+          "amount": 0.012
+        }
+      },
+      "artistic_boost": true,
+      "boundary_points": 58421,
+      "rings": 1233,
+      "svg_bytes": 1567238,
+      "retained_area": 0.582129314629,
+      "svg_sha256": "4f6310d30eeb2249290211416dbfbdb60117b61c1594dd950cf241f21c42262b"
+    },
+    {
+      "schema": "izzi.film-decay-study/1",
+      "pattern": "dark-curtain",
+      "row": 6,
+      "column": 1,
+      "reference_cut": 6,
+      "seed": 20260929,
+      "output_frame": 23,
+      "output_fps": 30,
+      "source": "fixed-native-tonal-rosette-v2",
+      "reference_rate": [
+        24000,
+        1001
+      ],
+      "reference_tick": 18,
+      "hold_pattern": [
+        2
+      ],
+      "material_frame": 9,
+      "grid_columns": 384,
+      "active_picture": [
+        728,
+        540
+      ],
+      "controls": {
+        "aperture": 0.62,
+        "wander": 0.045,
+        "feather": 0.045,
+        "density": 3.6,
+        "pitting": 0.5
+      },
+      "extensions": {
+        "polarity": {
+          "enabled": true,
+          "amount": 0.025
+        },
+        "displacement": {
+          "enabled": true,
+          "amount": 0.004
+        },
+        "stretch": {
+          "enabled": true,
+          "amount": 0.012
+        }
+      },
+      "artistic_boost": false,
+      "boundary_points": 78704,
+      "rings": 56,
+      "svg_bytes": 1553182,
+      "retained_area": -1,
+      "svg_sha256": "963058346b77f33e2dc7883e83608f682d96fb6bb76b42c980e87e21873db074"
+    },
+    {
+      "schema": "izzi.film-decay-study/1",
+      "pattern": "dark-curtain",
+      "row": 6,
+      "column": 2,
+      "reference_cut": 6,
+      "seed": 20260929,
+      "output_frame": 23,
+      "output_fps": 30,
+      "source": "fixed-native-tonal-rosette-v2",
+      "reference_rate": [
+        24000,
+        1001
+      ],
+      "reference_tick": 18,
+      "hold_pattern": [
+        2
+      ],
+      "material_frame": 9,
+      "grid_columns": 384,
+      "active_picture": [
+        728,
+        540
+      ],
+      "controls": {
+        "aperture": 0.2,
+        "wander": 0.045,
+        "feather": 0.045,
+        "density": 3.6,
+        "pitting": 0.5
+      },
+      "extensions": {
+        "polarity": {
+          "enabled": true,
+          "amount": 0.025
+        },
+        "displacement": {
+          "enabled": true,
+          "amount": 0.004
+        },
+        "stretch": {
+          "enabled": true,
+          "amount": 0.012
+        }
+      },
+      "artistic_boost": false,
+      "boundary_points": 87512,
+      "rings": 57,
+      "svg_bytes": 1596245,
+      "retained_area": -1,
+      "svg_sha256": "1dba0530af3862789e4141ce7a40db3a5fea626d592d01cc191259b9aacb0493"
+    },
+    {
+      "schema": "izzi.film-decay-study/1",
+      "pattern": "dark-curtain",
+      "row": 6,
+      "column": 3,
+      "reference_cut": 6,
+      "seed": 20260929,
+      "output_frame": 23,
+      "output_fps": 30,
+      "source": "fixed-native-tonal-rosette-v2",
+      "reference_rate": [
+        24000,
+        1001
+      ],
+      "reference_tick": 18,
+      "hold_pattern": [
+        2
+      ],
+      "material_frame": 9,
+      "grid_columns": 384,
+      "active_picture": [
+        728,
+        540
+      ],
+      "controls": {
+        "aperture": 0.62,
+        "wander": 0.24,
+        "feather": 0.045,
+        "density": 3.6,
+        "pitting": 0.5
+      },
+      "extensions": {
+        "polarity": {
+          "enabled": true,
+          "amount": 0.025
+        },
+        "displacement": {
+          "enabled": true,
+          "amount": 0.004
+        },
+        "stretch": {
+          "enabled": true,
+          "amount": 0.012
+        }
+      },
+      "artistic_boost": false,
+      "boundary_points": 54146,
+      "rings": 100,
+      "svg_bytes": 1245622,
+      "retained_area": -1,
+      "svg_sha256": "d2b4c026af02a762236d985ee12ac80bb374765015bdcbdb0f7845741c5d5006"
+    },
+    {
+      "schema": "izzi.film-decay-study/1",
+      "pattern": "dark-curtain",
+      "row": 6,
+      "column": 4,
+      "reference_cut": 6,
+      "seed": 20260929,
+      "output_frame": 23,
+      "output_fps": 30,
+      "source": "fixed-native-tonal-rosette-v2",
+      "reference_rate": [
+        24000,
+        1001
+      ],
+      "reference_tick": 18,
+      "hold_pattern": [
+        2
+      ],
+      "material_frame": 9,
+      "grid_columns": 384,
+      "active_picture": [
+        728,
+        540
+      ],
+      "controls": {
+        "aperture": 0.62,
+        "wander": 0.045,
+        "feather": 0.16,
+        "density": 3.6,
+        "pitting": 0.5
+      },
+      "extensions": {
+        "polarity": {
+          "enabled": true,
+          "amount": 0.025
+        },
+        "displacement": {
+          "enabled": true,
+          "amount": 0.004
+        },
+        "stretch": {
+          "enabled": true,
+          "amount": 0.012
+        }
+      },
+      "artistic_boost": false,
+      "boundary_points": 78474,
+      "rings": 59,
+      "svg_bytes": 1548224,
+      "retained_area": -1,
+      "svg_sha256": "ccb18a116e4f455d4d3937b671fa74ea6011a0fe15f8e39f4cd22b1b117ab1ab"
+    },
+    {
+      "schema": "izzi.film-decay-study/1",
+      "pattern": "dark-curtain",
+      "row": 6,
+      "column": 5,
+      "reference_cut": 6,
+      "seed": 20260929,
+      "output_frame": 23,
+      "output_fps": 30,
+      "source": "fixed-native-tonal-rosette-v2",
+      "reference_rate": [
+        24000,
+        1001
+      ],
+      "reference_tick": 18,
+      "hold_pattern": [
+        2
+      ],
+      "material_frame": 9,
+      "grid_columns": 384,
+      "active_picture": [
+        728,
+        540
+      ],
+      "controls": {
+        "aperture": 0.62,
+        "wander": 0.045,
+        "feather": 0.045,
+        "density": 1.2,
+        "pitting": 0.5
+      },
+      "extensions": {
+        "polarity": {
+          "enabled": true,
+          "amount": 0.025
+        },
+        "displacement": {
+          "enabled": true,
+          "amount": 0.004
+        },
+        "stretch": {
+          "enabled": true,
+          "amount": 0.012
+        }
+      },
+      "artistic_boost": false,
+      "boundary_points": 78704,
+      "rings": 56,
+      "svg_bytes": 1556374,
+      "retained_area": -1,
+      "svg_sha256": "df190705c5c6ce25f70650b943497d70afa213dda09d5c3e00fc44b6fc97caac"
+    },
+    {
+      "schema": "izzi.film-decay-study/1",
+      "pattern": "dark-curtain",
+      "row": 6,
+      "column": 6,
+      "reference_cut": 6,
+      "seed": 20260929,
+      "output_frame": 23,
+      "output_fps": 30,
+      "source": "fixed-native-tonal-rosette-v2",
+      "reference_rate": [
+        24000,
+        1001
+      ],
+      "reference_tick": 18,
+      "hold_pattern": [
+        2
+      ],
+      "material_frame": 9,
+      "grid_columns": 384,
+      "active_picture": [
+        728,
+        540
+      ],
+      "controls": {
+        "aperture": 0.62,
+        "wander": 0.045,
+        "feather": 0.045,
+        "density": 3.6,
+        "pitting": 1.8
+      },
+      "extensions": {
+        "polarity": {
+          "enabled": true,
+          "amount": 0.025
+        },
+        "displacement": {
+          "enabled": true,
+          "amount": 0.004
+        },
+        "stretch": {
+          "enabled": true,
+          "amount": 0.012
+        }
+      },
+      "artistic_boost": false,
+      "boundary_points": 105648,
+      "rings": 593,
+      "svg_bytes": 2048130,
+      "retained_area": -1,
+      "svg_sha256": "9496bdc7b6f0d905a7f5db0f17c63aeabda646ad3493f8c8d08fd23e1be2d7f6"
+    }
+  ],
+  "atlas_sha256": "2fbe9d5501a029190fa5c4e193452785a42f25f6594657feafd4f4e36067444a",
+  "preview_sha256": "352eff2a2ae1bcf5e9f4fd1870f64bbcc4af33d5c617c892a911cf9bef67e9e8",
+  "motion": {
+    "path": "decasia-six-patterns.motion.mp4",
+    "sha256": "aa4cc85f5acd7671c2c409cc64f737115bade801ac71782b4b20fae9ebeafecb",
+    "frames": 60,
+    "fps": 30,
+    "unique_material_frames": 112,
+    "grid_columns": 192
+  }
+}

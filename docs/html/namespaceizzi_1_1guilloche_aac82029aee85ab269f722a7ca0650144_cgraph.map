@@ -1,0 +1,9 @@
+<map id="izzi::guilloche::render_lenticular_calibration_svg" name="izzi::guilloche::render_lenticular_calibration_svg">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,67,170,103"/>
+<area shape="rect" id="Node000002" href="$namespaceizzi_1_1guilloche_1_1lenticular__detail.html#aae2b9f0ab608073224061ccc376cef23" title=" " alt="" coords="218,5,374,42"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="151,64,219,46,214,48,153,69"/>
+<area shape="rect" id="Node000003" href="$namespaceizzi_1_1guilloche_1_1detail.html#aa7ee1d2e8673d6d8b091f7f5cc4e68ab" title=" " alt="" coords="228,67,364,103"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="170,82,214,84,209,86,171,88"/>
+<area shape="rect" id="Node000004" href="$namespaceizzi_1_1guilloche_1_1detail.html#aa2e3cb80bde026ce4a045068023f69c2" title=" " alt="" coords="228,128,364,165"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="152,101,219,122,214,124,152,107"/>
+</map>

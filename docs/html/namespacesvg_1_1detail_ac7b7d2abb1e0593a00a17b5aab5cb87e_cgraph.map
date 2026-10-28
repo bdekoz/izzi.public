@@ -1,0 +1,15 @@
+<map id="svg::detail::bar_axis_maximum" name="svg::detail::bar_axis_maximum">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,89,138,126"/>
+<area shape="rect" id="Node000002" href="$namespacesvg_1_1detail.html#a54398d7153c7fb5c2990cd3e63feaaf9" title="Derive a deterministic histogram tick surface from the visible domain. Major steps are selected from ..." alt="" coords="186,89,362,126"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="138,105,172,107,168,109,139,110"/>
+<area shape="rect" id="Node000003" href="$namespacesvg_1_1detail.html#a6039d1afa1b3671fdd85c74b96ead918" title=" " alt="" coords="410,5,552,42"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="320,86,417,49,422,47,322,91"/>
+<area shape="rect" id="Node000004" href="$namespacesvg_1_1detail.html#a567e53316c381d51a53166081c6ccf17" title=" " alt="" coords="600,68,773,92"/>
+<area shape="poly" id="edge4_Node000002_Node000004" title=" " alt="" coords="362,99,587,86,582,87,363,104"/>
+<area shape="rect" id="Node000005" href="$namespacesvg_1_1detail.html#a0e9c63e4c4d9c4a112cc4e3262d84eeb" title=" " alt="" coords="410,117,552,154"/>
+<area shape="poly" id="edge5_Node000002_Node000005" title=" " alt="" coords="362,117,397,124,392,124,363,122"/>
+<area shape="rect" id="Node000006" href="$namespacesvg_1_1detail.html#a7bd6eab0b35862b3c5f4580ccc5b23f6" title=" " alt="" coords="410,179,552,215"/>
+<area shape="poly" id="edge6_Node000002_Node000006" title=" " alt="" coords="319,124,425,172,420,172,318,129"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="551,40,628,63,623,63,551,45"/>
+<area shape="poly" id="edge7_Node000006_Node000004" title=" " alt="" coords="528,176,551,164,607,131,653,102,658,100,609,135,554,169,529,181"/>
+</map>

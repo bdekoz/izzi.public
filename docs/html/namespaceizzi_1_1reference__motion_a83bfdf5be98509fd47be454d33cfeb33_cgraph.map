@@ -1,0 +1,14 @@
+<map id="izzi::reference_motion::apply" name="izzi::reference_motion::apply">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,84,147,121"/>
+<area shape="rect" id="Node000002" href="$namespaceizzi_1_1reference__motion.html#a99c67e787607ebf6390f5bbecf32fb82" title=" " alt="" coords="384,5,525,42"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="105,81,146,59,194,41,283,25,371,21,366,23,284,30,195,46,149,64,108,86"/>
+<area shape="rect" id="Node000003" href="$namespaceizzi_1_1reference__motion.html#a3d0febfb416866225472a4685ba901d8" title=" " alt="" coords="384,72,525,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="147,103,237,105,336,102,371,102,366,103,336,108,237,110,147,108"/>
+<area shape="rect" id="Node000004" href="$namespaceizzi_1_1reference__motion.html#abf460b3fd6598f9d7259c5812f09906f" title=" " alt="" coords="195,56,336,93"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="146,89,182,86,177,88,148,94"/>
+<area shape="rect" id="Node000005" href="$namespaceizzi_1_1reference__motion.html#a006483ac65b9f3fccca039e85b8bb59e" title=" " alt="" coords="384,143,525,179"/>
+<area shape="poly" id="edge7_Node000001_Node000005" title=" " alt="" coords="147,111,370,145,367,150,147,116"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="335,53,372,46,366,47,337,58"/>
+<area shape="poly" id="edge5_Node000004_Node000003" title=" " alt="" coords="336,78,371,83,366,83,336,83"/>
+<area shape="poly" id="edge6_Node000004_Node000005" title=" " alt="" coords="308,91,402,136,396,136,307,96"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="izzi::edge_tension::supercell" name="izzi::edge_tension::supercell">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,33,127,70"/>
+<area shape="rect" id="Node000002" href="$namespaceizzi_1_1edge__tension_1_1detail.html#ade33dcd2f2d668a51c9fd5299aea9abd" title=" " alt="" coords="175,5,296,42"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="127,39,162,36,157,37,128,44"/>
+<area shape="rect" id="Node000003" href="$namespaceizzi_1_1edge__tension_1_1detail.html#a4e8a0aa64ea1db1c499c0b431633af3c" title=" " alt="" coords="344,33,465,70"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="127,51,175,52,296,52,331,54,326,54,296,57,175,57,127,56"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="296,31,331,39,326,39,296,36"/>
+</map>

@@ -1,0 +1,106 @@
+{
+  "schema_version": "izzi.guilloche-scene-resolved/1",
+  "scene_id": "water-arc-01",
+  "resolution": {
+    "input_sha256": "UNAVAILABLE",
+    "schema_sha256": "UNAVAILABLE"
+  },
+  "canvas": {
+    "width": 320.0,
+    "height": 320.0,
+    "background": "#FAFAF7"
+  },
+  "content": {
+    "kind": "none",
+    "accessible_label": "Native graphic pattern review",
+    "inscriptions": []
+  },
+  "treatment": {
+    "kind": "floral-cycloid",
+    "seed": 20260928,
+    "floral_group_range": [
+      1,
+      3
+    ],
+    "petal_range": [
+      5,
+      11
+    ],
+    "selected_petals": 7,
+    "cycloid_amplitude": 0.0,
+    "density": "experimental",
+    "ornament_samples": 48
+  },
+  "layout": {
+    "kind": "radial",
+    "symmetry_order": 6,
+    "center": [
+      160.0,
+      160.0
+    ],
+    "radius": 120.0,
+    "include_radial_field": false,
+    "geometries": [
+      {
+        "id": "form",
+        "family": "water",
+        "class": "banded",
+        "origin": [
+          160.0,
+          160.0
+        ],
+        "plate_index": 0,
+        "path_count": 35,
+        "point_count": 2275,
+        "parameters": {
+          "geometry_id": "water-arc-01",
+          "form": "arc",
+          "arrangement": "overlapping-rows",
+          "geometry_key": 103,
+          "span": 250.0,
+          "density": 1.0,
+          "curvature": 1.0,
+          "phase": 0.0,
+          "rotation": 0.0,
+          "clearance": 1.5,
+          "samples": 192
+        }
+      }
+    ]
+  },
+  "palette": {
+    "plates": [
+      {
+        "id": "plate-1",
+        "color": "#202B2E",
+        "stroke_width": 0.7,
+        "opacity": 1.0,
+        "blend": "normal"
+      }
+    ]
+  },
+  "budget": {
+    "maximum_paths": 20000,
+    "maximum_points": 2000000,
+    "maximum_svg_bytes": 67108864
+  },
+  "statistics": {
+    "path_count": 35,
+    "point_count": 2275,
+    "estimated_svg_bytes": 76756
+  },
+  "review": {
+    "profile": "experimental",
+    "human_acceptance": "PENDING",
+    "accessibility_conformance": "NOT-CLAIMED",
+    "baseline_promotion": "PENDING"
+  },
+  "diagnostics": [
+    {
+      "severity": "information",
+      "code": "LOCAL-EXPERIMENTAL-ART-RETAINED",
+      "message": "Wild local output remains renderable; public conformance is a separate gate."
+    }
+  ],
+  "extensions": {}
+}

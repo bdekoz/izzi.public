@@ -6,6 +6,8 @@ int main()
 {
   std::ofstream file("triple_explorer.svg");
   file << "<svg viewBox='0 0 1200 800' xmlns='http://www.w3.org/2000/svg' style='background:#000'>\n";
+  // SVG CSS backgrounds are not painted by every PDF exporter.
+  file << "<rect width='1200' height='800' fill='#000'/>\n";
 
   struct Config { std::string label; double n1; double n2; std::string color; };
 

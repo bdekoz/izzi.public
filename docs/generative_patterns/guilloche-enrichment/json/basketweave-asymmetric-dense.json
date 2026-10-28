@@ -1,0 +1,9 @@
+{"schema_version":"izzi.guilloche-scene/1","scene_id":"basketweave-asymmetric-dense",
+    "canvas":{"width":320,"height":320,"background":"#FAFAF7"},
+    "content":{"kind":"none","accessible_label":"Native graphic pattern review"},
+    "treatment":{"kind":"floral-cycloid","seed":20260928,"floral_group_range":[1,3],"petal_range":[5,11],
+      "cycloid_amplitude":0,"density":"experimental"},
+    "layout":{"kind":"radial","symmetry_order":6,"center":[160,160],"radius":120,"include_radial_field":false,
+      "geometries":[{"id":"form","kind":"basketweave_field","origin":[160,160],"rows":10,"columns":10,"pitch":26.000000,"band_width":7.280000,"strands":3,"clearance":0.5,"deformation":{"kind":"triangular","amplitude_x":0.025000,"amplitude_y":-0.017500,"period_x":52.000000,"period_y":52.000000,"phase":0.4}}]},
+    "palette":{"colors":["#202B2E"],"stroke_width":0.7,"opacity":1,"blend":"normal"},
+    "review":{"profile":"experimental","human_acceptance":"PENDING"}}

@@ -132,7 +132,7 @@ studies()
     result.push_back({
       study_category::word,
       index + 1,
-      std::string(words[index]),
+      index == 7 ? "love" : index == 8 ? "DK" : std::string(words[index]),
       std::string(words[index]),
     });
   for (std::size_t index = 0; index < combinations.size(); ++index)
@@ -176,7 +176,6 @@ fit_height(const std::string_view content, const double maximum_height,
 scene_spec
 base_scene(const study& value)
 {
-  const std::size_t index = value.index - 1;
   scene_spec scene;
   scene.id = "guilloche-v3-" + filename_stem(value);
   scene.title = "Guilloche v3 " + std::string(category_name(value.category))
@@ -194,24 +193,22 @@ base_scene(const study& value)
         + "` is one isolated deterministic floral and cycloid glyph with no surrounding composition geometry.";
   scene.width = 1080;
   scene.height = 1920;
-  scene.background_color = index % 3 == 0 ? "#02030A"
-                           : index % 3 == 1 ? "#07030D"
-                                            : "#030711";
+  scene.background_color = "#FFFFFF";
   scene.profile = render_profile::experimental;
   scene.seed = 30'000 + static_cast<std::size_t>(value.category) * 1'000
                + value.index;
   scene.budget = {50'000, 5'000'000, 192 * 1024 * 1024};
   scene.plates = {
     {"electric-cyan", "#22F0FF", 1.05, 0.72,
-     blend_mode::screen, {}, 0},
+     blend_mode::multiply, {}, 0},
     {"hot-magenta", "#FF1F8F", 1.0, 0.68,
-     blend_mode::screen, {1.4, -1.0}, 0.0008},
+     blend_mode::multiply, {1.4, -1.0}, 0.0008},
     {"acid-amber", "#FFC400", 0.9, 0.58,
-     blend_mode::screen, {-1.0, 1.3}, -0.0007},
-    {"paper-white", "#F7F4EB", 1.25, 0.9,
+     blend_mode::multiply, {-1.0, 1.3}, -0.0007},
+    {"paper-white", "#1F2937", 1.25, 0.9,
      blend_mode::source_over, {}, 0},
     {"violet-veil", "#A85CFF", 0.7, 0.19,
-     blend_mode::screen, {}, 0},
+     blend_mode::multiply, {}, 0},
   };
   return scene;
 }
@@ -386,6 +383,109 @@ make_study(const study& value)
 }
 
 void
+write_lowercase_word(std::ostream& output, const study& value)
+{
+  auto scene = base_scene(value);
+  const std::size_t variant = value.index - 1;
+  const bool outside = value.index == 8 || value.index == 9;
+  constexpr std::array<int,10> weights{200,200,300,300,400,400,500,500,600,700};
+  const int weight=weights.at(variant);
+  scene.title = "Atkinson Hyperlegible guilloche / " + value.content;
+  scene.description = outside
+    ? "Atkinson Hyperlegible Next lettering with rosette guilloche confined to an exterior band; letter interiors remain clear."
+    : "Atkinson Hyperlegible Next weight study, extra-light to bold, clipped from native guilloche waves and rosettes.";
+  const std::size_t lines = 7 + 3 * (variant % 4);
+  const double width = 0.7 + 0.8 * (variant % 4);
+  for (auto& plate : scene.plates) plate.stroke_width = width;
+  p1_band_guilloche_tuning tuning;
+  tuning.line_count = lines;
+  tuning.rows = 7;
+  tuning.row_spacing = 75;
+  tuning.fundamental_frequency = 2 + variant;
+  tuning.phase_step = 0.3;
+  tuning.samples = 1200;
+  auto band = make_p1_band_guilloche({540, 990}, 980, 80, tuning);
+  band.id = "lowercase-wave-fill";
+  band.plate_index = 0;
+  if (!outside) scene.compositions.push_back(band);
+  auto echo = band;
+  echo.id = "lowercase-wave-echo";
+  echo.plate_index = 1;
+  echo.centerline.origin.y += 12 + 4 * variant;
+  if (!outside) scene.compositions.push_back(echo);
+  composition_spec rose;
+  rose.id = "lowercase-rosette-fill";
+  rose.kind = composition_kind::rosette;
+  rose.centerline.origin = {540, 950};
+  rose.centerline.scale = 280;
+  rose.centerline.geometry = rose_spec{5 + variant, 1, variant * 0.17, 1200};
+  rose.family.count = 14;
+  rose.family.scale_step = -0.045;
+  rose.family.rotation_step = 0.07;
+  rose.plate_index = 2;
+  if (!outside) scene.compositions.push_back(rose);
+  else
+    for (std::size_t letter=0;letter<value.content.size();++letter)
+      for (std::size_t ink=0;ink<3;++ink)
+        {
+          auto halo=rose;
+          halo.id="outside-rosette-"+std::to_string(letter)+"-"+std::to_string(ink);
+          halo.plate_index=ink;
+          halo.centerline.origin={240+600.0*(letter+0.5)/value.content.size(),940};
+          halo.centerline.scale=220+45*ink;
+          halo.centerline.geometry=rose_spec{5+ink*2,1,0.15*letter+0.25*ink,2400};
+          halo.family.count=18;
+          halo.family.scale_step=-0.035;
+          halo.family.rotation_step=0.035+0.015*ink;
+          scene.compositions.push_back(halo);
+        }
+  auto resolved = resolve(scene);
+  // Break a deterministic subset of the guilloche contours inside the letters.
+  for (std::size_t i = 0; i < resolved.paths.size(); ++i)
+    if (!outside && i % 3 == 0 && resolved.paths[i].points.size() > 8)
+      {
+        resolved.paths[i].points.resize(resolved.paths[i].points.size() * 3 / 4);
+        resolved.paths[i].closed = false;
+      }
+  std::string pattern = render_svg(resolved);
+  pattern.erase(0, pattern.find("<svg"));
+  const double size = std::min(410.0, 1450.0 / value.content.size());
+  const std::string typography = " font-family=\"Atkinson Hyperlegible Next, Atkinson Hyperlegible, sans-serif\" font-style=\"normal\" font-weight=\""
+    +std::to_string(weight)+"\" font-size=\""
+    + std::to_string(size) + "\" text-anchor=\"middle\"";
+  const std::string word = detail::escape_xml(value.content);
+  output << "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"1080\" height=\"1920\" viewBox=\"0 0 1080 1920\" role=\"img\" aria-labelledby=\"word-title word-desc\">"
+    "<title id=\"word-title\">Atkinson Hyperlegible guilloche: " << word << "</title>"
+    "<desc id=\"word-desc\">" << detail::escape_xml(scene.description) << "</desc>"
+    "<rect width=\"1080\" height=\"1920\" fill=\"white\"/>"
+    "<defs><clipPath id=\"lowercase-mask\"><text x=\"540\" y=\"1050\"" << typography << ">" << word << "</text></clipPath>"
+    "<mask id=\"outside-glyph-mask\" maskUnits=\"userSpaceOnUse\" x=\"0\" y=\"0\" width=\"1080\" height=\"1920\" style=\"mask-type:luminance\">"
+    "<rect width=\"1080\" height=\"1920\" fill=\"black\"/>"
+    "<text x=\"540\" y=\"1050\"" << typography << " fill=\"none\" stroke=\"white\" stroke-width=\"150\" stroke-linejoin=\"round\">" << word << "</text>"
+    "<text x=\"540\" y=\"1050\"" << typography << " fill=\"black\" stroke=\"black\" stroke-width=\"6\">" << word << "</text></mask></defs>";
+  for (std::size_t ring = 0; !outside && ring < 3; ++ring)
+    output << "<ellipse cx=\"540\" cy=\"980\" rx=\"" << 450 - ring * 50
+           << "\" ry=\"" << 270 + ring * 80 << "\" fill=\"none\" stroke=\""
+           << scene.plates[ring].color << "\" stroke-width=\"1.5\" opacity=\"0.35\" transform=\"rotate("
+           << (int(variant % 5) - 2) * 9 + int(ring) * 17 << " 540 980)\"/>";
+  for (int layer = 3; !outside && layer > 0; --layer)
+    output << "<text x=\"" << 540 + layer * (5 + variant % 4) << "\" y=\"" << 1050 + layer * 7
+           << "\"" << typography << " fill=\"none\" stroke=\"" << scene.plates[layer - 1].color
+           << "\" stroke-width=\"" << 1 + layer << "\" opacity=\"0.6\">" << word << "</text>";
+  output << (outside ? "<g id=\"outside-guilloche\" mask=\"url(#outside-glyph-mask)\">" : "<g clip-path=\"url(#lowercase-mask)\">")
+    << pattern << "</g>"
+    "<text x=\"540\" y=\"1050\"" << typography << " fill=\"none\" stroke=\"#23354b\" stroke-width=\"1.4\">" << word << "</text>"
+    "<g fill=\"#23354b\" font-family=\"Atkinson Hyperlegible Next, Atkinson Hyperlegible, sans-serif\">"
+    "<text x=\"60\" y=\"100\" font-size=\"32\">" << word << " / " << (outside ? "exterior rosette guilloche" : "wild guilloche") << "</text>"
+    "<text x=\"60\" y=\"152\" font-size=\"21\">Atkinson Hyperlegible Next | weight=" << weight
+    << " | stroke=" << width << " px</text>"
+    "<text x=\"60\" y=\"1820\" font-size=\"20\">"
+    << (outside ? "Rosettes outside letter outlines; clear interiors; 75 px exterior band with 3 px clearance."
+                : "Layered wave + rosette fill; three-ink offsets; extra-light to bold type weights.") << "</text>"
+    "</g></svg>";
+}
+
+void
 write_study(const fs::path& output_directory, const study& value)
 {
   auto [scene, ornaments] = make_study(value);
@@ -394,7 +494,10 @@ write_study(const fs::path& output_directory, const study& value)
   std::ofstream output(output_path, std::ios::binary);
   if (!output)
     throw std::runtime_error("cannot open output: " + output_path.string());
-  output << render_svg(scene, ornaments);
+  if (value.category == study_category::word)
+    write_lowercase_word(output, value);
+  else
+    output << render_svg(scene, ornaments);
   if (!output)
     throw std::runtime_error("cannot write output: " + output_path.string());
 }

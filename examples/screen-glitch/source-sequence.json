@@ -1,0 +1,9 @@
+{
+  "schema": "izzi.screen-source-sequence/1",
+  "selection": "nearest-preceding",
+  "endpoints": "hold",
+  "samples": [
+    {"time_seconds": 0, "svg": "source-0.svg"},
+    {"time_seconds": 2, "svg": "source-2.svg"}
+  ]
+}

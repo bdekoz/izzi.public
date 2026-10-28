@@ -1,0 +1,21 @@
+{
+  "form_id": "satellite/mpeg-picture-damage",
+  "parameters": {
+    "amount": 0.9,
+    "detail_amount": 1,
+    "detail_block_pixels": 4,
+    "detail_chroma": 0.95,
+    "detail_coefficients": 1.2,
+    "detail_slices": 0.85,
+    "detail_orientation": 0,
+    "damage_persistence_frames": 180
+  },
+  "seed": 20261011,
+  "domain": [
+    0,
+    0,
+    640,
+    360
+  ],
+  "source_sequence": "examples/screen-glitch/source-sequence.json"
+}

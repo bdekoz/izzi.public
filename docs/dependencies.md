@@ -44,3 +44,25 @@ listed below.
   in `build/private/voice-audition/ai-time-to-die/female-references/`
   (`provenance-female-all.json`); published as audio review items on
   situationshipin.space (media_kind `audio`, 64 k mono mp3s).
+
+## Decasia-agesia distributed delivery (added 2026-10-02)
+
+The **devp.ac** compute resources comprise rizal, ord, and eureka. Rizal
+runs the shared dependency queue and completion notification; ord and
+eureka execute delivery stages. See [devp.ac compute topology](workflows.md#devpac-compute-resources-2026-10-02)
+and the [approved production plan](development/sessions/20261001.short_center_frame_2_screen_decay.md).
+
+| Dependency | Observed version / location | Purpose |
+| --- | --- | --- |
+| Python 3 standard library | Existing host installations | Durable job queue, locks, SSH dispatch, checksums, and stage receipts. |
+| FFmpeg / ffprobe | 8.1.2 on ord and eureka | FFV1/FLAC masters, clockwise rotation, retiming, HEVC encoding, probing, and decoded verification. |
+| libx265 and zscale | Available in both host FFmpeg builds | Approved veryslow two-pass Main10 HEVC and sRGB-to-BT.709 conversion. |
+| Pillow and NumPy | Existing worker installations | Imported by the existing production helpers. |
+| fontTools | 4.62.1; isolated worker `.deps/fontTools` | Existing helper imports; copied from the approved local dependency, without modifying system packages. |
+| OpenSSH and rsync | Existing host installations | Authenticated resumable worker-to-worker transfers over USB4; agent forwarded for the active transfer session. |
+| systemd user services | rizal | Persistent coordinator and desktop completion watcher after the interactive turn ends. |
+| notify-send / freedesktop notification service | rizal desktop | Requested completion or pipeline-failure alert. |
+
+The verified eureka GPU allocation is 103,079,215,104 bytes (96 GiB), with
+approximately 32 GiB host-visible RAM. The approved libx265 encoder is a CPU
+workload; this delivery does not install or substitute a GPU encoder.

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['label_5forder_0',['label_order',['../namespacesvg_1_1graph.html#aef3ccd02e58140cefa3d3146c66e0b7d',1,'svg::graph']]]
+  ['ink_5fassignment_0',['ink_assignment',['../namespaceizzi_1_1edge__tension.html#a759ee128d872006ebc8a309eeae09411',1,'izzi::edge_tension']]]
 ];

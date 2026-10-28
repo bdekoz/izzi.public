@@ -1,12 +1,14 @@
 // Generate deterministic guilloche review plates and profile variants.
 
 #include <izzi-svg-guilloche.h>
+#include <izzi-svg-color-palette.h>
 
 #include <algorithm>
 #include <cstdlib>
 #include <filesystem>
 #include <fstream>
 #include <iostream>
+#include <iomanip>
 #include <stdexcept>
 #include <string>
 #include <string_view>
@@ -51,17 +53,17 @@ base_scene(const std::string& id, const std::string& title,
   scene.description = description;
   scene.width = width;
   scene.height = height;
-  scene.background_color = "#070912";
+  scene.background_color = "#FFFFFF";
   scene.profile = profile;
   scene.seed = 20260809;
   scene.budget = {30'000, 3'000'000, 96 * 1024 * 1024};
   scene.plates = {
-    {"ink-cyan", "#2DE2E6", 0.75, 0.78, blend_mode::screen, {}, 0},
-    {"ink-magenta", "#FF3CAC", 0.72, 0.72, blend_mode::screen,
+    {"ink-cyan", "#2DE2E6", 0.75, 0.78, blend_mode::multiply, {}, 0},
+    {"ink-magenta", "#FF3CAC", 0.72, 0.72, blend_mode::multiply,
      {0.7, -0.4}, 0.0008},
-    {"ink-amber", "#FFB000", 0.68, 0.66, blend_mode::screen,
+    {"ink-amber", "#FFB000", 0.68, 0.66, blend_mode::multiply,
      {-0.5, 0.6}, -0.0007},
-    {"ink-paper", "#F4F0E6", 1.05, 0.9, blend_mode::source_over, {}, 0},
+    {"ink-paper", "#1F2937", 1.05, 0.9, blend_mode::source_over, {}, 0},
   };
   return scene;
 }
@@ -332,14 +334,22 @@ make_data_orbit_variant(const render_profile profile)
         360 + 130 * std::cos(angle),
         240 + 130 * std::sin(angle),
       };
+      // Four genuinely different arrangements, not only density changes.
+      if (profile == render_profile::compatibility)
+        orbit.centerline.origin = {85 + index * 135.0, 240.0 + (index % 2 ? 85 : -85)};
+      else if (profile == render_profile::accessible_static)
+        orbit.centerline.origin = {100 + index * 125.0, 105 + index * 62.0};
+      else if (profile == render_profile::experimental)
+        orbit.centerline.origin = {360 + (55 + index * 27) * std::cos(angle * 1.6),
+                                   240 + (55 + index * 27) * std::sin(angle * 1.6)};
       orbit.centerline.scale = 18 + values[index] * 3;
       orbit.centerline.geometry
         = rose_spec {static_cast<std::size_t>(5 + values[index]), 1,
                      angle * 0.2, 240};
       orbit.family.count = density(
         profile, static_cast<std::size_t>(8 + values[index]));
-      orbit.family.phase_step = 0.018;
-      orbit.family.scale_step = 0.012;
+      orbit.family.phase_step = 0.11;
+      orbit.family.scale_step = 0.035;
       orbit.family.normal_offset_step = 0.35;
       orbit.family.modulation
         = {0.01 * values[index], static_cast<double>(7 + values[index]), angle};
@@ -396,14 +406,14 @@ make_wild_duotone_111()
     "Local experimental guilloche artwork. Exact source strings duotone and 111 are woven geometry; no currency or denomination is represented.",
     render_profile::experimental, 1080, 1920);
   scene.seed = 111;
-  scene.background_color = "#02030A";
+  scene.background_color = "#FFFFFF";
   scene.plates = {
-    {"electric-cyan", "#22F0FF", 0.58, 0.7, blend_mode::screen, {}, 0},
-    {"hot-magenta", "#FF1F8F", 0.55, 0.68, blend_mode::screen,
+    {"electric-cyan", "#22F0FF", 0.58, 0.7, blend_mode::multiply, {}, 0},
+    {"hot-magenta", "#FF1F8F", 0.55, 0.68, blend_mode::multiply,
      {1.8, -1.2}, 0.0015},
-    {"acid-amber", "#FFC400", 0.52, 0.62, blend_mode::screen,
+    {"acid-amber", "#FFC400", 0.52, 0.62, blend_mode::multiply,
      {-1.2, 1.5}, -0.001},
-    {"paper-white", "#F7F4EB", 0.9, 0.88, blend_mode::source_over, {}, 0},
+    {"paper-white", "#1F2937", 0.9, 0.88, blend_mode::source_over, {}, 0},
   };
   composition_spec upper
     = roulette_rosette("upper-roulette", {540, 555}, 22, 0, 111);
@@ -488,12 +498,12 @@ make_wild_orbit_moire()
     "Local experimental multi-center orbit and interference study with incompatible symmetry orders.",
     render_profile::experimental, 1400, 1400);
   scene.seed = 0xC0FFEE;
-  scene.background_color = "#08000F";
+  scene.background_color = "#FFFFFF";
   scene.plates = {
-    {"violet", "#9D4EDD", 0.65, 0.74, blend_mode::screen, {}, 0},
-    {"lime", "#B8F500", 0.58, 0.62, blend_mode::screen,
+    {"violet", "#9D4EDD", 0.65, 0.74, blend_mode::multiply, {}, 0},
+    {"lime", "#B8F500", 0.58, 0.62, blend_mode::multiply,
      {1.3, 0.7}, 0.001},
-    {"orange", "#FF5A1F", 0.62, 0.66, blend_mode::screen,
+    {"orange", "#FF5A1F", 0.62, 0.66, blend_mode::multiply,
      {-0.8, -1.1}, -0.0013},
   };
   constexpr std::array<point, 4> centers {
@@ -538,12 +548,12 @@ make_wild_registration_slip()
     "Local experimental asymmetric bands, open roulette cycles, and deliberate color-plate registration slip.",
     render_profile::experimental, 1920, 1080);
   scene.seed = 707070;
-  scene.background_color = "#05070A";
+  scene.background_color = "#FFFFFF";
   scene.plates = {
-    {"blue", "#1F7AFF", 0.62, 0.72, blend_mode::screen, {}, 0},
-    {"red", "#FF334F", 0.58, 0.68, blend_mode::screen,
+    {"blue", "#1F7AFF", 0.62, 0.72, blend_mode::multiply, {}, 0},
+    {"red", "#FF334F", 0.58, 0.68, blend_mode::multiply,
      {7, -4}, 0.005},
-    {"yellow", "#FFD23F", 0.54, 0.58, blend_mode::screen,
+    {"yellow", "#FFD23F", 0.54, 0.58, blend_mode::multiply,
      {-5, 6}, -0.004},
   };
   composition_spec band;
@@ -637,16 +647,16 @@ make_wild_duotone_111_variation(const std::size_t variation)
     "Local 1080p experimental study retaining the accepted wild-01 roulette and Lissajous pattern vocabulary. The exact source strings duotone and 111 overlap as one centered composite glyph with distinct weave strategies.",
     render_profile::experimental, 1920, 1080);
   scene.seed = 11'100 + variation;
-  scene.background_color = "#02030A";
+  scene.background_color = "#FFFFFF";
   scene.plates = {
-    {"electric-cyan", "#22F0FF", 0.72, 0.58, blend_mode::screen, {}, 0},
-    {"hot-magenta", "#FF1F8F", 0.68, 0.55, blend_mode::screen,
+    {"electric-cyan", "#22F0FF", 0.72, 0.58, blend_mode::multiply, {}, 0},
+    {"hot-magenta", "#FF1F8F", 0.68, 0.55, blend_mode::multiply,
      {1.8, -1.2}, 0.0015},
-    {"acid-amber", "#FFC400", 0.64, 0.48, blend_mode::screen,
+    {"acid-amber", "#FFC400", 0.64, 0.48, blend_mode::multiply,
      {-1.2, 1.5}, -0.001},
     {"identity-number", "#FF1F8F", 1.15, 0.9,
      blend_mode::source_over, {}, 0},
-    {"paper-white", "#F7F4EB", 1.1, 0.94,
+    {"paper-white", "#1F2937", 1.1, 0.94,
      blend_mode::source_over, {}, 0},
   };
 
@@ -818,14 +828,14 @@ make_wild_orbit_moire_symmetry(const std::size_t option)
     "Local 1080p transparent orbit and moire study. Nested sizes expose rather than occlude symmetric layers.",
     render_profile::experimental, 1920, 1080);
   scene.seed = 0xC0FFEE + option;
-  scene.background_color = "#08000F";
+  scene.background_color = "#FFFFFF";
   scene.plates = {
     {"transparent-violet", "#9D4EDD", 0.72, 0.31,
-     blend_mode::screen, {}, 0},
+     blend_mode::multiply, {}, 0},
     {"transparent-lime", "#B8F500", 0.62, 0.25,
-     blend_mode::screen, {1.3, 0.7}, 0.001},
+     blend_mode::multiply, {1.3, 0.7}, 0.001},
     {"transparent-orange", "#FF5A1F", 0.68, 0.28,
-     blend_mode::screen, {-0.8, -1.1}, -0.0013},
+     blend_mode::multiply, {-0.8, -1.1}, -0.0013},
   };
 
   std::vector<point> centers;
@@ -865,10 +875,10 @@ make_wild_registration_slip_left_expression()
   scene.seed = 707'071;
   scene.plates.push_back(
     {"violet-veil", "#B44CFF", 0.82, 0.34,
-     blend_mode::screen, {2, -1}, 0.001});
+     blend_mode::multiply, {2, -1}, 0.001});
   scene.plates.push_back(
-    {"white-trace", "#F7F4EB", 1.05, 0.3,
-     blend_mode::screen, {-1, 2}, -0.001});
+    {"white-trace", "#374151", 1.05, 0.3,
+     blend_mode::multiply, {-1, 2}, -0.001});
 
   composition_spec sweep;
   sweep.id = "left-expressive-sweep-a";
@@ -934,7 +944,73 @@ write_scene(const fs::path& output_directory, const std::string& filename,
   std::ofstream output(output_path, std::ios::binary);
   if (!output)
     throw std::runtime_error("cannot open output: " + output_path.string());
-  output << render_svg(scene, frame_index);
+  scene_spec review = scene;
+  const bool transition = filename.starts_with("transition-frame-");
+  const bool inscription = filename.starts_with("variant-inscription-");
+  const bool orbit = filename.starts_with("variant-data-orbit-");
+  const std::size_t profile_index = scene.profile == render_profile::compatibility ? 0
+    : scene.profile == render_profile::accessible_static ? 1
+    : scene.profile == render_profile::motion_safe ? 2 : 3;
+  const std::size_t variant = transition ? frame_index / 6 : profile_index;
+  // Five chronological frames span 0.10..0.40; PDF pages sort by filename.
+  const double opacity = transition ? 0.1 + 0.075 * variant : 0.3 + 0.1 * profile_index;
+  if (transition || inscription)
+    {
+      review.inscriptions.clear();
+      review.description = "Lowercase Atkinson Hyperlegible typography: size, alignment, location and opacity experiments.";
+      for (auto& plate : review.plates) plate.opacity = opacity;
+    }
+  if (orbit)
+    {
+      constexpr std::array<std::size_t,4> indices{0,3,6,9};
+      for (std::size_t i=0; i<review.plates.size(); ++i)
+        {
+          auto& plate = review.plates[i];
+          const auto rgb = svg::esri_m_bathymetry_palette[indices[i%indices.size()]];
+          std::ostringstream hex;
+          hex << '#' << std::hex << std::setfill('0') << std::setw(2) << rgb.r
+              << std::setw(2) << rgb.g << std::setw(2) << rgb.b;
+          plate.color = hex.str();
+          plate.id = "bathymetry-" + std::to_string(indices[i%indices.size()]);
+          plate.stroke_width = 0.44; // 0.33 pt at 96 px/in.
+        }
+      review.description += " Palette: esri_m_bathymetry (indices 0, 3, 6, 9).";
+    }
+  if (filename.starts_with("wild-01-"))
+    {
+      for (auto& plate : review.plates) plate.opacity *= 0.5;
+      review.inscriptions.clear();
+      review.title = "Wild plate 01 / text-free geometry / " + filename;
+      review.description = "Wild roulette and Lissajous study without lettering; all ink opacities halved.";
+    }
+  std::string svg = render_svg(review, frame_index);
+  if (transition || inscription)
+    {
+      constexpr std::array<double,5> sizes{48,82,126,68,104};
+      constexpr std::array<std::string_view,5> anchors{"start","middle","end","start","middle"};
+      const double x = anchors[variant] == "start" ? scene.width * 0.08
+        : anchors[variant] == "end" ? scene.width * 0.92 : scene.width / 2;
+      const double y = transition ? std::array<double,5>{970,180,1020,1120,820}[variant]
+        : std::array<double,4>{240,820,480,740}[variant];
+      const double size = sizes[variant] * (transition ? 1 : 1.8);
+      const std::string label = "<g font-family=\"Atkinson Hyperlegible, sans-serif\">"
+        "<text x=\"" + std::to_string(x) + "\" y=\"" + std::to_string(y)
+        + "\" text-anchor=\"" + std::string(anchors[variant]) + "\" font-size=\"" + std::to_string(size)
+        + "\" fill=\"#193b55\" opacity=\"" + std::to_string(opacity) + "\">duotone</text>"
+        + (inscription ? "<text x=\"" + std::to_string(scene.width-x) + "\" y=\"" + std::to_string(950-y*0.25)
+            + "\" text-anchor=\"middle\" font-size=\"" + std::to_string(size*1.2)
+            + "\" fill=\"#B02064\" opacity=\"" + std::to_string(opacity) + "\">111</text>" : "")
+        + "<text x=\"30\" y=\"45\" font-size=\"22\" fill=\"#193b55\">atkinson hyperlegible / lowercase / opacity="
+        + detail::format_number(opacity) + "</text>"
+        "<text x=\"30\" y=\"" + std::to_string(scene.height-35) + "\" font-size=\"18\" fill=\"#193b55\">size="
+        + detail::format_number(size) + " | align=" + std::string(anchors[variant])
+        + " | x=" + detail::format_number(x) + " | y=" + detail::format_number(y) + "</text></g>";
+      svg.insert(svg.rfind("</svg>"),label);
+    }
+  if (orbit)
+    svg.insert(svg.rfind("</svg>"), "<text x=\"40\" y=\"45\" font-family=\"Atkinson Hyperlegible, sans-serif\" font-size=\"25\" fill=\"#193b55\">"
+      + detail::escape_xml(scene.title) + " | esri_m_bathymetry | 0.33 pt</text>");
+  output << svg;
   if (!output)
     throw std::runtime_error("cannot write output: " + output_path.string());
 }

@@ -1,0 +1,38 @@
+<map id="izzi::guilloche::meta::mosque" name="izzi::guilloche::meta::mosque">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,197,139,234"/>
+<area shape="poly" id="edge15_Node000001_Node000001" title=" " alt="" coords="38,197,35,188,41,179,53,173,72,171,92,173,105,181,101,183,91,178,72,176,54,178,44,183,41,188,43,197"/>
+<area shape="rect" id="Node000002" href="$structizzi_1_1guilloche_1_1meta_1_1drawing.html#ae32ea417028bf9d6d32f32caea12030b" title=" " alt="" coords="578,296,711,333"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="138,207,219,203,318,204,425,214,478,224,529,238,573,259,612,286,607,286,571,263,527,244,477,230,424,220,318,209,219,208,140,212"/>
+<area shape="rect" id="Node000005" href="$namespaceizzi_1_1guilloche_1_1meta.html#aa687f1c7e73f4cd44cff36b05b0bdfea" title=" " alt="" coords="382,85,515,122"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="89,195,131,159,157,141,186,127,231,113,278,104,368,99,364,102,278,109,232,118,188,131,160,145,134,163,93,199"/>
+<area shape="rect" id="Node000007" href="$structizzi_1_1guilloche_1_1meta_1_1drawing.html#a38fba9384e5f45ae1c49d575b82ea874" title=" " alt="" coords="187,141,320,178"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="132,195,179,181,175,185,135,199"/>
+<area shape="rect" id="Node000008" href="$structizzi_1_1guilloche_1_1meta_1_1drawing.html#ad45614a76485d3fced78c028c3ab166e" title=" " alt="" coords="187,304,320,341"/>
+<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="103,232,188,283,208,295,202,296,185,287,104,237"/>
+<area shape="rect" id="Node000010" href="$namespaceizzi_1_1guilloche_1_1meta.html#a109b5a7d39fe34d5d3907d6c68c89c59" title=" " alt="" coords="368,253,528,277"/>
+<area shape="poly" id="edge14_Node000001_Node000010" title=" " alt="" coords="138,225,187,232,355,253,351,257,186,237,140,230"/>
+<area shape="rect" id="Node000011" href="$namespaceizzi_1_1guilloche_1_1meta.html#a7b9dd8f2600dd0006997ef2fd3969ab5" title=" " alt="" coords="187,29,320,66"/>
+<area shape="poly" id="edge16_Node000001_Node000011" title=" " alt="" coords="84,196,126,142,154,111,185,83,203,72,200,76,188,87,158,115,130,145,89,198"/>
+<area shape="rect" id="Node000012" href="$namespaceizzi_1_1guilloche_1_1meta.html#a6df3f5a85f0bf0357fb2c7d2a6dcf3de" title=" " alt="" coords="187,399,320,435"/>
+<area shape="poly" id="edge19_Node000001_Node000012" title=" " alt="" coords="89,232,189,351,224,388,218,388,185,355,87,237"/>
+<area shape="rect" id="Node000003" href="$namespaceizzi_1_1guilloche_1_1meta.html#a313c5749e9728fdfd0a5c5eb146c8554" title=" " alt="" coords="761,296,894,333"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="711,312,748,314,742,315,712,317"/>
+<area shape="rect" id="Node000004" href="$namespacesvg.html#ac10e7d47d031b121174fc0e65232980f" title="Convert point_2t to string." alt="" coords="942,302,1037,326"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="894,312,929,314,924,315,895,317"/>
+<area shape="rect" id="Node000006" href="$namespaceizzi_1_1guilloche_1_1detail.html#a12df44d23df642a525d8f781094d148d" title=" " alt="" coords="576,85,713,122"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="514,101,563,103,558,105,516,106"/>
+<area shape="poly" id="edge7_Node000007_Node000002" title=" " alt="" coords="320,154,368,156,422,162,477,174,530,195,558,213,584,235,625,284,620,283,581,239,555,217,527,199,476,179,421,167,368,161,322,159"/>
+<area shape="poly" id="edge8_Node000007_Node000005" title=" " alt="" coords="318,138,370,125,365,128,321,143"/>
+<area shape="poly" id="edge10_Node000008_Node000002" title=" " alt="" coords="320,318,565,314,560,317,321,324"/>
+<area shape="rect" id="Node000009" href="$structizzi_1_1guilloche_1_1meta_1_1drawing.html#aa4b5f94b82885b81af8741ce9fe18cdf" title=" " alt="" coords="382,352,515,389"/>
+<area shape="poly" id="edge11_Node000008_Node000009" title=" " alt="" coords="320,336,369,350,364,351,320,341"/>
+<area shape="poly" id="edge13_Node000008_Node000010" title=" " alt="" coords="317,301,393,281,388,283,319,306"/>
+<area shape="poly" id="edge12_Node000009_Node000002" title=" " alt="" coords="514,349,566,337,561,338,516,354"/>
+<area shape="poly" id="edge17_Node000011_Node000005" title=" " alt="" coords="319,64,370,80,365,82,320,69"/>
+<area shape="poly" id="edge18_Node000011_Node000011" title=" " alt="" coords="219,29,217,20,222,11,234,5,253,3,274,5,287,13,282,15,272,10,253,8,236,10,226,15,222,20,225,29"/>
+<area shape="poly" id="edge20_Node000012_Node000002" title=" " alt="" coords="320,421,367,422,420,420,475,413,527,399,574,373,612,345,617,343,577,378,529,403,476,418,421,426,367,428,321,426"/>
+<area shape="poly" id="edge21_Node000012_Node000009" title=" " alt="" coords="320,398,369,389,364,391,321,404"/>
+<area shape="poly" id="edge23_Node000012_Node000012" title=" " alt="" coords="220,397,217,389,222,380,234,374,253,372,274,374,287,383,282,383,272,380,253,377,236,379,226,384,222,390,224,399"/>
+<area shape="rect" id="Node000013" href="$namespaceizzi_1_1guilloche_1_1meta.html#a4a6e5eeec586de2e8c077d655107bc62" title=" " alt="" coords="382,464,515,501"/>
+<area shape="poly" id="edge22_Node000012_Node000013" title=" " alt="" coords="311,433,380,459,375,459,310,439"/>
+</map>

@@ -1,8 +1,25 @@
 # Family: guilloche
 
-Headers: `src/izzi-svg-guilloche.h` (3017 lines),
-`src/izzi-svg-guilloche-json.h` (1828 lines),
-`src/izzi-svg-graph-guilloche.h` (923 lines).
+Headers: `src/izzi-svg-guilloche.h`, `src/izzi-svg-guilloche-json.h`,
+`src/izzi-svg-graph-guilloche.h`, `src/izzi-svg-lenticular.h` and
+`src/izzi-svg-lenticular-json.h`.
+
+The [native enrichment guide](../generative_patterns.md#native-guilloche-patterns) documents the
+September implementation: asymmetric contours and waves, basketweave,
+hobnail, three engraving variants, foliate/botanical/reef forms, Islamic
+geometric arabesque, graphic water, optical controls and lenticular export.
+Its [123-plate gallery](guilloche-enrichment/index.html) includes strict
+authoring examples, small-size reviews and two calibration packets.
+
+The [September 29 film studies](../generative_patterns.md#film-studies-and-review-4--2026-09-29)
+add a separate native recipe layer in `src/izzi-svg-guilloche-meta.h`
+(`izzi::guilloche::meta`). The completed main and moiré/illusion reels,
+78 review stills and 44-page PDF are linked from the
+[production record](../development/sessions/20260929.meta_guilloche_2.md).
+Review 4 includes the latest human-directed plant, coral and coffer
+revisions, 1–4 width comparisons, strict Izzi hues and complete-background
+exits. Technical verification passed; latest-artwork and full human
+playback/listening review remain open.
 
 ## API surface
 
@@ -23,37 +40,88 @@ Headers: `src/izzi-svg-guilloche.h` (3017 lines),
   optional top-level `pattern {class, family}` enum object.
 - Graph synthesis: `izzi::graph::dual_view_style/spec/result`,
   `graph_composite_spec`, and `resolve_dual_view_guilloche(...)` with
-  optional composite backgrounds for every pattern family.
+  optional composite backgrounds. `make_guilloche_composite` has explicit
+  geometry cases for the original nine families and every new enrichment
+  family; latent-image and Dutch family values still fall through to its
+  historical rosette default.
 
 ## Config
 
 Scene JSON authoring and resolved schemas; profiles and density controls.
+Basketweave additionally accepts optional `width_ratios` with one through
+four positive multipliers of `band_width`; omitted means uniform width.
+See [crossing and clearance rules](../generative_patterns.md#basketweave-and-hobnail).
+Film recipes use the separate `izzi.meta-guilloche-recipe/1` bridge format.
 
 ## Tests and examples
 
 - Tests: `tests/guilloche.cc`, `tests/guilloche-scene-json.cc`,
   `tests/guilloche-profile-companions.cc`, `tests/guilloche-odr/*`,
-  `tests/graph-guilloche-synthesis.cc`.
+  `tests/graph-guilloche-synthesis.cc`, `tests/guilloche-enrichment.cc`,
+  `tests/guilloche-enrichment-schema.py`, `tests/guilloche-meta.cc`.
 - Examples: `examples/guilloche-plates.cc`,
   `examples/guilloche-glyph-v3.cc`,
   `examples/guilloche-transition-frames.cc`,
   `examples/guilloche-capability-plates.cc` (nine accepted categories plus
   three additive P1 and two additive P2 reference-guided categories, with
-  four additive P3 tuning categories, all using
-  four parameter series and three variations per series), and
+  four additive P3 tuning categories: 261 plates, with four base parameter
+  series, extra line-width series for 14 families, and a P2 barleycorn opacity
+  series; three variations per series), and
   `examples/guilloche-latent-plates.cc` (12 additive P5 plates).
 
 ## Usage
 
-- Guilloche v4 title cards and proofs
-  (`docs/visual_workflow/tool_guilloche.md`).
+- [Native film reviews, compact reels and v4 title cards](../visual_workflow/tool_guilloche.md).
 - Portal review: [Guilloche Capability 20260816](https://situationshipin.space/review/media/generation-guilloche-20260816/generation-guilloche-20260816-index.index.html).
 
 ## Assessment
 
-Status: `ASSESSED-FIRST-PASS` (post-pilot).
-Open items: full JSON authoring of the new composition geometries beyond
-the `pattern` enum metadata; lenticular patterns remain deferred.
+Status: `IMPLEMENTED-ENRICHMENT`.
+JSON authoring supports the original nine geometry kinds plus eight new
+kinds and additional flinqué selectors. Explicit `content.kind: "none"`
+and `layout.include_radial_field: false` enable geometry-only scenes.
+The top-level `pattern` object alone remains metadata. Direct generic
+curve/Dutch authoring and the historical latent/Dutch graph fallbacks
+remain separate gaps. Lenticular interlacing, physical-unit export,
+calibration and a software view-index diagnostic are implemented;
+physical lens/print proof has not been performed.
+
+The [September 28 enrichment survey](../development/sessions/20260928.meta_guilloche_survey.md)
+records the source audit and proposals for asymmetric contours, faceted
+hobnail, foliage, water forms, coral and optical treatments, with original
+construction studies and a staged implementation plan. Its human-review
+revision adds three flinqué presets, papyrus/saguaro/willow, expanded reef
+forms, an arabesque category based on Islamic geometric patterns, and
+prioritized basketweave and lenticular stages. The
+[implementation record](../development/sessions/20260928.meta_guilloche_implementation.md)
+tracks the delivered native capabilities and verification. The original
+study sheets remain research evidence.
+The category split is explicit: foliate covers vines, scrolls and vegetal
+forms; arabesque covers Islamic geometry.
+
+## Current example review — 2026-09-21
+
+The native examples now use wider, labeled parameter ranges and deliberately
+coupled wild variations: line lengths and gaps, ripple, multicolor offsets,
+opacity, mirrored/radial arrangements, and bounded fits. The capability suite
+has 261 plates (216 base-series plates plus 42 line-width and three opacity
+plates). These are example-level treatments, not changes to the preset API's
+default values. The P1–P3 ranges below document the original August rollout;
+they are not the current example generator's complete parameter space.
+
+The 12 latent plates likewise include coupled ripple, gap and ink experiments.
+Word plates use lowercase patterned text; selected typography studies use
+Atkinson Hyperlegible. Data-orbit variants use `esri_m_bathymetry` and 0.33 pt
+lines. Transition examples use white paper without endpoint tint/shade
+overlays; only the first radial-iris frame doubles ink opacity, capped at 1.
+
+`make examples-forms` exports registered guilloche control studies in its own
+book. `make examples-composition` exports authored wild scenes and crossovers.
+Both retain plate IDs and local source links outside the artwork viewport.
+See [build/review instructions](../building.md#example-forms-and-compositions) and the
+[completed session record](../development/sessions/20260921.make_examples_review_1.md)
+for exact edits, reproducible checks and old/new pagination. Existing protected
+visual baselines have not been promoted to the revised artwork.
 
 ## P1 tuning
 
@@ -69,7 +137,7 @@ scale. No photographed text or other typographic content is represented.
 | `sunburst` | 120 repeats, 2 ray tiers, inner-radius fraction `0.18`, tier scale step `0.035`, and 2 ray samples | Leaves an annular center opening and uses close, interleaved ray spacing while keeping the path and point cost low. |
 | `band_guilloche` | fundamental frequency `12`, harmonics `(2, 0.28)` and `(3, 0.12)`, 11 lines, phase step `0.16`, normal-offset ratio `0.20`, 5 rows, automatic row spacing of `4.5` amplitudes, and 384 samples | Forms repeated, tightly spaced loop bands at canvas scale. The centerline scale is fixed at `1`, so the requested span is interpreted directly instead of being multiplied a second time. |
 
-The additive P1 capability series use these ranges:
+The original August P1 capability series used these ranges:
 
 - rosette symmetry `8/12/16`, density `7/11/15`, scale
   `0.30/0.38/0.46` of the canvas extent, and phase `0/0.035/0.07`;
@@ -103,7 +171,7 @@ signatures, and other typographic elements are not represented.
 | `fish_scale` | 36 rows by 28 columns; width `1`, height `0.72`; overlap `0.44`; stagger `0.5`; seam depth `0.12`; phase `0`; 48 samples | Broad, shallow scales overlap by nearly half a cell height. Alternating half-cell rows suppress vertical channels, while the bowed return seam gives each closed scale a shallow relief edge. |
 | `barleycorn` | 26 rows by 40 columns; width `0.64`, height `1`; overlap `0.18`; stagger `0.5`; relief `0.65`; phase `0`; 48 samples | Narrow vertical grains form a dense staggered field. Moderate row overlap closes horizontal gaps, and the relief exponent sharpens the four extrema from an ellipse toward a pointed engraved cell. |
 
-The additive P2 capability series use these review ranges:
+The original August P2 capability series used these review ranges:
 
 - fish-scale stagger `0.40/0.50/0.60`, density
   `28x22/36x28/44x34`, cell size `0.032/0.040/0.048` of the canvas
@@ -147,7 +215,7 @@ signatures, or other typography is represented.
 | `multicolor_line` | 17 lines, spacing `0.006` of span, curvature `0.12` of span, half-cycle curvature, four-stop smoothstep ramp, screen blend, 160 samples | Forms a close bowed iris transition; interpolation distributes the full color ramp across the line family rather than repeating discrete stops. |
 | `flinque` | 96 rays, 2 tiers, tier scale step `0.035`, tint opacity `0.18`, overlay-radius fraction `0.86`, 2 samples per ray | Keeps the translucent tint inside the radial perimeter so the engraved ray edge remains visible. |
 
-The additive P3 capability series use these review ranges:
+The original August P3 capability series used these review ranges:
 
 - medallion rays `48/72/96`, ring count `4/6/8`, radius
   `0.30/0.36/0.42` of the canvas extent, and inset phase
@@ -241,10 +309,12 @@ and normal scene resource estimation charges every path and sampled point
 before resolution.
 
 `examples/guilloche-latent-plates.cc` reuses one bounded base scene and emits
-four series with three variations each: angle magnitude
-`0.12/0.20/0.28`, line spacing `8/6/4`, span
-`0.68/0.80/0.92` of canvas extent, and phase
-`-0.08/0/0.08` radians. Cell size remains `72` and samples remain `8`.
+four series with three variations each. Current ranges are angle magnitude
+`0.05/0.40/0.85`, line spacing `24/9/3`, span
+`0.30/0.60/0.86` of canvas extent, and phase
+`-0.65/0/0.65` radians. Cell size remains `72` and samples remain `8`.
+Ink opacity `0.3/0.5/0.7`, stroke width `0.5/1.7/4`, ripple, contour gaps and
+three inks are intentionally coupled to the variants and labeled on the frame.
 
 The supplied photographs informed only the use of fine parallel engraved
 bands and local direction changes. No photographed text, numbers, serials,
@@ -281,8 +351,10 @@ geometry, spacing, hierarchy, proportions, texture, frames, transitions, and
 direction changes; no photographed text, numbers, serials, signatures, or
 other typographic content is represented.
 
-The sole remaining open item for this round is lenticular arrays, which
-remain deferred.
+Lenticular arrays were deferred in the P1–P5 round. The
+[September 28 human-review plan](../development/sessions/20260928.meta_guilloche_survey.md#9-staged-implementation)
+now includes them as the early L1 implementation stage, with interlacing,
+physical-scale metadata and calibration output.
 
 ## Stage 4 — Dutch lighthouse radiate
 
@@ -310,7 +382,9 @@ modulation producing the interlaced looping treatment. Keeping the layers on
 separate plates permits independent color, stroke width, registration,
 rotation, opacity, and blend review.
 
-`examples/guilloche-dutch-review.cc` emits a single 4800 by 2880 grid.
+`examples/guilloche-dutch-review.cc` emits a single 4896 by 3100 review grid.
+The underlying 960-square cells are fitted, including circle extents, with
+outer padding, a heading and cell/stroke labels; no geometry is cropped.
 Columns use stroke weights `0.5`, `1`, `2`, `4`, and `8`. Row 1 repeats the
 black/white reference parameters. Row 2 explores independent per-layer ray
 counts (`brown_rays` vs `blue_rays`) and radii (`brown_extent_fraction` vs
@@ -359,8 +433,9 @@ weight, registration, rotation, opacity, and blend remain scene concerns.
 
 `examples/guilloche-dutch-stage5-review.cc` emits six 2x 3-by-5 grids —
 `gx1`, `gx2`, `gx3`, `gx4g1`, `gx4g2`, and `gx5` — matching the accepted
-stage-4 v3 plate treatment. Each grid is 4800 by 2880, each cell is 960
-square, and the column stroke weights are `0.5`, `1`, `2`, `4`, and `8`.
+stage-4 v3 plate treatment. Each fitted review grid is 4896 by 3100, with
+960-square cells and additional outer/title space. Column stroke weights are
+`0.5`, `1`, `2`, `4`, and `8`; geometry is fitted inside each cell and labeled.
 Row 1 repeats each builder's default tuning with black and white reference
 plates; GX1 and GX2 are single-layer and therefore use black only. Row 2 uses
 deterministic per-cell seeds, records the resolved tuning values in scene
@@ -393,3 +468,200 @@ and optional PNG review renders are local review artifacts; portal
 publication, baseline promotion, accessibility claims, and visual acceptance
 remain pending explicit human review. Deterministic grid hashes are checked
 separately from that human gate.
+
+## Stage 6 — Rectified Dutch security panel
+
+Stage 6 adds an opt-in `elliptic_loop_spec` and
+`make_dutch_security_panel(origin, width, height, ink_plate, tuning)`.
+The existing Dutch builders retain their geometry and defaults. The new
+builder returns named field, connector, rosette and cartouche compositions;
+`origin` is the panel's center before `center_y` placement. It does not depend
+on a photograph, font, paper effect or reference-specific lettering.
+
+An elliptic loop follows the carrier `(a cos(t), b sin(t))`, with bounded
+normal displacement `A_n (cos(k t + phase) + secondary cos(2 k t + 2 phase))`
+and independent tangential displacement `A_t sin(k t + phase)`. Unit tangent
+and normal vectors are evaluated in final drawing coordinates. Axes and
+amplitudes use drawing units; phases use radians. Integer cycles and an exact
+repeated endpoint close the curve. Adjacent opposite phases create the
+alternating lens/diamond field. Overlapping outer, inner and aperture loop carriers form each
+connector; explicit apertures and hatching belong to the presentation layer.
+Rational roulette webs, floral cores and fine rims form the terminals.
+
+| Loop control | Bounds / default |
+|---|---|
+| `x_radius`, `y_radius` | `(0, 8192]`; 120, 60 |
+| `normal_amplitude` | `[0, 2048]`; 4 |
+| `tangent_amplitude` | `[-2048, 2048]`; 6 |
+| `cycles` | integer `[1, 256]`; 48 |
+| `phase` | finite radians; 0 |
+| `secondary` | `[-0.5, 0.5]`; 0 |
+| `samples` | at most 32768; at least `32 * cycles * (secondary != 0 ? 2 : 1)`; 4096 |
+
+The strict JSON selector is `layout.geometries[].kind = "elliptic_loop"`.
+It accepts the controls above plus `id`, `origin`, `plate_index` (0–7),
+`strands` (1–128) and `phase_step`. Unknown controls are rejected. Resolved
+geometry records preserve all controls in `parameters`, which can be copied
+into an authoring geometry with its ID and origin. Profile conversion retains
+the sampling floor while accessible output thins families. The schema checks
+scalar bounds; native validation additionally checks the frequency-dependent
+sampling requirement and aggregate allocation budgets.
+
+`dutch_panel_tuning` uses fractions of panel width except `center_y`, `oval_y`
+and `connector_height`, which use height. Width and height must each be in
+`[1, 4096]` drawing units. Defaults fit a landscape panel, with field spacing
+0.0065, field aspect 0.82, 112 contours, 96 cycles and 8192 samples. The field
+has independently authored normal/tangent amplitudes, second harmonic,
+phase progression and extent. `show_field`, `show_connectors`,
+`show_rosettes` and `show_cartouche` independently control components.
+
+| Panel controls | Accepted bounds |
+|---|---|
+| `field_contours`, `field_cycles` | 1–192, 1–128 |
+| `field_spacing`, `field_aspect` | 0.001–0.009, 0.2–1.5 |
+| `field_normal`, `field_tangent`, `field_secondary` | 0–0.02, ±0.02, ±0.5 |
+| `center_y`, `oval_x`, `oval_y` | 0.2–0.8, 0.05–0.2, 0.05–0.25 |
+| `terminal_offset`, `rosette_radius` | 0.2–0.38, 0.02–0.1 |
+| `rosette_fixed`, `rosette_rolling` | 3–64; 1–24 and less than fixed radius |
+| `connector_strands`, `connector_width`, `connector_height` | 1–32, 0.04–0.15, 0.02–0.15 |
+| `samples` | 4096–16384 and at least `64 * field_cycles` |
+
+The example supplies panel clipping, positive apertures, field knockouts,
+vector blackletter, constructed engraved `1000`, and a separate paper-light
+layer. It emits one faithful candidate and ten structural variations:
+chromatic fault, tidal ellipse, eclipse cartouche, rosette storm, braided
+serpent, faceted mint, density gravity, baroque reef, shattered register and
+radial transposition. These change registration, flow, negative space,
+rosette multiplicity, ribbon spine, carrier shape, density, organic growth,
+sector continuity and bilateral/radial composition respectively.
+
+```sh
+make guilloche-dutch-stage6-review
+make guilloche-dutch-stage6-check
+make guilloche-check
+```
+
+The output inventory under `outputs/ad-hoc/guilloche.dutch-stage6/` contains
+11 native SVGs and 11 PNGs, each 4000 pixels wide with the measured aspect
+ratio. The manifest records complete controls, component inventories,
+palettes, stroke widths, source/asset/output hashes, compiler and renderer.
+Geometry sampling is independent of export resolution. All native scenes and
+presentation SVGs stay under 20,000 paths, 2,000,000 points and 64 MiB.
+Review sheets combine aspect-preserving raster previews rather than exceeding
+scene budgets by embedding multiple full native scenes.
+
+See the reference fixtures and workflow
+and [execution record](../development/sessions/20261025.dutch_guilloche_stage_6.md).
+The reconstructed layout meets the proposed major-center target, but the
+field's local rhythm, rosette topology, connector transitions, numeral
+engraving and paper wear remain approximations. The vector lettering preserves
+untranscribed shapes; it is not a claim to have established every word.
+Automated checks establish technical validity and determinism, not visual
+acceptance. Historical accepted baselines are never promoted by these targets.
+
+## Stage 7 — Scalloped medallion and scroll frame
+
+Stage 7 adds `contour_loop_spec` and
+`make_dutch_scroll_medallion(origin, width, height, ink_plate, tuning)`.
+The corrected source is rotated **180 degrees** before rectification. Its
+native composition has five scalloped bands, four cardinal and four diagonal
+crown motifs, a woven floral center, four tapered ribbons, paired cartouches
+and four scroll terminals. Reference-specific vector outlines supply the `50`,
+paragraph, serial, monograms and date; no photograph or installed font is
+needed by the C++ generator.
+
+For a carrier radius `R(t) = radius * (1 + sum(a*cos(m*t+phase)))`, evaluate
+`C(t) = R(t)*(x_scale*cos(t), y_scale*sin(t))` in SVG's downward-positive y
+coordinates. `T = C'/|C'|` and `N = (T.y,-T.x)`. The loop adds
+`normal_amplitude * (cos(q)+secondary*cos(2*q))*N + tangent_amplitude*sin(q)*T`,
+where `q = cycles*t + phase + family_phase + phase_modulation*sin(phase_frequency*t)`.
+Final rotation and the ordinary
+centerline origin/scale follow. Carrier phase is independent of filament
+phase. To compare the older upward-positive `polar_contour_spec`, negate its
+mode phases and rotation and reverse the traversal.
+
+| Contour-loop control | Bounds / default |
+|---|---|
+| `radius` | `(0,8192]`; 100 |
+| `modes` | At most 8; frequencies 1–64; sum of absolute amplitudes ≤ 0.45; default `{12,.025,0}` |
+| `x_scale`, `y_scale` | 0.05–8; default 1; scaled radius ≤ 8192 |
+| `rotation`, `phase` | Finite radians; 0 |
+| `normal_amplitude`, `tangent_amplitude` | 0–2048 and ±2048; defaults 8 and 4 |
+| `cycles`, `secondary` | 1–256 and ±0.5; defaults 96 and 0 |
+| `phase_modulation`, `phase_frequency` | ±16 radians and 1–64; defaults 0 and 8 |
+| `samples` | Up to 32768; default 8192; minimum `32*(max(1,mode frequencies)+(cycles+ceil(abs(phase_modulation)*phase_frequency))*(secondary != 0 ? 2 : 1))` |
+
+The strict JSON geometry kind is `contour_loop`. Additional fields are `id`,
+`origin`, `plate_index`, `strands` and `phase_step`. Resolved records preserve
+all controls; profile conversion preserves sampling while thinning families.
+Schema validation checks structural/scalar bounds, and native validation
+checks carrier regularity, scaled radius, frequency-dependent sampling and
+aggregate budgets. The native review catalog exposes `contour-loop` studies.
+
+`dutch_scroll_medallion_tuning` uses fractions of panel width except `center_y`,
+which uses height. Defaults include radius .113, ring step .019, band width
+.018, 12 scallops, 88 cycles, two strands, .004 ribbon pitch and 8192 samples.
+Bands, crown and frame have independent visibility switches. The builder
+returns named compositions; the example owns masks, ribbon/frame outlines,
+typography and capture presentation. Pale filaments and numeral strokes are
+knockouts exposing the paper. An additional mask keeps crown rims from showing
+through the numeral and band openings.
+
+The source-specific procedural example overrides those defaults with five
+measured separators: **19 scallops with eight-cycle phase modulation**, expanded
+into seven carrier modes. Eight phased strands weave the four outer bands;
+the inner band and floral core have separate loop counts. The fan fields use
+a boundary-preserving disk transform to move their focal points, and the
+major petals have additional guide arcs and dark needle wedges. Ribbon cells
+follow a curved, nonfolding field. Connected cubic scrolls and source-guided
+monograms replace the initial analytic spirals and damaged lettering traces.
+
+The additional **fidelity master** preserves the source's actual ornament as
+cleaned cubic ink outlines, paired with the restored scrolls, monograms,
+source-inspired paragraph/date lettering and cleaned original serial. It is
+explicitly separate from the procedural reconstruction: no historical machine
+settings are claimed. All visible artwork is vector geometry. The existing
+backdrop is reused unchanged; optional paper work is excluded.
+
+The ten wild variants change geometry and element counts: a ten-part chromatic
+crown; a twelve-part corona; a rounded-square seal with four satellite
+medallions; a six-part tidal frame; sixteen eclipse petals; seven displaced
+bands; interwoven ribbons; six additional botanical forms; twelve separated
+sectors around a registered `50`; and three visible instances of a repeating
+frieze. These are static artworks with recorded seeds and resolved parameters.
+
+```sh
+make guilloche-dutch-stage7-review
+make guilloche-dutch-stage7-check
+```
+
+Open the local stage-7 review.
+It links the fidelity master and eleven procedural SVG/PNG pairs (4000 × 1779
+PNGs), two carrier studies, nine three-way reference detail comparisons,
+calibrated/held-out measurements, geometry-only
+and source-orientation views, two-color knockout probes, and a two-tile seam
+proof. Budget checks include SVG masks/outlines and recursively expanded
+`use` instances: 20,000 paths, two million points and 64 MiB per artwork.
+
+The C-A-Mechelse-1945 script OTF
+has **364 Unicode mappings and 382 glyphs**: A–Z, a–z, 0–9, printable ASCII,
+Latin-1, Latin Extended-A, combining accents, currency and typographic signs.
+It includes proportional and tabular figures, kerning, standard ligatures,
+mark attachment, and optional original word forms through `ss01`. Editable pen
+paths and generated outlines distinguish source-observed characters from
+authored extensions. Actual HarfBuzz/FreeType proofs cover the full font,
+every numeral, every encoded character and the optional facsimile words.
+Version 1.001 adds a revised lowercase `o` with a clear oval counter and a small
+loop through the top, plus a proof comparing it with `a`, pairs and accented forms.
+Version 1.002 refines `r` from the reference's “Amsterdam,” gives both bowls of
+`w` full shaded stems, sharpens `v` and adds its top-loop join, and crosses `0`
+with a fine diagonal and center loop. New proofs show these changes and `0`/`O`.
+
+See the source assets and regeneration workflow
+and [accepted plan / execution record](../development/sessions/20261026.dutch_guilloche_stage_7.md).
+The procedural study remains an approximation. The master retains uncertainty
+from source blur and the editorial reconstruction of lettering. Its separate
+ink-preservation report measures vectorization against the declared cleaned
+mask, rather than claiming that image segmentation proves historical accuracy.
+Earlier fits and their measurements are retained; human visual acceptance is
+distinct from the completed implementation and technical checks.

@@ -1,0 +1,28 @@
+{
+  "schema": "izzi.edge-tension-human-review/1",
+  "date": "2026-10-26",
+  "reviewer": "user",
+  "statement": "review contact sheet looks good",
+  "status": "accepted",
+  "scope": "Sixteen-baseline contact sheet; parameter-grid review remains pending.",
+  "artifact": {
+    "source_path": "build/edge-tension-study/gallery/contact.png",
+    "archived_path": "baseline-contact-approved-20261026.png",
+    "sha256": "df9c4d35320110a971918d90dd178c8aab9578d003f8d2ee9cc351c8b1947629",
+    "bytes": 669427
+  },
+  "technical_verification": "verification-20261026.json",
+  "parameter_grid_review": {
+    "status": "pending",
+    "study_plates": 80,
+    "study_cells": 672,
+    "studies": [
+      "G1",
+      "G2",
+      "D",
+      "C",
+      "P"
+    ]
+  },
+  "baseline_promotion": "No generation-baseline fixture promotion performed."
+}

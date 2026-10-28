@@ -3,7 +3,8 @@
 Headers: `src/izzi-svg-radial.h` (28 lines, aggregate include),
 `src/izzi-svg-radial-base.h` (410 lines), `radial-arc.h` (198),
 `radial-direction-arc-glyph.h` (129), `radial-fill-hexagon.h` (167),
-`radial-kusama.h` (577).
+`radial-kusama.h` (577), and `izzi-svg-radial-swarm-metadata.h` for typed
+alpha60-swarm-metadata adapters.
 
 ## API surface
 
@@ -12,6 +13,8 @@ Headers: `src/izzi-svg-radial.h` (28 lines, aggregate include),
   direction-arc-glyph types, kusama-style fill composition.
 - `svg::graph::radial_orbit_spec` / `radial_dataset` consumed by the graph
   module (from `graph-guilloche.h` usage).
+- `swarm_metadata_kusama_values` and `draw_swarm_metadata_kusama` adapt
+  normalized age, country, and reviewed ethnicity counts to Kusama orbits.
 
 ## Config
 
@@ -24,7 +27,8 @@ glyphs.
   (radial datasets feed graph synthesis), `tests/graph-json.cc`,
   `tests/moire.cc`.
 - Examples: `examples/radial-text-3.cc`, `examples/radial-text-4.cc`,
-  `examples/arc-labels-3.cc`.
+  `examples/arc-labels-3.cc`, and the three
+  `examples/visualization-radial-kusama-swarm-*.cc` metadata views.
 
 ## Usage
 

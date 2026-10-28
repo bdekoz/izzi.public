@@ -1,0 +1,9 @@
+<map id="svg::polyhedral::convex_mesh" name="svg::polyhedral::convex_mesh">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,53,193,77"/>
+<area shape="rect" id="Node000002" href="$namespacesvg_1_1polyhedral.html#af082264401b1c2eb948169be310e5ecb" title=" " alt="" coords="241,5,383,29"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="154,50,244,32,239,34,156,55"/>
+<area shape="rect" id="Node000003" href="$namespacesvg_1_1polyhedral.html#ad2d4d1e858082b4f9e3f3baa5be21658" title=" " alt="" coords="246,53,378,77"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="193,63,233,65,228,66,193,68"/>
+<area shape="rect" id="Node000004" href="$namespacesvg_1_1polyhedral.html#ac77a65f2746b6204a09621df3ab41ee3" title=" " alt="" coords="245,101,379,125"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="155,75,244,97,239,98,155,80"/>
+</map>

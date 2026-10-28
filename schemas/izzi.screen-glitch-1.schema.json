@@ -1,0 +1,700 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://izzi.example/schemas/izzi.screen-glitch-1.schema.json",
+  "title": "Izzi Screen Glitch composition",
+  "description": "Authoring validation for the composition envelope and native receiver/display parameters. Nested film/analog documents, duplicate keys, unique stage IDs, cross-field budgets and runtime capabilities require native validation.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "seed",
+    "backend",
+    "source_identity",
+    "color_policy",
+    "budget",
+    "stages"
+  ],
+  "properties": {
+    "schema": {
+      "const": "izzi.screen-glitch/1"
+    },
+    "seed": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 18446744073709551615
+    },
+    "backend": {
+      "const": "native_svg"
+    },
+    "source_identity": {
+      "type": "string"
+    },
+    "color_policy": {
+      "const": "preserve_srgb_alpha"
+    },
+    "budget": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "paths",
+        "points",
+        "svg_bytes",
+        "stages",
+        "history_frames",
+        "passes"
+      ],
+      "properties": {
+        "paths": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 18446744073709551615
+        },
+        "points": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 18446744073709551615
+        },
+        "svg_bytes": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 18446744073709551615
+        },
+        "stages": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 18446744073709551615
+        },
+        "history_frames": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 18446744073709551615
+        },
+        "passes": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 256
+        }
+      }
+    },
+    "stages": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/stage"
+      }
+    }
+  },
+  "$defs": {
+    "rational": {
+      "type": "array",
+      "prefixItems": [
+        {
+          "type": "integer",
+          "minimum": -9223372036854775808,
+          "maximum": 9223372036854775807
+        },
+        {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 9223372036854775807
+        }
+      ],
+      "items": false,
+      "minItems": 2,
+      "maxItems": 2
+    },
+    "positiveRational": {
+      "type": "array",
+      "prefixItems": [
+        {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 9223372036854775807
+        },
+        {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 9223372036854775807
+        }
+      ],
+      "items": false,
+      "minItems": 2,
+      "maxItems": 2
+    },
+    "stage": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "family",
+        "operation",
+        "version",
+        "clock",
+        "evidence",
+        "profile",
+        "parameters"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9_-]+$"
+        },
+        "family": {
+          "enum": [
+            "film",
+            "vcr",
+            "tv-broadcast",
+            "satellite"
+          ]
+        },
+        "operation": {
+          "enum": [
+            "film-material",
+            "analog-chain",
+            "analog-reception",
+            "native-receiver",
+            "player-buffer",
+            "crt-shutdown"
+          ]
+        },
+        "version": {
+          "const": "1"
+        },
+        "clock": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "scale",
+            "offset",
+            "identity"
+          ],
+          "properties": {
+            "scale": {
+              "$ref": "#/$defs/positiveRational"
+            },
+            "offset": {
+              "$ref": "#/$defs/rational"
+            },
+            "identity": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        "evidence": {
+          "enum": [
+            "recorded_observation",
+            "historical_description",
+            "inferred_mapping",
+            "pending_reference"
+          ]
+        },
+        "profile": {
+          "type": "string"
+        },
+        "parameters": {
+          "type": "object"
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "operation": {
+                "const": "film-material"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "parameters": {
+                "$ref": "#/$defs/film-material"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "operation": {
+                "const": "analog-chain"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "parameters": {
+                "$ref": "#/$defs/analog-chain"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "operation": {
+                "const": "analog-reception"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "parameters": {
+                "$ref": "#/$defs/analog-reception"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "operation": {
+                "const": "native-receiver"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "parameters": {
+                "$ref": "#/$defs/native-receiver"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "operation": {
+                "const": "player-buffer"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "parameters": {
+                "$ref": "#/$defs/player-buffer"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "operation": {
+                "const": "crt-shutdown"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "parameters": {
+                "$ref": "#/$defs/crt-shutdown"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "film-material": {
+      "type": "object",
+      "required": [
+        "schema"
+      ],
+      "properties": {
+        "schema": {
+          "const": "izzi.video-glitch/2"
+        }
+      },
+      "$comment": "Nested engine validation is delegated to the native engine parser; this definition checks its schema tag only."
+    },
+    "analog-chain": {
+      "type": "object",
+      "required": [
+        "schema"
+      ],
+      "properties": {
+        "schema": {
+          "const": "izzi.video-glitch/1"
+        }
+      },
+      "$comment": "Nested engine validation is delegated to the native engine parser; this definition checks its schema tag only."
+    },
+    "analog-reception": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "kind",
+        "amount",
+        "density",
+        "spatial_bandwidth",
+        "temporal_correlation",
+        "frequency",
+        "drift_hz",
+        "burst_spacing",
+        "burst_width",
+        "delay",
+        "gain",
+        "blanking",
+        "echoes",
+        "onset",
+        "duration",
+        "recovery"
+      ],
+      "properties": {
+        "kind": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 4
+        },
+        "amount": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "density": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 4000
+        },
+        "spatial_bandwidth": {
+          "type": "number",
+          "minimum": 0.001,
+          "maximum": 0.15
+        },
+        "temporal_correlation": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 10
+        },
+        "frequency": {
+          "type": "number",
+          "minimum": 0.01,
+          "maximum": 100
+        },
+        "drift_hz": {
+          "type": "number",
+          "minimum": -10,
+          "maximum": 10
+        },
+        "burst_spacing": {
+          "type": "number",
+          "minimum": 0.01,
+          "maximum": 20
+        },
+        "burst_width": {
+          "type": "number",
+          "minimum": 0.001,
+          "maximum": 20
+        },
+        "delay": {
+          "type": "number",
+          "minimum": -0.3,
+          "maximum": 0.3
+        },
+        "gain": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "blanking": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 0.5
+        },
+        "echoes": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 8
+        },
+        "onset": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 3600
+        },
+        "duration": {
+          "type": "number",
+          "minimum": 0.01,
+          "maximum": 3600
+        },
+        "recovery": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 60
+        }
+      }
+    },
+    "native-receiver": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "profile",
+        "policy",
+        "amount",
+        "onset",
+        "duration",
+        "recovery",
+        "burstiness",
+        "columns",
+        "rows",
+        "checkpoint_frames",
+        "frame_rate"
+      ],
+      "properties": {
+        "profile": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 5
+        },
+        "policy": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 3
+        },
+        "amount": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "onset": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 3600
+        },
+        "duration": {
+          "type": "number",
+          "minimum": 0.01,
+          "maximum": 3600
+        },
+        "recovery": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 60
+        },
+        "burstiness": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "columns": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 64
+        },
+        "rows": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 64
+        },
+        "checkpoint_frames": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 1000
+        },
+        "frame_rate": {
+          "type": "number",
+          "minimum": 1,
+          "maximum": 240
+        },
+        "slice_run_blocks": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 64
+        },
+        "damage_persistence_frames": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 1000
+        },
+        "refresh": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2
+        },
+        "displacement_x": {
+          "type": "number",
+          "minimum": -0.3,
+          "maximum": 0.3
+        },
+        "displacement_y": {
+          "type": "number",
+          "minimum": -0.3,
+          "maximum": 0.3
+        },
+        "chroma_damage": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "burst_spacing": {
+          "type": "number",
+          "minimum": 0.01,
+          "maximum": 20
+        },
+        "burst_width": {
+          "type": "number",
+          "minimum": 0.001,
+          "maximum": 20
+        },
+        "hold_after": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 60
+        },
+        "blank_after": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 60
+        },
+        "reacquire_delay": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 60
+        },
+        "detail_amount": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "detail_chroma": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "detail_slices": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "detail_coefficients": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 2
+        },
+        "detail_block_pixels": {
+          "type": "integer",
+          "minimum": 2,
+          "maximum": 64
+        },
+        "detail_orientation": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 1
+        }
+      }
+    },
+    "player-buffer": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "amount",
+        "onset",
+        "duration",
+        "initial_buffer",
+        "throughput",
+        "recovery_throughput",
+        "skip_to_live"
+      ],
+      "properties": {
+        "amount": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "onset": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 3600
+        },
+        "duration": {
+          "type": "number",
+          "minimum": 0.01,
+          "maximum": 3600
+        },
+        "initial_buffer": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 120
+        },
+        "throughput": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 4
+        },
+        "recovery_throughput": {
+          "type": "number",
+          "minimum": 1.01,
+          "maximum": 4
+        },
+        "skip_to_live": {
+          "type": "boolean"
+        }
+      }
+    },
+    "crt-shutdown": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "amount",
+        "onset",
+        "horizontal_decay",
+        "vertical_decay",
+        "beam_decay",
+        "persistence",
+        "black_duration"
+      ],
+      "properties": {
+        "amount": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "onset": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 3600
+        },
+        "horizontal_decay": {
+          "type": "number",
+          "minimum": 0.01,
+          "maximum": 60
+        },
+        "vertical_decay": {
+          "type": "number",
+          "minimum": 0.01,
+          "maximum": 60
+        },
+        "beam_decay": {
+          "type": "number",
+          "minimum": 0.01,
+          "maximum": 60
+        },
+        "persistence": {
+          "type": "number",
+          "minimum": 0.01,
+          "maximum": 60
+        },
+        "black_duration": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 60
+        },
+        "point_duration": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 10
+        },
+        "point_radius": {
+          "type": "number",
+          "minimum": 0.0005,
+          "maximum": 0.05
+        },
+        "point_intensity": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        }
+      }
+    }
+  }
+}

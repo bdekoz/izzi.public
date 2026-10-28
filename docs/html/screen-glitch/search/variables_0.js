@@ -1,0 +1,4 @@
+var searchData=
+[
+  ['amount_0',['amount',['../structsvg_1_1screen__glitch_1_1stage__receipt.html#a4d0ee7b7062adde4054a8c36d8e2713e',1,'svg::screen_glitch::stage_receipt::amount'],['../structsvg_1_1screen__glitch_1_1reception.html#a989da84f4c013363cbd11db70d494df4',1,'svg::screen_glitch::reception::amount'],['../structsvg_1_1screen__glitch_1_1digital__receiver.html#a6bd101ee90df42d9d4a5932bc56eb576',1,'svg::screen_glitch::digital_receiver::amount'],['../structsvg_1_1screen__glitch_1_1player__buffer.html#a2473a54306372175f6c5f76a0f778688',1,'svg::screen_glitch::player_buffer::amount'],['../structsvg_1_1screen__glitch_1_1crt__shutdown.html#afabd375891cbf447c104aefc0f82b1d9',1,'svg::screen_glitch::crt_shutdown::amount'],['../structsvg_1_1screen__glitch_1_1reception__program.html#ab43854bd51ea4253b898ae9611ea6cbd',1,'svg::screen_glitch::reception_program::amount']]]
+];

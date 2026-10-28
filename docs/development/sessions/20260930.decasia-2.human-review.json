@@ -1,0 +1,22 @@
+{
+  "schema": "izzi.decasia-2.human-review/1",
+  "reviews": [
+    {
+      "reviewed_on": "2026-09-30",
+      "reviewer": "human",
+      "verdict": "high pass",
+      "feedback": "human review high pass: film-glitch-complete-horizontal.mkv",
+      "artifact": {
+        "path": "outputs/decasia-2/draft-1/deliveries/film-glitch-complete-horizontal.mkv",
+        "sha256": "26ea2b20542cd6657fa374f68a94c19fc56180642daefd677ea6b3797446ce86",
+        "bytes": 52359298,
+        "orientation": "horizontal",
+        "size": [1280, 720],
+        "frames": 7200,
+        "frame_rate": 30,
+        "duration_seconds": 240
+      },
+      "scope": "Complete horizontal reel, containing twenty chapters across all seven film source groups."
+    }
+  ]
+}

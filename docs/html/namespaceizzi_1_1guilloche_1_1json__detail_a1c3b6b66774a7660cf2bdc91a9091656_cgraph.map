@@ -1,7 +1,15 @@
 <map id="izzi::guilloche::json_detail::serialize_resolved" name="izzi::guilloche::json_detail::serialize_resolved">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,36,168,73"/>
-<area shape="rect" id="Node000002" href="$namespaceizzi_1_1guilloche.html#ae22f9126ef60170c60d517282766d687" title=" " alt="" coords="222,5,338,42"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="168,39,206,33,207,38,169,44"/>
-<area shape="rect" id="Node000003" href="$namespaceizzi_1_1guilloche_1_1json__detail.html#a29ab22672322de9f8c76a82c36ebe8bd" title=" " alt="" coords="216,67,344,103"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="169,65,200,70,200,75,168,70"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,93,168,130"/>
+<area shape="rect" id="Node000002" href="$namespaceizzi_1_1guilloche_1_1detail.html#a5afef41a99f976dbf5000c7e6af56dc2" title=" " alt="" coords="220,5,356,42"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="129,90,232,47,228,51,132,95"/>
+<area shape="rect" id="Node000003" href="$namespaceizzi_1_1guilloche.html#ae22f9126ef60170c60d517282766d687" title=" " alt="" coords="444,63,560,99"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="167,103,429,84,427,89,168,108"/>
+<area shape="rect" id="Node000004" href="$namespaceizzi_1_1guilloche_1_1json__detail.html#ab422257dde35cf30679733fba143fcda" title=" " alt="" coords="216,118,361,167"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="168,121,203,128,198,130,169,127"/>
+<area shape="rect" id="Node000006" href="$namespaceizzi_1_1guilloche_1_1json__detail.html#a29ab22672322de9f8c76a82c36ebe8bd" title=" " alt="" coords="438,185,566,222"/>
+<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="116,128,162,155,216,177,269,189,323,197,425,205,420,206,322,202,268,195,215,182,160,159,115,133"/>
+<area shape="poly" id="edge5_Node000004_Node000003" title=" " alt="" coords="361,119,426,103,431,101,362,124"/>
+<area shape="rect" id="Node000005" href="$namespaceizzi_1_1guilloche_1_1detail.html#a57a89270ad9f33bb651187293f774185" title=" " alt="" coords="409,124,594,161"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="361,140,396,142,391,143,362,145"/>
+<area shape="poly" id="edge6_Node000004_Node000006" title=" " alt="" coords="362,161,425,181,420,181,361,166"/>
 </map>

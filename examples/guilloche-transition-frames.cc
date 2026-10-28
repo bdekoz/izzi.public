@@ -30,7 +30,7 @@ struct transition_preset
 };
 
 constexpr std::array<transition_preset, 10> presets {{
-  {"radial-iris", "Radial iris", "#FFFFFF", "#000000", 92, 96, 8101},
+  {"radial-iris", "Radial iris", "#FFFFFF", "#FFFFFF", 92, 0, 8101},
   {"counter-orbit", "Counter orbit", "#F7F4EB", "#02030A", 86, 92, 8102},
   {"registration-slip", "Registration slip", "#F4F7FF", "#010206", 78, 100, 8103},
   {"moire-bloom", "Moire bloom", "#FFF8F0", "#050008", 96, 84, 8104},
@@ -110,20 +110,20 @@ base_scene(const transition_preset& preset, const std::size_t frame_count)
   scene.id = "guilloche-transition-" + std::string(preset.name);
   scene.title = std::string(preset.title) + " guilloche transition";
   scene.description
-    = "Local 1080p motion study with configurable strong tint and shade endpoints.";
+    = "Local 1080p motion study on white paper; black end-shade overlays disabled for inspection.";
   scene.width = 1920;
   scene.height = 1080;
-  scene.background_color = "#05070D";
+  scene.background_color = "#FFFFFF";
   scene.profile = render_profile::motion_safe;
   scene.seed = preset.seed;
   scene.budget = {20'000, 2'000'000, 80 * 1024 * 1024};
   scene.plates = {
-    {"cyan", "#22E6FF", 1.1, 0.72, blend_mode::screen, {}, 0},
-    {"magenta", "#FF278D", 1.0, 0.68, blend_mode::screen,
+    {"cyan", "#22E6FF", 1.1, 0.72, blend_mode::multiply, {}, 0},
+    {"magenta", "#FF278D", 1.0, 0.68, blend_mode::multiply,
      {1.5, -1}, 0.0012},
-    {"amber", "#FFC928", 0.95, 0.62, blend_mode::screen,
+    {"amber", "#FFC928", 0.95, 0.62, blend_mode::multiply,
      {-1, 1.4}, -0.001},
-    {"white", "#F7F4EB", 1.2, 0.82,
+    {"white", "#1F2937", 1.2, 0.82,
      blend_mode::source_over, {}, 0},
   };
   scene.motion = motion_spec {
@@ -133,12 +133,10 @@ base_scene(const transition_preset& preset, const std::size_t frame_count)
     0.018,
     false,
   };
-  scene.endpoint_tone = endpoint_tone_spec {
-    std::string(preset.start_tint_color),
-    std::string(preset.end_shade_color),
-    preset.start_tint_percent,
-    preset.end_shade_percent,
-  };
+  // Review the actual ink on white paper, without full-frame tint/shade
+  // overlays. Endpoint-tone presets deliberately require a 70–100% shade;
+  // omit the optional effect rather than supplying an invalid zero shade.
+  scene.endpoint_tone.reset();
   return scene;
 }
 
@@ -364,7 +362,81 @@ write_frames(const std::size_t option, const std::size_t frame_count,
       std::ofstream output(output_path, std::ios::binary);
       if (!output)
         throw std::runtime_error("cannot open output: " + output_path.string());
-      output << render_svg(scene, frame);
+      scene_spec review = scene;
+      // Original review page 367 only: double ink opacity, clamped to the
+      // SVG maximum. The other two radial-iris frames keep their own ink.
+      if (option == 1 && frame == 0)
+        {
+          for (auto& plate : review.plates)
+            plate.opacity = std::min(1.0, plate.opacity * 2);
+          review.description += " First-frame ink opacity doubled, capped at 1.";
+        }
+      if (option == 5)
+        {
+          for (auto& ink : review.plates) ink.opacity *= 0.5;
+          auto resolved = resolve(review, frame);
+          constexpr std::array<std::array<double,3>,3> radii {{
+            {460,310,170}, {250,440,170}, {190,300,480}
+          }};
+          constexpr std::array<std::array<point,3>,3> offsets {{
+            {{{0,0},{0,0},{0,0}}},
+            {{{-380,-90},{280,-100},{20,260}}},
+            {{{-250,0},{150,0},{0,200}}}
+          }};
+          const double position=2.0*frame/(frame_count-1);
+          const auto segment=std::min<std::size_t>(1,static_cast<std::size_t>(position));
+          const double amount=position-segment;
+          std::array<double,3> selected_radii{};
+          for (std::size_t ink=0;ink<3;++ink)
+            {
+              double xmin=1e30,ymin=1e30,xmax=-1e30,ymax=-1e30;
+              for (const auto& shape:resolved.paths)
+                if (shape.plate_index==ink)
+                  for (const auto& p:shape.points)
+                    { xmin=std::min(xmin,p.x); xmax=std::max(xmax,p.x);
+                      ymin=std::min(ymin,p.y); ymax=std::max(ymax,p.y); }
+              const point origin{(xmin+xmax)/2,(ymin+ymax)/2};
+              double radius=0;
+              for (const auto& shape:resolved.paths)
+                if (shape.plate_index==ink)
+                  for (const auto& p:shape.points)
+                    radius=std::max(radius,std::hypot(p.x-origin.x,p.y-origin.y));
+              selected_radii[ink]=radii[segment][ink]*(1-amount)+radii[segment+1][ink]*amount;
+              const auto a=offsets[segment][ink], b=offsets[segment+1][ink];
+              const point target{960+a.x*(1-amount)+b.x*amount,540+a.y*(1-amount)+b.y*amount};
+              const double turn=position*(ink+1)*pi/6;
+              for (auto& shape:resolved.paths)
+                if (shape.plate_index==ink)
+                  for (auto& p:shape.points)
+                    {
+                      const double x=(p.x-origin.x)*selected_radii[ink]/radius;
+                      const double y=(p.y-origin.y)*selected_radii[ink]/radius;
+                      p={target.x+x*std::cos(turn)-y*std::sin(turn),
+                         target.y+x*std::sin(turn)+y*std::cos(turn)};
+                    }
+            }
+          double xmin=1e30,ymin=1e30,xmax=-1e30,ymax=-1e30,stroke=0;
+          for (const auto& ink:resolved.plates) stroke=std::max(stroke,ink.stroke_width);
+          for (const auto& shape:resolved.paths)
+            for (const auto& p:shape.points)
+              { xmin=std::min(xmin,p.x); xmax=std::max(xmax,p.x);
+                ymin=std::min(ymin,p.y); ymax=std::max(ymax,p.y); }
+          const double fit=std::min((1820-stroke)/(xmax-xmin),(980-stroke)/(ymax-ymin));
+          for (auto& shape:resolved.paths)
+            for (auto& p:shape.points)
+              p={960+(p.x-(xmin+xmax)/2)*fit,540+(p.y-(ymin+ymax)/2)*fit};
+          resolved.description += " Unequal color radii; concentric, orbiting and eccentric layouts; 50 px margin; half opacity.";
+          std::string svg=render_svg(resolved);
+          const std::string label="<g font-family=\"sans-serif\" fill=\"#172b3a\">"
+            "<text x=\"50\" y=\"28\" font-size=\"22\">roulette convergence | concentric to orbits to eccentric | frame="
+            +std::to_string(frame)+"</text><text x=\"50\" y=\"1060\" font-size=\"18\">nominal radii cyan/magenta/amber="
+            +detail::format_number(selected_radii[0])+"/"+detail::format_number(selected_radii[1])+"/"+detail::format_number(selected_radii[2])
+            +" | opacity=0.36/0.34/0.31 | fit="+detail::format_number(fit)+" | margin=50 px</text></g>";
+          svg.insert(svg.rfind("</svg>"),label);
+          output << svg;
+        }
+      else
+        output << render_svg(review, frame);
       if (!output)
         throw std::runtime_error("cannot write output: " + output_path.string());
     }

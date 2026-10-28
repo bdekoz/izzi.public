@@ -1,0 +1,18 @@
+<map id="izzi::film_decay_detail::fields::lace" name="izzi::film_decay_detail::fields::lace">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,94,147,130"/>
+<area shape="rect" id="Node000002" href="$namespaceizzi_1_1film__decay__detail.html#af6329d62fd88b118c8c3ad6e58147556" title=" " alt="" coords="981,44,1149,68"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="117,91,183,64,269,35,367,12,418,5,468,3,674,3,760,6,845,15,993,41,988,41,844,20,759,11,674,8,468,8,418,11,368,17,270,40,184,69,119,96"/>
+<area shape="rect" id="Node000003" href="$structizzi_1_1film__decay__detail_1_1fields.html#a29ddb1592e867dbe43c465c8357c1089" title=" " alt="" coords="195,94,336,130"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="146,109,182,111,177,113,147,115"/>
+<area shape="rect" id="Node000007" href="$namespaceizzi_1_1film__decay__detail.html#ad9f5cc0c624fbe97f7b23867b4b658ae" title=" " alt="" coords="792,155,933,192"/>
+<area shape="poly" id="edge9_Node000001_Node000007" title=" " alt="" coords="140,128,195,140,355,159,516,169,661,172,779,175,774,175,661,178,515,174,355,164,194,145,139,134"/>
+<area shape="rect" id="Node000004" href="$namespaceizzi_1_1film__decay__detail.html#a2b5bef56a10dbdc26abb9fe995b6b419" title=" " alt="" coords="384,100,554,124"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="336,109,371,112,366,112,337,115"/>
+<area shape="rect" id="Node000005" href="$namespaceizzi_1_1film__decay__detail.html#aed36e6e5ab67071af1d7ecc0fa532248" title=" " alt="" coords="602,94,744,130"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="554,109,589,112,584,112,555,115"/>
+<area shape="poly" id="edge6_Node000005_Node000002" title=" " alt="" coords="739,90,791,79,880,66,968,61,963,62,881,72,792,84,740,96"/>
+<area shape="rect" id="Node000006" href="$namespaceizzi_1_1film__decay__detail.html#a1fc94ea58bbcc663dbdccf5a69bd0f2e" title=" " alt="" coords="792,94,933,130"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="744,109,779,112,774,112,744,115"/>
+<area shape="poly" id="edge7_Node000005_Node000007" title=" " alt="" coords="732,128,792,150,786,149,731,134"/>
+<area shape="poly" id="edge8_Node000007_Node000002" title=" " alt="" coords="909,152,932,140,986,107,1032,78,1037,76,989,112,934,145,910,157"/>
+</map>

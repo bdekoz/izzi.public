@@ -5,6 +5,11 @@ here-lies-trouble transcript and emits a Final Draft 13 screenplay (FDX +
 rendered PDF) and a production-fit assessment against the May 2026 network
 needs document.
 
+For audio/video recognition before this formatting step, use the
+[general-purpose transcription guide](audio_workflow/tool_transcribe_audio.md)
+and its [speech examples](../examples/audio-transcription/README.md).
+Review the ASR text and structure speaker turns before enrichment.
+
 Status: stage-1 plan approved 2026-08-20
 ([`20260820.transcribe_enrichment_stage_1.md`](development/sessions/20260820.transcribe_enrichment_stage_1.md)).
 

@@ -1,0 +1,18 @@
+<map id="izzi::guilloche::meta::draw_illusion" name="izzi::guilloche::meta::draw_illusion">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,33,139,70"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="38,33,35,24,41,15,53,9,72,7,92,9,106,17,100,19,91,14,72,12,54,14,44,19,41,24,43,33"/>
+<area shape="rect" id="Node000002" href="$namespaceizzi_1_1guilloche_1_1meta.html#a81f5f2b2c94fd79d47bc2d09d84a1e46" title=" " alt="" coords="187,33,320,70"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="138,49,174,51,169,53,139,54"/>
+<area shape="poly" id="edge6_Node000002_Node000002" title=" " alt="" coords="220,32,217,24,222,15,234,9,253,7,274,9,287,18,282,18,272,14,253,12,236,14,226,19,222,24,224,34"/>
+<area shape="rect" id="Node000003" href="$structizzi_1_1guilloche_1_1meta_1_1drawing.html#ae32ea417028bf9d6d32f32caea12030b" title=" " alt="" coords="549,5,683,42"/>
+<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="312,30,368,18,453,13,536,17,531,17,453,18,368,24,314,35"/>
+<area shape="rect" id="Node000006" href="$structizzi_1_1guilloche_1_1meta_1_1drawing.html#aa4b5f94b82885b81af8741ce9fe18cdf" title=" " alt="" coords="368,33,501,70"/>
+<area shape="poly" id="edge7_Node000002_Node000006" title=" " alt="" coords="320,49,355,51,350,52,320,54"/>
+<area shape="rect" id="Node000007" href="$namespaceizzi_1_1guilloche_1_1meta.html#a4a6e5eeec586de2e8c077d655107bc62" title=" " alt="" coords="368,95,501,131"/>
+<area shape="poly" id="edge9_Node000002_Node000007" title=" " alt="" coords="310,68,367,89,361,89,309,73"/>
+<area shape="rect" id="Node000004" href="$namespaceizzi_1_1guilloche_1_1meta.html#a313c5749e9728fdfd0a5c5eb146c8554" title=" " alt="" coords="731,5,864,42"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="683,21,718,23,713,24,683,26"/>
+<area shape="rect" id="Node000005" href="$namespacesvg.html#ac10e7d47d031b121174fc0e65232980f" title="Convert point_2t to string." alt="" coords="912,12,1007,36"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="864,21,899,23,894,24,865,26"/>
+<area shape="poly" id="edge8_Node000006_Node000003" title=" " alt="" coords="501,39,537,36,532,37,502,44"/>
+</map>

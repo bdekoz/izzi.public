@@ -1,0 +1,164 @@
+{
+  "schema": "izzi.film-delivery-verification/1",
+  "status": "PASS",
+  "audited_on": "2026-09-30",
+  "artifacts": {
+    "schema": "izzi.film-production-verification/1",
+    "status": "PASS",
+    "references": 6,
+    "reference_decoded_frames": 2660,
+    "atlas_cells": 36,
+    "isolated_control_changes": 30,
+    "wide_tall_domains": 12,
+    "frame_plans": 2160,
+    "material_programs": 1072,
+    "shuffled_seek_checks": 18,
+    "decoded_review_frames": 2160,
+    "review_seconds": 72,
+    "native_sha256": "762d271384805780d0822079f5cbe80bbfb662f8a3a166b5846497a4466ec085",
+    "review_manifest_sha256": "5c7a6b1b396e4a991482393045963e7e480d0a63ef4596338441ce340696e012",
+    "reference_manifest_sha256": "0f35145ae6a2e772b525630c331ef2d8c20ffd988285d171f58d71fa0185b155",
+    "verifier_sha256": "f96fd9d7f51e22fe02e26b270684f888a46e5bb56a774ac5b75f42c7e78c3491"
+  },
+  "render_integration": {
+    "comparisons": [
+      {
+        "row": 1,
+        "mean_absolute_byte_difference": 0.5262858072916666,
+        "p99": 2.0,
+        "program": "a9969b362722301aee150c8a5482947b9a3bee7f1cb815097253b253fe107a22"
+      },
+      {
+        "row": 2,
+        "mean_absolute_byte_difference": 0.8600056966145834,
+        "p99": 12.0,
+        "program": "560cc40c9dc4787b36eacec123a5928b30c36cc1569c29faa53e5be751a7ccce"
+      },
+      {
+        "row": 3,
+        "mean_absolute_byte_difference": 0.245208740234375,
+        "p99": 2.0,
+        "program": "30fe7a0cd0b09e82f06235da3f1b4e7fd0bafce9c1db192ee262e79ff2a5475a"
+      },
+      {
+        "row": 4,
+        "mean_absolute_byte_difference": 0.209320068359375,
+        "p99": 2.0,
+        "program": "40d6e2cc1b5bf805795c1b845a1950571fe185429a22e448a7e122ea9cdbbd7b"
+      },
+      {
+        "row": 5,
+        "mean_absolute_byte_difference": 0.2554524739583333,
+        "p99": 2.0,
+        "program": "19a51789f2d824352b30a3017c7bb8c8b4770754b5f63b1db9073484ebaa62e8"
+      },
+      {
+        "row": 6,
+        "mean_absolute_byte_difference": 0.243011474609375,
+        "p99": 8.0,
+        "program": "0dd72ea823180bab93943ca525fbe50bc7282011528bdc250cc1e406dd7105e5"
+      }
+    ],
+    "elastic_mean_absolute_byte_difference": 0.565093994140625,
+    "movie_identity": "30 decoded RGB frames and 48000 audio samples are byte-identical",
+    "offset_audio_identity": "first video PTS 67/1000; exactly aligned 48000-sample audio window",
+    "whole_print_movie": "30 frames; declared 1/60 source step; held samples, active crop, and silent policy verified"
+  },
+  "legacy_study_baselines": [
+    {
+      "row": 1,
+      "bytes": 4327768,
+      "sha256": "f3712ef15e53982d4a90f8bfc93d2284db3c706a9aaa083bf2a7ab3b12c052f7"
+    },
+    {
+      "row": 2,
+      "bytes": 2950764,
+      "sha256": "a9276c55cea4f1f8fc4478e8fe966b8fdeb50c1e6b2770d724ab2473ad85b01a"
+    },
+    {
+      "row": 3,
+      "bytes": 2376685,
+      "sha256": "51a2b9f52e1622aef18577071a7c14aab5c999fa6f6c6716e22a187d6d0db281"
+    },
+    {
+      "row": 4,
+      "bytes": 1109930,
+      "sha256": "ed872103889629f26d2e7c74450fbbe2e078162d5c71d9991f3d3de08b3ac62e"
+    },
+    {
+      "row": 5,
+      "bytes": 1567236,
+      "sha256": "117486975813f6627ffa2dd83f667436a2d57849bc3c53a441ac42c488419bca"
+    },
+    {
+      "row": 6,
+      "bytes": 1553182,
+      "sha256": "963058346b77f33e2dc7883e83608f682d96fb6bb76b42c980e87e21873db074"
+    }
+  ],
+  "package": {
+    "status": "PASS",
+    "project_version": "3.20260816",
+    "canonical": {
+      "header_count": 67,
+      "include_fragment_count": 8,
+      "legacy_file_count": 0,
+      "relocated_install_tree_sha256": "4810ee4a96e8ad654b5bf4e2aa6dcd0559146248d495687822d0841dac4c0a07",
+      "schema_count": 11
+    },
+    "consumers": {
+      "build_tree": "PASS",
+      "canonical_install_relocated": "PASS"
+    }
+  },
+  "focused_ctest": {
+    "status": "PASS",
+    "execution": "Focused suites executed across separate runs; final expanded Python integration also executed directly.",
+    "checks": [
+      "film-decay.study-contract",
+      "film-decay.plates.describe",
+      "film-decay.production-contract",
+      "film-decay.production.describe",
+      "film-decay.render-movie-contract",
+      "header-self-contained.izzi-film-decay-fields.h",
+      "header-self-contained.izzi-svg-film-decay.h",
+      "header-self-contained.izzi-svg-film-decay-json.h",
+      "header-self-contained.izzi-levels-contours-regions.h",
+      "surface-tension",
+      "surface-tension.well-formed",
+      "surface-tension.plates.describe",
+      "level-set.regions-density",
+      "video-glitch.contract",
+      "video-glitch.plates.describe",
+      "video-glitch.plates.render",
+      "package-contract",
+      "package-contract.json"
+    ]
+  },
+  "visual_review": {
+    "scope": [
+      "native production atlas",
+      "representative native detail",
+      "all twelve wide/tall proofs in comparison sheet",
+      "twelve source/effect pairs in each of six chapter contacts"
+    ],
+    "real_time_audiovisual_playback": false,
+    "user_artistic_approval_inferred": false
+  },
+  "input_receipts": {
+    "outputs/decasia-production/production-verification.json": "39ed223cd994d6255c75a2728f4815a94653e16fc66c04fad632124a7208b949",
+    "outputs/decasia-production/verification.json": "49ac0193d02cf2d9887569ebbbb90c87fed7b8fd060aea00a19f67b0341178c2",
+    "outputs/decasia-production/legacy-preservation/manifest.json": "22c0f0d36fc42fdb50133b07345cdee3f47e081c1bd14cc1cade6e7d07557ff3",
+    "build/film-decay-release/tests/package-contract/package-contract.json": "91a44eb89e1bed9fd9fbedc0b1c2c91f971ec58c90e6c89c74e4691e3306b26f"
+  },
+  "test_source_sha256": {
+    "tests/film-decay.cc": "f07f7b46cd67ede3e52ea7f53a92af7db3f5d220783b71e25af3d161ac961ae3",
+    "tests/film-decay-render.py": "1e924303844149cf72a56eaa1471e48e32ea2113048993e95efc61435cc9e213",
+    "tests/package-contract.py": "350ed4cae89367ffb3b3646b82fbf8dc091ae5d231d4dedf7b8a87b65d8106ce",
+    "tests/package-consumer/canonical.cc": "2f8921ffbe4188da04c046544e6a9c17e0ea23caf73b81c2ee9ebc4123d55c51",
+    "scripts/analyze-decasia-references.py": "ab7856c0c3e3979e19b2fa9d8497bcf4ed6131f348264a4dce87941fdd0aad74",
+    "scripts/verify-film-decay-production.py": "f96fd9d7f51e22fe02e26b270684f888a46e5bb56a774ac5b75f42c7e78c3491",
+    "scripts/render-film-decay-svg.py": "6862ed7fd048f369a1011387b4e27e398a68ebe6d61f7499ac0b305dcdbd1b07",
+    "scripts/render-film-decay-movie.py": "4b837e2f4464107a2a8adf630571378d1f3c83d23eadfebf393978513767cf2d"
+  }
+}

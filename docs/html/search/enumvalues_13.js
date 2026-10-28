@@ -14,5 +14,7 @@ var searchData=
   ['top_11',['top',['../namespacesvg.html#ac8061963317131e6bd4d517ed84880bcab28354b543375bfa94dabaeda722927f',1,'svg::top'],['../namespaceizzi_1_1text__overlay.html#ad83be998b50e861b646908d6309826d7ab28354b543375bfa94dabaeda722927f',1,'izzi::text_overlay::top']]],
   ['tor_12',['tor',['../namespacesvg.html#ac8061963317131e6bd4d517ed84880bca7c0b1b361a964c9f5a2c89bec5740412',1,'svg']]],
   ['transition_13',['transition',['../namespaceizzi_1_1transcription__enrichment.html#ae0b0659a7a36a6c361d8decd2c9f0d5aa1e3057527650f36abc8cfa0131920cda',1,'izzi::transcription_enrichment']]],
-  ['triangle_14',['triangle',['../namespacesvg.html#a7c30513e0ec17ac816f135b43687f7eaacef44b46f16ae8ecf664df4266ffdbf9',1,'svg']]]
+  ['transport_5fburst_14',['transport_burst',['../namespacesvg_1_1screen__glitch.html#a0235525184525a026a828965ac8d736cac9ec4f1fd80c373f06fba9ff14b8653c',1,'svg::screen_glitch']]],
+  ['triangle_15',['triangle',['../namespacesvg.html#a7c30513e0ec17ac816f135b43687f7eaacef44b46f16ae8ecf664df4266ffdbf9',1,'svg']]],
+  ['triangular_16',['triangular',['../namespaceizzi_1_1guilloche.html#acef020a319fabc54456e17369f45a42cac83040fe8a3e100aa5087c393befa6cb',1,'izzi::guilloche']]]
 ];

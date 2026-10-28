@@ -1,0 +1,48 @@
+{
+  "status": "PASS",
+  "compiler": "GCC 16.2.1 -std=c++20 -O1",
+  "seed": 20261025,
+  "progress": 0.37,
+  "checks": [
+    {
+      "form": "ribbon-grignani",
+      "sha256": "b11c276e00b73eefd5a2f232b56d71a59123888ba99f79d4e5cd50382f3f19c1",
+      "unchanged": true
+    },
+    {
+      "form": "ribbon-ripple",
+      "sha256": "85091e504ad28873e16391fac19ee223285621efcb2268855676b0bfd849876c",
+      "unchanged": true
+    },
+    {
+      "form": "surface-tension-lattice",
+      "sha256": "48b157c8570f0f2f58b6481a9869c8f256aea3b7a1f7000c9599175d7fec59f3",
+      "unchanged": true
+    },
+    {
+      "form": "surface-tension-level-set",
+      "sha256": "7f64bb2b0ca9ba3730a103bed071d46efa5fff1205c232b9cc46c55b7d9e0ae9",
+      "unchanged": true
+    },
+    {
+      "form": "surface-tension-object-cluster",
+      "sha256": "c35a98a60624ef54ee83b397ab4a0ca5539dea8924b6098aae96981456d251ce",
+      "unchanged": true
+    },
+    {
+      "form": "surface-tension-ring",
+      "sha256": "ca1dc37dde12c61d3a53252cddbbb9d274835f18b8f7f02b75e958eb1bfcb330",
+      "unchanged": true
+    },
+    {
+      "form": "surface-tension-rotating-array",
+      "sha256": "a039835d165c52446a0135c36df7739459747a34e3f6fdd59005d15b0cae88b9",
+      "unchanged": true
+    },
+    {
+      "form": "surface-tension-surface-field",
+      "sha256": "719dc95ddce7f5ec6db3212560c421971a077d6c5d9b427b6a5950ed9754e456",
+      "unchanged": true
+    }
+  ]
+}

@@ -1,4 +1,4 @@
- #include "izzi-svg.h"
+#include "izzi-svg.h"
 #include "izzi-svg-curves-grignani.h"
 
 // 1 grignani
@@ -8,24 +8,25 @@ test_curve(std::string ofile)
   using namespace std;
   using namespace svg;
 
-  area<> a = k::letter_096_v;
+  // This is a six-column study, not a letter-sized illustration.
+  area<> a = {2450, 2550};
   svg_element obj(ofile, a);
 
   // Grid Setup
   const int cols = 6;
   const int rows = 6;
-  const double margin = 50.0;
-  const double radius = 100.0;
-  const double cell_size = 400.0; // 300 min
+  const double margin = 40.0;
+  const double top = 100.0;
+  const double cell_w = (a._M_width - 2 * margin) / cols;
+  const double cell_h = (a._M_height - top - margin) / rows;
 
-  // Using 6 strands for clarity in small grid cells
+  // One strand for clarity in small grid cells.
   //double rwidth = 0.04; // 0.04 ~ 1mm @ r 100
   double rwidth = 0.08; // 0.08 ~ 2mm @ r 100
   int rsize = 1; // 8, 6
 
-  // SVG Header
-  double total_w = cols * cell_size + margin;
-  //double total_h = rows * cell_size + margin;
+  obj.add_raw("<text x=\"40\" y=\"42\" font-size=\"32\" fill=\"#333\">Rolling ribbon: six parameter sweeps</text>");
+  obj.add_raw("<text x=\"40\" y=\"74\" font-size=\"20\" fill=\"#555\">6 x 6 study; common scale within each row; values shown below each form</text>");
 
   // Baseline Config (The "Control" group)
   ribbon_config base;
@@ -50,9 +51,17 @@ test_curve(std::string ofile)
   for (int r = 0; r < rows; ++r)
     {
       // Draw Row Label
-      double label_y = r * cell_size + 40;
-      string lyt = format("<text x=\"20\" y=\"{}\" font-size=\"24\" fill=\"#333\" font-weight=\"bold\">{}:</text>\n", label_y, labels[r]);
+      double label_y = top + r * cell_h + 30;
+      string lyt = format("<text x=\"40\" y=\"{}\" font-size=\"24\" fill=\"#333\" font-weight=\"bold\">{}:</text>\n", label_y, labels[r]);
       obj.add_raw(lyt);
+
+      // Rotation cannot enlarge the 3D norm. Reserve space for the largest
+      // ribbon in this row, including its width, without normalizing cells
+      // independently (which would hide the amplitude variation).
+      const double amplitude = r == 0 ? 4.0 : base.fold_amplitude;
+      const double torsion = r == 2 ? 2.5 : base.torsion;
+      const double bound = hypot(amplitude + 0.4, torsion) + rwidth;
+      const double radius = min(cell_w * 0.42, (cell_h - 100) / 2) / bound;
 
       for (int c = 0; c < cols; ++c)
 	{
@@ -72,8 +81,8 @@ test_curve(std::string ofile)
 	    case 5: config.view_tilt_y    = lerp(0.0, 3.14, t); break;
 	    }
 
-	  double cx = c * cell_size + (cell_size / 2) + 20; // +20 for label offset
-	  double cy = r * cell_size + (cell_size / 2) + 30;
+	  double cx = margin + (c + 0.5) * cell_w;
+	  double cy = top + r * cell_h + (cell_h + 4) / 2;
 
 	  // Generate ribbon
 	  string ribbon = make_rolling_ribbon(cx, cy, radius, rsize, rwidth, config);
@@ -85,16 +94,19 @@ test_curve(std::string ofile)
 	    val=config.fold_amplitude;
 	  if (r==1)
 	    val=config.fold_frequency;
-	  // ... etc
-	  string dbg = format("<text x=\"{}\" y=\"{}\" font-size=\"12\" text-anchor=\"middle\" fill=\"#888\">{:.2f}</text>", cx, cy + radius + 20, val);
+	  if (r==2) val=config.torsion;
+	  if (r==3) val=config.roll_speed;
+	  if (r==4) val=config.view_tilt_x;
+	  if (r==5) val=config.view_tilt_y;
+	  string dbg = format("<text x=\"{}\" y=\"{}\" font-size=\"20\" text-anchor=\"middle\" fill=\"#555\">{:.2f}</text>", cx, top + (r + 1) * cell_h - 18, val);
 	  obj.add_raw(dbg);
 	}
 
       // Horizontal divider line
       if (r < rows - 1)
 	{
-	  double line_y = (r + 1) * cell_size;
-	  string liney = format("<line x1=\"0\" y1=\"{}\" x2=\"{}\" y2=\"{}\" stroke=\"#eee\" stroke-width=\"2\" />\n", line_y, total_w, line_y);
+	  double line_y = top + (r + 1) * cell_h;
+	  string liney = format("<line x1=\"40\" y1=\"{}\" x2=\"{}\" y2=\"{}\" stroke=\"#ddd\" stroke-width=\"1\" />\n", line_y, a._M_width - margin, line_y);
 	  obj.add_raw(liney);
 	}
     }

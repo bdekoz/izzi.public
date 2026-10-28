@@ -14,6 +14,7 @@ merge without losing evidence.
 | `docs/audio_workflow/index.md` | Directory entry page mirroring this index |
 | `docs/audio_workflow/defaults.md` | Render defaults, targets, seeds, and contracts |
 | `docs/audio_workflow/etl.md` | Source decode, VAD windows, transcripts, hashing, manifests |
+| [Audio/video transcription](audio_workflow/tool_transcribe_audio.md) | General-purpose local Whisper command, timestamped transcripts/subtitles, hash-bound reruns and examples |
 | `docs/audio_workflow/analyze_expand_voice_reference_bank.md` | Reference-bank analysis and expansion |
 | `docs/audio_workflow/tool_higgs.md` | Higgs TTS 2 (high compute; eureka GPU host) |
 | `docs/audio_workflow/tool_meanvc2_kokoro.md` | Low-compute local pass: MeanVC2 transformation + Kokoro target voices |

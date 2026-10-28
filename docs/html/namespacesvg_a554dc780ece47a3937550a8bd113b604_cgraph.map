@@ -1,10 +1,10 @@
 <map id="svg::next_color" name="svg::next_color">
 <area shape="rect" id="Node000001" title="Legacy default&#45;spectrum overload." alt="" coords="5,29,109,53"/>
 <area shape="rect" id="Node000002" href="$namespacesvg.html#afbb69e6e3429f0e574994b3a761d2a30" title="Legacy mutable working spectrum (default izzi hue palette). Kept for the ODR shared&#45;state contract in..." alt="" coords="157,5,294,29"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="109,31,141,27,141,32,109,36"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="108,31,144,28,139,30,110,36"/>
 <area shape="rect" id="Node000004" href="$namespacesvg.html#ad67ecd83790645f7943ddcd9e3edda2d" title="Loop through spectrum starting at position c (explicit spectrum). Iff klr is not found,..." alt="" coords="174,53,277,77"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="109,46,159,53,158,58,109,51"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="109,46,161,55,156,56,109,51"/>
 <area shape="rect" id="Node000003" href="$namespacesvg.html#ae9528c0e964c1af42024aa29a8be32ca" title="Explicit, pure spectrum selection by tag (constexpr; no hidden state)." alt="" coords="342,29,441,53"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="295,24,327,29,326,34,294,30"/>
-<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="277,55,326,48,327,53,278,60"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="295,24,329,32,324,32,295,30"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="277,55,324,51,329,50,278,60"/>
 </map>

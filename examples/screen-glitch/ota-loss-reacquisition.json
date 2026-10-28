@@ -1,0 +1,29 @@
+{
+  "form_id": "satellite/transport-burst-recovery",
+  "parameters": {
+    "amount": 0.9,
+    "concealment": "automatic",
+    "detail_amount": 1,
+    "detail_block_pixels": 4,
+    "detail_chroma": 0.9,
+    "detail_coefficients": 1.15,
+    "detail_slices": 0.8,
+    "detail_orientation": 0,
+    "damage_persistence_frames": 300,
+    "burst_spacing": 3,
+    "burst_width": 2.4,
+    "hold_after": 0.6,
+    "blank_after": 1.6,
+    "recovery": 2,
+    "reacquire_delay": 0.45,
+    "refresh_mode": "rolling-slice"
+  },
+  "seed": 20261011,
+  "domain": [
+    0,
+    0,
+    640,
+    360
+  ],
+  "source_sequence": "examples/screen-glitch/source-sequence.json"
+}

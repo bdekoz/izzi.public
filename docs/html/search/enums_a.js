@@ -1,8 +1,6 @@
 var searchData=
 [
-  ['palette_5fkind_0',['palette_kind',['../namespacesvg.html#a1b02070a985c92aaea4bcedce5aafbc9',1,'svg']]],
-  ['pattern_5fclass_1',['pattern_class',['../namespaceizzi_1_1guilloche.html#aa3a8cda5e3a9c90dc13eb79643a7d5ce',1,'izzi::guilloche']]],
-  ['pattern_5ffamily_2',['pattern_family',['../namespaceizzi_1_1guilloche.html#a553985e613c78dd2c1716d2fea5b62c0',1,'izzi::guilloche']]],
-  ['primitive_5fkind_3',['primitive_kind',['../namespaceizzi_1_1keyframes.html#abfcc69941c5a7d40b9db8fe07d595bd3',1,'izzi::keyframes']]],
-  ['property_4',['property',['../structsvg_1_1typography.html#aba5bf3a1484966319aebc9443746e98c',1,'svg::typography']]]
+  ['optical_5ftreatment_0',['optical_treatment',['../namespaceizzi_1_1guilloche.html#abb9a07dc65d2dc7127a49f43ae8bef9b',1,'izzi::guilloche']]],
+  ['organic_5fpreset_1',['organic_preset',['../namespaceizzi_1_1guilloche.html#a094bcb02852bf8a6bfe223a35ed60a5c',1,'izzi::guilloche']]],
+  ['output_5fformat_2',['output_format',['../namespacesvg_1_1graph.html#afff91e2dbeaf237a2c0e441010812bd3',1,'svg::graph']]]
 ];

@@ -18,6 +18,7 @@ int main()
 {
   std::ofstream file("parameter_explorer.svg");
   file << "<svg viewBox='0 0 1000 1000' xmlns='http://www.w3.org/2000/svg' style='background:#050505'>\n";
+  file << "<rect width='1000' height='1000' fill='#050505'/>\n";
   
   // Setup a 3x3 grid
   // Rows: Different Intervals (Unison, Fifth, Octave)

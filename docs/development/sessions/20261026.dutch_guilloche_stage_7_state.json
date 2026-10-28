@@ -1,0 +1,894 @@
+{
+  "schema_version": 1,
+  "project": "Dutch guilloche stage 7",
+  "session_status": "saved_for_exit",
+  "captured_at_utc": "2026-10-26T22:10:08+00:00",
+  "captured_at_pacific": "2026-10-26T15:10:08-07:00",
+  "workspace": "/home/bkoz/src/izzi",
+  "implementation_status": "Non-paper refinement complete for review; full font and all numerals delivered.",
+  "constraints": {
+    "source_rotation_degrees": 180,
+    "reflection": false,
+    "optional_paper_work": "excluded",
+    "existing_backdrop": "unchanged",
+    "historical_font_recovery_claimed": false,
+    "historical_machine_settings_recovery_claimed": false,
+    "human_visual_acceptance": "pending"
+  },
+  "pending_implementation": [],
+  "pending_review": [
+    "User visual review of delivered master, procedural reconstruction, variations and font."
+  ],
+  "known_limits": [
+    "Procedural reconstruction remains approximate; 0 of 8 patches pass every original 10-percent pitch/width metric.",
+    "Master ink-preservation metrics validate vectorization against a cleaned mask, not historical segmentation accuracy.",
+    "Paragraph/date and monograms are source-guided reconstructions; unobserved font characters are authored style extensions."
+  ],
+  "git": {
+    "branch": "main",
+    "head_at_capture": "ef2ab23a2b5b1c42fe5b78cbf0ac636dbb9ba4df",
+    "origin_main_at_capture": "ef2ab23a2b5b1c42fe5b78cbf0ac636dbb9ba4df",
+    "stage7_changes": "uncommitted",
+    "commit_or_push_performed_on_exit": false,
+    "shared_worktree_status_at_capture": [
+      " M CMakeLists.txt",
+      " M Makefile",
+      " M docs/development/examples-workflows.md",
+      " M docs/development/sessions/20261026.here_lies_trouble_stage_4_production_breakdown.md",
+      " M docs/development/sessions/20261026.here_lies_trouble_stage_4_production_details.md",
+      " M docs/generative_patterns.md",
+      " M docs/generative_patterns/guilloche.md",
+      " M docs/generative_patterns/index.md",
+      " M examples.data/review/source-inventory.json",
+      " M index.md",
+      " M resources.static/here-lies-trouble/stage-4-state.json",
+      " M schemas/izzi.guilloche-scene-1.schema.json",
+      " M scripts/hlt-stage4-production-cost.py",
+      " M scripts/hlt-stage4-render.py",
+      " M scripts/hlt-stage4-review.py",
+      " M src/izzi-review-catalog.h",
+      " M src/izzi-svg-guilloche-enrichment.inc",
+      " M src/izzi-svg-guilloche-json.h",
+      " M src/izzi-svg-guilloche.h",
+      " M tests/CMakeLists.txt",
+      " M tests/generation-baseline/generate.py",
+      " M tests/generation-baseline/test-complete-examples.py",
+      " M tests/hlt-stage4-render.py",
+      "?? IzziDutchScriptStage7-Regular.otf",
+      "?? docs/development/sessions/20261026.dutch_guilloche_stage_7.md",
+      "?? docs/development/sessions/20261026.dutch_guilloche_stage_7_resume.md",
+      "?? docs/development/sessions/20261026.dutch_guilloche_stage_7_state.json",
+      "?? examples.data/guilloche-dutch-stage7/",
+      "?? examples/guilloche-dutch-stage7-review.cc",
+      "?? scripts/build-guilloche-dutch-stage7-font.py",
+      "?? scripts/build-guilloche-dutch-stage7-geometry-assets.py",
+      "?? scripts/build-guilloche-dutch-stage7-master.py",
+      "?? scripts/check-guilloche-dutch-stage7.py",
+      "?? scripts/hlt-stage4-finish.py",
+      "?? scripts/hlt-stage4-qc.py",
+      "?? scripts/hlt-stage4-speech-check.py",
+      "?? scripts/prepare-guilloche-dutch-stage7-reference.py",
+      "?? scripts/refine-guilloche-dutch-stage7-lettering.py",
+      "?? scripts/render-guilloche-dutch-stage7-png.py",
+      "?? tests/guilloche-dutch-stage7-font.py",
+      "?? tests/guilloche-dutch-stage7-schema.py",
+      "?? tests/guilloche-dutch-stage7.cc",
+      "?? tests/hlt-stage4-finish.py"
+    ],
+    "shared_stage7_paths": [
+      "CMakeLists.txt",
+      "Makefile",
+      "docs/development/examples-workflows.md",
+      "docs/generative_patterns.md",
+      "docs/generative_patterns/guilloche.md",
+      "docs/generative_patterns/index.md",
+      "examples.data/review/source-inventory.json",
+      "index.md",
+      "schemas/izzi.guilloche-scene-1.schema.json",
+      "src/izzi-review-catalog.h",
+      "src/izzi-svg-guilloche-enrichment.inc",
+      "src/izzi-svg-guilloche-json.h",
+      "src/izzi-svg-guilloche.h",
+      "tests/CMakeLists.txt",
+      "tests/generation-baseline/generate.py",
+      "tests/generation-baseline/test-complete-examples.py"
+    ],
+    "preservation": "Preserve other sessions’ work, particularly Here Lies Trouble changes. Shared paths need hunk review before any future scoped commit; do not reset, stash or stage unrelated changes."
+  },
+  "documents": {
+    "plan": "docs/development/sessions/20261026.dutch_guilloche_stage_7.md",
+    "resume": "docs/development/sessions/20261026.dutch_guilloche_stage_7_resume.md",
+    "state": "docs/development/sessions/20261026.dutch_guilloche_stage_7_state.json",
+    "assets": "examples.data/guilloche-dutch-stage7/README.md",
+    "font": "examples.data/guilloche-dutch-stage7/font/README.md"
+  },
+  "deliverables": {
+    "gallery": "outputs/ad-hoc/guilloche.dutch-stage7/index.html",
+    "native_svg_directory": "outputs/ad-hoc/guilloche.dutch-stage7/svg",
+    "native_png_directory": "outputs/ad-hoc/guilloche.dutch-stage7/png",
+    "native_artworks": 11,
+    "wild_variations": 10,
+    "master_svg": "outputs/ad-hoc/guilloche.dutch-stage7/review/source-master.svg",
+    "master_png": "outputs/ad-hoc/guilloche.dutch-stage7/review/source-master.png",
+    "variation_sheet": "outputs/ad-hoc/guilloche.dutch-stage7/review/wild-variations.png",
+    "canonical_font": "examples.data/guilloche-dutch-stage7/font/IzziDutchScriptStage7-Regular.otf",
+    "font_unicode_mappings": 364,
+    "font_glyphs": 382,
+    "numerals": "0123456789",
+    "export_pixels": [
+      4000,
+      1779
+    ],
+    "prior_fit": "outputs/ad-hoc/guilloche.dutch-stage7/review/prior-fit"
+  },
+  "validation": {
+    "full_guilloche_suite": {
+      "command": "ctest --test-dir build/dutch-stage7-cmake --output-on-failure -R '^guilloche' -j2",
+      "distinct_tests": 38,
+      "passed": 38,
+      "log_sha256": "e46eec9758d016a039d2fadcc05a8cb2e30505f0732f8bc6d895c4a840ec045b"
+    },
+    "exit_artifact_check": {
+      "command": [
+        "python3",
+        "scripts/check-guilloche-dutch-stage7.py",
+        "--output-dir",
+        "outputs/ad-hoc/guilloche.dutch-stage7",
+        "--require-png"
+      ],
+      "exit_code": 0,
+      "report": {
+        "artworks": 11,
+        "maximum_native_points": 899775,
+        "maximum_expanded_points": 1989013,
+        "maximum_svg_bytes": 25996831,
+        "png_checked": true,
+        "isolated_determinism": false
+      }
+    },
+    "isolated_generation_from_completed_pass": {
+      "two_runs_equal": true,
+      "delivered_svgs_match_isolated_run": true
+    },
+    "gcc_and_clang": {
+      "numeric_tests": true,
+      "warnings_as_errors": true,
+      "full_generator": true,
+      "cross_compiler_svg_files_equal": 14,
+      "native_manifests_equal": true,
+      "clang_json_baseline": true,
+      "clang_odr": true,
+      "gcc_header_self_containment": true
+    },
+    "schema_native_cases": 15,
+    "reference_free_workflow": {
+      "passed": true,
+      "master_matches_primary_svg": true,
+      "optional_reference_files_created": false,
+      "native_previews": "Existing SVG/PNG and supporting preview hashes verified before reuse",
+      "knockout_probes": "Master and procedural probes freshly rendered without loading the photograph"
+    },
+    "full_record": "outputs/ad-hoc/guilloche.dutch-stage7/review/verification.json",
+    "implementation_tests_rerun_on_exit": false,
+    "exit_scope": "Documentation/metadata changes; existing artifacts rechecked without regeneration."
+  },
+  "processes": {
+    "owned_stage7_jobs_pending": false,
+    "other_sessions": "untouched"
+  },
+  "resume_commands": [
+    "python3 scripts/check-guilloche-dutch-stage7.py --output-dir outputs/ad-hoc/guilloche.dutch-stage7 --require-png"
+  ],
+  "rebuild_if_requested": {
+    "build_directory": "build/dutch-stage7-cmake",
+    "commands": [
+      "cmake --build build/dutch-stage7-cmake --target izzi_guilloche_dutch_stage7_review izzi_guilloche_dutch_stage7 -j2",
+      "build/dutch-stage7-cmake/izzi_guilloche_dutch_stage7_review outputs/ad-hoc/guilloche.dutch-stage7",
+      "python3 scripts/render-guilloche-dutch-stage7-png.py --output-dir outputs/ad-hoc/guilloche.dutch-stage7"
+    ],
+    "font_and_pen_order": "See examples.data/guilloche-dutch-stage7/README.md. No regeneration is required merely to resume."
+  },
+  "local_preservation": {
+    "git_ignored": [
+      "outputs/",
+      "build/"
+    ],
+    "note": "Keep the generated review and comparison history. A future source commit alone does not archive ignored outputs. Pinned editable sources, OTF and portable vector master remain in examples.data/guilloche-dutch-stage7/.",
+    "pre_existing_root_font_copy": {
+      "path": "IzziDutchScriptStage7-Regular.otf",
+      "matches_canonical": true,
+      "bytes": 231864,
+      "sha256": "1ca190094905176b00b161f7f78172f440f8c54611a2471afd90c9bf5c9a8f93"
+    }
+  },
+  "source_files": {
+    "CMakeLists.txt": {
+      "bytes": 13235,
+      "sha256": "14e3e2040eb1271e24a789972922bd14865459c8b24820352535907abcefcf77"
+    },
+    "Makefile": {
+      "bytes": 29394,
+      "sha256": "020c420135330a1618631cc5e0d2688c123533d7a1d73f8ec5cdf4f48c46a014"
+    },
+    "docs/development/examples-workflows.md": {
+      "bytes": 10288,
+      "sha256": "927efa8551866e16ec07f19035b3fc9cac060653f0f0ea755d2ce1212079d3cd"
+    },
+    "docs/development/sessions/20261026.dutch_guilloche_stage_7.md": {
+      "bytes": 55774,
+      "sha256": "c8f0140f248eaaa4559a6e615db861cd3d2531f470de2bf5e6880847d2363f10"
+    },
+    "docs/development/sessions/20261026.dutch_guilloche_stage_7_resume.md": {
+      "bytes": 6758,
+      "sha256": "ed6ab381fb4ea6efbc09b6ff469920f0bd7e1b15f8473078ab3175572157b3b6"
+    },
+    "docs/generative_patterns/guilloche.md": {
+      "bytes": 39565,
+      "sha256": "7b36972b581776707052dc35204cacfacb0bac57c5a2fda5c355865283c923f9"
+    },
+    "docs/generative_patterns/index.md": {
+      "bytes": 2234,
+      "sha256": "7f70a33f6bfe0284a1d1df004391f9f4bd887f36c3993a276e8950a35a44b95b"
+    },
+    "docs/generative_patterns.md": {
+      "bytes": 30918,
+      "sha256": "a29d82f162f808276a89a9e922e74cf0a207000a4612809f9305164d208c53a4"
+    },
+    "examples/guilloche-dutch-stage7-review.cc": {
+      "bytes": 34386,
+      "sha256": "d1e580d6cbf8a6763c607db655f6453bf993281c71351da9ad0b576d70064f23"
+    },
+    "examples.data/guilloche-dutch-stage7/README.md": {
+      "bytes": 6747,
+      "sha256": "71766ccf1e4309d1dce147f12a4d332e5df998d65e0093027c222aab94d25a24"
+    },
+    "examples.data/guilloche-dutch-stage7/band-calibration.inc": {
+      "bytes": 2019,
+      "sha256": "b63076589908d579f1a9340dd35536e7c9553b6a9ae223bc4c0dd17863a9b17d"
+    },
+    "examples.data/guilloche-dutch-stage7/band-calibration.json": {
+      "bytes": 7189,
+      "sha256": "429330e7ad8c809ac27fc2b5a13d64006d562c79ca13ffcd2d475fbf7a694790"
+    },
+    "examples.data/guilloche-dutch-stage7/band-centers.inc": {
+      "bytes": 222,
+      "sha256": "e9f3fa57b49426fc7836171f5482a0da9ebc690891f4092603a2bca5d663f5bc"
+    },
+    "examples.data/guilloche-dutch-stage7/font/IzziDutchScriptStage7-Regular.otf": {
+      "bytes": 231864,
+      "sha256": "1ca190094905176b00b161f7f78172f440f8c54611a2471afd90c9bf5c9a8f93"
+    },
+    "examples.data/guilloche-dutch-stage7/font/README.md": {
+      "bytes": 2813,
+      "sha256": "f96ec199c6b1f481c92c1d73b650bae7fda73b25a207ce0266693aee9ace77dd"
+    },
+    "examples.data/guilloche-dutch-stage7/font/coverage.json": {
+      "bytes": 51487,
+      "sha256": "c9aaaf9e60a0b03b69b8fbd31fa96868f1c72921f7d705b63281ca706e08d90d"
+    },
+    "examples.data/guilloche-dutch-stage7/font/date-facsimiles.json": {
+      "bytes": 105917,
+      "sha256": "5aaa4b75b9a3d47417a055562918708f835680d788f6ad1c3b10790b27672319"
+    },
+    "examples.data/guilloche-dutch-stage7/font/features.fea": {
+      "bytes": 31741,
+      "sha256": "ba7bdc13e65c620f044a1a15f5ee442eb87380f8d3f2589065761e8336f22498"
+    },
+    "examples.data/guilloche-dutch-stage7/font/glyphs.json": {
+      "bytes": 1736355,
+      "sha256": "3b83dd8de06fdfa9bf4a6e8852953d9c84c3216c3c83cd26d79492dfb65607ec"
+    },
+    "examples.data/guilloche-dutch-stage7/font/pen-glyphs.json": {
+      "bytes": 35124,
+      "sha256": "86d1138f2d4677208cf9a9110b0ed5eea8f5aec4f795703da908b800578b7048"
+    },
+    "examples.data/guilloche-dutch-stage7/font/script-font-coverage.png": {
+      "bytes": 419658,
+      "sha256": "c76b643aba5b13edb5debc02ba9f69b8345ce0155497cb743d61ead06f248c61"
+    },
+    "examples.data/guilloche-dutch-stage7/font/script-font-coverage.svg": {
+      "bytes": 2980104,
+      "sha256": "8942955084e1499d241f2d12f4a7250fe1fcaf5f75fbd76222d5f17587468a05"
+    },
+    "examples.data/guilloche-dutch-stage7/font/script-font-facsimile.png": {
+      "bytes": 155419,
+      "sha256": "316ed4d5fb11a8db0586f99aa6ccde4bc1538f116f8e368684c79c41676e0fc1"
+    },
+    "examples.data/guilloche-dutch-stage7/font/script-font-facsimile.svg": {
+      "bytes": 112458,
+      "sha256": "aaa8659bdf291d55146e58b80e9bb4e91059f2e18b478b6d80a6727ec1d56db2"
+    },
+    "examples.data/guilloche-dutch-stage7/font/script-font-numerals.png": {
+      "bytes": 248817,
+      "sha256": "aee5344646c16c074f4587dc220180cd804a6a1570cf0b4bcbea416dfe45936b"
+    },
+    "examples.data/guilloche-dutch-stage7/font/script-font-numerals.svg": {
+      "bytes": 433904,
+      "sha256": "9d8e1f1854219f280954425d27d5acacb64dcc2da43e45816f4a0d356af8700a"
+    },
+    "examples.data/guilloche-dutch-stage7/font/script-font-specimen.png": {
+      "bytes": 498774,
+      "sha256": "dceb58fb0835a6968d19e0d2d1087526f8f56c46e09637b8f2f1e390fa063a00"
+    },
+    "examples.data/guilloche-dutch-stage7/font/script-font-specimen.svg": {
+      "bytes": 1760608,
+      "sha256": "d53482bc88d9a14c1d8a725be5d15807b5d40a21af0c03aa8d51a3299ac9ff73"
+    },
+    "examples.data/guilloche-dutch-stage7/lettering-layout.json": {
+      "bytes": 2022,
+      "sha256": "408d742a50150f73fdef8b144591c5aae0b0ed4181175973767228298ea10990"
+    },
+    "examples.data/guilloche-dutch-stage7/lettering-refinement.json": {
+      "bytes": 1295,
+      "sha256": "54f84f27707ca3aba6ac9c2919b231d2df5712a04fdaf39a107e0b8f04b013c5"
+    },
+    "examples.data/guilloche-dutch-stage7/lettering-source-trace.svg": {
+      "bytes": 743689,
+      "sha256": "c4c2635bfc55112f2c59ab352e4525696a93bc1d7427b3d75d2bb8014dc8fdb6"
+    },
+    "examples.data/guilloche-dutch-stage7/lettering.inc": {
+      "bytes": 2219036,
+      "sha256": "95bbac5f7b817842da7667935cf6414cb0e3da9edc24e37acf476f5ea0da1024"
+    },
+    "examples.data/guilloche-dutch-stage7/lettering.svg": {
+      "bytes": 2215562,
+      "sha256": "e372a1260c789a5a4a5045ff517b513f50d568019bb90eb1cf9fbdd2df160b1f"
+    },
+    "examples.data/guilloche-dutch-stage7/monogram-pen.json": {
+      "bytes": 1992,
+      "sha256": "111262e5ef1881d2f62b0be5ef3e00ae9d55f3e98f38ded99b00e2a5c6a0fc4f"
+    },
+    "examples.data/guilloche-dutch-stage7/numeral-path.inc": {
+      "bytes": 12340,
+      "sha256": "2de151193106abdb750a3fe95d626172e12483703cf340a7bd7299528ba63a21"
+    },
+    "examples.data/guilloche-dutch-stage7/numeral.svg": {
+      "bytes": 12431,
+      "sha256": "499d2032f0967fe491b5e6f91fa9e35efff48e7662025dd9419f6f8f0ff5cd8e"
+    },
+    "examples.data/guilloche-dutch-stage7/reference.json": {
+      "bytes": 4897,
+      "sha256": "e35f445bb8b2a0b7abf6d9ba6e0ae59aa59e605ed8f9fed128bd4064cbc244b8"
+    },
+    "examples.data/guilloche-dutch-stage7/scroll-pen.json": {
+      "bytes": 765,
+      "sha256": "d39973c59c79d9565101e7676d665f5885bfcaa945945bb18abfdf84fbbc6980"
+    },
+    "examples.data/guilloche-dutch-stage7/scroll-strokes.inc": {
+      "bytes": 153443,
+      "sha256": "4a6c6b0c198cbe1a7485f3354cc39cafb563992781b098227acb4dd19053caa4"
+    },
+    "examples.data/guilloche-dutch-stage7/scroll-strokes.json": {
+      "bytes": 438801,
+      "sha256": "6e932595994410b2c0a8c5c9393cc279c3460f21f39575f92bb365e8adb7d871"
+    },
+    "examples.data/guilloche-dutch-stage7/source-ink-mask.png": {
+      "bytes": 233869,
+      "sha256": "fab995bf301cdb916bcd5c716c9386b7f041b4697445cddb375e7f4890588b57"
+    },
+    "examples.data/guilloche-dutch-stage7/source-master.json": {
+      "bytes": 1548,
+      "sha256": "f5c3273234326c722eedd3aff5a750b3ccdbddaf51c462c9f5896f86767ab724"
+    },
+    "examples.data/guilloche-dutch-stage7/source-master.svg": {
+      "bytes": 7118068,
+      "sha256": "f8c30f185916ca5336e30336ddc30eceb7ab0b8e9fcff15e624ad930b0ee5f46"
+    },
+    "examples.data/guilloche-dutch-stage7/source-ornament.json": {
+      "bytes": 648,
+      "sha256": "e96a659fd70b8a2b4073bda4ba23d6c5c80b9a62e1f715b80a9bc9f1c4e506db"
+    },
+    "examples.data/guilloche-dutch-stage7/source-ornament.svg": {
+      "bytes": 3985132,
+      "sha256": "6d39a18ea3f9dea4db8b3ea5c755a96830fa6db0bc2f4599b2e20f09a568f0b6"
+    },
+    "examples.data/review/source-inventory.json": {
+      "bytes": 61014,
+      "sha256": "b6b44c24263116d90d0314aa09abfbd9941990ebb31e343380a5358da3170c83"
+    },
+    "index.md": {
+      "bytes": 1705,
+      "sha256": "d1e16e8b7ca6185fd12f06a857a2d14861634651d4e111cdca8b7324cb861088"
+    },
+    "schemas/izzi.guilloche-scene-1.schema.json": {
+      "bytes": 49813,
+      "sha256": "9f2d7dc34ef9c929720e7e95163b5ef3468b4512b6bcf2e7c5ffeccdfcbe589a"
+    },
+    "scripts/build-guilloche-dutch-stage7-font.py": {
+      "bytes": 23188,
+      "sha256": "1e895aa6054b8879729226100aaf63956a2cfe81835ab9da7fccafdae86a3dd7"
+    },
+    "scripts/build-guilloche-dutch-stage7-geometry-assets.py": {
+      "bytes": 2662,
+      "sha256": "d43aa5e6857a297844adcb0a570c4f24f8195bf281f025f8f25581cd558eb6c9"
+    },
+    "scripts/build-guilloche-dutch-stage7-master.py": {
+      "bytes": 11503,
+      "sha256": "40c18adb2dff24767aa9e9fcd405e4cfa3ce1963e6c5edb8dc5ffbb57ff2e0ee"
+    },
+    "scripts/check-guilloche-dutch-stage7.py": {
+      "bytes": 10364,
+      "sha256": "06d7d00b32021df9e3f358b58a2817c25a8e107283f5489e8208bdfb84eb282a"
+    },
+    "scripts/prepare-guilloche-dutch-stage7-reference.py": {
+      "bytes": 7200,
+      "sha256": "0f243157b8992a95c256564a15682093b3a3eb43fbc80e90dec58cae47151ca1"
+    },
+    "scripts/refine-guilloche-dutch-stage7-lettering.py": {
+      "bytes": 7988,
+      "sha256": "06de0ce2cf1bdc78d897de7750e24971439b0db569ff360dea0310e124371b17"
+    },
+    "scripts/render-guilloche-dutch-stage7-png.py": {
+      "bytes": 22085,
+      "sha256": "3258ae411d05eb4ffcf58d4a8c2595a91ae15ffbf9f96fed64e6983d0f0eb6e5"
+    },
+    "src/izzi-review-catalog.h": {
+      "bytes": 51583,
+      "sha256": "b32e7ee385539ca28d5986da6ee3510de97d060a5c905533faba01ae1dc1dc4c"
+    },
+    "src/izzi-svg-guilloche-enrichment.inc": {
+      "bytes": 22060,
+      "sha256": "393a13a6b93511f6d30bd3d35d9afa50e75900507b892746a4c37cecdd10535f"
+    },
+    "src/izzi-svg-guilloche-json.h": {
+      "bytes": 130538,
+      "sha256": "5911a21a76398a1a518eae3f332c5c4a75733efad59c41d79be2e40e083a0f8b"
+    },
+    "src/izzi-svg-guilloche.h": {
+      "bytes": 228385,
+      "sha256": "4633afefc038a885ecd14432daa193dc224422d4a423b417d5fa3847c97c6a94"
+    },
+    "tests/CMakeLists.txt": {
+      "bytes": 77490,
+      "sha256": "b95e180ef6fbacbf19aa3552d72709822deeb1d0db19d1ebde101f913dad8354"
+    },
+    "tests/generation-baseline/generate.py": {
+      "bytes": 87175,
+      "sha256": "37109a5121ef3e072af9682cce7b3b39799caee4b4e44b4f6dd18adb7439cd0a"
+    },
+    "tests/generation-baseline/test-complete-examples.py": {
+      "bytes": 22489,
+      "sha256": "aa57550f036717a8192d25cb95233693202438d613e2c45123ddeafa6a21f339"
+    },
+    "tests/guilloche-dutch-stage7-font.py": {
+      "bytes": 5276,
+      "sha256": "c3c462756e0bdbd5b42640b141fbbb43b05e8b882dba3704eb77d9b2e130d454"
+    },
+    "tests/guilloche-dutch-stage7-schema.py": {
+      "bytes": 2841,
+      "sha256": "7d35c2ff376bf629bc88c70fabdd063e6ea2bd63e9ea5f2cee19c0f56b70c91e"
+    },
+    "tests/guilloche-dutch-stage7.cc": {
+      "bytes": 8910,
+      "sha256": "ad0bb226544c40e0cbb440dc0f8072f588f08391803b98adf950842f41c86b09"
+    }
+  },
+  "local_artifact_files": {
+    "outputs/ad-hoc/guilloche.dutch-stage7/check.json": {
+      "bytes": 183,
+      "sha256": "b7dc27fdf2a968d5ee6d642938a9436bafda6a9013674ea53ed2009d21201cb0"
+    },
+    "outputs/ad-hoc/guilloche.dutch-stage7/font/IzziDutchScriptStage7-Regular.otf": {
+      "bytes": 231864,
+      "sha256": "1ca190094905176b00b161f7f78172f440f8c54611a2471afd90c9bf5c9a8f93"
+    },
+    "outputs/ad-hoc/guilloche.dutch-stage7/font/README.md": {
+      "bytes": 2813,
+      "sha256": "f96ec199c6b1f481c92c1d73b650bae7fda73b25a207ce0266693aee9ace77dd"
+    },
+    "outputs/ad-hoc/guilloche.dutch-stage7/font/coverage.json": {
+      "bytes": 51487,
+      "sha256": "c9aaaf9e60a0b03b69b8fbd31fa96868f1c72921f7d705b63281ca706e08d90d"
+    },
+    "outputs/ad-hoc/guilloche.dutch-stage7/font/date-facsimiles.json": {
+      "bytes": 105917,
+      "sha256": "5aaa4b75b9a3d47417a055562918708f835680d788f6ad1c3b10790b27672319"
+    },
+    "outputs/ad-hoc/guilloche.dutch-stage7/font/features.fea": {
+      "bytes": 31741,
+      "sha256": "ba7bdc13e65c620f044a1a15f5ee442eb87380f8d3f2589065761e8336f22498"
+    },
+    "outputs/ad-hoc/guilloche.dutch-stage7/font/glyphs.json": {
+      "bytes": 1736355,
+      "sha256": "3b83dd8de06fdfa9bf4a6e8852953d9c84c3216c3c83cd26d79492dfb65607ec"
+    },
+    "outputs/ad-hoc/guilloche.dutch-stage7/font/pen-glyphs.json": {
+      "bytes": 35124,
+      "sha256": "86d1138f2d4677208cf9a9110b0ed5eea8f5aec4f795703da908b800578b7048"
+    },
+    "outputs/ad-hoc/guilloche.dutch-stage7/index.html": {
+      "bytes": 7812,
+      "sha256": "1291de79d9788ce876ea09414433347108afab3c840ad579abd2a55fbc24e089"
+    },
+    "outputs/ad-hoc/guilloche.dutch-stage7/manifest.json": {
+      "bytes": 773045,
+      "sha256": "73ab60def4edfa0984978846298313c5ca325c33a8ab7c2013dce33f9515ff87"
+    },
+    "outputs/ad-hoc/guilloche.dutch-stage7/png/stage7-faithful.png": {
+      "bytes": 7434475,
+      "sha256": "49fcac5cd91afb1cc0856cacc27376e6501051614fb70c198a736d821b3ca0db"
+    },
+    "outputs/ad-hoc/guilloche.dutch-stage7/png/stage7-wild-01-chromatic-crown.png": {
+      "bytes": 3912340,
+      "sha256": "fe848f544ab6e585f0d611dafcfcbb3baf47badf598558f02dcec970fde920cd"
+    },
+    "outputs/ad-hoc/guilloche.dutch-stage7/png/stage7-wild-02-twelvefold-corona.png": {
+      "bytes": 3832624,
+      "sha256": "7ba01aeec31ad98c425d62d74199a0a931a51fb6b7e02b14d57bcdbded31e8d0"
+    },
+    "outputs/ad-hoc/guilloche.dutch-stage7/png/stage7-wild-03-squared-seal.png": {
+      "bytes": 4233859,
+      "sha256": "2c1b20bb8ad129a83c7e70a74ed2ffac3597bdfac5e63b2a4b31b58dd1bdf267"
+    },
+    "outputs/ad-hoc/guilloche.dutch-stage7/png/stage7-wild-04-tidal-scrolls.png": {
+      "bytes": 3896243,
+      "sha256": "6b3da99acb8e8ffd2d915321a9888a0b5176704831aa9d918ebf047ec5cf11b9"
+    },
+    "outputs/ad-hoc/guilloche.dutch-stage7/png/stage7-wild-05-eclipse-lace.png": {
+      "bytes": 4062069,
+      "sha256": "be8bc2fee22f5c1931d5672b48c628ea3cd636c0eeb0fc0c12cdad8a851b6171"
+    },
+    "outputs/ad-hoc/guilloche.dutch-stage7/png/stage7-wild-06-spiral-telescope.png": {
+      "bytes": 3654838,
+      "sha256": "84c05c7215459a008f344fe10630e8dac421b02ac25791966a1e367614d0a13f"
+    },
+    "outputs/ad-hoc/guilloche.dutch-stage7/png/stage7-wild-07-knotted-ribbons.png": {
+      "bytes": 3614778,
+      "sha256": "569e6c9b138104ab56b1e14fcbeedb57f7f677c6c27b32c1c7333d76656cdf1e"
+    },
+    "outputs/ad-hoc/guilloche.dutch-stage7/png/stage7-wild-08-botanical-crown.png": {
+      "bytes": 3765270,
+      "sha256": "5e132c0112486426db26e2ce233e383226efa40eb3532ca763007441e5f0ad31"
+    },
+    "outputs/ad-hoc/guilloche.dutch-stage7/png/stage7-wild-09-fractured-seal.png": {
+      "bytes": 2673456,
+      "sha256": "c381bf25543c696f32058aec85cba8502c5a32595f557a60d52c52bb9bd110f6"
+    },
+    "outputs/ad-hoc/guilloche.dutch-stage7/png/stage7-wild-10-endless-scroll.png": {
+      "bytes": 1070853,
+      "sha256": "dd1804b3e21714ac42901bbae74542e30d96b4b4ee04eaebe5404e40489191e5"
+    },
+    "outputs/ad-hoc/guilloche.dutch-stage7/reference/center-inspect.png": {
+      "bytes": 3622116,
+      "sha256": "385ff5256c393cd0cbcf7fa74b4a167bfffc96de92883995beb1f3a704a8d11d"
+    },
+    "outputs/ad-hoc/guilloche.dutch-stage7/reference/date-font-grid.png": {
+      "bytes": 250777,
+      "sha256": "dbc1614e04e868162d410c753af52e5041575f119271cd050d8c61af9c273829"
+    },
+    "outputs/ad-hoc/guilloche.dutch-stage7/reference/lettering-inspect.png": {
+      "bytes": 259006,
+      "sha256": "079a3554960837e289410be72cc3ebaba51db157390f5398e4cb93504d964bc0"
+    },
+    "outputs/ad-hoc/guilloche.dutch-stage7/reference/lettering-trace.png": {
+      "bytes": 104199,
+      "sha256": "c313a66cc4341b8a93b6d3e6c8b105740863f510d114354a29163ce9989233c3"
+    },
+    "outputs/ad-hoc/guilloche.dutch-stage7/reference/numeral-inspect.png": {
+      "bytes": 2898,
+      "sha256": "687aab0f5a330c2004cb86fa2c1abf11e5f6a79aea43525afb7014a339803e54"
+    },
+    "outputs/ad-hoc/guilloche.dutch-stage7/reference/numeral-trace.png": {
+      "bytes": 10116,
+      "sha256": "8f1b9f84c57dfdb6bc204c51bef86cba800e0ee87259a3d2cb1e08f7ea15f943"
+    },
+    "outputs/ad-hoc/guilloche.dutch-stage7/reference/oriented-inspect.png": {
+      "bytes": 2258219,
+      "sha256": "59ede5cfd8e38c05d320e71676287c38a18d9e47623776f04aef227719992fe9"
+    },
+    "outputs/ad-hoc/guilloche.dutch-stage7/reference/oriented.png": {
+      "bytes": 11224577,
+      "sha256": "23b5ee22a127cbd6dd731f53619274706fd0a2c58cda7e4057fb6a589a34c801"
+    },
+    "outputs/ad-hoc/guilloche.dutch-stage7/reference/rectified-inspect.png": {
+      "bytes": 2062352,
+      "sha256": "c8d98ed512e98ea3870aecbbcf126185f2f3d3b6814b0ca108993567d45ff4b4"
+    },
+    "outputs/ad-hoc/guilloche.dutch-stage7/reference/rectified.png": {
+      "bytes": 10701791,
+      "sha256": "1f5f51239b5971c5e3de1d12c10e477b332ffe803ca37637e253dbff66a0071d"
+    },
+    "outputs/ad-hoc/guilloche.dutch-stage7/reference/script-font-grid.png": {
+      "bytes": 791086,
+      "sha256": "ccde29554f99203609bd025c2fb91681c53f645abf3f0229deedf9fb6ffd10d2"
+    },
+    "outputs/ad-hoc/guilloche.dutch-stage7/review/alignment-overlay.png": {
+      "bytes": 10213056,
+      "sha256": "535d7cb3eaa90d91ad9712ba5aa9f25dae52700241e1d11689480676a5ee7316"
+    },
+    "outputs/ad-hoc/guilloche.dutch-stage7/review/band-calibration-overlay.png": {
+      "bytes": 3113451,
+      "sha256": "d81bc9f4a60f178a267ba7ea744d251e7f6bbb638ea4fdd59febc0fbe48c12b4"
+    },
+    "outputs/ad-hoc/guilloche.dutch-stage7/review/comparison.png": {
+      "bytes": 2524249,
+      "sha256": "69499ee839e6bf9a96d20af61b411689aef9a90c3b6e013e839ec6a888c9c810"
+    },
+    "outputs/ad-hoc/guilloche.dutch-stage7/review/detail-cardinal-petal.png": {
+      "bytes": 1509246,
+      "sha256": "e8ed66bbd9f6810409e6080aa26cf913ee270c6f4282d140d60434ad209c56d8"
+    },
+    "outputs/ad-hoc/guilloche.dutch-stage7/review/detail-core-and-50.png": {
+      "bytes": 1996690,
+      "sha256": "c99197bf955cfcd6ad274770d4c3e9f41557d9baf10afd30812a9c0ccb88a1c2"
+    },
+    "outputs/ad-hoc/guilloche.dutch-stage7/review/detail-diagonal-petal.png": {
+      "bytes": 1238750,
+      "sha256": "bc65df7b25ce234f47b3120834b0b562111c496d687e8da6638de0363f154848"
+    },
+    "outputs/ad-hoc/guilloche.dutch-stage7/review/detail-monogram.png": {
+      "bytes": 918587,
+      "sha256": "ef8480277abcb63d937eb9a685b9da201a4220550690875a7594b1a12295674b"
+    },
+    "outputs/ad-hoc/guilloche.dutch-stage7/review/detail-ribbon-weave.png": {
+      "bytes": 658649,
+      "sha256": "d4f255cef483cf1d5f67b1ac36bbd371155c2bcb5b629e9cd8ef5321e5419022"
+    },
+    "outputs/ad-hoc/guilloche.dutch-stage7/review/detail-scalloped-bands.png": {
+      "bytes": 1882822,
+      "sha256": "f7a862bed851f47d9310a294a1a78105c426a988e1dec4601d17f52d0d3853d6"
+    },
+    "outputs/ad-hoc/guilloche.dutch-stage7/review/detail-script-and-date.png": {
+      "bytes": 886790,
+      "sha256": "897d3e5d7cd58ade6158a5c93ab4f02c6a9f0f1fe9c41f53dc6585a1dc24bf44"
+    },
+    "outputs/ad-hoc/guilloche.dutch-stage7/review/detail-scroll-terminal.png": {
+      "bytes": 581764,
+      "sha256": "2017ec9032a3a2399f11bb02815ed95df604e7d71898285e3ce522f9cf91e953"
+    },
+    "outputs/ad-hoc/guilloche.dutch-stage7/review/detail-serial.png": {
+      "bytes": 276981,
+      "sha256": "c5467509a44f22277f77fd489aef791656bdbb8b9c39c579782f68c563a97d7d"
+    },
+    "outputs/ad-hoc/guilloche.dutch-stage7/review/endless-scroll-seam.png": {
+      "bytes": 1043009,
+      "sha256": "97a586d6b757edc96d6bfa09e6d496dfcd6c967855efa1057ac8dbcbd0e3b63e"
+    },
+    "outputs/ad-hoc/guilloche.dutch-stage7/review/first-fit-center.png": {
+      "bytes": 2689622,
+      "sha256": "85c9a593083a83eb6896009dec412ece537c40adddcdec03f6833c750af68a53"
+    },
+    "outputs/ad-hoc/guilloche.dutch-stage7/review/first-fit.png": {
+      "bytes": 1321134,
+      "sha256": "93de711ee5861db1e6d629938196c34fa149b19680166275d13da4b1d6847733"
+    },
+    "outputs/ad-hoc/guilloche.dutch-stage7/review/fourth-fit.png": {
+      "bytes": 1422865,
+      "sha256": "979869e96be470fffa993abc92346406056c88c0d3cff40b1509a6f9c8bd84c7"
+    },
+    "outputs/ad-hoc/guilloche.dutch-stage7/review/geometry-only.png": {
+      "bytes": 810793,
+      "sha256": "a98b44b11407b8c3a20a1bcb4b6e7a67eac45162d658fe9068178e91908f5639"
+    },
+    "outputs/ad-hoc/guilloche.dutch-stage7/review/geometry-only.svg": {
+      "bytes": 21584382,
+      "sha256": "71d132a819d9ee2de4eea8b235ac4e70c7888cbdfbc684206088d3159b4d7e02"
+    },
+    "outputs/ad-hoc/guilloche.dutch-stage7/review/knockout-123456.png": {
+      "bytes": 329407,
+      "sha256": "7bb937c40ee3e59431618133c3734ea4d01660ed94c0952f8652f1a4a2359075"
+    },
+    "outputs/ad-hoc/guilloche.dutch-stage7/review/knockout-check.json": {
+      "bytes": 580,
+      "sha256": "e19b758f9e85349b71b2f2536b60f4e7ba6fc2f071303a9c914bed8b746a9891"
+    },
+    "outputs/ad-hoc/guilloche.dutch-stage7/review/knockout-ffffff.png": {
+      "bytes": 418021,
+      "sha256": "d9363bf63f55df078634a47425c154dfbea0efd3cad4b9db87add3328bae5763"
+    },
+    "outputs/ad-hoc/guilloche.dutch-stage7/review/knockout-master-123456.png": {
+      "bytes": 366026,
+      "sha256": "506356fbc157c4eae00146a95853580e53b3c9151d4502cb28d97a9b7109106d"
+    },
+    "outputs/ad-hoc/guilloche.dutch-stage7/review/knockout-master-ffffff.png": {
+      "bytes": 458779,
+      "sha256": "584340112baf85d65cad7ad7146fc739132c9dcccb123b42f9f59eb7ca2bbf37"
+    },
+    "outputs/ad-hoc/guilloche.dutch-stage7/review/knockout-procedural-123456.png": {
+      "bytes": 312477,
+      "sha256": "116fe4a843114d8a6ca0c911ee21825e4d8fbac1e39443df6984e7264215d956"
+    },
+    "outputs/ad-hoc/guilloche.dutch-stage7/review/knockout-procedural-ffffff.png": {
+      "bytes": 400633,
+      "sha256": "f25aacd1f521af8361ba582f85ce9b07b092ef9532765edc1bc32d4c5a8626b8"
+    },
+    "outputs/ad-hoc/guilloche.dutch-stage7/review/master-comparison.png": {
+      "bytes": 2575893,
+      "sha256": "9850576b61e9d3e7c934203fac9caf8fbb3c4c712e00e7d073946ffc369373d6"
+    },
+    "outputs/ad-hoc/guilloche.dutch-stage7/review/master-ink-fit.json": {
+      "bytes": 3231,
+      "sha256": "57a72165219afb35926ffb1ce47e0f3f0319598971146bed42a16d2510d0fe41"
+    },
+    "outputs/ad-hoc/guilloche.dutch-stage7/review/measurements.json": {
+      "bytes": 8684,
+      "sha256": "3310a60ad0b0e0278a9d85c3975d7de57d4a8658206def37a99a8175d35adc63"
+    },
+    "outputs/ad-hoc/guilloche.dutch-stage7/review/model-studies.png": {
+      "bytes": 487655,
+      "sha256": "dcff634b2df35b00b894b4aa948f3c720346d0c56fe0cf339a0389ef600a47db"
+    },
+    "outputs/ad-hoc/guilloche.dutch-stage7/review/prior-fit/alignment-overlay.png": {
+      "bytes": 10231193,
+      "sha256": "db2f789a813247b5bfb6bd626978e8d119af8cd74c35aa06c5ee89ed985a5ef0"
+    },
+    "outputs/ad-hoc/guilloche.dutch-stage7/review/prior-fit/comparison.png": {
+      "bytes": 2578159,
+      "sha256": "b61375a8ff16ca4e87e45549bed662d1ce8d31a6090ab122b94038649d5e61d2"
+    },
+    "outputs/ad-hoc/guilloche.dutch-stage7/review/prior-fit/manifest.json": {
+      "bytes": 725933,
+      "sha256": "b4e2273295871d4ad9472ad2970a93ad9226b0d7b679014a47654cf7c57f3a83"
+    },
+    "outputs/ad-hoc/guilloche.dutch-stage7/review/prior-fit/measurements.json": {
+      "bytes": 8651,
+      "sha256": "939d2770a3fdf099f89f35418cc4e6931bcfdef11e0123dfe894ffe47eca8287"
+    },
+    "outputs/ad-hoc/guilloche.dutch-stage7/review/prior-fit/stage7-faithful.png": {
+      "bytes": 7018227,
+      "sha256": "d381b744865b9c40a0a9c54da12caf077d5ced706bee74563d544b1df973fae9"
+    },
+    "outputs/ad-hoc/guilloche.dutch-stage7/review/prior-fit/verification.json": {
+      "bytes": 5404,
+      "sha256": "1f62e08668c3959525d66a28052b22683a102d089638b9892fb8a77523e5fc63"
+    },
+    "outputs/ad-hoc/guilloche.dutch-stage7/review/script-font-coverage.png": {
+      "bytes": 419658,
+      "sha256": "c76b643aba5b13edb5debc02ba9f69b8345ce0155497cb743d61ead06f248c61"
+    },
+    "outputs/ad-hoc/guilloche.dutch-stage7/review/script-font-coverage.svg": {
+      "bytes": 2980104,
+      "sha256": "8942955084e1499d241f2d12f4a7250fe1fcaf5f75fbd76222d5f17587468a05"
+    },
+    "outputs/ad-hoc/guilloche.dutch-stage7/review/script-font-facsimile.png": {
+      "bytes": 155419,
+      "sha256": "316ed4d5fb11a8db0586f99aa6ccde4bc1538f116f8e368684c79c41676e0fc1"
+    },
+    "outputs/ad-hoc/guilloche.dutch-stage7/review/script-font-facsimile.svg": {
+      "bytes": 112458,
+      "sha256": "aaa8659bdf291d55146e58b80e9bb4e91059f2e18b478b6d80a6727ec1d56db2"
+    },
+    "outputs/ad-hoc/guilloche.dutch-stage7/review/script-font-numerals.png": {
+      "bytes": 248817,
+      "sha256": "aee5344646c16c074f4587dc220180cd804a6a1570cf0b4bcbea416dfe45936b"
+    },
+    "outputs/ad-hoc/guilloche.dutch-stage7/review/script-font-numerals.svg": {
+      "bytes": 433904,
+      "sha256": "9d8e1f1854219f280954425d27d5acacb64dcc2da43e45816f4a0d356af8700a"
+    },
+    "outputs/ad-hoc/guilloche.dutch-stage7/review/script-font-specimen.png": {
+      "bytes": 498774,
+      "sha256": "dceb58fb0835a6968d19e0d2d1087526f8f56c46e09637b8f2f1e390fa063a00"
+    },
+    "outputs/ad-hoc/guilloche.dutch-stage7/review/script-font-specimen.svg": {
+      "bytes": 1760608,
+      "sha256": "d53482bc88d9a14c1d8a725be5d15807b5d40a21af0c03aa8d51a3299ac9ff73"
+    },
+    "outputs/ad-hoc/guilloche.dutch-stage7/review/seam-check.json": {
+      "bytes": 434,
+      "sha256": "a29368c0d14191b7555b958e8339777f2304082836be62e8aa5102e7c6c397e8"
+    },
+    "outputs/ad-hoc/guilloche.dutch-stage7/review/seam-difference-amplified.png": {
+      "bytes": 10500,
+      "sha256": "75c70ce42d2739aa780d387683759fde2819ed2e4536cbd2d76f72e9e3ea2b96"
+    },
+    "outputs/ad-hoc/guilloche.dutch-stage7/review/second-fit.png": {
+      "bytes": 1371480,
+      "sha256": "eef161de15fdc136889f7ab83e6f157d81b649eabdff76bcc8cc4af652d5d116"
+    },
+    "outputs/ad-hoc/guilloche.dutch-stage7/review/source-master.json": {
+      "bytes": 1548,
+      "sha256": "f5c3273234326c722eedd3aff5a750b3ccdbddaf51c462c9f5896f86767ab724"
+    },
+    "outputs/ad-hoc/guilloche.dutch-stage7/review/source-master.png": {
+      "bytes": 6519074,
+      "sha256": "e7f60e407389c6a1a1a1bacd5659b16d8e6565c87d57eac9cb61e4becef39a85"
+    },
+    "outputs/ad-hoc/guilloche.dutch-stage7/review/source-master.svg": {
+      "bytes": 7118068,
+      "sha256": "f8c30f185916ca5336e30336ddc30eceb7ab0b8e9fcff15e624ad930b0ee5f46"
+    },
+    "outputs/ad-hoc/guilloche.dutch-stage7/review/stage7-source-view.png": {
+      "bytes": 7482452,
+      "sha256": "c096ca53d126c7f25202720d62bc5f8b411942800540e1580a55ab2102a169f4"
+    },
+    "outputs/ad-hoc/guilloche.dutch-stage7/review/study-contour-loop.png": {
+      "bytes": 506196,
+      "sha256": "99bca1958566129589b19f120cd6d13eee9465044e2e9cb3e03d12e612a03242"
+    },
+    "outputs/ad-hoc/guilloche.dutch-stage7/review/study-contour-loop.svg": {
+      "bytes": 726296,
+      "sha256": "86f49ee9c04267503721f4bfb44633f007155cdb58f022b839ed640b15ca48b6"
+    },
+    "outputs/ad-hoc/guilloche.dutch-stage7/review/study-elliptic-loop.png": {
+      "bytes": 504663,
+      "sha256": "b77faf8bff74455f42ed4e9ca5f3cebac1af6ac18b15909f67adc6aac7a17193"
+    },
+    "outputs/ad-hoc/guilloche.dutch-stage7/review/study-elliptic-loop.svg": {
+      "bytes": 726448,
+      "sha256": "83bb15255f22649618e895ab547093b9c68a4ad608a7dfa2cc9c1603e51f2f4b"
+    },
+    "outputs/ad-hoc/guilloche.dutch-stage7/review/study-filament-width-060-preview.png": {
+      "bytes": 1444541,
+      "sha256": "33daefe8ecfab95180761889a8adb41c452b9282a6a57e48589e79eba0311bac"
+    },
+    "outputs/ad-hoc/guilloche.dutch-stage7/review/study-filament-width-060.png": {
+      "bytes": 7018227,
+      "sha256": "d381b744865b9c40a0a9c54da12caf077d5ced706bee74563d544b1df973fae9"
+    },
+    "outputs/ad-hoc/guilloche.dutch-stage7/review/study-filament-width-060.svg": {
+      "bytes": 20305239,
+      "sha256": "d60a3b378f5b45684c75389b9129036e1db66b63f36e935054f317b8db9269d1"
+    },
+    "outputs/ad-hoc/guilloche.dutch-stage7/review/third-fit.png": {
+      "bytes": 1402048,
+      "sha256": "5ff143fcb7f20ff53968d5fcdedff8fe84a3e2a87328999fa98a0cd658a54302"
+    },
+    "outputs/ad-hoc/guilloche.dutch-stage7/review/variations-first.png": {
+      "bytes": 1357411,
+      "sha256": "4ff88af06bf230931c3bf34e96edad89f77483e0f829e1b4ba8856c05022cba3"
+    },
+    "outputs/ad-hoc/guilloche.dutch-stage7/review/verification.json": {
+      "bytes": 11035,
+      "sha256": "24918489b458606c9e4fa1562d4557f5d2618df666189c37fbeda1a8a1713db3"
+    },
+    "outputs/ad-hoc/guilloche.dutch-stage7/review/wild-variations.png": {
+      "bytes": 2276313,
+      "sha256": "1df23a7ad867a4a2cfe7ee1d956da9693c13e436a8a2458d96480ad8c7b8d670"
+    },
+    "outputs/ad-hoc/guilloche.dutch-stage7/svg/stage7-faithful.svg": {
+      "bytes": 23837344,
+      "sha256": "9296c35d559e3918639289d9f74f35221054ab80f765958efcc5456c40b0a5a5"
+    },
+    "outputs/ad-hoc/guilloche.dutch-stage7/svg/stage7-wild-01-chromatic-crown.svg": {
+      "bytes": 23982568,
+      "sha256": "5319722497079456d4b3546336f0ca013ad37681e277a3ea0bdd77ede11e8c1e"
+    },
+    "outputs/ad-hoc/guilloche.dutch-stage7/svg/stage7-wild-02-twelvefold-corona.svg": {
+      "bytes": 25007092,
+      "sha256": "f12e2dd11ddb8e669e1d974b6e1ca50c4ca89250656d46f25c321874cb1c5267"
+    },
+    "outputs/ad-hoc/guilloche.dutch-stage7/svg/stage7-wild-03-squared-seal.svg": {
+      "bytes": 22902455,
+      "sha256": "0bfcaf3ab1a1abaae431aa4c62fedd85ffd91c6bcb17f2eb5a5c405861573477"
+    },
+    "outputs/ad-hoc/guilloche.dutch-stage7/svg/stage7-wild-04-tidal-scrolls.svg": {
+      "bytes": 21921419,
+      "sha256": "73790095c7d879d1c9a3501225f8af88ab57c6c6ea9dc2d0f4196fd87035aef0"
+    },
+    "outputs/ad-hoc/guilloche.dutch-stage7/svg/stage7-wild-05-eclipse-lace.svg": {
+      "bytes": 25996831,
+      "sha256": "b61ca5faed6ce126e2d5aa0f4788e660a07a910750b7d5ba261c062861532181"
+    },
+    "outputs/ad-hoc/guilloche.dutch-stage7/svg/stage7-wild-06-spiral-telescope.svg": {
+      "bytes": 24496153,
+      "sha256": "7bfa4dabd5aa1cba4d87059e418264b024ba551a5b92c20d0f2b0c5c8eea6745"
+    },
+    "outputs/ad-hoc/guilloche.dutch-stage7/svg/stage7-wild-07-knotted-ribbons.svg": {
+      "bytes": 10086407,
+      "sha256": "538d3fff60989f82c7b19f68ba1de84c08ca7a3277d0ab28ebb2a8b6d87455b3"
+    },
+    "outputs/ad-hoc/guilloche.dutch-stage7/svg/stage7-wild-08-botanical-crown.svg": {
+      "bytes": 23630981,
+      "sha256": "2f22715913707676ca0d44b490e7761b79b48fbfae65dd06ea6d83c0716ac2e5"
+    },
+    "outputs/ad-hoc/guilloche.dutch-stage7/svg/stage7-wild-09-fractured-seal.svg": {
+      "bytes": 9550986,
+      "sha256": "af89914cd908fe7edc1dce58724425bb4b53f9d97d93546d5fa99604dfe4da2e"
+    },
+    "outputs/ad-hoc/guilloche.dutch-stage7/svg/stage7-wild-10-endless-scroll.svg": {
+      "bytes": 8571245,
+      "sha256": "859802dde931d5c4be2bfe92965bc6b41b9caae4a6c5bc409a4512cd662d7165"
+    }
+  },
+  "check_logs": {
+    "build/dutch-stage7-work/refined-suite.log": {
+      "bytes": 6877,
+      "sha256": "e46eec9758d016a039d2fadcc05a8cb2e30505f0732f8bc6d895c4a840ec045b"
+    },
+    "build/dutch-stage7-work/regression-refined.json": {
+      "bytes": 2792,
+      "sha256": "4be030b550c3164baf8f31797ddb3acfc1fab76a09a5774becad39f46dce18fd"
+    }
+  }
+}

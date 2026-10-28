@@ -62,3 +62,9 @@ usage → assessment (status + open items) → links.
   example-level (library-only) so far.
 
 Status: `IMPLEMENTED; ENTRIES-UPDATED-WITH-EVIDENCE; NO-REMOVAL`
+
+Update 2026-09-29: the [canonical Hamonshū guide](hamonshu.md) now contains
+the source catalogue, API, consumer notes and revision map. Its
+[verification section](hamonshu.md#verification-and-regeneration) supersedes
+the first-pass testing gap above: all 153 specimens and 91 curated variations
+are covered by the guilloché enrichment checks.

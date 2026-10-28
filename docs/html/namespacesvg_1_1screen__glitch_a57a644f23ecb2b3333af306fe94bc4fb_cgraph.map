@@ -1,0 +1,18 @@
+<map id="svg::screen_glitch::render_native" name="svg::screen_glitch::render_native">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,123,125,159"/>
+<area shape="rect" id="Node000002" href="$namespacesvg_1_1screen__glitch.html#ab248f8d92ac25f611bb6c1b36dda85b5" title="Validate and resolve a frame at frame/rate + offset, for the supplied domain." alt="" coords="173,123,292,159"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="124,138,160,140,155,142,126,144"/>
+<area shape="rect" id="Node000003" href="$namespacesvg_1_1screen__glitch.html#a480be041892df6b9d0b93f351f6274f0" title=" " alt="" coords="340,5,459,42"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="253,120,291,87,338,52,350,48,345,51,342,57,295,91,256,124"/>
+<area shape="rect" id="Node000004" href="$namespacesvg_1_1screen__glitch.html#ae17a820cc2722506e0c253f50ece164d" title=" " alt="" coords="340,67,459,103"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="288,120,331,108,326,110,290,125"/>
+<area shape="rect" id="Node000006" href="$namespacesvg_1_1screen__glitch.html#ab29815e4ffbfde18fe8296dab8352cfa" title=" " alt="" coords="507,123,627,159"/>
+<area shape="poly" id="edge8_Node000002_Node000006" title=" " alt="" coords="292,138,494,140,489,142,293,144"/>
+<area shape="rect" id="Node000007" href="$namespacesvg_1_1screen__glitch.html#a63f9a6bf769d8e723776c135bd1afada" title=" " alt="" coords="340,179,459,215"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="290,157,331,173,326,173,289,163"/>
+<area shape="rect" id="Node000008" href="$namespacesvg_1_1screen__glitch.html#adc1e0a0d9e9c674ed098678a63b02de1" title=" " alt="" coords="340,240,459,277"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="255,157,295,191,342,225,350,233,345,232,338,230,291,195,254,162"/>
+<area shape="rect" id="Node000005" href="$namespacesvg_1_1screen__glitch.html#a5e2d8f928ccc4ee49cd1fbb7cf247f90" title=" " alt="" coords="507,61,627,98"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="459,80,495,81,490,83,461,86"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="457,101,498,117,493,117,457,107"/>
+</map>

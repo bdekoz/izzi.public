@@ -199,4 +199,33 @@ metadata continues to report `archive-geometry-used=false`.
 ## Assessment
 
 Status: `ASSESSED-M4-VOCABULARY-AND-PROFILE-COVERAGE`.
-Open items: none.
+The M1–M4 vocabulary and profile work is complete. Linear/linear pairs now
+use the exact ideal carrier calculation below. With curved fields, waves
+or anisotropic transforms, `minimum_beat_period` remains a representative
+tuning estimate, not a physical period of the complete image. Rotated-line
+and variable-grid kinds report no single period.
+
+## Exact straight-grating reference
+
+`izzi::moire::linear_grating_beat_period(pitch_a, angle_a, pitch_b, angle_b)`
+uses pitches in drawing units and angles in radians. Set
+`delta = remainder(angle_a-angle_b, pi)` and `f_a=1/pitch_a`,
+`f_b=1/pitch_b`. The selected low-frequency difference component has
+`P = 1/hypot(f_a-f_b, 2*sqrt(f_a*f_b)*sin(delta/2))`.
+The helper returns zero for coincident frequencies (no finite beat), rather
+than dividing by a small numerical residue.
+
+For ideal straight gratings, frequency vectors in cycles per drawing unit
+give `P = 1 / |k1 - k2|` for the selected difference component. Equal-pitch
+gratings at a relative angle `delta` reduce exactly to
+`P = spacing / (2 sin(|delta| / 2))`. Coincident frequencies have no finite
+beat period. General line orientations are equivalent modulo a half-turn;
+the choice of spectral component and angular normalization must be explicit.
+
+The [September 28 survey](../development/sessions/20260928.meta_guilloche_survey.md#7-incorporating-optical-effects)
+motivated the implemented equal/unequal-pitch and orientation-wrap reference
+checks in `tests/guilloche-enrichment.cc`. Native
+[effect/control comparisons](../generative_patterns.md#water-forms-and-optical-controls)
+separate geometric measurements from perception. The earlier
+[interactive studies](../development/sessions/20260928.meta_guilloche_studies/optical-lab.html)
+compare two-layer water/leaf fields with single-layer controls.

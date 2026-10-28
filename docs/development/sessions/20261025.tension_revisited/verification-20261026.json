@@ -1,0 +1,176 @@
+{
+  "schema": "izzi.edge-tension-verification/1",
+  "date": "2026-10-26",
+  "status": "PASS",
+  "scope": "Edge-tension E0\u2013E6 technical verification; human aesthetic acceptance remains pending.",
+  "base_revision": "d348f984490724aceb90284fcf491bb3cc0161f2",
+  "implementation_revision": "bb7759a42bf2a974516f35682d1f4a6f5f65813a",
+  "tested_tree": "Working tree, including in-progress shared catalog and guilloche changes; hashes below identify the tested source.",
+  "source_changes_during_verification": [
+    "scripts/hlt-stage4-render.py",
+    "tests/hlt-stage4-render.py"
+  ],
+  "compiler": "g++ (GCC) 16.2.1 20260819 (Red Hat 16.2.1-2)",
+  "build_configuration": {
+    "type": "Release",
+    "BUILD_TESTING": true,
+    "CXX_COMPILER": "/usr/bin/g++"
+  },
+  "tests": [
+    {
+      "name": "header-self-contained.izzi-review-edge-tension.h",
+      "status": "PASS",
+      "seconds": 1.35144
+    },
+    {
+      "name": "header-self-contained.izzi-svg-edge-tension.h",
+      "status": "PASS",
+      "seconds": 0.806895
+    },
+    {
+      "name": "review.native-catalog",
+      "status": "PASS",
+      "seconds": 65.822
+    },
+    {
+      "name": "review.source-inventory",
+      "status": "PASS",
+      "seconds": 0.0684944
+    },
+    {
+      "name": "review.builder-contract",
+      "status": "PASS",
+      "seconds": 4.90296
+    },
+    {
+      "name": "edge-tension.numeric",
+      "status": "PASS",
+      "seconds": 9.17104
+    },
+    {
+      "name": "edge-tension.odr",
+      "status": "PASS",
+      "seconds": 0.0033155
+    },
+    {
+      "name": "edge-tension.periodic",
+      "status": "PASS",
+      "seconds": 6.43159
+    }
+  ],
+  "native_replay": {
+    "status": "PASS",
+    "worker_sha256": "374155a14eaae5ada278582d5b5f316622669e461839ee1bbc84a5b956fe3e73",
+    "edge_catalogs_match": 16,
+    "edge_renders": 608,
+    "legacy_renders": 8,
+    "mismatches": []
+  },
+  "periodic_checks": {
+    "status": "PASS",
+    "comparisons": 24,
+    "maximum_channel_delta": 0,
+    "scope": "Four pattern recipes, low/middle/high geometry corners; one center supercell inside a 3\u00d73 field, x and y period shifts at the study device scale. P007/P010 retain intentional bounded-motif gaps."
+  },
+  "references": {
+    "status": "PASS",
+    "archive_sha256": "2fa383e02be38b9d85961b12cebbee1903d633499ec5b022e69691bdc1cbc565",
+    "members_verified": 16
+  },
+  "delivered_artifacts": {
+    "build/edge-tension-study": {
+      "status": "PASS",
+      "scope": "selected",
+      "edge_forms": 16,
+      "edge_studies": 80,
+      "edge_cells": 672,
+      "edge_distinct_svgs_verified": 608,
+      "ink_ablation_checks": 528,
+      "png_hashes_verified": 82,
+      "source_files_verified": 91,
+      "current_sources_different_from_delivered_snapshot": [
+        "examples.data/review/source-inventory.json",
+        "src/izzi-review-catalog.h",
+        "src/izzi-svg-guilloche-enrichment.inc",
+        "src/izzi-svg-guilloche.h"
+      ],
+      "human_review": "pending"
+    },
+    "build/examples-study": {
+      "status": "PASS",
+      "scope": "all",
+      "edge_forms": 16,
+      "edge_studies": 80,
+      "edge_cells": 672,
+      "edge_distinct_svgs_verified": 608,
+      "ink_ablation_checks": 528,
+      "png_hashes_verified": 1209,
+      "source_files_verified": 91,
+      "current_sources_different_from_delivered_snapshot": [
+        "examples.data/review/source-inventory.json",
+        "src/izzi-review-catalog.h",
+        "src/izzi-svg-guilloche-enrichment.inc",
+        "src/izzi-svg-guilloche.h"
+      ],
+      "human_review": "pending"
+    },
+    "outputs/edge-tension-study.plates.json": {
+      "status": "PASS",
+      "pdf_pages": 82,
+      "sha256": "b32bb5e29b2314d46e172e2821f57b04f8c0371516faa57b2e2d7b1605958286"
+    },
+    "outputs/izzi-examples-2026-10-25-study.compact.plates.json": {
+      "status": "PASS",
+      "pdf_pages": 1209,
+      "sha256": "a0172e59f7292550ca2eb58bb59bdd21b051533556e72bf191de931a79116f77"
+    }
+  },
+  "current_input_sha256": {
+    "CMakeLists.txt": "14e3e2040eb1271e24a789972922bd14865459c8b24820352535907abcefcf77",
+    "examples.data/review/source-inventory.json": "b6b44c24263116d90d0314aa09abfbd9941990ebb31e343380a5358da3170c83",
+    "scripts/render-examples.py": "e0c4a9551038ec463dfa7c87eecfe816a4793e2e6c727cfa005663ecc685e4b5",
+    "scripts/review-native.cc": "37438b9a992ed6c32e80d24a39f0224efabc8003bc2fb4f238a862ca0b37bb99",
+    "scripts/review_catalog.py": "6a05f0a701a5d6c32825dbcef43247720bacf5f781ec1c3abaf302532b18d9c8",
+    "src/izzi-review-catalog.h": "b32e7ee385539ca28d5986da6ee3510de97d060a5c905533faba01ae1dc1dc4c",
+    "src/izzi-review-descriptor.h": "6f4ee68e896224da6c1ad5b9ae8ab973cc4e8c054896b721b00f0df10c2d4c03",
+    "src/izzi-review-edge-tension.h": "ba6298302961c657b91c0d036c26e622ecc31002b4cb5bb7d62d323d9aeb2b63",
+    "src/izzi-svg-edge-tension.h": "bb0ea308f7f5ed33ec7286c3ab2ebef6436288c17bf48449d6127fcbc0768fdd",
+    "src/izzi-svg-guilloche-enrichment.inc": "393a13a6b93511f6d30bd3d35d9afa50e75900507b892746a4c37cecdd10535f",
+    "src/izzi-svg-guilloche.h": "4633afefc038a885ecd14432daa193dc224422d4a423b417d5fa3847c97c6a94",
+    "tests/CMakeLists.txt": "b95e180ef6fbacbf19aa3552d72709822deeb1d0db19d1ebde101f913dad8354",
+    "tests/edge-tension-periodic.py": "9e2a542f831b92b1f39865969bcda4dcb1e31fd96bcac47910c06755ac999f8b",
+    "tests/edge-tension.cc": "06b07e5fbf6923625e3f2d7c4577de8f4c24bb8739dcd3be47d72d2138d9f14e",
+    "tests/review-catalog-native.cc": "e84d3c6a6e24c7226d53206d18521ad26ba5168e97d9b294f8b10ae7bf53eacd",
+    "tests/review-catalog.py": "dc6dbe440f42ad781ab2c4fe9f60c688c81a46c49dce794775a3b002f0fac7c2",
+    "tests/review-source-inventory.py": "6bef29335a55b9eeb30caf047510bf5fb8238cf9195035ae679d362149f10e1d"
+  },
+  "edge_headers_match_delivered_inputs": true,
+  "full_book_rebuilt_today": false,
+  "human_review": "pending",
+  "remaining_work": [
+    {
+      "id": "visual-acceptance",
+      "kind": "review",
+      "status": "pending",
+      "action": "Compare all sixteen authored baselines and grids with source crops; record accepted features and specific adjustments. O_2_006 separates the teardrops; P_007/P_010 intentionally retain motif gaps/overlaps. Promote accepted visual baselines only after that review."
+    },
+    {
+      "id": "shared-book-refresh",
+      "kind": "integration",
+      "status": "after ongoing shared changes settle",
+      "action": "Rerun make edge-tension-check, make edge-tension-study, and make examples-study against the final shared tree; verify the resulting coverage, source fingerprints, PDF page mappings, and hashes. Existing PDFs remain valid dated snapshots; current edge art matches them byte for byte."
+    }
+  ],
+  "edge_implementation_tasks_remaining": [],
+  "optional_extensions": [
+    "Whole-fan ink compositions in the independent composition book",
+    "Guilloche adapter",
+    "Surface-field deformation"
+  ],
+  "local_evidence": {
+    "build_directory": "/tmp/izzi-edge-tension-verify-20261026-0e8cf041",
+    "ctest_junit": "/tmp/izzi-edge-tension-verify-20261026-0e8cf041/ctest-results.xml",
+    "artifact_audit": "/tmp/izzi-edge-tension-verify-20261026-0e8cf041/artifact-audit.json",
+    "native_replay": "/tmp/izzi-edge-tension-verify-20261026-0e8cf041/native-replay.json"
+  }
+}

@@ -1,0 +1,118 @@
+{
+    "catalogue": "docs/generative_patterns/hamonshu-water-catalogue.json",
+    "scope": "Graphic water crops only; scan numbers are distinct from printed-page numbers.",
+    "groups": [
+        {
+            "id": "flow",
+            "name": "Currents and waterlines",
+            "description": "Long meanders, flowing parallel lines, drifting pools and gently layered swells.",
+            "construction": "Shared-displacement bands; cubic or harmonic centerlines; related contour families.",
+            "representative": {
+                "volume": 3,
+                "scan": 18,
+                "box": [
+                    0.08,
+                    0.43,
+                    0.45,
+                    0.61
+                ]
+            }
+        },
+        {
+            "id": "crest",
+            "name": "Crests and breakers",
+            "description": "Overturning hooks, curling tips, upright breaking waves and layered wave fronts.",
+            "construction": "Parametric crest paths with a return curl; nested contours and optional foam.",
+            "representative": {
+                "volume": 3,
+                "scan": 22,
+                "box": [
+                    0.52,
+                    0.22,
+                    0.9,
+                    0.9
+                ]
+            }
+        },
+        {
+            "id": "eddy",
+            "name": "Eddies, scrolls and spirals",
+            "description": "Coiled currents, opposing scrolls, whirlpools and spiral medallions.",
+            "construction": "Spiral segments joined to flow paths; paired handedness and unequal curl radii.",
+            "representative": {
+                "volume": 3,
+                "scan": 16,
+                "box": [
+                    0.54,
+                    0.23,
+                    0.9,
+                    0.51
+                ]
+            }
+        },
+        {
+            "id": "arc",
+            "name": "Ripples, scallops and nested arcs",
+            "description": "Repeated arc bundles, ripple rings, scales and small rounded swells.",
+            "construction": "Nested arcs and partial rings; staggered repeats with explicit open and closed forms.",
+            "representative": {
+                "volume": 3,
+                "scan": 17,
+                "box": [
+                    0.08,
+                    0.58,
+                    0.44,
+                    0.78
+                ]
+            }
+        },
+        {
+            "id": "foam",
+            "name": "Foam, spray, droplets and cells",
+            "description": "Detached water marks, dotted spray, bead chains, bubbly rims and cellular water textures.",
+            "construction": "Sparse secondary marks following a parent crest; bounded point and small-loop motifs.",
+            "representative": {
+                "volume": 3,
+                "scan": 16,
+                "box": [
+                    0.54,
+                    0.55,
+                    0.9,
+                    0.89
+                ]
+            }
+        },
+        {
+            "id": "weave",
+            "name": "Braids, lattices and herringbone",
+            "description": "Interlaced current ribbons, diagonal blocks, linked bands and geometric repeats.",
+            "construction": "Two related line directions or a crossing graph; preserve intended over-under order.",
+            "representative": {
+                "volume": 3,
+                "scan": 20,
+                "box": [
+                    0.54,
+                    0.56,
+                    0.9,
+                    0.88
+                ]
+            }
+        },
+        {
+            "id": "fan",
+            "name": "Fans, fountains and feathered jets",
+            "description": "Splayed line bundles, upward jets and bilateral feather-like water forms.",
+            "construction": "Diverging paths from an attachment region; bounded branching and a tip envelope.",
+            "representative": {
+                "volume": 3,
+                "scan": 22,
+                "box": [
+                    0.08,
+                    0.24,
+                    0.29,
+                    0.57
+                ]
+            }
+        }
+    ]
+}

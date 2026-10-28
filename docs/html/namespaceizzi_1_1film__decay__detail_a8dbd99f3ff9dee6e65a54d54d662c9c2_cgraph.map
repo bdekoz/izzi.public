@@ -1,0 +1,8 @@
+<map id="izzi::film_decay_detail::preset" name="izzi::film_decay_detail::preset">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,147,42"/>
+<area shape="rect" id="Node000002" href="$namespaceizzi_1_1film__decay__detail.html#ab48369f4aa81e9460f83e6f1068dcca0" title=" " alt="" coords="409,5,550,42"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="147,21,394,21,393,26,147,26"/>
+<area shape="rect" id="Node000003" href="$namespaceizzi_1_1film__decay__detail.html#a7114d4d3f263522341ac7106d852d01d" title=" " alt="" coords="195,36,361,60"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="147,29,182,36,176,36,147,35"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="361,35,391,34,396,34,362,40"/>
+</map>

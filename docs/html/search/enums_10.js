@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['weight_0',['weight',['../structsvg_1_1typography.html#ac41cf6a133f5b21757130ce5ba72b3d7',1,'svg::typography']]]
+  ['visualization_5fkind_0',['visualization_kind',['../namespacesvg.html#a85424dde0d1dcd35e40a82ff8ef874c2',1,'svg']]]
 ];

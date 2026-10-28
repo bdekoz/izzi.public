@@ -1,0 +1,15 @@
+<map id="svg::render_count_share_table" name="svg::render_count_share_table">
+<area shape="rect" id="Node000001" title="Accessible exact&#45;value alternative. User&#45;supplied values are always escaped." alt="" coords="5,108,160,145"/>
+<area shape="rect" id="Node000002" href="$namespacesvg_1_1matrix__detail.html#a7e1b62f5ac0e27b2bc8b335beebe727e" title=" " alt="" coords="217,5,336,42"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="113,105,206,52,220,47,216,51,209,57,116,110"/>
+<area shape="rect" id="Node000003" href="$namespacesvg.html#a26bf6966511ae3c348843c1881b190d8" title="Escape unescaped data for an XML text node." alt="" coords="208,66,345,90"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="158,105,213,93,208,96,160,110"/>
+<area shape="rect" id="Node000005" href="$namespacesvg.html#a1de80f444548034307894fdfb28db748" title="Undefined for the denominator column, missing inputs, or a zero total." alt="" coords="218,114,335,138"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="159,124,205,125,200,127,161,129"/>
+<area shape="rect" id="Node000006" href="$namespacesvg_1_1matrix__detail.html#a9b04b8deb3f92b0924e2d7ff9dcf5baa" title=" " alt="" coords="217,163,336,199"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="150,143,205,159,200,161,150,148"/>
+<area shape="rect" id="Node000007" href="$namespacesvg.html#af3b32e86fe68cb7127997189354b098d" title=" " alt="" coords="212,224,340,261"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="109,142,155,175,209,209,220,217,214,217,206,214,152,180,108,148"/>
+<area shape="rect" id="Node000004" href="$namespacesvg_1_1detail.html#a0dabd749799988c1aae4474d923c6fd1" title="Escape unescaped character data at its XML serialization boundary. Existing entity spellings are data..." alt="" coords="393,66,544,90"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="345,76,380,78,375,79,346,81"/>
+</map>

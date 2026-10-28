@@ -1,0 +1,15 @@
+<map id="izzi::film_decay_detail::fields::renewal" name="izzi::film_decay_detail::fields::renewal">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,149,147,186"/>
+<area shape="rect" id="Node000002" href="$namespaceizzi_1_1film__decay__detail.html#a2b5bef56a10dbdc26abb9fe995b6b419" title=" " alt="" coords="195,128,365,152"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="147,155,182,153,176,154,148,161"/>
+<area shape="rect" id="Node000005" href="$namespaceizzi_1_1film__decay__detail.html#af6329d62fd88b118c8c3ad6e58147556" title=" " alt="" coords="792,124,960,148"/>
+<area shape="poly" id="edge7_Node000001_Node000005" title=" " alt="" coords="147,170,261,176,410,179,576,176,743,164,815,152,821,152,744,169,576,182,410,185,261,181,147,175"/>
+<area shape="rect" id="Node000003" href="$namespaceizzi_1_1film__decay__detail.html#aed36e6e5ab67071af1d7ecc0fa532248" title=" " alt="" coords="413,89,554,126"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="359,125,400,121,395,122,360,130"/>
+<area shape="rect" id="Node000004" href="$namespaceizzi_1_1film__decay__detail.html#a1fc94ea58bbcc663dbdccf5a69bd0f2e" title=" " alt="" coords="602,5,744,42"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="526,86,613,49,619,48,528,91"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="554,103,602,102,673,99,744,102,821,120,815,119,743,108,673,105,602,108,555,108"/>
+<area shape="rect" id="Node000006" href="$namespaceizzi_1_1film__decay__detail.html#ad9f5cc0c624fbe97f7b23867b4b658ae" title=" " alt="" coords="602,117,744,154"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="555,115,590,123,584,123,554,121"/>
+<area shape="poly" id="edge6_Node000006_Node000005" title=" " alt="" coords="744,133,778,136,773,136,744,138"/>
+</map>

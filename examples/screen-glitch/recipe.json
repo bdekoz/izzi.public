@@ -1,0 +1,54 @@
+{
+  "schema": "izzi.screen-glitch/1",
+  "seed": 20260930,
+  "backend": "native_svg",
+  "source_identity": "screen-docs-moving-source-v1",
+  "color_policy": "preserve_srgb_alpha",
+  "budget": {
+    "paths": 300000,
+    "points": 4000000,
+    "svg_bytes": 100663296,
+    "stages": 64,
+    "history_frames": 1000,
+    "passes": 32
+  },
+  "stages": [
+    {
+      "id": "antenna",
+      "family": "tv-broadcast",
+      "operation": "analog-reception",
+      "version": "1",
+      "evidence": "inferred_mapping",
+      "profile": "experimental",
+      "clock": {
+        "scale": [
+          1,
+          1
+        ],
+        "offset": [
+          0,
+          1
+        ],
+        "identity": "presentation"
+      },
+      "parameters": {
+        "kind": 0,
+        "amount": 0.35,
+        "density": 400.0,
+        "spatial_bandwidth": 0.005,
+        "temporal_correlation": 0.2,
+        "frequency": 12.0,
+        "drift_hz": 0.3,
+        "burst_spacing": 0.7,
+        "burst_width": 0.13,
+        "delay": 0.06,
+        "gain": 0.4,
+        "blanking": 0.04,
+        "echoes": 2,
+        "onset": 0.0,
+        "duration": 8.0,
+        "recovery": 2.0
+      }
+    }
+  ]
+}

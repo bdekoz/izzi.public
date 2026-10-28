@@ -23,7 +23,7 @@ or raw provider responses appear here.
 5. **The resolution cap persists after the STANDARD → PRO upgrade** (segment
    3 was the first true PRO-key submission and still delivered 720×1280).
 
-## Episode-01 pilot evidence (2026-08-12, `bin/resume-pilot-production.py`)
+## Episode-01 pilot evidence (2026-08-12, `scripts/resume-pilot-production.py`)
 
 All jobs: `mode=image-to-video`, `quality_tier=pro`, `channel=standard`,
 `aspect_ratio=9:16`, `generate_audio=false`, `fixed_lens=false`, 10 s

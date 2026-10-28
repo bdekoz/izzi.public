@@ -1,9 +1,25 @@
 var searchData=
 [
-  ['latent_5fimage_5fdimensions_0',['latent_image_dimensions',['../namespaceizzi_1_1guilloche_1_1detail.html#aa0297e46d808e34446f8495e24d2f3f5',1,'izzi::guilloche::detail']]],
-  ['layout_1',['layout',['../namespacesvg_1_1graph.html#a5b45b745cd9f415d9aec0bf970829e97',1,'svg::graph']]],
-  ['layout_5flinear_5fchord_2',['layout_linear_chord',['../namespacesvg_1_1graph.html#ad919834f6432433058cb01d20835e2b5',1,'svg::graph']]],
-  ['layout_5fradial_5forbit_3',['layout_radial_orbit',['../namespacesvg_1_1graph.html#a790b8553675011ec3b5ff2ffc2146e38',1,'svg::graph']]],
-  ['lerp_5fcolor_4',['lerp_color',['../namespaceizzi_1_1guilloche_1_1detail.html#a514575ae7234cf68b9a6e3eaf623756a',1,'izzi::guilloche::detail']]],
-  ['linear_5fto_5fsrgb_5',['linear_to_srgb',['../namespacesvg.html#a357e4d05b9fd77c3698262af045cd659',1,'svg']]]
+  ['label_0',['label',['../namespaceizzi_1_1edge__tension_1_1detail.html#a8b707a9c22d6122220dc7498ebe9ccbb',1,'izzi::edge_tension::detail']]],
+  ['lace_1',['lace',['../structizzi_1_1film__decay__v2_1_1layout.html#a7c22dd189df418775c51ca2d064a75b1',1,'izzi::film_decay_v2::layout::lace()'],['../structizzi_1_1film__decay__detail_1_1fields.html#a6b707794b3acbc8d1beae0be9d01b1c6',1,'izzi::film_decay_detail::fields::lace()'],['../namespaceizzi_1_1film__decay__v2.html#a21875bbcbbe5d02be284027b25708ca6',1,'izzi::film_decay_v2::lace()']]],
+  ['latent_5fimage_5fdimensions_2',['latent_image_dimensions',['../namespaceizzi_1_1guilloche_1_1detail.html#aa0297e46d808e34446f8495e24d2f3f5',1,'izzi::guilloche::detail']]],
+  ['lattice_5finstances_3',['lattice_instances',['../namespaceizzi_1_1edge__tension.html#a6a08ce4891ab38f2bade6a2d038a7b55',1,'izzi::edge_tension']]],
+  ['layout_4',['layout',['../structizzi_1_1film__decay__v2_1_1layout.html#ac004e0b96cf14ed768edc3ad40e1db32',1,'izzi::film_decay_v2::layout::layout()'],['../namespacesvg_1_1graph.html#a5b45b745cd9f415d9aec0bf970829e97',1,'svg::graph::layout()']]],
+  ['layout_5fidentity_5',['layout_identity',['../namespaceizzi_1_1film__decay__v2.html#ad2a910fc19920d32fffdeb8f5a64d1e6',1,'izzi::film_decay_v2']]],
+  ['layout_5flinear_5fchord_6',['layout_linear_chord',['../namespacesvg_1_1graph.html#ad919834f6432433058cb01d20835e2b5',1,'svg::graph']]],
+  ['layout_5fradial_5forbit_7',['layout_radial_orbit',['../namespacesvg_1_1graph.html#a790b8553675011ec3b5ff2ffc2146e38',1,'svg::graph']]],
+  ['leaf_8',['leaf',['../structizzi_1_1guilloche_1_1meta_1_1drawing.html#ad45614a76485d3fced78c028c3ab166e',1,'izzi::guilloche::meta::drawing']]],
+  ['length_9',['length',['../namespaceizzi_1_1edge__tension.html#a955026135bbfdf332ef9952ea856579d',1,'izzi::edge_tension']]],
+  ['lenticular_5fview_5findex_10',['lenticular_view_index',['../namespaceizzi_1_1guilloche.html#af294bb97a982bd6d640e4572f5ed498a',1,'izzi::guilloche']]],
+  ['lerp_5fcolor_11',['lerp_color',['../namespaceizzi_1_1guilloche_1_1detail.html#a514575ae7234cf68b9a6e3eaf623756a',1,'izzi::guilloche::detail']]],
+  ['line_12',['line',['../structizzi_1_1guilloche_1_1meta_1_1drawing.html#aa4b5f94b82885b81af8741ce9fe18cdf',1,'izzi::guilloche::meta::drawing::line()'],['../structizzi_1_1guilloche_1_1muqarnas_1_1writer.html#ad5ead942427a32d2de2a57b70f4518c6',1,'izzi::guilloche::muqarnas::writer::line()'],['../structizzi_1_1guilloche_1_1detail_1_1organic__sink.html#a7632fd8bd6618bf096bc907cf9531516',1,'izzi::guilloche::detail::organic_sink::line()'],['../namespaceizzi_1_1edge__tension.html#a6e8da994afffd80f5745957445997595',1,'izzi::edge_tension::line()'],['../namespacesvg_1_1video__glitch.html#a5bb7f3a885edca3213215f7f1ecf4e60',1,'svg::video_glitch::line()']]],
+  ['linear_5fgrating_5fbeat_5fperiod_13',['linear_grating_beat_period',['../namespaceizzi_1_1moire.html#ae27fee1fb42ad609f9ca3059e8df3a89',1,'izzi::moire']]],
+  ['linear_5fto_5fsrgb_14',['linear_to_srgb',['../namespacesvg.html#a357e4d05b9fd77c3698262af045cd659',1,'svg']]],
+  ['load_5fswarm_5fmetadata_5fcast_5fbreakdown_15',['load_swarm_metadata_cast_breakdown',['../namespacesvg.html#a3cb25b10ad9734079e95841786e51c95',1,'svg']]],
+  ['load_5fswarm_5fmetadata_5fchord_5fdata_16',['load_swarm_metadata_chord_data',['../namespacesvg.html#a47db31d24d61648aa286be7733bec744',1,'svg']]],
+  ['load_5fswarm_5fmetadata_5fslice_5fcandidate_5fkeys_17',['load_swarm_metadata_slice_candidate_keys',['../namespacesvg.html#a282d6864a3f4f2b673ce4c0072c3de6c',1,'svg']]],
+  ['load_5fswarm_5fmetadata_5fvisualization_5fdata_18',['load_swarm_metadata_visualization_data',['../namespacesvg.html#a94d2612e172a03d9ad0481a87ad77a4b',1,'svg']]],
+  ['lobe_19',['lobe',['../namespaceizzi_1_1film__decay__v2.html#ab75158dd1737948fb32460dc5308a9c3',1,'izzi::film_decay_v2']]],
+  ['loft_20',['loft',['../namespaceizzi_1_1review_1_1edge__recipes.html#a9ea753e1cea2c98bb28535fd0dea730c',1,'izzi::review::edge_recipes']]],
+  ['loft_5fcontrols_21',['loft_controls',['../namespaceizzi_1_1review_1_1edge__recipes.html#a1aa60478476071ff6c1157f8efeb161d',1,'izzi::review::edge_recipes']]]
 ];

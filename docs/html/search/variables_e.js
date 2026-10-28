@@ -1,12 +1,20 @@
 var searchData=
 [
-  ['name_0',['name',['../structPoint.html#af52ec9c5dc533d46c1a67b4bbdaeae23',1,'Point::name'],['../structsvg_1_1hamonshu_1_1pattern__spec.html#a89c3f546a08a2a8f45e3116674df0523',1,'svg::hamonshu::pattern_spec::name'],['../structsvg_1_1id__rstate.html#abaf75e62e9a1166c6855d8af32fe51a9',1,'svg::id_rstate::name']]],
-  ['nested_5fscenes_1',['nested_scenes',['../structizzi_1_1guilloche_1_1scene__spec.html#aabf726372f38eb04904d92d2a0e63369',1,'izzi::guilloche::scene_spec']]],
-  ['no_5farea_2',['no_area',['../namespacesvg_1_1constants.html#a7ea99d84ad1fa1bcbeb32c206b43c19b',1,'svg::constants']]],
-  ['no_5fstroke_5fstyle_3',['no_stroke_style',['../namespacesvg_1_1constants.html#a1c4966a8fd0c1c2d1b3481e10ffda704',1,'svg::constants']]],
-  ['no_5fstyle_4',['no_style',['../namespacesvg_1_1constants.html#a94e31e0f92ab672062d8ebb87e2c8975',1,'svg::constants']]],
-  ['nodes_5',['nodes',['../structsvg_1_1graph_1_1flow__dataset.html#ab82f9272b7a99d31386a18f3e6ea5572',1,'svg::graph::flow_dataset::nodes'],['../structsvg_1_1graph_1_1graph__scene.html#a985acfd1d0ad17a25a82a0b3a149e410',1,'svg::graph::graph_scene::nodes']]],
-  ['normal_5foffset_5fratio_6',['normal_offset_ratio',['../structizzi_1_1guilloche_1_1p1__band__guilloche__tuning.html#ab5f269d7893b1eeaa3e91d767ab6f259',1,'izzi::guilloche::p1_band_guilloche_tuning']]],
-  ['normal_5foffset_5fstep_7',['normal_offset_step',['../structizzi_1_1guilloche_1_1family__spec.html#a5b5f897ac21ab33132f5b3597a612c32',1,'izzi::guilloche::family_spec']]],
-  ['number_8',['number',['../structizzi_1_1guilloche_1_1scene__content.html#ad0d07a2010a25db67807016b54a6e161',1,'izzi::guilloche::scene_content']]]
+  ['name_0',['name',['../structizzi_1_1film__decay__v2_1_1binding.html#a0eb4a44bad9fdd1fb1e4c3c934ba1be1',1,'izzi::film_decay_v2::binding::name'],['../structizzi_1_1film__decay__detail_1_1control.html#adb124f4203345650282887ad72f0bada',1,'izzi::film_decay_detail::control::name'],['../structPoint.html#af52ec9c5dc533d46c1a67b4bbdaeae23',1,'Point::name'],['../structsvg_1_1hamonshu_1_1pattern__spec.html#a89c3f546a08a2a8f45e3116674df0523',1,'svg::hamonshu::pattern_spec::name'],['../structsvg_1_1video__glitch_1_1film_1_1control.html#aba545ee6dfe282548b44e5865763566e',1,'svg::video_glitch::film::control::name'],['../structsvg_1_1id__rstate.html#abaf75e62e9a1166c6855d8af32fe51a9',1,'svg::id_rstate::name']]],
+  ['names_1',['names',['../namespaceizzi_1_1film__decay__detail.html#a8e100ba31b0c8e9fcbb34a5a181474d0',1,'izzi::film_decay_detail::names'],['../namespaceizzi_1_1film__decay__v2.html#ab533830e3a6fc21dd499ae03d31e779c',1,'izzi::film_decay_v2::names']]],
+  ['nationality_5fcounts_2',['nationality_counts',['../structsvg_1_1swarm__metadata__chord__data.html#a49704ed2cca72194d97f82f857c6eb36',1,'svg::swarm_metadata_chord_data']]],
+  ['nationality_5fvalue_5fcount_3',['nationality_value_count',['../structsvg_1_1swarm__metadata__chord__data.html#af383e8ac9b1c4850aae82bbf21f0d8ca',1,'svg::swarm_metadata_chord_data']]],
+  ['nested_5fscenes_4',['nested_scenes',['../structizzi_1_1guilloche_1_1scene__spec.html#aabf726372f38eb04904d92d2a0e63369',1,'izzi::guilloche::scene_spec']]],
+  ['next_5fid_5',['next_id',['../structizzi_1_1film__decay__detail_1_1renderer.html#a23dcf6c80ba1d6cb6f80a9bbaa247635',1,'izzi::film_decay_detail::renderer']]],
+  ['no_5farea_6',['no_area',['../namespacesvg_1_1constants.html#a7ea99d84ad1fa1bcbeb32c206b43c19b',1,'svg::constants']]],
+  ['no_5fstroke_5fstyle_7',['no_stroke_style',['../namespacesvg_1_1constants.html#a1c4966a8fd0c1c2d1b3481e10ffda704',1,'svg::constants']]],
+  ['no_5fstyle_8',['no_style',['../namespacesvg_1_1constants.html#a94e31e0f92ab672062d8ebb87e2c8975',1,'svg::constants']]],
+  ['nodes_9',['nodes',['../structsvg_1_1graph_1_1flow__dataset.html#ab82f9272b7a99d31386a18f3e6ea5572',1,'svg::graph::flow_dataset::nodes'],['../structsvg_1_1graph_1_1graph__scene.html#a985acfd1d0ad17a25a82a0b3a149e410',1,'svg::graph::graph_scene::nodes']]],
+  ['noise_5fdensity_10',['noise_density',['../structsvg_1_1video__glitch_1_1vhs__tracking.html#af628de373d1f0562e5be0ba404b2187d',1,'svg::video_glitch::vhs_tracking']]],
+  ['noise_5fversion_11',['noise_version',['../namespacesvg_1_1video__glitch_1_1film.html#a9859935b1e58c3b23e1426344f669098',1,'svg::video_glitch::film::noise_version'],['../namespacesvg_1_1video__glitch.html#ae34ee2811b6eefddb44ebbf16654450a',1,'svg::video_glitch::noise_version']]],
+  ['normal_5famplitude_12',['normal_amplitude',['../structizzi_1_1guilloche_1_1elliptic__loop__spec.html#a63d55261822dd61a3f7d47b2404f5c79',1,'izzi::guilloche::elliptic_loop_spec::normal_amplitude'],['../structizzi_1_1guilloche_1_1contour__loop__spec.html#a2045f1e7b7ddcd9b01aa4aae02530ad6',1,'izzi::guilloche::contour_loop_spec::normal_amplitude']]],
+  ['normal_5foffset_5fratio_13',['normal_offset_ratio',['../structizzi_1_1guilloche_1_1p1__band__guilloche__tuning.html#ab5f269d7893b1eeaa3e91d767ab6f259',1,'izzi::guilloche::p1_band_guilloche_tuning']]],
+  ['normal_5foffset_5fstep_14',['normal_offset_step',['../structizzi_1_1guilloche_1_1family__spec.html#a5b5f897ac21ab33132f5b3597a612c32',1,'izzi::guilloche::family_spec']]],
+  ['number_15',['number',['../structizzi_1_1guilloche_1_1scene__content.html#ad0d07a2010a25db67807016b54a6e161',1,'izzi::guilloche::scene_content']]],
+  ['numerator_16',['numerator',['../structsvg_1_1video__glitch_1_1film_1_1rational.html#aee85380de1319d82156c3ebd91a869cb',1,'svg::video_glitch::film::rational::numerator'],['../structsvg_1_1video__glitch_1_1rational.html#a002bba135059ecfb8023394335f6d710',1,'svg::video_glitch::rational::numerator']]]
 ];

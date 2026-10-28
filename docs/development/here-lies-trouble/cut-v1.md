@@ -55,7 +55,7 @@ new canary spend is needed.
 **Approved 2026-08-12** (dyad `DYAD-2026-08-12-PILOT-PRODUCTION-APPROVAL-001`):
 requested resolution **1080p**, quality tier pro, new pipeline improvements,
 worker topology eureka + ord (rizal stays control plane), unattended run via
-`bin/resume-pilot-production.py` with checkpoint/resume after outages. The
+`scripts/resume-pilot-production.py` with checkpoint/resume after outages. The
 pipeline stops at the credit gate after segment A until a total ceiling is
 confirmed (observed 1080p rate ≈ 24 cr/s projects the full chain at ≈ 3,960
 credits; the 720p-class rate of 11 cr/s projects ≈ 1,815).
@@ -144,7 +144,7 @@ episode) add the dominant calendar latency.
 
 ## Status update: Plan 1 segment A + 1080p (2026-08-12 unattended run)
 
-Segment A of the episode-01 scene chain ran via `bin/resume-pilot-production.py`
+Segment A of the episode-01 scene chain ran via `scripts/resume-pilot-production.py`
 from rizal:
 
 - Task `sd2_la1xbvy7rx2Y` (10 s, requested `1080p`, quality `pro`) completed.
@@ -159,7 +159,7 @@ from rizal:
 - Last frame extracted, staged, and pushed to situationshipin.space (site
   commit `d833af4`); live URL hash verified `f11e1942…` (one transient
   mismatch was GitHub Pages deploy lag).
-- Resume: `python3 bin/resume-pilot-production.py` (idempotent; skips DONE
+- Resume: `python3 scripts/resume-pilot-production.py` (idempotent; skips DONE
   segments). Continue past the gate with `--max-total-credits <N>`, or
   `--no-credit-gate` only with an explicit human-confirmed ceiling.
 
@@ -422,7 +422,7 @@ any provider spend.
 
 ## Status report — pilot run (2026-08-12, unattended, PRO key)
 
-Snapshot at 2026-08-12 ~18:28 PDT via `bin/resume-pilot-production.py` from
+Snapshot at 2026-08-12 ~18:28 PDT via `scripts/resume-pilot-production.py` from
 rizal (checkpoint `build/private/pilot-production/state.json`):
 
 | Segment | Status | Task | Credits | Delivered geometry |
@@ -446,7 +446,7 @@ rizal (checkpoint `build/private/pilot-production/state.json`):
   completion remains gated on worker SSH (eureka/ord unreachable from this
   environment) and the Higgs/master/review stages, ≈ 1 week.
 - **Resume:** `SEEDANCE2AI_KEY_NAME=seedance2_pro.key python3
-  bin/resume-pilot-production.py --max-total-credits 5000 --no-credit-gate`.
+  scripts/resume-pilot-production.py --max-total-credits 5000 --no-credit-gate`.
   Snapshot dyad: `DYAD-2026-08-12-PILOT-PRODUCTION-SNAPSHOT-001`.
 
 **Decision 2026-08-12 (user):** continue the pilot as a **720p pilot**.

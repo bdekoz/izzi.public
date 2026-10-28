@@ -1,0 +1,53 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" href="$group__elements.html#structsvg_1_1element__base" title="Abstract base class for all SVG Elements." alt="" coords="5,413,131,437"/>
+<area shape="rect" id="Node000001" href="$group__elements.html#structsvg_1_1circle__element" title=" " alt="" coords="186,5,314,29"/>
+<area shape="poly" id="edge19_Node000000_Node000001" title=" " alt="" coords="66,398,70,327,85,232,99,180,118,130,144,82,177,39,196,27,193,32,181,43,148,85,123,132,104,182,90,233,75,328,72,398"/>
+<area shape="rect" id="Node000002" href="$group__elements.html#structsvg_1_1defs__element" title=" " alt="" coords="189,53,311,77"/>
+<area shape="poly" id="edge20_Node000000_Node000002" title=" " alt="" coords="68,397,74,335,91,252,105,208,123,164,147,124,177,87,197,75,194,80,180,91,152,127,128,167,110,210,96,253,79,335,73,398"/>
+<area shape="rect" id="Node000006" href="$group__elements.html#structsvg_1_1desc__element" title=" " alt="" coords="188,101,312,125"/>
+<area shape="poly" id="edge24_Node000000_Node000006" title=" " alt="" coords="69,397,78,343,97,273,129,200,151,165,177,135,197,123,194,128,180,139,155,169,133,202,102,275,84,344,75,398"/>
+<area shape="rect" id="Node000007" href="$group__elements.html#structsvg_1_1filter__element" title=" " alt="" coords="188,149,312,173"/>
+<area shape="poly" id="edge25_Node000000_Node000007" title=" " alt="" coords="72,398,83,352,104,294,134,235,154,208,177,183,198,171,195,176,180,187,158,211,139,238,109,296,88,353,77,399"/>
+<area shape="rect" id="Node000008" href="$group__elements.html#structsvg_1_1foreign__element" title=" " alt="" coords="182,197,318,221"/>
+<area shape="poly" id="edge26_Node000000_Node000008" title=" " alt="" coords="75,398,89,361,111,316,140,271,177,231,200,219,196,224,180,235,144,274,115,319,94,363,80,399"/>
+<area shape="rect" id="Node000012" href="$group__elements.html#structsvg_1_1group__element" title=" " alt="" coords="185,245,314,269"/>
+<area shape="poly" id="edge30_Node000000_Node000012" title=" " alt="" coords="80,398,119,339,146,307,177,279,202,268,198,272,180,283,150,310,123,342,85,401"/>
+<area shape="rect" id="Node000013" href="$group__elements.html#structsvg_1_1image__element" title=" " alt="" coords="184,293,316,317"/>
+<area shape="poly" id="edge31_Node000000_Node000013" title=" " alt="" coords="88,401,128,363,177,327,206,316,202,320,180,331,131,367,93,404"/>
+<area shape="rect" id="Node000014" href="$group__elements.html#structsvg_1_1line__element" title=" " alt="" coords="191,341,309,365"/>
+<area shape="poly" id="edge32_Node000000_Node000014" title=" " alt="" coords="108,404,178,375,212,364,209,367,180,380,112,408"/>
+<area shape="rect" id="Node000015" href="$group__elements.html#structsvg_1_1link__element" title=" " alt="" coords="191,389,308,413"/>
+<area shape="poly" id="edge33_Node000000_Node000015" title=" " alt="" coords="144,413,193,407,189,411,147,417"/>
+<area shape="rect" id="Node000016" href="$group__elements.html#structsvg_1_1marker__element" title=" " alt="" coords="182,437,318,461"/>
+<area shape="poly" id="edge34_Node000000_Node000016" title=" " alt="" coords="145,433,184,439,180,442,147,438"/>
+<area shape="rect" id="Node000017" href="$group__elements.html#structsvg_1_1path__element" title=" " alt="" coords="188,485,312,509"/>
+<area shape="poly" id="edge35_Node000000_Node000017" title=" " alt="" coords="109,441,180,471,213,484,208,486,178,476,111,447"/>
+<area shape="rect" id="Node000018" href="$group__elements.html#structsvg_1_1polygon__element" title=" " alt="" coords="179,533,321,557"/>
+<area shape="poly" id="edge36_Node000000_Node000018" title=" " alt="" coords="90,446,131,483,180,519,206,532,201,534,177,523,128,487,91,451"/>
+<area shape="rect" id="Node000019" href="$group__elements.html#structsvg_1_1polyline__element" title=" " alt="" coords="179,581,320,605"/>
+<area shape="poly" id="edge37_Node000000_Node000019" title=" " alt="" coords="83,448,123,509,150,540,180,567,203,580,198,582,177,571,146,544,119,512,83,454"/>
+<area shape="rect" id="Node000020" href="$group__elements.html#structsvg_1_1rect__element" title=" " alt="" coords="191,629,309,653"/>
+<area shape="poly" id="edge38_Node000000_Node000020" title=" " alt="" coords="78,449,94,488,115,532,144,577,180,615,201,628,195,629,177,619,140,580,111,534,89,490,78,454"/>
+<area shape="rect" id="Node000021" href="$group__elements.html#structsvg_1_1script__element" title=" " alt="" coords="186,677,314,701"/>
+<area shape="poly" id="edge39_Node000000_Node000021" title=" " alt="" coords="74,449,88,497,109,554,139,613,158,639,180,663,199,676,194,677,177,667,154,643,134,615,104,556,83,499,74,455"/>
+<area shape="rect" id="Node000022" href="$group__elements.html#structsvg_1_1svg__element" title=" " alt="" coords="191,725,308,749"/>
+<area shape="poly" id="edge40_Node000000_Node000022" title=" " alt="" coords="72,450,84,506,102,576,133,648,155,682,180,711,198,725,193,725,177,715,151,685,129,651,97,578,78,508,72,455"/>
+<area shape="rect" id="Node000023" href="$group__elements.html#structsvg_1_1text__element" title=" " alt="" coords="191,773,309,797"/>
+<area shape="poly" id="edge41_Node000000_Node000023" title=" " alt="" coords="71,450,79,515,96,597,110,641,128,684,152,724,180,759,198,773,192,773,177,763,147,727,123,686,105,643,91,598,74,516,70,455"/>
+<area shape="rect" id="Node000025" href="$group__elements.html#structsvg_1_1title__element" title=" " alt="" coords="190,821,310,845"/>
+<area shape="poly" id="edge43_Node000000_Node000025" title=" " alt="" coords="69,450,75,523,90,617,104,668,123,719,148,766,181,807,197,821,192,820,177,811,144,769,118,721,99,670,85,619,70,523,69,455"/>
+<area shape="rect" id="Node000003" href="$group__elements.html#structsvg_1_1gradient__element" title=" " alt="" coords="371,53,515,77"/>
+<area shape="poly" id="edge21_Node000002_Node000003" title=" " alt="" coords="325,63,373,64,368,67,328,67"/>
+<area shape="rect" id="Node000004" href="$group__elements.html#structsvg_1_1linear__gradient" title="Linear gradients https://developer.mozilla.org/en&#45;US/docs/Web/SVG/Element/linearGradient." alt="" coords="565,29,696,53"/>
+<area shape="poly" id="edge22_Node000003_Node000004" title=" " alt="" coords="530,52,567,48,563,51,532,56"/>
+<area shape="rect" id="Node000005" href="$group__elements.html#structsvg_1_1radial__gradient" title="Circular gradients https://developer.mozilla.org/en&#45;US/docs/Web/SVG/Element/radialGradient." alt="" coords="565,77,696,101"/>
+<area shape="poly" id="edge23_Node000003_Node000005" title=" " alt="" coords="530,74,568,80,563,82,532,79"/>
+<area shape="rect" id="Node000009" href="$group__elements.html#structsvg_1_1iframe__element" title="iframe HTML object embedded in SVG container. NB: HTML elements video/audio/iframe/canvas can be used..." alt="" coords="376,149,510,173"/>
+<area shape="poly" id="edge27_Node000008_Node000009" title=" " alt="" coords="314,191,394,172,391,175,317,195"/>
+<area shape="rect" id="Node000010" href="$group__elements.html#structsvg_1_1object__element" title="HTML object embedded in SVG container. Unlike image_elements, object_elements are not locked down for..." alt="" coords="377,197,509,221"/>
+<area shape="poly" id="edge28_Node000008_Node000010" title=" " alt="" coords="332,207,379,208,374,211,335,212"/>
+<area shape="rect" id="Node000011" href="$group__elements.html#structsvg_1_1video__element" title="video HTML object embedded in SVG container. NB: HTML elements video/audio/iframe/canvas can be used ..." alt="" coords="379,245,507,269"/>
+<area shape="poly" id="edge29_Node000008_Node000011" title=" " alt="" coords="315,223,395,243,390,246,316,228"/>
+<area shape="rect" id="Node000024" href="$group__elements.html#structsvg_1_1text__path__element" title=" " alt="" coords="369,773,517,797"/>
+<area shape="poly" id="edge42_Node000023_Node000024" title=" " alt="" coords="324,783,371,785,366,785,325,788"/>
+</map>

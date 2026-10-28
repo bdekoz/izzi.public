@@ -1,0 +1,163 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://izzi.dev/schemas/izzi.lenticular-resolved-1.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "izzi.lenticular-resolved/1"
+    },
+    "id": {
+      "type": "string"
+    },
+    "axis": {
+      "enum": [
+        "vertical",
+        "horizontal"
+      ]
+    },
+    "width_mm": {
+      "type": "number",
+      "minimum": 0
+    },
+    "height_mm": {
+      "type": "number",
+      "minimum": 0
+    },
+    "lenses_per_inch": {
+      "type": "number",
+      "minimum": 0
+    },
+    "phase_mm": {
+      "type": "number",
+      "minimum": 0
+    },
+    "period_mm": {
+      "type": "number",
+      "minimum": 0
+    },
+    "strip_width_mm": {
+      "type": "number",
+      "minimum": 0
+    },
+    "raster_ppi": {
+      "type": "number",
+      "minimum": 0
+    },
+    "samples_per_strip": {
+      "type": "number",
+      "minimum": 0
+    },
+    "integer_grid": {
+      "type": "boolean"
+    },
+    "maximum_rounding_error_pixels": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 0.500000001
+    },
+    "physical_proof": {
+      "const": "not-performed"
+    },
+    "view_order": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 8,
+      "uniqueItems": true,
+      "items": {
+        "type": "integer",
+        "minimum": 0,
+        "maximum": 7
+      }
+    },
+    "source_ids": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 8,
+      "uniqueItems": true,
+      "items": {
+        "type": "string"
+      }
+    },
+    "crop": {
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 4,
+      "items": {
+        "type": "number",
+        "minimum": 0
+      }
+    },
+    "statistics": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "path_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "point_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "estimated_svg_bytes": {
+          "type": "integer",
+          "minimum": 0
+        }
+      },
+      "required": [
+        "path_count",
+        "point_count",
+        "estimated_svg_bytes"
+      ]
+    },
+    "strips": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "view": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 7
+          },
+          "start_mm": {
+            "type": "number",
+            "minimum": 0
+          },
+          "end_mm": {
+            "type": "number",
+            "minimum": 0
+          }
+        },
+        "required": [
+          "view",
+          "start_mm",
+          "end_mm"
+        ]
+      }
+    }
+  },
+  "required": [
+    "schema_version",
+    "id",
+    "axis",
+    "width_mm",
+    "height_mm",
+    "lenses_per_inch",
+    "phase_mm",
+    "period_mm",
+    "strip_width_mm",
+    "raster_ppi",
+    "samples_per_strip",
+    "integer_grid",
+    "maximum_rounding_error_pixels",
+    "physical_proof",
+    "view_order",
+    "source_ids",
+    "crop",
+    "statistics",
+    "strips"
+  ]
+}

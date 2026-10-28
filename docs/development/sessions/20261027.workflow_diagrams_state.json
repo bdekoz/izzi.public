@@ -1,0 +1,304 @@
+{
+  "schema_version": 1,
+  "project": "Workflow diagrams",
+  "session_status": "saved",
+  "captured_at_utc": "2026-10-28T03:18:54.635805+00:00",
+  "captured_at_pacific": "2026-10-27T20:18:54.635805-07:00",
+  "workspace": "/home/bkoz/src/izzi",
+  "implementation_status": "All requested diagram revisions complete, pushed and verified live.",
+  "pending_implementation": [],
+  "pending_review": [
+    "Further user visual review; catalog state remains UNREVIEWED and NOT-PROMOTED."
+  ],
+  "documents": {
+    "resume": "docs/development/sessions/20261027.workflow_diagrams_resume.md",
+    "state": "docs/development/sessions/20261027.workflow_diagrams_state.json",
+    "source": "docs/workflows.md",
+    "renderer": "scripts/render-workflow-diagrams.py"
+  },
+  "git": {
+    "izzi": {
+      "branch": "main",
+      "diagram_source_commit": "1f7e5f04dc8e12aae236ea08d9f1d3795c50c6b1",
+      "diagram_changes_pushed": true,
+      "working_tree_clean_before_checkpoint": true,
+      "status_during_capture": [
+        "?? docs/development/sessions/20261027.workflow_diagrams_resume.md"
+      ]
+    },
+    "site": {
+      "workspace": "/tmp/izzi-workflow-revisions-site",
+      "branch": "revise-workflow-diagrams-78-79",
+      "publication_commit": "05fb2da80ca5d0d4c14f001aee5327c110b5f066",
+      "pushed_to": "refs/heads/main",
+      "push_url": "git@github.com:bdekoz/situationshipin.space.git",
+      "working_tree_status": []
+    },
+    "original_site_checkout": "/home/bkoz/src/situationshipin.space",
+    "original_site_checkout_note": "Left unchanged; use the active worktree or a fresh checkout from remote main."
+  },
+  "active_artifacts": [
+    {
+      "artifact_id": "workflow-v2-diagram-index",
+      "title": "Workflow diagrams, hardware & local models",
+      "review_url": "https://situationshipin.space/review/workflow-v2-diagram-index/",
+      "published_path": "review/media/workflow-v2-diagrams/workflow-v2-diagram-index.index.html",
+      "sha256": "2ea7a088c3fd3f42770ea46b1fa29aabd481e9830139c656c169014d0196e27d",
+      "bytes": 8963,
+      "human_review_state": "UNREVIEWED",
+      "baseline_state": "NOT-PROMOTED",
+      "index_members": [
+        "workflow-hardware-software-diagram",
+        "devpac-compute-resources-diagram",
+        "workflow-v2-loop-diagram"
+      ]
+    },
+    {
+      "artifact_id": "workflow-v2-loop-diagram",
+      "title": "Workflow",
+      "review_url": "https://situationshipin.space/review/workflow-v2-loop-diagram/",
+      "published_path": "review/media/workflow-v2-diagrams/workflow-v2-loop-diagram.png",
+      "sha256": "7d3dd1c99566a668aba4bb2ef6e6e7a22ccc5f4ffe2688500449a80365e75b43",
+      "bytes": 102686,
+      "human_review_state": "UNREVIEWED",
+      "baseline_state": "NOT-PROMOTED",
+      "index_members": []
+    },
+    {
+      "artifact_id": "workflow-hardware-software-diagram",
+      "title": "Compute software",
+      "review_url": "https://situationshipin.space/review/workflow-hardware-software-diagram/",
+      "published_path": "review/media/workflow-v2-diagrams/workflow-hardware-software-diagram.png",
+      "sha256": "c68fb1dbc6759857979ca8b90cb2d6d1ec3a1bb7dcfba3cb51e419e597571233",
+      "bytes": 374289,
+      "human_review_state": "UNREVIEWED",
+      "baseline_state": "NOT-PROMOTED",
+      "index_members": []
+    },
+    {
+      "artifact_id": "devpac-compute-resources-diagram",
+      "title": "Compute hardware \u2014 rizal, ord and eureka",
+      "review_url": "https://situationshipin.space/review/devpac-compute-resources-diagram/",
+      "published_path": "review/media/workflow-v2-diagrams/devpac-compute-resources-diagram.png",
+      "sha256": "b3d5a19a0d3905e55a07ce7afe647790c201ab4556da2954cc67e71a756b2dd8",
+      "bytes": 307132,
+      "human_review_state": "UNREVIEWED",
+      "baseline_state": "NOT-PROMOTED",
+      "index_members": []
+    }
+  ],
+  "retired_artifacts": {
+    "workflow-baseline-v1-diagram": {
+      "removed_from": [
+        "docs/workflows.md",
+        "renderer list",
+        "active render packet",
+        "site catalog",
+        "diagram index",
+        "review page",
+        "review manifest",
+        "PNG",
+        "SVG",
+        "Mermaid download",
+        "configuration download"
+      ],
+      "live_http_404_verified": [
+        "review/workflow-baseline-v1-diagram/",
+        "review/workflow-baseline-v1-diagram/index.html",
+        "review/workflow-baseline-v1-diagram/manifest.json",
+        "review/media/workflow-v2-diagrams/workflow-baseline-v1-diagram.png",
+        "review/media/workflow-v2-diagrams/workflow-baseline-v1-diagram.svg",
+        "review/media/workflow-v2-diagrams/workflow-baseline-v1-diagram.mermaid.txt",
+        "review/media/workflow-v2-diagrams/workflow-baseline-v1-diagram.config.json"
+      ]
+    }
+  },
+  "render_packet": {
+    "directory": "/home/bkoz/src/izzi/outputs/workflows-v2/20261027-review-80",
+    "manifest_sha256": "cc7c2ae239bc85db8cdf547e8dc51a737b3bcc125658a61a5b4dd7a5ab08b4e7",
+    "manifest": {
+      "schema_version": "izzi-workflow-diagram-render-1",
+      "rendered_at": "2026-10-28T03:02:30.965879+00:00",
+      "source": {
+        "path": "docs/workflows.md",
+        "bytes": 22444,
+        "sha256": "be3877d718d27accfbf76713748a9054ef162b7723fcfeca9fed57b36f434ac0"
+      },
+      "renderer": {
+        "mermaid_cli": "11.16.0",
+        "mermaid": "11.16.1",
+        "browser": "Google Chrome 156.0.8078.73"
+      },
+      "render_config": {
+        "path": "mermaid-config.json",
+        "bytes": 749,
+        "sha256": "4acb6235e9038f52447bfc3b4f83ba9a1106874c34584f82f7e92f0f3aa2784e"
+      },
+      "inventory": {
+        "path": "local-model-inventory.20261027.json",
+        "bytes": 4350,
+        "sha256": "636751693f28bc875cdb6b724c4ddbfd1a1af8ef2fcd1fa5f3deac8c5eca4057"
+      },
+      "human_review_state": "UNREVIEWED",
+      "diagrams": [
+        {
+          "artifact_id": "workflow-hardware-software-diagram",
+          "renderer": "izzi-fixed-svg-1",
+          "render_config": {
+            "path": "workflow-hardware-software-diagram.config.json",
+            "bytes": 9452,
+            "sha256": "6d056ef837d103f6e8d010c56c7710bcf24f1ec5dff0106c7bd9d7394f4d0540"
+          },
+          "files": [
+            {
+              "path": "workflow-hardware-software-diagram.mmd",
+              "bytes": 1965,
+              "sha256": "99f048dec3a35aa3659d0486f72b742f0bd60aa4610acc33102bdd7e33710e54"
+            },
+            {
+              "path": "workflow-hardware-software-diagram.svg",
+              "bytes": 10550,
+              "sha256": "b5fc61fba5a35a2392db5801194324c5a165386336fff234d1bf3bd8ed78c0bf"
+            },
+            {
+              "path": "workflow-hardware-software-diagram.png",
+              "bytes": 374289,
+              "sha256": "c68fb1dbc6759857979ca8b90cb2d6d1ec3a1bb7dcfba3cb51e419e597571233",
+              "width": 3800,
+              "height": 5400
+            }
+          ]
+        },
+        {
+          "artifact_id": "devpac-compute-resources-diagram",
+          "renderer": "izzi-fixed-svg-1",
+          "render_config": {
+            "path": "devpac-compute-resources-diagram.config.json",
+            "bytes": 2244,
+            "sha256": "5468b288341aaa5a1ba43cd068c5346cffd232e483bb95d80b1dfd60027f3a93"
+          },
+          "files": [
+            {
+              "path": "devpac-compute-resources-diagram.mmd",
+              "bytes": 1317,
+              "sha256": "000da6dd630a41ed54ce0dcb28041650795ce1629a7315f64f1758a719b08312"
+            },
+            {
+              "path": "devpac-compute-resources-diagram.svg",
+              "bytes": 5888,
+              "sha256": "11dbd0b394f96c286c39597c88b19ab9ede0b0dc43187d127fd23326b3885990"
+            },
+            {
+              "path": "devpac-compute-resources-diagram.png",
+              "bytes": 307132,
+              "sha256": "b3d5a19a0d3905e55a07ce7afe647790c201ab4556da2954cc67e71a756b2dd8",
+              "width": 3120,
+              "height": 2280
+            }
+          ]
+        },
+        {
+          "artifact_id": "workflow-v2-loop-diagram",
+          "renderer": "izzi-fixed-svg-1",
+          "render_config": {
+            "path": "workflow-v2-loop-diagram.config.json",
+            "bytes": 2682,
+            "sha256": "a9d2feb806b69e42b6b6388b8fe6cc6b0cb5fff01bd611388a45b795231427d6"
+          },
+          "files": [
+            {
+              "path": "workflow-v2-loop-diagram.mmd",
+              "bytes": 605,
+              "sha256": "8a10743232a6dbdebd3c2347a050d31486c67255ebab5aca68772ec96aae398d"
+            },
+            {
+              "path": "workflow-v2-loop-diagram.svg",
+              "bytes": 3711,
+              "sha256": "c2541e81ac8b3c9f8f44d69daef4ef8125eff3a43583c3415bbe32c67da2e33e"
+            },
+            {
+              "path": "workflow-v2-loop-diagram.png",
+              "bytes": 102686,
+              "sha256": "7d3dd1c99566a668aba4bb2ef6e6e7a22ccc5f4ffe2688500449a80365e75b43",
+              "width": 3080,
+              "height": 1060
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "validation": {
+    "live_diagram_files_matched": 10,
+    "live_catalog_and_index_files_matched": 3,
+    "retired_routes_returning_404": 7,
+    "desktop_viewport_width": 1440,
+    "mobile_viewport_width": 390,
+    "index_browser_checks": "Images and SVG downloads load; no horizontal overflow or page script errors.",
+    "layout_checks": "Label bounds, group containment and connector routing passed after geometry changes.",
+    "site_check": {
+      "command": "node scripts/check-review-site.mjs",
+      "exit_code": 1,
+      "new_failures": 0,
+      "pre_existing_failure_count": 19,
+      "pre_existing_failures": [
+        "[FAIL] source media was copied into the public review tree: <site_root>/review/provider-inputs/here-lies-trouble/runyon-canyon/canary/runyon-10s-changed-voices-V01.normalized.wav",
+        "[FAIL] stale review file is not referenced by the catalog or any HTML page: review/provider-inputs/here-lies-trouble/griffith-park/canary/j1-muxed-local-voices.mp4",
+        "[FAIL] stale review file is not referenced by the catalog or any HTML page: review/provider-inputs/here-lies-trouble/griffith-park/canary/j2-muxed-local-voices.mp4",
+        "[FAIL] stale review file is not referenced by the catalog or any HTML page: review/provider-inputs/here-lies-trouble/griffith-park/canary/sample-03-griffith-park-source.png",
+        "[FAIL] stale review file is not referenced by the catalog or any HTML page: review/provider-inputs/here-lies-trouble/runyon-canyon/canary/bg-motion-test.mp4",
+        "[FAIL] stale review file is not referenced by the catalog or any HTML page: review/provider-inputs/here-lies-trouble/runyon-canyon/canary/runyon-10s-changed-voices-V01.normalized.wav",
+        "[FAIL] stale review file is not referenced by the catalog or any HTML page: review/provider-inputs/here-lies-trouble/runyon-canyon/canary/runyon-keyframe-nano-banana-candidate.png",
+        "[FAIL] stale review file is not referenced by the catalog or any HTML page: review/provider-inputs/here-lies-trouble/runyon-canyon/run30/j1-last-frame.png",
+        "[FAIL] stale review file is not referenced by the catalog or any HTML page: review/provider-inputs/here-lies-trouble/runyon-canyon/run30/j1-provider.original.mp4",
+        "[FAIL] stale review file is not referenced by the catalog or any HTML page: review/provider-inputs/here-lies-trouble/runyon-canyon/run30/j2-roll1-provider.original.mp4",
+        "[FAIL] stale review file is not referenced by the catalog or any HTML page: review/provider-inputs/here-lies-trouble/runyon-canyon/run30/j2-roll2-provider.original.mp4",
+        "[FAIL] stale review file is not referenced by the catalog or any HTML page: review/provider-inputs/here-lies-trouble/runyon-canyon/run30/probe-duration-15s.mp4",
+        "[FAIL] stale review file is not referenced by the catalog or any HTML page: review/provider-inputs/here-lies-trouble/runyon-canyon/run30/runyon-30s-chain.mp4",
+        "[FAIL] stale review file is not referenced by the catalog or any HTML page: review/provider-inputs/here-lies-trouble/runyon-canyon/run30/runyon-keyframe-qwen-seed1.png",
+        "[FAIL] stale review file is not referenced by the catalog or any HTML page: review/provider-inputs/here-lies-trouble/runyon-canyon/run30/runyon-keyframe-qwen-seed2.png",
+        "[FAIL] stale review file is not referenced by the catalog or any HTML page: review/provider-inputs/here-lies-trouble/runyon-canyon/run30/runyon-keyframe-qwen-seed3.png",
+        "[FAIL] stale review file is not referenced by the catalog or any HTML page: review/provider-inputs/here-lies-trouble/runyon-canyon/run30/runyon-keyframe-qwen.png",
+        "[FAIL] stale review file is not referenced by the catalog or any HTML page: review/provider-inputs/here-lies-trouble/stage-4-20261026/job-006-last-frame.png",
+        "[FAIL] stale review file is not referenced by the catalog or any HTML page: review/provider-inputs/here-lies-trouble/stage-4-20261026/point-0-keyframe.png"
+      ],
+      "scope_note": "Unrelated provider-input media; preserve these failures unless separately authorized work resolves them."
+    }
+  },
+  "temporary_helpers": {
+    "mmdc": "/tmp/situationship-local-model-diagrams-i5x84u54/renderer/node_modules/.bin/mmdc",
+    "live_verifier": "/tmp/izzi-verify-workflow-live.py",
+    "retirement_verifier": "/tmp/izzi-verify-retired-baseline.py",
+    "browser_verifier": "/tmp/izzi-verify-workflow-site.mjs",
+    "layout_verifier": "/tmp/izzi-verify-workflow-80.mjs",
+    "baseline_check_log": "/tmp/izzi-workflow-site-baseline.log"
+  },
+  "related_completed_work": [
+    {
+      "commit": "0d5e7e931e404afc42688f599e556efe4a2b6c70",
+      "scope": "Form study failure fix, examples-forms rename, documentation and local rendering proposal."
+    },
+    {
+      "commit": "dca2c7d477cb122565cb6f6d17747e2a2fdd4f94",
+      "scope": "Separate thread completed the bounded local rendering Stage 1 experiment; see its own human review requirements."
+    }
+  ],
+  "follow_up": {
+    "request": "ok, do 1-4",
+    "record": "docs/development/sessions/20261027.provider_input_cleanup.md",
+    "site_checker": "PASS: 863 catalog items, zero failures after archival and selected review publication",
+    "historical_failure_snapshot_retained": true,
+    "publication": {
+      "site_commit": "bf934619d3f63e163dcf81e77e125521ff38d4cd",
+      "workflow_run": "https://github.com/bdekoz/situationshipin.space/actions/runs/40632370269",
+      "deployment_status": "success",
+      "verified_at": "2026-10-28T04:30:10Z",
+      "live_files_hash_verified": 15,
+      "retired_urls_http_404": 18,
+      "site_check_failures": 0,
+      "catalog_items": 863,
+      "payload_bytes": 200142647,
+      "payload_limit_bytes": 201326592
+    }
+  }
+}

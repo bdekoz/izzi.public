@@ -1,10 +1,21 @@
 var searchData=
 [
-  ['has_5fcycloid_5foutline_0',['has_cycloid_outline',['../namespaceizzi_1_1guilloche_1_1detail.html#ae516baeda0f262423762225f3ffde0fb',1,'izzi::guilloche::detail']]],
-  ['has_5ferrors_1',['has_errors',['../namespaceizzi_1_1graph_1_1detail.html#a09d5bac6aa9fca95350cb637ab38853b',1,'izzi::graph::detail::has_errors()'],['../namespacesvg_1_1graph_1_1detail.html#ab922ed57fa98f146e90555cb48c1f8d0',1,'svg::graph::detail::has_errors()']]],
-  ['has_5ffloral_5fcells_2',['has_floral_cells',['../namespaceizzi_1_1guilloche_1_1detail.html#a6d0be7ed60034fd0dd9e2c12ee33d8a7',1,'izzi::guilloche::detail']]],
-  ['has_5ftoken_5fprefix_3',['has_token_prefix',['../namespacesvg_1_1hamonshu.html#a4d5389b0943e8fccf9d2a0429fd69e6a',1,'svg::hamonshu']]],
-  ['hash_5ftext_4',['hash_text',['../namespaceizzi_1_1keyframes_1_1detail.html#acf760cd29038d4bdd962ddd35a92d8e5',1,'izzi::keyframes::detail']]],
-  ['height_5',['height',['../structsvg_1_1hamonshu_1_1pattern__box.html#a82ad24f5ff6375c4b684c9de8a7c68c3',1,'svg::hamonshu::pattern_box']]],
-  ['hsv_5fto_5frgb_6',['hsv_to_rgb',['../structsvg_1_1color__qf.html#afda5a84e91104dc0aabf79b1d3907f7a',1,'svg::color_qf']]]
+  ['h_5fchord_5fgraph_0',['h_chord_graph',['../namespacesvg.html#a5a2a09cfc7fa89649dbd0e37326f53e5',1,'svg']]],
+  ['h_5fchord_5fgraph_5flabels_1',['h_chord_graph_labels',['../namespacesvg.html#abec07cfce5328018c787a1f19c17ea81',1,'svg']]],
+  ['hamonshu_5fconstruction_5fidentity_2',['hamonshu_construction_identity',['../namespaceizzi_1_1review.html#a0e3e4ab79df49c0fb808c4f323369157',1,'izzi::review']]],
+  ['handles_3',['handles',['../namespaceizzi_1_1review_1_1edge__recipes.html#a6135c5b0675e559d4848fda8420b768c',1,'izzi::review::edge_recipes']]],
+  ['has_5fcycloid_5foutline_4',['has_cycloid_outline',['../namespaceizzi_1_1guilloche_1_1detail.html#ae516baeda0f262423762225f3ffde0fb',1,'izzi::guilloche::detail']]],
+  ['has_5ferrors_5',['has_errors',['../namespaceizzi_1_1graph_1_1detail.html#a09d5bac6aa9fca95350cb637ab38853b',1,'izzi::graph::detail::has_errors()'],['../namespacesvg_1_1graph_1_1detail.html#ab922ed57fa98f146e90555cb48c1f8d0',1,'svg::graph::detail::has_errors()']]],
+  ['has_5ffloral_5fcells_6',['has_floral_cells',['../namespaceizzi_1_1guilloche_1_1detail.html#a6d0be7ed60034fd0dd9e2c12ee33d8a7',1,'izzi::guilloche::detail']]],
+  ['has_5ftoken_5fprefix_7',['has_token_prefix',['../namespacesvg_1_1hamonshu.html#a4d5389b0943e8fccf9d2a0429fd69e6a',1,'svg::hamonshu']]],
+  ['hash_5ftext_8',['hash_text',['../namespaceizzi_1_1keyframes_1_1detail.html#acf760cd29038d4bdd962ddd35a92d8e5',1,'izzi::keyframes::detail']]],
+  ['height_9',['height',['../structsvg_1_1hamonshu_1_1pattern__box.html#a82ad24f5ff6375c4b684c9de8a7c68c3',1,'svg::hamonshu::pattern_box']]],
+  ['histogram_5fadd_5ftick_10',['histogram_add_tick',['../namespacesvg_1_1detail.html#a6039d1afa1b3671fdd85c74b96ead918',1,'svg::detail']]],
+  ['histogram_5fnear_11',['histogram_near',['../namespacesvg_1_1detail.html#a567e53316c381d51a53166081c6ccf17',1,'svg::detail']]],
+  ['histogram_5ftick_5flabel_12',['histogram_tick_label',['../namespacesvg_1_1detail.html#aeb837afda6affb9f3813cfcdc587b5fa',1,'svg::detail']]],
+  ['histogram_5ftick_5fprecision_13',['histogram_tick_precision',['../namespacesvg_1_1detail.html#a0e9c63e4c4d9c4a112cc4e3262d84eeb',1,'svg::detail']]],
+  ['histogram_5fticks_14',['histogram_ticks',['../namespacesvg_1_1detail.html#a7bd6eab0b35862b3c5f4580ccc5b23f6',1,'svg::detail']]],
+  ['hold_5fpattern_15',['hold_pattern',['../namespaceizzi_1_1film__decay__detail.html#a623364c97b5661cea438329e7bf7a7e5',1,'izzi::film_decay_detail']]],
+  ['hsv_5fto_5frgb_16',['hsv_to_rgb',['../structsvg_1_1color__qf.html#afda5a84e91104dc0aabf79b1d3907f7a',1,'svg::color_qf']]],
+  ['hue_17',['hue',['../namespaceizzi_1_1review_1_1extra.html#a4c755d71489bbcd79c9d4d0d5f2d95b0',1,'izzi::review::extra']]]
 ];

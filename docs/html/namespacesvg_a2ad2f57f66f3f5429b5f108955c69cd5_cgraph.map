@@ -1,0 +1,21 @@
+<map id="svg::append_swarm_metadata_chord_record" name="svg::append_swarm_metadata_chord_record">
+<area shape="rect" id="Node000001" title="Add one alpha60&#45;swarm&#45;metadata v2 JSON record to a chord aggregate." alt="" coords="5,144,195,181"/>
+<area shape="rect" id="Node000002" href="$namespacesvg_1_1detail.html#a64874b7511850e5f35ab69f40e88ddc9" title=" " alt="" coords="243,61,383,98"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="148,141,251,102,247,106,151,146"/>
+<area shape="rect" id="Node000006" href="$namespacesvg_1_1detail.html#a3aee00bb818c52dd0a0c8bf1a115cacb" title=" " alt="" coords="440,115,570,151"/>
+<area shape="poly" id="edge9_Node000001_Node000006" title=" " alt="" coords="195,153,426,136,423,141,196,158"/>
+<area shape="rect" id="Node000008" href="$namespacesvg_1_1detail.html#af1ec34ebe24f12fb417ac9d960bc41c1" title=" " alt="" coords="799,149,948,173"/>
+<area shape="poly" id="edge10_Node000001_Node000008" title=" " alt="" coords="195,161,751,161,786,163,780,163,751,166,195,166"/>
+<area shape="rect" id="Node000009" href="$namespacesvg_1_1detail.html#a96d602e45653602d23a977cc1c57fa9c" title=" " alt="" coords="251,227,374,263"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="150,179,252,219,247,222,149,184"/>
+<area shape="rect" id="Node000003" href="$namespacesvg_1_1detail.html#afe8ae4fe7d7b0d88bacbb7a70ef29bd3" title=" " alt="" coords="444,5,567,42"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="377,58,431,45,426,47,379,63"/>
+<area shape="rect" id="Node000005" href="$namespacesvg_1_1detail.html#aead2d2a71d9c73f30bf8ba1555d5109b" title=" " alt="" coords="431,66,579,90"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="383,77,418,78,413,80,384,82"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="382,96,429,111,423,111,382,101"/>
+<area shape="rect" id="Node000004" href="$namespacesvg_1_1detail.html#a1baba42c49373c2692542cb1bdaf8de3" title=" " alt="" coords="627,5,751,42"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="567,21,614,23,609,24,568,26"/>
+<area shape="rect" id="Node000007" href="$namespacesvg_1_1detail.html#afcd2fe21faf9df106c4c732813359639" title=" " alt="" coords="627,115,751,151"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="570,130,614,133,609,133,571,136"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="751,140,786,147,780,147,751,145"/>
+</map>

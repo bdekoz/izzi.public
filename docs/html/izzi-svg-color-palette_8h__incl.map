@@ -1,21 +1,21 @@
 <map id="/home/bkoz/src/izzi/src/izzi&#45;svg&#45;color&#45;palette.h" name="/home/bkoz/src/izzi/src/izzi&#45;svg&#45;color&#45;palette.h">
 <area shape="rect" id="Node000001" title=" " alt="" coords="350,5,478,55"/>
 <area shape="rect" id="Node000002" href="$izzi-svg-color_8h.html" title=" " alt="" coords="285,103,388,127"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="393,57,359,93,356,90,389,54"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="394,54,359,94,356,89,389,57"/>
 <area shape="rect" id="Node000010" title=" " alt="" coords="412,103,574,127"/>
-<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="439,54,474,90,470,93,435,58"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="438,53,474,92,469,91,437,58"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="5,181,114,205"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="297,130,116,179,114,174,295,125"/>
 <area shape="rect" id="Node000004" title=" " alt="" coords="138,181,184,205"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="309,130,197,177,195,172,307,125"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="311,127,197,177,196,172,306,128"/>
 <area shape="rect" id="Node000005" title=" " alt="" coords="208,181,282,205"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="325,129,271,174,268,170,322,125"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="326,126,271,174,268,169,321,128"/>
 <area shape="rect" id="Node000006" title=" " alt="" coords="305,181,368,205"/>
-<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="340,127,340,166,334,166,334,127"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="339,125,339,168,335,164,335,129"/>
 <area shape="rect" id="Node000007" title=" " alt="" coords="392,181,458,205"/>
-<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="352,125,403,169,399,173,348,129"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="351,125,404,172,398,171,349,130"/>
 <area shape="rect" id="Node000008" title=" " alt="" coords="481,181,536,205"/>
-<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="363,125,471,172,469,177,361,130"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="362,125,473,174,467,175,361,130"/>
 <area shape="rect" id="Node000009" title=" " alt="" coords="560,175,676,211"/>
-<area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="379,125,546,170,545,175,378,130"/>
+<area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="379,125,548,172,543,173,378,130"/>
 </map>

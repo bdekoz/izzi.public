@@ -8,5 +8,12 @@ var searchData=
   ['svg_3a_3agraph_3a_3ajson_5fdetail_5',['json_detail',['../namespacesvg_1_1graph_1_1json__detail.html',1,'svg::graph']]],
   ['svg_3a_3ahamonshu_6',['hamonshu',['../namespacesvg_1_1hamonshu.html',1,'svg']]],
   ['svg_3a_3ahamonshu_3a_3adetail_7',['detail',['../namespacesvg_1_1hamonshu_1_1detail.html',1,'svg::hamonshu']]],
-  ['svg_3a_3aroulette_5fdetail_8',['roulette_detail',['../namespacesvg_1_1roulette__detail.html',1,'svg']]]
+  ['svg_3a_3amatrix_5fdetail_8',['matrix_detail',['../namespacesvg_1_1matrix__detail.html',1,'svg']]],
+  ['svg_3a_3apolyhedral_9',['polyhedral',['../namespacesvg_1_1polyhedral.html',1,'svg']]],
+  ['svg_3a_3aroulette_5fdetail_10',['roulette_detail',['../namespacesvg_1_1roulette__detail.html',1,'svg']]],
+  ['svg_3a_3ascreen_5fglitch_11',['screen_glitch',['../namespacesvg_1_1screen__glitch.html',1,'svg']]],
+  ['svg_3a_3ascreen_5fglitch_3a_3ajson_12',['json',['../namespacesvg_1_1screen__glitch_1_1json.html',1,'svg::screen_glitch']]],
+  ['svg_3a_3avideo_5fglitch_13',['video_glitch',['../namespacesvg_1_1video__glitch.html',1,'svg']]],
+  ['svg_3a_3avideo_5fglitch_3a_3afilm_14',['film',['../namespacesvg_1_1video__glitch_1_1film.html',1,'svg::video_glitch']]],
+  ['svg_3a_3avideo_5fglitch_3a_3afilm_3a_3ajson_5fdetail_15',['json_detail',['../namespacesvg_1_1video__glitch_1_1film_1_1json__detail.html',1,'svg::video_glitch::film']]]
 ];

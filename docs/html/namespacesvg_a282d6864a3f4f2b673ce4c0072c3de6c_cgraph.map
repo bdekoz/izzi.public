@@ -1,0 +1,9 @@
+<map id="svg::load_swarm_metadata_slice_candidate_keys" name="svg::load_swarm_metadata_slice_candidate_keys">
+<area shape="rect" id="Node000001" title="Read collection keys for one slice from an H15 candidate report file." alt="" coords="5,36,177,73"/>
+<area shape="rect" id="Node000002" href="$namespacesvg.html#a7a13c55f0a7018e49e9739bae0d45d6c" title="Extract collection keys for one slice from an H15 candidate report." alt="" coords="225,5,367,42"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="176,39,212,36,207,37,177,44"/>
+<area shape="rect" id="Node000004" href="$namespacesvg_1_1detail.html#a5bb3f56d767cf0ade4b844c14843cfeb" title=" " alt="" coords="234,67,358,103"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="177,64,221,73,216,74,177,70"/>
+<area shape="rect" id="Node000003" href="$namespacesvg_1_1detail.html#a96d602e45653602d23a977cc1c57fa9c" title=" " alt="" coords="415,5,538,42"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="367,21,402,23,397,24,368,26"/>
+</map>

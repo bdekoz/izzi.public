@@ -1,5 +1,5 @@
- #include "izzi-svg.h"
- #include "izzi-svg-curves-grignani.h"
+#include "izzi-svg.h"
+#include "izzi-svg-curves-grignani.h"
 
 // 2 ripple
 void
@@ -8,15 +8,16 @@ test_curve(std::string ofile)
   using namespace std;
   using namespace svg;
 
-  area<> a = k::letter_096_v;
+  // Keep the full six-column grid on a study-sized page.
+  area<> a = {1900, 1500};
   svg_element obj(ofile, a);
 
   const int cols = 6;
   const int rows = 6;
-  const double cell_w = 280.0;
-  const double cell_h = 220.0;
-  const double margin_left = 220.0; // Space for labels
-  double total_w = margin_left + (cols * cell_w);
+  const double margin = 40.0;
+  const double top = 100.0;
+  const double cell_w = (a._M_width - 2 * margin) / cols;
+  const double cell_h = (a._M_height - top - margin) / rows;
 
   const double radius = 200.0;
 
@@ -30,6 +31,9 @@ test_curve(std::string ofile)
   // 3.78 @ r 200 = 1.0 mm
   // 7.56 @ r 200 = 2.0 mm
   double rwidth = 1.89; // 1.89[0-8] == 5.03 // 1.88[6-9] = .497
+
+  obj.add_raw("<text x=\"40\" y=\"42\" font-size=\"32\" fill=\"#333\">Ripple ribbon: six parameter sweeps</text>");
+  obj.add_raw("<text x=\"40\" y=\"74\" font-size=\"20\" fill=\"#555\">Common scale within each row; ribbon width increases from 1.89 to 11.34 left to right</text>");
 
   // Baseline Config
   ripple_config base;
@@ -53,13 +57,18 @@ test_curve(std::string ofile)
   for (int r = 0; r < rows; ++r)
     {
       // Draw Row Label
-      double label_y = r * cell_h + (cell_h / 2.0);
-      string lty = format("<text x=\"20\" y=\"{}\" font-size=\"18\" fill=\"#333\" font-weight=\"bold\">{}</text>\n", label_y, labels[r]);
+      double label_y = top + r * cell_h + 26;
+      string lty = format("<text x=\"40\" y=\"{}\" font-size=\"20\" fill=\"#333\" font-weight=\"bold\">{}</text>\n", label_y, labels[r]);
       obj.add_raw(lty);
 
       // Divider
-      string ly = format("<line x1=\"0\" y1=\"{}\" x2=\"{}\" y2=\"{}\" stroke=\"#ddd\" stroke-width=\"1\" />\n", (r+1)*cell_h, total_w, (r+1)*cell_h);
+      string ly = format("<line x1=\"40\" y1=\"{}\" x2=\"{}\" y2=\"{}\" stroke=\"#ddd\" stroke-width=\"1\" />\n", top + (r+1)*cell_h, a._M_width - margin, top + (r+1)*cell_h);
       obj.add_raw(ly);
+
+      // Bound the projected ribbon by its 3D norm, using one scale per row.
+      const double amplitude = r == 0 ? 100.0 : base.amplitude;
+      const double bound = hypot(radius / 2, amplitude) + cols * rwidth;
+      const double fit = min(cell_w * 0.42, (cell_h - 90) / 2) / bound;
 
       for (int c = 0; c < cols; ++c)
 	{
@@ -96,17 +105,17 @@ test_curve(std::string ofile)
 	      break;
 	    }
 
-	  double cx = margin_left + (c * cell_w) + (cell_w / 2.0);
-	  double cy = (r * cell_h) + (cell_h / 2.0);
+	  double cx = margin + (c + 0.5) * cell_w;
+	  double cy = top + r * cell_h + (cell_h + 4) / 2;
 
 	  // Generate Ribbon
-	  // Length 200, 8 strands, width 6
-	  double rwidthv = rwidth + c * rwidth;
-	  string ribbon = make_ripple_ribbon(cx, cy, radius, rsize, rwidthv, config);
+	  double rwidthv = (rwidth + c * rwidth) * fit;
+	  config.amplitude *= fit;
+	  string ribbon = make_ripple_ribbon(cx, cy, radius * fit, rsize, rwidthv, config);
 	  obj.add_raw(ribbon);
 
 	  // Debug Text
-	  string dtxt = format("<text x=\"{}\" y=\"{}\" font-size=\"12\" fill=\"#666\" text-anchor=\"middle\">{:.2f}</text>\n", cx, cy + 80.0, val_debug);
+	  string dtxt = format("<text x=\"{}\" y=\"{}\" font-size=\"18\" fill=\"#555\" text-anchor=\"middle\">{:.2f}</text>\n", cx, top + (r+1)*cell_h - 16, val_debug);
 	  obj.add_raw(dtxt);
 	}
     }

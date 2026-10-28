@@ -8,4 +8,5 @@ Notable entries in this directory:
 - [Higgs TTS 2 tool](tool_higgs.md)
 - [MeanVC2 + Kokoro tool](tool_meanvc2_kokoro.md)
 - [Audio ETL](etl.md)
+- [Audio/video transcription and examples](tool_transcribe_audio.md)
 - [Render defaults](defaults.md)

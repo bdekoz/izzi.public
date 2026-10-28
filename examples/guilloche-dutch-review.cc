@@ -1,6 +1,7 @@
 // Generate the deterministic 3x5 Dutch lighthouse radiate review plate.
 
 #include <izzi-svg-guilloche.h>
+#include "guilloche-review-layout.h"
 
 #include <array>
 #include <cstdlib>
@@ -276,7 +277,7 @@ write_scene(const fs::path& output_directory, const std::string& filename,
   std::ofstream output(path, std::ios::binary);
   if (!output)
     throw std::runtime_error("cannot open output: " + path.string());
-  output << render_svg(scene);
+  output << izzi_examples::fitted_dutch_grid(scene);
   if (!output)
     throw std::runtime_error("cannot write output: " + path.string());
 }

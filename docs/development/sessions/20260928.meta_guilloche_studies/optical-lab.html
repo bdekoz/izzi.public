@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Water, leaves and optical effects</title>
+<style>
+*{box-sizing:border-box}body{margin:0;color:#203e42;background:#f4f5f0;font:17px/1.5 system-ui,sans-serif}
+header,main,footer{max-width:1420px;margin:auto;padding:24px}h1{font-size:36px;margin:8px 0}h2{font-size:23px;margin:0}
+header p{max-width:950px}a{color:#11626c}main{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,390px),1fr));gap:22px}
+article{padding:18px;background:white;border:1px solid #d6ded6;border-radius:8px;min-width:0}
+.art{aspect-ratio:420/300;background:#fff;margin:16px 0}.art svg{width:100%;height:100%;display:block}
+.note,footer{font-size:14px;color:#506b68}.controls{display:flex;gap:24px;flex-wrap:wrap;margin:18px 0}
+label{display:block}input[type=range]{display:block;width:240px;accent-color:#176976}input[type=checkbox]{accent-color:#176976}
+button{font:inherit;font-size:14px;border:1px solid #829592;border-radius:5px;background:#eef3ef;padding:7px 12px;cursor:pointer}
+button:focus-visible,input:focus-visible,a:focus-visible{outline:3px solid #bd5f29;outline-offset:3px}
+.card-tools{display:flex;gap:12px;align-items:center;flex-wrap:wrap}.tag{font-size:12px;letter-spacing:.04em;text-transform:uppercase;color:#4c7675}
+.mode{font-size:14px;min-height:2.8em}.compare{border-top:1px solid #d6ded6;padding-top:15px}
+</style>
+<body>
+<header>
+<p class="tag">Original construction studies · 28 September 2026</p>
+<h1>Water, leaves and optical effects</h1>
+<noscript><p>JavaScript is needed for the interactive drawings. <a href="optical.svg">Open the static SVG sheet</a>.</p></noscript>
+<p>Explore interference in flowing lines and leaf veins, apparent tilt in a straight grid,
+facet depth, and two static motion studies. Each panel has a comparison that removes a specific cue.
+Perceived effects vary with size, contrast and viewing conditions.</p>
+<div class="controls">
+<label>Current layer angle: <output id="angle-value">4°</output><input id="angle" type="range" min="0" max="12" step="0.25" value="4"></label>
+<label>Current bend: <output id="bend-value">16</output><input id="bend" type="range" min="0" max="30" step="1" value="16"></label>
+<label>Leaf vein displacement: <output id="shift-value">13</output><input id="shift" type="range" min="0" max="30" step="1" value="13"></label>
+</div>
+<label class="compare"><input type="checkbox" id="compare"> Show comparison controls</label>
+<p class="note">These are static drawings. The controls redraw them only when changed.
+<a href="../20260928.meta_guilloche_survey.md">Survey, references and integration plan</a> ·
+<a href="organic.svg">Leaf and coral structures</a> ·
+<a href="../../../generative_patterns/hamonshu-water-gallery.html">Hamonshū water catalogue</a></p>
+</header>
+<main>
+<article id="current"><p class="tag">Geometric interference</p><h2>Crossing currents</h2><div class="art"></div>
+<p>Two fine line families form broad bands. The shared bend carries their interference into an asymmetric water field.</p>
+<p class="mode"></p><div class="card-tools"><button type="button">Save SVG</button></div>
+<p class="note">Set bend to zero to examine straight gratings. For equal pitch 6 and angle δ, the ideal beat period is 6 / (2 sin(δ/2)); at δ = 0 there is no finite beat.</p></article>
+<article id="leaf"><p class="tag">Organic interference</p><h2>Veins inside a leaf</h2><div class="art"></div>
+<p>Two displaced fans of lines are clipped by a notched leaf. Broad structures emerge from their local intersections.</p>
+<p class="mode"></p><div class="card-tools"><button type="button">Save SVG</button></div>
+<p class="note">A ginkgo-inspired interference treatment. These straight fans are a decorative overlay; the botanical study shows forked veins. No single global beat period describes this field.</p></article>
+<article id="wall"><p class="tag">Perceived tilt</p><h2>Straight lines, offset tiles</h2><div class="art"></div>
+<p>Offset light and dark tiles can make parallel mortar lines look tilted. This suggests an optical border around a regular hobnail field.</p>
+<p class="mode"></p><div class="card-tools"><button type="button">Save SVG</button></div>
+<p class="note"><a href="https://richardgregory.org/papers/cafe_wall/cafe-wall_p1.htm">Gregory and Heard, 1979</a>: the Café Wall effect depends on tile contrast, mortar width and mortar luminance.</p></article>
+<article id="facets"><p class="tag">Depth from shading</p><h2>Faceted hobnail</h2><div class="art"></div>
+<p>Four face tones give a flat lattice a raised or recessed reading. Reversing the tones changes the lighting cue without moving any edges.</p>
+<label><input id="reverse" type="checkbox"> Reverse face tones</label><p class="mode"></p>
+<div class="card-tools"><button type="button">Save SVG</button></div>
+<p class="note">A pictorial depth cue, distinct from a measured geometric distortion. The control retains the same ridges and boundaries with uniform face tone.</p></article>
+<article id="drift"><p class="tag">Static motion study</p><h2>Luminance around an eddy</h2><div class="art"></div>
+<p>Repeated dark-to-light ordering may create a peripheral drift impression around the rings. Nothing in the drawing moves.</p>
+<p class="mode"></p><div class="card-tools"><button type="button">Save SVG</button></div>
+<p class="note"><a href="https://www.psy.ritsumei.ac.jp/~akitaoka/PDrift.pdf">Kitaoka and Ashida, 2003</a>: luminance order and fragmented edges matter. This independently drawn study is not a reproduction of their artwork.</p></article>
+<article id="ouchi"><p class="tag">Relative motion study</p><h2>A floating water medallion</h2><div class="art"></div>
+<p>The rectangular texture changes orientation inside the oval. Small viewing movements can produce an impression of relative motion.</p>
+<p class="mode"></p><div class="card-tools"><button type="button">Save SVG</button></div>
+<p class="note"><a href="https://pubmed.ncbi.nlm.nih.gov/10768044/">Fermüller, Pless and Aloimonos, 2000</a>: an account of the Ouchi effect. The comparison matches the inner and outer textures so the oval boundary disappears.</p></article>
+</main>
+<footer>Geometry and SVG downloads are original research sketches, not implemented Izzi presets.
+Compare at several display sizes and in print before selecting production line weights or making perceptual claims.</footer>
+<script>
+'use strict';
+const $ = id => document.getElementById(id);
+const TAU = Math.PI * 2;
+function path(points, stroke='#203e42', width=0.8, fill='none', close=false) {
+  if (!points.every(p => p.every(Number.isFinite))) throw Error('Non-finite geometry');
+  return `<path d="M${points.map(p=>p.map(v=>v.toFixed(3)).join(',')).join(' L')}${close?' Z':''}" stroke="${stroke}" stroke-width="${width}" fill="${fill}"/>`;
+}
+function rect(x,y,w,h,fill){return `<rect x="${x}" y="${y}" width="${w}" height="${h}" fill="${fill}"/>`;}
+function wrap(id, body){return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 300" width="420" height="300" role="img" aria-labelledby="${id}-title"><title id="${id}-title">${$(id).querySelector('h2').textContent}</title><defs><clipPath id="${id}-canvas"><rect width="420" height="300"/></clipPath></defs><rect width="420" height="300" fill="white"/><g clip-path="url(#${id}-canvas)">${body}</g></svg>`;}
+function current(control, angle, bend){
+  let layers=[];
+  for(let layer=0;layer<(control?1:2);layer++){
+    let lines=[];
+    for(let j=-20;j<72;j++){
+      let points=[];
+      for(let i=0;i<=160;i++){
+        let x=-120+i*4.125, u=x/420;
+        points.push([x,j*6+bend*(0.3+0.7*u)*Math.sin(TAU*(1.2*u+0.18*u*u))]);
+      }
+      lines.push(path(points,layer?'#355e63':'#172f33',0.9));
+    }
+    layers.push(`<g transform="rotate(${layer*angle} 210 150)">${lines.join('')}</g>`);
+  }
+  return layers.join('');
+}
+function leaf(control, shift){
+  const base=[210,257];let outline=[base];
+  for(let i=0;i<=200;i++){
+    let a=-2.81+i*2.48/200;
+    let r=183-31*Math.exp(-(((a+Math.PI/2)/0.17)**2))+3*Math.sin(13*a);
+    outline.push([base[0]+r*Math.cos(a),base[1]+r*Math.sin(a)]);
+  }
+  let clip=path(outline,'none',0,'white',true),body=[];
+  for(let layer=0;layer<(control?1:2);layer++)for(let i=0;i<100;i++){
+    let a=-3.05+i*2.96/99;
+    let start=[base[0]+layer*shift,base[1]+layer*shift*0.6];
+    body.push(path([start,[start[0]+310*Math.cos(a),start[1]+310*Math.sin(a)]],layer?'#355e63':'#172f33',0.8));
+  }
+  return `<defs><clipPath id="leaf-mask">${clip}</clipPath></defs><g clip-path="url(#leaf-mask)">${body.join('')}</g>`+
+    path(outline,'#203e42',1.1,'none',true)+path([[204,295],base],'#203e42',1.7);
+}
+function wall(control){
+  let body=[rect(0,0,420,300,'#858585')];
+  for(let row=0;row<8;row++)for(let col=-2;col<12;col++){
+    let offset=control?0:(row%2)*24;
+    body.push(rect(col*48+offset,row*39,48,36,(col&1)?'#f5f5f5':'#161616'));
+  }
+  return body.join('');
+}
+function facets(control, reverse){
+  let shades=control?['#c0c0c0','#c0c0c0','#c0c0c0','#c0c0c0']:
+    reverse?['#505b5b','#7f9997','#c8d4ce','#f0f2e7']:['#f0f2e7','#c8d4ce','#7f9997','#505b5b'];
+  let body=[];
+  for(let row=0;row<7;row++)for(let col=0;col<10;col++){
+    let x=10+col*40,y=10+row*40,c=[x+20,y+20];
+    let corners=[[x,y],[x+40,y],[x+40,y+40],[x,y+40]];
+    for(let f=0;f<4;f++)body.push(path([c,corners[f],corners[(f+1)%4]],'#59706b',0.45,shades[f],true));
+  }
+  return body.join('');
+}
+function drift(control){
+  const palette=control?['#111','#555','#fff','#bbb','#bbb','#fff','#555','#111']:['#111','#555','#fff','#bbb'];
+  let body=[rect(0,0,420,300,'#929292')];
+  for(let ring=0;ring<5;ring++)for(let j=0;j<64;j++){
+    let a=TAU*j/64+ring*0.08,b=TAU*(j+1)/64+ring*0.08;
+    let inner=26+ring*23,outer=inner+20,pts=[];
+    for(let i=0;i<=6;i++){let t=a+(b-a)*i/6;pts.push([210+outer*Math.cos(t)*1.2,150+outer*Math.sin(t)]);}
+    for(let i=6;i>=0;i--){let t=a+(b-a)*i/6;pts.push([210+inner*Math.cos(t)*1.2,150+inner*Math.sin(t)]);}
+    body.push(path(pts,'none',0,palette[j%palette.length],true));
+  }
+  return body.join('');
+}
+function ouchi(control){
+  let definitions='<defs><pattern id="outer-check" width="36" height="12" patternUnits="userSpaceOnUse">'+
+    rect(0,0,36,12,'#fff')+rect(0,0,18,6,'#111')+rect(18,6,18,6,'#111')+'</pattern>'+
+    '<pattern id="inner-check" width="12" height="36" patternUnits="userSpaceOnUse">'+
+    rect(0,0,12,36,'#fff')+rect(0,0,6,18,'#111')+rect(6,18,6,18,'#111')+'</pattern></defs>';
+  return definitions+rect(0,0,420,300,'url(#outer-check)')+
+    `<ellipse cx="210" cy="150" rx="108" ry="100" fill="url(#${control?'outer':'inner'}-check)"/>`;
+}
+function render(){
+  const control=$('compare').checked,angle=+$('angle').value,bend=+$('bend').value,shift=+$('shift').value;
+  $('angle-value').textContent=angle+'°';$('bend-value').textContent=bend;$('shift-value').textContent=shift;
+  const views={current:current(control,angle,bend),leaf:leaf(control,shift),wall:wall(control),
+    facets:facets(control,$('reverse').checked),drift:drift(control),ouchi:ouchi(control)};
+  const labels={current:['Effect: both current layers.','Control: one layer; no inter-layer beat.'],
+    leaf:['Effect: two displaced vein fans.','Control: one vein fan.'],wall:['Effect: alternate rows offset by half a tile.','Control: aligned rows; mortar geometry unchanged.'],
+    facets:['Effect: four different face tones.','Control: uniform face tone; edges unchanged.'],
+    drift:['Effect: repeated asymmetric luminance order.','Control: mirrored eight-step order; balanced direction cues.'],
+    ouchi:['Effect: inner texture rotated 90°.','Control: matching inner and outer texture.']};
+  Object.entries(views).forEach(([id,body])=>{$(id).querySelector('.art').innerHTML=wrap(id,body);$(id).querySelector('.mode').textContent=labels[id][+control];});
+}
+['angle','bend','shift','compare','reverse'].forEach(id=>$(id).addEventListener('input',render));
+document.querySelectorAll('article').forEach(card=>card.querySelector('button').addEventListener('click',()=>{
+  const svg=card.querySelector('svg').outerHTML,blob=new Blob([svg],{type:'image/svg+xml'}),url=URL.createObjectURL(blob);
+  const a=document.createElement('a');a.href=url;a.download=`${card.id}-${$('compare').checked?'control':'effect'}.svg`;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);
+}));
+render();
+</script>
+</body>
+</html>

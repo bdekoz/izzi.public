@@ -1,0 +1,714 @@
+{
+  "schema": "izzi.decasia-2.delivery-verification/1",
+  "audited_on": "2026-09-30",
+  "technical_status": "PASS",
+  "human_visual_review": "high pass: complete horizontal reel; other artifact reviews pending",
+  "accepted_prior_feedback": "Density flutter paleness remains accepted; this does not approve the new visual variants.",
+  "coverage": {
+    "canonical_sources": 7,
+    "decoded_reference_frames": 4160,
+    "base_variants": 17,
+    "review_baselines": 20,
+    "primary_cells": {
+      "control": 120,
+      "temporal": 120,
+      "domain": 40,
+      "seed": 21
+    },
+    "supplementary_chronology_cells": 12,
+    "pdf_pages": 66,
+    "original_chapters": 20,
+    "original_diagnostic_reels": 8,
+    "formatted_chapters": 40,
+    "formatted_reels": 16,
+    "complete_reel_seconds_per_orientation": 240,
+    "complete_reel_frames_per_orientation": 7200,
+    "frame_rate": 30
+  },
+  "pdf": {
+    "path": "outputs/decasia-2/draft-1/review/film-glitch-review.pdf",
+    "sha256": "8cc271c5bd962ce478795463e971e0d94490b17b6d285b99eb91707b763473f5",
+    "bytes": 378637474
+  },
+  "formatted_reels": [
+    {
+      "path": "outputs/decasia-2/draft-1/deliveries/film-glitch-complete-horizontal.mkv",
+      "sha256": "26ea2b20542cd6657fa374f68a94c19fc56180642daefd677ea6b3797446ce86",
+      "orientation": "horizontal",
+      "size": [
+        1280,
+        720
+      ],
+      "chapters": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "frames": 7200,
+      "duration": 240,
+      "bytes": 52359298,
+      "complete_decode": "pass",
+      "human_visual_review": "high pass",
+      "human_reviewed_on": "2026-09-30"
+    },
+    {
+      "path": "outputs/decasia-2/draft-1/deliveries/source-1-horizontal.mkv",
+      "sha256": "7233d3a8953f8911b2c6d368fc8eefd4d34371f560f5d46e6c75fe2b74e3bc60",
+      "orientation": "horizontal",
+      "size": [
+        1280,
+        720
+      ],
+      "chapters": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "frames": 2160,
+      "duration": 72,
+      "bytes": 24692954,
+      "complete_decode": "pass"
+    },
+    {
+      "path": "outputs/decasia-2/draft-1/deliveries/source-2-horizontal.mkv",
+      "sha256": "0c2b50770ebfacdf619e23e39fc86aa160a41e01bd2d8d85ac84bb9cfcea5ba8",
+      "orientation": "horizontal",
+      "size": [
+        1280,
+        720
+      ],
+      "chapters": [
+        7,
+        8
+      ],
+      "frames": 720,
+      "duration": 24,
+      "bytes": 4798708,
+      "complete_decode": "pass"
+    },
+    {
+      "path": "outputs/decasia-2/draft-1/deliveries/source-3-horizontal.mkv",
+      "sha256": "e077c35c70890caf77def9ee8808621db161a9269c62d18b2f342abf3289e1a0",
+      "orientation": "horizontal",
+      "size": [
+        1280,
+        720
+      ],
+      "chapters": [
+        9,
+        10
+      ],
+      "frames": 720,
+      "duration": 24,
+      "bytes": 3204695,
+      "complete_decode": "pass"
+    },
+    {
+      "path": "outputs/decasia-2/draft-1/deliveries/source-4-horizontal.mkv",
+      "sha256": "c9a2095d25e4097267caf3e7ab3ccc05925690953a1af7efa734528d1865f6d3",
+      "orientation": "horizontal",
+      "size": [
+        1280,
+        720
+      ],
+      "chapters": [
+        11,
+        12,
+        13
+      ],
+      "frames": 1080,
+      "duration": 36,
+      "bytes": 4496023,
+      "complete_decode": "pass"
+    },
+    {
+      "path": "outputs/decasia-2/draft-1/deliveries/source-5-horizontal.mkv",
+      "sha256": "0842e3502bdfc98fcff30e8a5b07d254bf4ab2f7ab6240196cedccece326f33a",
+      "orientation": "horizontal",
+      "size": [
+        1280,
+        720
+      ],
+      "chapters": [
+        14,
+        15
+      ],
+      "frames": 720,
+      "duration": 24,
+      "bytes": 5250128,
+      "complete_decode": "pass"
+    },
+    {
+      "path": "outputs/decasia-2/draft-1/deliveries/source-6-horizontal.mkv",
+      "sha256": "75e603e9f3d609df81042e5cb3d0398bd5666b1f83a27cd2f380f2c47d17d48d",
+      "orientation": "horizontal",
+      "size": [
+        1280,
+        720
+      ],
+      "chapters": [
+        16,
+        17
+      ],
+      "frames": 720,
+      "duration": 24,
+      "bytes": 1962124,
+      "complete_decode": "pass"
+    },
+    {
+      "path": "outputs/decasia-2/draft-1/deliveries/source-7-horizontal.mkv",
+      "sha256": "52040d19fee23ee62a9ef6226122f4639376d455c2dddd0c981ed7c43addf2b7",
+      "orientation": "horizontal",
+      "size": [
+        1280,
+        720
+      ],
+      "chapters": [
+        18,
+        19,
+        20
+      ],
+      "frames": 1080,
+      "duration": 36,
+      "bytes": 7958228,
+      "complete_decode": "pass"
+    },
+    {
+      "path": "outputs/decasia-2/draft-1/deliveries/film-glitch-complete-vertical.mkv",
+      "sha256": "bf614c72a68e4419bca4629885fc6e52229b7d087f136907f2a1458ececd027a",
+      "orientation": "vertical",
+      "size": [
+        720,
+        1280
+      ],
+      "chapters": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "frames": 7200,
+      "duration": 240,
+      "bytes": 55522072,
+      "complete_decode": "pass"
+    },
+    {
+      "path": "outputs/decasia-2/draft-1/deliveries/source-1-vertical.mkv",
+      "sha256": "65506103f507c2b7d8a15bd0405cd7d67abae5ab0950cb0413ac0d67f41396cd",
+      "orientation": "vertical",
+      "size": [
+        720,
+        1280
+      ],
+      "chapters": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "frames": 2160,
+      "duration": 72,
+      "bytes": 26178333,
+      "complete_decode": "pass"
+    },
+    {
+      "path": "outputs/decasia-2/draft-1/deliveries/source-2-vertical.mkv",
+      "sha256": "1a2491ee6e22f6089a1f7f89272f506508e0b9b3f6f212551fffc3a061c1af59",
+      "orientation": "vertical",
+      "size": [
+        720,
+        1280
+      ],
+      "chapters": [
+        7,
+        8
+      ],
+      "frames": 720,
+      "duration": 24,
+      "bytes": 5099993,
+      "complete_decode": "pass"
+    },
+    {
+      "path": "outputs/decasia-2/draft-1/deliveries/source-3-vertical.mkv",
+      "sha256": "c7730ec9119d3f42766803d4850d116525857e8b16fd2cef03c8e04c0904c158",
+      "orientation": "vertical",
+      "size": [
+        720,
+        1280
+      ],
+      "chapters": [
+        9,
+        10
+      ],
+      "frames": 720,
+      "duration": 24,
+      "bytes": 3443900,
+      "complete_decode": "pass"
+    },
+    {
+      "path": "outputs/decasia-2/draft-1/deliveries/source-4-vertical.mkv",
+      "sha256": "3efb8efbdc9f0e7735e3189caf211603c634eabf3a274a360cc01e097a77693f",
+      "orientation": "vertical",
+      "size": [
+        720,
+        1280
+      ],
+      "chapters": [
+        11,
+        12,
+        13
+      ],
+      "frames": 1080,
+      "duration": 36,
+      "bytes": 4774653,
+      "complete_decode": "pass"
+    },
+    {
+      "path": "outputs/decasia-2/draft-1/deliveries/source-5-vertical.mkv",
+      "sha256": "71ac72fdc52ceddf86860d5643d022bbb11beed25d195cb5fb0003cfcc5df7f9",
+      "orientation": "vertical",
+      "size": [
+        720,
+        1280
+      ],
+      "chapters": [
+        14,
+        15
+      ],
+      "frames": 720,
+      "duration": 24,
+      "bytes": 5520651,
+      "complete_decode": "pass"
+    },
+    {
+      "path": "outputs/decasia-2/draft-1/deliveries/source-6-vertical.mkv",
+      "sha256": "492f4cba88b2590fdb50c62739c2f6f86a5cdbbf9e20711b76d6533bd029a8c0",
+      "orientation": "vertical",
+      "size": [
+        720,
+        1280
+      ],
+      "chapters": [
+        16,
+        17
+      ],
+      "frames": 720,
+      "duration": 24,
+      "bytes": 2062184,
+      "complete_decode": "pass"
+    },
+    {
+      "path": "outputs/decasia-2/draft-1/deliveries/source-7-vertical.mkv",
+      "sha256": "165f2a482b1febf0eeafcf270547681eca423f1960dc106dffc47e63a5b7bfcd",
+      "orientation": "vertical",
+      "size": [
+        720,
+        1280
+      ],
+      "chapters": [
+        18,
+        19,
+        20
+      ],
+      "frames": 1080,
+      "duration": 36,
+      "bytes": 8445920,
+      "complete_decode": "pass"
+    }
+  ],
+  "artifact_checks": {
+    "native_geometry_budgets_and_references": "PASS",
+    "isolated_controls_and_temporal_clock": "PASS",
+    "standard_plate_identity_and_searchable_pdf": "PASS",
+    "complete_decode_original_and_formatted_reels": "PASS",
+    "orientation_frame_plans": "all 7200 source frame plans preserved in both orientations",
+    "historical_v1": "All six pinned recipe, plan and SVG byte hashes match.",
+    "max_material_boundary_points": 396079
+  },
+  "encoded_layout_measurements": {
+    "samples": 40,
+    "frames_per_formatted_chapter": 1,
+    "selected_frame": 150,
+    "max_mean_absolute_byte_error": 1.2221122685185186,
+    "min_psnr_db": 40.0939785949327,
+    "scope": "Comparison with pre-encode layout canvases; original chapter masters are already lossy H.264. Formatting adds one H.264 generation."
+  },
+  "focused_ctest": {
+    "status": "PASS",
+    "checks": [
+      {
+        "name": "film-decay.variants-contract",
+        "status": "PASS",
+        "log": "outputs/decasia-2/draft-1/verification-logs/decasia-2-tests.log"
+      },
+      {
+        "name": "film-decay.production-contract",
+        "status": "PASS",
+        "log": "outputs/decasia-2/draft-1/verification-logs/decasia-2-tests.log"
+      },
+      {
+        "name": "film-decay.study-contract",
+        "status": "PASS",
+        "log": "outputs/decasia-2/draft-1/verification-logs/decasia-2-tests.log"
+      },
+      {
+        "name": "film-decay.render-movie-contract",
+        "status": "PASS",
+        "log": "outputs/decasia-2/draft-1/verification-logs/decasia-2-adapters.log"
+      },
+      {
+        "name": "film-decay.variants-adapter-contract",
+        "status": "PASS",
+        "log": "outputs/decasia-2/draft-1/verification-logs/decasia-2-adapters-v2.log"
+      },
+      {
+        "name": "header-self-contained.izzi-svg-film-decay-json.h",
+        "status": "PASS",
+        "log": "outputs/decasia-2/draft-1/verification-logs/decasia-2-headers.log"
+      },
+      {
+        "name": "header-self-contained.izzi-svg-film-decay.h",
+        "status": "PASS",
+        "log": "outputs/decasia-2/draft-1/verification-logs/decasia-2-headers.log"
+      },
+      {
+        "name": "header-self-contained.izzi-film-blister-fields.h",
+        "status": "PASS",
+        "log": "outputs/decasia-2/draft-1/verification-logs/decasia-2-headers.log"
+      },
+      {
+        "name": "header-self-contained.izzi-film-decay-variants.h",
+        "status": "PASS",
+        "log": "outputs/decasia-2/draft-1/verification-logs/decasia-2-headers.log"
+      },
+      {
+        "name": "video-glitch.contract",
+        "status": "PASS",
+        "log": "outputs/decasia-2/draft-1/verification-logs/decasia-2-headers.log"
+      },
+      {
+        "name": "package-contract",
+        "status": "PASS",
+        "log": "outputs/decasia-2/draft-1/verification-logs/decasia-2-package.log"
+      },
+      {
+        "name": "package-contract.json",
+        "status": "PASS",
+        "log": "outputs/decasia-2/draft-1/verification-logs/decasia-2-package.log"
+      }
+    ],
+    "execution": "Focused suites ran separately. The earlier variants-adapter failure in the adapters log was corrected; adapters-v2 records its passing rerun."
+  },
+  "package": {
+    "status": "PASS",
+    "project_version": "3.20260816",
+    "canonical": {
+      "header_count": 69,
+      "include_fragment_count": 8,
+      "legacy_file_count": 0,
+      "relocated_install_tree_sha256": "bb2db8466af1f423a12b1dafdbaaefefb0c7ade0621068472dcfc6b1f8c06d8f",
+      "schema_count": 11
+    },
+    "consumers": {
+      "build_tree": "PASS",
+      "canonical_install_relocated": "PASS"
+    }
+  },
+  "documentation_examples": {
+    "native_families": 7,
+    "movie_families": 7,
+    "status": "PASS",
+    "output_seconds": 2,
+    "source_seconds": 1,
+    "movie_frames": 60,
+    "movie_codec": "ffv1",
+    "log": "outputs/decasia-2/draft-1/verification-logs/decasia-2-doc-examples.log"
+  },
+  "visual_inspection": {
+    "encoded_layout_previews": [
+      "outputs/decasia-2/draft-1/layouts/01/horizontal-encoded-150.png",
+      "outputs/decasia-2/draft-1/layouts/20/vertical-encoded-150.png"
+    ],
+    "real_time_playback": false,
+    "source_match_acceptance_inferred": false
+  },
+  "variant_review": [
+    {
+      "row": 1,
+      "source": 1,
+      "variant": "pale-cavities",
+      "technical_status": "PASS",
+      "human_visual_review": "pending"
+    },
+    {
+      "row": 2,
+      "source": 1,
+      "variant": "gray-membranes",
+      "technical_status": "PASS",
+      "human_visual_review": "pending"
+    },
+    {
+      "row": 3,
+      "source": 1,
+      "variant": "cellular-foam",
+      "technical_status": "PASS",
+      "human_visual_review": "pending"
+    },
+    {
+      "row": 4,
+      "source": 1,
+      "variant": "sparse-cavities-membranes",
+      "technical_status": "PASS",
+      "human_visual_review": "pending"
+    },
+    {
+      "row": 5,
+      "source": 1,
+      "variant": "membranes-foam-lace",
+      "technical_status": "PASS",
+      "human_visual_review": "pending"
+    },
+    {
+      "row": 6,
+      "source": 1,
+      "variant": "full-blister-mixture",
+      "technical_status": "PASS",
+      "human_visual_review": "pending"
+    },
+    {
+      "row": 7,
+      "source": 2,
+      "variant": "broad-veil",
+      "technical_status": "PASS",
+      "human_visual_review": "pending"
+    },
+    {
+      "row": 8,
+      "source": 2,
+      "variant": "scalloped-density-front",
+      "technical_status": "PASS",
+      "human_visual_review": "pending"
+    },
+    {
+      "row": 9,
+      "source": 3,
+      "variant": "pale-regional-veil",
+      "technical_status": "PASS",
+      "human_visual_review": "pending"
+    },
+    {
+      "row": 10,
+      "source": 3,
+      "variant": "relief-trace",
+      "technical_status": "PASS",
+      "human_visual_review": "pending"
+    },
+    {
+      "row": 11,
+      "source": 4,
+      "variant": "abrasion-field",
+      "technical_status": "PASS",
+      "human_visual_review": "pending"
+    },
+    {
+      "row": 12,
+      "source": 4,
+      "variant": "thin-tear",
+      "technical_status": "PASS",
+      "human_visual_review": "pending"
+    },
+    {
+      "row": 13,
+      "source": 4,
+      "variant": "torn-sheet",
+      "technical_status": "PASS",
+      "human_visual_review": "pending"
+    },
+    {
+      "row": 14,
+      "source": 5,
+      "variant": "connected-survivor-window",
+      "technical_status": "PASS",
+      "human_visual_review": "pending"
+    },
+    {
+      "row": 15,
+      "source": 5,
+      "variant": "fragmented-survivor-islands",
+      "technical_status": "PASS",
+      "human_visual_review": "pending"
+    },
+    {
+      "row": 16,
+      "source": 6,
+      "variant": "soft-advancing-front",
+      "technical_status": "PASS",
+      "human_visual_review": "pending"
+    },
+    {
+      "row": 17,
+      "source": 6,
+      "variant": "wandering-aperture",
+      "technical_status": "PASS",
+      "human_visual_review": "pending"
+    },
+    {
+      "row": 18,
+      "source": 7,
+      "variant": "fine-flecks",
+      "technical_status": "PASS",
+      "human_visual_review": "pending"
+    },
+    {
+      "row": 19,
+      "source": 7,
+      "variant": "regional-fading",
+      "technical_status": "PASS",
+      "human_visual_review": "pending"
+    },
+    {
+      "row": 20,
+      "source": 7,
+      "variant": "perforated-picture",
+      "technical_status": "PASS",
+      "human_visual_review": "pending"
+    }
+  ],
+  "source7_subsequence_review": [
+    {
+      "id": "fq-01",
+      "frames_half_open": [
+        0,
+        125
+      ],
+      "technical_status": "PASS",
+      "human_visual_review": "pending"
+    },
+    {
+      "id": "fq-02",
+      "frames_half_open": [
+        125,
+        450
+      ],
+      "technical_status": "PASS",
+      "human_visual_review": "pending"
+    },
+    {
+      "id": "fq-03",
+      "frames_half_open": [
+        450,
+        800
+      ],
+      "technical_status": "PASS",
+      "human_visual_review": "pending"
+    },
+    {
+      "id": "fq-04",
+      "frames_half_open": [
+        800,
+        1150
+      ],
+      "technical_status": "PASS",
+      "human_visual_review": "pending"
+    },
+    {
+      "id": "fq-05",
+      "frames_half_open": [
+        1150,
+        1500
+      ],
+      "technical_status": "PASS",
+      "human_visual_review": "pending"
+    }
+  ],
+  "input_receipts": {
+    "outputs/decasia-2/draft-1/verification-logs/decasia-2-tests.log": "a37a62b89af8bd61b261cfaf0b58276273468573ee761340375728bbd73d8631",
+    "outputs/decasia-2/draft-1/verification-logs/decasia-2-adapters.log": "00c1c65875df644db856a7749eec2df6a3b6df2d935f46b28dfa7c6189b44150",
+    "outputs/decasia-2/draft-1/verification-logs/decasia-2-adapters-v2.log": "340f1b0dd06b7c4d189706f7a21a391103ad489159b923254da688a061436dee",
+    "outputs/decasia-2/draft-1/verification-logs/decasia-2-headers.log": "1628cdb29ee2a563a6f0c26f69d5b7aa8e58e8e785b3443f4c42a5510ecddc1a",
+    "outputs/decasia-2/draft-1/verification-logs/decasia-2-package.log": "91dccb81ea0c1e8a4b9ec32da983ccefe82a2636992e6ef30292b59bfb53c2d3",
+    "outputs/decasia-2/draft-1/verification-logs/decasia-2-doc-examples.log": "f51bbd9746d79ca083dd3b9e4316c8aee2cdf52051e5b6a5684129d8063fa031",
+    "outputs/decasia-2/draft-1/manifest.json": "3a58f79eed24abc50544a88185b5f9a2ee80c9a60792d5d2564b8816eea29c85",
+    "outputs/decasia-2/draft-1/verification.json": "2f2172058d90810c3486859bb2fade5522ae48ea3f5944e2d6a2fb0276ca432f",
+    "outputs/decasia-2/draft-1/layouts/manifest.json": "3f5a0da8f31255d38aaee52fabb75ff6d989fd96145772df6bc9addc3eb48f7a",
+    "outputs/decasia-2/draft-1/layouts/verification.json": "210ea06b04cf6550d43033464f2a98c17eecc77c686f9987851b83019298ffab",
+    "outputs/decasia-2/draft-1/references/manifest.json": "9b1b096fb614afd251ae72d483cd02f011486e15506ff04a74e721cfdf7ca743",
+    "outputs/decasia-2/draft-1/references/source-7/analysis.json": "2aabecfd13b2d4d7685d7ba1975572b67bd7b7abf5f66d7840172fe558be4809",
+    "outputs/decasia-2/draft-1/compatibility/verification.json": "1c49c251afbd646e3970900863bae4246aa36c4f6c2fedbb88ee289bbf538def",
+    "outputs/decasia-2/draft-1/stills.json": "77242021449c6e3797c3e56bb39d6f25b89b7b77b6ebbc4560a181bce9ecb0c4",
+    "outputs/decasia-2/draft-1/chronology.json": "0e19e02322378d5c8caa09c485c29f23aa79cfb99a7d5319ef193b3a39d67588",
+    "build/film-decay-release/tests/package-contract/package-contract.json": "1ce82857c9659838b3b9559121c846b406b1ad65984685ba8de72c83f5ebc740",
+    "docs/development/sessions/20260930.decasia-2.human-review.json": "a283666ab3c85b0a718b71fb0b73588d1ae528301e5186556cb90d5824b2f730"
+  },
+  "implementation_sha256": {
+    "src/izzi-film-blister-fields.h": "777d066e9588285ea36ac10efbe02c48638c311d122ed047e893839cccc6a0ff",
+    "src/izzi-film-decay-variants.h": "62f3871d8b63ab38556158b71c3e5ddb64be23185d91f95d058633c79223f1ee",
+    "src/izzi-film-decay-fields.h": "2ca8d4bca8fcc79a573a332d6ff37e0dd598b0daea3c52d112e3f73e393719f3",
+    "src/izzi-svg-film-decay.h": "f44705e9c9964770938481a38f1c2243da83d80698f4f274f2184a8f2fa3c208",
+    "src/izzi-svg-film-decay-json.h": "6dcbf2cd94b6da1ae828819ecd3409b0847845ed7d439b51bffb92c2cb8e665b",
+    "src/izzi-levels-contours-regions.h": "c797c4932700396bed07737eca611c2c247bc51bd9b4c38e84c37452266c481d",
+    "examples/film-decay-render.cc": "0070b47eb63d3532e9443a1f9c5244549f9d0af6c25199cbd17015476b208b93",
+    "scripts/film_decay_movie.py": "8465416d6b2f098ba440c683f8c17823d7fb173931162dd0a39529cb1cef589d",
+    "scripts/render-decasia-2.py": "7857b9453cdb834d42b03f9e8b267f759bba2fbf20f9f2c9de99bbedd58930b3",
+    "scripts/glitch_review_plate.py": "c3b7fb4f309043eac77c3cc7f1592cf761875b4b2ec581c502a1018f822a878b",
+    "scripts/render-film-glitch-layouts.py": "ba6f21cb3282e4fab3e73359f42aab086360c0b4ee6d0f076d1e794cd2710aee",
+    "scripts/verify-decasia-2.py": "5d3d7434a4c74504f04a610dcc8af55088259eb92f2e2054e996f605ae8801da",
+    "scripts/analyze-forbidden-quest.py": "9a4d846fa6e7549596b97dc947f1d638f7564ca2cfd0d8edaddc162dddda6d66",
+    "tests/generation-baseline/generate.py": "d6cf8c60d6798de3a8b101718f67c1c27b854a1b7ceb3d0c04cbd44d9fba1722",
+    "tests/fixtures/film-decay-v1-baselines.json": "42cc5bdbe8003526932f78f042ab136139665328ed2748214ccaaf1a1449c54e"
+  },
+  "test_source_sha256": {
+    "tests/film-decay-variants.cc": "c09ad7fc767f20246cdf5b566302e1a309f91f53721a1db4ee4be00ac562edae",
+    "tests/film-decay-variants.py": "e4b73e9aa94004b79ff049e2f1aa43e814a6cf4793aa9f046c7f15c796616aa9",
+    "tests/film-decay.cc": "f07f7b46cd67ede3e52ea7f53a92af7db3f5d220783b71e25af3d161ac961ae3",
+    "tests/film-decay-render.py": "1e924303844149cf72a56eaa1471e48e32ea2113048993e95efc61435cc9e213",
+    "tests/package-contract.py": "2885b78e8f662e031c519b06c07fe2311ecfb22695cdacd81554b1a97b5bb295",
+    "tests/package-consumer/canonical.cc": "436fbaf69fb3b1c6634e3399d48c47d3cf7b72e762c3693c1748e26c90144236",
+    "scripts/render-film-decay-movie.py": "2f6f516cd00ebfa0d00fa903f0c58251ae3afc81be18cfec631a12af175fc73d",
+    "scripts/render-film-decay-svg.py": "ebd38eaa38c4647223bd8c2b620d0c6c60da8ee09c33101cdd149190a9d977ba"
+  },
+  "limits": "Technical checks and compression measurements do not establish canonical visual fidelity. The complete horizontal reel received a human high pass; separate artifact and source-reference reviews remain pending. The unified screen API remains a separate plan.",
+  "human_review_record": {
+    "path": "docs/development/sessions/20260930.decasia-2.human-review.json",
+    "sha256": "a283666ab3c85b0a718b71fb0b73588d1ae528301e5186556cb90d5824b2f730"
+  },
+  "variant_review_scope": "Individual source-reference and control reviews; the complete horizontal reel assessment is recorded separately."
+}

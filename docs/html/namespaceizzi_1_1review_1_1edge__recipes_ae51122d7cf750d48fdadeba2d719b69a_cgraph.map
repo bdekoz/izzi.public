@@ -1,0 +1,8 @@
+<map id="izzi::review::edge_recipes::fan" name="izzi::review::edge_recipes::fan">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,33,122,70"/>
+<area shape="rect" id="Node000002" href="$namespaceizzi_1_1review_1_1edge__recipes.html#a09874e00f86af36f140dba789c008e4b" title=" " alt="" coords="170,5,309,42"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="122,40,157,37,152,38,123,45"/>
+<area shape="rect" id="Node000003" href="$namespaceizzi_1_1review_1_1edge__recipes.html#aff5edc43e9df68d88cbb136ad63bf52f" title=" " alt="" coords="357,33,473,70"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="122,51,170,52,309,52,344,54,339,54,309,57,170,57,122,56"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="310,32,345,40,339,40,309,37"/>
+</map>

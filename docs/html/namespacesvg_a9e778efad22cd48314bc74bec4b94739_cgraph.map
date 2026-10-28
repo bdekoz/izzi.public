@@ -1,0 +1,39 @@
+<map id="svg::make_octahedron" name="svg::make_octahedron">
+<area shape="rect" id="Node000001" title="Make octahedron shape (8) in 2D simulated 3D @ret group element of polygon_elements." alt="" coords="5,196,150,220"/>
+<area shape="rect" id="Node000002" href="$group__elements.html#ada0333b46b2547c6152f3f5811016a12" title=" " alt="" coords="379,5,512,42"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="87,194,131,147,162,121,196,97,237,77,281,60,366,37,362,41,283,65,240,82,199,102,165,125,135,151,91,197"/>
+<area shape="rect" id="Node000004" href="$group__elements.html#a7995b78d94e1c299065c9dd3569fef7c" title=" " alt="" coords="198,112,331,149"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="107,193,205,153,202,157,110,197"/>
+<area shape="rect" id="Node000007" href="$group__elements.html#gaab139e518fe9d07003dbcc1fdfdad955" title=" " alt="" coords="200,189,329,226"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="149,205,186,206,182,209,151,210"/>
+<area shape="rect" id="Node000009" href="$namespacesvg.html#a0352c1350268fb7ecd96ea81908417e7" title="Line primitive." alt="" coords="213,318,316,342"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="98,217,234,308,230,311,97,223"/>
+<area shape="rect" id="Node000017" href="$group__elements.html#a5c8c4f93df6e84523f788aa7f98bcab8" title="For groups of elements that have the same name." alt="" coords="200,431,329,467"/>
+<area shape="poly" id="edge17_Node000001_Node000017" title=" " alt="" coords="90,218,242,417,237,419,87,222"/>
+<area shape="rect" id="Node000003" href="$group__elements.html#ad893ef9c13a15464c96d8a85c08af30f" title=" " alt="" coords="569,12,716,36"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="512,21,556,23,551,25,514,26"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="290,109,378,52,390,48,386,51,380,57,293,113"/>
+<area shape="rect" id="Node000005" href="$group__elements.html#ga3d62381f8edcccd3d91f82af55f11274" title=" " alt="" coords="386,128,505,165"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="330,134,373,139,368,141,332,139"/>
+<area shape="rect" id="Node000006" href="$group__elements.html#a41dcaa1132c502cb86c01aae1e7b9ff2" title=" " alt="" coords="386,67,505,103"/>
+<area shape="poly" id="edge6_Node000004_Node000006" title=" " alt="" coords="330,111,373,102,369,105,333,116"/>
+<area shape="rect" id="Node000008" href="$group__elements.html#a71cf2eb89a562527f14c4ca4c027c2b9" title=" " alt="" coords="381,189,510,226"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="329,205,368,207,363,209,331,210"/>
+<area shape="rect" id="Node000010" href="$group__elements.html#a306eac4c5a7ea755ab6375a65489366f" title=" " alt="" coords="382,373,509,410"/>
+<area shape="poly" id="edge10_Node000009_Node000010" title=" " alt="" coords="302,340,377,367,372,368,302,345"/>
+<area shape="rect" id="Node000013" href="$group__elements.html#a238b38ca99a1cf6c2baf80c8e4338d99" title=" " alt="" coords="379,312,512,349"/>
+<area shape="poly" id="edge13_Node000009_Node000013" title=" " alt="" coords="315,328,366,329,361,331,317,333"/>
+<area shape="rect" id="Node000015" href="$group__elements.html#ga4769af15793cb308d426abb5fd552df5" title=" " alt="" coords="382,435,509,471"/>
+<area shape="poly" id="edge15_Node000009_Node000015" title=" " alt="" coords="279,340,324,378,380,420,389,427,384,427,378,425,320,383,278,345"/>
+<area shape="rect" id="Node000016" href="$group__elements.html#aa6b4ba04be5858b4943235801f034943" title=" " alt="" coords="382,251,509,287"/>
+<area shape="poly" id="edge16_Node000009_Node000016" title=" " alt="" coords="301,316,377,292,373,294,303,320"/>
+<area shape="rect" id="Node000011" href="$namespacesvg.html#ac91e1a80dd6b2df85fd06a07320bc6ce" title="Escape unescaped data for a double&#45;quoted XML attribute value." alt="" coords="560,441,725,465"/>
+<area shape="poly" id="edge11_Node000010_Node000011" title=" " alt="" coords="507,408,590,436,585,436,507,413"/>
+<area shape="rect" id="Node000012" href="$namespacesvg_1_1detail.html#a0dabd749799988c1aae4474d923c6fd1" title="Escape unescaped character data at its XML serialization boundary. Existing entity spellings are data..." alt="" coords="773,441,924,465"/>
+<area shape="poly" id="edge12_Node000011_Node000012" title=" " alt="" coords="725,450,760,453,754,453,725,456"/>
+<area shape="rect" id="Node000014" href="$namespacesvg.html#ac10e7d47d031b121174fc0e65232980f" title="Convert point_2t to string." alt="" coords="595,318,690,342"/>
+<area shape="poly" id="edge14_Node000013_Node000014" title=" " alt="" coords="512,328,582,330,577,331,513,333"/>
+<area shape="rect" id="Node000018" href="$group__elements.html#ab84e1bc08d2d2a71ab05521af65d7585" title=" " alt="" coords="381,496,510,533"/>
+<area shape="poly" id="edge18_Node000017_Node000018" title=" " alt="" coords="318,465,381,490,376,490,317,471"/>
+<area shape="poly" id="edge19_Node000018_Node000011" title=" " alt="" coords="506,493,585,470,590,469,507,498"/>
+</map>

@@ -1,0 +1,229 @@
+{
+  "method": "PDF preview at max 1000 pixels; nonwhite threshold 32; artwork bounds are diagnostic only",
+  "references": [
+    {
+      "id": "L_O_1_021",
+      "page_pixels": [
+        1000,
+        708
+      ],
+      "artwork_crop_pixels": [
+        349,
+        165,
+        661,
+        510
+      ],
+      "sha256": "01aa1eaf16249a77384d5fa4fdb94fb36b6863817069d175430ecf42ca5441c1"
+    },
+    {
+      "id": "L_O_1_022",
+      "page_pixels": [
+        1000,
+        708
+      ],
+      "artwork_crop_pixels": [
+        277,
+        147,
+        708,
+        577
+      ],
+      "sha256": "d7b017d59c88269c3a9de7eb22c4c7ff8bae8d8cda6035e73c48b9464656e06a"
+    },
+    {
+      "id": "L_O_2_002",
+      "page_pixels": [
+        708,
+        1000
+      ],
+      "artwork_crop_pixels": [
+        208,
+        298,
+        536,
+        628
+      ],
+      "sha256": "4f70d1ce20f680bfb088647e0ba1ca065996994bfb534d96bb118db861cf4ae0"
+    },
+    {
+      "id": "L_O_2_003",
+      "page_pixels": [
+        708,
+        1000
+      ],
+      "artwork_crop_pixels": [
+        235,
+        279,
+        515,
+        558
+      ],
+      "sha256": "98567564bf95ff48328a209c3928aac4ba351c587b664312cd010a425956b69e"
+    },
+    {
+      "id": "L_O_2_005",
+      "page_pixels": [
+        1000,
+        708
+      ],
+      "artwork_crop_pixels": [
+        266,
+        94,
+        736,
+        564
+      ],
+      "sha256": "1f20faa26911d47c0fe40a796aede3550584c7a20c0a01c148ba20f141a0d650"
+    },
+    {
+      "id": "L_O_2_006",
+      "page_pixels": [
+        1000,
+        708
+      ],
+      "artwork_crop_pixels": [
+        300,
+        147,
+        708,
+        555
+      ],
+      "sha256": "f0d440f583b1f9f8c224c9f6ca8d4ce7543c62e513b4337e3305c560c005b5c9"
+    },
+    {
+      "id": "L_O_2_008",
+      "page_pixels": [
+        1000,
+        708
+      ],
+      "artwork_crop_pixels": [
+        368,
+        125,
+        660,
+        535
+      ],
+      "sha256": "2f65ac43b33aa6ef4250c2b26739723af83d660e0aa8b2590d4f71671a98c3df"
+    },
+    {
+      "id": "L_O_2_009",
+      "page_pixels": [
+        1000,
+        708
+      ],
+      "artwork_crop_pixels": [
+        308,
+        110,
+        636,
+        504
+      ],
+      "sha256": "d3b3d55b88b02e7c46eaca8d10633fa0895c015805f1f83e4dbcebc0ee055663"
+    },
+    {
+      "id": "L_O_2_015",
+      "page_pixels": [
+        1000,
+        708
+      ],
+      "artwork_crop_pixels": [
+        330,
+        223,
+        691,
+        495
+      ],
+      "sha256": "46b7608934eccb01ab0c5ed733ab5c52a5b00009deec62b37b52e5cfcabb9489"
+    },
+    {
+      "id": "L_O_2_019",
+      "page_pixels": [
+        1000,
+        708
+      ],
+      "artwork_crop_pixels": [
+        296,
+        163,
+        759,
+        580
+      ],
+      "sha256": "dacc23ae310557d02f98dda83777480c08ea72606769c4678be2a4a6d34c955e"
+    },
+    {
+      "id": "L_O_3_007",
+      "page_pixels": [
+        1000,
+        708
+      ],
+      "artwork_crop_pixels": [
+        264,
+        215,
+        763,
+        515
+      ],
+      "sha256": "30d320a03752793e7d4e430ddf372c2851b78c968801987b7d7a5e004cd361ae"
+    },
+    {
+      "id": "L_O_3_008",
+      "page_pixels": [
+        1000,
+        708
+      ],
+      "artwork_crop_pixels": [
+        326,
+        224,
+        765,
+        463
+      ],
+      "sha256": "72030485b43c36547ee9dc498d50b6a5c49f57a02fd3a95c8dd7ea13b456c4f4"
+    },
+    {
+      "id": "L_P_006",
+      "page_pixels": [
+        1000,
+        708
+      ],
+      "artwork_crop_pixels": [
+        170,
+        108,
+        856,
+        622
+      ],
+      "sha256": "419f6a19c31650ccd506d9a1dd3117eb76fdbe2dc811efabfa10113ec73d6c08"
+    },
+    {
+      "id": "L_P_007",
+      "page_pixels": [
+        1000,
+        708
+      ],
+      "artwork_crop_pixels": [
+        32,
+        11,
+        973,
+        697
+      ],
+      "sha256": "b01bed7cfa8ce82e252136a4cd3fdb72ed25023fe8b1fb0d73d7b1c3f9837016"
+    },
+    {
+      "id": "L_P_009",
+      "page_pixels": [
+        708,
+        1000
+      ],
+      "artwork_crop_pixels": [
+        0,
+        0,
+        706,
+        999
+      ],
+      "sha256": "e16a94730f2eadf3fce55ee358b37da473bb2158d0319094125ae2cdcc262b4d"
+    },
+    {
+      "id": "L_P_010",
+      "page_pixels": [
+        1000,
+        708
+      ],
+      "artwork_crop_pixels": [
+        310,
+        76,
+        898,
+        606
+      ],
+      "sha256": "ab10765644513bcb31d29eb525800ea3db87f49fd954099544850ce3116ec38c"
+    }
+  ]
+}

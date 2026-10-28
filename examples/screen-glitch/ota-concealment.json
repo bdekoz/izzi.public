@@ -1,0 +1,17 @@
+{
+  "form_id": "satellite/mpeg-picture-damage",
+  "parameters": {
+    "amount": 0.72,
+    "columns": 24,
+    "rows": 30,
+    "checkpoint_frames": 45
+  },
+  "seed": 20261011,
+  "domain": [
+    0,
+    0,
+    640,
+    360
+  ],
+  "source_sequence": "examples/screen-glitch/source-sequence.json"
+}

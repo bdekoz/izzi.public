@@ -1,0 +1,4 @@
+<map id="svg::swarm_lattice_address" name="svg::swarm_lattice_address">
+<area shape="rect" id="Node000001" title="Integer coordinates, independent of floating point canonicalization." alt="" coords="5,29,129,66"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="43,28,41,20,45,11,54,5,67,3,81,5,91,14,85,14,79,10,67,8,56,10,49,14,47,20,48,29"/>
+</map>

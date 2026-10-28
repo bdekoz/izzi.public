@@ -1,0 +1,9 @@
+<map id="svg::matrix_detail::description" name="svg::matrix_detail::description">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,60,124,97"/>
+<area shape="rect" id="Node000002" href="$namespacesvg_1_1matrix__detail.html#a7e1b62f5ac0e27b2bc8b335beebe727e" title=" " alt="" coords="172,5,290,42"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="121,57,161,46,156,49,124,62"/>
+<area shape="rect" id="Node000003" href="$namespacesvg.html#a1de80f444548034307894fdfb28db748" title="Undefined for the denominator column, missing inputs, or a zero total." alt="" coords="172,66,290,90"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="123,76,159,77,154,79,124,81"/>
+<area shape="rect" id="Node000004" href="$namespacesvg_1_1matrix__detail.html#a9b04b8deb3f92b0924e2d7ff9dcf5baa" title=" " alt="" coords="172,115,290,151"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="123,95,161,109,156,110,122,100"/>
+</map>

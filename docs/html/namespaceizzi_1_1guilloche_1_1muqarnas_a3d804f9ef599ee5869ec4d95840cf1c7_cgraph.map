@@ -1,0 +1,22 @@
+<map id="izzi::guilloche::muqarnas::frame" name="izzi::guilloche::muqarnas::frame">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,117,166,154"/>
+<area shape="rect" id="Node000002" href="$structizzi_1_1guilloche_1_1muqarnas_1_1writer.html#a561946a9ebb1bbb409581fd64bdc1748" title=" " alt="" coords="449,35,609,71"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="98,115,144,65,176,39,213,20,244,10,277,5,344,4,407,13,464,29,459,30,406,19,343,10,278,10,246,15,215,25,179,44,148,69,102,119"/>
+<area shape="rect" id="Node000005" href="$structizzi_1_1guilloche_1_1muqarnas_1_1writer.html#ad5ead942427a32d2de2a57b70f4518c6" title=" " alt="" coords="227,35,388,71"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="129,114,213,81,235,75,231,78,215,86,132,119"/>
+<area shape="rect" id="Node000006" href="$namespaceizzi_1_1guilloche_1_1muqarnas.html#abf1eeb43d4060a2801941d0a97ded8e6" title=" " alt="" coords="214,96,401,119"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="165,123,200,120,196,123,167,128"/>
+<area shape="rect" id="Node000007" href="$structizzi_1_1guilloche_1_1muqarnas_1_1writer.html#a70b4a4f8da5e6d9f6183ab8880991ffd" title=" " alt="" coords="227,144,388,181"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="165,143,214,150,209,152,166,148"/>
+<area shape="rect" id="Node000008" href="$namespaceizzi_1_1guilloche_1_1muqarnas.html#ab97fb4015b74bc6d68fc9b17a06f100f" title=" " alt="" coords="449,228,609,265"/>
+<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="122,152,166,172,214,190,327,217,436,236,431,237,326,223,213,195,164,177,122,157"/>
+<area shape="rect" id="Node000009" href="$namespaceizzi_1_1guilloche_1_1muqarnas.html#a1db1ed5b536687aeb28c8ef09efe3a39" title=" " alt="" coords="227,256,388,293"/>
+<area shape="poly" id="edge10_Node000001_Node000009" title=" " alt="" coords="107,152,155,193,215,235,240,249,235,249,212,239,152,197,106,157"/>
+<area shape="rect" id="Node000003" href="$namespaceizzi_1_1guilloche_1_1muqarnas.html#a11650124d9ed83b31b211beb8b227116" title=" " alt="" coords="657,35,818,71"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="609,50,644,52,639,53,610,56"/>
+<area shape="rect" id="Node000004" href="$namespacesvg.html#ac10e7d47d031b121174fc0e65232980f" title="Convert point_2t to string." alt="" coords="866,41,961,65"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="818,50,853,52,847,53,819,56"/>
+<area shape="poly" id="edge5_Node000005_Node000002" title=" " alt="" coords="387,50,436,52,431,54,388,55"/>
+<area shape="poly" id="edge8_Node000007_Node000002" title=" " alt="" coords="371,141,400,129,446,104,487,82,491,79,449,109,402,134,373,146"/>
+<area shape="poly" id="edge11_Node000009_Node000008" title=" " alt="" coords="388,261,431,259,436,258,388,267"/>
+</map>

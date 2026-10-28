@@ -1,0 +1,255 @@
+{
+  "schema": "izzi.screen-glitch-evidence/1",
+  "access_date": "2026-09-30",
+  "scope": "Primary descriptions establish mechanisms. The new native electronic-media renderings are artistic interpretations; generated reviews are implementation evidence, not canonical recordings.",
+  "sources": [
+    {
+      "id": "bbc-whp069",
+      "author": "BBC Research and Development; edited by P. Shelswell",
+      "date": "2004-02",
+      "title": "The Handouts from the 2003 Open Days",
+      "url": "https://downloads.bbc.co.uk/rd/pubs/whp/whp-pdf-files/WHP069.pdf#page=9",
+      "location": "PDF page 9: Analogue and digital terrestrial TV: reception issues",
+      "status": "historical_description",
+      "inspection": "Retrieved and read during implementation.",
+      "supports": [
+        "weak-signal snow",
+        "multipath ghosting",
+        "ignition and appliance impulses",
+        "digital breakup and receiver unlock"
+      ],
+      "limits": "Describes different responses to impairments in analog and digital reception; does not calibrate this renderer's strength, grain scale or timing."
+    },
+    {
+      "id": "bbc-1962-26",
+      "author": "BBC Engineering Division; E. W. Taylor, D. Maurice",
+      "date": "1962-06-18",
+      "title": "Pattern Visibility in Television Co-channel Interference",
+      "url": "https://downloads.bbc.co.uk/rd/pubs/reports/1962-26.pdf#page=5",
+      "location": "Sections 1–2; PDF pages 5–6",
+      "status": "historical_description",
+      "inspection": "Retrieved and read during implementation.",
+      "supports": [
+        "interference stripes whose orientation, spacing and motion depend on carrier offset and scanning frequencies"
+      ],
+      "limits": "The report begins with an unmodulated interferer. Native stripes do not constitute a sampled RF simulation or a second decoded program."
+    },
+    {
+      "id": "itu-g1080-2008",
+      "author": "ITU-T Study Group 12",
+      "date": "2008-12-07",
+      "title": "G.1080: Quality of experience requirements for IPTV services",
+      "url": "https://www.itu.int/rec/dologin_pub.asp?id=T-REC-G.1080-200812-I%21%21PDF-E&lang=e&type=items",
+      "location": "Section 6.2 and Appendix IV",
+      "status": "historical_description",
+      "inspection": "Retrieved and read during implementation.",
+      "supports": [
+        "packet-loss damage depends on codec, picture type, packetization and loss history",
+        "prediction can propagate visible damage"
+      ],
+      "limits": "Supports stateful recovery and separate loss/decoder policies. Native block concealment is an inferred mapping, not measured MPEG decoder behavior or a provider-specific recording."
+    },
+    {
+      "id": "etsi-tr101290-2001",
+      "author": "ETSI",
+      "date": "2001-05",
+      "title": "TR 101 290 V1.2.1: Measurement guidelines for DVB systems",
+      "url": "https://www.etsi.org/deliver/etsi_TR/101200_101299/101290/01.02.01_60/tr_101290v010201p.pdf",
+      "location": "Section 5: MPEG-2 transport stream checks",
+      "status": "historical_description",
+      "inspection": "Retrieved and read during implementation.",
+      "supports": [
+        "transport synchronization, continuity and transport-error distinctions"
+      ],
+      "limits": "Defines measurements of transport behavior, not a universal picture-concealment appearance."
+    },
+    {
+      "id": "intelsat-sun-interference",
+      "author": "Intelsat",
+      "date": null,
+      "title": "Sun Interference Background",
+      "url": "https://my.intelsat.com/resource/si/Sun_Interference_Background.pdf",
+      "location": "Page 1",
+      "status": "historical_description",
+      "inspection": "Retrieved and read during implementation; publication date not supplied.",
+      "supports": [
+        "solar interference behind a geostationary satellite can degrade service or cause an outage"
+      ],
+      "limits": "A GEO reception condition. Does not establish a Starlink profile, decoder appearance or the review event's chosen duration."
+    },
+    {
+      "id": "dish-signal-loss",
+      "author": "DISH Network",
+      "date": null,
+      "title": "Troubleshoot DISH signal loss",
+      "url": "https://support.dish.com/troubleshooting/signal-loss",
+      "location": "Signal Loss; Clearing obstructions; Scheduling a technician visit",
+      "status": "historical_description",
+      "inspection": "Retrieved and read during implementation; publication date not supplied.",
+      "supports": [
+        "severe-weather interruptions",
+        "obstruction and moved/damaged dish causes",
+        "some receivers can use internet streaming during satellite loss"
+      ],
+      "limits": "Establishes failure conditions. The review's fade, recovery, freeze and block patterns are inferred generic responses, not recordings of DISH equipment."
+    },
+    {
+      "id": "crt-suppression-patents",
+      "author": "RCA / patent applicants as identified in the linked primary records",
+      "date": "1984-12-11 / 1993-02-02",
+      "title": "Electron beam suppression circuit; Television receiver with spot burn protection and after-glow suppression",
+      "url": "https://patents.google.com/patent/US4488181",
+      "additional_url": "https://patents.google.com/patent/US5184225",
+      "location": "Claims and descriptions of sweep loss, residual beam energy and suppression",
+      "status": "historical_description",
+      "inspection": "Primary patent search excerpts inspected; full page retrieval unavailable in this session.",
+      "supports": [
+        "deflection collapse and residual beam-energy mechanisms",
+        "receiver-specific spot/afterglow suppression"
+      ],
+      "limits": "The requested center-dot shutdown is a native interpretation. No actual old-set shutdown recording has been inspected; decay timing and the line/dot trajectory await visual reference review."
+    },
+    {
+      "id": "existing-film-reference-catalog",
+      "author": "Bill Morrison / Peter Delpeut; repository reference inspection",
+      "date": "2002 / 1993; inspection verified 2026-09-30",
+      "title": "Inspected Decasia and The Forbidden Quest source recordings",
+      "path": "docs/development/sessions/20260929.decasia-nitrate-silent-decay.md",
+      "additional_paths": [
+        "docs/development/sessions/20260926.glitch-motion-studies.md",
+        "docs/development/sessions/20260930.decasia-2.md",
+        "docs/generative_movement/film-decay.md"
+      ],
+      "location": "Decasia reference inventory, frame/cadence measurements and comparison-copy SHA-256 list; Forbidden Quest reference survey and source-7 analysis",
+      "status": "recorded_observation",
+      "inspection": "Inherited documented recording inspection: six Decasia normalized clips with 2,660 decoded comparison frames; Forbidden Quest sampled survey and subsequent complete source-7 analysis. No new recording measurement is claimed by this metadata repair.",
+      "supports": [
+        "named film morphology variants",
+        "source-specific material update cadence",
+        "pale cavities, density veils, abrasions, survivor islands and erosion"
+      ],
+      "limits": "Observed appearance does not establish the chemical cause of individual marks. Native scalar density and geometry controls remain artistic mappings; existing film approval does not approve the new unified review book.",
+      "recordings": [
+        {
+          "path": "resources.rizal/glitch-nitrate-scratch-fade/decasia/ssk.1080p/Decasia.2002.1080p.Bluray.DTS.x264.GCJM-cut-1-1080p.1.mkv",
+          "sha256": "16d35346fbb515355bf4ef18b5bdfa07fc79463d3c06c70adc105ff83f94e652",
+          "frame_rate": "24000/1001",
+          "comparison_frames": 720
+        },
+        {
+          "path": "resources.rizal/glitch-nitrate-scratch-fade/decasia/ssk.1080p/Decasia.2002.1080p.Bluray.DTS.x264.GCJM-cut-2-1080p.1.mkv",
+          "sha256": "b960e35410a8b0ab5492ec7af3353b962a908fe68d7401f5320f3a9ca2795efe",
+          "frame_rate": "24000/1001",
+          "comparison_frames": 239
+        },
+        {
+          "path": "resources.rizal/glitch-nitrate-scratch-fade/decasia/ssk.1080p/Decasia.2002.1080p.Bluray.DTS.x264.GCJM-cut-3-1080p.1.mkv",
+          "sha256": "d5e04c2ae93a3f95e65ba7123c9b350a24f9c938f61901c30776ebb867e2234f",
+          "frame_rate": "24000/1001",
+          "comparison_frames": 744
+        },
+        {
+          "path": "resources.rizal/glitch-nitrate-scratch-fade/decasia/ssk.1080p/Decasia.2002.1080p.Bluray.DTS.x264.GCJM-cut-4-1080p.1.mkv",
+          "sha256": "2857995212c4a074dc1143ee0680b400c2ded693ac2d47fe4d723df7fb0861a9",
+          "frame_rate": "24000/1001",
+          "comparison_frames": 143
+        },
+        {
+          "path": "resources.rizal/glitch-nitrate-scratch-fade/decasia/ssk.1080p/Decasia.2002.1080p.Bluray.DTS.x264.GCJM-cut-5-1080p.1.mkv",
+          "sha256": "a452c4e0f3e7856f518516848e22ed866823158751b0acd8ca027054094b8814",
+          "frame_rate": "24000/1001",
+          "comparison_frames": 335
+        },
+        {
+          "path": "resources.rizal/glitch-nitrate-scratch-fade/decasia/ssk.1080p/Decasia.2002.1080p.Bluray.DTS.x264.GCJM-cut-6-1080p.1.mkv",
+          "sha256": "42b20c2a4207ef89b42752083c31b6ecb6b408593ee00fb6e574b84f9d5836d8",
+          "frame_rate": "24000/1001",
+          "comparison_frames": 479
+        },
+        {
+          "path": "resources.rizal/glitch-nitrate-scratch-fade/The.Forbidden.Quest.1993.WEB.1080p-cut-1-1080p.1.mkv",
+          "sha256": "b0bf642eb4df9b5b8f57119acda52827328d3b5ec115d2f2e90e246f0fcd01ad",
+          "frame_rate": "25/1",
+          "source_start": "00:49:47",
+          "requested_duration_seconds": 60
+        }
+      ]
+    },
+    {
+      "id": "existing-vcr-reference-catalog",
+      "author": "Recording creators/equipment unidentified; repository reference inspection",
+      "date": "inspection documented 2026-09-26",
+      "title": "Inspected VHS generation-loss and tracking-error recordings",
+      "path": "docs/development/sessions/20260926.glitch-motion-studies.md",
+      "location": "Section 1 reference survey and SHA-256 inventory; historical-mechanism survey",
+      "status": "recorded_observation",
+      "inspection": "Inherited documented metadata inspection and nine sampled frames per recording; not an exhaustive frame or audio analysis. User identified the generation-loss recording as successive copies.",
+      "supports": [
+        "detail softening, color displacement, bleed/ringing and horizontal disruption during successive VHS copies",
+        "intermittent broad noise bands and displaced horizontal picture regions during VHS tracking errors"
+      ],
+      "limits": "Equipment and operator are unknown. Copy boundaries are not calibrated, and elapsed recording time is not a copy count. Ghost, synchronization and composite mechanisms have separate documentary sources; the supplied tapes do not establish every analog model or its physical calibration.",
+      "recordings": [
+        {
+          "path": "resources.rizal/glitch-nitrate-scratch-fade/vhs-generation-loss.webm",
+          "sha256": "d88a76a1594e2aeb1dfa44cc07ac21faca6bc48f6bfc3538188f64fb926fa2d5",
+          "frame_rate": "30000/1001",
+          "duration_seconds": 69.101
+        },
+        {
+          "path": "resources.rizal/glitch-nitrate-scratch-fade/vhs-tracking-errors.webm",
+          "sha256": "280ddc9052c28f40b2f0396e0296d0a7a265e0b9bc5608906899f61f52d675d3",
+          "frame_rate": "25/1",
+          "duration_seconds": 28.741
+        }
+      ],
+      "engineering_sources": [
+        {
+          "title": "Vertical Interlace and Instability",
+          "author": "Matthew Mandl",
+          "date": "1954-09",
+          "location": "Radio-Electronics page 55",
+          "url": "https://www.worldradiohistory.com/Archive-Radio-Electronics/50s/1954/Radio-Electronics-1954-09.pdf",
+          "status": "historical_description"
+        },
+        {
+          "title": "Television ghosting and FM multipath distortion investigation",
+          "author": "Canada Department of Communications",
+          "date": "1978",
+          "url": "https://publications.gc.ca/site/eng/9.880586/publication.html",
+          "status": "historical_description"
+        },
+        {
+          "title": "Digital Standards Conversion: interpolation theory and aperture synthesis",
+          "author": "C. K. P. Clarke, N. E. Tanton; BBC Research Department",
+          "date": "1984",
+          "url": "https://downloads.bbc.co.uk/rd/pubs/reports/1984-20.pdf",
+          "status": "historical_description"
+        }
+      ]
+    },
+    {
+      "id": "nasa-fm-threshold-1972",
+      "author": "James P. Brown, NASA Goddard Space Flight Center",
+      "date": "1972",
+      "title": "Results of FM-TV Threshold Reduction Investigation for the ATS F TRUST Experiment",
+      "url": "https://ntrs.nasa.gov/api/citations/19720018135/downloads/19720018135.pdf",
+      "path": "docs/development/sessions/20260926.glitch-motion-studies.md",
+      "location": "Technology Accomplishments, 1970, pages 126–128; repository historical-mechanism survey",
+      "status": "historical_description",
+      "inspection": "Primary source mechanism is recorded in the existing inspected repository survey; not newly fetched or measured in this metadata repair.",
+      "supports": [
+        "analog FM-TV threshold impairment: white streaks first visible in dark picture regions",
+        "stronger degradation produces black/white impulses and horizontal-retrace smearing"
+      ],
+      "limits": "Describes analog satellite FM-TV, not VHS-specific threshold calibration or modern digital satellite decoder behavior. Native link-margin proxy, burst spacing and recovery timing are inferred mappings."
+    }
+  ],
+  "pending_recordings": [
+    "An actual older CRT shutdown with a visible collapsing raster and center spot",
+    "Provider/receiver-specific satellite breakup and recovery",
+    "Player-specific satellite-internet buffer drain and recovery"
+  ],
+  "generated_output_evidence": "implementation_only",
+  "human_approval": "pending"
+}

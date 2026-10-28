@@ -141,11 +141,30 @@ make_document()
   return doc;
 }
 
+std::string
+review_svg(const document& doc)
+{
+  std::string svg = emit_overlay_svg(doc);
+  const std::string label = R"(<g font-family="Atkinson Hyperlegible, sans-serif" fill="#172b3a">
+<rect x="40" y="40" width="1000" height="220" rx="16" fill="white"/>
+<text x="64" y="88" font-size="32">danmaku / large slow titles</text>
+<text x="64" y="132" font-size="24">hand-written SVG glyph paths, not a font</text>
+<text x="64" y="174" font-size="24">72x glyph scale; 5-unit stroke becomes 360 px</text>
+<text x="64" y="216" font-size="24">rounded boxes: 55% opacity, 14 px padding, 16 px radius</text>
+<rect x="40" y="1690" width="1000" height="175" rx="16" fill="white"/>
+<text x="64" y="1734" font-size="24">scaled strokes merge into the heavy dark silhouette</text>
+<text x="64" y="1776" font-size="24">13 s scroll duration; starts staggered by 1.5 s</text>
+<text x="64" y="1818" font-size="24">static overlay here; timing is stored in manifest.json</text>
+</g>)";
+  svg.insert(svg.rfind("</svg>"), label);
+  return svg;
+}
+
 int
 run_determinism_check(const document& doc)
 {
-  const std::string svg_a = emit_overlay_svg(doc);
-  const std::string svg_b = emit_overlay_svg(doc);
+  const std::string svg_a = review_svg(doc);
+  const std::string svg_b = review_svg(doc);
   const std::string json_a = emit_manifest_json(doc);
   const std::string json_b = emit_manifest_json(doc);
   const bool svg_ok = svg_a == svg_b;
@@ -199,7 +218,7 @@ main(int argc, char** argv)
       fs::create_directories(out_dir);
       const fs::path svg_path = fs::path(out_dir) / "overlay.svg";
       const fs::path manifest_path = fs::path(out_dir) / "manifest.json";
-      write_file(svg_path, emit_overlay_svg(doc));
+      write_file(svg_path, review_svg(doc));
       write_file(manifest_path, emit_manifest_json(doc));
       std::cout << "[text-danmu-3] wrote " << svg_path.string() << " and "
 		<< manifest_path.string() << '\n';

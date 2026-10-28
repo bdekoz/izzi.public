@@ -1,0 +1,16 @@
+<map id="svg::screen_glitch::plan" name="svg::screen_glitch::plan">
+<area shape="rect" id="Node000001" title="Validate and resolve a frame at frame/rate + offset, for the supplied domain." alt="" coords="5,123,125,159"/>
+<area shape="rect" id="Node000002" href="$namespacesvg_1_1screen__glitch.html#a480be041892df6b9d0b93f351f6274f0" title=" " alt="" coords="173,5,292,42"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="85,120,124,87,171,52,182,48,178,52,174,57,127,91,89,124"/>
+<area shape="rect" id="Node000003" href="$namespacesvg_1_1screen__glitch.html#ae17a820cc2722506e0c253f50ece164d" title=" " alt="" coords="173,67,292,103"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="121,120,163,107,159,111,123,124"/>
+<area shape="rect" id="Node000005" href="$namespacesvg_1_1screen__glitch.html#ab29815e4ffbfde18fe8296dab8352cfa" title=" " alt="" coords="340,123,459,159"/>
+<area shape="poly" id="edge7_Node000001_Node000005" title=" " alt="" coords="125,138,326,139,323,143,126,144"/>
+<area shape="rect" id="Node000006" href="$namespacesvg_1_1screen__glitch.html#a63f9a6bf769d8e723776c135bd1afada" title=" " alt="" coords="173,179,292,215"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="122,157,163,172,158,174,122,163"/>
+<area shape="rect" id="Node000007" href="$namespacesvg_1_1screen__glitch.html#adc1e0a0d9e9c674ed098678a63b02de1" title=" " alt="" coords="173,240,292,277"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="87,157,127,191,174,225,183,233,177,232,171,230,124,195,86,163"/>
+<area shape="rect" id="Node000004" href="$namespacesvg_1_1screen__glitch.html#a5e2d8f928ccc4ee49cd1fbb7cf247f90" title=" " alt="" coords="340,61,459,98"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="292,81,327,81,322,83,293,86"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="289,101,331,117,326,118,289,107"/>
+</map>

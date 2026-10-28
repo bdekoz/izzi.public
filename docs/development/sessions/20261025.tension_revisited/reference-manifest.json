@@ -1,0 +1,163 @@
+{
+  "archive": "resources.static/edge-tension-please-01.tar.xz",
+  "archive_sha256": "2fa383e02be38b9d85961b12cebbee1903d633499ec5b022e69691bdc1cbc565",
+  "plates": [
+    {
+      "requested": "L_0_1_021.ai",
+      "archive_member": "run/media/bkoz/EdgeTensionPlease/L_OBJECT/L_O_1_021.ai",
+      "resolved_name": "L_O_1_021.ai",
+      "bytes": 815242,
+      "sha256": "01aa1eaf16249a77384d5fa4fdb94fb36b6863817069d175430ecf42ca5441c1",
+      "pages": 1,
+      "page_size": "841.89 x 595.276 pts (A4)"
+    },
+    {
+      "requested": "L_0_1_022.ai",
+      "archive_member": "run/media/bkoz/EdgeTensionPlease/L_OBJECT/L_O_1_022.ai",
+      "resolved_name": "L_O_1_022.ai",
+      "bytes": 853729,
+      "sha256": "d7b017d59c88269c3a9de7eb22c4c7ff8bae8d8cda6035e73c48b9464656e06a",
+      "pages": 1,
+      "page_size": "841.89 x 595.276 pts (A4)"
+    },
+    {
+      "requested": "L_0_2_002.ai",
+      "archive_member": "run/media/bkoz/EdgeTensionPlease/L_OBJECT/L_O_2_002.ai",
+      "resolved_name": "L_O_2_002.ai",
+      "bytes": 713594,
+      "sha256": "4f70d1ce20f680bfb088647e0ba1ca065996994bfb534d96bb118db861cf4ae0",
+      "pages": 1,
+      "page_size": "595.276 x 841.89 pts (A4)"
+    },
+    {
+      "requested": "L_0_2_003.ai",
+      "archive_member": "run/media/bkoz/EdgeTensionPlease/L_OBJECT/L_O_2_003.ai",
+      "resolved_name": "L_O_2_003.ai",
+      "bytes": 714958,
+      "sha256": "98567564bf95ff48328a209c3928aac4ba351c587b664312cd010a425956b69e",
+      "pages": 1,
+      "page_size": "595.276 x 841.89 pts (A4)"
+    },
+    {
+      "requested": "L_0_2_005.ai",
+      "archive_member": "run/media/bkoz/EdgeTensionPlease/L_OBJECT/L_O_2_005.ai",
+      "resolved_name": "L_O_2_005.ai",
+      "bytes": 726194,
+      "sha256": "1f20faa26911d47c0fe40a796aede3550584c7a20c0a01c148ba20f141a0d650",
+      "pages": 1,
+      "page_size": "841.89 x 595.276 pts (A4)"
+    },
+    {
+      "requested": "L_0_2_006.ai",
+      "archive_member": "run/media/bkoz/EdgeTensionPlease/L_OBJECT/L_O_2_006.ai",
+      "resolved_name": "L_O_2_006.ai",
+      "bytes": 713171,
+      "sha256": "f0d440f583b1f9f8c224c9f6ca8d4ce7543c62e513b4337e3305c560c005b5c9",
+      "pages": 1,
+      "page_size": "841.89 x 595.276 pts (A4)"
+    },
+    {
+      "requested": "L_0_2_008.ai",
+      "archive_member": "run/media/bkoz/EdgeTensionPlease/L_OBJECT/L_O_2_008.ai",
+      "resolved_name": "L_O_2_008.ai",
+      "bytes": 697087,
+      "sha256": "2f65ac43b33aa6ef4250c2b26739723af83d660e0aa8b2590d4f71671a98c3df",
+      "pages": 1,
+      "page_size": "841.89 x 595.276 pts (A4)"
+    },
+    {
+      "requested": "L_0_2_009.ai",
+      "archive_member": "run/media/bkoz/EdgeTensionPlease/L_OBJECT/L_O_2_009.ai",
+      "resolved_name": "L_O_2_009.ai",
+      "bytes": 683755,
+      "sha256": "d3b3d55b88b02e7c46eaca8d10633fa0895c015805f1f83e4dbcebc0ee055663",
+      "pages": 1,
+      "page_size": "841.89 x 595.276 pts (A4)"
+    },
+    {
+      "requested": "L_0_2_015.ai",
+      "archive_member": "run/media/bkoz/EdgeTensionPlease/L_OBJECT/L_O_2_015.ai",
+      "resolved_name": "L_O_2_015.ai",
+      "bytes": 698700,
+      "sha256": "46b7608934eccb01ab0c5ed733ab5c52a5b00009deec62b37b52e5cfcabb9489",
+      "pages": 1,
+      "page_size": "841.89 x 595.276 pts (A4)"
+    },
+    {
+      "requested": "L_0_2_019.ai",
+      "archive_member": "run/media/bkoz/EdgeTensionPlease/L_OBJECT/L_O_2_019.ai",
+      "resolved_name": "L_O_2_019.ai",
+      "bytes": 1041881,
+      "sha256": "dacc23ae310557d02f98dda83777480c08ea72606769c4678be2a4a6d34c955e",
+      "pages": 1,
+      "page_size": "841.89 x 595.276 pts (A4)"
+    },
+    {
+      "requested": "L_0_3_007.ai",
+      "archive_member": "run/media/bkoz/EdgeTensionPlease/L_OBJECT/L_O_3_007.ai",
+      "resolved_name": "L_O_3_007.ai",
+      "bytes": 627351,
+      "sha256": "30d320a03752793e7d4e430ddf372c2851b78c968801987b7d7a5e004cd361ae",
+      "pages": 1,
+      "page_size": "841.89 x 595.276 pts (A4)"
+    },
+    {
+      "requested": "L_0_3_008.ai",
+      "archive_member": "run/media/bkoz/EdgeTensionPlease/L_OBJECT/L_O_3_008.ai",
+      "resolved_name": "L_O_3_008.ai",
+      "bytes": 706752,
+      "sha256": "72030485b43c36547ee9dc498d50b6a5c49f57a02fd3a95c8dd7ea13b456c4f4",
+      "pages": 1,
+      "page_size": "841.89 x 595.276 pts (A4)"
+    },
+    {
+      "requested": "L_P_006.ai",
+      "archive_member": "run/media/bkoz/EdgeTensionPlease/L_PATTERN/L_P_006.ai",
+      "resolved_name": "L_P_006.ai",
+      "bytes": 731098,
+      "sha256": "419f6a19c31650ccd506d9a1dd3117eb76fdbe2dc811efabfa10113ec73d6c08",
+      "pages": 1,
+      "page_size": "841.89 x 595.276 pts (A4)"
+    },
+    {
+      "requested": "L_P_007.ai",
+      "archive_member": "run/media/bkoz/EdgeTensionPlease/L_PATTERN/L_P_007.ai",
+      "resolved_name": "L_P_007.ai",
+      "bytes": 786594,
+      "sha256": "b01bed7cfa8ce82e252136a4cd3fdb72ed25023fe8b1fb0d73d7b1c3f9837016",
+      "pages": 1,
+      "page_size": "841.89 x 595.276 pts (A4)"
+    },
+    {
+      "requested": "L_P_009.ai",
+      "archive_member": "run/media/bkoz/EdgeTensionPlease/L_PATTERN/L_P_009.ai",
+      "resolved_name": "L_P_009.ai",
+      "bytes": 812901,
+      "sha256": "e16a94730f2eadf3fce55ee358b37da473bb2158d0319094125ae2cdcc262b4d",
+      "pages": 1,
+      "page_size": "595.276 x 841.89 pts (A4)"
+    },
+    {
+      "requested": "L_P_010.ai",
+      "archive_member": "run/media/bkoz/EdgeTensionPlease/L_PATTERN/L_P_010.ai",
+      "resolved_name": "L_P_010.ai",
+      "bytes": 51772,
+      "sha256": "ab10765644513bcb31d29eb525800ea3db87f49fd954099544850ce3116ec38c",
+      "pages": 1,
+      "page_size": "841.89 x 595.276 pts (A4)"
+    }
+  ],
+  "inspection_date": "2026-10-25",
+  "reviewed_code_revision": "68f7ee0c",
+  "method": "PDF-compatible Illustrator previews rendered with pdftoppm; visual morphology review, no source path extraction or parameter fitting.",
+  "contact_sheets": [
+    {
+      "path": "references-01.png",
+      "sha256": "d1795aca75c5d1cfd1c36227046b0038733197bb0010ce16cc413e353510089d"
+    },
+    {
+      "path": "references-02.png",
+      "sha256": "004111e933eab59b93da710dfc08326dc3ccb52e07e6854233d44ff4c7d26e90"
+    }
+  ]
+}

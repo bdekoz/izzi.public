@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" id="arabesque-star8-grid" width="320" height="320" viewBox="0 0 320 320" role="img" aria-labelledby="guilloche-title guilloche-desc" data-api="izzi-guilloche-1" data-profile="experimental">
+<title id="guilloche-title">Native graphic pattern review</title>
+<desc id="guilloche-desc">Guilloche scene: Native graphic pattern review.</desc>
+<metadata>api=izzi-guilloche-1; profile=experimental; seed=20260928; frame=0/1; paths=24; points=216</metadata>
+<rect width="100%" height="100%" fill="#FAFAF7"/>
+<g id="plate-1" fill="none" stroke="#202B2E" stroke-width="0.7" stroke-opacity="1" stroke-linecap="round" stroke-linejoin="round" style="mix-blend-mode:normal" aria-hidden="true">
+<path id="form-edge-0" d="M34 34 L44.5 34 L55 34 L65.5 34 L76 34 L86.5 34 L97 34 L107.5 34 L118 34 "/>
+<path id="form-edge-1" d="M118 34 L118 44.5 L118 55 L118 65.5 L118 76 L118 86.5 L118 97 L118 107.5 L118 118 "/>
+<path id="form-edge-2" d="M118 118 L107.5 118 L97 118 L86.5 118 L76 118 L65.5 118 L55 118 L44.5 118 L34 118 "/>
+<path id="form-edge-3" d="M34 34 L34 44.5 L34 55 L34 65.5 L34 76 L34 86.5 L34 97 L34 107.5 L34 118 "/>
+<path id="form-edge-4" d="M118 34 L128.5 34 L139 34 L149.5 34 L160 34 L170.5 34 L181 34 L191.5 34 L202 34 "/>
+<path id="form-edge-5" d="M202 34 L202 44.5 L202 55 L202 65.5 L202 76 L202 86.5 L202 97 L202 107.5 L202 118 "/>
+<path id="form-edge-6" d="M118 118 L128.5 118 L139 118 L149.5 118 L160 118 L170.5 118 L181 118 L191.5 118 L202 118 "/>
+<path id="form-edge-7" d="M202 34 L212.5 34 L223 34 L233.5 34 L244 34 L254.5 34 L265 34 L275.5 34 L286 34 "/>
+<path id="form-edge-8" d="M286 34 L286 44.5 L286 55 L286 65.5 L286 76 L286 86.5 L286 97 L286 107.5 L286 118 "/>
+<path id="form-edge-9" d="M202 118 L212.5 118 L223 118 L233.5 118 L244 118 L254.5 118 L265 118 L275.5 118 L286 118 "/>
+<path id="form-edge-10" d="M118 118 L118 128.5 L118 139 L118 149.5 L118 160 L118 170.5 L118 181 L118 191.5 L118 202 "/>
+<path id="form-edge-11" d="M118 202 L107.5 202 L97 202 L86.5 202 L76 202 L65.5 202 L55 202 L44.5 202 L34 202 "/>
+<path id="form-edge-12" d="M34 118 L34 128.5 L34 139 L34 149.5 L34 160 L34 170.5 L34 181 L34 191.5 L34 202 "/>
+<path id="form-edge-13" d="M202 118 L202 128.5 L202 139 L202 149.5 L202 160 L202 170.5 L202 181 L202 191.5 L202 202 "/>
+<path id="form-edge-14" d="M118 202 L128.5 202 L139 202 L149.5 202 L160 202 L170.5 202 L181 202 L191.5 202 L202 202 "/>
+<path id="form-edge-15" d="M286 118 L286 128.5 L286 139 L286 149.5 L286 160 L286 170.5 L286 181 L286 191.5 L286 202 "/>
+<path id="form-edge-16" d="M202 202 L212.5 202 L223 202 L233.5 202 L244 202 L254.5 202 L265 202 L275.5 202 L286 202 "/>
+<path id="form-edge-17" d="M118 202 L118 212.5 L118 223 L118 233.5 L118 244 L118 254.5 L118 265 L118 275.5 L118 286 "/>
+<path id="form-edge-18" d="M118 286 L107.5 286 L97 286 L86.5 286 L76 286 L65.5 286 L55 286 L44.5 286 L34 286 "/>
+<path id="form-edge-19" d="M34 202 L34 212.5 L34 223 L34 233.5 L34 244 L34 254.5 L34 265 L34 275.5 L34 286 "/>
+<path id="form-edge-20" d="M202 202 L202 212.5 L202 223 L202 233.5 L202 244 L202 254.5 L202 265 L202 275.5 L202 286 "/>
+<path id="form-edge-21" d="M118 286 L128.5 286 L139 286 L149.5 286 L160 286 L170.5 286 L181 286 L191.5 286 L202 286 "/>
+<path id="form-edge-22" d="M286 202 L286 212.5 L286 223 L286 233.5 L286 244 L286 254.5 L286 265 L286 275.5 L286 286 "/>
+<path id="form-edge-23" d="M202 286 L212.5 286 L223 286 L233.5 286 L244 286 L254.5 286 L265 286 L275.5 286 L286 286 "/>
+</g>
+</svg>

@@ -1,0 +1,2761 @@
+{
+  "schema": "izzi.unified-review-verification/1",
+  "recorded_at": "2026-10-01T03:15:59.211839+00:00",
+  "scope": "Current native library catalog, native screen-glitch facade, complete still book and continuous review reels",
+  "technical_status": "PASS",
+  "human_review": "pending",
+  "counts": {
+    "forms": 360,
+    "families": 31,
+    "controls": 1294,
+    "forms_by_family": {
+      "anemone": 2,
+      "arabesque": 7,
+      "botanical": 17,
+      "color": 8,
+      "contour": 2,
+      "coral": 11,
+      "data": 15,
+      "deformation": 2,
+      "drawing": 10,
+      "film": 20,
+      "fuller": 12,
+      "guilloche": 20,
+      "hamonshu": 133,
+      "harmonograph": 2,
+      "inscription": 6,
+      "keyframes": 3,
+      "lenticular": 2,
+      "markers": 4,
+      "moire": 10,
+      "movement": 5,
+      "muqarnas": 2,
+      "optical": 12,
+      "ribbon": 2,
+      "roulette": 8,
+      "satellite": 6,
+      "surface-tension": 6,
+      "tv-broadcast": 6,
+      "typography": 10,
+      "vcr": 6,
+      "water": 7,
+      "wave": 4
+    },
+    "compositions_by_role": {
+      "crossover-2": 18,
+      "crossover-3": 17,
+      "wild": 62
+    },
+    "plates": 1228,
+    "pdf_pages": 1231,
+    "canonical_renders": 8832,
+    "cell_roles": 7544,
+    "source_surfaces": 230,
+    "movie_chapters": 184,
+    "reels": 12,
+    "decoded_endframes": 196
+  },
+  "provenance": {
+    "git_revision": "ff6c390bb9c72d3ba70fbe0f537909f189372d42",
+    "working_tree": "modified",
+    "build_date": "2026-10-01T00:07:02.145538+00:00",
+    "catalog_hash": "ac2fda5b5fba1028711ebcb630bea23bd60e426327643aef9ce340b6b9f56d6c",
+    "generator_hashes": {
+      "review_catalog.py": "133cb9b888fca2bcb5ca035c6763a9c09e9fb1fcb484dd892a972de69614fb21",
+      "review_plates.py": "356dece4e38580cd541330d601eb26f9c8e2702da695542e0a91645e1dc2b6c6",
+      "render-library-review.py": "dd8625077b559cd832c623b7051dd742977d0a45d284060eebf4e2511ee41181"
+    },
+    "authored_composition_hash": "d6acb6bacb11196ab11f4e719bcdfbba42ac57703755e3e6f0987bfdcc80f66d",
+    "logo": {
+      "source": "docs/image/izzi-wind-square-v2.svg",
+      "sha256": "5c7bc5a9770809f061e24013dae44e5db53830538494ea138b5cb84945d643e6"
+    },
+    "native_fingerprints": {
+      "scripts/review-extra-native.cc": "a834716377baa5ef8ae655e489fd6bb97d267ae4326466629945d99c748c895f",
+      "scripts/review-native.cc": "1868d62df5d0de2ef66119f6cc073f583be07932ba5a778a82e048760ef03cab",
+      "scripts/screen-glitch-native.cc": "e4567d53d502b89a133ef6223e69c89cad070873e3ce9902dd481136227ae574"
+    },
+    "raster_environment": {
+      "renderer_versions": {
+        "librsvg": "2.62.3",
+        "cairo": "1.18.4"
+      },
+      "renderer_source_hash": "e795d8966597c5fe5d9c942a0f22421f7bf62371da9689c4f4dc3b2c52f2f037",
+      "fontconfig": {
+        "policy": "isolated review fontconfig; installed fonts retained",
+        "fontconfig_version": "fontconfig version 2.17.0",
+        "configuration_xml": "<?xml version=\"1.0\"?>\n<!DOCTYPE fontconfig SYSTEM \"urn:fontconfig:fonts.dtd\">\n<fontconfig>\n<dir>/home/bkoz/.fonts</dir>\n<dir>/usr/share/fonts</dir>\n<cachedir>/home/bkoz/src/izzi/build/library-review.tmp/izzi-review-fontconfig-cache-1000</cachedir>\n<alias><family>sans-serif</family><prefer><family>Atkinson Hyperlegible Next</family><family>DejaVu Sans</family></prefer></alias>\n<alias><family>serif</family><prefer><family>DejaVu Serif</family></prefer></alias>\n<alias><family>monospace</family><prefer><family>Atkinson Hyperlegible Mono</family><family>DejaVu Sans Mono</family></prefer></alias>\n</fontconfig>\n",
+        "configuration_hash": "eb6d3fc922e2ae6e1e5dde2290022d09a79454ce0e7b3606648641ea924ab89e",
+        "font_directories": [
+          "/home/bkoz/.fonts",
+          "/usr/share/fonts"
+        ],
+        "atkinson_resolution": {
+          "Regular": {
+            "path": "/home/bkoz/.fonts/atkinson_hyperlegible.2026/AtkinsonHyperlegibleNext-Regular.otf",
+            "sha256": "2a5e641eb7d42f5949d9fc84df1e7840c3c7bb1151dae178a8f20a3251e946d0"
+          },
+          "Bold": {
+            "path": "/home/bkoz/.fonts/atkinson_hyperlegible.2026/AtkinsonHyperlegibleNext-Bold.otf",
+            "sha256": "91485fed9ea491b764a6e037f9b2f8a20d21070a9345a85ce3fc42262e3c8b10"
+          }
+        }
+      },
+      "font_files": {
+        "/home/bkoz/.fonts/Calling-Code-Regular.otf": "badd086797b152eaab4d10664423c2fc69b9457b9fe6c9b65d2fd9b0d70fe0c1",
+        "/home/bkoz/.fonts/MoonbaseAlpha Regular.otf": "ad01fe3e94e7e1d1eafe2a09864453302b60aae5658a5b0a10e83dc52cd038ea",
+        "/home/bkoz/.fonts/NB Rietveld.otf": "e0939c91aa7165d5a535a6d6cdc23bc42900729520250aa91de41600be2a2ba9",
+        "/home/bkoz/.fonts/agrotesk_bold.otf": "66a55420b8812b0d14990016c34f9d8ecb2f76527bb608ba6ff6e47a6fe8a682",
+        "/home/bkoz/.fonts/akzidenz-grotesk-pro/AkzidenzGrotesk-Bold.otf": "6942461c3254e061a7c05fc4dc7e0f56aaa0febadacc655779743b9b80d28a10",
+        "/home/bkoz/.fonts/akzidenz-grotesk-pro/AkzidenzGrotesk-BoldCondAlt.otf": "b2639d68849781ddd1da2e566e24edefde8bed1f73eb97300aac7497211bdada",
+        "/home/bkoz/.fonts/akzidenz-grotesk-pro/AkzidenzGrotesk-BoldCondItalic.otf": "5799c03d659cf5357730b3acdb5371b05913a38e4b7af6a7e8d77305e30e1871",
+        "/home/bkoz/.fonts/akzidenz-grotesk-pro/AkzidenzGrotesk-BoldExtended.otf": "681680b732c9f291aa3fc7e721e3f6a310d49b4089dbf7b6853d28e4eb0945e1",
+        "/home/bkoz/.fonts/akzidenz-grotesk-pro/AkzidenzGrotesk-BoldExtendedItalic.otf": "a3a08f27a0e50cbc675171eef041bc31f72af3ba3e0d015aef6dc288a7844b9c",
+        "/home/bkoz/.fonts/akzidenz-grotesk-pro/AkzidenzGrotesk-BoldItalic.otf": "59aa71da717c851560ac5d72f39045abb70328852c5349f7bd88b708324d0ae9",
+        "/home/bkoz/.fonts/akzidenz-grotesk-pro/AkzidenzGrotesk-Cond.otf": "22412a4cc34374ffe9f5bc4fe3312d9420f70ec1e96e575c522cbf2d333c3efe",
+        "/home/bkoz/.fonts/akzidenz-grotesk-pro/AkzidenzGrotesk-CondItalic.otf": "aa19cb4b53c2ccae551658826eb9bdcf4c46a9b382d29755222c4c171c24119c",
+        "/home/bkoz/.fonts/akzidenz-grotesk-pro/AkzidenzGrotesk-Extended.otf": "8ecc52f27c735d07284c527ea12471655bd92e098a5c3036ebf5c4ed8c92b987",
+        "/home/bkoz/.fonts/akzidenz-grotesk-pro/AkzidenzGrotesk-ExtendedItalic.otf": "b5fb81f45e22777c3b59c81041da27aff2603409402e212bc1097ff6a68b4e9f",
+        "/home/bkoz/.fonts/akzidenz-grotesk-pro/AkzidenzGrotesk-ExtraBold.otf": "603f294860f932d3075cfa193f0f0137b27d4bc5a474c4efd1b912537775776e",
+        "/home/bkoz/.fonts/akzidenz-grotesk-pro/AkzidenzGrotesk-ExtraBoldCond.otf": "216cf48ae7be5c7e2507f82d1cdcf26bdaf97dec283bf33e0877f22db4cbc413",
+        "/home/bkoz/.fonts/akzidenz-grotesk-pro/AkzidenzGrotesk-ExtraBoldCondAlt.otf": "6c11ed548bce4d0b7e649df11fa94527267efebc5e2eba8c17669eeefddc6cdc",
+        "/home/bkoz/.fonts/akzidenz-grotesk-pro/AkzidenzGrotesk-ExtraBoldCondItalic.otf": "7ddf79c94046464eb86109d836630b56c788d6928d3998d87f6df14e0f267e3a",
+        "/home/bkoz/.fonts/akzidenz-grotesk-pro/AkzidenzGrotesk-ExtraBoldCondItalicAlt.otf": "316ab34222fa5a4a7b7a6c19f66b940c4a65bb10c62bd7336d1d346b40a7a0c2",
+        "/home/bkoz/.fonts/akzidenz-grotesk-pro/AkzidenzGrotesk-ExtraBoldItalic.otf": "8608598845456757e30a5ae3cb0875467730c8e2220ef48f6fd44157b9d4c8ab",
+        "/home/bkoz/.fonts/akzidenz-grotesk-pro/AkzidenzGrotesk-Italic.otf": "5b29c72e714659c96e0783d8c984038c6ce6b80f4ba718f0b938a1ff2d08cae7",
+        "/home/bkoz/.fonts/akzidenz-grotesk-pro/AkzidenzGrotesk-Light.otf": "602ce42d9e092c56ecfd272143b30efc8cdc386b8bcf68f2f567bed92d70c8a9",
+        "/home/bkoz/.fonts/akzidenz-grotesk-pro/AkzidenzGrotesk-LightCond.otf": "f1c3a2caf2fe04d65aab066140a3e728f2e976ebfc9101b91944b6bc5fc95a42",
+        "/home/bkoz/.fonts/akzidenz-grotesk-pro/AkzidenzGrotesk-LightCondItalic.otf": "845b94ab4646b3c08935fff9693c19b4a862ad5459e33abb1cca601e07993a78",
+        "/home/bkoz/.fonts/akzidenz-grotesk-pro/AkzidenzGrotesk-LightExtended.otf": "6d2cbae9ed89e7ab3898d1a5dede7d8b675b9df3c195f479578463d83ec37d08",
+        "/home/bkoz/.fonts/akzidenz-grotesk-pro/AkzidenzGrotesk-LightExtendedItalic.otf": "acd996e36058efe9cf2dc2af0bef3ff8e39c4f42d7c04c9af9bb1abcfb8eb9d6",
+        "/home/bkoz/.fonts/akzidenz-grotesk-pro/AkzidenzGrotesk-LightItalic.otf": "f9ccbe28b9736c7ceb0391ce3355058ce2a30cd9bc02ee8ee53d42156f5c5a26",
+        "/home/bkoz/.fonts/akzidenz-grotesk-pro/AkzidenzGrotesk-LightItalicOsF.otf": "b59ed915a543e49da86c7a3fe917ae8ef2516ae01a59c1695fd7c7e7c4a6bbb8",
+        "/home/bkoz/.fonts/akzidenz-grotesk-pro/AkzidenzGrotesk-LightOsF.otf": "7507a3bd2937654b5e3ce53107c80bc37385319d54088e5732db18c7fc963aa4",
+        "/home/bkoz/.fonts/akzidenz-grotesk-pro/AkzidenzGrotesk-LightSC.otf": "191d836007a89cedfa5da3bf215f2231d8a045117099b2ad145ce4c65e6ec6d4",
+        "/home/bkoz/.fonts/akzidenz-grotesk-pro/AkzidenzGrotesk-Medium.otf": "e6c7f61e6217ff776a3f84379efeea680b637c8caeb0f67074a73109caa2332c",
+        "/home/bkoz/.fonts/akzidenz-grotesk-pro/AkzidenzGrotesk-MediumCond.otf": "d137a0ab88df9905280e9c927df8bf635c8d85d8bcc7718f8af03b953f96b644",
+        "/home/bkoz/.fonts/akzidenz-grotesk-pro/AkzidenzGrotesk-MediumCondAlt.otf": "a2a8065400a2f32e4d3d104a9b2e90aa775e46c6d3fd33a975efe0a58efbbdb8",
+        "/home/bkoz/.fonts/akzidenz-grotesk-pro/AkzidenzGrotesk-MediumCondItalic.otf": "164894f05eb49382eda915269506b20bc5031d6d184ba6ae8a8dedc0a59736d2",
+        "/home/bkoz/.fonts/akzidenz-grotesk-pro/AkzidenzGrotesk-MediumCondItalicAlt.otf": "95ddd213b517b7d3583eb7baafdc2c70f4d2eeaff0cf8b46decc1e3f99b025c4",
+        "/home/bkoz/.fonts/akzidenz-grotesk-pro/AkzidenzGrotesk-MediumExtended.otf": "8afee8fd2e11ac66e45813c1a28bb5bf9b7fe6127782c97c48895d89d0b300bd",
+        "/home/bkoz/.fonts/akzidenz-grotesk-pro/AkzidenzGrotesk-MediumExtendedItalic.otf": "f70ead7fd0561e2ff1f919dc488071ee8d71823af484a883341a82276f671804",
+        "/home/bkoz/.fonts/akzidenz-grotesk-pro/AkzidenzGrotesk-MediumItalic.otf": "26d24df22b8fcd757f516fa9fcf25de1654e63b6b00fce6d5747fa9c4539e079",
+        "/home/bkoz/.fonts/akzidenz-grotesk-pro/AkzidenzGrotesk-Regular.otf": "57ee8a1228f461bb90d0e57cb8f6e895a318ae75badde3f11eafe5b33f4f52fe",
+        "/home/bkoz/.fonts/akzidenz-grotesk-pro/AkzidenzGrotesk-Super.otf": "6c20af3409df2510114c3d5431ed2c3b746e2aa3fd55aea3d23489f263d1c8df",
+        "/home/bkoz/.fonts/akzidenz-grotesk-pro/AkzidenzGrotesk-SuperItalic.otf": "6e19408bdf9310f8201012272ad590788f88ee02bd35a7d9d04e4fceaf245f65",
+        "/home/bkoz/.fonts/apercu/Apercu Bold.otf": "834838a76176a7ba2a7af70bb39a68331cad7f4874230ab18d62dd5cfde12396",
+        "/home/bkoz/.fonts/apercu/Apercu BoldItalic.otf": "b7959efe0435fb665e931304f98b450c8993a4cc50dafdbab7389f8d444e6ba6",
+        "/home/bkoz/.fonts/apercu/Apercu Italic.otf": "d432ce574a3a92f30dfd3d666b97716ee8527ddacf45d8fe929539f927306caf",
+        "/home/bkoz/.fonts/apercu/Apercu Light.otf": "daf04a04951b7a103a6a168bf3dc1ddb5849e3cc7c6cbf2bbee3ef56bb7407b6",
+        "/home/bkoz/.fonts/apercu/Apercu LightItalic.otf": "492487b32a9ec4337b734ca14fefb8432884a0003fab6f1fbca1a6e7936254b7",
+        "/home/bkoz/.fonts/apercu/Apercu Medium.otf": "39da09dcd5beea12ac188d177170b8cfd3ba340b7c0a1693c5ae20e13d45f112",
+        "/home/bkoz/.fonts/apercu/Apercu MediumItalic.otf": "3072c85ce54ead152b9b84780c2c7f31b7e9a39c6e291a900fddc4506ebed1d0",
+        "/home/bkoz/.fonts/apercu/Apercu Mono.otf": "6b8737f71c5e1461ad62a31d6d459da6f93650f0721ce25768806bcbf4774f6b",
+        "/home/bkoz/.fonts/apercu/Apercu Regular.otf": "422fbad5a72c410887a1ba3f5cbe791cbc7b2837bd41a03fd33baa2dd83a92e6",
+        "/home/bkoz/.fonts/architype-crouwel-collection/Architype Catalog Outline/Architype-CatalogueSoftOutline.otf": "648937cabc83082e85de5049153e2f49bac2d9a38ca1f6f529e778b3e4b82ed2",
+        "/home/bkoz/.fonts/architype-crouwel-collection/Architype Catalog Solid/Architype-CatalogueSoftSolid.otf": "825e1173113d0cd9b6f723a7a128dc40ea8398c21bbef591efa50ba09e6fffdd",
+        "/home/bkoz/.fonts/architype-crouwel-collection/Architype Vierkant/Architype-Vierkant.otf": "72d9ad41f319d1dc41987a96806a38b9029cfee7d279094310b7ac4bdbe7a1ae",
+        "/home/bkoz/.fonts/atkinson_hyperlegible.2026/Atkinson-Hyperlegible-Bold-102.otf": "7205e49c3a8b67a25218107a2b5a1ea9accdf8d9676c69d1a040d16cd896b3e2",
+        "/home/bkoz/.fonts/atkinson_hyperlegible.2026/Atkinson-Hyperlegible-BoldItalic-102.otf": "eec9e014ec7625788f86b10ee30d822f6057c9727aff4ed2f3b3b77f3fa05623",
+        "/home/bkoz/.fonts/atkinson_hyperlegible.2026/Atkinson-Hyperlegible-Italic-102.otf": "32fc711f2afeab1e0cba39d0b5a5167b0653fa34ba263f79ea5e15d2b63e9212",
+        "/home/bkoz/.fonts/atkinson_hyperlegible.2026/Atkinson-Hyperlegible-Regular-102.otf": "c8d6d8f542bd9577bb4264c54099e4c75c4d96d1f9fb6d8d93116f15214b081b",
+        "/home/bkoz/.fonts/atkinson_hyperlegible.2026/AtkinsonHyperlegibleMono-Bold.otf": "1449c079d43575beb70558905e2c4059acfaf181dce845b7f1bd4f0bbca8837d",
+        "/home/bkoz/.fonts/atkinson_hyperlegible.2026/AtkinsonHyperlegibleMono-BoldItalic.otf": "08260a1c200dff386b61eafc9843c88e3ea87e8127c25dfac406717fe1d5ae92",
+        "/home/bkoz/.fonts/atkinson_hyperlegible.2026/AtkinsonHyperlegibleMono-ExtraBold.otf": "795716d8cbbe737434182b72b5808d7ebe7ed7b9c8ae0fae3f4741573b206de4",
+        "/home/bkoz/.fonts/atkinson_hyperlegible.2026/AtkinsonHyperlegibleMono-ExtraBoldItalic.otf": "b770a29a92c4bbd363acc24ebee3a9cf80d015ae0d74106214682e98c92a6e45",
+        "/home/bkoz/.fonts/atkinson_hyperlegible.2026/AtkinsonHyperlegibleMono-ExtraLight.otf": "497ead26b51a711b8843f273074d6c619989aa392d1a6c6ad7f77437c95d8e37",
+        "/home/bkoz/.fonts/atkinson_hyperlegible.2026/AtkinsonHyperlegibleMono-ExtraLightItalic.otf": "4582c3e6731899904cc556360ae98c56e226853ed5defbda93c8a64a8eab5603",
+        "/home/bkoz/.fonts/atkinson_hyperlegible.2026/AtkinsonHyperlegibleMono-Light.otf": "ac970ba1b1bd0858d25cb25d1ca992c730a2e52307bb82a8656681ea0b9ed246",
+        "/home/bkoz/.fonts/atkinson_hyperlegible.2026/AtkinsonHyperlegibleMono-LightItalic.otf": "22ece76ce2d7d79103545b1361ea8165ffc88c7db90979b7932f86159acca7fa",
+        "/home/bkoz/.fonts/atkinson_hyperlegible.2026/AtkinsonHyperlegibleMono-Medium.otf": "63b7935d1595bedff525db68bde54db237efcba76d0969b677757405c3f54175",
+        "/home/bkoz/.fonts/atkinson_hyperlegible.2026/AtkinsonHyperlegibleMono-MediumItalic.otf": "1935bcf6f681e850521092235fb0cfccf08f4a6447b822b217e4c090a3f21ad7",
+        "/home/bkoz/.fonts/atkinson_hyperlegible.2026/AtkinsonHyperlegibleMono-Regular.otf": "5126eedb80ae125e253d437d5302a6a65b7ec9a9a250b420545ec68004fb3168",
+        "/home/bkoz/.fonts/atkinson_hyperlegible.2026/AtkinsonHyperlegibleMono-RegularItalic.otf": "1adcc75308140c4714affa7a81c6ada58743e06171643d5e98b06b4ba0fb3245",
+        "/home/bkoz/.fonts/atkinson_hyperlegible.2026/AtkinsonHyperlegibleMono-SemiBold.otf": "8ac9187458bef3e69b6700446ffc2721c44f7143ee1b08648fa2456075750dff",
+        "/home/bkoz/.fonts/atkinson_hyperlegible.2026/AtkinsonHyperlegibleMono-SemiBoldItalic.otf": "0f14c7610e4fd3b71af67d2f353bd0f3d22897b7d30857d322b0e693735e5737",
+        "/home/bkoz/.fonts/atkinson_hyperlegible.2026/AtkinsonHyperlegibleNext-Bold.otf": "91485fed9ea491b764a6e037f9b2f8a20d21070a9345a85ce3fc42262e3c8b10",
+        "/home/bkoz/.fonts/atkinson_hyperlegible.2026/AtkinsonHyperlegibleNext-BoldItalic.otf": "658b25e70f637b31fdf5b62c77699aba61f272f0825124af21f9cfd6da7f11ca",
+        "/home/bkoz/.fonts/atkinson_hyperlegible.2026/AtkinsonHyperlegibleNext-ExtraBold.otf": "edab52eb7790e8116161dc5d15684b39d9c15d7f0695c9a34e55013d794f17ef",
+        "/home/bkoz/.fonts/atkinson_hyperlegible.2026/AtkinsonHyperlegibleNext-ExtraBoldItalic.otf": "b8246542a38d2a345b00230691e7814a29219daf446b79fa4431f34ab90759cd",
+        "/home/bkoz/.fonts/atkinson_hyperlegible.2026/AtkinsonHyperlegibleNext-ExtraLight.otf": "1c501bbd3ecea9acc03508ecbdc4adf8346be1544951338e04c835c0ce9141e9",
+        "/home/bkoz/.fonts/atkinson_hyperlegible.2026/AtkinsonHyperlegibleNext-ExtraLightItalic.otf": "1bb5eb05d804f81b079746b2edd6fc457feebc78ba4177672ba02c094dac7e2e",
+        "/home/bkoz/.fonts/atkinson_hyperlegible.2026/AtkinsonHyperlegibleNext-Light.otf": "5beec135597adc4c43b88afb07d74503a6be2bfc93c0ab895e87327acae973d2",
+        "/home/bkoz/.fonts/atkinson_hyperlegible.2026/AtkinsonHyperlegibleNext-LightItalic.otf": "fc725711c11ac81f51c17e72ab59ea2242d4bcf56cf2673376369118ac5b0f35",
+        "/home/bkoz/.fonts/atkinson_hyperlegible.2026/AtkinsonHyperlegibleNext-Medium.otf": "dda6e0d4357c6adf7deb681e017ce2f7d3db6b33cb9dde43c7dc38e99baa3a2d",
+        "/home/bkoz/.fonts/atkinson_hyperlegible.2026/AtkinsonHyperlegibleNext-MediumItalic.otf": "f0ebeee9e0065903632dd037d924a29ea01acb241fefc61004de7376ae06881e",
+        "/home/bkoz/.fonts/atkinson_hyperlegible.2026/AtkinsonHyperlegibleNext-Regular.otf": "2a5e641eb7d42f5949d9fc84df1e7840c3c7bb1151dae178a8f20a3251e946d0",
+        "/home/bkoz/.fonts/atkinson_hyperlegible.2026/AtkinsonHyperlegibleNext-RegularItalic.otf": "66729ad5dcdccd130f30f46c76ae6e946e5b0deb77ed6de1d662df6860043580",
+        "/home/bkoz/.fonts/atkinson_hyperlegible.2026/AtkinsonHyperlegibleNext-SemiBold.otf": "a6021e3dd5fd093d4092589814f62ba82163935864b29ef645d7b887d61eeee2",
+        "/home/bkoz/.fonts/atkinson_hyperlegible.2026/AtkinsonHyperlegibleNext-SemiBoldItalic.otf": "0ee781095c30886d78e242e34c9e7539934320d1447717575ff86d35c7cf7c72",
+        "/home/bkoz/.fonts/crouwel,wim/Architype Catalog Outline/Architype-CatalogueSoftOutline.otf": "648937cabc83082e85de5049153e2f49bac2d9a38ca1f6f529e778b3e4b82ed2",
+        "/home/bkoz/.fonts/crouwel,wim/Architype Catalog Solid/Architype-CatalogueSoftSolid.otf": "825e1173113d0cd9b6f723a7a128dc40ea8398c21bbef591efa50ba09e6fffdd",
+        "/home/bkoz/.fonts/crouwel,wim/Architype Fodor/Architype-Fodor.otf": "a7868695e67dfacc76a79aafd1c05c38415b57bd341374270ce6a39f45b8ad23",
+        "/home/bkoz/.fonts/crouwel,wim/Architype Stedelijk/Architype-Stedelijk.otf": "5f9da5c598a4640c339f42b8e8eb0dcb6c7cff4a099ea6269262d30d00e27fb7",
+        "/home/bkoz/.fonts/crouwel,wim/Architype Vierkant/Architype-Vierkant.otf": "72d9ad41f319d1dc41987a96806a38b9029cfee7d279094310b7ac4bdbe7a1ae",
+        "/home/bkoz/.fonts/crouwel,wim/NB Rietveld.otf": "e0939c91aa7165d5a535a6d6cdc23bc42900729520250aa91de41600be2a2ba9",
+        "/home/bkoz/.fonts/crouwel,wim/New Alphabet W95 Dot/New Alphabet W95 Dot.otf": "db10eadb8209adfb4af5fda5c651c09debf30b2e5c1e9d53db2fce4847669af4",
+        "/home/bkoz/.fonts/crouwel,wim/New Alphabet W95 Dot/New Alphabet W95 Dot.ttf": "1a520f5deedd7e0fcd619f1f64e7c407b4452fd7c352400b04cb3644ee52dd49",
+        "/home/bkoz/.fonts/crouwel,wim/New Alphabet W95 One/New Alphabet W95 One.otf": "ec87d97b1ba8396473229149c5f09685a1727e5793e4eddd4bd869bd78acf2f0",
+        "/home/bkoz/.fonts/crouwel,wim/New Alphabet W95 One/New Alphabet W95 One.ttf": "2dfdc0063932b9daab1f260b9391be2a308403355f5b69176948ecf65de6aac3",
+        "/home/bkoz/.fonts/crouwel,wim/New Alphabet W95 Three/New Alphabet W95 Three.otf": "0796ad6449678dc2108bf6359cb17c26736f69f3daecfc4ba9ad98fbab34e5f0",
+        "/home/bkoz/.fonts/crouwel,wim/New Alphabet W95 Three/New Alphabet W95 Three.ttf": "530d88f6eb1747351fcfbb753e27e625198c6060651bffd85fcd8d65fcb13951",
+        "/home/bkoz/.fonts/crouwel,wim/edgar_fernhout.ttf": "90ba6bf0936484761c58bd196600e46230904f7ea7dbfeffa8a17f7b10b1f1f3",
+        "/home/bkoz/.fonts/crouwel,wim/gridnik.otf": "d528f92ebf64cd243bcdbfac7ddd13f5631babc06dbecc85b42fbf1524fd9d34",
+        "/home/bkoz/.fonts/guseynov,ramiz/The Meez/The Meez W01 Light.otf": "84e90bf203901c5e37980fd65b3a4b611e8a450f8405feb76a6d9b0736c189b7",
+        "/home/bkoz/.fonts/mexcellent/mexcellent 3d.ttf": "fafd8b6d235f40040f87d65a34635325cf8d83a5252474df4e7d535903becd0a",
+        "/home/bkoz/.fonts/mexcellent/mexcellent rg.ttf": "21c7f7c03d86f30ba8c36e71423828ba817f77a26cfb3229d9b192fcd1e50f94",
+        "/home/bkoz/.fonts/narita_monospace/Narita-Monospace.otf": "9a71ef25256d64e8284087f5d95df41e403ef5c8d7a870eb31c6121ab72c243f",
+        "/home/bkoz/.fonts/stela-ut/Stela_UT.otf": "9135c16b0e961ca52271470a03783dc277deaee33c03192efa488343c2b9e1e1",
+        "/usr/share/fonts/aajohan-comfortaa-fonts/Comfortaa-Bold.otf": "fcbf28724771990af83923eb09ef541af4219af43aa94761b1ac0a92e0ee14d7",
+        "/usr/share/fonts/aajohan-comfortaa-fonts/Comfortaa-Light.otf": "bd58bef991322d28c76ab35b3e47906a0c6ac3c7025a2700b377fb51c5972230",
+        "/usr/share/fonts/aajohan-comfortaa-fonts/Comfortaa-Medium.otf": "a106e1c4ebabbd302d69aa70df594e00151a4e8501edffd1ef0fc632149fd953",
+        "/usr/share/fonts/aajohan-comfortaa-fonts/Comfortaa-Regular.otf": "8f09f5d188e7962859f2345358258cede68c95d3e55e30580fc791997b452a4e",
+        "/usr/share/fonts/aajohan-comfortaa-fonts/Comfortaa-SemiBold.otf": "89df308f7781dfb27a0ee6d80ece5c06a718a1a5946cee71784e223afac649da",
+        "/usr/share/fonts/abattis-cantarell-fonts/Cantarell-Bold.otf": "79717a71223a303da90db571cfd5e4f02e7ed2e570dbe24053b4b1822388ef9f",
+        "/usr/share/fonts/abattis-cantarell-fonts/Cantarell-ExtraBold.otf": "908c0fcf954e0557b887a95e9b5bbae7bb92ad72bec54c72c71a4f242e8f72c3",
+        "/usr/share/fonts/abattis-cantarell-fonts/Cantarell-Light.otf": "93051be37e9959aa20edb0dbdb7afabf118ef5908ce4d38e19e5f8fbcc8a0ea5",
+        "/usr/share/fonts/abattis-cantarell-fonts/Cantarell-Regular.otf": "a92f23cdd2b428b228aae94f2f25cf64a5d2c1287a4a3d638a3866fe52a2613c",
+        "/usr/share/fonts/abattis-cantarell-fonts/Cantarell-Thin.otf": "9ee5a4476edbd9c3958f4e772fdfb0500fcf69a5e542383b05fd260f8dac93ed",
+        "/usr/share/fonts/abattis-cantarell-vf-fonts/Cantarell-VF.otf": "c7bb69188222bb55e9edbddc7b4ff8087215102e957cc9e82a64c94334882e9a",
+        "/usr/share/fonts/adobe-source-code-pro-fonts/SourceCodePro-Black.otf": "1372d6cb5e4073b6be0d0bfa79e7e0ccf882d77e8a714c17492c4410f6379ac2",
+        "/usr/share/fonts/adobe-source-code-pro-fonts/SourceCodePro-BlackIt.otf": "7cf24ffce3a9373d16fa95526e8091a45774a321dbf5dbe76aee9f45138c00c9",
+        "/usr/share/fonts/adobe-source-code-pro-fonts/SourceCodePro-Bold.otf": "6f5a4a46a99ad1b92a8675e98f148272c8d2476fc0eb067247dd5eea6a3ad84c",
+        "/usr/share/fonts/adobe-source-code-pro-fonts/SourceCodePro-BoldIt.otf": "a015a5762527946aa99778f5397da14d10b963938d1d6e08153f173fdf29d8ee",
+        "/usr/share/fonts/adobe-source-code-pro-fonts/SourceCodePro-ExtraLight.otf": "ecec59fac495dc12514b1afab85fcf15d2f622a8fa48a247c913b01653424e11",
+        "/usr/share/fonts/adobe-source-code-pro-fonts/SourceCodePro-ExtraLightIt.otf": "c58e92053e6ff16a2d3f76721bd6fe55e76f546b156548da86e3d390345da382",
+        "/usr/share/fonts/adobe-source-code-pro-fonts/SourceCodePro-It.otf": "6989245c8747ecef5d927f412b49e2cef495053434b635f560f20cc81a1433d1",
+        "/usr/share/fonts/adobe-source-code-pro-fonts/SourceCodePro-Light.otf": "02303c413a412e0982833e4d9626415338de94f4e1778548b4051d4b5bce1b28",
+        "/usr/share/fonts/adobe-source-code-pro-fonts/SourceCodePro-LightIt.otf": "f3ed5fb28aa873a6ffa75f4c3d2e0e1fbfecbbca6dae3a4ce27683a1f6e6180d",
+        "/usr/share/fonts/adobe-source-code-pro-fonts/SourceCodePro-Medium.otf": "d6d11eb2088ce200b59f0fb620dba4f54c153b99fd2985c9708b0aa7037a1945",
+        "/usr/share/fonts/adobe-source-code-pro-fonts/SourceCodePro-MediumIt.otf": "443e47e4e4de0e932414825a84658064fd7c1ad711610c54681345b0e8df36c0",
+        "/usr/share/fonts/adobe-source-code-pro-fonts/SourceCodePro-Regular.otf": "9f9664e2edf6f045c11e774f9bd0be6993971f2544a39061a5ce478b96b051f8",
+        "/usr/share/fonts/adobe-source-code-pro-fonts/SourceCodePro-Semibold.otf": "1be15ad5855dab0017af32153342989b91fec313efcdbeda69bdeec92794da0d",
+        "/usr/share/fonts/adobe-source-code-pro-fonts/SourceCodePro-SemiboldIt.otf": "9489d3440e4b80ac528380831f12107c73f6034b962ad7f6c382e239f508caa6",
+        "/usr/share/fonts/adobe-source-han-sans-cn-fonts/SourceHanSansCN-Bold.otf": "997dd673efde3a7cc7410da3ccde2a729f26dc9e1a81ad659a2d6666d36b7974",
+        "/usr/share/fonts/adobe-source-han-sans-cn-fonts/SourceHanSansCN-ExtraLight.otf": "cd9f936c7dd9a153157d0129932473f93ee3c967e4de9f11c1714f58a6056d96",
+        "/usr/share/fonts/adobe-source-han-sans-cn-fonts/SourceHanSansCN-Heavy.otf": "0b73e54405e245201ad36ec9ca7820bb9be060f40b66a5f20b2d3958532f9183",
+        "/usr/share/fonts/adobe-source-han-sans-cn-fonts/SourceHanSansCN-Light.otf": "e06e70e9da402444e3fa130211d157f6f8893f6b103344b976da388ee3b8d670",
+        "/usr/share/fonts/adobe-source-han-sans-cn-fonts/SourceHanSansCN-Medium.otf": "f1c5928559cdd5c095122b63260e7d81ac104e5343eaf0bd30ff447c3996205c",
+        "/usr/share/fonts/adobe-source-han-sans-cn-fonts/SourceHanSansCN-Normal.otf": "a961763dcf9872d6ffc7ce14d8169c652413cc7f9c54ef8e0db619fd8fe191d3",
+        "/usr/share/fonts/adobe-source-han-sans-cn-fonts/SourceHanSansCN-Regular.otf": "c0aa89a70f92a820ff95490fea6d472cd19621a71c9a748a4950eb2eafe6438e",
+        "/usr/share/fonts/adobe-source-han-sans-jp-fonts/SourceHanSansJP-Bold.otf": "13f40882deef42bcf2e6ff9a9ef1b90cf2c455e7b1c8b37371b38807608a8fad",
+        "/usr/share/fonts/adobe-source-han-sans-jp-fonts/SourceHanSansJP-ExtraLight.otf": "fd3e48b4af85efdbcad1615037f5a0d14bfd168d3a27c82bed61a74fe7564e26",
+        "/usr/share/fonts/adobe-source-han-sans-jp-fonts/SourceHanSansJP-Heavy.otf": "b5f8edcd0a93a9115bc05ac870575d4675b1478ff1b6a15f3453eba21838a66e",
+        "/usr/share/fonts/adobe-source-han-sans-jp-fonts/SourceHanSansJP-Light.otf": "4f8addf097f4a0051122c4e7cdb196d0e2172a3be2e199f82ae1b3077195dd93",
+        "/usr/share/fonts/adobe-source-han-sans-jp-fonts/SourceHanSansJP-Medium.otf": "d2848699858bb77d2bf309b6b07e8e81b7591ee33d49151450f71045ce8d18f2",
+        "/usr/share/fonts/adobe-source-han-sans-jp-fonts/SourceHanSansJP-Normal.otf": "399f12be78f543c67a81ca26fd65be6459fb5fd7962ec1aa1a3948f0abc1f08d",
+        "/usr/share/fonts/adobe-source-han-sans-jp-fonts/SourceHanSansJP-Regular.otf": "f1e601905e64abce826623c4047f22fdf77a72653d5be579a807847ca1eecc31",
+        "/usr/share/fonts/adobe-source-han-sans-kr-fonts/SourceHanSansKR-Bold.otf": "aff6d2e460d17019a5265722237ea0bf9da1c1870396ae075efb8f36c9471313",
+        "/usr/share/fonts/adobe-source-han-sans-kr-fonts/SourceHanSansKR-ExtraLight.otf": "7d59226f57c3bc4edc12a6d55a3ca82534c7f3f61c7da66eb8c23b1ad2dddbd0",
+        "/usr/share/fonts/adobe-source-han-sans-kr-fonts/SourceHanSansKR-Heavy.otf": "897bf6fd7b7aabe9c9968331cb32dcd7ed65db9756396a68da4597073b99efd7",
+        "/usr/share/fonts/adobe-source-han-sans-kr-fonts/SourceHanSansKR-Light.otf": "19c91b80af3269b13134f28cf4bcbe8c425dac9150ba3967364def08e24d2e0d",
+        "/usr/share/fonts/adobe-source-han-sans-kr-fonts/SourceHanSansKR-Medium.otf": "3f6b8573a5cb778428ccd31cdbb15aa68be810c74c757ed4dde9c7b71127f578",
+        "/usr/share/fonts/adobe-source-han-sans-kr-fonts/SourceHanSansKR-Normal.otf": "a6f22918d378a0a6c593a44dd2379c8af806c60e77764bc24d79a9b3182e5c59",
+        "/usr/share/fonts/adobe-source-han-sans-kr-fonts/SourceHanSansKR-Regular.otf": "99993e2f51c79121402e82115b2e909ea3fd758d54470b7a8aba2854aa44059c",
+        "/usr/share/fonts/adobe-source-han-sans-tw-fonts/SourceHanSansTW-Bold.otf": "7ff4847cc92db5b57913e47ee6119226acd02c8004082ce436c9733041780ec7",
+        "/usr/share/fonts/adobe-source-han-sans-tw-fonts/SourceHanSansTW-ExtraLight.otf": "1752ed6aa1cf87d8e5ebcad334c6c2847c62c85b0df53442cd3d78d2b229cd0f",
+        "/usr/share/fonts/adobe-source-han-sans-tw-fonts/SourceHanSansTW-Heavy.otf": "b72bfbd68fe6caf72701c82ab4a3376ea3c17ce90903aeb960c091ee5154e9cd",
+        "/usr/share/fonts/adobe-source-han-sans-tw-fonts/SourceHanSansTW-Light.otf": "f6f3eeca3d5d7de147c738e8960c402b4e6be416cbfd63c9c844c444d5f21a2b",
+        "/usr/share/fonts/adobe-source-han-sans-tw-fonts/SourceHanSansTW-Medium.otf": "aea4ae0edffa36933503c6c84f508cd1187209e2b5ec76fa0f009a16719718c9",
+        "/usr/share/fonts/adobe-source-han-sans-tw-fonts/SourceHanSansTW-Normal.otf": "e8a7f8aee3f6cc71e4a7af08876cfef67a14fc940feb4568836891dbb1d0f601",
+        "/usr/share/fonts/adobe-source-han-sans-tw-fonts/SourceHanSansTW-Regular.otf": "3b00652fbffe1631be7afd927e4e1380d48be305595d1fb421e75215fc47f799",
+        "/usr/share/fonts/adobe-source-sans-pro-fonts/SourceSans3-Black.otf": "2fef2100eb883a68f04495c98c900c9e0a6b2168a4edcd55837b6e8e05c65952",
+        "/usr/share/fonts/adobe-source-sans-pro-fonts/SourceSans3-BlackIt.otf": "7c6ddd2d1957d7f380620db07fc3b6ca8ca0d4f8196005ee14f9446d2196cfda",
+        "/usr/share/fonts/adobe-source-sans-pro-fonts/SourceSans3-Bold.otf": "7776ddb9f3eb58683e59f28d558d8896b768c2d0c80799fb3f1c56c54dfd98c9",
+        "/usr/share/fonts/adobe-source-sans-pro-fonts/SourceSans3-BoldIt.otf": "05e97d9adc01059607e97b167a68afb25680db904db7aba831dc2510f14b6515",
+        "/usr/share/fonts/adobe-source-sans-pro-fonts/SourceSans3-ExtraLight.otf": "ee732d9afc20265c831cb1c1f1060957de036bbfe80a0965db1ccc1d61938499",
+        "/usr/share/fonts/adobe-source-sans-pro-fonts/SourceSans3-ExtraLightIt.otf": "ae94815685f545fe8877290299c28d883b5eff9376612c4c7cc82ce877145f2e",
+        "/usr/share/fonts/adobe-source-sans-pro-fonts/SourceSans3-It.otf": "430b9f0eb1170be0981706d14b6cf87122efba9d86c373bbdf69daf276421462",
+        "/usr/share/fonts/adobe-source-sans-pro-fonts/SourceSans3-Light.otf": "bbfab2c58d46defe8a194634744660ee15d560dcf3d7a8c7bb509936acc618c7",
+        "/usr/share/fonts/adobe-source-sans-pro-fonts/SourceSans3-LightIt.otf": "abd8f5b080ec26a9592a77285b921a8e296b688f479232a721c7129bf068c64a",
+        "/usr/share/fonts/adobe-source-sans-pro-fonts/SourceSans3-Medium.otf": "02607dc31274d1589a996b8a78e71f256f56d1633a797fe8103dbd8fa9893db6",
+        "/usr/share/fonts/adobe-source-sans-pro-fonts/SourceSans3-MediumIt.otf": "d2655b319171f712079bcab2352c0c54f166d1d4d8c2d0b9ce55278667562254",
+        "/usr/share/fonts/adobe-source-sans-pro-fonts/SourceSans3-Regular.otf": "08df266400933d3178d081a45f94a08814c3e55b4b7dd2e0ff69cb1329f13ab6",
+        "/usr/share/fonts/adobe-source-sans-pro-fonts/SourceSans3-Semibold.otf": "36f1cd2c344aa3109e64429bce41a41e4b2b923beb2db19b8dbf9bb56f05a4f9",
+        "/usr/share/fonts/adobe-source-sans-pro-fonts/SourceSans3-SemiboldIt.otf": "81204ed282543df2d93db214c98b5ec1c9ce735c4c82e4323d5ae5ee69c6b8b7",
+        "/usr/share/fonts/adwaita-mono-fonts/AdwaitaMono-Bold.ttf": "6378ff11be9b3da218efadefc4e459997d8e425725303ac5112f33c465057ae6",
+        "/usr/share/fonts/adwaita-mono-fonts/AdwaitaMono-BoldItalic.ttf": "19d284011cd186c178a982cfd3c6a365d94a6bf5d35879146dd630a69abee5a3",
+        "/usr/share/fonts/adwaita-mono-fonts/AdwaitaMono-Italic.ttf": "3207d793512e9ccb5832c1f8efcf22ab906d9e74f4920125700683df306d5cc8",
+        "/usr/share/fonts/adwaita-mono-fonts/AdwaitaMono-Regular.ttf": "0edc6a8d8ca249f594dee661b2f57f1a3baa33bc7aca826c6a9fe27b06f9f930",
+        "/usr/share/fonts/adwaita-sans-fonts/AdwaitaSans-Italic.ttf": "a3dc55af75f746756596dca37f3ff7c0f0b015f2fd2e87f2cf0ef4a69d4f3015",
+        "/usr/share/fonts/adwaita-sans-fonts/AdwaitaSans-Regular.ttf": "8381c33b9a44f066f2b99dba3d416a2342891e28c956a35dfd8d16ee2987e6d4",
+        "/usr/share/fonts/bitstream-vera-sans-fonts/Vera.ttf": "c4c45690b345435b2cba52ecabe275f05e49b389b39fe68ad03afbb551288d3d",
+        "/usr/share/fonts/bitstream-vera-sans-fonts/VeraBI.ttf": "fca0d4eeac1ced7e75e1b2274c869a351d2d83b5ed1f61d249e7bcc477c33ebe",
+        "/usr/share/fonts/bitstream-vera-sans-fonts/VeraBd.ttf": "cc037385e4d55bfde89b13e03091ee93bf40c0c52ddd391ff031ab276f13b8e9",
+        "/usr/share/fonts/bitstream-vera-sans-fonts/VeraIt.ttf": "2adc684d518f45232c4ad1f56522f5a82a6904c31940373e1b7030beee20fb3a",
+        "/usr/share/fonts/bitstream-vera-sans-mono-fonts/VeraMoBI.ttf": "61c343315bd5ba7c30ec9d8404bec7fb5e21a8b4013417244292af1053e99010",
+        "/usr/share/fonts/bitstream-vera-sans-mono-fonts/VeraMoBd.ttf": "cfd27092561b2386c631f403b289abfb4b98d25cbf5ddf818bc45161579f45b3",
+        "/usr/share/fonts/bitstream-vera-sans-mono-fonts/VeraMoIt.ttf": "2f72352768b3d1e795882b57c81faee64edb1eb65e33f6aa57257a7278c452c3",
+        "/usr/share/fonts/bitstream-vera-sans-mono-fonts/VeraMono.ttf": "da4281dc7db17a3dfce64a62ced92875c5895340055ec8ba24a3914eb97b349d",
+        "/usr/share/fonts/dejavu-sans-fonts/DejaVuSans-Bold.ttf": "d18ffe80992824fbb131e34a582786f0267bdbf68e3f086c1095bf4697bc76cd",
+        "/usr/share/fonts/dejavu-sans-fonts/DejaVuSans-BoldOblique.ttf": "93a7c9152649f73fdf25eb924262552a1bb7f4545feb07f93c729d2af57581f0",
+        "/usr/share/fonts/dejavu-sans-fonts/DejaVuSans-ExtraLight.ttf": "9b9139ef6cb811d933f45378a590d587c6097e12fec8b118998327d41725fcaa",
+        "/usr/share/fonts/dejavu-sans-fonts/DejaVuSans-Oblique.ttf": "531726778fb1edd8f70526b85c4481d23d63beceaf2d7afaa5c1adb584bd5823",
+        "/usr/share/fonts/dejavu-sans-fonts/DejaVuSans.ttf": "f0d9a390aa7cf43999a2fd1502a47c381bc7809ab5fac6937f0f6dd6524096cd",
+        "/usr/share/fonts/dejavu-sans-fonts/DejaVuSansCondensed-Bold.ttf": "f00f7ace6c2f6f2c97b77eaeda1698fab2890252f017d4875a37b883a324804c",
+        "/usr/share/fonts/dejavu-sans-fonts/DejaVuSansCondensed-BoldOblique.ttf": "57e7dedcea762f45650b8eea29fa0561a8f11d92c303dc39525fd35d27923320",
+        "/usr/share/fonts/dejavu-sans-fonts/DejaVuSansCondensed-Oblique.ttf": "378459b9ab5439aeb0064260ad57e3060da25b8be656cfaccd920de27688bb14",
+        "/usr/share/fonts/dejavu-sans-fonts/DejaVuSansCondensed.ttf": "73502bcade606d399de56ed25296aa7808843fb30f74a253338802db9aab8d02",
+        "/usr/share/fonts/dejavu-sans-mono-fonts/DejaVuSansMono-Bold.ttf": "2743de80c6d78ac34d078bf2a5175c164b30fef125839351f88ae048a2362f3e",
+        "/usr/share/fonts/dejavu-sans-mono-fonts/DejaVuSansMono-BoldOblique.ttf": "4bc37ac35a455cbcc0b612d979385fbc41e17dd5bb7ad7b8f61d63e50400c2fd",
+        "/usr/share/fonts/dejavu-sans-mono-fonts/DejaVuSansMono-Oblique.ttf": "b5b9e539305b9b435a0aeda802dbe0b25553e184ab6f1824521881eb267aeaea",
+        "/usr/share/fonts/dejavu-sans-mono-fonts/DejaVuSansMono.ttf": "c06c3feb12ec4cac1c61fd2e32f58aeb688667efaaadbcac716af86efddc81e3",
+        "/usr/share/fonts/dejavu-serif-fonts/DejaVuMathTeXGyre.ttf": "0dd26e806b229b897b5438fbda45c49947d8b0ad8aa2726e45dfcd97836644e0",
+        "/usr/share/fonts/dejavu-serif-fonts/DejaVuSerif-Bold.ttf": "276849fde2ca05767d3aac0a084a9fcaa37280b5528f4dac343b98842237f83b",
+        "/usr/share/fonts/dejavu-serif-fonts/DejaVuSerif-BoldItalic.ttf": "3d97c62ea3c1f2a0b4c17152ed92cdfb38765b8200344de6b93f7132a83eb284",
+        "/usr/share/fonts/dejavu-serif-fonts/DejaVuSerif-Italic.ttf": "a95071f45826e60d9bedc38fa8695aa2d74b3f702cd90179894083194edd6f7c",
+        "/usr/share/fonts/dejavu-serif-fonts/DejaVuSerif.ttf": "eaca34979e9da5b74316d14bc4c23b2f1673b0fd0e92c78247f08ddb8e4ace9d",
+        "/usr/share/fonts/dejavu-serif-fonts/DejaVuSerifCondensed-Bold.ttf": "ce12b8aade17e1375f4033a20fbc6d0b1732c2dc8969581bb2de442a8937bab8",
+        "/usr/share/fonts/dejavu-serif-fonts/DejaVuSerifCondensed-BoldItalic.ttf": "587989b7652df5d1f901374d8c9ce9e19436919144ccb130faf08eb061fede34",
+        "/usr/share/fonts/dejavu-serif-fonts/DejaVuSerifCondensed-Italic.ttf": "8cb538e091ce7017bc1326a91b3a4cd8fd8e3cc224d9da54dfe7a863e89b7551",
+        "/usr/share/fonts/dejavu-serif-fonts/DejaVuSerifCondensed.ttf": "8c3c64e9068908b930205e0740257437e5648edb999299c368bdb1b84a608dd2",
+        "/usr/share/fonts/gdouros-symbola/Symbola.ttf": "c64c53ce724726c95b2075f59ee5ada35790769b1a4dafd3bc98b5c6c0be50cd",
+        "/usr/share/fonts/gnu-free/FreeMono.ttf": "756d89d55729f26953c6b6817572b4cfb22b66ee9734480afff17d8ff2c2cd1e",
+        "/usr/share/fonts/gnu-free/FreeMonoBold.ttf": "0ccb3248585cfcb9e55b1e4f3dd08bce68530df70ec5ca85b62c6e1868bb82dd",
+        "/usr/share/fonts/gnu-free/FreeMonoBoldOblique.ttf": "8a7c83606b49bdef57d8c9cf0dbeb489112ea34fb0b6b782d8e1179e649fc20e",
+        "/usr/share/fonts/gnu-free/FreeMonoOblique.ttf": "10802433b8160c3882b8ef3b4ba0cfa14199f2ac6e661cc8159bd0103b9450b3",
+        "/usr/share/fonts/gnu-free/FreeSans.ttf": "02278f4358389962b4b142c33d274c015e9a647085536b316f31bcf2b9335112",
+        "/usr/share/fonts/gnu-free/FreeSansBold.ttf": "d3e4ac816c6bd3a136de033612c690ee0f99f60aced60597bb987577a5cfaf60",
+        "/usr/share/fonts/gnu-free/FreeSansBoldOblique.ttf": "25a58b91ba54cf79e34bf106db5227063a305c475e6a01f235b99de3638bc988",
+        "/usr/share/fonts/gnu-free/FreeSansOblique.ttf": "1e4d8f555cdd1d7262a00f654bc137690139835e16856bfdbd5d28b624154b97",
+        "/usr/share/fonts/gnu-free/FreeSerif.ttf": "840432059ebcb93fdad0fbff7e4f293585f9134413d24351daf8d336b6968822",
+        "/usr/share/fonts/gnu-free/FreeSerifBold.ttf": "9f73e551cc0a0cb951aa18bab4cb2551989cf55496b3c986d7b085e7c19cb294",
+        "/usr/share/fonts/gnu-free/FreeSerifBoldItalic.ttf": "5ddcbe1b32a7ca3c44b66ed6030f77ee873c6ca9dff6cc9685c6ea1440fee2a1",
+        "/usr/share/fonts/gnu-free/FreeSerifItalic.ttf": "18dde0a75d5022dc063452a901f3aa4b7335b74e8086d118602e4cf975a8bdec",
+        "/usr/share/fonts/google-carlito-fonts/Carlito-Bold.ttf": "0f62ab34ad5d079a0a28fac01bcf7c7a724a4db4d6cb99cab9cabff382fbb80f",
+        "/usr/share/fonts/google-carlito-fonts/Carlito-BoldItalic.ttf": "380764b6898d7b73ceae6384b2958b196d2a0428962ef3adf138d27947228666",
+        "/usr/share/fonts/google-carlito-fonts/Carlito-Italic.ttf": "718a0663864d37a4868220a19b9668a5fe10a46197f6df367b4c2c30c04c026c",
+        "/usr/share/fonts/google-carlito-fonts/Carlito-Regular.ttf": "b4ff23ba370cc95a3c349336b73f9c28514a1371210f89832efc85c4b1ea7131",
+        "/usr/share/fonts/google-crosextra-caladea-fonts/Caladea-Bold.ttf": "74eda4fc5ffba0d8dc4aa76d41499f5ab76168d9ed6141c6417064c6244db9b6",
+        "/usr/share/fonts/google-crosextra-caladea-fonts/Caladea-BoldItalic.ttf": "f47a35ad6cd0efa9914d93f9d03c93e30c55da43674bccfabac73b3c0d522c01",
+        "/usr/share/fonts/google-crosextra-caladea-fonts/Caladea-Italic.ttf": "9c968bf60ba1e851cdfea77c71e3540c57792f77482dd241acc29d1425569c4e",
+        "/usr/share/fonts/google-crosextra-caladea-fonts/Caladea-Regular.ttf": "d2f6cad33f191e65b68bd74e6d4f7708080a41b32db635866109df3090265d91",
+        "/usr/share/fonts/google-droid-sans-fonts/DroidKufi-Bold.ttf": "b9699e2c12780e649d7541ea8713377b3a04663d778823cd252cd7feee4a2024",
+        "/usr/share/fonts/google-droid-sans-fonts/DroidKufi-Regular.ttf": "ae57aea1cb701121475bcd38a9264115c401927701f4b04a54f9166143c52fe0",
+        "/usr/share/fonts/google-droid-sans-fonts/DroidSans-Bold.ttf": "2f529a3e60c007979d95d29794c3660694217fb882429fb33919d2245fe969e9",
+        "/usr/share/fonts/google-droid-sans-fonts/DroidSans.ttf": "f51b88945f4c1b236f44b8d55a2d304316869127e95248c435c23f1e4142a7db",
+        "/usr/share/fonts/google-droid-sans-fonts/DroidSansArmenian.ttf": "ee0c9fa146f0c01898eda7923d951cf91f465e7d06ce73d24bedf618ab001aa8",
+        "/usr/share/fonts/google-droid-sans-fonts/DroidSansDevanagari-Regular.ttf": "0270f4d3705e207788584190fd0155c43b0421ddd7041a9bb3a406ff5dfa2a95",
+        "/usr/share/fonts/google-droid-sans-fonts/DroidSansEthiopic-Bold.ttf": "6cb21486c6ef7147f72097d15d706cb6aff9420e2a0acf8604127ff215a3da8a",
+        "/usr/share/fonts/google-droid-sans-fonts/DroidSansEthiopic-Regular.ttf": "d4eb4a19ab52b2af1c510a8ce4e88c961dd628394341b71793471a1e25fc3d3c",
+        "/usr/share/fonts/google-droid-sans-fonts/DroidSansFallbackFull.ttf": "2392015530438bafc48edfc4aee6d9de2387f627a6134d8ab3dfcc99d21c8240",
+        "/usr/share/fonts/google-droid-sans-fonts/DroidSansGeorgian.ttf": "17f0a44b9adad6888b42b27978d95d988ff36c6638c8bcf61c811e2c4179c5ed",
+        "/usr/share/fonts/google-droid-sans-fonts/DroidSansHebrew-Bold.ttf": "673eca014d73f9547409f6e6a617f8c86e075c45c62568e34260d4fc73c7adc6",
+        "/usr/share/fonts/google-droid-sans-fonts/DroidSansHebrew-Regular.ttf": "2106e79352599df07a4ffd5cd5eaa28828f4e126b11069fb245da2d777236b34",
+        "/usr/share/fonts/google-droid-sans-fonts/DroidSansJapanese.ttf": "935867c21b8484c959170e62879460ae9363eae91f9b35e4519d24080e2eac30",
+        "/usr/share/fonts/google-droid-sans-fonts/DroidSansTamil-Bold.ttf": "031700c9410d0c3ed31d5008f4fa756ec3d9a4567c74b8453a3f953c74c69cce",
+        "/usr/share/fonts/google-droid-sans-fonts/DroidSansTamil-Regular.ttf": "62f992f733a7235a338be19e0837104584062159ffae83f612b6550806833d86",
+        "/usr/share/fonts/google-droid-sans-fonts/DroidSansThai.ttf": "ef0194ff30b2c1a53873de9e62044da98ad4a7c6666b153d8b5c46727d9d0ad5",
+        "/usr/share/fonts/google-noto-color-emoji-fonts/Noto-COLRv1.ttf": "b8e25ea68db82f9e4d0aee921f4420be2be39887bd5c893a2ad98710531f9d0c",
+        "/usr/share/fonts/google-noto-emoji-fonts/NotoEmoji-Regular.ttf": "24aaa2a20c9c06ffe9bf04284bfd1f14376a329d10122f902abe2770817eb504",
+        "/usr/share/fonts/google-noto-sans-cjk-vf-fonts/NotoSansCJK-VF.ttc": "d3d8256cdec8dbcb3552284bc6b20c734dd60c2ee9df83b5758e34807c4bac32",
+        "/usr/share/fonts/google-noto-sans-mono-cjk-vf-fonts/NotoSansMonoCJK-VF.ttc": "3a73c225abcfd5742ab84e613b427fb5b40c9e59b70fe3d1683f9b1da96568a0",
+        "/usr/share/fonts/google-noto-serif-cjk-vf-fonts/NotoSerifCJK-VF.ttc": "24720ea76c8b13e822059d155cefb0f9f6be1cfdee1e2bb67b61c96067de42c9",
+        "/usr/share/fonts/google-noto-vf/NotoNaskhArabic[wght].ttf": "fec2420694d3e9590e94489fe09484d3eb517c2422eefed2eea5a127b2d8e649",
+        "/usr/share/fonts/google-noto-vf/NotoSans-Italic[wght].ttf": "28602f4b032ed8f5d91445e830585f34aba54ff9d3ac3e58c0b8834f3d6ae684",
+        "/usr/share/fonts/google-noto-vf/NotoSansArabic[wght].ttf": "3fae4d7239d1faa55b234bda8091019a5251ff79df40d5e29367d84bed2a8138",
+        "/usr/share/fonts/google-noto-vf/NotoSansArmenian[wght].ttf": "e979dfaed56ddb4bfd05121958b25425eb7593253d64b6b3654c77c11c5cda94",
+        "/usr/share/fonts/google-noto-vf/NotoSansBengali[wght].ttf": "71647364a0b9851a07db3207431256279bb8db9e8a4ba9d487ff2fe7431f5fcd",
+        "/usr/share/fonts/google-noto-vf/NotoSansCanadianAboriginal[wght].ttf": "22b3bcd8c0018a8197758795097b5df09fd5275bb7dd50379602ae406a7d28b6",
+        "/usr/share/fonts/google-noto-vf/NotoSansCherokee[wght].ttf": "6f110084d8067b90a91b4b79e56c26eb458f7866a1080112791f24a769026c34",
+        "/usr/share/fonts/google-noto-vf/NotoSansDevanagari[wght].ttf": "ffb0d05ef3d8e6d0c3d7c9380099127b003854242c11d0751b6a2e85e1f8f1b5",
+        "/usr/share/fonts/google-noto-vf/NotoSansEthiopic[wght].ttf": "93f223089e300b983dbfd693c7be619e0e76565a70d639e71a4fe0bfd72cf66f",
+        "/usr/share/fonts/google-noto-vf/NotoSansGeorgian[wght].ttf": "42f4a8bf4fe0af8afd91ee3c19e81e14f1bc74ddbd9b6a59a4182f67a596adb4",
+        "/usr/share/fonts/google-noto-vf/NotoSansGujarati[wght].ttf": "83d1bde74d64fb389f97a5e27b2699d8ee8bad4c15a02be347228e6c10011248",
+        "/usr/share/fonts/google-noto-vf/NotoSansGurmukhi[wght].ttf": "8a3096ee2166f6383501e2df7b368fce88cfa4068c8d75bcb6af07da353a00ea",
+        "/usr/share/fonts/google-noto-vf/NotoSansHebrew[wght].ttf": "9d81d81ad592644487b03843da73a87b99cd28a2c4da4a096e1db8fbd14fda61",
+        "/usr/share/fonts/google-noto-vf/NotoSansKannada[wght].ttf": "b6b11505d76eddf916667d73adfec19095ec777742444dc662dae81471461f4e",
+        "/usr/share/fonts/google-noto-vf/NotoSansKhmer[wght].ttf": "56f89948a84cc0b01962ed6af573ac4ac885bd7bb6e7e40f9afc72a435728b70",
+        "/usr/share/fonts/google-noto-vf/NotoSansLao[wght].ttf": "fc138d605aa998d8407789ee6a7f5554aae8b54f5cd98d66dd2c33e79d15b67e",
+        "/usr/share/fonts/google-noto-vf/NotoSansMeeteiMayek[wght].ttf": "bf1c5bfb5bc009222727a6929e1e4f5d189d9cae22502c706d6b17e3f5de7bb6",
+        "/usr/share/fonts/google-noto-vf/NotoSansMono[wght].ttf": "3c874b97ce11dc54de004c81df02c8f0974033ed1b113377130cbdd71d478f11",
+        "/usr/share/fonts/google-noto-vf/NotoSansOlChiki[wght].ttf": "4659acdc9e21925955838bd43ffa6319a6498f236338788e824f7ac5d99bbc1f",
+        "/usr/share/fonts/google-noto-vf/NotoSansOriya[wght].ttf": "ed3256cdef551172be7ce9a72759233f2dc8fc016bbbfb7d87ee3a3c6b3b0085",
+        "/usr/share/fonts/google-noto-vf/NotoSansSinhala[wght].ttf": "3fd7c6a61cb6dfb8a2ca7af5b4078bd24e9c8ad9b55839a0177277db6e4d1326",
+        "/usr/share/fonts/google-noto-vf/NotoSansSymbols[wght].ttf": "63724daeff6755a45933b9a5e3a3b41df5df8fe925c0f4c991f2f68c08a4182d",
+        "/usr/share/fonts/google-noto-vf/NotoSansSyriac[wght].ttf": "9f3e31827c791915e7a6482ea308cef228d1b794201914be4c80db3aa55cbcc0",
+        "/usr/share/fonts/google-noto-vf/NotoSansTamil[wght].ttf": "37e151cdec4a8cfb15c432f7bb164a83b98df69419d47e50b35aa7073963716b",
+        "/usr/share/fonts/google-noto-vf/NotoSansTelugu[wght].ttf": "6c06de88b2d420d899543724a13765994191cd29860c6226efca098b51fec64b",
+        "/usr/share/fonts/google-noto-vf/NotoSansThaana[wght].ttf": "0cb14c116ee846ed834941dd4acfabc5d023cc573f05ae8deb9d39d37d796114",
+        "/usr/share/fonts/google-noto-vf/NotoSansThai[wght].ttf": "13f52f79b04f01f2751a81052a5dee2df639fd4e13f4ac30821ab45c8dd5f7e7",
+        "/usr/share/fonts/google-noto-vf/NotoSans[wght].ttf": "fb53504de62e767a54695416123d68d67f71c9b69722175184ad56e7dd13547b",
+        "/usr/share/fonts/google-noto-vf/NotoSerif-Italic[wght].ttf": "30f1c0204b6bb16d7b6f0984ce6e355ad61d05656201b3d13a2b19bb9baa6779",
+        "/usr/share/fonts/google-noto-vf/NotoSerifArmenian[wght].ttf": "a1f121b766cf047ee4e276911877b0c0c7cabf08c1ea2353ac72b624707973aa",
+        "/usr/share/fonts/google-noto-vf/NotoSerifBengali[wght].ttf": "0ca9c22cdd624575bd5c3b348be0c43d6a23af1fd8934beafd03bec74d03288d",
+        "/usr/share/fonts/google-noto-vf/NotoSerifDevanagari[wght].ttf": "3f197f51f354630db0011cd191f5eb48ab814a9af62b97e8c32aace82bc0de3c",
+        "/usr/share/fonts/google-noto-vf/NotoSerifEthiopic[wght].ttf": "b4f29b62e9576b8911f8ec7b4a41d907e94487b5637e32fba38652e8b02b5c02",
+        "/usr/share/fonts/google-noto-vf/NotoSerifGeorgian[wght].ttf": "a053f1abbf145797d6f9a94c4269cf4f966cf1c385cfcf35794b7696a44f2fe6",
+        "/usr/share/fonts/google-noto-vf/NotoSerifGujarati[wght].ttf": "eb59028b25045fee375b4f6b9968fd7d75a06abb193b882802577b3f1bc1197c",
+        "/usr/share/fonts/google-noto-vf/NotoSerifGurmukhi[wght].ttf": "6bc99fae7a937864b3b1506609ba6b98dcf052e30b3aa761f99675518fdf1562",
+        "/usr/share/fonts/google-noto-vf/NotoSerifHebrew[wght].ttf": "e7888a35e01652fd6703e6223f101f2f67a1120b09de422329987efce053c17f",
+        "/usr/share/fonts/google-noto-vf/NotoSerifKannada[wght].ttf": "8ef7c2717820f3c2112ae10a76ff6ebdd93a81206851808d802c2978a831b0a7",
+        "/usr/share/fonts/google-noto-vf/NotoSerifKhmer[wght].ttf": "2f075918049536b835e0a89bb7e3eb0f0eff35c609287c712e61f9802bba5629",
+        "/usr/share/fonts/google-noto-vf/NotoSerifLao[wght].ttf": "64caa04084790d20c68fa491dfa6bd765097796810090d03fbaf0bd23e559a9b",
+        "/usr/share/fonts/google-noto-vf/NotoSerifOriya[wght].ttf": "fa6773c1492ed914e6b0e3616e65fc015f7884dbc55cee9ff9d21b14f1764fec",
+        "/usr/share/fonts/google-noto-vf/NotoSerifSinhala[wght].ttf": "aace5bca7f2dc550b1ce865c02f89f70474b037022120ebfe44d0bf6c4a2d192",
+        "/usr/share/fonts/google-noto-vf/NotoSerifTamil-Italic[wght].ttf": "39eea0176b65fb8378a6ca98f7b0ec58b1ed4f87815be4296bab30c910d04ed1",
+        "/usr/share/fonts/google-noto-vf/NotoSerifTamil[wght].ttf": "bdf0df5bc421fef8a4594a280b406dc6760fbe66c993d205ff4140ee996f6a14",
+        "/usr/share/fonts/google-noto-vf/NotoSerifTelugu[wght].ttf": "528f858be901e4bbc632bb421ce756cfd2515b38487a9e35b8ea52a4d86cce92",
+        "/usr/share/fonts/google-noto-vf/NotoSerifThai[wght].ttf": "b9ed3ba45406e859a9eb483e2f764afdb9424024d5842c40fa31fa386033265b",
+        "/usr/share/fonts/google-noto-vf/NotoSerif[wght].ttf": "9374c4d81d2e21b03ac03fbc165458e8cf63e434a44c82193aa0305d20dc1037",
+        "/usr/share/fonts/google-noto/NotoSans-Black.ttf": "5d4d9e0ded710a4603e10afebfce2c2d56fa0d216890e8915511d2a53a004c1c",
+        "/usr/share/fonts/google-noto/NotoSans-BlackItalic.ttf": "828d361910e9e3f7e323b73cf6de65f9117a4eea5283f5a92a8b214029a593cc",
+        "/usr/share/fonts/google-noto/NotoSans-Bold.ttf": "1df075a380fc7cb898acf64c1f7b3b4dd780de3caa860178bf929de35817a913",
+        "/usr/share/fonts/google-noto/NotoSans-BoldItalic.ttf": "1b602a9d6353be42c91df097a4857b69fa2696f26703d7a33b54a15d87c2622c",
+        "/usr/share/fonts/google-noto/NotoSans-Condensed.ttf": "806816f70ef268abf388acdacf6b2e169f58f70c9f063515eef16a1f256eace6",
+        "/usr/share/fonts/google-noto/NotoSans-CondensedBlack.ttf": "279ce2b4aae61db0ad8edd5fcca51786628f41f5f7e0d9f0bbf4ca5315f6a4bf",
+        "/usr/share/fonts/google-noto/NotoSans-CondensedBlackItalic.ttf": "064c121007728da7cf7fad229f23dfb06c201238b229137b190ae7707244d0dd",
+        "/usr/share/fonts/google-noto/NotoSans-CondensedBold.ttf": "d2b9ba877a743185a4123c6a82bf22e8b5c1d79bf7c6227d8f1df1857f71159e",
+        "/usr/share/fonts/google-noto/NotoSans-CondensedBoldItalic.ttf": "4f3bcd3ae0a85a1b7fb744a92bcbf0439965d141dac91e5d7ef67db23c5fddf5",
+        "/usr/share/fonts/google-noto/NotoSans-CondensedExtraBold.ttf": "e8411ed0b4635955dcaf8a237930c14f391fb1cd248544131a7dda138e71e197",
+        "/usr/share/fonts/google-noto/NotoSans-CondensedExtraBoldItalic.ttf": "1090d3c54b6bb00fe0c8ba20734049dcdbc1fb2f08d669486d4090f600d5ba23",
+        "/usr/share/fonts/google-noto/NotoSans-CondensedExtraLight.ttf": "953af378bfb4373a85843577dff1b0467498db266caf8b52315050331185d7cc",
+        "/usr/share/fonts/google-noto/NotoSans-CondensedExtraLightItalic.ttf": "31d43d1e986e1b8e4f1359d5a49a96329824acdae72b7da039fd2c96fcfe434f",
+        "/usr/share/fonts/google-noto/NotoSans-CondensedItalic.ttf": "f9345cb19abfadb61f285795a091ffc60a15e9f2653ed866d1e06678fe571bc7",
+        "/usr/share/fonts/google-noto/NotoSans-CondensedLight.ttf": "323f1ede6fa0ee98c9e0d735b9b6387a6f930c7236cc4fdddac9b908d8e09619",
+        "/usr/share/fonts/google-noto/NotoSans-CondensedLightItalic.ttf": "601d8d2d4ea8b1fc47fae925021e2754d2cf1273767492fe59270763b39baccd",
+        "/usr/share/fonts/google-noto/NotoSans-CondensedMedium.ttf": "e367c9cff3acf134f7f12a6ae7ce876d6dbe3aaa2f70121bb1f9ab66457a7196",
+        "/usr/share/fonts/google-noto/NotoSans-CondensedMediumItalic.ttf": "e3f4a5a480a72e9cffdc537edafda08a37e8217be0286b97be9400edcda5c420",
+        "/usr/share/fonts/google-noto/NotoSans-CondensedSemiBold.ttf": "55ebf2188d1b9ff6b09affe3783c7704f8bd627586bf0a097ea4f6a8842f8cce",
+        "/usr/share/fonts/google-noto/NotoSans-CondensedSemiBoldItalic.ttf": "dbcccab18a767e05c545bf552f66eb1658511e1a20bb8a2f0007d1373f540ef0",
+        "/usr/share/fonts/google-noto/NotoSans-CondensedThin.ttf": "477b22ad2f1ebd98904984fc8794cb7d57eb97f1d9fd988f234dd779842b38da",
+        "/usr/share/fonts/google-noto/NotoSans-CondensedThinItalic.ttf": "e07157ced7c3922e0a16d95609f0605fb8a47afe4256dd7c661c46ba627fc796",
+        "/usr/share/fonts/google-noto/NotoSans-ExtraBold.ttf": "9f8776ead0801ab77a3d8b372df8a57a4405ea2caf945f9a66007d6b71448a60",
+        "/usr/share/fonts/google-noto/NotoSans-ExtraBoldItalic.ttf": "45d0ca53e9597ec4b2b3fccb674a46ac7368dc34045d664328c4a64c61054abc",
+        "/usr/share/fonts/google-noto/NotoSans-ExtraCondensed.ttf": "24c594fa365e2f06ebc5872d2e8c3e5af88cfdecb0aa4b86f5bf4c0c270d5223",
+        "/usr/share/fonts/google-noto/NotoSans-ExtraCondensedBlack.ttf": "6833b9f1ebad7bcb3dd0bcdc7898cd603024a9ce0261c97cc1e0c54ea7d0b6d1",
+        "/usr/share/fonts/google-noto/NotoSans-ExtraCondensedBlackItalic.ttf": "0665735f55857275967427b4958b31d0dcc1c16db0c3729ec0b54594ea20f877",
+        "/usr/share/fonts/google-noto/NotoSans-ExtraCondensedBold.ttf": "24c39c3a2c56b1f7fad4701f51c29c9573953acd4178af6ffecb5d49f9c42517",
+        "/usr/share/fonts/google-noto/NotoSans-ExtraCondensedBoldItalic.ttf": "432557d0b6807bb1f05166d3ea70a7216291f5fe231b8ebeede82b4ebd204565",
+        "/usr/share/fonts/google-noto/NotoSans-ExtraCondensedExtraBold.ttf": "ad4a7a5254d633536e1c5c7bc4aff3571460491b047e9d05e6445a3894a4048d",
+        "/usr/share/fonts/google-noto/NotoSans-ExtraCondensedExtraBoldItalic.ttf": "680516ddda1121cbf8bcc9c8e8f60486d1c1f8a6dab7b4e8d3cadd330bc57b84",
+        "/usr/share/fonts/google-noto/NotoSans-ExtraCondensedExtraLight.ttf": "c60fd1082ca470d3fa1897a43d62966e46bee5cf6569da5915755a7e4ac6431f",
+        "/usr/share/fonts/google-noto/NotoSans-ExtraCondensedExtraLightItalic.ttf": "3a4b614b857af42d6a17a5a76b9bbeb2e91665a50ced5f56fb1fd95afb5d0627",
+        "/usr/share/fonts/google-noto/NotoSans-ExtraCondensedItalic.ttf": "bd6c2aa896b9b7414257e2f63312930a225161e8caae8b99dfd01c124f302366",
+        "/usr/share/fonts/google-noto/NotoSans-ExtraCondensedLight.ttf": "1f9d72f96082251b833db5969f6f70144172b0085a6056568d8c9890697f8bb0",
+        "/usr/share/fonts/google-noto/NotoSans-ExtraCondensedLightItalic.ttf": "59ee1a1225096ba3779cabfdaefaf802bd74a96b870b7306a2e798dddb60c1cf",
+        "/usr/share/fonts/google-noto/NotoSans-ExtraCondensedMedium.ttf": "bff5706085b9eb32d22af680e73eec19a1db9bb43042040be40347c69d2ba73f",
+        "/usr/share/fonts/google-noto/NotoSans-ExtraCondensedMediumItalic.ttf": "eee2c290c2414cb455b56198e15d83c2e8575ad84948adbe973a6a450dead7bb",
+        "/usr/share/fonts/google-noto/NotoSans-ExtraCondensedSemiBold.ttf": "8c73251c9b1fe075c4f0d0cd76864c940b05cfd1042eae5d621eb8d377089253",
+        "/usr/share/fonts/google-noto/NotoSans-ExtraCondensedSemiBoldItalic.ttf": "5cefbf5f3eac39fff9fdbc0a4fbd8f719cf593d44d2d1beed32137cf6dc0e886",
+        "/usr/share/fonts/google-noto/NotoSans-ExtraCondensedThin.ttf": "8932a083d57a8eddd16b35415c591180120dc3ccdc0ff3d07ed18a64872511bc",
+        "/usr/share/fonts/google-noto/NotoSans-ExtraCondensedThinItalic.ttf": "51dae70afadd77150c647260037d29359cddef56ca16fbb1e2eecdebbc5864cb",
+        "/usr/share/fonts/google-noto/NotoSans-ExtraLight.ttf": "92eec20dd0a8ca60e0b783d4215f66a02ab34852723cb627179c503de2721292",
+        "/usr/share/fonts/google-noto/NotoSans-ExtraLightItalic.ttf": "e7fb364b76d779219c18a57e0b8fc7603fc049d3af5a0f4094b58b9ff547479a",
+        "/usr/share/fonts/google-noto/NotoSans-Italic.ttf": "467e3f89eeca4108bb8710a2b9e0cf2281ac56d5b0609211a83776d0505eecb5",
+        "/usr/share/fonts/google-noto/NotoSans-Light.ttf": "8bf10e8d399c5b70554eb76fe2629899a1098f1a8acb599804b76c619845ce0c",
+        "/usr/share/fonts/google-noto/NotoSans-LightItalic.ttf": "d87516896610c58ad9fcc4c7a75d84e98917941975a74b932b894f0d7126be44",
+        "/usr/share/fonts/google-noto/NotoSans-Medium.ttf": "635d93d1131d791f2576de90b3bb0f7cdf61929906e8420a61b5f7f8e76420bb",
+        "/usr/share/fonts/google-noto/NotoSans-MediumItalic.ttf": "2c103ff3735d1adffe0cc07f5121492a1ccbb271f46e54bb35d753445b5b3693",
+        "/usr/share/fonts/google-noto/NotoSans-Regular.ttf": "478c558ea716033cd60c03438f628dfa75694dcf6b5f6d505a2f05fd2b4f3823",
+        "/usr/share/fonts/google-noto/NotoSans-SemiBold.ttf": "a4e91fd530ac2b4ef5367240144ff37d7d65d66cf76f2e9a2187b93c676f92d0",
+        "/usr/share/fonts/google-noto/NotoSans-SemiBoldItalic.ttf": "62b9a66fb79be097ace62febeb884eeaec0e7440cb9e92f5c31db4eeae263e64",
+        "/usr/share/fonts/google-noto/NotoSans-SemiCondensed.ttf": "08197b0404ba2c8cec3c75ed58a94ee80f8101ceb358d976329a5e55499c30a4",
+        "/usr/share/fonts/google-noto/NotoSans-SemiCondensedBlack.ttf": "76eff3699a80aa5b0b2e918662d5156426069ed8c5db85db988bb74427bf9dff",
+        "/usr/share/fonts/google-noto/NotoSans-SemiCondensedBlackItalic.ttf": "57a77b3fee4a03c5e264e88a1cc96fe07213bd547e736bfe44d79639e4f8fe7f",
+        "/usr/share/fonts/google-noto/NotoSans-SemiCondensedBold.ttf": "39356e3bbeb467f7a6994b0c98d2ff0a5cdc3485b1654c14c2ee1b000589f37b",
+        "/usr/share/fonts/google-noto/NotoSans-SemiCondensedBoldItalic.ttf": "b991758831c7d2c96b941dee167350f01e01feb20f853e1bdb704b2a0de2d245",
+        "/usr/share/fonts/google-noto/NotoSans-SemiCondensedExtraBold.ttf": "c3dacd4f9eff26ab3e22ad3794884a3c91bca336c15e3a3fcc9507025712932c",
+        "/usr/share/fonts/google-noto/NotoSans-SemiCondensedExtraBoldItalic.ttf": "8b7146b18f9bfd7ae0e03b0777545312b11922af69dbf3c2fec2efb61beb825a",
+        "/usr/share/fonts/google-noto/NotoSans-SemiCondensedExtraLight.ttf": "2da4f44af726c6fce7a977757e6c4905bfc38514f6ff8ac8958f6452beffb9d5",
+        "/usr/share/fonts/google-noto/NotoSans-SemiCondensedExtraLightItalic.ttf": "eeed3eec911733f1f3a4f48f7b111a8e4568e3a05d1233c9898852e4cbcbe3b6",
+        "/usr/share/fonts/google-noto/NotoSans-SemiCondensedItalic.ttf": "0453765a6b7ed25319a535f096e962d76b3d2f8991a5157e9b4d90ec8920aae0",
+        "/usr/share/fonts/google-noto/NotoSans-SemiCondensedLight.ttf": "d691a8924cba8070a78f227d71ac5d2ac2c79ad085338888eb314e507d7a587c",
+        "/usr/share/fonts/google-noto/NotoSans-SemiCondensedLightItalic.ttf": "f974d3cc68c6811148d696d65eec767018bc4d0c4f75a6b9a8566cf6b4e56aab",
+        "/usr/share/fonts/google-noto/NotoSans-SemiCondensedMedium.ttf": "c6c52df92db42f17962a5c4c14d96f46c07855974f56d1599855c956c927b774",
+        "/usr/share/fonts/google-noto/NotoSans-SemiCondensedMediumItalic.ttf": "b3468205b3d90e6c17792df26a5caa04594a2a58ec7da36b80d5fb54f7788afb",
+        "/usr/share/fonts/google-noto/NotoSans-SemiCondensedSemiBold.ttf": "93b4a7a5fa59470285b4c189366eb7cc3ab5c9ebb738e592292ac5ea86ad6874",
+        "/usr/share/fonts/google-noto/NotoSans-SemiCondensedSemiBoldItalic.ttf": "7fcace833a6e46f319bd4c696004c53571526dde0ea5ccc540be5224f3d93fe5",
+        "/usr/share/fonts/google-noto/NotoSans-SemiCondensedThin.ttf": "eed1383473d36f482b67c48bfe81ecbafa51c964d8bbb970708be258e1659377",
+        "/usr/share/fonts/google-noto/NotoSans-SemiCondensedThinItalic.ttf": "454a89fee993df369e1356b6c0b44d7b8014e65f280dda7a43f87f3d18111d05",
+        "/usr/share/fonts/google-noto/NotoSans-Thin.ttf": "ebcc5796482176cca93418db799297554fa9f739489e81fb707990d9300841cb",
+        "/usr/share/fonts/google-noto/NotoSans-ThinItalic.ttf": "7d61c442bb785d16a22f3acd436e953bef5b24021137bc0c2a14c560a074ab02",
+        "/usr/share/fonts/google-noto/NotoSansGothic-Regular.ttf": "05edd26e173acd43fdf4cfdad4d051ba70a8d4de76042e9f15bd793c037f8239",
+        "/usr/share/fonts/google-noto/NotoSansGurmukhi-Black.ttf": "d0773b1f193925f33da6c1e02aa772563be53713972eab27feb326ee33e7978a",
+        "/usr/share/fonts/google-noto/NotoSansGurmukhi-Bold.ttf": "4f1bb4b1a05a0ebe1520678132a9448fce8f1741552c5292d7df7a7786d2c956",
+        "/usr/share/fonts/google-noto/NotoSansGurmukhi-Condensed.ttf": "fa35f95ef05d102f41b2f9f0ce6f9a7ec09ee2ac9a55f382588fa9b882b03ff5",
+        "/usr/share/fonts/google-noto/NotoSansGurmukhi-CondensedBlack.ttf": "93bc24cba3ca337936938159a9812f069a329f567f07fcaa53db191c07ca33c8",
+        "/usr/share/fonts/google-noto/NotoSansGurmukhi-CondensedBold.ttf": "6bf51f39a4df780718925468b79ddc3dc9409cf272a50da30f499ddc82daa695",
+        "/usr/share/fonts/google-noto/NotoSansGurmukhi-CondensedExtraBold.ttf": "0432883d9dfec9fdbb85ab98799e3a5868d5029b05bc4529445f12e8579f6a54",
+        "/usr/share/fonts/google-noto/NotoSansGurmukhi-CondensedExtraLight.ttf": "19616c5205984701c002baf3841b749bebe4e683ed8f1312b77dfc7921dc4ae2",
+        "/usr/share/fonts/google-noto/NotoSansGurmukhi-CondensedLight.ttf": "7bb2b8f3cc352900b0e1f16f168af9474bd0c53fb86f710847e2ee5ba7690b09",
+        "/usr/share/fonts/google-noto/NotoSansGurmukhi-CondensedMedium.ttf": "0b6bee3a066197e655eb9c80a2eb889659182db206e2067355d1438aa8e83f24",
+        "/usr/share/fonts/google-noto/NotoSansGurmukhi-CondensedSemiBold.ttf": "6712734abffed951eb1cf4d787c9d00420eef8d4aed1e29e1e63970458ef3ed1",
+        "/usr/share/fonts/google-noto/NotoSansGurmukhi-CondensedThin.ttf": "fd8874e6a5954f70c018c31bc27b160549e4b35214aa888511b0b6dc3de254c1",
+        "/usr/share/fonts/google-noto/NotoSansGurmukhi-ExtraBold.ttf": "4a73e2a52fc03a2dffb6f418132e5eb7de1ef9ce58d60b5293d4df12e321b9fc",
+        "/usr/share/fonts/google-noto/NotoSansGurmukhi-ExtraCondensed.ttf": "4865971ab768736406d96ad41d55e2fbaef2d1edb66de829833180b674f4e7ac",
+        "/usr/share/fonts/google-noto/NotoSansGurmukhi-ExtraCondensedBlack.ttf": "e8dbfe7e4a79d29f2fcb4cd8f4524370bb25559a426cd5c346d1ae8751969c81",
+        "/usr/share/fonts/google-noto/NotoSansGurmukhi-ExtraCondensedBold.ttf": "a56c6a6e587f3251e10e9b3068dfce7caec4e9313736322125a4af3fe374f90a",
+        "/usr/share/fonts/google-noto/NotoSansGurmukhi-ExtraCondensedExtraBold.ttf": "ffd45b4afbb2529318eefd0eded8b8a798d552140f0264d79f690ca3cd171930",
+        "/usr/share/fonts/google-noto/NotoSansGurmukhi-ExtraCondensedExtraLight.ttf": "bcba921c16fbe0ffc6462cae182e4e4a22c0f06b94a15341f0b7090a2b799ce2",
+        "/usr/share/fonts/google-noto/NotoSansGurmukhi-ExtraCondensedLight.ttf": "0cd80a77eac2c428b7faff761d8de6cf0a12a3c40cf18a9e4e10aefe887b648e",
+        "/usr/share/fonts/google-noto/NotoSansGurmukhi-ExtraCondensedMedium.ttf": "16a89bbfe00a27dc85870a02c973d6e19d2f5013ef3a885cd5e3acecc8b9a809",
+        "/usr/share/fonts/google-noto/NotoSansGurmukhi-ExtraCondensedSemiBold.ttf": "86f3f626e78b2ed3f1c5fef9a8266ca1b062dbf724c86e1887a5af569da423b3",
+        "/usr/share/fonts/google-noto/NotoSansGurmukhi-ExtraCondensedThin.ttf": "bb687f1822ab09682c8acce71aa4917ba911058acebe809fc456905f8ca9e746",
+        "/usr/share/fonts/google-noto/NotoSansGurmukhi-ExtraLight.ttf": "2175aaa5090949e88d25c3fe22e2d1f421b5ee8e73fe7d8bf7279cbb4d47ff73",
+        "/usr/share/fonts/google-noto/NotoSansGurmukhi-Light.ttf": "834394e97954d43767bc6a8a6fd6db0dc879e5051133632139621eb24e5302e5",
+        "/usr/share/fonts/google-noto/NotoSansGurmukhi-Medium.ttf": "f7e0a2184434ca064304a2c727b7ded8584049e4b12a7728109b7885a665f75d",
+        "/usr/share/fonts/google-noto/NotoSansGurmukhi-Regular.ttf": "658d0207da305a1411c539a8b0bbeda64d4146e54fb4827facddb890b6b90d74",
+        "/usr/share/fonts/google-noto/NotoSansGurmukhi-SemiBold.ttf": "f8a54df867ccdf5e329877be789e6fc94558e9adb7754e89900368af7b983870",
+        "/usr/share/fonts/google-noto/NotoSansGurmukhi-SemiCondensed.ttf": "a039c5c5da0a0dce752ae20c238e6b1fb54bd853c7e2ac95c00747d29146aace",
+        "/usr/share/fonts/google-noto/NotoSansGurmukhi-SemiCondensedBlack.ttf": "db2b9f36f22159ed854e627d58d2a98c35c7ef7c09c27ac3b5908d38ed02b40f",
+        "/usr/share/fonts/google-noto/NotoSansGurmukhi-SemiCondensedBold.ttf": "1c1092758ad7e8016fb046d2342eb2e9ba5a92a8ebc5044e7b989b26299dce2a",
+        "/usr/share/fonts/google-noto/NotoSansGurmukhi-SemiCondensedExtraBold.ttf": "2803a382f933a2f5380dc3d64ca4ae141ef8899b6416d6c9f9f67e20e419146f",
+        "/usr/share/fonts/google-noto/NotoSansGurmukhi-SemiCondensedExtraLight.ttf": "51fb620a05c86363d8cb5d0cae6fbb3e981b700defc40c8fe8abae4b3368fc29",
+        "/usr/share/fonts/google-noto/NotoSansGurmukhi-SemiCondensedLight.ttf": "6ab87fe49291490d97c6ba15ef093e3c3d015a56469457ba69ae7181f45d7d0b",
+        "/usr/share/fonts/google-noto/NotoSansGurmukhi-SemiCondensedMedium.ttf": "4887a95f45303f96ff088e10e380617fe7dae14a57392978b6f1d4927aee9dc7",
+        "/usr/share/fonts/google-noto/NotoSansGurmukhi-SemiCondensedSemiBold.ttf": "85d8040ccacb231e29605556da1672dd99bd6f412a395a988eadf047ff1e0455",
+        "/usr/share/fonts/google-noto/NotoSansGurmukhi-SemiCondensedThin.ttf": "4ba6c7bde1efc83c40e1ac0ab58efedd0a468ec3867ccdec0e2ba13423e1f239",
+        "/usr/share/fonts/google-noto/NotoSansGurmukhi-Thin.ttf": "f0e20ec51034b332ffe5df48cdc709c890991095acfe20e22878791d76fa0869",
+        "/usr/share/fonts/google-noto/NotoSansMath-Regular.ttf": "d51afd5739c7ba6c44fcab35a88160e25dfb69a2d4ad0bd99533f8d894af1f96",
+        "/usr/share/fonts/google-noto/NotoSansMono-Black.ttf": "f2a28df76a1ff7d43648d2625c895468ba3ca2910e0c3ce133361225c0064cb5",
+        "/usr/share/fonts/google-noto/NotoSansMono-Bold.ttf": "a21ea0ba6ea49fda7b34ca39a504b487f1130885d36e1a4f9f4255b3ba6994bc",
+        "/usr/share/fonts/google-noto/NotoSansMono-Condensed.ttf": "d60154ae4ecc9f2e8a1333de367b5decff30715f50dd1eca0048cd68fd905fd6",
+        "/usr/share/fonts/google-noto/NotoSansMono-CondensedBlack.ttf": "caab5e9f42413742e8e672f0423aa20ab3d9a7b4da3c4886a2b7238b5b711341",
+        "/usr/share/fonts/google-noto/NotoSansMono-CondensedBold.ttf": "0e00e373e793790415da3c43d8a81fe889bd5c6306e2954e13a0b6052a2e59e1",
+        "/usr/share/fonts/google-noto/NotoSansMono-CondensedExtraBold.ttf": "031a5c9b7a5ef7b3d0881bc06fb17de2c856646fc36a58597363d842a920552e",
+        "/usr/share/fonts/google-noto/NotoSansMono-CondensedExtraLight.ttf": "72f276ecce1d80f5d689ce630191f4216138abc6e7f88d115fe782eb287ab6f7",
+        "/usr/share/fonts/google-noto/NotoSansMono-CondensedLight.ttf": "7b5460d4f41df8b91c833883213ec7641126f7952d00b1383008251f1219e960",
+        "/usr/share/fonts/google-noto/NotoSansMono-CondensedMedium.ttf": "4724bfefed6d7ececaec65af6793ec588231b4b83657b7871bab96c1d8d0bb35",
+        "/usr/share/fonts/google-noto/NotoSansMono-CondensedSemiBold.ttf": "57ed75368020dfe638c702822a5d5d721b937666f04cdb37cf6bcef14bda299d",
+        "/usr/share/fonts/google-noto/NotoSansMono-CondensedThin.ttf": "68283375c780515dfbec91131e5ca6e969953aad80c3dab4f063dfce6f7545ca",
+        "/usr/share/fonts/google-noto/NotoSansMono-ExtraBold.ttf": "fc9d9533b8b8e8dff7c8f86a959251971ff97c2db416c14077fa7b22614bcb4d",
+        "/usr/share/fonts/google-noto/NotoSansMono-ExtraCondensed.ttf": "3530253a397fdcf8156f1961de96081e93f7492f334b6381f8135ab1b7bf44be",
+        "/usr/share/fonts/google-noto/NotoSansMono-ExtraCondensedBlack.ttf": "5b45eb7fba4e9e8930d4f2ead3989e1030e44a04fd2b544caf7d86597f806c0e",
+        "/usr/share/fonts/google-noto/NotoSansMono-ExtraCondensedBold.ttf": "5bc8447ec511ab0a1dd8498adadd1cbef1d70e94c625fb614eac40eef30730d2",
+        "/usr/share/fonts/google-noto/NotoSansMono-ExtraCondensedExtraBold.ttf": "54d4f8c63e9af12c96b25995cb5215f2891e51432e4096b68225122c2df2720a",
+        "/usr/share/fonts/google-noto/NotoSansMono-ExtraCondensedExtraLight.ttf": "829257ff6cc7c86eae6de69f42c970023525229e56079314ef6bbbc8057046fd",
+        "/usr/share/fonts/google-noto/NotoSansMono-ExtraCondensedLight.ttf": "65493bb96369db92ebe5f3836b8a1bf55d7423cab60312e08b59915a897bf15b",
+        "/usr/share/fonts/google-noto/NotoSansMono-ExtraCondensedMedium.ttf": "c20218853d3593824f1b71003220a3562c227877c4cb5c4ddc41f1f9de575151",
+        "/usr/share/fonts/google-noto/NotoSansMono-ExtraCondensedSemiBold.ttf": "32fec82e43ac237c0abcc6eb0b8506caae7b8b4fdf1e086580226712c7e89130",
+        "/usr/share/fonts/google-noto/NotoSansMono-ExtraCondensedThin.ttf": "073fb8b95f0552dec849fae998ed05ec7bb848c0c465c6e20b94f9ba846c9538",
+        "/usr/share/fonts/google-noto/NotoSansMono-ExtraLight.ttf": "d4071d53c60f4d1022dc07e9d6b9df693798fa28a802d1451d4e053e2e6af1d8",
+        "/usr/share/fonts/google-noto/NotoSansMono-Light.ttf": "9c9dc46df01c3acee14690fc1be60f6c863675b5ac9ee190f304656dbb9ba9aa",
+        "/usr/share/fonts/google-noto/NotoSansMono-Medium.ttf": "53e262499b3e6b4e7274dcc4840e9374c8d9c4a4fad48227a38d8cedd2e34c40",
+        "/usr/share/fonts/google-noto/NotoSansMono-Regular.ttf": "65b5e2b2c4a1fba9ae8be1f026cb35b03dcb8886d9b2a4147054fde12f7e767d",
+        "/usr/share/fonts/google-noto/NotoSansMono-SemiBold.ttf": "82e49094ec3a1a3c8fa0d730016f5f890384f6e164dd2cc84f39b30639bb6e8f",
+        "/usr/share/fonts/google-noto/NotoSansMono-SemiCondensed.ttf": "88ec249753ac493942982c327c4e2242404154b63e8e5e4324767742bacd0d72",
+        "/usr/share/fonts/google-noto/NotoSansMono-SemiCondensedBlack.ttf": "18ceccd203e8000506c239d8934aca48c7e93798d18d5559bc466fc36dfd2228",
+        "/usr/share/fonts/google-noto/NotoSansMono-SemiCondensedBold.ttf": "92f07da3378d4e76420ccf3450c0b38dd7173e45992ab4d35676e5edba16e1f0",
+        "/usr/share/fonts/google-noto/NotoSansMono-SemiCondensedExtraBold.ttf": "7004e5b26378740d5918abf957dd6d3f7a533bd9812389929a2ef74ea35e9fcb",
+        "/usr/share/fonts/google-noto/NotoSansMono-SemiCondensedExtraLight.ttf": "1e1329f10087fe60ba06858f722978138683431c54207f43daa2300211a005cb",
+        "/usr/share/fonts/google-noto/NotoSansMono-SemiCondensedLight.ttf": "28e39c4bee447560b5d14a58d7da76fba7450d1908163e71cc2e8340f3601acc",
+        "/usr/share/fonts/google-noto/NotoSansMono-SemiCondensedMedium.ttf": "fd49b539fe83f86e1aa27dddb51d2da8ba2a0e987a3b84069834302d2924b9a2",
+        "/usr/share/fonts/google-noto/NotoSansMono-SemiCondensedSemiBold.ttf": "3c3c26a991ded3f49123d61efe002152f487c688426cbeae82dd0cb524ef1d72",
+        "/usr/share/fonts/google-noto/NotoSansMono-SemiCondensedThin.ttf": "74d7a9f66a53409f8b4e1ff85dd01354a3ff8e733da05de56647cdc34b8ca23d",
+        "/usr/share/fonts/google-noto/NotoSansMono-Thin.ttf": "7c430e89bd442c5d02f947ca190fc78cb54136fc3f32eca9a7a3c492820e7074",
+        "/usr/share/fonts/google-noto/NotoSansNKo-Regular.ttf": "c756efb2c40f754107d76fa4e401fc3b8b7edec5cc65db549d3d0236ac6d08a1",
+        "/usr/share/fonts/google-noto/NotoSansSymbols2-Regular.ttf": "c4a0a80f0041ce4be81e2478faad22776d23edb98ae3f0d19bd37044820ecf9d",
+        "/usr/share/fonts/google-noto/NotoSansYi-Regular.ttf": "9d5d3f9912f14bee3f32c9d8add8a5dd02910dcabc00e3702a2b9883556852c9",
+        "/usr/share/fonts/google-noto/NotoSerif-Black.ttf": "fe00a6442f96ca0ab8de868ed837a26810a984f1389298430133d22c91790230",
+        "/usr/share/fonts/google-noto/NotoSerif-BlackItalic.ttf": "443e4b1f493cd67c97ddaba43d4e5c77871ab762bdc28a054328992d86cd3de3",
+        "/usr/share/fonts/google-noto/NotoSerif-Bold.ttf": "96656aa5cec8f1d6fd0e804c1fad397e1a1cfa082e6642124e0bda68cd8363ce",
+        "/usr/share/fonts/google-noto/NotoSerif-BoldItalic.ttf": "c710c5b9cf354ae46e7a10472a08019b28220fafeb5887a482a76856f8f6fc0b",
+        "/usr/share/fonts/google-noto/NotoSerif-Condensed.ttf": "d0434e2eeb467172a723184911ea4d6d33292e6c1578af591859064ff458ec4d",
+        "/usr/share/fonts/google-noto/NotoSerif-CondensedBlack.ttf": "3e9500a32e0cec131f437708858f921bc48caf3c0996917bbd1c09a0fc7303c9",
+        "/usr/share/fonts/google-noto/NotoSerif-CondensedBlackItalic.ttf": "ef17eb50dc7f78890c2b90c3e7848a79e062b31333bc4aca15b6538f43445fd3",
+        "/usr/share/fonts/google-noto/NotoSerif-CondensedBold.ttf": "47afe98be11bfa3ed97521f421624f9c4390fc7ef7d3a6f84caec0674ada5484",
+        "/usr/share/fonts/google-noto/NotoSerif-CondensedBoldItalic.ttf": "3e0a7ea34b5d34f5c101075aa9f45c59ad420086ac75c6525180475a09b3c490",
+        "/usr/share/fonts/google-noto/NotoSerif-CondensedExtraBold.ttf": "7b076fff91ff11c70afc058e1d049efca89b94f681ec4f506df27394325fb47d",
+        "/usr/share/fonts/google-noto/NotoSerif-CondensedExtraBoldItalic.ttf": "d8214a0206f0e7b4f0e9acf66a056cf7e1f7a65289b7ed23f0fd98f030c6c372",
+        "/usr/share/fonts/google-noto/NotoSerif-CondensedExtraLight.ttf": "fbde651a5d4fbc99129e1e91a1f15f03f3bf165a890bdc43b637890837a3b31c",
+        "/usr/share/fonts/google-noto/NotoSerif-CondensedExtraLightItalic.ttf": "7c0b4f49385f0f4b722d1ad6971dddf1d29b2414b3237f573add169076acff38",
+        "/usr/share/fonts/google-noto/NotoSerif-CondensedItalic.ttf": "ad5cb8045b0f15f39e21e8e24ec46dd7aebcfd70e6deffe9ad090be318e0c9f7",
+        "/usr/share/fonts/google-noto/NotoSerif-CondensedLight.ttf": "a2461a6474e6dfe99581a205a7b4bdab8048bbf3c44300e5f5f475ac909574b8",
+        "/usr/share/fonts/google-noto/NotoSerif-CondensedLightItalic.ttf": "4704536146b81cf4cb5553a433df89c84e8a4d2971454b66a2886530eb964043",
+        "/usr/share/fonts/google-noto/NotoSerif-CondensedMedium.ttf": "2c9751cbb559936487144ac4603234ffafc4eb482f25fc3cad6dace2232c6dd2",
+        "/usr/share/fonts/google-noto/NotoSerif-CondensedMediumItalic.ttf": "ca274f667556912afbc10251a9401e1165ade558c93dcc84b8a7c10cc3163ccc",
+        "/usr/share/fonts/google-noto/NotoSerif-CondensedSemiBold.ttf": "4ee5faf08ae10ffd68fc16c7e408cee5709033ed6a563e3040619397d5c11d68",
+        "/usr/share/fonts/google-noto/NotoSerif-CondensedSemiBoldItalic.ttf": "4419ab754107fed6033ebf0b3f29819781796068ebeca99620fcecc6d6ffacc3",
+        "/usr/share/fonts/google-noto/NotoSerif-CondensedThin.ttf": "23ab1526ed957ab0b48b83e874a3a50be459867e051dda4fd6e9020c8078f205",
+        "/usr/share/fonts/google-noto/NotoSerif-CondensedThinItalic.ttf": "cba68d85d4cd78bda146e01672188ed2f0b67ad573301b3752d5a565fa945fdb",
+        "/usr/share/fonts/google-noto/NotoSerif-ExtraBold.ttf": "4a37007cde6e82710dd23b0ae86e58e225ab4ea1c3a79b36cfa5a184500e5b01",
+        "/usr/share/fonts/google-noto/NotoSerif-ExtraBoldItalic.ttf": "148b2a49a5ed4d28c541b4f066e4e5ffadb9e90423bc775dc827a299c248db16",
+        "/usr/share/fonts/google-noto/NotoSerif-ExtraCondensed.ttf": "3b5a405e821ba1b86c236ec2f539dfab5ddb080409102b5d8b0d4622d52bafa5",
+        "/usr/share/fonts/google-noto/NotoSerif-ExtraCondensedBlack.ttf": "3e4eeef02000bcc641369e062dcf85f463d6defd3ee436176cd1dd6466408c20",
+        "/usr/share/fonts/google-noto/NotoSerif-ExtraCondensedBlackItalic.ttf": "9bf32d2c784a30b00f6554b984be667300ae527088704c8d51a847def7e0bedb",
+        "/usr/share/fonts/google-noto/NotoSerif-ExtraCondensedBold.ttf": "c2b2c0ae165cbd074007dbc86effa1f21e528e6c8744691ddaee99ffe387f995",
+        "/usr/share/fonts/google-noto/NotoSerif-ExtraCondensedBoldItalic.ttf": "d8067c0f21571c16d28e447e4cbae70c62e5af3de29494ae5eef6a4f1ce98df9",
+        "/usr/share/fonts/google-noto/NotoSerif-ExtraCondensedExtraBold.ttf": "56fb4a6a69b466a9f24c3a9e98e8e2a541383c7d32b4cb2dbfb37bb6a00a8341",
+        "/usr/share/fonts/google-noto/NotoSerif-ExtraCondensedExtraBoldItalic.ttf": "eb7c7d3030f4de02fa94663d42fc3617af8bfa8d105916e7977afbc4869f4c2f",
+        "/usr/share/fonts/google-noto/NotoSerif-ExtraCondensedExtraLight.ttf": "e7404ccaec5d369fb0f45d13fa1dc2f0794c184f8e301b988a02b18d0d64351e",
+        "/usr/share/fonts/google-noto/NotoSerif-ExtraCondensedExtraLightItalic.ttf": "786035be4bcac3f90ecbf53e0eae49cf32e436158e4fb0a41e5ac825fba7f9cc",
+        "/usr/share/fonts/google-noto/NotoSerif-ExtraCondensedItalic.ttf": "65a01288bd7157dae5cb3923493e0c2d8fdf5c6488746d6e1f3a6295d13aef68",
+        "/usr/share/fonts/google-noto/NotoSerif-ExtraCondensedLight.ttf": "92df91f123c332b94d6f46bcd58f7e4efb5c2d4f11e8af10c75b1a9f24966fad",
+        "/usr/share/fonts/google-noto/NotoSerif-ExtraCondensedLightItalic.ttf": "69ca046ae5159772b0e70b2a2a0bb39596f3a492f464b170700bab6a458d1a65",
+        "/usr/share/fonts/google-noto/NotoSerif-ExtraCondensedMedium.ttf": "97f106d7c827d93abd0dd49059134e0dd63f0420fae27d345ffd6c5eb10160e6",
+        "/usr/share/fonts/google-noto/NotoSerif-ExtraCondensedMediumItalic.ttf": "15d7a23d87b6565c93c10523c93831a459e7ebab9ea57c08562b0425ca9d624d",
+        "/usr/share/fonts/google-noto/NotoSerif-ExtraCondensedSemiBold.ttf": "2cf8157550c3b39062083f99f8b21c9a4dc2173537ec5cd70509fea525937f47",
+        "/usr/share/fonts/google-noto/NotoSerif-ExtraCondensedSemiBoldItalic.ttf": "d66f7bf556d7796691a584e41dafc896574527dff39bcfecb9af0b034ed768e9",
+        "/usr/share/fonts/google-noto/NotoSerif-ExtraCondensedThin.ttf": "f0af3ad80646c853434d4df2dbac05c4d4b9661e354abfeca3d0e08fb82fb23f",
+        "/usr/share/fonts/google-noto/NotoSerif-ExtraCondensedThinItalic.ttf": "96a392a85919c87f9e0f8df230e0f2fbcad9b5d651c3a641af7e596e5bff5d1b",
+        "/usr/share/fonts/google-noto/NotoSerif-ExtraLight.ttf": "c748f04e98ea25ef52ed74d2a6c7ea71295f8f7fdcbfb7c2c367e53703f400e8",
+        "/usr/share/fonts/google-noto/NotoSerif-ExtraLightItalic.ttf": "32c0746d60c397b6acd81abedb181445e564cae32eea986dcf1fa2ceb3a2c933",
+        "/usr/share/fonts/google-noto/NotoSerif-Italic.ttf": "749e80e313ef711f9373c6cce17c72297ef05490b3dcda7967d1d5d90bf1183f",
+        "/usr/share/fonts/google-noto/NotoSerif-Light.ttf": "0f3960036f3f9c3c88f813ac9c51681645c21df60aadaf4a34a4767a2e8aadbd",
+        "/usr/share/fonts/google-noto/NotoSerif-LightItalic.ttf": "320bf4124bb3f702602265aa543ceada4e9de54b4dfd00e84382c1febae91e94",
+        "/usr/share/fonts/google-noto/NotoSerif-Medium.ttf": "afed2854f24565479063b854b22a21ec88673d9413fd3eb7a5b2a3b00f4dd64b",
+        "/usr/share/fonts/google-noto/NotoSerif-MediumItalic.ttf": "d7a129a1d44c0a597fc36ce5b2ea6a98503bd2277642e946d25ffdf5520991ec",
+        "/usr/share/fonts/google-noto/NotoSerif-Regular.ttf": "19e72cd8d595fae5bd74a5206f5d938512e1183d4fed7abb1ec1be1d7efa5f88",
+        "/usr/share/fonts/google-noto/NotoSerif-SemiBold.ttf": "8a344d65ba56c58991ec6c3b40faf73af4e73ecd3e1db624ea640292d98b5bb6",
+        "/usr/share/fonts/google-noto/NotoSerif-SemiBoldItalic.ttf": "233e5aaf2a2c60c17ed8ac6ac3178ee7d293f00dca4bbe8f9127d29996e56bfa",
+        "/usr/share/fonts/google-noto/NotoSerif-SemiCondensed.ttf": "443a968c16fad3ab52e0d190321696b69a8bffd5eb4426301cda784f0f30312f",
+        "/usr/share/fonts/google-noto/NotoSerif-SemiCondensedBlack.ttf": "bfe5e959ef999864aef661976759050ca389b3a43038f2a5d1d577c6da16d274",
+        "/usr/share/fonts/google-noto/NotoSerif-SemiCondensedBlackItalic.ttf": "e9d8363f72d48977c6c88bb2741689e077c27ae67ff37e919cf255f5efc22cf2",
+        "/usr/share/fonts/google-noto/NotoSerif-SemiCondensedBold.ttf": "db2b3090d8984e8711c0b1aeea6f95cd839fa1437bd24e5a796660d2772e9727",
+        "/usr/share/fonts/google-noto/NotoSerif-SemiCondensedBoldItalic.ttf": "15ee57f7b3a5a0557692f26a7f4247b6e10a782a3fee18c5a5a79957598a136b",
+        "/usr/share/fonts/google-noto/NotoSerif-SemiCondensedExtraBold.ttf": "886734117d0553e7c9fb8872c81de2fdf151eddce2b094ac7d103464f49523f7",
+        "/usr/share/fonts/google-noto/NotoSerif-SemiCondensedExtraBoldItalic.ttf": "671065e6b5da4005472e7fa4c067459c34c52414a3976c9c0dd4667f19ae2c95",
+        "/usr/share/fonts/google-noto/NotoSerif-SemiCondensedExtraLight.ttf": "1728e657afcfc9838d48c89257503177b2f2382d8feacb85ad75b87fa294d3cc",
+        "/usr/share/fonts/google-noto/NotoSerif-SemiCondensedExtraLightItalic.ttf": "46ca28ab2bb1d70ebfc98729e3dde7cebb2f99f55f5835a513fdae9b0f889751",
+        "/usr/share/fonts/google-noto/NotoSerif-SemiCondensedItalic.ttf": "fa62a45bc5af1f40828f911d52afbd34c20da5ac2059e09518cf64cde2246368",
+        "/usr/share/fonts/google-noto/NotoSerif-SemiCondensedLight.ttf": "a831356b9676798d2396527fa4153a76b1bf51177714ec2f741d7e95d4a9dbf1",
+        "/usr/share/fonts/google-noto/NotoSerif-SemiCondensedLightItalic.ttf": "cd09aebf9fed47ff13a55d77c6f9275dfd263a92c61e2346076c8bf7bbaa0481",
+        "/usr/share/fonts/google-noto/NotoSerif-SemiCondensedMedium.ttf": "4c20e89ae447066de11239291ae5d069b23880e3280391638cb5cdcff1cadcaf",
+        "/usr/share/fonts/google-noto/NotoSerif-SemiCondensedMediumItalic.ttf": "3162f42d6086e3e3e10c912e5fa4812cd4f63c1fcfca2dce32c42e80b098ee8d",
+        "/usr/share/fonts/google-noto/NotoSerif-SemiCondensedSemiBold.ttf": "b703127a9834e593aa7370923526574aa78bb5b112ac65e531aa7bca9398ab5d",
+        "/usr/share/fonts/google-noto/NotoSerif-SemiCondensedSemiBoldItalic.ttf": "26918702e06dcc73657e77226962861af7d3c459a56a624916edb153fb027148",
+        "/usr/share/fonts/google-noto/NotoSerif-SemiCondensedThin.ttf": "6d5eae73ffdddb3e82967d33f0bdec4112ec89ae2f64eecfba9ceaed82b4de7f",
+        "/usr/share/fonts/google-noto/NotoSerif-SemiCondensedThinItalic.ttf": "cda6e584ad66df7f3c5692d8336a454c068f36c410b5ac5881071170a3a2a2af",
+        "/usr/share/fonts/google-noto/NotoSerif-Thin.ttf": "29e2e93b39405da649e93cdab0dc5ac0787f19447260821ff2da71d20caaa5f9",
+        "/usr/share/fonts/google-noto/NotoSerif-ThinItalic.ttf": "bae29f58b7aee59109444960327e42c8b65031e5a627c6781f3dbdb2dffd7c16",
+        "/usr/share/fonts/jomolhari-fonts/Jomolhari-alpha3c-0605331.ttf": "e3fed03ced660676d663835d08b8ca03a29ea7cf59c59bf81a4fd44c9520b71c",
+        "/usr/share/fonts/julietaula-montserrat-fonts/Montserrat-Black.otf": "b8c0e2f47868a9f3f7b67470ff16de6783a2e1989747fbf83d9a7165c2f5fa8c",
+        "/usr/share/fonts/julietaula-montserrat-fonts/Montserrat-BlackItalic.otf": "af44b4a8ceae3962ff7ce08bc58b16d34eb9c5e10effe00d381e8c8716d349d0",
+        "/usr/share/fonts/julietaula-montserrat-fonts/Montserrat-Bold.otf": "7869c1657888d7d9ba60fa243a37ffbc6b0eb316b1a93044bb1e07ba6ec169a8",
+        "/usr/share/fonts/julietaula-montserrat-fonts/Montserrat-BoldItalic.otf": "6d9976b6777dbd42ff3f142dced254b8d5b1f40f68c7c554d19d5759c11ddcc3",
+        "/usr/share/fonts/julietaula-montserrat-fonts/Montserrat-ExtraBold.otf": "1d701c2f3edf277eed83e4cc2e78908b0ef1a53c5420f02d1db7f2da2bc33d32",
+        "/usr/share/fonts/julietaula-montserrat-fonts/Montserrat-ExtraBoldItalic.otf": "7a7f04b137c37bcb87e3e5ad8189bc16465c2a21249f6a6d67bd63d235ea82fd",
+        "/usr/share/fonts/julietaula-montserrat-fonts/Montserrat-ExtraLight.otf": "6959fd5ff7037cc14e5f8950708fff350c699028fea7619f2973ddf8960e7b9a",
+        "/usr/share/fonts/julietaula-montserrat-fonts/Montserrat-ExtraLightItalic.otf": "835b69dd5d507bf6ca53597606e94babb9510faf64a07f10fc91d8e7bdeda179",
+        "/usr/share/fonts/julietaula-montserrat-fonts/Montserrat-Italic.otf": "6dfafd54fc183c216959cc2bf5fc12ac1d88f424c9457be1016e892b93a62208",
+        "/usr/share/fonts/julietaula-montserrat-fonts/Montserrat-Light.otf": "df16aef5fcf3494b9ec42b8d45698d657e419dadd9aa9d43899c7b597a211aaf",
+        "/usr/share/fonts/julietaula-montserrat-fonts/Montserrat-LightItalic.otf": "3e8c72e19eefe2771ec4614b7400882a51d2cf3ed67b85c673c22943a133ced5",
+        "/usr/share/fonts/julietaula-montserrat-fonts/Montserrat-Medium.otf": "9e2bff7923aaf42c5db116a1811f35ff41aa978abf091aed97ab5e1d0f052669",
+        "/usr/share/fonts/julietaula-montserrat-fonts/Montserrat-MediumItalic.otf": "04d67ef90e29417eed04a4457fe642428f66e7a78f2326b9d50d9ace347b8d29",
+        "/usr/share/fonts/julietaula-montserrat-fonts/Montserrat-Regular.otf": "c40080ac0d0a318d51b9242864c938f8e12df019285b6d9543c266c85eee1123",
+        "/usr/share/fonts/julietaula-montserrat-fonts/Montserrat-SemiBold.otf": "a9933a7a7c1188dac12907f9a84a1af819110cfbb697f3a5111caaae641dcc3d",
+        "/usr/share/fonts/julietaula-montserrat-fonts/Montserrat-SemiBoldItalic.otf": "90e29227609262af55625c67f1729dde3b89e23c1d0bd3b2eb481817d109c082",
+        "/usr/share/fonts/julietaula-montserrat-fonts/Montserrat-Thin.otf": "f5ed2319fb4b60fad5426ff6eaee8181f99bdc6ccc77c4a5debf49a66f6862a3",
+        "/usr/share/fonts/julietaula-montserrat-fonts/Montserrat-ThinItalic.otf": "1d82169bd4d555fd23070b6a086157621eaa0632dfe5f3634c521c371bb013f3",
+        "/usr/share/fonts/julietaula-montserrat/Montserrat-Bold.woff": "df4e049d933a5be9949549581b205ec296b105589fa853cc51292adddff076d8",
+        "/usr/share/fonts/julietaula-montserrat/Montserrat-Bold.woff2": "29c32cacfed9cbacd7336d1a175235bf99a4ee6a3c320f832da53cc6dda8efda",
+        "/usr/share/fonts/julietaula-montserrat/Montserrat-ExtraBold.woff": "81e700ece6c428ce96dc555fa4d21a43599d347f17ec494fac3f1d0f60cf4d65",
+        "/usr/share/fonts/julietaula-montserrat/Montserrat-ExtraBold.woff2": "afb17106253eaa7b7ddcb245137fa0dc3dacfed08637f12922a0499d143ad2ae",
+        "/usr/share/fonts/julietaula-montserrat/Montserrat-Italic.woff": "a48fbc80d3b1b62dcc7f23ae6630269ba362bf4b6a00a6f791fe01342a97fac8",
+        "/usr/share/fonts/julietaula-montserrat/Montserrat-Italic.woff2": "768120bc0c3501fd84567ab9a11ee4997029b3806c40d5de3753c324c42b0a34",
+        "/usr/share/fonts/julietaula-montserrat/Montserrat-Light.woff": "9334fb66b5322611366958b9da0f1eb09440ceac056d39a6f6ca67cdc5dfced4",
+        "/usr/share/fonts/julietaula-montserrat/Montserrat-Light.woff2": "d527b5dd479ec257da2c09ca09b4a94ecbafb7a0062a7873f41cd2d36a8cf8bb",
+        "/usr/share/fonts/julietaula-montserrat/Montserrat-Regular.woff": "7380f7e1292ea1cc94812ce0d810a6701fd7ff7db6d55be737ed150c9fd5bea7",
+        "/usr/share/fonts/julietaula-montserrat/Montserrat-Regular.woff2": "92cba068249e9ca44d99d19ccda0616f4743b5455426858cfee4e30bd8a53b6a",
+        "/usr/share/fonts/khmer-os-content-fonts/KhmerOS_content.ttf": "17e729c8a124545bec398a82e30e77fa20faac628b31de77d5dbf09aaf070bd2",
+        "/usr/share/fonts/khmer-os-system-fonts/KhmerOS_sys.ttf": "d72c5e02c6ae5354fdcd5a563e198a23db7c969dc0a2d21e4766579680eeb6e0",
+        "/usr/share/fonts/liberation-mono-fonts/LiberationMono-Bold.ttf": "bd62a0672d0b9b6710b01df434c80ad54fa5f0835207eb7b17b7a761463067bb",
+        "/usr/share/fonts/liberation-mono-fonts/LiberationMono-BoldItalic.ttf": "79451f3c09fe25116098853b7a2ca6e2436220ccc11af022979adbcf195be130",
+        "/usr/share/fonts/liberation-mono-fonts/LiberationMono-Italic.ttf": "605c01c711b44480a7508d349dfbf3264e81fa43d69e61cfa7d10b86e764c4d1",
+        "/usr/share/fonts/liberation-mono-fonts/LiberationMono-Regular.ttf": "f2b83c763e8afd21709333370bed4774337fae82267937e2b5aea7e2fbd922c1",
+        "/usr/share/fonts/liberation-sans-fonts/LiberationSans-Bold.ttf": "788abee4c806d660e8aee46689dd8540cd4bb98da03dcc9d171ce3efd99a9173",
+        "/usr/share/fonts/liberation-sans-fonts/LiberationSans-BoldItalic.ttf": "698da70fc191cc5f33ad4d6d3fe830fe4624b898ea2e3169955928b7c491f1ee",
+        "/usr/share/fonts/liberation-sans-fonts/LiberationSans-Italic.ttf": "e5bae5c4cde31f22142753855f4f8fb86da6ff39955ed3c0a11248b0d16948b0",
+        "/usr/share/fonts/liberation-sans-fonts/LiberationSans-Regular.ttf": "76d04c18ea243f426b7de1f3ad208e927008f961dc5945e5aad352d0dfde8ee8",
+        "/usr/share/fonts/liberation-serif-fonts/LiberationSerif-Bold.ttf": "d754ba427cfe0bca54ae052384baa8f842da5bd6550ad4da024ac441e7a7d5ce",
+        "/usr/share/fonts/liberation-serif-fonts/LiberationSerif-BoldItalic.ttf": "f17db8af71e24d2066b587546021d4f0b296be389512b658dec3c09affeb11a7",
+        "/usr/share/fonts/liberation-serif-fonts/LiberationSerif-Italic.ttf": "0e3dea9f8d613e006ccfa62201f33e265d19167bd0907725c3e145368b04fc2e",
+        "/usr/share/fonts/liberation-serif-fonts/LiberationSerif-Regular.ttf": "058ea80864aef09a23f45cbec2bb5400bc3dfbdea01c3f10538a21fcb497fb74",
+        "/usr/share/fonts/lohit-assamese-fonts/Lohit-Assamese.ttf": "af00ec666cf6f4ba0535eec2711ee839a77c81221b22d0fe37f288a64045382c",
+        "/usr/share/fonts/lohit-bengali-fonts/Lohit-Bengali.ttf": "e0ed8a9e35146ac628e9ff61427aab01270069fc87280efcc6a97d609a221396",
+        "/usr/share/fonts/lohit-devanagari-fonts/Lohit-Devanagari.ttf": "7087dd0a34657d78f80f77f064aa79c1c3b88ca4cd2f996a2a31778e679a3c89",
+        "/usr/share/fonts/lohit-gujarati-fonts/Lohit-Gujarati.ttf": "14fc2c0a29eceb39be20516419e833e33a50b6b46e03a2e3dc6fa6d617a32e3d",
+        "/usr/share/fonts/lohit-kannada-fonts/Lohit-Kannada.ttf": "158100bbfb0c59b043e50708e86f7180cd58e1e38c9af46b38eca5aeac09355f",
+        "/usr/share/fonts/lohit-odia-fonts/Lohit-Odia.ttf": "8df9a350cc7c79f1ba02a3ada9d7c770504bcbd419d76e2b038bc3b2d21d86da",
+        "/usr/share/fonts/lohit-tamil-fonts/Lohit-Tamil.ttf": "1bbaf487855d763ab36052c22fdbd3fc69cd8d22c180e36fb0852cd06b553fb8",
+        "/usr/share/fonts/lohit-telugu-fonts/Lohit-Telugu.ttf": "91d8bd59f8bb9481b7f360ff07d721b906f33afd5fdaafa03ae74b55beb703c7",
+        "/usr/share/fonts/lyx/cmex10.ttf": "33bade33269163c77124a3375d3b4655bd0e767c313d2b919b7c87fbfcda8de4",
+        "/usr/share/fonts/lyx/cmmi10.ttf": "74d28f7093a6bcddf20b2347318975a70b802d74374c9d6d9b9152c8726a6151",
+        "/usr/share/fonts/lyx/cmr10.ttf": "ca1b90832e84c28e5754a0c7f769868f4d9411053ba96967d6256eabe826f710",
+        "/usr/share/fonts/lyx/cmsy10.ttf": "17c36f560cf8079ff1f860594cd35699d3015711e437324644ffeb6fb88c7683",
+        "/usr/share/fonts/lyx/dsrom10.ttf": "ddbd0356a84e95751099f6759ece600bff1ba1d78a2f2eca6ddbf142202baab4",
+        "/usr/share/fonts/lyx/esint10.ttf": "7e668188de14d973b7e8934e72b3d857efe48eecf52bce3a97d091854386a920",
+        "/usr/share/fonts/lyx/eufm10.ttf": "12b89677f7a7e2aa24e42379e24dac6f3506b591f3a267896dac1097c670fdfb",
+        "/usr/share/fonts/lyx/msam10.ttf": "e0a12d98ea4bef343c683593bfa0b11f18ca3f637d602c9445025b88112276c3",
+        "/usr/share/fonts/lyx/msbm10.ttf": "ade8a121a6bccffe0d897b906bbff97691395e07761ab012663942c16efc8767",
+        "/usr/share/fonts/lyx/rsfs10.ttf": "cfb634d9f3272ab29af98d1be99056b88d5666ef770bef4301927679938a6121",
+        "/usr/share/fonts/lyx/stmary10.ttf": "2aceae7a5f39728c72c06ae6e75038f3f6b0a1ae4f00785af4e48e36d41ea827",
+        "/usr/share/fonts/lyx/wasy10.ttf": "d708c830612408ccb87eb7876555f621aa91750c0347ddafefe09a8f477476e9",
+        "/usr/share/fonts/madan-fonts/madan.ttf": "074fe594fd80cb73cfd23858f82bc7f2539cd2fc3871b3472ea860e525d98886",
+        "/usr/share/fonts/mathjax/MathJax_AMS-Regular.otf": "b8b408888e8cd52b96f5f1045946935f378ac2dd3e6a5fd954ad4c2bc099f507",
+        "/usr/share/fonts/mathjax/MathJax_Caligraphic-Bold.otf": "57850a79067f4f4ea5473c349e62cf7aa6ce32af7c57c3f3bf2f9aa7a900466c",
+        "/usr/share/fonts/mathjax/MathJax_Caligraphic-Regular.otf": "8eb4973b7136263f7aff1125f593eb80a0ffcfc99ce8bc25a6f999076f92ba44",
+        "/usr/share/fonts/mathjax/MathJax_Fraktur-Bold.otf": "9e8f56bbe66e9c9959bf98a7a992ffd658982baaf54e4dde7e0be14e477deac9",
+        "/usr/share/fonts/mathjax/MathJax_Fraktur-Regular.otf": "e00624c53ea0e5f40d2311840410c8f9e4ee22b1fa36b5fcc86936b532417c1d",
+        "/usr/share/fonts/mathjax/MathJax_Main-Bold.otf": "70623db41c421ed30927b06a4ab86a383ffaaadd1c92d20ff5ae6179c07e3afa",
+        "/usr/share/fonts/mathjax/MathJax_Main-Italic.otf": "afb5df755d8b025c688a8763ce75ad16fd4dc18de5c8f68d388fd7c052bcdabf",
+        "/usr/share/fonts/mathjax/MathJax_Main-Regular.otf": "2b36c39399fb4ab6852272f88e308ff835c018355b1e6cafeb905463101de0b3",
+        "/usr/share/fonts/mathjax/MathJax_Math-BoldItalic.otf": "793a5f772b791e0b70b9f9d1e4de825f47421e995df60a3cde27193a3f42a8c0",
+        "/usr/share/fonts/mathjax/MathJax_Math-Italic.otf": "4bc4b67613605afe0ab418f57f507d50aaff7fc9e929c8bcec5dcc23e2410a8a",
+        "/usr/share/fonts/mathjax/MathJax_Math-Regular.otf": "862c2616099ef8043c69487d2cd50214526d20dcfc416f3733722115d5488e90",
+        "/usr/share/fonts/mathjax/MathJax_SansSerif-Bold.otf": "8cd88824b5fba47ccbe504b04621947b23876610ba80a7f7fca61129f6d9ef98",
+        "/usr/share/fonts/mathjax/MathJax_SansSerif-Italic.otf": "6edea49fc097ee6653f51eb6335762de86e63720a37c0bfdf43ab7d4a0509dd4",
+        "/usr/share/fonts/mathjax/MathJax_SansSerif-Regular.otf": "4651576927294c77896612939e8c399576428e9e1ec37c8ba9fe8f1cc1b1c08a",
+        "/usr/share/fonts/mathjax/MathJax_Script-Regular.otf": "419792e02ff29d8700a626129e3e9eb83f6409e8c9ac55f46e0dc6ed83a364fd",
+        "/usr/share/fonts/mathjax/MathJax_Size1-Regular.otf": "50366d70c5835010a644da6698984c269af4b9c1f5283c24e9f66545f5d9d41d",
+        "/usr/share/fonts/mathjax/MathJax_Size2-Regular.otf": "d56bd91406e0b06b4a69bae5b836a9a8e778587a816ba171872cfbdb3b8b5c2e",
+        "/usr/share/fonts/mathjax/MathJax_Size3-Regular.otf": "a0e635f75821f54f7293b25e6b576d015741157d03daa7e9957686e01420b921",
+        "/usr/share/fonts/mathjax/MathJax_Size4-Regular.otf": "89c8451972f22478f6bfcc1707ff0cb257592582bec698a50f049d839bbfa79f",
+        "/usr/share/fonts/mathjax/MathJax_Typewriter-Regular.otf": "313dcdf818da43ebfe9907c61cd1ac45810c8505ed47c7890d78b9cb1b4eaaa8",
+        "/usr/share/fonts/mathjax/MathJax_Vector-Bold.otf": "b29925fb30d09a60b758e4e360d7dddf8ec889c8784faae83100ee22ebd62198",
+        "/usr/share/fonts/mathjax/MathJax_Vector-Regular.otf": "83e155874350fcd606f07c335702f01a45b7428cda9a91c018f1874b87d90016",
+        "/usr/share/fonts/mathjax/MathJax_WinChrome-Regular.otf": "10a9431c7c79bd8196461263c3ad53bda89f7290bcc97bd8a12650c40e0f507a",
+        "/usr/share/fonts/mathjax/MathJax_WinIE6-Regular.otf": "0d503dd0fba58288a54e6b3bb4ad358dfe4d51873f982104dbd6f4c80c2bc942",
+        "/usr/share/fonts/mathjax/STIXMathJax_Alphabets-Bold.otf": "d71aa7e096a6a4b4974fce8695a58ed766869bc863f808b07e4d7e986b1b983f",
+        "/usr/share/fonts/mathjax/STIXMathJax_Alphabets-BoldItalic.otf": "1b81e49d0e7c5c6fffa665eb08858dc793896ff20351523710d74081057cc011",
+        "/usr/share/fonts/mathjax/STIXMathJax_Alphabets-Italic.otf": "0e4197e6520af87c23d8194de23ee433ed293101626b18ff8e60c56d81b16eb2",
+        "/usr/share/fonts/mathjax/STIXMathJax_Alphabets-Regular.otf": "6b4ef68bcef227559d567c1cf46389232eaeae9e31535c1ddab45bae6e836364",
+        "/usr/share/fonts/mathjax/STIXMathJax_Arrows-Bold.otf": "2010cdc85191a5f0bea2dbce71e9b9112ade83f7a0ab9c500c04d61943133d74",
+        "/usr/share/fonts/mathjax/STIXMathJax_Arrows-Regular.otf": "08393ff75dde2cf168a24216e4ddb4ed4de53bab27be6660bf758a82edffd07f",
+        "/usr/share/fonts/mathjax/STIXMathJax_DoubleStruck-Bold.otf": "1bc949fa68bde39598835f9743681957cdae5c4b070b04858446a853dabb768e",
+        "/usr/share/fonts/mathjax/STIXMathJax_DoubleStruck-BoldItalic.otf": "e0972e0e8d281cf3a63354f782a2b150920513591d497e7ab8dec0f774f3d4d1",
+        "/usr/share/fonts/mathjax/STIXMathJax_DoubleStruck-Italic.otf": "6b9e0a43ef3dfd6aa4a66ba094bc2ec1ae3fec033a128fefb06f9c8915170e64",
+        "/usr/share/fonts/mathjax/STIXMathJax_DoubleStruck-Regular.otf": "eaabb8b140de19b31e1d1352a1c255ca7cdb1905991f686fec8967dc236797f9",
+        "/usr/share/fonts/mathjax/STIXMathJax_Fraktur-Bold.otf": "fbe0de864ed8ec187423329d3fd8d62de8933dc9518a679d40ea2eaffdde21dc",
+        "/usr/share/fonts/mathjax/STIXMathJax_Fraktur-Regular.otf": "7f7c69a4c419de9d6f9cabd7611f4b2285e31b50aca9fd48dcf0d0926598d7b4",
+        "/usr/share/fonts/mathjax/STIXMathJax_Latin-Bold.otf": "c76ba47c0057b92bf713ab0ce37a571734809f15ffecad599a0bb5ff18a6b57a",
+        "/usr/share/fonts/mathjax/STIXMathJax_Latin-BoldItalic.otf": "8e56ceac329edfd4da10b898fa92c93d497a0b80c70d5143a860ad18fbf964c7",
+        "/usr/share/fonts/mathjax/STIXMathJax_Latin-Italic.otf": "ef3837519b783133116841ae58171d009e3e077a3474ddd5383810aa5a5fc71e",
+        "/usr/share/fonts/mathjax/STIXMathJax_Latin-Regular.otf": "defea72926ad9fcf78364fe443a5b40f93b64d84d2a9691017eeecb70b80906e",
+        "/usr/share/fonts/mathjax/STIXMathJax_Main-Bold.otf": "47883728b987038994c9ba65b186e1b2811c5e5090f1b009db451eae0c9a344d",
+        "/usr/share/fonts/mathjax/STIXMathJax_Main-BoldItalic.otf": "e2b59b42294af10316b41b0bd418cef0fc39b135f23a4eca410c17a46043acd0",
+        "/usr/share/fonts/mathjax/STIXMathJax_Main-Italic.otf": "3e55595601caf3e8aeb509193ce8d1ae474520432675041644c02e33416194fa",
+        "/usr/share/fonts/mathjax/STIXMathJax_Main-Regular.otf": "639160cf354cb2ff126ceb22ba6ec614ca48c06dee939098230604aedf654e9f",
+        "/usr/share/fonts/mathjax/STIXMathJax_Marks-Bold.otf": "7aa248b1f91740ab82de30a3b64ec694d31d641536b111b079aeb83fd6b7aa5b",
+        "/usr/share/fonts/mathjax/STIXMathJax_Marks-BoldItalic.otf": "0943b65489bdbf16740d32e666a1f821ea5e2f473cc5fba87e681dbda6110f0b",
+        "/usr/share/fonts/mathjax/STIXMathJax_Marks-Italic.otf": "18c23d3d1cbb25905250ea43f7c83fed85526952dc52554fc68291de80b2f4dd",
+        "/usr/share/fonts/mathjax/STIXMathJax_Marks-Regular.otf": "4a44bda88cefccf4349114cd76580263e125c6545c8e6e78788ee40caa9a2090",
+        "/usr/share/fonts/mathjax/STIXMathJax_Misc-Bold.otf": "04e7ebb3efea2f4c3f15e1cff8421538cf53210b03ed27d185013156b039d0c7",
+        "/usr/share/fonts/mathjax/STIXMathJax_Misc-BoldItalic.otf": "5e23b06096322246b7cb6472ec75b6216dddf05a9e326bfd5ee70a9fc9e3fe96",
+        "/usr/share/fonts/mathjax/STIXMathJax_Misc-Italic.otf": "3c7700fc86f32b5da34aabbc39ce3d9ee398c2ab816abc0b36fd9b0e3a45f63a",
+        "/usr/share/fonts/mathjax/STIXMathJax_Misc-Regular.otf": "c5dbce75bd756df5c9340d31f38d0dc7489f35d9f792cd095ac93cacd7b340e4",
+        "/usr/share/fonts/mathjax/STIXMathJax_Monospace-Regular.otf": "587b0cfe9c8c5f14803802d3c6a46c4f224bcebb2052fa1f5759ccf7c23af402",
+        "/usr/share/fonts/mathjax/STIXMathJax_Normal-Bold.otf": "6300d194a53cc845710888ac113ab45000edb9d31ffdc58fa6c9625984d4c0a9",
+        "/usr/share/fonts/mathjax/STIXMathJax_Normal-BoldItalic.otf": "27ef861abee739007907041cc7475aa7c348919bc14746e5b6763ca87d9c628f",
+        "/usr/share/fonts/mathjax/STIXMathJax_Normal-Italic.otf": "ad9ddcc8bdb299bf3d689c5b12ae56f6f7e03f39ad54a24c56b4941067206385",
+        "/usr/share/fonts/mathjax/STIXMathJax_Operators-Bold.otf": "47c1ffe14ab62fbdc3742524f763f7f60ca9cae0f515892501e4b2b9ed52f36a",
+        "/usr/share/fonts/mathjax/STIXMathJax_Operators-Regular.otf": "a2869504e70a2e5fa8be24514cdf41ed7a06c53a181cf3f48884fd57abe6222e",
+        "/usr/share/fonts/mathjax/STIXMathJax_SansSerif-Bold.otf": "12c867a36c9ab82af9b50a2337b1568bdfbd118d888abaf86ef8e4476650d16e",
+        "/usr/share/fonts/mathjax/STIXMathJax_SansSerif-BoldItalic.otf": "ecbf56911418a5183ce5e464dc8983e894150603479f9070413f59de2a1c113d",
+        "/usr/share/fonts/mathjax/STIXMathJax_SansSerif-Italic.otf": "5355e1ce139c852c0b109821bcf15980fe9bd1a8792558ef39c238c2d000ec31",
+        "/usr/share/fonts/mathjax/STIXMathJax_SansSerif-Regular.otf": "20e94155028841e4004d11f4bbb833f5f7008c8b278974184c95e52ecf3abdf7",
+        "/usr/share/fonts/mathjax/STIXMathJax_Script-BoldItalic.otf": "8014e23241d0d9fc97daa5eb0aa72a8ca3365fa88763771ec4b96a439f7c8cb1",
+        "/usr/share/fonts/mathjax/STIXMathJax_Script-Italic.otf": "89abae744647228549e011bc1a91d40ff1b166e45cc4fd01ab40e661fca578d0",
+        "/usr/share/fonts/mathjax/STIXMathJax_Script-Regular.otf": "149724151432a8b55ff74802016e8812801210400a6d7da17f71eb25b70741c5",
+        "/usr/share/fonts/mathjax/STIXMathJax_Shapes-Bold.otf": "36f3452b3bd27bfeac4d44e120fd1ac6cfefe42b77067f3725255e8cd63ee83e",
+        "/usr/share/fonts/mathjax/STIXMathJax_Shapes-BoldItalic.otf": "9b33a53a941fbf386e94971994a9c73a9c5d7194d886d0ce88fe16c7f3126e27",
+        "/usr/share/fonts/mathjax/STIXMathJax_Shapes-Regular.otf": "9ce50c6879e3ec054d85c3b6ad656df3477e8f42d19115238e707ce68479fd21",
+        "/usr/share/fonts/mathjax/STIXMathJax_Size1-Regular.otf": "c573a392dd811f9b2513a79f74c89ca2a6665515fcd546dd924695490781fbb0",
+        "/usr/share/fonts/mathjax/STIXMathJax_Size2-Regular.otf": "232f634a3bcb5960f479581d7bdf274d4a989611a56c2bc5b473512b5b84cb5f",
+        "/usr/share/fonts/mathjax/STIXMathJax_Size3-Regular.otf": "ef4e3053fc7535ef52440fd204c8bf7cbd0fde45e2c24f53df256cdbbc8d0b2f",
+        "/usr/share/fonts/mathjax/STIXMathJax_Size4-Regular.otf": "77da4e58f4e9530d326b32b7c12916f3648f3be02894f25333ccb81f4476393f",
+        "/usr/share/fonts/mathjax/STIXMathJax_Size5-Regular.otf": "b4d5e9123f8c2e445c76ec07f17c92fa97f033cd7de3b11e9ff78be3232f883c",
+        "/usr/share/fonts/mathjax/STIXMathJax_Symbols-Bold.otf": "a67cc0a8a2f024608e09a70d6a73d13f56c75dace5939c68dd009b66301ef57b",
+        "/usr/share/fonts/mathjax/STIXMathJax_Symbols-Regular.otf": "c71ee7155d4494536ff52c2c4eb749081f0dadd39bbaf0bc06431523660c10c7",
+        "/usr/share/fonts/mathjax/STIXMathJax_Variants-Bold.otf": "fe136cd7c51644bbb5587b63ee7de1ba8e687fb25a9c12a85f3742c4ac4f808e",
+        "/usr/share/fonts/mathjax/STIXMathJax_Variants-BoldItalic.otf": "f02223a2d0159dfce2e892b8c6616ef03a2caac49bdffe9c0dd9f7a781141833",
+        "/usr/share/fonts/mathjax/STIXMathJax_Variants-Italic.otf": "a9cce60bdb77cc5ebe65df21f6d319b691f5ae4753c5d8b20b1c1a9d1ca0503b",
+        "/usr/share/fonts/mathjax/STIXMathJax_Variants-Regular.otf": "2c888f2fe3bcbd4df1eec9a1b6de4ae52a3321a538252b0ad5080a681e047ff9",
+        "/usr/share/fonts/open-sans/OpenSans-Bold.ttf": "1a6bc6775358bfed0e4191b6f2c4d7d75d122f0c6e5a255f264ab455c67237b7",
+        "/usr/share/fonts/open-sans/OpenSans-BoldItalic.ttf": "b5c44af3cb55f65fadb2f1b20edc38e1008bb71388d04ad127c5ad340c9329f2",
+        "/usr/share/fonts/open-sans/OpenSans-ExtraBold.ttf": "d55da7240f3411f7b26524dc1c99369602092a451636aaf10bbd94b868aead9f",
+        "/usr/share/fonts/open-sans/OpenSans-ExtraBoldItalic.ttf": "f554e6e4fca440e242984720e05f73049964f79bcf63ef6db0012d5ef1c1e32a",
+        "/usr/share/fonts/open-sans/OpenSans-Italic.ttf": "e5178be12cd740aeafebea15ec563fe577bbb4fab42d9e40500bd49ec8c9ce16",
+        "/usr/share/fonts/open-sans/OpenSans-Light.ttf": "e3e50f083271bf2fda6909c759644b137e7dcf19af16ec053ff9d3dc6dcb9a16",
+        "/usr/share/fonts/open-sans/OpenSans-LightItalic.ttf": "cb56ed9a6fccff7949f3c926c7bc8488cdf98a607ff2f6b8f43d8817cd4a3eb0",
+        "/usr/share/fonts/open-sans/OpenSans-Regular.ttf": "8ab4aa561e7db0eb3e1af8b0bed2a315e0a33fe2ed3070e645d1b89f8efc1d5c",
+        "/usr/share/fonts/open-sans/OpenSans-Semibold.ttf": "ccdf48c974c75a0bab64b6397c092a5366b799c723285985e40f4da67d74a7c2",
+        "/usr/share/fonts/open-sans/OpenSans-SemiboldItalic.ttf": "0ef9c89908594d0fd52651f008fa43216f35bfd6f94a7689cc41ea64d39ab748",
+        "/usr/share/fonts/opensymbol/opens___.ttf": "f543e6e2d7275557a839a164941c0a86e5f2c3f2a0042bfc434c88c6dde9e140",
+        "/usr/share/fonts/paktype-naskh-basic-fonts/PakTypeNaskhBasic.ttf": "dbd7efb102063f715afda2442e5245e6bda7ca86c2388756315857da0528a6bf",
+        "/usr/share/fonts/paktype-naskh-basic-fonts/PakTypeNaskhBasicSemiWide.ttf": "f27d8ee96f97753bacd67d19a6ced5839425e4ac22f621db4e3fe6d7ff4a6c9f",
+        "/usr/share/fonts/paktype-naskh-basic-fonts/PakTypeNaskhBasicWide.ttf": "f10b779cda852d3c0dc22d3374205fd52bca2782131187f5fa03e82ff77e603d",
+        "/usr/share/fonts/pt-sans-fonts/PTC55F.ttf": "0e90682d8469cd44190d53e899e8c6a6f4206fa3e6e87e843defededc5f73c29",
+        "/usr/share/fonts/pt-sans-fonts/PTC75F.ttf": "50c85409b0a01cef6eed3a0dd0e6417da51a4b28d9436f5a478989af2c4fe9f8",
+        "/usr/share/fonts/pt-sans-fonts/PTN57F.ttf": "9ac3ac5c01009657e69815356a4c5814eec47e19f38c36acb32badf122309680",
+        "/usr/share/fonts/pt-sans-fonts/PTN77F.ttf": "00e98d9ffffc2b40ef4e4e16fc4439084980bd7f863ecd715de2551e3e7d3ca3",
+        "/usr/share/fonts/pt-sans-fonts/PTS55F.ttf": "cda2648e5afd51b67a142d9ade7c7893f4e5b73fa5144974179e5f32e5a3d085",
+        "/usr/share/fonts/pt-sans-fonts/PTS56F.ttf": "34be929af097f094a9e0d7b1bee1e791c3e61ce9bdb188998c521d3fd08ca605",
+        "/usr/share/fonts/pt-sans-fonts/PTS75F.ttf": "c913fd4b33a1078c0ed22f53d62468a8363b104acd751ac3bbac8fa891189ef5",
+        "/usr/share/fonts/pt-sans-fonts/PTS76F.ttf": "70062d7860ecd2f23d833f2699c8a34eb2861a77471145cceb10fe10e4f72776",
+        "/usr/share/fonts/redhat/RedHatDisplay-Black.otf": "8f2199dd7890ee8ddc38ed24af482c293d266a4ba065e6620d7a49fcf047468b",
+        "/usr/share/fonts/redhat/RedHatDisplay-BlackItalic.otf": "0b97842f9197c32109312ce31a8ac9e4c47c7ee972b981764b08d66a767b22d7",
+        "/usr/share/fonts/redhat/RedHatDisplay-Bold.otf": "40dbcb33a8413ac891076573772d4b92606f86c6026760c37404acd661018301",
+        "/usr/share/fonts/redhat/RedHatDisplay-BoldItalic.otf": "52946d1e4724b0e3b74caec599cea89caaa25ae60a7b4dd0a698c53960c9ac50",
+        "/usr/share/fonts/redhat/RedHatDisplay-ExtraBold.otf": "87fad7c5338925010d366c3f115323a3429b3b9e3cbb5adbb01b86e878a6d735",
+        "/usr/share/fonts/redhat/RedHatDisplay-ExtraBoldItalic.otf": "7f4ea4cfd93a2c32abe8abeeb847d68090989a6f25946766af4967deb824a8d5",
+        "/usr/share/fonts/redhat/RedHatDisplay-Italic.otf": "2d9f14710bc5c991db46b886ed77c07b1c928e36faf178198993c21f60e77307",
+        "/usr/share/fonts/redhat/RedHatDisplay-Light.otf": "db7b32442a57d8839d776c86afb65f8aa756a5b99cc9141c9e260f7518c5eaf2",
+        "/usr/share/fonts/redhat/RedHatDisplay-LightItalic.otf": "80f4d1703ab79a68c270b6e9683d640a6fa3a33ba2b2ad238e445a06ca42caca",
+        "/usr/share/fonts/redhat/RedHatDisplay-Medium.otf": "714034c43ea7b2e7d6f3470db3a775937dfce9ea66cd34c301a3ff361af0b816",
+        "/usr/share/fonts/redhat/RedHatDisplay-MediumItalic.otf": "bd699c0708454f50ffcf7e12ec8293bea81e5185f66441d37c24c893fd818b6a",
+        "/usr/share/fonts/redhat/RedHatDisplay-Regular.otf": "d88c64c5db835c0cc4c5a7b6f07a9fb37e1c68d4abd7857988244681fd58a7d2",
+        "/usr/share/fonts/redhat/RedHatDisplay-SemiBold.otf": "298aaeec2f33034dd3f329c70b071e121f799e1d6f80ecf95a0424094471698a",
+        "/usr/share/fonts/redhat/RedHatDisplay-SemiBoldItalic.otf": "393425193656ecbbb58b5e23575cf1c82491afd51abd0921f6d70f2cb2cf0602",
+        "/usr/share/fonts/redhat/RedHatText-Bold.otf": "d5ecc7c162c3105e121fb040d863537a891a22392edb5a524e577ac8f9ae7e8d",
+        "/usr/share/fonts/redhat/RedHatText-BoldItalic.otf": "a0dbf1629a93ce5af2335b9728e2ac25640369507a0241cf5fb4cb2b83172dcb",
+        "/usr/share/fonts/redhat/RedHatText-Italic.otf": "c5dbb9f048b17cd2c3c7ac825bbfac33209b511f97a7ff5aa28497627f40577f",
+        "/usr/share/fonts/redhat/RedHatText-Light.otf": "37880b16c45894f6520116597a5b076a337e96e6b85173556d8ce51bfd74a0da",
+        "/usr/share/fonts/redhat/RedHatText-LightItalic.otf": "ef1a272bf90708e556d9c4a603967c842083f96912b38591931a80920315ead7",
+        "/usr/share/fonts/redhat/RedHatText-Medium.otf": "46fb51a3902cb184952065ed6bce9df0a492f1b9969946e0fd7a6de7098b1952",
+        "/usr/share/fonts/redhat/RedHatText-MediumItalic.otf": "864db3b3a01268bb1cf1a9744dda1f82bcbc6cb5b88cfc7a19f4ea797aa79f9f",
+        "/usr/share/fonts/redhat/RedHatText-Regular.otf": "0f14bfc2713ed9d890920282bec4df5aad3bc63a06c238a831e651e3021ef00c",
+        "/usr/share/fonts/redhat/RedHatText-SemiBold.otf": "eb4670dca4a5adfa8a2bfeb0f2135dca0454526dc3e1f71053e6edf125a5fe5d",
+        "/usr/share/fonts/redhat/RedHatText-SemiBoldItalic.otf": "dd6439c3afb558859455fbf22dbccdcbb53bb1dccbee38affa9cf4afab29e4f5",
+        "/usr/share/fonts/rit-meera-new-fonts/RIT-MeeraNew.otf": "994c8a9a2fdec9a66b4d9c16e2fd994b1af301aaf3a0789669a470937783c250",
+        "/usr/share/fonts/rit-rachana-fonts/RIT-Rachana-Bold.otf": "e36256f964faa17d4298224d135412a94ca773d0a2c93856c3cc44207ef7e2f5",
+        "/usr/share/fonts/rit-rachana-fonts/RIT-Rachana-BoldItalic.otf": "610e12487544b6b1ec1a4046a3fd0ff1dcaeb81e773031146320fb1932959118",
+        "/usr/share/fonts/rit-rachana-fonts/RIT-Rachana-Italic.otf": "48da57b3f4a8d70e2e1f60793d5535a9166a0a7ae192489db3a8be75d3abe6b1",
+        "/usr/share/fonts/rit-rachana-fonts/RIT-Rachana-Regular.otf": "298f1cd63dce5d81c01bf3e24344599af8f21ec63068d8126928381b955f6925",
+        "/usr/share/fonts/sil-abyssinica-fonts/AbyssinicaSIL-R.ttf": "82ccb19ed38c7b2d9d2bb94f0883611c4a01b1d215caaefc70fc85d0acf1674d",
+        "/usr/share/fonts/sil-mingzat-fonts/Mingzat-Regular.ttf": "63b8c9ea9ceb9953a6aeaf94e70be3d534c93070247c945512c1e782dace961a",
+        "/usr/share/fonts/sil-nuosu-fonts/NuosuSIL-Regular.ttf": "3ca4e30180b7575e724554c5d7cf324bc8be3dd56c5ef1de0627c683952032cd",
+        "/usr/share/fonts/sil-padauk-fonts/Padauk-Bold.ttf": "e8c9facdaa2d4d68dbff66c99391340d114a6c314d2dc8e5afcc92ddf78513f4",
+        "/usr/share/fonts/sil-padauk-fonts/Padauk-Regular.ttf": "60b34930e0977ebf9890abb13770a361a1d3764e4337ca907ee63fe514e8f4c4",
+        "/usr/share/fonts/source-foundry-hack-fonts/Hack-Bold.ttf": "5bbf531eff7f8a0c2559c9a0656718e2828a012a9b1f60b5f54006d59a4de8d4",
+        "/usr/share/fonts/source-foundry-hack-fonts/Hack-BoldItalic.ttf": "64f74a079700b7dfe128551a1e28875d5ba980971e55f5e0f0596e37bdc6a6bc",
+        "/usr/share/fonts/source-foundry-hack-fonts/Hack-Italic.ttf": "096fb67a2b85f3c866e9cb3e965b27c2c10b977315f4d3d7f095674be35091c1",
+        "/usr/share/fonts/source-foundry-hack-fonts/Hack-Regular.ttf": "15f55cc0c85a2988d2b4b3a8cdb5d77fdfbaf319e1bb5309d725db9818fb7125",
+        "/usr/share/fonts/source-serif/SourceSerif4-Black.otf": "47feb7b4ecac3271e988fe399b9a26e220f428c0acfa55e59744f9dc5a1e6f41",
+        "/usr/share/fonts/source-serif/SourceSerif4-BlackIt.otf": "22e74ee4d16b716e481af222899b3894bcd5223c57ba1758d303d2eff68810f8",
+        "/usr/share/fonts/source-serif/SourceSerif4-Bold.otf": "f5fb9a7b1611353fdfebcf8b1e46c7d9108470f25999b841816d8b643b1856ff",
+        "/usr/share/fonts/source-serif/SourceSerif4-BoldIt.otf": "ebb5394e1e11e09480619c9bb10f020aded9530833edcbdb735a4702ae6fa09e",
+        "/usr/share/fonts/source-serif/SourceSerif4-ExtraLight.otf": "29b8e7e8179978ce9b608460d9af71ac3da723687712e291fb0bedadede7f97a",
+        "/usr/share/fonts/source-serif/SourceSerif4-ExtraLightIt.otf": "571ff10751f654f4ef38f78e5b394cb8a84539fd063e052530bdd19e1622316d",
+        "/usr/share/fonts/source-serif/SourceSerif4-It.otf": "f8062257f4693e438a8e317c9fe2b4393f0d4eed84d897edcbfd733c30a1c1a1",
+        "/usr/share/fonts/source-serif/SourceSerif4-Light.otf": "4128f8b2af440ca367c0c42fec1c32ccce7bc45dc1672af997518300e5e53d3c",
+        "/usr/share/fonts/source-serif/SourceSerif4-LightIt.otf": "f8ade752fd54e49d7f69150c21092a27a88ee690330873fcf84d033971d1cccc",
+        "/usr/share/fonts/source-serif/SourceSerif4-Regular.otf": "edf160d0d584deee8a3bb2c3371b2a7624ca63580fbe02c57c1f4c91e84d8787",
+        "/usr/share/fonts/source-serif/SourceSerif4-Semibold.otf": "25e034392847d9965c92f98971b3646436b7ab919ece9118b0c0e5ec94c02efc",
+        "/usr/share/fonts/source-serif/SourceSerif4-SemiboldIt.otf": "fc22addcea5d5ab982dfef6d388fff6bdb3e31ae46c37e0015b8312e634a6e9b",
+        "/usr/share/fonts/source-serif/SourceSerif4Caption-Black.otf": "5ae9bed248bf2699979d149e3fe9881f6653fdc9e8c6ddbbd4d74fce5aaa1d1a",
+        "/usr/share/fonts/source-serif/SourceSerif4Caption-BlackIt.otf": "25f4db31b43e3b95bf6888692c960835f475c0bfbca0b455b789aab97633bef8",
+        "/usr/share/fonts/source-serif/SourceSerif4Caption-Bold.otf": "038a8feddd8b79bb643979323dd9e529921d3688e3db6abec22fb1b8e172f462",
+        "/usr/share/fonts/source-serif/SourceSerif4Caption-BoldIt.otf": "4130beea64f8ec43c1594c8c66a69c5a35fdf1de21d9b8e3f4bb072e79c8c806",
+        "/usr/share/fonts/source-serif/SourceSerif4Caption-ExtraLight.otf": "976c9de41cb1550d82ad12625ce8fc21d2b0119ec483447504240751e17f4f86",
+        "/usr/share/fonts/source-serif/SourceSerif4Caption-ExtraLightIt.otf": "af394a4d537e1f17615a8d3492ee8b3a225d26d65b6891cb6b455c3f900065c8",
+        "/usr/share/fonts/source-serif/SourceSerif4Caption-It.otf": "eac5467fa1e9eefe466da00e5ac409857cb7610aa4e07611dcb82c52e5d5b9dd",
+        "/usr/share/fonts/source-serif/SourceSerif4Caption-Light.otf": "7fe6cb0279eb749e2c3c3a505bf9cc87125e98a79f731465ed0772c8b6912b48",
+        "/usr/share/fonts/source-serif/SourceSerif4Caption-LightIt.otf": "23381b222719aa7ac7a0ff3c9157b92b8558934c12eca280a8d9d30ae04360d3",
+        "/usr/share/fonts/source-serif/SourceSerif4Caption-Regular.otf": "312a15e15369b7b54527c288e2391ff14cb73bcf41520d3a5c34b4c259e99a3a",
+        "/usr/share/fonts/source-serif/SourceSerif4Caption-Semibold.otf": "9efb82f0a6310771d7bec17dfe38c30b145b857f5781a554990b48edadf54cb0",
+        "/usr/share/fonts/source-serif/SourceSerif4Caption-SemiboldIt.otf": "49456d846253d8930e9f139349df61b84e56178f01ea7e39d41ef3f013925e26",
+        "/usr/share/fonts/source-serif/SourceSerif4Display-Black.otf": "da9e983171e47d5f87a66628438bd3d192e45db14b38e9a50502f5d0e648147a",
+        "/usr/share/fonts/source-serif/SourceSerif4Display-BlackIt.otf": "cb639569bc008cb30b7ad1a54dfde261a6374a29dd1f053f11038f5ed416214b",
+        "/usr/share/fonts/source-serif/SourceSerif4Display-Bold.otf": "c222fe7c8c0a715512c8e5aac26918c8cf3d8ba4a561cc2e5b2e76e49b988d03",
+        "/usr/share/fonts/source-serif/SourceSerif4Display-BoldIt.otf": "1526596c09db5e44ab3627426d99defd82307bffce7ff21b21ee1e226bd7e3b6",
+        "/usr/share/fonts/source-serif/SourceSerif4Display-ExtraLight.otf": "ded87602a168aecb1d444acb41aab867fd671c431889fae9b6f1592fabb19e81",
+        "/usr/share/fonts/source-serif/SourceSerif4Display-ExtraLightIt.otf": "31f63508615baed82b6073d51ec8375141db3b3c5fb5fb8fc9903c0e4e5eb8e0",
+        "/usr/share/fonts/source-serif/SourceSerif4Display-It.otf": "653bba042213020d624a147c55d84662b3c20c1e12355bc691ae53c7051785ca",
+        "/usr/share/fonts/source-serif/SourceSerif4Display-Light.otf": "c9be4e41a96e3778fe2518165d5cddfbcb40ad8d857a7d926f9e098531e7fcd8",
+        "/usr/share/fonts/source-serif/SourceSerif4Display-LightIt.otf": "516b6e4bb297209128af30409f840a4ab773f206d0fac0588d8d8468d907c9a9",
+        "/usr/share/fonts/source-serif/SourceSerif4Display-Regular.otf": "0525aba71e1d7293d3ef645f5a9b56101432d1f6c676cba388f800523c7b2111",
+        "/usr/share/fonts/source-serif/SourceSerif4Display-Semibold.otf": "0f2b3699c57dd032db8c8d93b34f7dac72e60fa2638d209aa2e428dfb6eb6400",
+        "/usr/share/fonts/source-serif/SourceSerif4Display-SemiboldIt.otf": "2f548ebe7b4e535e4e5e9a3d6f7bff4436387e837c0925fef782be2736b6f982",
+        "/usr/share/fonts/source-serif/SourceSerif4SmText-Black.otf": "8aa9acffeed32f220a3535b610662024c11d91dc04177b80c1d42b8a1ebcbca8",
+        "/usr/share/fonts/source-serif/SourceSerif4SmText-BlackIt.otf": "14d1daa21904e6691a6648a79a0124a840f2e5db54c0bd06d5fffbf57a01d6de",
+        "/usr/share/fonts/source-serif/SourceSerif4SmText-Bold.otf": "05f4aa92fb137675226b318335d7c44d2da86b7650bbf9b8fdf428a74139d3b5",
+        "/usr/share/fonts/source-serif/SourceSerif4SmText-BoldIt.otf": "86679db08387aca6a7342c5f68f58e930c7d00d71a8ab1f07eb2b72fbc56b4c1",
+        "/usr/share/fonts/source-serif/SourceSerif4SmText-ExtraLight.otf": "4766f0e7278cf02dcd65630f8f92ee763e93006f75d4de91a393520c1d644ff6",
+        "/usr/share/fonts/source-serif/SourceSerif4SmText-ExtraLightIt.otf": "635d72d3780c870bbc0a4020e455c1dafbddc3252ae7030aaf42d88666e24459",
+        "/usr/share/fonts/source-serif/SourceSerif4SmText-It.otf": "220a0bf6d2a0c3fde644db2b2b602e725170ac1a90b0ce79994b7598c12980d1",
+        "/usr/share/fonts/source-serif/SourceSerif4SmText-Light.otf": "c70db9264c71930753f16b3866083e742afece252d1a01f947bca6798f758068",
+        "/usr/share/fonts/source-serif/SourceSerif4SmText-LightIt.otf": "5717fdbe30c7333c2c80b9ad9d148836048a1188631916357ea37addbc8ae49a",
+        "/usr/share/fonts/source-serif/SourceSerif4SmText-Regular.otf": "760327b0f9ef55310f11ed5c955693f4841f9b859407e98570d3654422a34d70",
+        "/usr/share/fonts/source-serif/SourceSerif4SmText-Semibold.otf": "1e32888469460231d1d43369a1cf88d2f8279571893418e653945171ac91bcb8",
+        "/usr/share/fonts/source-serif/SourceSerif4SmText-SemiboldIt.otf": "965a1732d7d1b4550d2db3a7fe8aea5c9245fc1e98bb88077d089acd995ac71a",
+        "/usr/share/fonts/source-serif/SourceSerif4Subhead-Black.otf": "ff21b20dc3a50a98be0222f500b2c1f1bd49710b45a3e789d65292c1b55717e3",
+        "/usr/share/fonts/source-serif/SourceSerif4Subhead-BlackIt.otf": "33bea5c20725f91cd4681f806f0762ee7f45254c852b4783a288555de5242a59",
+        "/usr/share/fonts/source-serif/SourceSerif4Subhead-Bold.otf": "11ff04c25f819ece132128e3cef0715765f308783fbee61c02d26c04155d26dc",
+        "/usr/share/fonts/source-serif/SourceSerif4Subhead-BoldIt.otf": "24b57303c911581a2117a6ed049edd6d99887eae2dcfe65da2c08b9e52fdbc16",
+        "/usr/share/fonts/source-serif/SourceSerif4Subhead-ExtraLight.otf": "49ff97b1de79ca7bc3bb595258c6e3fb51fd4dc6f5b141580630ca1c7b8ef80f",
+        "/usr/share/fonts/source-serif/SourceSerif4Subhead-ExtraLightIt.otf": "dc751eb7de8fa31037e40ee1326e662a001c06755c606d4072c3b730897f09ed",
+        "/usr/share/fonts/source-serif/SourceSerif4Subhead-It.otf": "3435a97741d90c9d844f8129ae2408890e0f50d848408237122bc88260fe1fad",
+        "/usr/share/fonts/source-serif/SourceSerif4Subhead-Light.otf": "d7a36af24e86e628da2ffd170ede5f53a4f6328c965433f6bea2657a8797b7a9",
+        "/usr/share/fonts/source-serif/SourceSerif4Subhead-LightIt.otf": "6aa93d84a7318f7862d9e00a759ee14a80824b1bc9d9efa2ee3a0052fc83c8aa",
+        "/usr/share/fonts/source-serif/SourceSerif4Subhead-Regular.otf": "28f0d716f1a8fbf81fc87c2ef04603b24be81721a8b32b9538fc8ea390454edd",
+        "/usr/share/fonts/source-serif/SourceSerif4Subhead-Semibold.otf": "0c2d843db6ba7357c2b50c1418a7897518ffb309681b7291767dea533132a9c0",
+        "/usr/share/fonts/source-serif/SourceSerif4Subhead-SemiboldIt.otf": "41c79f4f0f019ab1f3bfa63af52d1b33229ef0557b8ff70cd3d2dd29f0685d7b",
+        "/usr/share/fonts/stix-fonts/STIXTwoMath-Regular.otf": "3a5f3f26f40d5698b3c62dd085d48d6663696a3f80825aab8b553d5097518e8c",
+        "/usr/share/fonts/stix-fonts/STIXTwoText-Bold.otf": "7ef76c666a6704f76ed3fa27bcdda55b36e558b5c2c93b49b03d854db96bdeb5",
+        "/usr/share/fonts/stix-fonts/STIXTwoText-BoldItalic.otf": "90e88f2ac79d6c00a5ce2d8446bfdf9457aed6afc1159cde33262979d82c8586",
+        "/usr/share/fonts/stix-fonts/STIXTwoText-Italic.otf": "cd64481fd10b69469074a3a8172fb5a22cb4116941d8aceafb8c77756b563df8",
+        "/usr/share/fonts/stix-fonts/STIXTwoText-Medium.otf": "9cc9f870852a46d708907b96ed024b8d0067a05276d939bfe0b7e89752afc8d9",
+        "/usr/share/fonts/stix-fonts/STIXTwoText-MediumItalic.otf": "cc6e00147828e7b1f1aeaae928cabdbf14f5bffefb4e19b0ba2c46ce56292f4e",
+        "/usr/share/fonts/stix-fonts/STIXTwoText-Regular.otf": "c4864ca6ec071c2d31d0d8309001faa1ee3517fffb53a31a405a697b71f52ca1",
+        "/usr/share/fonts/stix-fonts/STIXTwoText-SemiBold.otf": "896d80fbfd67e86ead7e2d593d631eab9bb142ee96dcd8e7aa8dff95ddda0f2a",
+        "/usr/share/fonts/stix-fonts/STIXTwoText-SemiBoldItalic.otf": "93d337715289b8e3ba8757cff89d29ff95630a1d08581dd46123d4c1ad1a7e2c",
+        "/usr/share/fonts/tlwg-waree-fonts/Waree-Bold.otf": "db15764ffe467d362c94f402b288666ea320652885bd9e96bb7c924d02be14f6",
+        "/usr/share/fonts/tlwg-waree-fonts/Waree-BoldOblique.otf": "d56612b086b9f33894883c95a19ba928e5254ce086362cfd99c48a5861749f74",
+        "/usr/share/fonts/tlwg-waree-fonts/Waree-Oblique.otf": "ee7a0b1c270fd3ff83888395b3aba1f45670e989f55b044abb9e5fbaf15344e4",
+        "/usr/share/fonts/tlwg-waree-fonts/Waree.otf": "3b48ddf69800879186a6037882511a42efc2c053d2a5c28068aaeac4e918173a",
+        "/usr/share/fonts/urw-base35/C059-BdIta.otf": "60d0ab6a22e4018b1232806d98f4015e04f9a0a569db7a169c40d55e2a9f6252",
+        "/usr/share/fonts/urw-base35/C059-BdIta.t1": "f7aafd96bbb8ef07792d33302fb4905bfe7a47888b08782d95f6f1b8a388f5ee",
+        "/usr/share/fonts/urw-base35/C059-Bold.otf": "75dea10068264324522e7b96612083582eee0158eb728fa9c219279890f33e26",
+        "/usr/share/fonts/urw-base35/C059-Bold.t1": "78110e7b34a1e89c86f010ae1fb87d3cffba73bbd557374bd16dfd41bdc3c60f",
+        "/usr/share/fonts/urw-base35/C059-Italic.otf": "77852deabd3a84f7d0213932239de522410309374c2255ccbd510f01dc7c6e80",
+        "/usr/share/fonts/urw-base35/C059-Italic.t1": "304c523c14d49e90733a73c301055377a0176d4b5b087b6fd2ef74d723348fe2",
+        "/usr/share/fonts/urw-base35/C059-Roman.otf": "e00cc7b88f0cf25ae43f0e48de39d0043fe042b55719a3ac32669ab3369542ec",
+        "/usr/share/fonts/urw-base35/C059-Roman.t1": "be8224624a91fc315b66bbf640e18ebddc79076937bdb3bbb5b96aaf90ec84c5",
+        "/usr/share/fonts/urw-base35/D050000L.otf": "a7bd946b69ae526328f26b5339fb31057dd40950d7b60598f36b2bd06542f105",
+        "/usr/share/fonts/urw-base35/D050000L.t1": "51cc2fe0953718f9fc93e0de7853a700557cc8d0cd58089c9a2d531d06c8fa4b",
+        "/usr/share/fonts/urw-base35/NimbusMonoPS-Bold.otf": "f036d05d2168c7f71cb11d31e81d11133f3d09711e24ebde19d08a24842384d5",
+        "/usr/share/fonts/urw-base35/NimbusMonoPS-Bold.t1": "63e2c80d0e6983c68dd986f7044944e9f58463f8bb118c21fb4372c298906b18",
+        "/usr/share/fonts/urw-base35/NimbusMonoPS-BoldItalic.otf": "a67ed9e364c933c79fc3ce88e17a0265334697c184b065407e754d43cbbf6d0a",
+        "/usr/share/fonts/urw-base35/NimbusMonoPS-BoldItalic.t1": "f9006fd0749c906fe51a570bb246883e0af127eff2ca13cdbd250db3e5a1cec9",
+        "/usr/share/fonts/urw-base35/NimbusMonoPS-Italic.otf": "7f1f85498027e07befadd3c7592518909b9e8c7f96ee5615e0b21be0c399c4b4",
+        "/usr/share/fonts/urw-base35/NimbusMonoPS-Italic.t1": "0db4cd31b146794a931de48ca15f8bad3252ad744deb651a582f75af4c7ae8df",
+        "/usr/share/fonts/urw-base35/NimbusMonoPS-Regular.otf": "4f225ca8e13acb16f733ce741693105e527d5f7a5443901b9ecc190fca4e149b",
+        "/usr/share/fonts/urw-base35/NimbusMonoPS-Regular.t1": "b1c0f23ba9732ee495ea52658684dc36064d3c439ac81b7dfcf922e790e5160f",
+        "/usr/share/fonts/urw-base35/NimbusRoman-Bold.otf": "e0ad81923bc6d85d5426f796217c87963ca1ae3c65e22c87a25b6c6353de299e",
+        "/usr/share/fonts/urw-base35/NimbusRoman-Bold.t1": "4d31149fe14fb8fb9f84f8c6171eb90a654b6f7c4db8213a6e501b32e712e290",
+        "/usr/share/fonts/urw-base35/NimbusRoman-BoldItalic.otf": "c84bcb17ab4ee54f16dadad6a3b0b2df37a24f9fc812897c4a59eeca785a5dec",
+        "/usr/share/fonts/urw-base35/NimbusRoman-BoldItalic.t1": "4a305bcf1950e2db6bb03ed68715a74930d00d630661d6e0c03375b3cc983888",
+        "/usr/share/fonts/urw-base35/NimbusRoman-Italic.otf": "b7c424e6cb79baddfcdcd9a9d87f9fc4fdd06f0e5160066e2b2e47bcd647c7b9",
+        "/usr/share/fonts/urw-base35/NimbusRoman-Italic.t1": "0c5cc5161c325440ed7a9de00869535e8f10f0eeccf1e65dbcd2c387ffbc1eb4",
+        "/usr/share/fonts/urw-base35/NimbusRoman-Regular.otf": "fd41669443616a7ae890c42e53a58f47fa24a940fd1e367acaff665cf5b6e9d8",
+        "/usr/share/fonts/urw-base35/NimbusRoman-Regular.t1": "cd63681b669f41d2b1cc828a6e26eeeee668ae3f9144f6ae2c1bad971fc146f2",
+        "/usr/share/fonts/urw-base35/NimbusSans-Bold.otf": "7f33328e6b4d4cd21b45fa625791928c9407dc702db6780e56b09ca9a3ecaa67",
+        "/usr/share/fonts/urw-base35/NimbusSans-Bold.t1": "ebf5ba685a44a194cc61ba3e34a1bf4718980871e5b72304ba9633411c7d6391",
+        "/usr/share/fonts/urw-base35/NimbusSans-BoldItalic.otf": "3f47fb34fcb7de09f8cbc9f305191340ddebf7a068419f4bb5f49287dea59b87",
+        "/usr/share/fonts/urw-base35/NimbusSans-BoldItalic.t1": "73871c05c5c4670d39b690b802aacd5369b9209256ff3abe7db755c276e2deda",
+        "/usr/share/fonts/urw-base35/NimbusSans-Italic.otf": "7b0bef5686aa58c0fd0f0d01beeae56664208490e30ca6a25431281c9a0c6402",
+        "/usr/share/fonts/urw-base35/NimbusSans-Italic.t1": "b0527ec015601b5d29eecdb75a982b39fe316d5d53caf45108d712f99debe98e",
+        "/usr/share/fonts/urw-base35/NimbusSans-Regular.otf": "7c25be4d78155523080ab85b10277150657ff7dabbcad7037bdd536c9b6d0d08",
+        "/usr/share/fonts/urw-base35/NimbusSans-Regular.t1": "779a9c820bbe8b470d36e77bcf949eef7bf1b889184274ba0f51da4c8c883cfa",
+        "/usr/share/fonts/urw-base35/NimbusSansNarrow-Bold.otf": "6d7cec07f5a9035e208532dab35a51312aef4a7f26eb524dd614c9fcd97c3264",
+        "/usr/share/fonts/urw-base35/NimbusSansNarrow-Bold.t1": "a383bbf4d6f8887a8ccda9e5ad2d6b2b6353c0620f4a29f49b27d68177d84ee2",
+        "/usr/share/fonts/urw-base35/NimbusSansNarrow-BoldOblique.otf": "3cefbe4a602a08a0400798fc4aba2d48f7b7e05fa6ed54c2009d68adc6eccef9",
+        "/usr/share/fonts/urw-base35/NimbusSansNarrow-BoldOblique.t1": "df4df8204bc5ac63dc13162e9a604adadebb779fd524d6f457fec118d530af31",
+        "/usr/share/fonts/urw-base35/NimbusSansNarrow-Oblique.otf": "6fd8dd67ab951f36f66563ef8443bafdf10836e73ebe856f85f4a9c282293585",
+        "/usr/share/fonts/urw-base35/NimbusSansNarrow-Oblique.t1": "eb92b8ab971fe2b53882b05948127940f23c3003b6f6f3f7bb25d6ed226a652e",
+        "/usr/share/fonts/urw-base35/NimbusSansNarrow-Regular.otf": "0111cf7c05377c4f1685d37bfa8b3edd2033278122f69e0a9803a8514e352b99",
+        "/usr/share/fonts/urw-base35/NimbusSansNarrow-Regular.t1": "77561ac22852f0c289012e3e8578ff56afe016d3bcae05a33562369cb675127f",
+        "/usr/share/fonts/urw-base35/P052-Bold.otf": "ba6503baaf0f9e4e40a69cc4c0e57049fbde313fe183aba8fe823208337a94af",
+        "/usr/share/fonts/urw-base35/P052-Bold.t1": "8e56ad1e6b08c6c931d4ff93fa4388abc6ea5be8c6a0ab23d0fdf9a504c1cdba",
+        "/usr/share/fonts/urw-base35/P052-BoldItalic.otf": "63e15828175e55559ae09c9bdcd09fc0354537657d43109edb6e2a5509f8299f",
+        "/usr/share/fonts/urw-base35/P052-BoldItalic.t1": "557c1aad252d91a3ae4a19acf18277657cb34cd02caead1ea1d686961678cfd8",
+        "/usr/share/fonts/urw-base35/P052-Italic.otf": "1feac6055211cf5c6c812c026e398195070f174064cc4d390f0db01647443b0e",
+        "/usr/share/fonts/urw-base35/P052-Italic.t1": "d384c8219f35cee51693c0ee09247fbf395910f7e6259e0956a90ab5173a8dbf",
+        "/usr/share/fonts/urw-base35/P052-Roman.otf": "f054a7389d8d0e9f4c5f7b4c21feb7e2b14bec8004a1e92778a78d149524eea9",
+        "/usr/share/fonts/urw-base35/P052-Roman.t1": "99a8259f8eaec4604ad8794dc63e67b0d4fe189bdf6acbd1a7047dbe1ef9c86f",
+        "/usr/share/fonts/urw-base35/StandardSymbolsPS.otf": "df570efda2df425dbfc004e4e5f77c55ca1b47f8ff28ad60dfad0fccf422b0bd",
+        "/usr/share/fonts/urw-base35/StandardSymbolsPS.t1": "b2f78d6ad103708a4483f75087c6ecb71753e9210170c14462b37ef05a3f957a",
+        "/usr/share/fonts/urw-base35/URWBookman-Demi.otf": "ab8b2fe57cbea9783c6179188dc013c76cfc5717c22cf59bbf3016ef2d7d93ee",
+        "/usr/share/fonts/urw-base35/URWBookman-Demi.t1": "baee9214653525ad01de0bc326e3c11b7826c51567336619517d50eab313e37b",
+        "/usr/share/fonts/urw-base35/URWBookman-DemiItalic.otf": "4d9dbaae8178ffa2f5d557245d09dc968eeac9eed7e453cc2db4cc6a9aacb44d",
+        "/usr/share/fonts/urw-base35/URWBookman-DemiItalic.t1": "c2877b3b139dec0544fa9b924517ccaa30600a206e89a9b9f89707ee003cbdfe",
+        "/usr/share/fonts/urw-base35/URWBookman-Light.otf": "7b1bc8e6a16cef53785ce03d4848f8971f3ba38cd9e266e4786a50e08bd9235b",
+        "/usr/share/fonts/urw-base35/URWBookman-Light.t1": "17c7e83cf66537d631a9e0920af9bfa37c8db1a40e29d951869c3562100174ca",
+        "/usr/share/fonts/urw-base35/URWBookman-LightItalic.otf": "ed722e6c2996b08e8516d27a7c017972cfabf5d1736b496b6526da78fd17691a",
+        "/usr/share/fonts/urw-base35/URWBookman-LightItalic.t1": "ab7166058aefa485d11109195a0736633c17e5ad2164083492d94418ee0a657e",
+        "/usr/share/fonts/urw-base35/URWGothic-Book.otf": "04318316cee29950805110c9c8949eea189ef5575132881f4d4d7e03e5299903",
+        "/usr/share/fonts/urw-base35/URWGothic-Book.t1": "aebc5a18ff50235f0850b3812d86a29d18932c4bb8a097b004b8abafc433a395",
+        "/usr/share/fonts/urw-base35/URWGothic-BookOblique.otf": "ec4e947734950fd344918e560bc8ad0c5d8b17d0ab4853988824f13b9f77e53f",
+        "/usr/share/fonts/urw-base35/URWGothic-BookOblique.t1": "03dd97fc09205d48cfb02cb00e1bb181cb10b1aeadef814ac107de21eb91c0b4",
+        "/usr/share/fonts/urw-base35/URWGothic-Demi.otf": "5b009410cf5231dcb1e45b155c1afedcfc63d82042fd8c414d0dd7705c9fbbae",
+        "/usr/share/fonts/urw-base35/URWGothic-Demi.t1": "83cb6f17a042dea63345e222593be1a1ccb13ded278482d13f6511cad0768c54",
+        "/usr/share/fonts/urw-base35/URWGothic-DemiOblique.otf": "d57abaa6d40718cfbf735ad50080d0b095e7194e451992e02786a7c0113db35c",
+        "/usr/share/fonts/urw-base35/URWGothic-DemiOblique.t1": "bcd4c23341a2324459079f8757f6761cfc0c95781d61a4baf4132453ba80a832",
+        "/usr/share/fonts/urw-base35/Z003-MediumItalic.otf": "a04947e59fc9339ea3c4b34c31fd46764f22af7512afc2c074ce190e79ed7a09",
+        "/usr/share/fonts/urw-base35/Z003-MediumItalic.t1": "84ff513d45b7255ddc1ac0bad4b03b1a0fd055f9093617034b59d333ec77b1b6",
+        "/usr/share/fonts/vazirmatn-vf-fonts/Vazirmatn[wght].ttf": "696249a2c74b39ffdef55de4df2809c5b639d3ff80d618d8160a095d2fd49dca"
+      }
+    },
+    "human_review": "pending"
+  },
+  "manifests": [
+    {
+      "path": "build/library-review/catalog.json",
+      "sha256": "10f9c2a6908f6e35564bc6155b0b9a434bd919775cdc07914861effed4ced6ba",
+      "bytes": 2962699
+    },
+    {
+      "path": "build/library-review/coverage.json",
+      "sha256": "d144b110f51c6af7467bf8f84d01046b8007d6875e1568e8c954c68b249c1fce",
+      "bytes": 1464938
+    },
+    {
+      "path": "build/library-review/plates.json",
+      "sha256": "ec6aede9206b30b45642d7e95b51b5cbf8539402d9b65db759ec64f8e783f9ea",
+      "bytes": 177456336
+    },
+    {
+      "path": "build/library-review/exports.json",
+      "sha256": "568f8f9c3f9ebccf8843fb4286269b88964df2ef30b871f67896ad4cacd6a549",
+      "bytes": 199784
+    },
+    {
+      "path": "build/library-review/cleanup.json",
+      "sha256": "0497d31aa744d4eed0ae701239d57128e66de467176d7b3c229d9d5ae7ba4faa",
+      "bytes": 151
+    },
+    {
+      "path": "outputs/library-review/reels/manifest.json",
+      "sha256": "5e465146be49b6c0ea9e8724f57a8267c7b7a6505a181cda6a866211aaae5758",
+      "bytes": 1347550
+    }
+  ],
+  "book": {
+    "path": "outputs/izzi-examples-2026-09-30.pdf",
+    "sha256": "a36ec713fb4b557475ee554f9cc7016c7b34eb4013e5dd511212cf9631834957",
+    "bytes": 9522732077,
+    "pages": 1231,
+    "html": {
+      "path": "build/library-review/index.html",
+      "sha256": "aefcd3a507912ac1df81efd4be91fc2904d081f88426077c07bb49997b3476bb",
+      "bytes": 1410556
+    },
+    "actual_pdf_checks": {
+      "catalog_counts": {
+        "status": "PASS",
+        "detail": [
+          360,
+          31,
+          1294
+        ]
+      },
+      "coverage": {
+        "status": "PASS",
+        "detail": {
+          "status": "PASS",
+          "form_count": 360,
+          "failures": []
+        }
+      },
+      "composition_counts": {
+        "status": "PASS",
+        "detail": {
+          "parameter": 949,
+          "wild": 62,
+          "temporal": 137,
+          "categorical": 45,
+          "crossover-3": 17,
+          "crossover-2": 18
+        }
+      },
+      "family_participation": {
+        "status": "PASS",
+        "detail": {
+          "count": 31,
+          "failures": []
+        }
+      },
+      "source_inventory": {
+        "status": "PASS",
+        "detail": {
+          "status": "PASS"
+        }
+      },
+      "removed_tv_form": {
+        "status": "PASS",
+        "detail": null
+      },
+      "manifest_paths": {
+        "status": "PASS",
+        "detail": {
+          "unique_paths": 11481,
+          "missing": []
+        }
+      },
+      "bundled_source_hashes": {
+        "status": "PASS",
+        "detail": {
+          "count": 89,
+          "failures": []
+        }
+      },
+      "cleanup": {
+        "status": "PASS",
+        "detail": {
+          "removed_count": 0,
+          "remaining": [],
+          "obsolete_tv_files": [],
+          "cleanup": {
+            "schema": "izzi.review-cleanup/1",
+            "removed_assets": [],
+            "scope": "previous manifest-owned plate/contents SVGs, matching PNGs and clip SVGs"
+          }
+        }
+      },
+      "interrupted_cleanup": {
+        "status": "PASS",
+        "detail": {
+          "removed_assets": [
+            "plates/tv-broadcast-transmission-breakup--amount-control.svg",
+            "plates/tv-broadcast-transmission-breakup--burstiness-control.svg",
+            "plates/tv-broadcast-transmission-breakup--checkpoint_frames-control.svg",
+            "plates/tv-broadcast-transmission-breakup--columns-control.svg",
+            "plates/tv-broadcast-transmission-breakup--concealment-control.svg",
+            "plates/tv-broadcast-transmission-breakup--duration-control.svg",
+            "plates/tv-broadcast-transmission-breakup--onset-control.svg",
+            "plates/tv-broadcast-transmission-breakup--recovery-control.svg",
+            "plates/tv-broadcast-transmission-breakup--rows-control.svg",
+            "plates/tv-broadcast-transmission-breakup--temporal.svg"
+          ],
+          "remaining": [],
+          "receipt_sha256": "94f76d0377ddbfd7bee148cd92b22e1dc77e513fe88e58eabf06d1545674961d"
+        }
+      },
+      "pdf_receipt_hashes": {
+        "status": "PASS",
+        "detail": {
+          "receipt": "outputs/izzi-examples-2026-09-30.plates.json",
+          "pdf_sha256": "a36ec713fb4b557475ee554f9cc7016c7b34eb4013e5dd511212cf9631834957"
+        }
+      },
+      "pdf_receipt_counts": {
+        "status": "PASS",
+        "detail": {
+          "expected": 1231,
+          "receipt": 1231,
+          "plates": 1228,
+          "contents": 2
+        }
+      },
+      "actual_pdf_page_count": {
+        "status": "PASS",
+        "detail": 1231
+      },
+      "pdf_letter_pages": {
+        "status": "PASS",
+        "detail": []
+      },
+      "pdf_source_uri_targets": {
+        "status": "PASS",
+        "detail": {
+          "uri_count": 1260,
+          "plate_source_links": 1228,
+          "invalid": []
+        }
+      },
+      "pdf_outlines": {
+        "status": "PASS",
+        "detail": {
+          "count": 1231,
+          "first": [
+            "Izzi current native review",
+            "Contents 1",
+            "Contents 2",
+            "Roulette / Roulette epitrochoid / Fixed circle radius \u00d7 Tracer offset"
+          ],
+          "last": [
+            "Satellite \u00d7 Tv Broadcast \u00d7 Vcr / Vcr Broadcast Satellite / Temporal \u00b7 synchronized native samples",
+            "Satellite \u00d7 Tv Broadcast \u00d7 Vcr / Vcr Broadcast Satellite / crossover-3 \u00b7 component controls"
+          ]
+        }
+      },
+      "searchable_plate_ids": {
+        "status": "PASS",
+        "detail": {
+          "checked": 1228,
+          "missing": []
+        }
+      },
+      "embedded_atkinson_fonts": {
+        "status": "PASS",
+        "detail": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nQJYFPF+AtkinsonHyperlegibleNext-Regular Type 1C           WinAnsi          yes yes yes     12  0\nNVIMWV+FreeMono                      TrueType          WinAnsi          yes yes yes 5543876  0\nNZRJXQ+AtkinsonHyperlegible-Regular  Type 1C           WinAnsi          yes yes yes 5545624  0\nSNWXHD+AtkinsonHyperlegible-Bold     Type 1C           WinAnsi          yes yes yes 5545905  0\nNNQLDW+AtkinsonHyperlegibleNext-Bold Type 1C           WinAnsi          yes yes yes 5546136  0\nSMBFHJ+AtkinsonHyperlegibleNext-SemiBold Type 1C           WinAnsi          yes yes yes 5546138  0\n"
+      },
+      "inspection_selection": {
+        "status": "PASS",
+        "detail": {
+          "count": 10,
+          "selected": [
+            {
+              "page": 1,
+              "title": "Cover",
+              "raster_path": "/tmp/izzi-final-book-inspection/page-1.png"
+            },
+            {
+              "page": 2,
+              "title": "Contents",
+              "raster_path": "/tmp/izzi-final-book-inspection/page-2.png"
+            },
+            {
+              "page": 246,
+              "title": "Wisteria",
+              "plate_id": "botanical-wisteria--cluster_fullness",
+              "raster_path": "/tmp/izzi-final-book-inspection/page-246.png"
+            },
+            {
+              "page": 266,
+              "title": "Grooved brain coral",
+              "plate_id": "coral-grooved-brain--depth-ridge_width",
+              "raster_path": "/tmp/izzi-final-book-inspection/page-266.png"
+            },
+            {
+              "page": 242,
+              "title": "Saguaro",
+              "plate_id": "botanical-saguaro--arm_width-height",
+              "raster_path": "/tmp/izzi-final-book-inspection/page-242.png"
+            },
+            {
+              "page": 234,
+              "title": "Imam portal wall coffers",
+              "plate_id": "arabesque-imam-portal-coffers--depth-proportion",
+              "raster_path": "/tmp/izzi-final-book-inspection/page-234.png"
+            },
+            {
+              "page": 236,
+              "title": "Jameh south-iwan wall coffers",
+              "plate_id": "arabesque-jameh-south-iwan-coffers--depth-proportion",
+              "raster_path": "/tmp/izzi-final-book-inspection/page-236.png"
+            },
+            {
+              "page": 295,
+              "title": "Shah entrance-iwan coffers",
+              "plate_id": "muqarnas-shah-entrance-iwan--depth-ornament",
+              "raster_path": "/tmp/izzi-final-book-inspection/page-295.png"
+            },
+            {
+              "page": 288,
+              "title": "Alhambra Dos Hermanas dome",
+              "plate_id": "muqarnas-alhambra-dos-hermanas--depth-ornament",
+              "raster_path": "/tmp/izzi-final-book-inspection/page-288.png"
+            },
+            {
+              "page": 950,
+              "title": "CRT shutdown",
+              "plate_id": "tv-broadcast-crt-power-off--black_duration-control--part-01",
+              "raster_path": "/tmp/izzi-final-book-inspection/page-950.png"
+            }
+          ]
+        }
+      },
+      "crt_raster_sampling": {
+        "status": "PASS",
+        "detail": {
+          "report": "/home/bkoz/src/izzi/build/review-crt-raster-sampling-verification.json",
+          "same_source_and_solid_colors": true,
+          "pixel_identity_scope": "decoded compact artwork crops only"
+        }
+      }
+    },
+    "assistant_inspection": {
+      "status": "PASS",
+      "scope": "Actual vector PDF rasters of 10 selected pages: cover, contents, Wisteria, grooved brain coral, Saguaro, separate Imam/Jameh wall patterns, Shah/Alhambra vaults and CRT shutdown",
+      "findings": [],
+      "notes": [
+        "Selected constructions fit their frozen viewports with readable vector titles, legends and source labels; no clipping observed.",
+        "Imam/Jameh wall patterns remain separate from correctly named Shah entrance-iwan and Alhambra Dos Hermanas vaults.",
+        "Black CRT end-state cells agree with displayed sample progress; fine scanline paint shows expected rasterizer sampling differences at preview resolution.",
+        "CRT page 950 uses subpixel scanlines: vector PDF viewer rasterization can shift their apparent color versus the canonical 100 dpi PNG. Both use the same SVG and state; solid calibration colors match exactly. Pixel identity is asserted for decoded compact artwork crops, not for PDF viewer rasters."
+      ],
+      "contact_sheet": "/tmp/izzi-final-book-inspection/contact-sheet.png"
+    }
+  },
+  "compact_book": {
+    "path": "outputs/izzi-examples-2026-09-30.review.pdf",
+    "sha256": "3a31cec2309ca84de64f62d6b90f45dcc7671d9d90859da020cc2eebb6df80b4",
+    "bytes": 129921794,
+    "pages": 1231,
+    "artwork": {
+      "source_page_pixels": [
+        850,
+        1100
+      ],
+      "resolution_dpi": 100,
+      "encoding": "lossless PNG",
+      "policy": "Unscaled integer crops of verified canonical page PNGs; surrounding annotations stay vector"
+    },
+    "actual_pdf_checks": {
+      "catalog": {
+        "status": "PASS",
+        "detail": null
+      },
+      "coverage": {
+        "status": "PASS",
+        "detail": null
+      },
+      "receipt_hashes": {
+        "status": "PASS",
+        "detail": null
+      },
+      "source_snapshots": {
+        "status": "PASS",
+        "detail": null
+      },
+      "page_assembly": {
+        "status": "PASS",
+        "detail": {
+          "pages": 1231,
+          "plates": 1228
+        }
+      },
+      "derived_svg_hashes": {
+        "status": "PASS",
+        "detail": null
+      },
+      "canonical_png_hashes": {
+        "status": "PASS",
+        "detail": null
+      },
+      "resolution": {
+        "status": "PASS",
+        "detail": null
+      },
+      "actual_letter_pdf": {
+        "status": "PASS",
+        "detail": {
+          "pages": 1231,
+          "bad_sizes": []
+        }
+      },
+      "source_uri_targets": {
+        "status": "PASS",
+        "detail": {
+          "links": 1260,
+          "bad_uris": []
+        }
+      },
+      "outlines": {
+        "status": "PASS",
+        "detail": 1231
+      },
+      "searchable_plate_ids": {
+        "status": "PASS",
+        "detail": {
+          "checked": 1228,
+          "missing": []
+        }
+      },
+      "embedded_atkinson": {
+        "status": "PASS",
+        "detail": {
+          "fonts": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nHRWMNL+AtkinsonHyperlegibleNext-Regular Type 1C           WinAnsi          yes yes yes     12  0\n",
+          "scope": "Canonical outer annotations useRegular; nativeBold typography remains in exact rasterartwork."
+        }
+      },
+      "extracted_artwork": {
+        "status": "PASS",
+        "detail": [
+          {
+            "plate_id": "botanical-wisteria--cluster_fullness",
+            "cells": [
+              {
+                "cell": 0,
+                "pixel_exact": true,
+                "match": {
+                  "decoded_image": 0,
+                  "cairo_padding_offset": [
+                    2,
+                    1
+                  ]
+                }
+              },
+              {
+                "cell": 1,
+                "pixel_exact": true,
+                "match": {
+                  "decoded_image": 1,
+                  "cairo_padding_offset": [
+                    2,
+                    1
+                  ]
+                }
+              },
+              {
+                "cell": 2,
+                "pixel_exact": true,
+                "match": {
+                  "decoded_image": 2,
+                  "cairo_padding_offset": [
+                    2,
+                    1
+                  ]
+                }
+              },
+              {
+                "cell": 3,
+                "pixel_exact": true,
+                "match": {
+                  "decoded_image": 3,
+                  "cairo_padding_offset": [
+                    2,
+                    1
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "plate_id": "coral-grooved-brain--depth-ridge_width",
+            "cells": [
+              {
+                "cell": 0,
+                "pixel_exact": true,
+                "match": {
+                  "decoded_image": 0,
+                  "cairo_padding_offset": [
+                    2,
+                    1
+                  ]
+                }
+              },
+              {
+                "cell": 1,
+                "pixel_exact": true,
+                "match": {
+                  "decoded_image": 1,
+                  "cairo_padding_offset": [
+                    0,
+                    0
+                  ]
+                }
+              },
+              {
+                "cell": 2,
+                "pixel_exact": true,
+                "match": {
+                  "decoded_image": 2,
+                  "cairo_padding_offset": [
+                    1,
+                    1
+                  ]
+                }
+              },
+              {
+                "cell": 3,
+                "pixel_exact": true,
+                "match": {
+                  "decoded_image": 3,
+                  "cairo_padding_offset": [
+                    2,
+                    1
+                  ]
+                }
+              },
+              {
+                "cell": 4,
+                "pixel_exact": true,
+                "match": {
+                  "decoded_image": 4,
+                  "cairo_padding_offset": [
+                    0,
+                    0
+                  ]
+                }
+              },
+              {
+                "cell": 5,
+                "pixel_exact": true,
+                "match": {
+                  "decoded_image": 5,
+                  "cairo_padding_offset": [
+                    1,
+                    1
+                  ]
+                }
+              },
+              {
+                "cell": 6,
+                "pixel_exact": true,
+                "match": {
+                  "decoded_image": 6,
+                  "cairo_padding_offset": [
+                    2,
+                    0
+                  ]
+                }
+              },
+              {
+                "cell": 7,
+                "pixel_exact": true,
+                "match": {
+                  "decoded_image": 7,
+                  "cairo_padding_offset": [
+                    1,
+                    0
+                  ]
+                }
+              },
+              {
+                "cell": 8,
+                "pixel_exact": true,
+                "match": {
+                  "decoded_image": 8,
+                  "cairo_padding_offset": [
+                    1,
+                    0
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "plate_id": "botanical-saguaro--arm_width-height",
+            "cells": [
+              {
+                "cell": 0,
+                "pixel_exact": true,
+                "match": {
+                  "decoded_image": 0,
+                  "cairo_padding_offset": [
+                    2,
+                    1
+                  ]
+                }
+              },
+              {
+                "cell": 1,
+                "pixel_exact": true,
+                "match": {
+                  "decoded_image": 1,
+                  "cairo_padding_offset": [
+                    0,
+                    0
+                  ]
+                }
+              },
+              {
+                "cell": 2,
+                "pixel_exact": true,
+                "match": {
+                  "decoded_image": 2,
+                  "cairo_padding_offset": [
+                    1,
+                    1
+                  ]
+                }
+              },
+              {
+                "cell": 3,
+                "pixel_exact": true,
+                "match": {
+                  "decoded_image": 3,
+                  "cairo_padding_offset": [
+                    2,
+                    1
+                  ]
+                }
+              },
+              {
+                "cell": 4,
+                "pixel_exact": true,
+                "match": {
+                  "decoded_image": 4,
+                  "cairo_padding_offset": [
+                    0,
+                    0
+                  ]
+                }
+              },
+              {
+                "cell": 5,
+                "pixel_exact": true,
+                "match": {
+                  "decoded_image": 5,
+                  "cairo_padding_offset": [
+                    1,
+                    1
+                  ]
+                }
+              },
+              {
+                "cell": 6,
+                "pixel_exact": true,
+                "match": {
+                  "decoded_image": 6,
+                  "cairo_padding_offset": [
+                    2,
+                    0
+                  ]
+                }
+              },
+              {
+                "cell": 7,
+                "pixel_exact": true,
+                "match": {
+                  "decoded_image": 7,
+                  "cairo_padding_offset": [
+                    1,
+                    0
+                  ]
+                }
+              },
+              {
+                "cell": 8,
+                "pixel_exact": true,
+                "match": {
+                  "decoded_image": 8,
+                  "cairo_padding_offset": [
+                    1,
+                    0
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "plate_id": "arabesque-imam-portal-coffers--depth-proportion",
+            "cells": [
+              {
+                "cell": 0,
+                "pixel_exact": true,
+                "match": {
+                  "decoded_image": 0,
+                  "cairo_padding_offset": [
+                    2,
+                    1
+                  ]
+                }
+              },
+              {
+                "cell": 1,
+                "pixel_exact": true,
+                "match": {
+                  "decoded_image": 1,
+                  "cairo_padding_offset": [
+                    0,
+                    0
+                  ]
+                }
+              },
+              {
+                "cell": 2,
+                "pixel_exact": true,
+                "match": {
+                  "decoded_image": 2,
+                  "cairo_padding_offset": [
+                    1,
+                    1
+                  ]
+                }
+              },
+              {
+                "cell": 3,
+                "pixel_exact": true,
+                "match": {
+                  "decoded_image": 3,
+                  "cairo_padding_offset": [
+                    2,
+                    1
+                  ]
+                }
+              },
+              {
+                "cell": 4,
+                "pixel_exact": true,
+                "match": {
+                  "decoded_image": 4,
+                  "cairo_padding_offset": [
+                    0,
+                    0
+                  ]
+                }
+              },
+              {
+                "cell": 5,
+                "pixel_exact": true,
+                "match": {
+                  "decoded_image": 5,
+                  "cairo_padding_offset": [
+                    1,
+                    1
+                  ]
+                }
+              },
+              {
+                "cell": 6,
+                "pixel_exact": true,
+                "match": {
+                  "decoded_image": 6,
+                  "cairo_padding_offset": [
+                    2,
+                    0
+                  ]
+                }
+              },
+              {
+                "cell": 7,
+                "pixel_exact": true,
+                "match": {
+                  "decoded_image": 7,
+                  "cairo_padding_offset": [
+                    1,
+                    0
+                  ]
+                }
+              },
+              {
+                "cell": 8,
+                "pixel_exact": true,
+                "match": {
+                  "decoded_image": 8,
+                  "cairo_padding_offset": [
+                    1,
+                    0
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "plate_id": "arabesque-jameh-south-iwan-coffers--depth-proportion",
+            "cells": [
+              {
+                "cell": 0,
+                "pixel_exact": true,
+                "match": {
+                  "decoded_image": 0,
+                  "cairo_padding_offset": [
+                    2,
+                    1
+                  ]
+                }
+              },
+              {
+                "cell": 1,
+                "pixel_exact": true,
+                "match": {
+                  "decoded_image": 1,
+                  "cairo_padding_offset": [
+                    0,
+                    0
+                  ]
+                }
+              },
+              {
+                "cell": 2,
+                "pixel_exact": true,
+                "match": {
+                  "decoded_image": 2,
+                  "cairo_padding_offset": [
+                    1,
+                    1
+                  ]
+                }
+              },
+              {
+                "cell": 3,
+                "pixel_exact": true,
+                "match": {
+                  "decoded_image": 3,
+                  "cairo_padding_offset": [
+                    2,
+                    1
+                  ]
+                }
+              },
+              {
+                "cell": 4,
+                "pixel_exact": true,
+                "match": {
+                  "decoded_image": 4,
+                  "cairo_padding_offset": [
+                    0,
+                    0
+                  ]
+                }
+              },
+              {
+                "cell": 5,
+                "pixel_exact": true,
+                "match": {
+                  "decoded_image": 5,
+                  "cairo_padding_offset": [
+                    1,
+                    1
+                  ]
+                }
+              },
+              {
+                "cell": 6,
+                "pixel_exact": true,
+                "match": {
+                  "decoded_image": 6,
+                  "cairo_padding_offset": [
+                    2,
+                    0
+                  ]
+                }
+              },
+              {
+                "cell": 7,
+                "pixel_exact": true,
+                "match": {
+                  "decoded_image": 7,
+                  "cairo_padding_offset": [
+                    1,
+                    0
+                  ]
+                }
+              },
+              {
+                "cell": 8,
+                "pixel_exact": true,
+                "match": {
+                  "decoded_image": 8,
+                  "cairo_padding_offset": [
+                    1,
+                    0
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "plate_id": "muqarnas-shah-entrance-iwan--depth-ornament",
+            "cells": [
+              {
+                "cell": 0,
+                "pixel_exact": true,
+                "match": {
+                  "decoded_image": 0,
+                  "cairo_padding_offset": [
+                    2,
+                    1
+                  ]
+                }
+              },
+              {
+                "cell": 1,
+                "pixel_exact": true,
+                "match": {
+                  "decoded_image": 1,
+                  "cairo_padding_offset": [
+                    0,
+                    0
+                  ]
+                }
+              },
+              {
+                "cell": 2,
+                "pixel_exact": true,
+                "match": {
+                  "decoded_image": 2,
+                  "cairo_padding_offset": [
+                    1,
+                    1
+                  ]
+                }
+              },
+              {
+                "cell": 3,
+                "pixel_exact": true,
+                "match": {
+                  "decoded_image": 3,
+                  "cairo_padding_offset": [
+                    2,
+                    1
+                  ]
+                }
+              },
+              {
+                "cell": 4,
+                "pixel_exact": true,
+                "match": {
+                  "decoded_image": 4,
+                  "cairo_padding_offset": [
+                    0,
+                    0
+                  ]
+                }
+              },
+              {
+                "cell": 5,
+                "pixel_exact": true,
+                "match": {
+                  "decoded_image": 5,
+                  "cairo_padding_offset": [
+                    1,
+                    1
+                  ]
+                }
+              },
+              {
+                "cell": 6,
+                "pixel_exact": true,
+                "match": {
+                  "decoded_image": 6,
+                  "cairo_padding_offset": [
+                    2,
+                    0
+                  ]
+                }
+              },
+              {
+                "cell": 7,
+                "pixel_exact": true,
+                "match": {
+                  "decoded_image": 7,
+                  "cairo_padding_offset": [
+                    1,
+                    0
+                  ]
+                }
+              },
+              {
+                "cell": 8,
+                "pixel_exact": true,
+                "match": {
+                  "decoded_image": 8,
+                  "cairo_padding_offset": [
+                    1,
+                    0
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "plate_id": "muqarnas-alhambra-dos-hermanas--depth-ornament",
+            "cells": [
+              {
+                "cell": 0,
+                "pixel_exact": true,
+                "match": {
+                  "decoded_image": 0,
+                  "cairo_padding_offset": [
+                    2,
+                    1
+                  ]
+                }
+              },
+              {
+                "cell": 1,
+                "pixel_exact": true,
+                "match": {
+                  "decoded_image": 1,
+                  "cairo_padding_offset": [
+                    0,
+                    0
+                  ]
+                }
+              },
+              {
+                "cell": 2,
+                "pixel_exact": true,
+                "match": {
+                  "decoded_image": 2,
+                  "cairo_padding_offset": [
+                    1,
+                    1
+                  ]
+                }
+              },
+              {
+                "cell": 3,
+                "pixel_exact": true,
+                "match": {
+                  "decoded_image": 3,
+                  "cairo_padding_offset": [
+                    2,
+                    1
+                  ]
+                }
+              },
+              {
+                "cell": 4,
+                "pixel_exact": true,
+                "match": {
+                  "decoded_image": 4,
+                  "cairo_padding_offset": [
+                    0,
+                    0
+                  ]
+                }
+              },
+              {
+                "cell": 5,
+                "pixel_exact": true,
+                "match": {
+                  "decoded_image": 5,
+                  "cairo_padding_offset": [
+                    1,
+                    1
+                  ]
+                }
+              },
+              {
+                "cell": 6,
+                "pixel_exact": true,
+                "match": {
+                  "decoded_image": 6,
+                  "cairo_padding_offset": [
+                    2,
+                    0
+                  ]
+                }
+              },
+              {
+                "cell": 7,
+                "pixel_exact": true,
+                "match": {
+                  "decoded_image": 7,
+                  "cairo_padding_offset": [
+                    1,
+                    0
+                  ]
+                }
+              },
+              {
+                "cell": 8,
+                "pixel_exact": true,
+                "match": {
+                  "decoded_image": 8,
+                  "cairo_padding_offset": [
+                    1,
+                    0
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "plate_id": "tv-broadcast-crt-power-off--black_duration-control--part-01",
+            "cells": [
+              {
+                "cell": 0,
+                "pixel_exact": true,
+                "match": {
+                  "decoded_image": 0,
+                  "cairo_padding_offset": [
+                    2,
+                    1
+                  ]
+                }
+              },
+              {
+                "cell": 1,
+                "pixel_exact": true,
+                "match": {
+                  "decoded_image": 0,
+                  "cairo_padding_offset": [
+                    2,
+                    1
+                  ]
+                }
+              },
+              {
+                "cell": 2,
+                "pixel_exact": true,
+                "match": {
+                  "decoded_image": 0,
+                  "cairo_padding_offset": [
+                    2,
+                    1
+                  ]
+                }
+              },
+              {
+                "cell": 3,
+                "pixel_exact": true,
+                "match": {
+                  "decoded_image": 0,
+                  "cairo_padding_offset": [
+                    2,
+                    1
+                  ]
+                }
+              },
+              {
+                "cell": 4,
+                "pixel_exact": true,
+                "match": {
+                  "decoded_image": 4,
+                  "cairo_padding_offset": [
+                    0,
+                    0
+                  ]
+                }
+              },
+              {
+                "cell": 5,
+                "pixel_exact": true,
+                "match": {
+                  "decoded_image": 4,
+                  "cairo_padding_offset": [
+                    0,
+                    0
+                  ]
+                }
+              },
+              {
+                "cell": 6,
+                "pixel_exact": true,
+                "match": {
+                  "decoded_image": 6,
+                  "cairo_padding_offset": [
+                    2,
+                    2
+                  ]
+                }
+              },
+              {
+                "cell": 7,
+                "pixel_exact": true,
+                "match": {
+                  "decoded_image": 7,
+                  "cairo_padding_offset": [
+                    1,
+                    2
+                  ]
+                }
+              },
+              {
+                "cell": 8,
+                "pixel_exact": true,
+                "match": {
+                  "decoded_image": 8,
+                  "cairo_padding_offset": [
+                    1,
+                    2
+                  ]
+                }
+              },
+              {
+                "cell": 9,
+                "pixel_exact": true,
+                "match": {
+                  "decoded_image": 8,
+                  "cairo_padding_offset": [
+                    1,
+                    2
+                  ]
+                }
+              },
+              {
+                "cell": 10,
+                "pixel_exact": true,
+                "match": {
+                  "decoded_image": 10,
+                  "cairo_padding_offset": [
+                    1,
+                    1
+                  ]
+                }
+              },
+              {
+                "cell": 11,
+                "pixel_exact": true,
+                "match": {
+                  "decoded_image": 11,
+                  "cairo_padding_offset": [
+                    1,
+                    0
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "plate_id": "guilloche-basketweave--width_count",
+            "cells": [
+              {
+                "cell": 0,
+                "pixel_exact": true,
+                "match": {
+                  "decoded_image": 0,
+                  "cairo_padding_offset": [
+                    2,
+                    1
+                  ]
+                }
+              },
+              {
+                "cell": 1,
+                "pixel_exact": true,
+                "match": {
+                  "decoded_image": 1,
+                  "cairo_padding_offset": [
+                    2,
+                    1
+                  ]
+                }
+              },
+              {
+                "cell": 2,
+                "pixel_exact": true,
+                "match": {
+                  "decoded_image": 2,
+                  "cairo_padding_offset": [
+                    2,
+                    1
+                  ]
+                }
+              },
+              {
+                "cell": 3,
+                "pixel_exact": true,
+                "match": {
+                  "decoded_image": 3,
+                  "cairo_padding_offset": [
+                    2,
+                    1
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "crt_raster_sampling": {
+        "status": "PASS",
+        "detail": {
+          "report": "/home/bkoz/src/izzi/build/review-crt-raster-sampling-verification.json",
+          "same_source_and_solid_colors": true,
+          "pixel_identity_scope": "decoded compact artwork crops only"
+        }
+      }
+    },
+    "assistant_inspection": {
+      "status": "PASS",
+      "scope": "Actual compact PDF rasters of 11 selected pages; full-resolution Wisteria and native width_count 1\u20134 pages additionally inspected",
+      "findings": [],
+      "notes": [
+        "Artwork fits frozen viewports; titles, legends and source labels remain readable with no observed clipping.",
+        "Both accepted wall patterns and both named vault constructions retain distinct labels and visible geometry.",
+        "CRT shutdown black frames agree with sampled end-state progress; native width_count1\u20134 states remain distinguishable.",
+        "The compact delivery uses disclosed 100 dpi lossless artwork and original vector annotations. Atkinson Regular serves those annotations; native Bold typography is rasterized within artwork.",
+        "CRT page 950 uses subpixel scanlines: vector PDF viewer rasterization can shift their apparent color versus the canonical 100 dpi PNG. Both use the same SVG and state; solid calibration colors match exactly. Pixel identity is asserted for decoded compact artwork crops, not for PDF viewer rasters."
+      ],
+      "contact_sheet": "/tmp/izzi-final-compact-inspection/contact-sheet.png"
+    }
+  },
+  "active_frame_inspection": "Viewed actual decoded frames: visible native artwork and complete readable titles, family lines and plate identities; wisteria cluster taper, grooved coral relief, saguaro trunk/arm variation and all three film-wave-wisteria contributions remain visible.",
+  "assembled_frame_verification": {
+    "method": "Seek actual completed library reel and corresponding standalone chapter, decode one RGB24 frame and compare every pixel.",
+    "frames": [
+      {
+        "chapter": "botanical-wisteria",
+        "orientation": "horizontal",
+        "chapter_time": 4,
+        "complete_reel_time": 328,
+        "chapter_index": 27,
+        "rgb24_sha256": "755f41e6c77ecd3e1c2966b05b541a61d6b1db2d0572e7e43e72deee592e2679",
+        "assembled_frame_match": "pixel-exact"
+      },
+      {
+        "chapter": "botanical-saguaro",
+        "orientation": "vertical",
+        "chapter_time": 4,
+        "complete_reel_time": 304,
+        "chapter_index": 25,
+        "rgb24_sha256": "5c2b21c23d77e9440f7c2d985f457f0b69c1d3ded6fd417a5ad6fd378d70da84",
+        "assembled_frame_match": "pixel-exact"
+      },
+      {
+        "chapter": "film-wave-wisteria",
+        "orientation": "horizontal",
+        "chapter_time": 4,
+        "complete_reel_time": 1972,
+        "chapter_index": 164,
+        "rgb24_sha256": "100e8df009ad681aa1ebbddede7a7daf331205e62ee9bb970a66b9f168636465",
+        "assembled_frame_match": "pixel-exact"
+      },
+      {
+        "chapter": "tv-broadcast/crt-power-off",
+        "orientation": "vertical",
+        "chapter_time": 11.958333333333334,
+        "complete_reel_time": 755.9583333333334,
+        "chapter_index": 62,
+        "rgb24_sha256": "037f8112a4010fbe02540f112601c87316f85804504865031665f1fc55aae8cf",
+        "assembled_frame_match": "pixel-exact"
+      }
+    ]
+  },
+  "reels": [
+    {
+      "path": "outputs/library-review/reels/deliveries/library-motion-complete-horizontal.mkv",
+      "sha256": "073a780e5924c48e691f84c0062f11f70c54904e70c87a4fc4748f123ba2155a",
+      "bytes": 134103610,
+      "orientation": "horizontal",
+      "size": [
+        1280,
+        720
+      ],
+      "frames": 52992,
+      "fps": 24,
+      "seconds": 2208.0,
+      "complete_decode": "PASS",
+      "chapters": 184
+    },
+    {
+      "path": "outputs/library-review/reels/deliveries/library-motion-complete-vertical.mkv",
+      "sha256": "635113d613baa639944774370fb95049d077b492f5b1dc1f0b7d40d18d74bd75",
+      "bytes": 121747593,
+      "orientation": "vertical",
+      "size": [
+        720,
+        1280
+      ],
+      "frames": 52992,
+      "fps": 24,
+      "seconds": 2208.0,
+      "complete_decode": "PASS",
+      "chapters": 184
+    },
+    {
+      "path": "outputs/library-review/reels/deliveries/screen-glitch-complete-horizontal.mkv",
+      "sha256": "c8a329fffbe74e08265599a7adcf3a027f896adcecce3428562b16f2edbe17a4",
+      "bytes": 36291806,
+      "orientation": "horizontal",
+      "size": [
+        1280,
+        720
+      ],
+      "frames": 10944,
+      "fps": 24,
+      "seconds": 456.0,
+      "complete_decode": "PASS",
+      "chapters": 38
+    },
+    {
+      "path": "outputs/library-review/reels/deliveries/screen-glitch-complete-vertical.mkv",
+      "sha256": "15f96ae901048aa3c5765b9828e1c45d2aead755c40d5dc017dd41287d216819",
+      "bytes": 36524758,
+      "orientation": "vertical",
+      "size": [
+        720,
+        1280
+      ],
+      "frames": 10944,
+      "fps": 24,
+      "seconds": 456.0,
+      "complete_decode": "PASS",
+      "chapters": 38
+    },
+    {
+      "path": "outputs/library-review/reels/deliveries/film-complete-horizontal.mkv",
+      "sha256": "ff9e81bb26b4995ed3d280fa5d016f02b8d8d1541e8996b7138139161c5298e6",
+      "bytes": 29647738,
+      "orientation": "horizontal",
+      "size": [
+        1280,
+        720
+      ],
+      "frames": 5760,
+      "fps": 24,
+      "seconds": 240.0,
+      "complete_decode": "PASS",
+      "chapters": 20
+    },
+    {
+      "path": "outputs/library-review/reels/deliveries/film-complete-vertical.mkv",
+      "sha256": "d33348d0352a46ee6832596df7cb4c024c4faff4625148625bff283795cad89d",
+      "bytes": 29576630,
+      "orientation": "vertical",
+      "size": [
+        720,
+        1280
+      ],
+      "frames": 5760,
+      "fps": 24,
+      "seconds": 240.0,
+      "complete_decode": "PASS",
+      "chapters": 20
+    },
+    {
+      "path": "outputs/library-review/reels/deliveries/satellite-complete-horizontal.mkv",
+      "sha256": "eca12561ed489d0fb82c83529ad6791759347e14c4be06e2ee05cb3399e7f81e",
+      "bytes": 1793686,
+      "orientation": "horizontal",
+      "size": [
+        1280,
+        720
+      ],
+      "frames": 1728,
+      "fps": 24,
+      "seconds": 72.0,
+      "complete_decode": "PASS",
+      "chapters": 6
+    },
+    {
+      "path": "outputs/library-review/reels/deliveries/satellite-complete-vertical.mkv",
+      "sha256": "93b0ffe7f0d3e73fa001e45144bde7ee8f56a782a6fe5405d2800e1ea14e5b41",
+      "bytes": 1862341,
+      "orientation": "vertical",
+      "size": [
+        720,
+        1280
+      ],
+      "frames": 1728,
+      "fps": 24,
+      "seconds": 72.0,
+      "complete_decode": "PASS",
+      "chapters": 6
+    },
+    {
+      "path": "outputs/library-review/reels/deliveries/tv-broadcast-complete-horizontal.mkv",
+      "sha256": "4ea1784a34e6118adf045d5bae241e0db85d9e4654e87ad8fcbcefc9b923905d",
+      "bytes": 2295755,
+      "orientation": "horizontal",
+      "size": [
+        1280,
+        720
+      ],
+      "frames": 1728,
+      "fps": 24,
+      "seconds": 72.0,
+      "complete_decode": "PASS",
+      "chapters": 6
+    },
+    {
+      "path": "outputs/library-review/reels/deliveries/tv-broadcast-complete-vertical.mkv",
+      "sha256": "0e23d3c609fae3850e9f3f5f51d2844f11e136b44b88168a452cc91748c9714f",
+      "bytes": 2419559,
+      "orientation": "vertical",
+      "size": [
+        720,
+        1280
+      ],
+      "frames": 1728,
+      "fps": 24,
+      "seconds": 72.0,
+      "complete_decode": "PASS",
+      "chapters": 6
+    },
+    {
+      "path": "outputs/library-review/reels/deliveries/vcr-complete-horizontal.mkv",
+      "sha256": "50976d7b45ff543c87750ad916ad8e7a146b57e8bd6d79d2741a047e84d21e7b",
+      "bytes": 2556325,
+      "orientation": "horizontal",
+      "size": [
+        1280,
+        720
+      ],
+      "frames": 1728,
+      "fps": 24,
+      "seconds": 72.0,
+      "complete_decode": "PASS",
+      "chapters": 6
+    },
+    {
+      "path": "outputs/library-review/reels/deliveries/vcr-complete-vertical.mkv",
+      "sha256": "b384decfbd75538fe24519a0fb530abf988763d56197ba5e07ff202f76f29902",
+      "bytes": 2667926,
+      "orientation": "vertical",
+      "size": [
+        720,
+        1280
+      ],
+      "frames": 1728,
+      "fps": 24,
+      "seconds": 72.0,
+      "complete_decode": "PASS",
+      "chapters": 6
+    }
+  ],
+  "reel_scope": {
+    "library-motion-complete": "Every native temporal/media chapter and every authored wild/crossover chapter",
+    "screen-glitch-complete_and_per_media": "Native clean/current input versus processed picture comparisons"
+  },
+  "endpoint_verification": {
+    "method": "Decode ffmpeg tail, select last RGB frame; crop actual tight native artwork from frozen layout and last-frame raster size. CRT checks only processed panel; current-source panel remains visible. Require exact solid pre-encode artwork hash, then bound codec residuals.",
+    "tolerance": {
+      "interior_max_channel_error": 4,
+      "edge_max_channel_error": 24,
+      "edge_band_pixels": 4,
+      "mean_channel_error": 0.5,
+      "preencode_artwork": "exact solid RGB hash required"
+    },
+    "reviewed_codec_exceptions": [
+      {
+        "chapter_id": "film-wild-hierarchy",
+        "standard_interior_limit": 4,
+        "observed_max_channel_error": 5,
+        "pixels_above_standard_limit": [
+          {
+            "xy": [
+              304,
+              250
+            ],
+            "rgb": [
+              251,
+              253,
+              250
+            ],
+            "max_channel_error": 5,
+            "distance_from_crop_boundary": 93
+          },
+          {
+            "xy": [
+              304,
+              252
+            ],
+            "rgb": [
+              253,
+              253,
+              250
+            ],
+            "max_channel_error": 5,
+            "distance_from_crop_boundary": 93
+          }
+        ],
+        "artifact_sha256": "05f76e246fbca72c65bc86a3f7a9deb5283666ac9236cd3ea5c41054f98b8d9d",
+        "disposition": "Reviewed isolated H.264 quantization residual; exact-solid pre-encode artwork and visually blank decoded endpoint. Applies only to this movie hash and these exact pixels; global tolerance remains unchanged.",
+        "review": "root and endpoint auditor technical inspection; artistic acceptance remains pending"
+      }
+    ]
+  },
+  "duplicate_dispositions": [
+    {
+      "forms": [
+        "type-rotated",
+        "type-skew"
+      ],
+      "disposition": "Retain distinct transforms; zero-angle baselines are both identity and all nonzero study states differ."
+    },
+    {
+      "forms": [
+        "film/abrasion-field",
+        "film/torn-sheet"
+      ],
+      "disposition": "Retain distinct mechanisms; torn sheet is intermittently inactive at baseline, with distinct nonneutral geometry and pixels."
+    },
+    {
+      "removed": "20 repeated Hamonshu constructions",
+      "remaining": 133
+    },
+    {
+      "removed": "tv-broadcast/transmission-breakup",
+      "shared_form": "satellite/transport-burst-recovery"
+    }
+  ],
+  "test_groups": [
+    {
+      "path": "build/review-chord-final-tests.log",
+      "sha256": "1308964ff59599db7ff39d9e3524140f340945a30509631f3976fbc9598e8065",
+      "bytes": 1436,
+      "status": "PASS",
+      "ctest_groups": [
+        {
+          "tests": 3
+        }
+      ]
+    },
+    {
+      "path": "build/review-clang-commit-tests.log",
+      "sha256": "5e700fbd6ebac24da77e6fb2bc4779e753283586076add55f6f0728727241b06",
+      "bytes": 2402,
+      "status": "PASS",
+      "ctest_groups": [
+        {
+          "tests": 12
+        }
+      ]
+    },
+    {
+      "path": "build/review-compact-final-tests.log",
+      "sha256": "21ea1340c6570372073c82dcf137352e7704750ec6afb2af12f80f9168cca208",
+      "bytes": 1213,
+      "status": "PASS",
+      "ctest_groups": [
+        {
+          "tests": 1
+        }
+      ]
+    },
+    {
+      "path": "build/review-extra-final-tests.log",
+      "sha256": "bc8f4d4b91b61c5c8b52c612f7e26e3e9af8bef7c3c220375910e2e80a173d74",
+      "bytes": 674,
+      "status": "PASS",
+      "ctest_groups": [
+        {
+          "tests": 2
+        }
+      ]
+    },
+    {
+      "path": "build/review-gcc-extra-header-tests.log",
+      "sha256": "83134fc480f1442cd4de58dfe7907bf93c69e9495137e2fc5002df16956c3d21",
+      "bytes": 397,
+      "status": "PASS",
+      "ctest_groups": [
+        {
+          "tests": 1
+        }
+      ]
+    },
+    {
+      "path": "build/review-geometry-regression-tests.log",
+      "sha256": "4ba49cdf1a189fb47e621546cd5ffc55d24ccaf38c6934e852fa9fb469363870",
+      "bytes": 797,
+      "status": "PASS",
+      "ctest_groups": [
+        {
+          "tests": 4
+        }
+      ]
+    },
+    {
+      "path": "build/review-headers-final-tests.log",
+      "sha256": "8ef211e2e42761331812f1387f45e32dbad45ff1fe0983c214ad65fb1e291abc",
+      "bytes": 1171,
+      "status": "PASS",
+      "ctest_groups": [
+        {
+          "tests": 6
+        }
+      ]
+    },
+    {
+      "path": "build/review-package-final-tests.log",
+      "sha256": "8f88ff00d0e39c5f79e8231c80ca5bd66e5d20728ab7459ea19d3842b6320c25",
+      "bytes": 1158,
+      "status": "PASS",
+      "ctest_groups": [
+        {
+          "tests": 5
+        }
+      ]
+    },
+    {
+      "path": "build/review-presentation-final-tests.log",
+      "sha256": "58bdcc01adb0b3af75965899914ccb4e09e70e8fce21ee53a7b185a416228af3",
+      "bytes": 594,
+      "status": "PASS",
+      "ctest_groups": [
+        {
+          "tests": 2
+        }
+      ]
+    },
+    {
+      "path": "build/review-receiver-final-tests.log",
+      "sha256": "56a3e90f7972ae6469e0afd6fba32430013a9039846211ddea32e69d9fb49343",
+      "bytes": 1153,
+      "status": "PASS",
+      "ctest_groups": [
+        {
+          "tests": 3
+        }
+      ]
+    },
+    {
+      "path": "build/review-reel-comparison-final-tests.log",
+      "sha256": "800a586e611987a92ca771e408ac72d53f7bfe8159c554ce09bd1434f7473683",
+      "bytes": 395,
+      "status": "PASS",
+      "ctest_groups": [
+        {
+          "tests": 1
+        }
+      ]
+    },
+    {
+      "path": "build/review-render-final-tests.log",
+      "sha256": "675233be0bbc605455b862a93060aa6ed857292179f5a7622987324d0ad35edb",
+      "bytes": 706,
+      "status": "PASS",
+      "ctest_groups": [
+        {
+          "tests": 3
+        }
+      ]
+    },
+    {
+      "path": "build/review-shared-final-tests.log",
+      "sha256": "5073563a1cd855d6fd9d3b29508d5988ea70cc16dc4ddba91a12849db28c76c8",
+      "bytes": 977,
+      "status": "PASS",
+      "ctest_groups": [
+        {
+          "tests": 5
+        }
+      ]
+    }
+  ],
+  "evidence_receipts": [
+    {
+      "path": "build/review-odr-baseline-verification.json",
+      "sha256": "70a8beb9bd86c605fe33310a81bdbdde2095a5034ff2f9065afa0f7717eeeb0d",
+      "bytes": 18967
+    },
+    {
+      "path": "build/review-final-book-verification.json",
+      "sha256": "855a5e111cab5922c628680a8b9c2e509d47652506031adb6cf61f2191e87b49",
+      "bytes": 11069
+    },
+    {
+      "path": "build/review-final-reel-endings.json",
+      "sha256": "a5238112f541666ea0ca5b68ed1979e2b80354aa742fadba58acc2d7faaff6c9",
+      "bytes": 283201
+    },
+    {
+      "path": "outputs/izzi-examples-2026-09-30.plates.json",
+      "sha256": "bac09765e23198d47ca46c502bb05280fafbece0827039060015fa4f4e0611b2",
+      "bytes": 655
+    },
+    {
+      "path": "outputs/izzi-examples-2026-09-30.review.plates.json",
+      "sha256": "233afd8c17128673f27131f674974698e857a01869a7107e15ac218260e53622",
+      "bytes": 3753227
+    },
+    {
+      "path": "build/review-final-compact-verification.json",
+      "sha256": "b89cab7a6c3d2f37f3737c9ba60e53337adc1c1a05bc94ee52f5a1205c1602aa",
+      "bytes": 26613
+    },
+    {
+      "path": "build/review-final-active-frame-inspection.json",
+      "sha256": "e1b46ab2efbf757a5238f07d92236135cedf60631e1ad171d9219bd38f3d9fbe",
+      "bytes": 2329
+    },
+    {
+      "path": "build/review-final-reel-assembly-verification.json",
+      "sha256": "f000caae64a4f7729ac6df2d0b93ad2da1efa7a7b236652dc2c4d534d80d11db",
+      "bytes": 1494
+    },
+    {
+      "path": "build/review-compact-contract-verification.json",
+      "sha256": "3f520e3ba13b66c5dabd14b4eca41219252e40efb805b31c9f27dac2a7113aed",
+      "bytes": 6745
+    },
+    {
+      "path": "build/review-crt-raster-sampling-verification.json",
+      "sha256": "87c4334bc24c77592a8bd252ddc51cb333ba9c5e9a684a0417932692936ab994",
+      "bytes": 5114
+    },
+    {
+      "path": "build/review-receiver-repair.json",
+      "sha256": "6a1ed238e25193ddb31e37d3be65dd135de84abde9a6e31cd5316fa546c960d8",
+      "bytes": 7693
+    },
+    {
+      "path": "build/review-media-comparison-proof.json",
+      "sha256": "0ba6862884414c9f3614021bbcea932d60815944ba9b4273fe55b7a61ced6a94",
+      "bytes": 9224
+    },
+    {
+      "path": "build/review-changed-crossovers.json",
+      "sha256": "bbe77d161343750f0aa8dd78e8ebc9a97352c3aefabc8edbc110feb49f6083d5",
+      "bytes": 1276
+    },
+    {
+      "path": "build/review-extra-verification.json",
+      "sha256": "beb8accb879349a40e2672cabcb2765ccce4c727aa27c241eb6f748eed7447cb",
+      "bytes": 83
+    },
+    {
+      "path": "build/review-daemon-recovery.json",
+      "sha256": "c5cc3cd54586bf4467088f7709db6c03d9c02157f4859139ea4686e2fe3283f4",
+      "bytes": 2801
+    },
+    {
+      "path": "build/review-interrupted-cleanup.json",
+      "sha256": "94f76d0377ddbfd7bee148cd92b22e1dc77e513fe88e58eabf06d1545674961d",
+      "bytes": 984
+    }
+  ],
+  "limits": [
+    "Focused GCC and Clang gates pass. Review catalog dependencies retain inherited non-inline legacy definitions; the broad multi-TU probe has the same 80 strong symbols with or without the new adapters under both compilers. Native workers use one translation unit; broader legacy ODR cleanup remains separate.",
+    "Native SVG is the implemented backend. Sampled RF and actual corrupted-codec decoding are unavailable capabilities.",
+    "MPEG studies implement concealment and source history. Low-bitrate quantization and ringing remain unimplemented.",
+    "Receiver and CRT timing are documented native interpretations, without new provider-specific or hardware-recording calibration.",
+    "Historical external-corpus and optional-integration drivers are classified separately; native coverage is not a claim that every legacy CLI runs without its required inputs.",
+    "Stepped SVG proofing clips differ from the separately verified continuous MKV deliveries.",
+    "The compact review PDF uses lossless 100 dpi artwork crops and vector annotations. Full vector PDF/SVGs retain detail for high magnification.",
+    "PDF viewers rasterize vector geometry and resample embedded images at their display scale. Subpixel scanlines can shift apparent color at some zoom levels; the CRT comparison confirms identical source/state and solid colors. Compact lossless-crop exactness applies to decoded image data, not arbitrary viewer raster pixels.",
+    "Movie per-frame SVGs and supplied history sequences are temporary. Book SVGs/recipes, exact frame hashes/history receipts, catalog/composition inputs, sampled PNGs and renderer sources are retained.",
+    "Technical checks and assistant inspection do not constitute human artistic approval."
+  ]
+}

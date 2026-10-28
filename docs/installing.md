@@ -24,5 +24,6 @@ include fragments. New code should include `izzi-svg.h`. Run
 `make check-install` to verify build-tree discovery, relocated canonical
 installation, exact inventories, and external consumers.
 
-The graph authoring and resolved-document schemas are installed below
-`share/izzi/schemas`. They are versioned independently from the CMake package.
+The public schemas, including graph and Screen Glitch composition schemas,
+are installed below `share/izzi/schemas`. They are versioned independently
+from the CMake package.

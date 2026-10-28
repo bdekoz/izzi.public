@@ -106,7 +106,7 @@ layer(std::string id, std::string color, family_spec family,
 {
   return {
     std::move(id), std::move(color), stroke_width, opacity,
-    blend_mode::screen, std::move(family),
+    blend_mode::multiply, std::move(family),
   };
 }
 
@@ -120,7 +120,7 @@ base_scene(const std::size_t index)
     = "Independent mathematical interference study; no archive geometry used.";
   scene.width = 1080;
   scene.height = 1920;
-  scene.background_color = "#02030A";
+  scene.background_color = "#FFFFFF";
   scene.profile = render_profile::experimental;
   scene.mode = degeneration::interfere;
   scene.degeneration_amount = 0.28;
@@ -194,7 +194,7 @@ make_scene(const std::size_t index)
         scene.layers.push_back(
           layer("violet-lines", "#7B61FF", lines, 0.48, 0.76));
         scene.layers.push_back(
-          layer("white-orbits", "#F7F4EB", rings, 0.34, 0.66));
+          layer("white-orbits", "#374151", rings, 0.34, 0.66));
       }
       break;
     case 6:
@@ -264,7 +264,7 @@ make_scene(const std::size_t index)
         scene.layers.push_back(
           layer("red-collision", "#EF233C", red, 0.43, 0.62));
         scene.layers.push_back(
-          layer("white-collision", "#F7F4EB", white, 0.22, 0.56));
+          layer("white-collision", "#374151", white, 0.22, 0.56));
       }
       break;
     default:
@@ -283,7 +283,7 @@ m1_base_scene(const std::size_t index)
     = "Independently authored fine-grid mathematical interference study.";
   scene.width = 1080;
   scene.height = 1920;
-  scene.background_color = "#02030A";
+  scene.background_color = "#FFFFFF";
   scene.profile = render_profile::experimental;
   scene.mode = degeneration::interfere;
   scene.degeneration_amount = make_m1_degeneration_amount(scene.mode);
@@ -382,7 +382,7 @@ make_m1_scene(const std::size_t index)
           layer("m1-blue-texture", "#1C82E1",
                 make_m1_linear(blue), 0.48, 0.62));
         scene.layers.push_back(
-          layer("m1-white-texture", "#F7F4EB",
+          layer("m1-white-texture", "#374151",
                 make_m1_linear(white), 0.34, 0.58));
       }
       break;
@@ -402,7 +402,7 @@ m2_base_scene(const std::size_t index)
     = "Independently authored mathematical grid and interference study.";
   scene.width = 1080;
   scene.height = 1920;
-  scene.background_color = "#02030A";
+  scene.background_color = "#FFFFFF";
   scene.profile = render_profile::experimental;
   scene.mode = degeneration::repeat;
   scene.degeneration_amount = 0;
@@ -463,7 +463,7 @@ make_m2_scene(const std::size_t index)
           layer("m2-cyan-squares", "#20C9D9",
                 make_m2_square_grid(cyan), 0.42, 0.56));
         scene.layers.push_back(
-          layer("m2-white-squares", "#F7F4EB",
+          layer("m2-white-squares", "#374151",
                 make_m2_square_grid(white), 0.34, 0.52));
       }
       break;
@@ -516,7 +516,7 @@ make_m2_scene(const std::size_t index)
           layer("m2-blue-density", "#1C82E1",
                 make_m2_variable_grid(blue), 0.5, 0.62));
         scene.layers.push_back(
-          layer("m2-white-density", "#F7F4EB",
+          layer("m2-white-density", "#374151",
                 make_m2_variable_grid(white), 0.34, 0.56));
       }
       break;
@@ -536,6 +536,8 @@ m3_tuning(const std::size_t index)
     = "Independently authored two-family mathematical beat study.";
   tuning.seed = 2026111700ULL + index + 1;
   tuning.budget = {4'000, 1'000'000, 64 * 1024 * 1024};
+  tuning.background_color = "#FFFFFF";
+  tuning.blend = blend_mode::multiply;
   return tuning;
 }
 
@@ -584,7 +586,7 @@ make_m3_scene(const std::size_t index)
         lines.grid_skew = 0.05;
         m3_hybrid_tuning tuning = m3_tuning(index);
         tuning.first_color = "#7B61FF";
-        tuning.second_color = "#F7F4EB";
+        tuning.second_color = "#374151";
         return make_m3_hybrid(
           make_m1_radial(rays), make_m2_slanted_line_grid(lines), tuning);
       }
@@ -621,7 +623,7 @@ make_m3_scene(const std::size_t index)
         tuning.degeneration_amount
           = make_m3_degeneration_amount(first.kind, second.kind, tuning.mode);
         tuning.first_color = "#20C9D9";
-        tuning.second_color = "#F7F4EB";
+        tuning.second_color = "#374151";
         return make_m3_hybrid(std::move(first), std::move(second), tuning);
       }
     case 5:

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" id="cafe-wall-control" width="320" height="320" viewBox="0 0 320 320" role="img" aria-labelledby="guilloche-title guilloche-desc" data-api="izzi-guilloche-1" data-profile="experimental">
+<title id="guilloche-title">Native graphic pattern review</title>
+<desc id="guilloche-desc">Guilloche scene: Native graphic pattern review.</desc>
+<metadata>api=izzi-guilloche-1; profile=experimental; seed=20260928; frame=0/1; paths=73; points=365</metadata>
+<rect width="100%" height="100%" fill="#FAFAF7"/>
+<g id="plate-1" fill="none" stroke="#202B2E" stroke-width="0.7" stroke-opacity="1" stroke-linecap="round" stroke-linejoin="round" style="mix-blend-mode:normal" aria-hidden="true">
+<polygon id="form-mortar" points="0,0 320,0 320,320 0,320 0,0" fill="#858585" fill-opacity="1" stroke="none"/>
+<polygon id="form-row-0-tile-0" points="-48,0 0,0 0,36 -48,36 -48,0" fill="#F5F5F5" fill-opacity="1" stroke="none"/>
+<polygon id="form-row-0-tile-1" points="0,0 48,0 48,36 0,36 0,0" fill="#161616" fill-opacity="1" stroke="none"/>
+<polygon id="form-row-0-tile-2" points="48,0 96,0 96,36 48,36 48,0" fill="#F5F5F5" fill-opacity="1" stroke="none"/>
+<polygon id="form-row-0-tile-3" points="96,0 144,0 144,36 96,36 96,0" fill="#161616" fill-opacity="1" stroke="none"/>
+<polygon id="form-row-0-tile-4" points="144,0 192,0 192,36 144,36 144,0" fill="#F5F5F5" fill-opacity="1" stroke="none"/>
+<polygon id="form-row-0-tile-5" points="192,0 240,0 240,36 192,36 192,0" fill="#161616" fill-opacity="1" stroke="none"/>
+<polygon id="form-row-0-tile-6" points="240,0 288,0 288,36 240,36 240,0" fill="#F5F5F5" fill-opacity="1" stroke="none"/>
+<polygon id="form-row-0-tile-7" points="288,0 336,0 336,36 288,36 288,0" fill="#161616" fill-opacity="1" stroke="none"/>
+<polygon id="form-row-1-tile-0" points="-48,39 0,39 0,75 -48,75 -48,39" fill="#F5F5F5" fill-opacity="1" stroke="none"/>
+<polygon id="form-row-1-tile-1" points="0,39 48,39 48,75 0,75 0,39" fill="#161616" fill-opacity="1" stroke="none"/>
+<polygon id="form-row-1-tile-2" points="48,39 96,39 96,75 48,75 48,39" fill="#F5F5F5" fill-opacity="1" stroke="none"/>
+<polygon id="form-row-1-tile-3" points="96,39 144,39 144,75 96,75 96,39" fill="#161616" fill-opacity="1" stroke="none"/>
+<polygon id="form-row-1-tile-4" points="144,39 192,39 192,75 144,75 144,39" fill="#F5F5F5" fill-opacity="1" stroke="none"/>
+<polygon id="form-row-1-tile-5" points="192,39 240,39 240,75 192,75 192,39" fill="#161616" fill-opacity="1" stroke="none"/>
+<polygon id="form-row-1-tile-6" points="240,39 288,39 288,75 240,75 240,39" fill="#F5F5F5" fill-opacity="1" stroke="none"/>
+<polygon id="form-row-1-tile-7" points="288,39 336,39 336,75 288,75 288,39" fill="#161616" fill-opacity="1" stroke="none"/>
+<polygon id="form-row-2-tile-0" points="-48,78 0,78 0,114 -48,114 -48,78" fill="#F5F5F5" fill-opacity="1" stroke="none"/>
+<polygon id="form-row-2-tile-1" points="0,78 48,78 48,114 0,114 0,78" fill="#161616" fill-opacity="1" stroke="none"/>
+<polygon id="form-row-2-tile-2" points="48,78 96,78 96,114 48,114 48,78" fill="#F5F5F5" fill-opacity="1" stroke="none"/>
+<polygon id="form-row-2-tile-3" points="96,78 144,78 144,114 96,114 96,78" fill="#161616" fill-opacity="1" stroke="none"/>
+<polygon id="form-row-2-tile-4" points="144,78 192,78 192,114 144,114 144,78" fill="#F5F5F5" fill-opacity="1" stroke="none"/>
+<polygon id="form-row-2-tile-5" points="192,78 240,78 240,114 192,114 192,78" fill="#161616" fill-opacity="1" stroke="none"/>
+<polygon id="form-row-2-tile-6" points="240,78 288,78 288,114 240,114 240,78" fill="#F5F5F5" fill-opacity="1" stroke="none"/>
+<polygon id="form-row-2-tile-7" points="288,78 336,78 336,114 288,114 288,78" fill="#161616" fill-opacity="1" stroke="none"/>
+<polygon id="form-row-3-tile-0" points="-48,117 0,117 0,153 -48,153 -48,117" fill="#F5F5F5" fill-opacity="1" stroke="none"/>
+<polygon id="form-row-3-tile-1" points="0,117 48,117 48,153 0,153 0,117" fill="#161616" fill-opacity="1" stroke="none"/>
+<polygon id="form-row-3-tile-2" points="48,117 96,117 96,153 48,153 48,117" fill="#F5F5F5" fill-opacity="1" stroke="none"/>
+<polygon id="form-row-3-tile-3" points="96,117 144,117 144,153 96,153 96,117" fill="#161616" fill-opacity="1" stroke="none"/>
+<polygon id="form-row-3-tile-4" points="144,117 192,117 192,153 144,153 144,117" fill="#F5F5F5" fill-opacity="1" stroke="none"/>
+<polygon id="form-row-3-tile-5" points="192,117 240,117 240,153 192,153 192,117" fill="#161616" fill-opacity="1" stroke="none"/>
+<polygon id="form-row-3-tile-6" points="240,117 288,117 288,153 240,153 240,117" fill="#F5F5F5" fill-opacity="1" stroke="none"/>
+<polygon id="form-row-3-tile-7" points="288,117 336,117 336,153 288,153 288,117" fill="#161616" fill-opacity="1" stroke="none"/>
+<polygon id="form-row-4-tile-0" points="-48,156 0,156 0,192 -48,192 -48,156" fill="#F5F5F5" fill-opacity="1" stroke="none"/>
+<polygon id="form-row-4-tile-1" points="0,156 48,156 48,192 0,192 0,156" fill="#161616" fill-opacity="1" stroke="none"/>
+<polygon id="form-row-4-tile-2" points="48,156 96,156 96,192 48,192 48,156" fill="#F5F5F5" fill-opacity="1" stroke="none"/>
+<polygon id="form-row-4-tile-3" points="96,156 144,156 144,192 96,192 96,156" fill="#161616" fill-opacity="1" stroke="none"/>
+<polygon id="form-row-4-tile-4" points="144,156 192,156 192,192 144,192 144,156" fill="#F5F5F5" fill-opacity="1" stroke="none"/>
+<polygon id="form-row-4-tile-5" points="192,156 240,156 240,192 192,192 192,156" fill="#161616" fill-opacity="1" stroke="none"/>
+<polygon id="form-row-4-tile-6" points="240,156 288,156 288,192 240,192 240,156" fill="#F5F5F5" fill-opacity="1" stroke="none"/>
+<polygon id="form-row-4-tile-7" points="288,156 336,156 336,192 288,192 288,156" fill="#161616" fill-opacity="1" stroke="none"/>
+<polygon id="form-row-5-tile-0" points="-48,195 0,195 0,231 -48,231 -48,195" fill="#F5F5F5" fill-opacity="1" stroke="none"/>
+<polygon id="form-row-5-tile-1" points="0,195 48,195 48,231 0,231 0,195" fill="#161616" fill-opacity="1" stroke="none"/>
+<polygon id="form-row-5-tile-2" points="48,195 96,195 96,231 48,231 48,195" fill="#F5F5F5" fill-opacity="1" stroke="none"/>
+<polygon id="form-row-5-tile-3" points="96,195 144,195 144,231 96,231 96,195" fill="#161616" fill-opacity="1" stroke="none"/>
+<polygon id="form-row-5-tile-4" points="144,195 192,195 192,231 144,231 144,195" fill="#F5F5F5" fill-opacity="1" stroke="none"/>
+<polygon id="form-row-5-tile-5" points="192,195 240,195 240,231 192,231 192,195" fill="#161616" fill-opacity="1" stroke="none"/>
+<polygon id="form-row-5-tile-6" points="240,195 288,195 288,231 240,231 240,195" fill="#F5F5F5" fill-opacity="1" stroke="none"/>
+<polygon id="form-row-5-tile-7" points="288,195 336,195 336,231 288,231 288,195" fill="#161616" fill-opacity="1" stroke="none"/>
+<polygon id="form-row-6-tile-0" points="-48,234 0,234 0,270 -48,270 -48,234" fill="#F5F5F5" fill-opacity="1" stroke="none"/>
+<polygon id="form-row-6-tile-1" points="0,234 48,234 48,270 0,270 0,234" fill="#161616" fill-opacity="1" stroke="none"/>
+<polygon id="form-row-6-tile-2" points="48,234 96,234 96,270 48,270 48,234" fill="#F5F5F5" fill-opacity="1" stroke="none"/>
+<polygon id="form-row-6-tile-3" points="96,234 144,234 144,270 96,270 96,234" fill="#161616" fill-opacity="1" stroke="none"/>
+<polygon id="form-row-6-tile-4" points="144,234 192,234 192,270 144,270 144,234" fill="#F5F5F5" fill-opacity="1" stroke="none"/>
+<polygon id="form-row-6-tile-5" points="192,234 240,234 240,270 192,270 192,234" fill="#161616" fill-opacity="1" stroke="none"/>
+<polygon id="form-row-6-tile-6" points="240,234 288,234 288,270 240,270 240,234" fill="#F5F5F5" fill-opacity="1" stroke="none"/>
+<polygon id="form-row-6-tile-7" points="288,234 336,234 336,270 288,270 288,234" fill="#161616" fill-opacity="1" stroke="none"/>
+<polygon id="form-row-7-tile-0" points="-48,273 0,273 0,309 -48,309 -48,273" fill="#F5F5F5" fill-opacity="1" stroke="none"/>
+<polygon id="form-row-7-tile-1" points="0,273 48,273 48,309 0,309 0,273" fill="#161616" fill-opacity="1" stroke="none"/>
+<polygon id="form-row-7-tile-2" points="48,273 96,273 96,309 48,309 48,273" fill="#F5F5F5" fill-opacity="1" stroke="none"/>
+<polygon id="form-row-7-tile-3" points="96,273 144,273 144,309 96,309 96,273" fill="#161616" fill-opacity="1" stroke="none"/>
+<polygon id="form-row-7-tile-4" points="144,273 192,273 192,309 144,309 144,273" fill="#F5F5F5" fill-opacity="1" stroke="none"/>
+<polygon id="form-row-7-tile-5" points="192,273 240,273 240,309 192,309 192,273" fill="#161616" fill-opacity="1" stroke="none"/>
+<polygon id="form-row-7-tile-6" points="240,273 288,273 288,309 240,309 240,273" fill="#F5F5F5" fill-opacity="1" stroke="none"/>
+<polygon id="form-row-7-tile-7" points="288,273 336,273 336,309 288,309 288,273" fill="#161616" fill-opacity="1" stroke="none"/>
+<polygon id="form-row-8-tile-0" points="-48,312 0,312 0,348 -48,348 -48,312" fill="#F5F5F5" fill-opacity="1" stroke="none"/>
+<polygon id="form-row-8-tile-1" points="0,312 48,312 48,348 0,348 0,312" fill="#161616" fill-opacity="1" stroke="none"/>
+<polygon id="form-row-8-tile-2" points="48,312 96,312 96,348 48,348 48,312" fill="#F5F5F5" fill-opacity="1" stroke="none"/>
+<polygon id="form-row-8-tile-3" points="96,312 144,312 144,348 96,348 96,312" fill="#161616" fill-opacity="1" stroke="none"/>
+<polygon id="form-row-8-tile-4" points="144,312 192,312 192,348 144,348 144,312" fill="#F5F5F5" fill-opacity="1" stroke="none"/>
+<polygon id="form-row-8-tile-5" points="192,312 240,312 240,348 192,348 192,312" fill="#161616" fill-opacity="1" stroke="none"/>
+<polygon id="form-row-8-tile-6" points="240,312 288,312 288,348 240,348 240,312" fill="#F5F5F5" fill-opacity="1" stroke="none"/>
+<polygon id="form-row-8-tile-7" points="288,312 336,312 336,348 288,348 288,312" fill="#161616" fill-opacity="1" stroke="none"/>
+</g>
+</svg>
