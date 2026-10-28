@@ -180,6 +180,7 @@ The raster step needs CairoSVG, Pillow and DejaVu Sans. Individual native
 SVGs and JSON documents do not require those tools. The generator is
 [guilloche-enrichment-plates.cc](../examples/guilloche-enrichment-plates.cc).
 
+{% raw %}
 ```cpp
 #include <izzi-svg-guilloche.h>
 #include <iostream>
@@ -201,6 +202,7 @@ int main()
   std::cout << render_svg(scene);
 }
 ```
+{% endraw %}
 
 For geometry-only JSON, use `content.kind: "none"` and
 `layout.include_radial_field: false`. An accessible label remains required.

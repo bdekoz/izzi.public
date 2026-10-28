@@ -80,6 +80,7 @@ tracks this follow-up separately from the completed implementation.
 
 ## Minimal construction
 
+{% raw %}
 ```cpp
 #include <izzi-svg-edge-tension.h>
 #include <iostream>
@@ -104,6 +105,7 @@ int main() {
   std::cout << svg;
 }
 ```
+{% endraw %}
 
 `bundle_spec::tuning` holds either `loft_tuning` or `fan_tuning`. For strand
 index `i`, `u=i/(N-1)` and `s=pow(u, spacing_power)`. Loft controls are
