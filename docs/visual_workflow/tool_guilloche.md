@@ -1,5 +1,9 @@
 # Visual workflow — guilloche reels and title cards
 
+For the November anniversary currency and holiday-card editions, use the
+[portrait and print workflow](tool_portrait_print.md). This page covers the
+native motion/reel branch; its September Review 4 is a separate production.
+
 ## Current production — Meta guilloche 2, Review 4
 
 The [September 29 production record](../development/sessions/20260929.meta_guilloche_2.md)
@@ -27,7 +31,7 @@ and delivers 3:50 vertical and clockwise horizontal versions. Its
 separate output index
 contains the movies and encoded comparisons.
 
-The [current revision details](../development/sessions/20260929.meta_guilloche_2.md#review-4--latest-human-revision-requirements)
+The [recorded revision details](../development/sessions/20260929.meta_guilloche_2.md#review-4--human-revision-requirements-at-that-stage)
 include the warm central Imam vault with an onion outline, three ledges and
 concave triangular coffers; tighter saguaro arms and irregular trunk widths;
 and the accepted brain-coral network with closer cropping and relief that

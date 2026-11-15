@@ -1,0 +1,99 @@
+{
+  "plates": [
+    {
+      "id": "botanical-wild-01-thorn-triangle",
+      "title": "Thorn Triangle",
+      "description": "Unequal flowering shoots, rolled leaves and papyrus clumps trace three triangular edges.",
+      "geometries": 17,
+      "svg_sha256": "3a2ab27f3f53343baa01644d82fbe381d453d620f6625d7ad2b8d76677d05fae",
+      "paths": 8593,
+      "points": 646337
+    },
+    {
+      "id": "botanical-wild-02-pollen-eclipse",
+      "title": "Pollen Eclipse",
+      "description": "A tangential botanical garland bends around displaced oval interference; flowering shoots cross its center.",
+      "geometries": 14,
+      "svg_sha256": "b4ab054e3e5da12c8cf50623cfe6f8fa4aec9afbe225600c8b195ff427b4da61",
+      "paths": 8402,
+      "points": 632778
+    },
+    {
+      "id": "botanical-wild-03-feral-arch",
+      "title": "Feral Arch",
+      "description": "Nested, drifting arches stand on branching cannabis columns with papyrus keystones.",
+      "geometries": 7,
+      "svg_sha256": "72c70b74754dcb7cea44221a2237a91f0d8e09ad29ea87dba63cdabe8f056826",
+      "paths": 4100,
+      "points": 330828
+    },
+    {
+      "id": "botanical-wild-04-diamond-cage",
+      "title": "Diamond Cage",
+      "description": "Two skewed woven lattices trap an overgrown diamond of fan leaves and papyrus.",
+      "geometries": 13,
+      "svg_sha256": "122e72156a0443d62ae754175d28f9866ab9bfb357feba86142b1b370a9b3fa6",
+      "paths": 1859,
+      "points": 146787
+    },
+    {
+      "id": "botanical-wild-05-hexagonal-spore",
+      "title": "Hexagonal Spore",
+      "description": "Six whole branching specimens radiate outward from an irregular central root ring across fivefold guilloche.",
+      "geometries": 10,
+      "svg_sha256": "224576bd3f66e810a91d9f211ed26b406b0b208e742d630b52b631c9007cde42",
+      "paths": 10619,
+      "points": 777235
+    },
+    {
+      "id": "botanical-wild-06-serpentine-frieze",
+      "title": "Serpentine Frieze",
+      "description": "Uneven flowering shoots and papyrus braces lean into a chirped ribbon from opposing botanical borders.",
+      "geometries": 20,
+      "svg_sha256": "425ed03392ab1f63b59962ecbe0ef948a720843e93ebc6639c1b842cdbbf212b",
+      "paths": 5568,
+      "points": 479092
+    },
+    {
+      "id": "botanical-wild-07-double-arch-mirage",
+      "title": "Double Arch Mirage",
+      "description": "Opposing arches frame two unequal hanging and upright thickets with mixed stages, heights and lean.",
+      "geometries": 15,
+      "svg_sha256": "7130152246fbc0464556d202ddb50a27581d6c75a0c7ad73239d8a8cecae3823",
+      "paths": 7899,
+      "points": 576871
+    },
+    {
+      "id": "botanical-wild-08-fractured-compass",
+      "title": "Fractured Compass",
+      "description": "Nine unequal branching spokes erupt outward: flowering axes, broad foliage and paired papyrus crowns.",
+      "geometries": 13,
+      "svg_sha256": "62575d5aacbe3877deb3f6e278b9c4ac3ba05416d45c005a07e83cb8e178569f",
+      "paths": 16031,
+      "points": 966963
+    },
+    {
+      "id": "botanical-wild-09-orbital-herbarium",
+      "title": "Orbital Herbarium",
+      "description": "Tilted ovals pass through a five-plant flowering stand and five papyrus culms.",
+      "geometries": 9,
+      "svg_sha256": "3857cd80409b5dc7ec18ef34b057ada73a2efc048a9d689e1c130081f6451ee3",
+      "paths": 11326,
+      "points": 811062
+    },
+    {
+      "id": "botanical-wild-10-overgrown-cathedral",
+      "title": "Overgrown Cathedral",
+      "description": "An asymmetric forest erupts through dense nested arches, triangular guilloche and ornamental side borders.",
+      "geometries": 15,
+      "svg_sha256": "15bb495eb43571f7fcff4e4aee9a3dd4286e01ccfda925d74a4cb3159d2149df",
+      "paths": 12804,
+      "points": 858936
+    }
+  ],
+  "native_gallery": "../guilloche-enrichment",
+  "count_range": [
+    1,
+    5
+  ]
+}

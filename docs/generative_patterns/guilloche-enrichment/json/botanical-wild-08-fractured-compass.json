@@ -1,0 +1,336 @@
+{
+  "schema_version": "izzi.guilloche-scene/1",
+  "scene_id": "botanical-wild-08-fractured-compass",
+  "canvas": {
+    "width": 320,
+    "height": 320,
+    "background": "#F7D7DC"
+  },
+  "content": {
+    "kind": "none",
+    "accessible_label": "Fractured Compass"
+  },
+  "treatment": {
+    "kind": "floral-cycloid",
+    "seed": 2026110708,
+    "floral_group_range": [
+      1,
+      3
+    ],
+    "petal_range": [
+      5,
+      11
+    ],
+    "cycloid_amplitude": 0,
+    "density": "experimental"
+  },
+  "layout": {
+    "kind": "radial",
+    "symmetry_order": 6,
+    "center": [
+      160,
+      160
+    ],
+    "radius": 120,
+    "include_radial_field": false,
+    "geometries": [
+      {
+        "id": "layer-00",
+        "kind": "optical_field",
+        "origin": [
+          160,
+          160
+        ],
+        "plate_index": 0,
+        "treatment": "current-interference",
+        "span": 267,
+        "pitch": 5.2,
+        "angle": 0.12,
+        "bend": 21
+      },
+      {
+        "id": "layer-01",
+        "kind": "contour_loop",
+        "origin": [
+          160,
+          160
+        ],
+        "plate_index": 1,
+        "radius": 95,
+        "x_scale": 1,
+        "y_scale": 1,
+        "rotation": 0,
+        "modes": [
+          {
+            "frequency": 7,
+            "amplitude": 0.15,
+            "phase": 0
+          },
+          {
+            "frequency": 3,
+            "amplitude": 0.1,
+            "phase": 1.1
+          }
+        ],
+        "cycles": 63,
+        "strands": 18,
+        "normal_amplitude": 16,
+        "tangent_amplitude": 23,
+        "phase_step": 0.3490658503988659,
+        "samples": 4096,
+        "phase_modulation": 1.8,
+        "phase_frequency": 3
+      },
+      {
+        "id": "layer-02",
+        "kind": "organic_field",
+        "origin": [
+          247.12454757422694,
+          168.74161291145327
+        ],
+        "plate_index": 2,
+        "preset": "cannabis",
+        "span": 132.81138775937225,
+        "rotation": 1.6707963267948962,
+        "branches": 8,
+        "detail": 1,
+        "samples": 32,
+        "asymmetry": 0.3,
+        "seed": 20262545,
+        "growth_stage": "full-flower",
+        "plants": 1,
+        "leaflets": 5,
+        "leaf_form": "broad"
+      },
+      {
+        "id": "layer-03",
+        "kind": "organic_field",
+        "origin": [
+          220.24585551474118,
+          224.778657169824
+        ],
+        "plate_index": 3,
+        "preset": "papyrus",
+        "span": 124.70338929708782,
+        "rotation": 2.3924339210054892,
+        "branches": 12,
+        "detail": 1,
+        "samples": 32,
+        "asymmetry": 0.3,
+        "seed": 20263264,
+        "stems": 2,
+        "leaf_form": "natural"
+      },
+      {
+        "id": "layer-04",
+        "kind": "organic_field",
+        "origin": [
+          167.60619298334618,
+          224.69376879429285
+        ],
+        "plate_index": 2,
+        "preset": "cannabis",
+        "span": 90.16009249699,
+        "rotation": 3.024557681574781,
+        "branches": 8,
+        "detail": 1,
+        "samples": 32,
+        "asymmetry": 0.3,
+        "seed": 20263983,
+        "growth_stage": "late-flower",
+        "plants": 1,
+        "leaflets": 5,
+        "leaf_form": "slender"
+      },
+      {
+        "id": "layer-05",
+        "kind": "organic_field",
+        "origin": [
+          106.7308990618971,
+          226.28665401768853
+        ],
+        "plate_index": 3,
+        "preset": "cannabis",
+        "span": 133.14618861840665,
+        "rotation": -2.4646499383950147,
+        "branches": 8,
+        "detail": 1,
+        "samples": 32,
+        "asymmetry": 0.3,
+        "seed": 20264702,
+        "growth_stage": "full-flower",
+        "plants": 1,
+        "leaflets": 5,
+        "leaf_form": "broad"
+      },
+      {
+        "id": "layer-06",
+        "kind": "organic_field",
+        "origin": [
+          75.64764846639324,
+          186.37237617740348
+        ],
+        "plate_index": 2,
+        "preset": "papyrus",
+        "span": 124.28675906080001,
+        "rotation": -1.8738136698474195,
+        "branches": 12,
+        "detail": 1,
+        "samples": 32,
+        "asymmetry": 0.3,
+        "seed": 20265421,
+        "stems": 1,
+        "leaf_form": "natural"
+      },
+      {
+        "id": "layer-07",
+        "kind": "organic_field",
+        "origin": [
+          100.29413844023573,
+          127.90207071706084
+        ],
+        "plate_index": 3,
+        "preset": "cannabis",
+        "span": 90.24595994165246,
+        "rotation": -1.0775223329356916,
+        "branches": 8,
+        "detail": 1,
+        "samples": 32,
+        "asymmetry": 0.3,
+        "seed": 20266140,
+        "growth_stage": "late-flower",
+        "plants": 1,
+        "leaflets": 5,
+        "leaf_form": "slender"
+      },
+      {
+        "id": "layer-08",
+        "kind": "organic_field",
+        "origin": [
+          123.75649770506766,
+          84.89009969862964
+        ],
+        "plate_index": 2,
+        "preset": "cannabis",
+        "span": 133.4761191647949,
+        "rotation": -0.44958198485021583,
+        "branches": 8,
+        "detail": 1,
+        "samples": 32,
+        "asymmetry": 0.3,
+        "seed": 20266859,
+        "growth_stage": "full-flower",
+        "plants": 1,
+        "leaflets": 5,
+        "leaf_form": "broad"
+      },
+      {
+        "id": "layer-09",
+        "kind": "organic_field",
+        "origin": [
+          183.7458397975993,
+          76.57588704429315
+        ],
+        "plate_index": 3,
+        "preset": "papyrus",
+        "span": 123.86776331387232,
+        "rotation": 0.27730617302880844,
+        "branches": 12,
+        "detail": 1,
+        "samples": 32,
+        "asymmetry": 0.3,
+        "seed": 20267578,
+        "stems": 2,
+        "leaf_form": "natural"
+      },
+      {
+        "id": "layer-10",
+        "kind": "organic_field",
+        "origin": [
+          219.1290330786751,
+          121.49984000498448
+        ],
+        "plate_index": 2,
+        "preset": "cannabis",
+        "span": 90.3390861366249,
+        "rotation": 0.993633403038185,
+        "branches": 8,
+        "detail": 1,
+        "samples": 32,
+        "asymmetry": 0.3,
+        "seed": 20268297,
+        "growth_stage": "late-flower",
+        "plants": 1,
+        "leaflets": 5,
+        "leaf_form": "slender"
+      },
+      {
+        "id": "layer-11",
+        "kind": "contour_loop",
+        "origin": [
+          160,
+          160
+        ],
+        "plate_index": 3,
+        "radius": 30,
+        "x_scale": 1,
+        "y_scale": 1,
+        "rotation": 0,
+        "modes": [
+          {
+            "frequency": 3,
+            "amplitude": 0.26,
+            "phase": 0
+          }
+        ],
+        "cycles": 23,
+        "strands": 9,
+        "normal_amplitude": 16,
+        "tangent_amplitude": 23,
+        "phase_step": 0.6981317007977318,
+        "samples": 4096
+      },
+      {
+        "id": "layer-12",
+        "kind": "lobed_contour",
+        "origin": [
+          160,
+          160
+        ],
+        "plate_index": 1,
+        "radius": 52,
+        "rings": 42,
+        "ring_spacing": 1.8,
+        "modes": [
+          {
+            "frequency": 11,
+            "amplitude": 0.17,
+            "phase": 0.7
+          },
+          {
+            "frequency": 14,
+            "amplitude": 0.065,
+            "phase": 1.5
+          }
+        ],
+        "rotation": 0,
+        "samples": 1536
+      }
+    ]
+  },
+  "palette": {
+    "colors": [
+      "#B1244D",
+      "#4E3CAC",
+      "#14534B",
+      "#D95018"
+    ],
+    "stroke_width": 0.32,
+    "opacity": 1,
+    "blend": "normal"
+  },
+  "review": {
+    "profile": "experimental",
+    "human_acceptance": "PENDING"
+  }
+}

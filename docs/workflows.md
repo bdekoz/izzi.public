@@ -1,7 +1,9 @@
 # Workflows
 
-Status: CURRENT-MODEL-INVENTORY; UPDATED-DIAGRAMS-AWAITING-REVIEW
-Recorded: 2026-08-18; updated 2026-10-27, America/Los_Angeles
+Status: DOCUMENTATION-REFRESH; LOCAL-DIAGRAMS-AWAITING-REVIEW
+Recorded: 2026-08-18; updated 2026-11-14, America/Los_Angeles.
+Hardware observations remain dated October 27; later MOSS/SAM roles come from
+the saved production records. This pass does not re-inventory live services.
 
 See also: [transcription enrichment workflow](transcription-enrichment_workflow.md)
 (post-transcription formatting layer for the here-lies-trouble canonical
@@ -9,9 +11,24 @@ transcript) and [visual workflow](visual_workflow.md) (visual passes plus
 the [supercut](supercut.md) usage guide, moved there in the 2026-08-22
 documentation pass).
 
+## Choose a workflow
+
+| Work | Current guide | Recorded state |
+| --- | --- | --- |
+| Native form and composition books | [Examples workflows](development/examples-workflows.md) | Separate study/composition coverage and exports, including Organica |
+| Photograph engraving and print | [Portrait and print](visual_workflow/tool_portrait_print.md) | Anniversary stage 4 and holiday v3/v4 digitally complete |
+| MOSS appearance and local film | [MOSS/local workflow](visual_workflow/tool_moss_local.md) | Appearance pilot/refinement complete; full episode delivered for human review |
+| Native guilloche motion | [Guilloche reels](visual_workflow/tool_guilloche.md) | Review 4 stills and compact reels delivered |
+| Speech and transcription | [Audio](audio_workflow.md), [transcription](audio_workflow/tool_transcribe_audio.md) | Consult the selected production's audio and review receipts |
+
+The [development index](development/index.md) separates current results from
+historical sessions. The [November review](development/sessions/20261114.documentation_review.md)
+records documentation gaps and proposed development work.
+
 ## Compute software
 
-Current software/model map, verified October 27, 2026. **Both new local
+Software/model map based on the October 27 inventory and subsequent production
+evidence. **Both recorded local
 LLMs run on eureka:** DeepSeek V4 Flash and **Ornith 1.5**, whose installed
 Ollama identifier is `ornith-1.5:35b`. The earlier “orinth” spelling refers
 to this installation. DeepSeek here is a local GGUF model, separate from
@@ -21,7 +38,7 @@ Dotted connections show paths to and from Hosted AI; local connections are solid
 documents the installed choices; it does not claim that automatic model
 routing has been added to Izzi or that an LLM can grant human acceptance.
 
-![Compute software: Custom Software, Local Database, Local AI and Hosted AI between devp.ac and situationshipin.space in grayscale](workflow-diagrams/workflow-hardware-software-diagram.svg)
+![Compute software, including MOSS appearance and SAM masks alongside native tools, local audio and hosted paths](workflow-diagrams/workflow-hardware-software-diagram.svg)
 
 <details>
 <summary>Editable compute software graph and labels</summary>
@@ -45,6 +62,8 @@ flowchart LR
         direction TB
         AUDIO["Kokoro voices + Whisper checks<br/>rizal CPU · current HLT audio"]
         PRIOR["Qwen image editing + Higgs TTS<br/>eureka · retained earlier paths"]
+        MOSS["MOSS-Image-Base + appearance LoRA<br/>rizal GPU · saved bird and scenery assets"]
+        SAM["SAM 2.1 segmentation<br/>rizal CPU · saved pose extraction"]
         DS["DeepSeek V4 Flash<br/>eureka · ds4 / ROCm · on-demand runner"]
         ORN["Ornith 1.5 · 35B<br/>eureka · Ollama · Q4_K_M"]
     end
@@ -60,6 +79,8 @@ flowchart LR
     I -.-> CODING
     I --> AUDIO
     I --> PRIOR
+    I --> MOSS
+    I --> SAM
     I --> NATIVE
     I --> CARTO
     I --> IZZI
@@ -69,13 +90,15 @@ flowchart LR
     I -.-> IMAGE
     AUDIO --> REVIEW
     PRIOR --> REVIEW
+    MOSS --> REVIEW
+    SAM --> REVIEW
     NATIVE --> REVIEW
     CARTO --> REVIEW
     IZZI --> REVIEW
     CLOUD -.-> REVIEW
     IMAGE -.-> REVIEW
     classDef node fill:#e6e6e6,stroke:#666666,color:#222222,stroke-width:2px
-    class I,AUDIO,PRIOR,NATIVE,CARTO,IZZI,CLUSTEROPS,IPINFO,DS,ORN,CLOUD,IMAGE,CODING,REVIEW node
+    class I,AUDIO,PRIOR,MOSS,SAM,NATIVE,CARTO,IZZI,CLUSTEROPS,IPINFO,DS,ORN,CLOUD,IMAGE,CODING,REVIEW node
     style SOFTWARE fill:#d9d9d9,stroke:#999999,color:#222222
     style DATABASE fill:#d9d9d9,stroke:#999999,color:#222222
     style LOCALAI fill:#d9d9d9,stroke:#999999,color:#222222
@@ -95,9 +118,17 @@ The hosted-model labels retain the exact names requested in review #80.
 The devp.ac and situationshipin.space boxes share the center horizontal row;
 media paths connect directly to human review.
 
+MOSS and SAM now appear in Local AI with solid connections. These nodes record
+appearance generation and segmentation used to prepare saved assets; the
+delivered local film replays those assets on CPUs. Native portrait engraving is
+a separate C++ path in Izzi. The task guides above show their distinct inputs,
+outputs and review boundaries.
+
 | Local model | Installed configuration | Evidence and current availability |
 | --- | --- | --- |
-| **DeepSeek V4 Flash** | eureka; `ds4` / `ds4-server`, ROCm; runtime revision `5379c1c9ac315f1540371b06a3db88491d4059ff`; mixed-quantization GGUF, 86,720,111,488 bytes; configured trial context 4,096 tokens. | October 21 smoke inference returned 0; structured output and a tool round trip passed. Weight verification receipt retained; current file size matches. The on-demand server binds `127.0.0.1:18080` when launched; it was **not listening** during the October 27 inventory. |
+| **MOSS-Image-Base + appearance LoRA** | rizal; Quadro RTX 4000, SM75, 8 GiB physical VRAM; pinned isolated Python 3.12/FP16 offloading runtime. | Stage-2 pilot and step-512 refinement completed. Selected bird/scenery pixels are retained by the later CPU film. [Recorded recipe](development/sessions/20261029.local_rendering_exploration_stage_4_durable_workflow.md#historical-moss-appearance-recipe); live GPU availability was not rechecked. |
+| **SAM 2.1** | rizal CPU; saved `sam2.1_hiera_small.pt` and extraction masks. | Stage 5 reuses saved masks/poses without new inference in v7 or the full continuation. [Production boundary](visual_workflow/tool_moss_local.md). |
+| **DeepSeek V4 Flash** | eureka; `ds4` / `ds4-server`, ROCm; runtime revision `5379c1c9ac315f1540371b06a3db88491d4059ff`; mixed-quantization GGUF, 86,720,111,488 bytes; configured trial context 4,096 tokens. | October 21 smoke inference returned 0; structured output and a tool round trip passed. Weight verification receipt retained; the October 27 file size matched. The on-demand server binds `127.0.0.1:18080` when launched; it was **not listening** during the October 27 inventory. |
 | **Ornith 1.5** | eureka; Ollama ID **`ornith-1.5:35b`**; `qwen35moe`, 35.5B parameters, `Q4_K_M`. | Installed model and local Ollama service verified October 27. Runtime metadata lists completion, thinking, tools and vision, with a model context limit of 262,144 tokens; that limit is not a tested working context for this machine. |
 
 DeepSeek's installation is
@@ -108,7 +139,7 @@ The [inventory receipt](workflow-diagrams/local-model-inventory.20261027.json)
 records exact model identity, saved-test provenance and observed host resources.
 This documentation pass ran no model inference and changed no services.
 
-Both models share **eureka's single 96 GiB GPU allocation**. Separate boxes
+Both local LLMs share **eureka's single 96 GiB GPU allocation**. Separate boxes
 do not imply separate GPUs or validated simultaneous residency. The
 current Here Lies Trouble speech path remains **Kokoro-82M + local
 faster-whisper-small**, as recorded in the
@@ -119,13 +150,16 @@ job-specific and are not replaced merely by installing these local LLMs.
 
 The accepted August host/model diagram remains a dated record in
 [stage 2 §5.2.1](development/sessions/20260817.fal.ai_stage_2.md#521-host-and-model-map-visual-form-of-52).
-Use the current diagrams here for today's resources and local model choices.
+Use the diagrams here with their observation dates; recheck admission before
+starting a new job.
+
+<a id="devpac-compute-resources-2026-10-02"></a>
 
 ## devp.ac compute resources (2026-10-27)
 
 **devp.ac** comprises rizal, ord and eureka. Rizal is the control plane;
 ord and eureka are compute workers. All three were read-only inventoried on
-October 27 and now run **Fedora 44**. Worker assignments remain per job;
+October 27 and were running **Fedora 44**. Worker assignments remain per job;
 the established USB4 link carries large worker-to-worker transfers.
 
 ![Compute hardware: rectangular hosts arranged in a triangle, with rizal above eureka and ord](workflow-diagrams/devpac-compute-resources-diagram.svg)
@@ -136,7 +170,7 @@ the established USB4 link carries large worker-to-worker transfers.
 <!-- diagram: devpac-compute-resources-diagram -->
 ```mermaid
 flowchart TB
-    R["rizal · control plane<br/>Fedora 44 · Ryzen 9 3950X · 32 threads<br/>62.7 GiB host RAM · Quadro RTX 4000<br/>Local models<br/>Kokoro-82M · faster-whisper-small<br/>MeanVC2 · retained voice-conversion path<br/>Native SVG · FFmpeg · dispatch and verification"]
+    R["rizal · control plane and local rendering<br/>Fedora 44 · Ryzen 9 3950X · 32 threads<br/>62.7 GiB host RAM<br/>Quadro RTX 4000 · 8 GiB physical VRAM<br/>Local models<br/>Kokoro-82M · faster-whisper-small<br/>MOSS-Image-Base · appearance LoRA<br/>SAM 2.1 CPU masks · MeanVC2 retained<br/>Native SVG · CPU animation · FFmpeg"]
     E["eureka: compute worker<br/>Fedora 44 · Ryzen AI MAX+ 395 · 32 threads<br/>Radeon 8060S · gfx1151<br/>31.1 GiB host RAM · 96 GiB GPU allocation<br/>Local models<br/>DeepSeek V4 Flash · ds4 / ROCm<br/>Ornith 1.5 · 35B · Ollama<br/>Qwen-Image-Edit-2511 · Higgs Audio TTS v2<br/>Shared GPU · job-selected execution"]
     O["ord: compute worker<br/>Fedora 44 · Ryzen AI MAX+ 395 · 32 threads<br/>Radeon 8060S · gfx1151<br/>125.1 GiB host RAM · 512 MiB GPU allocation<br/>Local models<br/>MeanVC2 · retained voice-conversion path<br/>Native SVG · FFmpeg · canonical deliveries"]
     LINK((" "))
@@ -164,7 +198,7 @@ The Gold 20TB storage label comes from that review's topology specification.
 
 | Host | October 27 observation |
 | --- | --- |
-| rizal | Fedora 44; Ryzen 9 3950X, 32 logical CPUs; 62.7 GiB host-visible RAM. Quadro RTX 4000 PCI identity rechecked; GPU memory size was not remeasured. |
+| rizal | Fedora 44; Ryzen 9 3950X, 32 logical CPUs; 62.7 GiB host-visible RAM. Quadro RTX 4000 PCI identity rechecked October 27; the later Stage-2 CUDA/NVML probe established 8 GiB physical VRAM. |
 | ord | Fedora 44; Ryzen AI MAX+ 395 / Radeon 8060S, 32 logical CPUs; 125.1 GiB host-visible RAM. Kernel-reported dedicated GPU allocation is 512 MiB; this does not describe all available shared GPU memory. |
 | eureka | Fedora 44; Ryzen AI MAX+ 395 / Radeon 8060S, 32 logical CPUs; 31.1 GiB host-visible RAM and 96 GiB kernel-reported GPU allocation. Both new local models reside here. |
 
@@ -173,6 +207,9 @@ are ord **169.254.4.107** and eureka **169.254.31.134**. This was a read-only
 configuration check, not a new transfer benchmark.
 
 ### Established compute queues and delivery history
+
+<details>
+<summary>October 2–4 distributed queues and completed Decasia deliveries</summary>
 
 The following October 2–4 records document completed work and the queue
 implementation. Their dated performance and delivery observations remain
@@ -304,6 +341,8 @@ The desktop completion notification was sent. Its
 [final delivery record](development/sessions/20261004.decasia_agesia_version_4_filmspace.md#final-delivery)
 includes the checksum, receipts, encoded canary, and retained ord master.
 
+</details>
+
 ## Workflow
 
 ![Workflow: PLAN, PRODUCE and REVISE in one row of gray boxes, with four return arrows underneath](workflow-diagrams/workflow-v2-loop-diagram.svg)
@@ -315,8 +354,8 @@ includes the checksum, receipts, encoded canary, and retained ord master.
 ```mermaid
 flowchart LR
     PLAN["<b>1. PLAN</b><br/>Audio, visual styling and video plans<br/>Optional local authoring on eureka:<br/>DeepSeek V4 Flash · Ornith 1.5"]
-    PRODUCE["<b>2. PRODUCE</b><br/>Transcript + keyframes for review<br/>Voice audio · video render + mux"]
-    REVIEW["<b>3. REVISE</b><br/>Portal review · KEEP / REVISE"]
+    PRODUCE["<b>2. PRODUCE</b><br/>Native SVG + portrait engraving<br/>MOSS stills + saved-asset animation<br/>Voice audio · video render + mux"]
+    REVIEW["<b>3. REVISE</b><br/>Digital checks and exact receipts<br/>Human KEEP / REVISE<br/>Print proof or audiovisual review"]
     PLAN --> PRODUCE
     PRODUCE --> REVIEW
     REVIEW -->|stage 1| PLAN
@@ -353,7 +392,7 @@ the middle box and enter the bottom of PLAN, as requested in
 ## Indexes
 
 - [`docs/audio_workflow.md`](audio_workflow.md) — Status: `FIRST-PASS-SORT; NO-REMOVAL; NOT-SHARED`
-- [`docs/visual_workflow.md`](visual_workflow.md) — Status: `FIRST-PASS-SORT; NO-REMOVAL; NOT-SHARED`
+- [`docs/visual_workflow.md`](visual_workflow.md) — current task routes and historical tool guides
 
 House rule: sort and link, do not rewrite evidence.
 
@@ -367,6 +406,11 @@ The four stage-labeled review→plan feedback edges remain.
 Updated diagrams await human review; historical acceptance does not transfer
 automatically to new pictures.
 
+The November 14 local refresh adds MOSS/SAM preparation, native portrait
+production and the distinction between digital checks and human/physical
+review. The October publication and its receipts remain historical evidence;
+this new packet has not been published or accepted.
+
 - Editable content and graph: the three tagged Mermaid blocks in this file.
 - The three revised diagrams use explicit SVG layouts in
   `scripts/render-workflow-diagrams.py` so regeneration preserves the requested
@@ -374,7 +418,7 @@ automatically to new pictures.
   configurations record the coordinates; librsvg exports the PNGs.
 - Render command: `scripts/render-workflow-diagrams.py` (Mermaid 11.16.1;
   mermaid-cli 11.16.0; use the installed Chrome browser).
-- Current local render packet: `outputs/workflows-v2/20261027-review-80/`
+- Current local render packet: `outputs/workflows-v2/20261114-documentation-review/`
   (`.mmd`, `.svg`, `.png`, and `manifest.json`).
 - Website source: `situationshipin.space/scripts/publish-workflow-diagrams.mjs`.
 - Published images and downloads:
@@ -384,5 +428,14 @@ automatically to new pictures.
 
 The original hardware/software diagram and its August acceptance remain
 in [stage 2 §5.2.1](development/sessions/20260817.fal.ai_stage_2.md#521-host-and-model-map-visual-form-of-52).
-Current models and machines are backed by the
+The hardware and LLM observations are backed by the unchanged
 [October 27 inventory](workflow-diagrams/local-model-inventory.20261027.json).
+MOSS/SAM roles are backed by the [local production guide and linked receipts](visual_workflow/tool_moss_local.md).
+
+Recreate the packet with the pinned renderer, installing it into a disposable
+directory if needed:
+
+```sh
+PUPPETEER_SKIP_DOWNLOAD=1 npm install --prefix /tmp/izzi-documentation-mermaid --no-audit --no-fund --ignore-scripts @mermaid-js/mermaid-cli@11.16.0 mermaid@11.16.1 puppeteer@24.16.0
+python3 scripts/render-workflow-diagrams.py --mmdc /tmp/izzi-documentation-mermaid/node_modules/.bin/mmdc --outdir outputs/workflows-v2/20261114-documentation-review --update-doc-images
+```

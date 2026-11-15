@@ -11,10 +11,10 @@
 <!-- Node0 -->
 <g id="Node000000" class="node">
 <title>Node0</title>
-<g id="a_Node000000"><a xlink:href="structizzi_1_1guilloche_1_1resolved__scene.html" target="_top" xlink:title=" ">
+<g id="a_Node000000"><a xlink:href="structizzi_1_1guilloche_1_1resolved__endpoint__tone.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="113.5,-27.5 0,-27.5 0,0 113.5,0 113.5,-27.5"/>
 <text xml:space="preserve" text-anchor="start" x="8" y="-15.9" font-family="SourceSans" font-size="8.00">izzi::guilloche::resolved</text>
-<text xml:space="preserve" text-anchor="middle" x="56.75" y="-6.15" font-family="SourceSans" font-size="8.00">_scene</text>
+<text xml:space="preserve" text-anchor="middle" x="56.75" y="-6.15" font-family="SourceSans" font-size="8.00">_endpoint_tone</text>
 </a>
 </g>
 </g>

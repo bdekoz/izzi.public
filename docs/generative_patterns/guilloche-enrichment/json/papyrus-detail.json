@@ -4,6 +4,6 @@
     "treatment":{"kind":"floral-cycloid","seed":20260928,"floral_group_range":[1,3],"petal_range":[5,11],
       "cycloid_amplitude":0,"density":"experimental"},
     "layout":{"kind":"radial","symmetry_order":6,"center":[160,160],"radius":120,"include_radial_field":false,
-      "geometries":[{"id":"form","kind":"organic_field","origin":[160,160],"preset":"papyrus","span":280,"detail":2}]},
+      "geometries":[{"id":"form","kind":"organic_field","origin":[160,160],"preset":"papyrus","span":280,"detail":2,"asymmetry":0.18,"seed":20261107,"stems":7,"branches":18}]},
     "palette":{"colors":["#202B2E"],"stroke_width":0.7,"opacity":1,"blend":"normal"},
     "review":{"profile":"experimental","human_acceptance":"PENDING"}}

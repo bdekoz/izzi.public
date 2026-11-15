@@ -7,11 +7,12 @@ var searchData=
   ['elliptic_5floop_5fspec_4',['elliptic_loop_spec',['../structizzi_1_1guilloche_1_1elliptic__loop__spec.html',1,'izzi::guilloche']]],
   ['endpoint_5ftone_5fspec_5',['endpoint_tone_spec',['../structizzi_1_1guilloche_1_1endpoint__tone__spec.html',1,'izzi::guilloche']]],
   ['engraved_5fflinque_5fspec_6',['engraved_flinque_spec',['../structizzi_1_1guilloche_1_1engraved__flinque__spec.html',1,'izzi::guilloche']]],
-  ['erosion_7',['erosion',['../structizzi_1_1film__decay__v2_1_1erosion.html',1,'izzi::film_decay_v2']]],
-  ['event_5fspec_8',['event_spec',['../structsvg_1_1video__glitch_1_1film_1_1event__spec.html',1,'svg::video_glitch::film']]],
-  ['event_5fwindow_9',['event_window',['../structsvg_1_1video__glitch_1_1event__window.html',1,'svg::video_glitch']]],
-  ['evolution_10',['evolution',['../structizzi_1_1film__decay__v2_1_1evolution.html',1,'izzi::film_decay_v2']]],
-  ['exposure_5fspec_11',['exposure_spec',['../structsvg_1_1video__glitch_1_1film_1_1exposure__spec.html',1,'svg::video_glitch::film']]],
-  ['extension_5fcontrol_12',['extension_control',['../structizzi_1_1film__decay__detail_1_1extension__control.html',1,'izzi::film_decay_detail']]],
-  ['extent_13',['extent',['../structsvg_1_1graph_1_1extent.html',1,'svg::graph']]]
+  ['engraving_5fspec_7',['engraving_spec',['../structizzi_1_1portrait_1_1engraving__spec.html',1,'izzi::portrait']]],
+  ['erosion_8',['erosion',['../structizzi_1_1film__decay__v2_1_1erosion.html',1,'izzi::film_decay_v2']]],
+  ['event_5fspec_9',['event_spec',['../structsvg_1_1video__glitch_1_1film_1_1event__spec.html',1,'svg::video_glitch::film']]],
+  ['event_5fwindow_10',['event_window',['../structsvg_1_1video__glitch_1_1event__window.html',1,'svg::video_glitch']]],
+  ['evolution_11',['evolution',['../structizzi_1_1film__decay__v2_1_1evolution.html',1,'izzi::film_decay_v2']]],
+  ['exposure_5fspec_12',['exposure_spec',['../structsvg_1_1video__glitch_1_1film_1_1exposure__spec.html',1,'svg::video_glitch::film']]],
+  ['extension_5fcontrol_13',['extension_control',['../structizzi_1_1film__decay__detail_1_1extension__control.html',1,'izzi::film_decay_detail']]],
+  ['extent_14',['extent',['../structsvg_1_1graph_1_1extent.html',1,'svg::graph']]]
 ];

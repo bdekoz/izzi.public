@@ -13,8 +13,14 @@ top-level document. It covers asymmetric contours, basketweave, hobnail,
 flinqué, foliate and botanical forms, coral/anemones, Islamic geometric
 arabesque, graphic water, optical controls and lenticular export.
 
+Photograph-derived marks use the separate [portrait API](../portrait.md),
+combined with these pattern families by the
+[portrait and print workflow](../visual_workflow/tool_portrait_print.md).
+
 Family entries in this directory:
 
+- [organica](organica.md) — shared group for 31 organic and botanical forms:
+  plants, foliage, corals and anemones, with group selectors for both books
 - [hamonshu](hamonshu.md) — canonical API, native water fields, complete
   three-volume graphic-water catalogue, provenance and revision map
 - [guilloche](guilloche.md) — nine accepted capability families plus P1-P5

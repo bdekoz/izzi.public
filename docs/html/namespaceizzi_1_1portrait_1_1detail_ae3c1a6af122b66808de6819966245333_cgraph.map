@@ -1,0 +1,7 @@
+<map id="izzi::portrait::detail::shape" name="izzi::portrait::detail::shape">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,27,132,64"/>
+<area shape="rect" id="Node000002" href="$namespaceizzi_1_1portrait_1_1detail.html#abf69b699aa86a9a713543ba14c5df57e" title=" " alt="" coords="180,5,334,29"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="132,33,167,30,162,32,133,38"/>
+<area shape="rect" id="Node000003" href="$namespaceizzi_1_1portrait_1_1detail.html#a90881afae9ea15efbafd3d16bfd30ce3" title=" " alt="" coords="194,54,320,90"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="132,51,181,60,175,61,132,57"/>
+</map>

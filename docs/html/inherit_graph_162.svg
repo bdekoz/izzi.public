@@ -11,10 +11,10 @@
 <!-- Node0 -->
 <g id="Node000000" class="node">
 <title>Node0</title>
-<g id="a_Node000000"><a xlink:href="structizzi_1_1media_1_1supercut_1_1cut__manifest.html" target="_top" xlink:title=" ">
+<g id="a_Node000000"><a xlink:href="structizzi_1_1level__set_1_1region__budget.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="103,-27.5 0,-27.5 0,0 103,0 103,-27.5"/>
-<text xml:space="preserve" text-anchor="start" x="8" y="-15.9" font-family="SourceSans" font-size="8.00">izzi::media::supercut</text>
-<text xml:space="preserve" text-anchor="middle" x="51.5" y="-6.15" font-family="SourceSans" font-size="8.00">::cut_manifest</text>
+<text xml:space="preserve" text-anchor="start" x="8" y="-15.9" font-family="SourceSans" font-size="8.00">izzi::level_set::region</text>
+<text xml:space="preserve" text-anchor="middle" x="51.5" y="-6.15" font-family="SourceSans" font-size="8.00">_budget</text>
 </a>
 </g>
 </g>

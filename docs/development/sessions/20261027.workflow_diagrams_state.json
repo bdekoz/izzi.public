@@ -11,7 +11,7 @@
     "Further user visual review; catalog state remains UNREVIEWED and NOT-PROMOTED."
   ],
   "documents": {
-    "resume": "docs/development/sessions/20261027.workflow_diagrams_resume.md",
+    "resume": "docs/development/sessions/20261027.workflow_diagrams_v3.md",
     "state": "docs/development/sessions/20261027.workflow_diagrams_state.json",
     "source": "docs/workflows.md",
     "renderer": "scripts/render-workflow-diagrams.py"

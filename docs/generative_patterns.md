@@ -14,6 +14,7 @@ graphic water, optical treatments and lenticular export.
 | `assessment_plan.md` | Assessment plan and per-family entry template |
 | `hamonshu.md` | Canonical Hamonshū guide: source groupings, volume 2 catalogue, native water APIs, provenance and revision map |
 | `guilloche.md` | Core guilloche API and historical capability/tuning notes; [native enrichment constructions](#native-guilloche-patterns) are documented on this page |
+| `organica.md` | Organic and botanical review group: plants, foliage, corals and anemones |
 | `moire.md` | Family entry: moire |
 | `danmu.md` | Family entry: danmu (danmaku text overlay), incl. W3C Bullet Chatting relation |
 | `surface_tension.md` | Family entry: surface tension |
@@ -33,8 +34,7 @@ graphic water, optical treatments and lenticular export.
 | --- | --- | --- |
 | hamonshu | `src/izzi-svg-curves-hamonshu.h`, `src/izzi-svg-curves-hamonshu-v2.inc` | [Canonical Hamonshū guide](generative_patterns/hamonshu.md): APIs, three-volume source catalogue, native water fields, provenance and revision map |
 | guilloche | `src/izzi-svg-guilloche.h`, `src/izzi-svg-guilloche-json.h`, `src/izzi-svg-graph-guilloche.h` | [Native contours, waves, basketweave, hobnail and flinqué](#native-guilloche-patterns); [core family](generative_patterns/guilloche.md); [title-card workflow](visual_workflow/tool_guilloche.md) |
-| foliate and botanical | `src/izzi-svg-guilloche.h` (`organic_spec`) | [Vines, scrolls, palmettes and seven botanical forms](#foliate-and-botanical-forms) |
-| coral and anemone | `src/izzi-svg-guilloche.h` (`organic_spec`) | [Eight coral forms and two distinct anemone forms](#reef-forms) |
+| organica | `src/izzi-svg-guilloche.h` (`organic_spec`), `src/izzi-svg-guilloche-meta.h` | [31 organic and botanical forms](generative_patterns/organica.md), grouped into [plants and foliage](#foliate-and-botanical-forms), [corals and anemones](#reef-forms) |
 | arabesque | `src/izzi-svg-guilloche.h` (`arabesque_spec`, `tile_graph`) | [Islamic geometric patterns and shared tile edges](#islamic-geometric-arabesque) |
 | lenticular export | `src/izzi-svg-lenticular.h`, `src/izzi-svg-lenticular-json.h` | [Interlacing, physical units and calibration](#lenticular-export-and-calibration) |
 | moire | `src/izzi-svg-moire.h` | [Field API and exact grating reference](generative_patterns/moire.md); [six native optical effect/control pairs](#water-forms-and-optical-controls) |
@@ -322,6 +322,14 @@ These are original procedural interpretations of engraving vocabulary.
 
 [![Leaflet counts, papyrus stems and foliate attachment variants](generative_patterns/guilloche-enrichment/sheets/attachments-96.png)](generative_patterns/guilloche-enrichment/sheets/attachments-320.png)
 
+[![Cannabis vegetative and flowering stages, each with structure and detail](generative_patterns/guilloche-enrichment/sheets/cannabis-growth-96.png)](generative_patterns/guilloche-enrichment/sheets/cannabis-growth-320.png)
+
+[![Cannabis leaf forms and leaflet counts](generative_patterns/guilloche-enrichment/sheets/cannabis-leaves-96.png)](generative_patterns/guilloche-enrichment/sheets/cannabis-leaves-320.png)
+
+[![Papyrus clumps with multiple fronds](generative_patterns/guilloche-enrichment/sheets/papyrus-stands-96.png)](generative_patterns/guilloche-enrichment/sheets/papyrus-stands-320.png)
+
+[![One through five cannabis plants and papyrus culms](generative_patterns/botanical-wild/counts-1-5.png)](generative_patterns/botanical-wild/index.html)
+
 Foliate supplies running vines, tangent-attached scrolling branches and
 palmettes. A running vine can select `interlace: true` for two crossing
 stems with alternating underpass fragments; it shares the basketweave
@@ -329,7 +337,8 @@ interval splitter. Leaf bases attach to stems away from underpasses.
 Other branch/leaf junctions remain contacts, not weave crossings.
 
 Common controls are `span`, `branches` (3–32), `detail` (0–4),
-`samples` (24–512), bounded `asymmetry` and a deterministic `seed`.
+`samples` (24–512), bounded `asymmetry`, `rotation` (−2π through 2π radians)
+and a deterministic `seed`.
 Silhouettes and attachments remain when detail is reduced. Narrow willow
 blades suppress minor veins when their drawing-unit width is too small.
 
@@ -338,10 +347,66 @@ blades suppress minor veins when their drawing-unit width is too small.
 | Feather palm | Curved rachis with attached pinnate blades. |
 | Fan palm | Divided fan perimeter and radiating veins. |
 | Ginkgo | Continuous notched fan with branching veins. |
-| Cannabis | Five, seven or nine serrated leaflets meeting at a petiole; `leaflets` selects the count. |
-| Papyrus | One or three unequal culms with terminal ray clusters; `stems` selects the arrangement. |
+| Cannabis | Three, five, seven or nine leaflets; `leaf_form` selects `natural`, `slender`, `broad` or `folded`, with independently varied blade breadth, taper, curvature, rolled tips, unequal margins, directional teeth and branching veins. `growth_stage` selects an isolated `leaf` (default), `vegetative`, `early-flower`, `full-flower`, or `late-flower` plant. `plants` selects 1–5 whole plants, each with its own seed, height and branch count. |
+| Papyrus | One through twelve culms rooted across neighboring clumps, with upright, spreading, bent and emerging heads. `stems` selects the count; new studies and the catalog cover 1–5, while the earlier main plate retains seven. |
 | Saguaro | One connected candelabra silhouette, joined arms and longitudinal ribs. |
 | Willow | Drooping branchlets with separate narrow leaves. |
+
+The [November 7 botanical revision](development/sessions/20261107.botanical_papyrus_cannabis_v2.md)
+evaluates 61 local reference photographs and includes before/after proofs.
+Cannabis whole-plant stages use `branches` for primary branches (3–32).
+Flowering stages add unequal side shoots which branch again, with small
+flower groups along their axes, forks and tips. Open, compact and elongated
+structures vary within the same plant. Their
+silhouettes remain at `detail: 0`, while higher detail adds pointed bracts,
+paired fine filaments, stem ridges and branch junctions. The JSON/native
+`flower_fullness` control (0.65–1.6, default 1) changes flower-group breadth
+and supporting-shoot spread independently of stage. The growth studies use 16 primary branches and the 1–5 count studies use 12
+before per-specimen variation, twice the preceding counts. Primary shoots
+are projected around the main axis, including short central projections.
+Leaves attach directly to main-stem nodes, and flowering stages carry
+flower groups at those same nodes up toward the apex. Natural plant foliage
+mixes broad, slender and folded fans at different sizes and angles, with
+fewer leaflets on small upper leaves. The late-flowering drawing reduces broad foliage and enlarges
+flower clusters. These are discrete visual stages, not a biological clock or
+an interpolation sequence. `growth_stage` values other than `leaf` require
+the cannabis preset. Non-default `leaf_form` and `flower_fullness` also
+require cannabis. Values of `plants` greater than one require a whole-plant
+stage; `organic-cannabis-stand` exposes this in the native catalog, with
+6–12 primary branches per plant (default 12). Its combined dense settings
+remain within the default resource budget. Papyrus
+uses `branches` rays in each of three depth layers
+for open heads; emerging heads have three narrow blades. Detail adds
+terminal forks and spikelets without changing culms or primary rays.
+The [stem attachment comparisons](generative_patterns/botanical-axis/comparison-320.png)
+show the correction from a bare central scaffold to direct stem leaves,
+central shoots and nodal flowers.
+The [latest botanical comparisons](generative_patterns/botanical-density/comparison-320.png)
+show the fuller branching, individual rolled leaf tips and spread papyrus roots.
+The [branching comparisons](generative_patterns/botanical-branching/comparison-320.png)
+preserve the earlier enclosed-bud drawings for direct comparison. Enlarged
+[bud and stem studies](generative_patterns/guilloche-enrichment/sheets/cannabis-details-320.png)
+show details that cannot be read in a 96 px whole-plant preview.
+
+The [ten wild botanical interference plates](generative_patterns/botanical-wild/index.html)
+combine both species with triangular and oval guilloche, arches, skewed
+lattices, nested engraving, optical interference and decorative borders.
+Plates 05 and 08 send whole branching specimens radially outward; plate 02
+follows an oval with a tangential garland. The remaining arrangements vary
+height, stage, root spacing and lean along triangles, arches and borders.
+The local review provides independent 1–5 count sliders, 1280 px previews,
+SVG exports and authored scene JSON. Rotations apply to complete native
+plants, preserving their attachments. Dense line families merge into tonal
+bands at thumbnail sizes; use the large previews to inspect the linework.
+
+[![Ten mixed botanical, guilloche and moiré experiments](generative_patterns/botanical-wild/overview-320.png)](generative_patterns/botanical-wild/index.html)
+
+Re-author the deterministic scene fixtures with
+`python3 scripts/author-botanical-wild.py`, then run the normal native
+enrichment generator. `python3 scripts/review-botanical-wild.py` exports the
+large previews and count, branching and density comparisons. The scene fixtures remain
+editable in `examples/generative/botanical-wild/`; no raster elements are
+embedded in the native plates.
 
 References explain morphology and construction rather than supply traced
 contours: [UF palm structure](https://gardeningsolutions.ifas.ufl.edu/plants/trees-and-shrubs/palms-and-cycads/palm-leaf-structure/),

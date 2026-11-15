@@ -11,9 +11,9 @@
 <!-- Node0 -->
 <g id="Node000000" class="node">
 <title>Node0</title>
-<g id="a_Node000000"><a xlink:href="structizzi_1_1keyframes_1_1glow__spec.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="126.25,-17.75 0,-17.75 0,0 126.25,0 126.25,-17.75"/>
-<text xml:space="preserve" text-anchor="middle" x="63.12" y="-6.15" font-family="SourceSans" font-size="8.00">izzi::keyframes::glow_spec</text>
+<g id="a_Node000000"><a xlink:href="structizzi_1_1guilloche_1_1water__spec.html" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="#666666" points="125.5,-17.75 0,-17.75 0,0 125.5,0 125.5,-17.75"/>
+<text xml:space="preserve" text-anchor="middle" x="62.75" y="-6.15" font-family="SourceSans" font-size="8.00">izzi::guilloche::water_spec</text>
 </a>
 </g>
 </g>

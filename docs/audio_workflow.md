@@ -38,8 +38,12 @@ merge without losing evidence.
   `scripts/check-local-audio-auditions.py`,
   `scripts/check-local-audio-full-episodes.py`,
   `scripts/check-response-annotations.py`.
-- Evidence: receipts and dyads under `docs/training-conversion/`; failure
-  loops under `docs/training-conversion/failure-loops/`; trace under
-  `docs/training-conversion/training-conversion-2026-08-08-izzi-futures.trace.jsonl`.
+- Evidence: receipts and dyads under `examples.rizal/local-objects/legacy/izzi-docs-training-conversion-2026-08-12/`; failure
+  loops under `examples.rizal/local-objects/legacy/izzi-docs-training-conversion-2026-08-12/failure-loops/`; trace under
+  `examples.rizal/local-objects/legacy/izzi-docs-training-conversion-2026-08-12/training-conversion-2026-08-08-izzi-futures.trace.jsonl`.
+
+The legacy archive paths above are historical locations and were absent during
+the November 14 documentation review. Current production receipts are linked
+from the [development index](development/index.md).
 
 Status: `FIRST-PASS-SORT; NO-REMOVAL; NOT-SHARED`

@@ -85,9 +85,36 @@ for selectors, artifact contracts, caching, coverage requirements and direct
 export commands. Historical example-generation evidence remains documented
 in the [September 21 session](development/sessions/20260921.make_examples_review_1.md).
 
+## Documentation checks and API generation
+
+```sh
+make docs-check
+make docs-check MERMAID_CLI=/tmp/izzi-documentation-mermaid/node_modules/.bin/mmdc
+make docs-api
+```
+
+`docs-check` validates local Markdown targets and heading anchors and compares
+the three shared SVG diagrams with their source graphs. Missing local media
+are inventoried separately. Supplying the pinned Mermaid CLI also renders every
+Mermaid block; installation instructions are in [Workflow diagrams](workflows.md#provenance-and-diagram-files).
+It does not check external URLs or promise a complete Jekyll anchor emulation.
+
+`docs-api` builds both the main and Screen Glitch references in a temporary
+build directory, disables source listings, checks required portrait/focused
+pages and audits HTML links before replacing `docs/html`. The old tree and
+generation logs remain in that build directory. It does not commit or publish.
+Use `scripts/publish-public-mirror.sh --dry-run` after committing the intended
+source to audit the curated public snapshot; `--push` publishes that snapshot.
+
 ## Direct CMake and compiler checks
 
-Or configure an out-of-tree build directly:
+For the native portrait and banknote targets, see
+[Portrait engraving: build and check](portrait.md#build-and-check).
+Photograph-based edition exports have separate adapter dependencies and
+reproduction commands; they are not covered by the generic form/composition
+books alone.
+
+Configure an out-of-tree build directly:
 
 ```sh
 cmake -S . -B build/local -G Ninja -DCMAKE_CXX_COMPILER=c++ -DBUILD_TESTING=ON

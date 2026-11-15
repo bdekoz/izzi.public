@@ -1,0 +1,201 @@
+{
+  "schema_version": "izzi.guilloche-scene/1",
+  "scene_id": "botanical-wild-03-feral-arch",
+  "canvas": {
+    "width": 320,
+    "height": 320,
+    "background": "#F7DFC3"
+  },
+  "content": {
+    "kind": "none",
+    "accessible_label": "Feral Arch"
+  },
+  "treatment": {
+    "kind": "floral-cycloid",
+    "seed": 2026110703,
+    "floral_group_range": [
+      1,
+      3
+    ],
+    "petal_range": [
+      5,
+      11
+    ],
+    "cycloid_amplitude": 0,
+    "density": "experimental"
+  },
+  "layout": {
+    "kind": "radial",
+    "symmetry_order": 6,
+    "center": [
+      160,
+      160
+    ],
+    "radius": 120,
+    "include_radial_field": false,
+    "geometries": [
+      {
+        "id": "layer-00",
+        "kind": "directed_wave",
+        "origin": [
+          158,
+          252
+        ],
+        "plate_index": 0,
+        "span": 270,
+        "amplitude": 193,
+        "frequency": 0.5,
+        "rows": 26,
+        "spacing": 1.25,
+        "phase": 0,
+        "samples": 768,
+        "envelope": 0,
+        "chirp": 0
+      },
+      {
+        "id": "layer-01",
+        "kind": "directed_wave",
+        "origin": [
+          162,
+          252
+        ],
+        "plate_index": 1,
+        "span": 270,
+        "amplitude": 193,
+        "frequency": 0.514,
+        "rows": 26,
+        "spacing": 1.25,
+        "phase": 0,
+        "samples": 768,
+        "envelope": 0,
+        "chirp": 0
+      },
+      {
+        "id": "layer-02",
+        "kind": "organic_field",
+        "origin": [
+          45.88795087924221,
+          207.64225622736478
+        ],
+        "plate_index": 2,
+        "preset": "cannabis",
+        "span": 204,
+        "rotation": -0.2400000000000002,
+        "branches": 10,
+        "detail": 1,
+        "samples": 32,
+        "asymmetry": 0.3,
+        "seed": 20262545,
+        "growth_stage": "late-flower",
+        "plants": 1,
+        "leaflets": 5
+      },
+      {
+        "id": "layer-03",
+        "kind": "organic_field",
+        "origin": [
+          273.80323744942433,
+          225.20659470186985
+        ],
+        "plate_index": 3,
+        "preset": "cannabis",
+        "span": 152,
+        "rotation": 0.31999999999999984,
+        "branches": 8,
+        "detail": 1,
+        "samples": 32,
+        "asymmetry": 0.3,
+        "seed": 20263264,
+        "growth_stage": "vegetative",
+        "plants": 1,
+        "leaflets": 5,
+        "leaf_form": "broad"
+      },
+      {
+        "id": "layer-04",
+        "kind": "organic_field",
+        "origin": [
+          160.0,
+          234.28
+        ],
+        "plate_index": 3,
+        "preset": "papyrus",
+        "span": 130,
+        "rotation": -3.141592653589793,
+        "branches": 9,
+        "detail": 1,
+        "samples": 32,
+        "asymmetry": 0.3,
+        "seed": 20263983,
+        "stems": 3
+      },
+      {
+        "id": "layer-05",
+        "kind": "contour_loop",
+        "origin": [
+          160,
+          190
+        ],
+        "plate_index": 1,
+        "radius": 42,
+        "x_scale": 1,
+        "y_scale": 1,
+        "rotation": 0,
+        "modes": [
+          {
+            "frequency": 5,
+            "amplitude": 0.22,
+            "phase": 0.3
+          }
+        ],
+        "cycles": 31,
+        "strands": 10,
+        "normal_amplitude": 16,
+        "tangent_amplitude": 23,
+        "phase_step": 0.6283185307179586,
+        "samples": 4096
+      },
+      {
+        "id": "layer-06",
+        "kind": "lobed_contour",
+        "origin": [
+          160,
+          173
+        ],
+        "plate_index": 0,
+        "radius": 54,
+        "rings": 42,
+        "ring_spacing": 1.8,
+        "modes": [
+          {
+            "frequency": 9,
+            "amplitude": 0.17,
+            "phase": 0.4
+          },
+          {
+            "frequency": 12,
+            "amplitude": 0.065,
+            "phase": 1.2000000000000002
+          }
+        ],
+        "rotation": 0,
+        "samples": 1536
+      }
+    ]
+  },
+  "palette": {
+    "colors": [
+      "#8E1B64",
+      "#E64C27",
+      "#12394D",
+      "#237B69"
+    ],
+    "stroke_width": 0.32,
+    "opacity": 1,
+    "blend": "normal"
+  },
+  "review": {
+    "profile": "experimental",
+    "human_acceptance": "PENDING"
+  }
+}

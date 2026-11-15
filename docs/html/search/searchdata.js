@@ -48,4 +48,3 @@ var indexSectionLabels =
   11: "Modules",
   12: "Pages"
 };
-

@@ -5,6 +5,46 @@ renderers, and tooling.  New dependencies are appended here when a round
 introduces them; render-notes.json files record the exact versions observed
 at render time.
 
+## Portrait and print adapters (November 2026)
+
+The installed [portrait core](portrait.md) is standard-library C++20. The
+holiday/anniversary drivers and delivery scripts add the following optional
+adapter dependencies; they are not requirements for all Izzi consumers.
+
+| Layer | Dependencies | Evidence |
+| --- | --- | --- |
+| Decode and field preparation | Pillow/ImageCms, NumPy and SciPy | Whole-photo adapter and shared anniversary helpers |
+| Vector layout and lettering | fontTools, Shapely, contourpy and system HarfBuzz | Outlined type, ink bounds and vector fade partitions |
+| SVG/PNG/PDF delivery | ReportLab, Pycairo, PyGObject/librsvg, Poppler tools | Candidate preflight and edition review receipts |
+| Original photos and fonts | Local source directories and recorded font files | Each edition's `sources.json` and source/font hashes |
+
+Run `python3 scripts/portrait-edition.py preflight --edition fall-crazy-pants
+--json build/portrait-preflight.json` to check the complete holiday v3/v4
+environment before rendering. The runner requires Python 3.11 or later and
+records versions plus photo, font, code, recipe and dependency hashes. It does
+not install packages or supply missing local resources. See the
+[candidate and restore workflow](visual_workflow/tool_portrait_print.md#isolated-holiday-v3v4-candidates).
+
+The November 14 preflight observed Python 3.14.10, NumPy 2.4.6, SciPy 1.16.2,
+Pillow 12.3.0 with LittleCMS 2.16, fontTools 4.62.1, Shapely 2.2.0,
+contourpy 1.4.0, ReportLab 4.5.1, Pycairo 1.28.0, PyGObject 3.56.3,
+Cairo 1.18.6, librsvg 2.62.4 and HarfBuzz 14.1.0. GCC was 16.2.1;
+`pdfinfo`, `pdfimages`, `pdftocairo` and `pdftoppm` were Poppler 26.01.0.
+This is a checked reproduction environment, not a portable package lock.
+The original v3 environment receipt
+remains the unchanged historical render record.
+
+## MOSS and compiled local film (October–November 2026)
+
+[MOSS appearance and local animation](visual_workflow/tool_moss_local.md)
+separates the isolated historical training runtime from the system-Python CPU
+renderer. Model/trainer revisions, offload settings and complete package pins
+belong to the [saved appearance recipe](development/sessions/20261029.local_rendering_exploration_stage_4_durable_workflow.md#historical-moss-appearance-recipe).
+The [Stage-5 software table](development/sessions/20261030.local_rendering_exploration_stage_5_durable_workflow.md#software-hosts-ai-and-data-usage)
+records NumPy, SciPy, Pillow, OpenCV, FFmpeg and font/shaping dependencies for
+compiled replay. Existing MOSS pixels and SAM masks are inputs; replay does
+not need their model runtimes, a GPU or network access.
+
 ## ai-time-to-die draft-4 pipeline (added 2026-08-14)
 
 The draft-4 renderer adds MediaPipe face landmarks (T1 detector swap) on top
@@ -49,7 +89,7 @@ listed below.
 
 The **devp.ac** compute resources comprise rizal, ord, and eureka. Rizal
 runs the shared dependency queue and completion notification; ord and
-eureka execute delivery stages. See [devp.ac compute topology](workflows.md#devpac-compute-resources-2026-10-02)
+eureka execute delivery stages. See [devp.ac compute topology](workflows.md#devpac-compute-resources-2026-10-27)
 and the [approved production plan](development/sessions/20261001.short_center_frame_2_screen_decay.md).
 
 | Dependency | Observed version / location | Purpose |

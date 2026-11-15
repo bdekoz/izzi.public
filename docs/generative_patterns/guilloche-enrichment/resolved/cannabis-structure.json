@@ -51,20 +51,24 @@
         ],
         "plate_index": 0,
         "path_count": 8,
-        "point_count": 1368,
+        "point_count": 1560,
         "parameters": {
           "preset": "cannabis",
           "taxon_group": "vegetal",
           "span": 280.0,
-          "asymmetry": 0.0,
+          "asymmetry": 0.18,
           "branches": 12,
           "detail": 0,
           "samples": 64,
-          "seed": 0,
+          "seed": 20261107,
           "leaflets": 7,
           "stems": 1,
           "branch_depth": 4,
-          "interlace": false
+          "interlace": false,
+          "growth_stage": "leaf",
+          "leaf_form": "natural",
+          "flower_fullness": 1.0,
+          "plants": 1
         }
       }
     ]
@@ -87,8 +91,8 @@
   },
   "statistics": {
     "path_count": 8,
-    "point_count": 1368,
-    "estimated_svg_bytes": 44448
+    "point_count": 1560,
+    "estimated_svg_bytes": 49824
   },
   "review": {
     "profile": "experimental",

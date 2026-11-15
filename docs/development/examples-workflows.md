@@ -81,6 +81,22 @@ pass their requested checks without claiming complete coverage. Full compact
 exports require `scope: all`. Use `--pdf path.pdf` on the renderer to export a
 selected or pilot book directly.
 
+Use `--group organica` with either workflow to select plants, foliage, corals
+and anemones together:
+
+```sh
+python3 scripts/render-examples.py study --group organica \
+  --output build/organica-study --strict --png
+python3 scripts/render-examples.py composition --group organica \
+  --output build/organica-composition --strict --png
+```
+
+`--group` is repeatable and can narrow `--form` or `--composition` selections.
+It replaces `--all` or `--pilot` and records `scope: selected`. A composition
+is included when every component belongs to the selected groups. The
+[Organica guide](../generative_patterns/organica.md) lists its subfamilies;
+their existing IDs, controls and authored crossover roles remain valid.
+
 ## What each workflow checks
 
 Studies render native baselines and complete parameter comparisons. Static
@@ -112,6 +128,18 @@ axes and capabilities. Authored scenes are defined in
 `examples.data/review/compositions.json` and resolved against that catalog.
 The Python layer does not maintain a second control registry.
 
+When registering a new family, add two distinct `wild_profiles` recipes and
+explicit two- and three-family crossover entries in `recipes`. Check authored
+coverage against the current native catalog before rendering the full book:
+
+```sh
+python3 tests/examples-workflows.py AuthoredCompositionTests
+```
+
+If a composition build reports `INCOMPLETE`, inspect `failures` in its
+`coverage.json`. Missing family coverage can fail the book after every scene
+renders successfully; the last printed scene name does not identify that gap.
+
 Worker caches include compiler identity, flags and recursive include
 fingerprints. Render identities include native inputs, worker/source hashes,
 seed, progress, camera, palette and raster environment. Cache receipts verify
@@ -130,7 +158,10 @@ regenerated without deleting the other's plates.
 
 ## Reading and exporting the books
 
-The HTML index filters by family, form, role and parameter. Every plate records
+The HTML index filters by group, family, form, role and parameter. Organica
+collects botanical, coral and anemone studies and their shared compositions
+into one chapter; compositions spanning groups follow in Crossovers.
+Every plate records
 controls, seed, frozen camera, source links and measured properties. Printed
 contents and PDF outlines follow the same order. The cover identifies the
 workflow, build date and source versions. SVG clips are explicitly stepped

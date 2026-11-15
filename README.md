@@ -11,6 +11,7 @@ It supports graphing, cartography, scientific documentation, generative design, 
   - [Building and testing](docs/building.md)
   - [Installing and consuming](docs/installing.md)
   - [Typed graph boundary](docs/graph.md)
+  - [Portrait engraving](docs/portrait.md)
   - [Using](docs/using.md)
 - **Generative families**
   - [Pattern](https://bdekoz.github.io/izzi.public/docs/generative_patterns.html)
@@ -29,6 +30,8 @@ It supports graphing, cartography, scientific documentation, generative design, 
   [Screen Glitch](docs/html/screen-glitch/index.html)
 - **Workflows**
   - [Workflows](docs/workflows.md)
+  - [MOSS appearance and local animation](docs/visual_workflow/tool_moss_local.md)
+  - [Portrait and print editions](docs/visual_workflow/tool_portrait_print.md)
   - [Visual](https://bdekoz.github.io/izzi.public/docs/visual_workflow/)
   - [DOCX word title videos](docs/visual_workflow/tool_docx_word_titles.md)
     — configurable word holds, paragraph clips, layered review reels and Instagram exports, with [runnable examples](examples/docx-word-titles/README.md)
@@ -61,6 +64,18 @@ The [Meta guilloche 2 production record](docs/development/sessions/20260929.meta
 links the September 29 Review 4 stills, 44-page PDF and four technically
 verified compact reels. See the [guilloche workflow](docs/visual_workflow/tool_guilloche.md)
 for native rendering, complete-background exits and delivery checks.
+
+The [portrait and print workflow](docs/visual_workflow/tool_portrait_print.md)
+maps the completed anniversary and holiday editions. Anniversary stage 4
+refreshes twenty front/back pairs; holiday v3 and v4 each deliver fifty
+whole-photo designs. Holiday v4 retains the output name `fall-crazy-pants`.
+Native DLH controls, guilloche, 600 dpi artwork, PDF exports and validation
+records are linked there. Physical print proofing and final selection remain.
+
+The [development index](docs/development/index.md) tracks recent work and
+distinguishes technical delivery from human acceptance. See the
+[November documentation review](docs/development/sessions/20261114.documentation_review.md)
+for current gaps and the staged improvement plan.
 
 **PUBLISHING THE PUBLIC SITE**
 

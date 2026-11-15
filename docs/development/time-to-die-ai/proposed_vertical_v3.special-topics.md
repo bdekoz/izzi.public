@@ -153,6 +153,8 @@ budget, estimated against the 79 s canonical corpus bound and the measured
 This record may be shared with the project owner and authorized
 collaborators. Provider prompts and spend receipts remain private and gated.
 
+<a id="ai-guided-reassessment"></a>
+
 ### Use AI to change and add your own reassessment info
 
 Take the aggregated portable prompt from this appendix and combine it with

@@ -1,0 +1,9 @@
+<map id="izzi::portrait::detail::coverage_grid::coverage_grid" name="izzi::portrait::detail::coverage_grid::coverage_grid">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,54,197,90"/>
+<area shape="rect" id="Node000002" href="$namespaceizzi_1_1portrait_1_1detail.html#abf69b699aa86a9a713543ba14c5df57e" title=" " alt="" coords="245,5,399,29"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="177,50,259,32,254,34,179,55"/>
+<area shape="rect" id="Node000003" href="$namespaceizzi_1_1portrait_1_1detail.html#a90881afae9ea15efbafd3d16bfd30ce3" title=" " alt="" coords="259,54,385,90"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="196,69,245,71,240,72,197,74"/>
+<area shape="rect" id="Node000004" href="$namespaceizzi_1_1portrait_1_1detail.html#afb9b465d6ceed3a560a81880431a3b23" title=" " alt="" coords="259,115,385,152"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="170,88,246,111,241,112,169,93"/>
+</map>

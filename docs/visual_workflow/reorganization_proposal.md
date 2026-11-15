@@ -3,6 +3,11 @@
 Recorded: 2026-08-12 America/Los_Angeles
 Status: `APPROVED-2026-08-12; FIRST-PASS-SORT-EXECUTED; NO-REMOVAL; NOT-SHARED`
 
+Historical proposal. Current navigation is in [Visual workflow](../visual_workflow.md).
+The legacy evidence tree was relocated to the local-object archive on August 12;
+the remaining documentation-directory placeholder was removed at the user's
+request on November 14. The historical scope below does not require restoring it.
+
 This proposal organizes the visual workflow documentation the same way the
 audio workflow was organized: a pointer index plus per-bucket files, first-pass
 sort only, nothing removed or rewritten. No moves have been executed for this
@@ -45,7 +50,7 @@ Existing material maps into the buckets as follows (pointer references only):
 
 ## Explicitly out of scope (evidence, stays put)
 
-- `docs/training-conversion/dyads/`, `receipts/`, `failure-loops/`,
+- `examples.rizal/local-objects/legacy/izzi-docs-training-conversion-2026-08-12/dyads/`, `receipts/`, `failure-loops/`,
   `training-conversion-*.jsonl` — immutable evidence, never moved by this
   reorganization.
 - `docs/development/explore_futures_*.md` dated logs remain where they are; the index

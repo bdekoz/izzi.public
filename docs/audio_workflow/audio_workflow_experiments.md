@@ -14,9 +14,9 @@ documents. Nothing removed; nothing promoted.
 - Human voice selection UX and consent design:
   `scripts/izzi-human-voice-select.py`,
   `docs/audio_workflow/human_voice_selection.md`,
-  related dyads in `docs/training-conversion/dyads/`.
+  related dyads in `examples.rizal/local-objects/legacy/izzi-docs-training-conversion-2026-08-12/dyads/`.
 - Failed-loop records that may inform future passes:
-  `docs/training-conversion/failure-loops/TC-LOOP-LOCAL-AUDIO-*.json`,
+  `examples.rizal/local-objects/legacy/izzi-docs-training-conversion-2026-08-12/failure-loops/TC-LOOP-LOCAL-AUDIO-*.json`,
   `TC-LOOP-AUDIO-*.json`.
 
 Status: `FIRST-PASS-SORT; NO-REMOVAL`

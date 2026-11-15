@@ -1,0 +1,64 @@
+{
+  "plates": [
+    {
+      "id": "botanical-wild-01-thorn-triangle",
+      "title": "Thorn Triangle",
+      "description": "Unequal flowering shoots, rolled leaves and papyrus clumps trace three triangular edges.",
+      "geometries": 17
+    },
+    {
+      "id": "botanical-wild-02-pollen-eclipse",
+      "title": "Pollen Eclipse",
+      "description": "A tangential botanical garland bends around displaced oval interference; flowering shoots cross its center.",
+      "geometries": 14
+    },
+    {
+      "id": "botanical-wild-03-feral-arch",
+      "title": "Feral Arch",
+      "description": "Nested, drifting arches stand on branching cannabis columns with papyrus keystones.",
+      "geometries": 7
+    },
+    {
+      "id": "botanical-wild-04-diamond-cage",
+      "title": "Diamond Cage",
+      "description": "Two skewed woven lattices trap an overgrown diamond of fan leaves and papyrus.",
+      "geometries": 13
+    },
+    {
+      "id": "botanical-wild-05-hexagonal-spore",
+      "title": "Hexagonal Spore",
+      "description": "Six whole branching specimens radiate outward from an irregular central root ring across fivefold guilloche.",
+      "geometries": 10
+    },
+    {
+      "id": "botanical-wild-06-serpentine-frieze",
+      "title": "Serpentine Frieze",
+      "description": "Uneven flowering shoots and papyrus braces lean into a chirped ribbon from opposing botanical borders.",
+      "geometries": 20
+    },
+    {
+      "id": "botanical-wild-07-double-arch-mirage",
+      "title": "Double Arch Mirage",
+      "description": "Opposing arches frame two unequal hanging and upright thickets with mixed stages, heights and lean.",
+      "geometries": 15
+    },
+    {
+      "id": "botanical-wild-08-fractured-compass",
+      "title": "Fractured Compass",
+      "description": "Nine unequal branching spokes erupt outward: flowering axes, broad foliage and paired papyrus crowns.",
+      "geometries": 13
+    },
+    {
+      "id": "botanical-wild-09-orbital-herbarium",
+      "title": "Orbital Herbarium",
+      "description": "Tilted ovals pass through a five-plant flowering stand and five papyrus culms.",
+      "geometries": 9
+    },
+    {
+      "id": "botanical-wild-10-overgrown-cathedral",
+      "title": "Overgrown Cathedral",
+      "description": "An asymmetric forest erupts through dense nested arches, triangular guilloche and ornamental side borders.",
+      "geometries": 15
+    }
+  ]
+}

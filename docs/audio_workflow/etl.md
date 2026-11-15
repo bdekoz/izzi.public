@@ -36,6 +36,6 @@ audio.
 
 - Manifests with SHA-256, durations, codecs, and loudness measurements under
   `outputs/…/episode-01-local-trial/audio/` and `…/full-length-scene/v2/higgs-audio/`.
-- Failure loops and receipts under `docs/training-conversion/`.
+- Failure loops and receipts under `examples.rizal/local-objects/legacy/izzi-docs-training-conversion-2026-08-12/`.
 
 Status: `FIRST-PASS-SORT; NO-REMOVAL`

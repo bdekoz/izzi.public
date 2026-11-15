@@ -1,0 +1,986 @@
+{
+  "review_date": "2026-11-07",
+  "source_root": "resources.static/botanical",
+  "count": 61,
+  "total_bytes": 192215456,
+  "exact_duplicate_groups": [],
+  "note": "Visual roles are review judgments, not a dated biological growth sequence.",
+  "images": [
+    {
+      "file": "cannabis/DSC_2146.JPG",
+      "sha256": "2db0a34f537633d4e760e29c1d4c224dd4fbe2020919e324744683cc34a95ca6",
+      "bytes": 4774505,
+      "stored_pixels": [
+        6000,
+        4000
+      ],
+      "orientation": 8,
+      "display_pixels": [
+        4000,
+        6000
+      ],
+      "contact_sheet": "references-cannabis-1.jpg",
+      "visual_use": "flowering specimen; cluster distribution and silhouette"
+    },
+    {
+      "file": "cannabis/DSC_2190_white_cashmere_harvest_scaled2k.jpg",
+      "sha256": "7fdcf9d2bd0509276c21f7f15b2fc8694535dcb6f132711a144fc364110a6c56",
+      "bytes": 131170,
+      "stored_pixels": [
+        618,
+        1000
+      ],
+      "orientation": 1,
+      "display_pixels": [
+        618,
+        1000
+      ],
+      "contact_sheet": "references-cannabis-1.jpg",
+      "visual_use": "cut or hanging material; flower clusters, not natural aging evidence"
+    },
+    {
+      "file": "cannabis/DSC_2202.JPG",
+      "sha256": "d1b4838f8b2114846c9e46824815966d1264e9bb23e9e49f81fba18ed6e2d5b0",
+      "bytes": 3274255,
+      "stored_pixels": [
+        6000,
+        4000
+      ],
+      "orientation": 8,
+      "display_pixels": [
+        4000,
+        6000
+      ],
+      "contact_sheet": "references-cannabis-1.jpg",
+      "visual_use": "flowering specimen; cluster distribution and silhouette"
+    },
+    {
+      "file": "cannabis/DSC_3280.JPG",
+      "sha256": "6dbf5defdb82bdb8192614c56338b5cc15508bfc62a92909b18a8b0de31549a5",
+      "bytes": 3332099,
+      "stored_pixels": [
+        6000,
+        4000
+      ],
+      "orientation": 8,
+      "display_pixels": [
+        4000,
+        6000
+      ],
+      "contact_sheet": "references-cannabis-1.jpg",
+      "visual_use": "flowering specimen; cluster distribution and silhouette"
+    },
+    {
+      "file": "cannabis/DSC_3281_xxx2.JPG",
+      "sha256": "c19d21171aa798de51947150427151d11d88a8945e38ef1b2611995fd73773bb",
+      "bytes": 3259244,
+      "stored_pixels": [
+        6000,
+        4000
+      ],
+      "orientation": 8,
+      "display_pixels": [
+        4000,
+        6000
+      ],
+      "contact_sheet": "references-cannabis-1.jpg",
+      "visual_use": "flowering specimen; cluster distribution and silhouette"
+    },
+    {
+      "file": "cannabis/DSC_3282_xxx5.JPG",
+      "sha256": "ada4c57692bb73eda7715cf3946b395af5792e1995c0a4688a84bdd37b52876e",
+      "bytes": 2969495,
+      "stored_pixels": [
+        6000,
+        4000
+      ],
+      "orientation": 8,
+      "display_pixels": [
+        4000,
+        6000
+      ],
+      "contact_sheet": "references-cannabis-1.jpg",
+      "visual_use": "flowering specimen; cluster distribution and silhouette"
+    },
+    {
+      "file": "cannabis/DSC_3283.JPG",
+      "sha256": "0bb63b87b33d4ba8bb5e646eff497271f6d6eb6bb4a7b4a2cd6496e7f0ec127f",
+      "bytes": 3126614,
+      "stored_pixels": [
+        6000,
+        4000
+      ],
+      "orientation": 8,
+      "display_pixels": [
+        4000,
+        6000
+      ],
+      "contact_sheet": "references-cannabis-1.jpg",
+      "visual_use": "flowering specimen; cluster distribution and silhouette"
+    },
+    {
+      "file": "cannabis/DSC_3284_xxx1.JPG",
+      "sha256": "556ecf2c5e73c9181f5de899be43e6419f5f0d40d23a304e0e32ec68a862a0db",
+      "bytes": 3050068,
+      "stored_pixels": [
+        6000,
+        4000
+      ],
+      "orientation": 8,
+      "display_pixels": [
+        4000,
+        6000
+      ],
+      "contact_sheet": "references-cannabis-1.jpg",
+      "visual_use": "flowering specimen; cluster distribution and silhouette"
+    },
+    {
+      "file": "cannabis/DSC_3285_xxx5.JPG",
+      "sha256": "bdb01e621c05eccda93150a3afb4edd4d8c14063472903220e59811eb9fce212",
+      "bytes": 3212229,
+      "stored_pixels": [
+        6000,
+        4000
+      ],
+      "orientation": 8,
+      "display_pixels": [
+        4000,
+        6000
+      ],
+      "contact_sheet": "references-cannabis-1.jpg",
+      "visual_use": "flowering specimen; cluster distribution and silhouette"
+    },
+    {
+      "file": "cannabis/DSC_3286_xxx3.JPG",
+      "sha256": "4bf26f4104602a91aef5788691c5e86c6e9784ea89ee56c1faa6623fa21544ff",
+      "bytes": 3267331,
+      "stored_pixels": [
+        6000,
+        4000
+      ],
+      "orientation": 8,
+      "display_pixels": [
+        4000,
+        6000
+      ],
+      "contact_sheet": "references-cannabis-1.jpg",
+      "visual_use": "vegetative foliage and branch structure"
+    },
+    {
+      "file": "cannabis/DSC_3294.JPG",
+      "sha256": "4f26e6b3e9f043a73e8e9347dba13f8a9c2ef9cdf1c9fe4076287012bf450892",
+      "bytes": 3039951,
+      "stored_pixels": [
+        6000,
+        4000
+      ],
+      "orientation": 1,
+      "display_pixels": [
+        6000,
+        4000
+      ],
+      "contact_sheet": "references-cannabis-1.jpg",
+      "visual_use": "cut or hanging material; flower clusters, not natural aging evidence"
+    },
+    {
+      "file": "cannabis/DSC_3295.JPG",
+      "sha256": "6e0eb8c5e368d895373a26b5c02b4a2557c94fe80bafd039fb78f5a49567a581",
+      "bytes": 3145280,
+      "stored_pixels": [
+        6000,
+        4000
+      ],
+      "orientation": 1,
+      "display_pixels": [
+        6000,
+        4000
+      ],
+      "contact_sheet": "references-cannabis-1.jpg",
+      "visual_use": "cut or hanging material; flower clusters, not natural aging evidence"
+    },
+    {
+      "file": "cannabis/DSC_3296.JPG",
+      "sha256": "788840d559829c66e43cc0d2cf6420012139d61fe7372c3c05674f7b3b76cc82",
+      "bytes": 3463752,
+      "stored_pixels": [
+        6000,
+        4000
+      ],
+      "orientation": 8,
+      "display_pixels": [
+        4000,
+        6000
+      ],
+      "contact_sheet": "references-cannabis-2.jpg",
+      "visual_use": "cut or hanging material; flower clusters, not natural aging evidence"
+    },
+    {
+      "file": "cannabis/DSC_3297.JPG",
+      "sha256": "295ddf333596e96ddd1351e879378ec2771bf72de0681c63e01062464aee097d",
+      "bytes": 3396952,
+      "stored_pixels": [
+        6000,
+        4000
+      ],
+      "orientation": 8,
+      "display_pixels": [
+        4000,
+        6000
+      ],
+      "contact_sheet": "references-cannabis-2.jpg",
+      "visual_use": "cut or hanging material; flower clusters, not natural aging evidence"
+    },
+    {
+      "file": "cannabis/DSC_3298_harvest3.JPG",
+      "sha256": "ce2f3df26bedb2ac4d47f173c1fc67b9e4fff11bb7439e1112f8f0b7bae8d142",
+      "bytes": 3440616,
+      "stored_pixels": [
+        6000,
+        4000
+      ],
+      "orientation": 8,
+      "display_pixels": [
+        4000,
+        6000
+      ],
+      "contact_sheet": "references-cannabis-2.jpg",
+      "visual_use": "cut or hanging material; flower clusters, not natural aging evidence"
+    },
+    {
+      "file": "cannabis/DSC_3299.JPG",
+      "sha256": "cc856ff921d9b5fb3a2efd9fd5c62ec6c6e22d3ef9510ea38d5c23ddb6b67db3",
+      "bytes": 2847930,
+      "stored_pixels": [
+        6000,
+        4000
+      ],
+      "orientation": 1,
+      "display_pixels": [
+        6000,
+        4000
+      ],
+      "contact_sheet": "references-cannabis-2.jpg",
+      "visual_use": "cut or hanging material; flower clusters, not natural aging evidence"
+    },
+    {
+      "file": "cannabis/DSC_3300.JPG",
+      "sha256": "13c6f50571ebff83b372dba0b932034cdec7a3e2373449285a5c3adc1c8f6efe",
+      "bytes": 2904110,
+      "stored_pixels": [
+        6000,
+        4000
+      ],
+      "orientation": 1,
+      "display_pixels": [
+        6000,
+        4000
+      ],
+      "contact_sheet": "references-cannabis-2.jpg",
+      "visual_use": "trimmed arrangement; exposed branching, not natural aging evidence"
+    },
+    {
+      "file": "cannabis/DSC_3301.JPG",
+      "sha256": "cfbd0b6e9fb295ab70563e21bbd08c77b8ba841f6f652d54b770b5f8a2094e94",
+      "bytes": 3054399,
+      "stored_pixels": [
+        6000,
+        4000
+      ],
+      "orientation": 1,
+      "display_pixels": [
+        6000,
+        4000
+      ],
+      "contact_sheet": "references-cannabis-2.jpg",
+      "visual_use": "trimmed arrangement; exposed branching, not natural aging evidence"
+    },
+    {
+      "file": "cannabis/DSC_3302.JPG",
+      "sha256": "2ca401568c6e046f25348e59200fdedd177d4de91f30d33bb3222a2f5e29092b",
+      "bytes": 3027935,
+      "stored_pixels": [
+        6000,
+        4000
+      ],
+      "orientation": 1,
+      "display_pixels": [
+        6000,
+        4000
+      ],
+      "contact_sheet": "references-cannabis-2.jpg",
+      "visual_use": "trimmed arrangement; exposed branching, not natural aging evidence"
+    },
+    {
+      "file": "cannabis/DSC_3303_ikebana_manicure.JPG",
+      "sha256": "8bd04a923d7b3e8e48408508ce61829b4fed01d394b102c134842358ce456eba",
+      "bytes": 2997908,
+      "stored_pixels": [
+        6000,
+        4000
+      ],
+      "orientation": 1,
+      "display_pixels": [
+        6000,
+        4000
+      ],
+      "contact_sheet": "references-cannabis-2.jpg",
+      "visual_use": "trimmed arrangement; exposed branching, not natural aging evidence"
+    },
+    {
+      "file": "cannabis/IMG_20200802_111817.jpg",
+      "sha256": "a47de8529ae8760eb9613571a1f63de0581befe6dd6dfad3dc0a330147a3d938",
+      "bytes": 3196708,
+      "stored_pixels": [
+        4032,
+        3024
+      ],
+      "orientation": 1,
+      "display_pixels": [
+        4032,
+        3024
+      ],
+      "contact_sheet": "references-cannabis-2.jpg",
+      "visual_use": "vegetative foliage and branch structure"
+    },
+    {
+      "file": "cannabis/IMG_20200802_111835.jpg",
+      "sha256": "1ae6fc14a3cf9d4cfd316e5308acb55755ee43225b4c2f714c3cbc160a179e70",
+      "bytes": 3117583,
+      "stored_pixels": [
+        4032,
+        3024
+      ],
+      "orientation": 1,
+      "display_pixels": [
+        4032,
+        3024
+      ],
+      "contact_sheet": "references-cannabis-2.jpg",
+      "visual_use": "vegetative foliage and branch structure"
+    },
+    {
+      "file": "cannabis/IMG_20200802_111900.jpg",
+      "sha256": "a5eebd7d40b91e3ae17b564c397c95da8e529b1a05992c33c39a934533ff4146",
+      "bytes": 3155019,
+      "stored_pixels": [
+        4032,
+        3024
+      ],
+      "orientation": 6,
+      "display_pixels": [
+        3024,
+        4032
+      ],
+      "contact_sheet": "references-cannabis-2.jpg",
+      "visual_use": "vegetative foliage and branch structure"
+    },
+    {
+      "file": "cannabis/IMG_20200802_111934.jpg",
+      "sha256": "3de2c2657a79ebde4ac4fe475a56f584314bbce812c2291896d29c41e28b6f76",
+      "bytes": 3045757,
+      "stored_pixels": [
+        4032,
+        3024
+      ],
+      "orientation": 1,
+      "display_pixels": [
+        4032,
+        3024
+      ],
+      "contact_sheet": "references-cannabis-2.jpg",
+      "visual_use": "vegetative foliage and branch structure"
+    },
+    {
+      "file": "cannabis/IMG_20200802_112001.jpg",
+      "sha256": "044c5e9f1d276a591c65d13fecb4e66f9f7f26c0174792d07a2f46b2a42010cb",
+      "bytes": 3292082,
+      "stored_pixels": [
+        4032,
+        3024
+      ],
+      "orientation": 6,
+      "display_pixels": [
+        3024,
+        4032
+      ],
+      "contact_sheet": "references-cannabis-3.jpg",
+      "visual_use": "vegetative foliage and branch structure"
+    },
+    {
+      "file": "cannabis/IMG_20200802_112030.jpg",
+      "sha256": "b7338464bc58e9a479fdc5628ef60816a5cf228d4e70cf8dfa897214c1bf972b",
+      "bytes": 2831993,
+      "stored_pixels": [
+        4032,
+        3024
+      ],
+      "orientation": 1,
+      "display_pixels": [
+        4032,
+        3024
+      ],
+      "contact_sheet": "references-cannabis-3.jpg",
+      "visual_use": "vegetative foliage and branch structure"
+    },
+    {
+      "file": "cannabis/IMG_20200802_112043.jpg",
+      "sha256": "537ea370f8c8dab48f6b8c435c5118f04a8b121266594d1c5cc24e600da71d32",
+      "bytes": 3285102,
+      "stored_pixels": [
+        4032,
+        3024
+      ],
+      "orientation": 1,
+      "display_pixels": [
+        4032,
+        3024
+      ],
+      "contact_sheet": "references-cannabis-3.jpg",
+      "visual_use": "vegetative foliage and branch structure"
+    },
+    {
+      "file": "cannabis/IMG_20200802_112052.jpg",
+      "sha256": "b548dfa81ea4bbd686689ea267da352e235e67179528eee83851a0e2e02e7896",
+      "bytes": 3282115,
+      "stored_pixels": [
+        4032,
+        3024
+      ],
+      "orientation": 1,
+      "display_pixels": [
+        4032,
+        3024
+      ],
+      "contact_sheet": "references-cannabis-3.jpg",
+      "visual_use": "vegetative foliage and branch structure"
+    },
+    {
+      "file": "cannabis/IMG_20200802_112120.jpg",
+      "sha256": "07edda92f2606608985f6067f423e1bfe37fe80a17eba0b1c04357d96c8d5a93",
+      "bytes": 3376984,
+      "stored_pixels": [
+        4032,
+        3024
+      ],
+      "orientation": 1,
+      "display_pixels": [
+        4032,
+        3024
+      ],
+      "contact_sheet": "references-cannabis-3.jpg",
+      "visual_use": "vegetative foliage and branch structure"
+    },
+    {
+      "file": "cannabis/IMG_20200802_112141.jpg",
+      "sha256": "65f66f5b774ed04b68469db7030554da47efa3d75289e42388347ae9404f1144",
+      "bytes": 2977475,
+      "stored_pixels": [
+        4032,
+        3024
+      ],
+      "orientation": 1,
+      "display_pixels": [
+        4032,
+        3024
+      ],
+      "contact_sheet": "references-cannabis-3.jpg",
+      "visual_use": "vegetative foliage and branch structure"
+    },
+    {
+      "file": "cannabis/IMG_20200802_112147.jpg",
+      "sha256": "ec595df95c8c53bec13c9c52810220fac246cea73a5208cf5489c09bc48f080a",
+      "bytes": 3306762,
+      "stored_pixels": [
+        4032,
+        3024
+      ],
+      "orientation": 1,
+      "display_pixels": [
+        4032,
+        3024
+      ],
+      "contact_sheet": "references-cannabis-3.jpg",
+      "visual_use": "vegetative foliage and branch structure"
+    },
+    {
+      "file": "cannabis/IMG_20200802_112548.jpg",
+      "sha256": "46d9861e3c6a188480a0fe9638bb0327dba8183d4844e0cc7da057046079b3b4",
+      "bytes": 2379037,
+      "stored_pixels": [
+        4032,
+        3024
+      ],
+      "orientation": 1,
+      "display_pixels": [
+        4032,
+        3024
+      ],
+      "contact_sheet": "references-cannabis-3.jpg",
+      "visual_use": "detached young shoots; attachment detail"
+    },
+    {
+      "file": "cannabis/IMG_20200809_104556.jpg",
+      "sha256": "f92b38074545df026d1ad19f9455b1d5fc159ce6aa6f425a63062cd9a078ba9b",
+      "bytes": 3010667,
+      "stored_pixels": [
+        4032,
+        3024
+      ],
+      "orientation": 6,
+      "display_pixels": [
+        3024,
+        4032
+      ],
+      "contact_sheet": "references-cannabis-3.jpg",
+      "visual_use": "vegetative foliage and branch structure"
+    },
+    {
+      "file": "cannabis/IMG_20200809_104604.jpg",
+      "sha256": "fac76cd02713bd259166d6462f68e1f48939fcd68e6a5590605db8be698b2b5e",
+      "bytes": 3283534,
+      "stored_pixels": [
+        4032,
+        3024
+      ],
+      "orientation": 1,
+      "display_pixels": [
+        4032,
+        3024
+      ],
+      "contact_sheet": "references-cannabis-3.jpg",
+      "visual_use": "vegetative foliage and branch structure"
+    },
+    {
+      "file": "cannabis/IMG_20200815_092704.jpg",
+      "sha256": "10e24e8ee6c0a13e51fa4793165b1609734aaa0d3cf843f2d4bf4c962388b7da",
+      "bytes": 2977901,
+      "stored_pixels": [
+        4032,
+        3024
+      ],
+      "orientation": 6,
+      "display_pixels": [
+        3024,
+        4032
+      ],
+      "contact_sheet": "references-cannabis-3.jpg",
+      "visual_use": "vegetative foliage and branch structure"
+    },
+    {
+      "file": "cannabis/IMG_20200909_104956.jpg",
+      "sha256": "3de92442e3754ac61be4d506b0b72b05626a97098993910260bd3919d680d48f",
+      "bytes": 5560956,
+      "stored_pixels": [
+        4032,
+        3024
+      ],
+      "orientation": 3,
+      "display_pixels": [
+        4032,
+        3024
+      ],
+      "contact_sheet": "references-cannabis-3.jpg",
+      "visual_use": "whole-plant context; colored lighting"
+    },
+    {
+      "file": "cannabis/PXL_20201024_153229250.jpg",
+      "sha256": "edb54a7b9e6f0db5e7b56bc2bbd3a5982c597248b506cfb558a893ea612cc386",
+      "bytes": 1576781,
+      "stored_pixels": [
+        2160,
+        3840
+      ],
+      "orientation": 1,
+      "display_pixels": [
+        2160,
+        3840
+      ],
+      "contact_sheet": "references-cannabis-4.jpg",
+      "visual_use": "whole-plant context; colored lighting"
+    },
+    {
+      "file": "cannabis/PXL_20201103_225505876.jpg",
+      "sha256": "24ecd616f6d554e3682b7ffc061220464621eb50ad8c1af6133993c6bd3f98fb",
+      "bytes": 1759919,
+      "stored_pixels": [
+        2160,
+        3840
+      ],
+      "orientation": 1,
+      "display_pixels": [
+        2160,
+        3840
+      ],
+      "contact_sheet": "references-cannabis-4.jpg",
+      "visual_use": "whole-plant context; colored lighting"
+    },
+    {
+      "file": "cyperacea_papyrus/DSC_0927.JPG",
+      "sha256": "7510653d37be77ecdb421afc977fcf14aeee941854348e4a0a793e911b2317c2",
+      "bytes": 3419149,
+      "stored_pixels": [
+        6000,
+        4000
+      ],
+      "orientation": 8,
+      "display_pixels": [
+        4000,
+        6000
+      ],
+      "contact_sheet": "references-cyperacea_papyrus-1.jpg",
+      "visual_use": "green crown, curved rays and unequal culm arrangement"
+    },
+    {
+      "file": "cyperacea_papyrus/papyrus_0993.jpg",
+      "sha256": "6f89eb525c461b9b5418fd3e00dcfd9df135c2f80917714885a7b92d3006ae67",
+      "bytes": 4803030,
+      "stored_pixels": [
+        6000,
+        4000
+      ],
+      "orientation": 8,
+      "display_pixels": [
+        4000,
+        6000
+      ],
+      "contact_sheet": "references-cyperacea_papyrus-1.jpg",
+      "visual_use": "green crown, curved rays and unequal culm arrangement"
+    },
+    {
+      "file": "cyperacea_papyrus/papyrus_0999.jpg",
+      "sha256": "f6f57711fb27b433c9a536686d30a763309a637eb197b70776186ecca4771d7d",
+      "bytes": 4587463,
+      "stored_pixels": [
+        6000,
+        4000
+      ],
+      "orientation": 8,
+      "display_pixels": [
+        4000,
+        6000
+      ],
+      "contact_sheet": "references-cyperacea_papyrus-1.jpg",
+      "visual_use": "green crown, curved rays and unequal culm arrangement"
+    },
+    {
+      "file": "cyperacea_papyrus/papyrus_1002.jpg",
+      "sha256": "cf2c3749565ca3b1f86fea23330370eca5e48656c42d62693e0c42e8d380e267",
+      "bytes": 4510855,
+      "stored_pixels": [
+        6000,
+        4000
+      ],
+      "orientation": 8,
+      "display_pixels": [
+        4000,
+        6000
+      ],
+      "contact_sheet": "references-cyperacea_papyrus-1.jpg",
+      "visual_use": "green crown, curved rays and unequal culm arrangement"
+    },
+    {
+      "file": "cyperacea_papyrus/papyrus_1005.jpg",
+      "sha256": "cfc0c09ae3dba3fcec04d23357937c37d40501c0b698ee0037711a33425711ea",
+      "bytes": 4623783,
+      "stored_pixels": [
+        6000,
+        4000
+      ],
+      "orientation": 8,
+      "display_pixels": [
+        4000,
+        6000
+      ],
+      "contact_sheet": "references-cyperacea_papyrus-1.jpg",
+      "visual_use": "green crown, curved rays and unequal culm arrangement"
+    },
+    {
+      "file": "cyperacea_papyrus/papyrus_1010.jpg",
+      "sha256": "2c8e47c04bf565e29f5be4ed111dba17ab0f7302e3755d20364106733cf7ff38",
+      "bytes": 4113823,
+      "stored_pixels": [
+        6000,
+        4000
+      ],
+      "orientation": 1,
+      "display_pixels": [
+        6000,
+        4000
+      ],
+      "contact_sheet": "references-cyperacea_papyrus-1.jpg",
+      "visual_use": "green crown, curved rays and unequal culm arrangement"
+    },
+    {
+      "file": "cyperacea_papyrus/papyrus_1011.jpg",
+      "sha256": "9be99e1c564fdac047525ca60b430ec4182c53656c802544a70e4326aa8d337a",
+      "bytes": 4246914,
+      "stored_pixels": [
+        6000,
+        4000
+      ],
+      "orientation": 1,
+      "display_pixels": [
+        6000,
+        4000
+      ],
+      "contact_sheet": "references-cyperacea_papyrus-1.jpg",
+      "visual_use": "green crown, curved rays and unequal culm arrangement"
+    },
+    {
+      "file": "cyperacea_papyrus/papyrus_1018.jpg",
+      "sha256": "dfe118011481c57b18fb7d912cf5f9255f6af6f93d0848117a9ca3ee3fd31629",
+      "bytes": 3555663,
+      "stored_pixels": [
+        6000,
+        4000
+      ],
+      "orientation": 1,
+      "display_pixels": [
+        6000,
+        4000
+      ],
+      "contact_sheet": "references-cyperacea_papyrus-1.jpg",
+      "visual_use": "green crown, curved rays and unequal culm arrangement"
+    },
+    {
+      "file": "cyperacea_papyrus/papyrus_1022.jpg",
+      "sha256": "36210f5fab78ce7e7c4a2835ebcb8ff75a3da4eab9625f5313d701b1e1d34df4",
+      "bytes": 4013724,
+      "stored_pixels": [
+        6000,
+        4000
+      ],
+      "orientation": 1,
+      "display_pixels": [
+        6000,
+        4000
+      ],
+      "contact_sheet": "references-cyperacea_papyrus-1.jpg",
+      "visual_use": "green crown, curved rays and unequal culm arrangement"
+    },
+    {
+      "file": "cyperacea_papyrus/papyrus_1149.jpg",
+      "sha256": "6596aa2161025f03bfdc0c667be56a4822a007a9017cad6d121c56ade322c2cd",
+      "bytes": 2542447,
+      "stored_pixels": [
+        6000,
+        4000
+      ],
+      "orientation": 1,
+      "display_pixels": [
+        6000,
+        4000
+      ],
+      "contact_sheet": "references-cyperacea_papyrus-1.jpg",
+      "visual_use": "green crown, curved rays and unequal culm arrangement"
+    },
+    {
+      "file": "cyperacea_papyrus/papyrus_1156.jpg",
+      "sha256": "79c1b7c37002a18e60f4ef64c8968511db12a1ba62c180c9f2d6df2f62d5d2c5",
+      "bytes": 2882601,
+      "stored_pixels": [
+        6000,
+        4000
+      ],
+      "orientation": 1,
+      "display_pixels": [
+        6000,
+        4000
+      ],
+      "contact_sheet": "references-cyperacea_papyrus-1.jpg",
+      "visual_use": "green crown, curved rays and unequal culm arrangement"
+    },
+    {
+      "file": "cyperacea_papyrus/papyrus_1157.jpg",
+      "sha256": "917dce1c83885d7c3998adc8dd2008837abd3d90fdb36dd88894b9e793c685aa",
+      "bytes": 2869301,
+      "stored_pixels": [
+        6000,
+        4000
+      ],
+      "orientation": 1,
+      "display_pixels": [
+        6000,
+        4000
+      ],
+      "contact_sheet": "references-cyperacea_papyrus-1.jpg",
+      "visual_use": "green crown, curved rays and unequal culm arrangement"
+    },
+    {
+      "file": "cyperacea_papyrus/papyrus_1158.jpg",
+      "sha256": "f74251030011bd419194040117e81f9a0abaad607a18460c4ee1843de8f5222f",
+      "bytes": 2668637,
+      "stored_pixels": [
+        6000,
+        4000
+      ],
+      "orientation": 1,
+      "display_pixels": [
+        6000,
+        4000
+      ],
+      "contact_sheet": "references-cyperacea_papyrus-2.jpg",
+      "visual_use": "basal culm bundle and sheaths"
+    },
+    {
+      "file": "cyperacea_papyrus/papyrus_1179.jpg",
+      "sha256": "f111dd2b68a187a8176371a2002d078b1598a3282f534e43dd35edd1337639dc",
+      "bytes": 3074861,
+      "stored_pixels": [
+        6000,
+        4000
+      ],
+      "orientation": 1,
+      "display_pixels": [
+        6000,
+        4000
+      ],
+      "contact_sheet": "references-cyperacea_papyrus-2.jpg",
+      "visual_use": "brown drooping crown; candidate dry-head form"
+    },
+    {
+      "file": "cyperacea_papyrus/papyrus_1182.jpg",
+      "sha256": "d508a05c5c5c7cd1c6367f45aaee0d9491979d73e73f7d55f623a90bc209ed53",
+      "bytes": 3027517,
+      "stored_pixels": [
+        6000,
+        4000
+      ],
+      "orientation": 1,
+      "display_pixels": [
+        6000,
+        4000
+      ],
+      "contact_sheet": "references-cyperacea_papyrus-2.jpg",
+      "visual_use": "brown drooping crown; candidate dry-head form"
+    },
+    {
+      "file": "cyperacea_papyrus/papyrus_1185.jpg",
+      "sha256": "7a432f03c6c82505ef55478c034915e94e15ed6c1433915fef1d1d5810b2a94f",
+      "bytes": 3082951,
+      "stored_pixels": [
+        6000,
+        4000
+      ],
+      "orientation": 1,
+      "display_pixels": [
+        6000,
+        4000
+      ],
+      "contact_sheet": "references-cyperacea_papyrus-2.jpg",
+      "visual_use": "brown drooping crown; candidate dry-head form"
+    },
+    {
+      "file": "cyperacea_papyrus/papyrus_1187.jpg",
+      "sha256": "a05070074d03427c0004b922b3c685a2f7b1ee2cb5da0bbc12cf87e19a6ab031",
+      "bytes": 2493472,
+      "stored_pixels": [
+        6000,
+        4000
+      ],
+      "orientation": 1,
+      "display_pixels": [
+        6000,
+        4000
+      ],
+      "contact_sheet": "references-cyperacea_papyrus-2.jpg",
+      "visual_use": "small or closed head; candidate unopened form"
+    },
+    {
+      "file": "cyperacea_papyrus/papyrus_1189.jpg",
+      "sha256": "3f16848cf7e8f1d211cb770a308f065f7a436c21adf975c2c28f002ba76fc8f0",
+      "bytes": 2871804,
+      "stored_pixels": [
+        6000,
+        4000
+      ],
+      "orientation": 1,
+      "display_pixels": [
+        6000,
+        4000
+      ],
+      "contact_sheet": "references-cyperacea_papyrus-2.jpg",
+      "visual_use": "green crown, curved rays and unequal culm arrangement"
+    },
+    {
+      "file": "cyperacea_papyrus/papyrus_1195.jpg",
+      "sha256": "764d5d8d993f7d717495e28a4cb579006f71b61bd0d6aaf2cbefe77f477d18a2",
+      "bytes": 2771151,
+      "stored_pixels": [
+        6000,
+        4000
+      ],
+      "orientation": 1,
+      "display_pixels": [
+        6000,
+        4000
+      ],
+      "contact_sheet": "references-cyperacea_papyrus-2.jpg",
+      "visual_use": "green crown, curved rays and unequal culm arrangement"
+    },
+    {
+      "file": "cyperacea_papyrus/papyrus_1198.jpg",
+      "sha256": "5e4025e28da0cb7c140389feb1d6f0c5c03066431718dab81de218de2c0f39fc",
+      "bytes": 2288764,
+      "stored_pixels": [
+        6000,
+        4000
+      ],
+      "orientation": 1,
+      "display_pixels": [
+        6000,
+        4000
+      ],
+      "contact_sheet": "references-cyperacea_papyrus-2.jpg",
+      "visual_use": "small or closed head; candidate unopened form"
+    },
+    {
+      "file": "cyperacea_papyrus/papyrus_1201.jpg",
+      "sha256": "290dacbf82d8058d9c7acd9ca7f320891961b48330322b00526b691d5a372d42",
+      "bytes": 2030317,
+      "stored_pixels": [
+        6000,
+        4000
+      ],
+      "orientation": 1,
+      "display_pixels": [
+        6000,
+        4000
+      ],
+      "contact_sheet": "references-cyperacea_papyrus-2.jpg",
+      "visual_use": "small or closed head; candidate unopened form"
+    },
+    {
+      "file": "cyperacea_papyrus/papyrus_1202.jpg",
+      "sha256": "6491d5f68b04a70d339ee56d518c6c115cb917fec6b5f3a88a145a17c1bee1d8",
+      "bytes": 2221347,
+      "stored_pixels": [
+        6000,
+        4000
+      ],
+      "orientation": 1,
+      "display_pixels": [
+        6000,
+        4000
+      ],
+      "contact_sheet": "references-cyperacea_papyrus-2.jpg",
+      "visual_use": "small or closed head; candidate unopened form"
+    },
+    {
+      "file": "cyperacea_papyrus/papyrus_1204.jpg",
+      "sha256": "2d748a55c69cedf57f7c193c455cea3d0a1611d1b554ff0b76c359ab7774c3aa",
+      "bytes": 2383664,
+      "stored_pixels": [
+        6000,
+        4000
+      ],
+      "orientation": 1,
+      "display_pixels": [
+        6000,
+        4000
+      ],
+      "contact_sheet": "references-cyperacea_papyrus-2.jpg",
+      "visual_use": "terminal forks and fine branch hierarchy"
+    }
+  ]
+}

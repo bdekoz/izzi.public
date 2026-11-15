@@ -11,10 +11,10 @@
 <!-- Node0 -->
 <g id="Node000000" class="node">
 <title>Node0</title>
-<g id="a_Node000000"><a xlink:href="structizzi_1_1guilloche_1_1lenticular__array__spec.html" target="_top" xlink:title=" ">
+<g id="a_Node000000"><a xlink:href="structizzi_1_1guilloche_1_1harmonic__wave__spec.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="117.25,-27.5 0,-27.5 0,0 117.25,0 117.25,-27.5"/>
-<text xml:space="preserve" text-anchor="start" x="8" y="-15.9" font-family="SourceSans" font-size="8.00">izzi::guilloche::lenticular</text>
-<text xml:space="preserve" text-anchor="middle" x="58.62" y="-6.15" font-family="SourceSans" font-size="8.00">_array_spec</text>
+<text xml:space="preserve" text-anchor="start" x="8" y="-15.9" font-family="SourceSans" font-size="8.00">izzi::guilloche::harmonic</text>
+<text xml:space="preserve" text-anchor="middle" x="58.62" y="-6.15" font-family="SourceSans" font-size="8.00">_wave_spec</text>
 </a>
 </g>
 </g>

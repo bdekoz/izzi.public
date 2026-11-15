@@ -29,6 +29,6 @@ Window 1 garble was diagnosed with local Whisper (faster-whisper small, CPU on
 eureka): the original V03 audition reference (multi-turn excerpt) produced
 hallucinated speech. A single-speaker corpus turn transformed to V03 and
 greedy decoding produced a clean take (W1-V03-F). See
-`docs/training-conversion/receipts/WI-HLT-FROGTOWN-V2-HIGGS-AUDIO-30S-REVISION-R2-2026-08-12.md`.
+`examples.rizal/local-objects/legacy/izzi-docs-training-conversion-2026-08-12/receipts/WI-HLT-FROGTOWN-V2-HIGGS-AUDIO-30S-REVISION-R2-2026-08-12.md`.
 
 Status: `FIRST-PASS-SORT; NO-REMOVAL`

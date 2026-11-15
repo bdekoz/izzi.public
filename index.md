@@ -2,8 +2,7 @@
 
 ## Documentation
 
-* API docs [doxygen](https://bdekoz.github.io/izzi.public/docs/html/)
-* [Examples](https://bdekoz.github.io/izzi.public/docs/examples_detail.md)
+* [Examples](docs/examples_detail.md)
 * **API reference:** [Doxygen](docs/html/index.html), [Screen Glitch](docs/html/screen-glitch/index.html)
 * **Generative families**
   * [Pattern](docs/generative_patterns.md) — hamonshu, guilloche, moire, surface tension, edge tension, radial, damped harmonograph, grignani, roulette
@@ -15,9 +14,15 @@
 * [Dutch guilloche stage 6](docs/generative_patterns/guilloche.md#stage-6--rectified-dutch-security-panel) — reconstruction, ten variations and reproduction workflow
 * [Dutch guilloche stage 7](docs/generative_patterns/guilloche.md#stage-7--scalloped-medallion-and-scroll-frame) — scalloped medallion, ten varied compositions, script OTF and local review
 * **Workflows**
+  * [Compute and production routes](docs/workflows.md)
   * [Visual](docs/visual_workflow/)
   * [Audio](docs/audio_workflow/)
+  * [MOSS appearance and local animation](docs/visual_workflow/tool_moss_local.md)
+  * [Portrait and print editions](docs/visual_workflow/tool_portrait_print.md)
 
 ## Development
 
-* [Here Lies Trouble — cut v1 plan](docs/development/here-lies-trouble/cut-v1.md)
+* [Development status and session records](docs/development/index.md)
+* [Portrait engraving](docs/portrait.md)
+* [Organica](docs/generative_patterns/organica.md)
+* [Documentation review and work plan](docs/development/sessions/20261114.documentation_review.md)

@@ -8,6 +8,17 @@ guilloche reels. The directory organization follows
 guidance linked below. The Supercut usage guide was moved here from
 `docs/workflows.md` in the 2026-08-22 documentation pass.
 
+## Choose a production route
+
+- [MOSS appearance and local animation](visual_workflow/tool_moss_local.md):
+  pinned still-generation history, saved-asset CPU replay and full-episode review.
+- [Portrait and print editions](visual_workflow/tool_portrait_print.md):
+  native DLH engraving, holiday/anniversary lineage, print exports and checks.
+- [Guilloche reels and title cards](visual_workflow/tool_guilloche.md):
+  native field animation and compact film delivery.
+
+The [development index](development/index.md) holds current production status.
+
 ## Supercut usage
 
 `scripts/izzi-supercut.py` derives deterministic seed/review cuts from a
@@ -59,9 +70,12 @@ smoke derivation.
 | `docs/visual_workflow/camera_tracking_routes.md` | Route waypoints and derived camera tracks |
 | `docs/visual_workflow/tool_seedance.md` | Provider image-to-video adapter and delivery contract |
 | `docs/visual_workflow/tool_guilloche.md` | Native guilloche reviews and compact reels; v4 renderer and title cards |
+| [MOSS and local animation](visual_workflow/tool_moss_local.md) | Appearance training provenance, saved assets, CPU rendering and restart boundaries |
+| [Portrait and print](visual_workflow/tool_portrait_print.md) | DLH engraving, holiday and anniversary editions, dependencies and print review |
 | [DOCX word titles](visual_workflow/tool_docx_word_titles.md) | Configurable word holds, title skipping, paragraph MKVs, layered review reels and 1080p vertical Instagram exports |
 | `docs/visual_workflow/etl.md` | Keyframes, filmstrips, proxies, hashing, episode assembly |
 | `docs/visual_workflow/proofs.md` | Review surface pattern (filmstrip + proxy pages) |
 | `docs/visual_workflow/visual_workflow_experiments.md` | First-pass unclassified material |
 
-Status: `FIRST-PASS-SORT; NO-REMOVAL; NOT-SHARED`
+Navigation updated November 14, 2026. Dated experiments remain in the session
+records; the task guides above describe the currently delivered paths.

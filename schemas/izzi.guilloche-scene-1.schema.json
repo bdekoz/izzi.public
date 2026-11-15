@@ -1743,16 +1743,39 @@
         },
         "leaflets": {
           "enum": [
+            3,
             5,
             7,
             9
           ]
         },
+        "growth_stage": {
+          "enum": ["leaf", "vegetative", "early-flower", "full-flower", "late-flower"],
+          "default": "leaf",
+          "description": "Cannabis drawing stage: isolated leaf or a whole plant with stage-specific foliage and flowers."
+        },
+        "leaf_form": {
+          "enum": ["natural", "slender", "broad", "folded"],
+          "default": "natural"
+        },
+        "flower_fullness": {
+          "type": "number",
+          "minimum": 0.65,
+          "maximum": 1.6,
+          "default": 1
+        },
+        "plants": {
+          "type": "integer", "minimum": 1, "maximum": 5, "default": 1,
+          "description": "Number of whole cannabis plants in a stand."
+        },
+        "rotation": {
+          "type": "number", "minimum": -6.283185307179586, "maximum": 6.283185307179586,
+          "default": 0
+        },
         "stems": {
-          "enum": [
-            1,
-            3
-          ]
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 12
         },
         "branch_depth": {
           "type": "integer",
@@ -1765,6 +1788,10 @@
         }
       },
       "allOf": [
+        {
+          "if": {"properties": {"growth_stage": {"const": "leaf"}}},
+          "then": {"properties": {"plants": {"const": 1}}}
+        },
         {
           "if": {
             "properties": {
@@ -1779,6 +1806,18 @@
             "properties": {
               "leaflets": {
                 "const": 7
+              },
+              "growth_stage": {
+                "const": "leaf"
+              },
+              "leaf_form": {
+                "const": "natural"
+              },
+              "flower_fullness": {
+                "const": 1
+              },
+              "plants": {
+                "const": 1
               }
             }
           }

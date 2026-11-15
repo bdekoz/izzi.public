@@ -1,7 +1,7 @@
 {
     "schema_version": "izzi.enrichment-review/1",
     "generator": "examples/guilloche-enrichment-plates.cc",
-    "canvas_units": "SVG user units; 320 by 320; nominal ink width 0.7",
+    "canvas_units": "SVG user units; 320 by 320; ink widths are specified per authored scene",
     "physical_lenticular_proof": "not-performed",
     "plates": [
         {
@@ -449,32 +449,32 @@
             "group": "botanical",
             "svg": "plates/cannabis-structure.svg",
             "paths": 8,
-            "points": 1368,
-            "estimated_svg_bytes": 44448
+            "points": 1560,
+            "estimated_svg_bytes": 49824
         },
         {
             "id": "cannabis-detail",
             "group": "botanical",
             "svg": "plates/cannabis-detail.svg",
-            "paths": 99,
-            "points": 1851,
-            "estimated_svg_bytes": 81268
+            "paths": 267,
+            "points": 5355,
+            "estimated_svg_bytes": 222388
         },
         {
             "id": "papyrus-structure",
             "group": "botanical",
             "svg": "plates/papyrus-structure.svg",
-            "paths": 27,
-            "points": 1211,
-            "estimated_svg_bytes": 44916
+            "paths": 353,
+            "points": 23393,
+            "estimated_svg_bytes": 749468
         },
         {
             "id": "papyrus-detail",
             "group": "botanical",
             "svg": "plates/papyrus-detail.svg",
-            "paths": 101,
-            "points": 1781,
-            "estimated_svg_bytes": 79820
+            "paths": 1331,
+            "points": 40307,
+            "estimated_svg_bytes": 1473428
         },
         {
             "id": "saguaro-structure",
@@ -669,28 +669,348 @@
             "estimated_svg_bytes": 448440
         },
         {
+            "id": "cannabis-vegetative-structure",
+            "group": "cannabis-growth",
+            "svg": "plates/cannabis-vegetative-structure.svg",
+            "paths": 291,
+            "points": 40615,
+            "estimated_svg_bytes": 1215812
+        },
+        {
+            "id": "cannabis-vegetative-detail",
+            "group": "cannabis-growth",
+            "svg": "plates/cannabis-vegetative-detail.svg",
+            "paths": 908,
+            "points": 61984,
+            "estimated_svg_bytes": 1972096
+        },
+        {
+            "id": "cannabis-early-flower-structure",
+            "group": "cannabis-growth",
+            "svg": "plates/cannabis-early-flower-structure.svg",
+            "paths": 2176,
+            "points": 256292,
+            "estimated_svg_bytes": 7737328
+        },
+        {
+            "id": "cannabis-early-flower-detail",
+            "group": "cannabis-growth",
+            "svg": "plates/cannabis-early-flower-detail.svg",
+            "paths": 3829,
+            "points": 335385,
+            "estimated_svg_bytes": 10375100
+        },
+        {
+            "id": "cannabis-full-flower-structure",
+            "group": "cannabis-growth",
+            "svg": "plates/cannabis-full-flower-structure.svg",
+            "paths": 2941,
+            "points": 343537,
+            "estimated_svg_bytes": 10376028
+        },
+        {
+            "id": "cannabis-full-flower-detail",
+            "group": "cannabis-growth",
+            "svg": "plates/cannabis-full-flower-detail.svg",
+            "paths": 5863,
+            "points": 454523,
+            "estimated_svg_bytes": 14231668
+        },
+        {
+            "id": "cannabis-late-flower-structure",
+            "group": "cannabis-growth",
+            "svg": "plates/cannabis-late-flower-structure.svg",
+            "paths": 3257,
+            "points": 377125,
+            "estimated_svg_bytes": 11397388
+        },
+        {
+            "id": "cannabis-late-flower-detail",
+            "group": "cannabis-growth",
+            "svg": "plates/cannabis-late-flower-detail.svg",
+            "paths": 6513,
+            "points": 496733,
+            "estimated_svg_bytes": 15579948
+        },
+        {
             "id": "cannabis-5-leaflets",
             "group": "attachments",
             "svg": "plates/cannabis-5-leaflets.svg",
-            "paths": 71,
-            "points": 1327,
-            "estimated_svg_bytes": 59428
+            "paths": 218,
+            "points": 4170,
+            "estimated_svg_bytes": 176664
         },
         {
             "id": "cannabis-9-leaflets",
             "group": "attachments",
             "svg": "plates/cannabis-9-leaflets.svg",
-            "paths": 127,
-            "points": 2375,
-            "estimated_svg_bytes": 103108
+            "paths": 307,
+            "points": 6227,
+            "estimated_svg_bytes": 257044
         },
         {
             "id": "papyrus-three-stems",
             "group": "attachments",
             "svg": "plates/papyrus-three-stems.svg",
-            "paths": 303,
-            "points": 5343,
-            "estimated_svg_bytes": 231268
+            "paths": 447,
+            "points": 13695,
+            "estimated_svg_bytes": 501988
+        },
+        {
+            "id": "cannabis-natural-3-leaflets",
+            "group": "cannabis-leaves",
+            "svg": "plates/cannabis-natural-3-leaflets.svg",
+            "paths": 276,
+            "points": 4244,
+            "estimated_svg_bytes": 193584
+        },
+        {
+            "id": "cannabis-natural-5-leaflets",
+            "group": "cannabis-leaves",
+            "svg": "plates/cannabis-natural-5-leaflets.svg",
+            "paths": 432,
+            "points": 6672,
+            "estimated_svg_bytes": 301504
+        },
+        {
+            "id": "cannabis-natural-7-leaflets",
+            "group": "cannabis-leaves",
+            "svg": "plates/cannabis-natural-7-leaflets.svg",
+            "paths": 521,
+            "points": 8217,
+            "estimated_svg_bytes": 367548
+        },
+        {
+            "id": "cannabis-natural-9-leaflets",
+            "group": "cannabis-leaves",
+            "svg": "plates/cannabis-natural-9-leaflets.svg",
+            "paths": 589,
+            "points": 9565,
+            "estimated_svg_bytes": 422700
+        },
+        {
+            "id": "cannabis-slender-3-leaflets",
+            "group": "cannabis-leaves",
+            "svg": "plates/cannabis-slender-3-leaflets.svg",
+            "paths": 348,
+            "points": 5180,
+            "estimated_svg_bytes": 238224
+        },
+        {
+            "id": "cannabis-slender-5-leaflets",
+            "group": "cannabis-leaves",
+            "svg": "plates/cannabis-slender-5-leaflets.svg",
+            "paths": 536,
+            "points": 8024,
+            "estimated_svg_bytes": 365984
+        },
+        {
+            "id": "cannabis-slender-7-leaflets",
+            "group": "cannabis-leaves",
+            "svg": "plates/cannabis-slender-7-leaflets.svg",
+            "paths": 625,
+            "points": 9601,
+            "estimated_svg_bytes": 432924
+        },
+        {
+            "id": "cannabis-slender-9-leaflets",
+            "group": "cannabis-leaves",
+            "svg": "plates/cannabis-slender-9-leaflets.svg",
+            "paths": 725,
+            "points": 11333,
+            "estimated_svg_bytes": 507020
+        },
+        {
+            "id": "cannabis-broad-3-leaflets",
+            "group": "cannabis-leaves",
+            "svg": "plates/cannabis-broad-3-leaflets.svg",
+            "paths": 244,
+            "points": 3828,
+            "estimated_svg_bytes": 173744
+        },
+        {
+            "id": "cannabis-broad-5-leaflets",
+            "group": "cannabis-leaves",
+            "svg": "plates/cannabis-broad-5-leaflets.svg",
+            "paths": 352,
+            "points": 5632,
+            "estimated_svg_bytes": 251904
+        },
+        {
+            "id": "cannabis-broad-7-leaflets",
+            "group": "cannabis-leaves",
+            "svg": "plates/cannabis-broad-7-leaflets.svg",
+            "paths": 409,
+            "points": 6729,
+            "estimated_svg_bytes": 297212
+        },
+        {
+            "id": "cannabis-broad-9-leaflets",
+            "group": "cannabis-leaves",
+            "svg": "plates/cannabis-broad-9-leaflets.svg",
+            "paths": 493,
+            "points": 8541,
+            "estimated_svg_bytes": 369452
+        },
+        {
+            "id": "cannabis-folded-3-leaflets",
+            "group": "cannabis-leaves",
+            "svg": "plates/cannabis-folded-3-leaflets.svg",
+            "paths": 277,
+            "points": 4261,
+            "estimated_svg_bytes": 194316
+        },
+        {
+            "id": "cannabis-folded-5-leaflets",
+            "group": "cannabis-leaves",
+            "svg": "plates/cannabis-folded-5-leaflets.svg",
+            "paths": 433,
+            "points": 6689,
+            "estimated_svg_bytes": 302236
+        },
+        {
+            "id": "cannabis-folded-7-leaflets",
+            "group": "cannabis-leaves",
+            "svg": "plates/cannabis-folded-7-leaflets.svg",
+            "paths": 523,
+            "points": 8251,
+            "estimated_svg_bytes": 369012
+        },
+        {
+            "id": "cannabis-folded-9-leaflets",
+            "group": "cannabis-leaves",
+            "svg": "plates/cannabis-folded-9-leaflets.svg",
+            "paths": 592,
+            "points": 9616,
+            "estimated_svg_bytes": 424896
+        },
+        {
+            "id": "papyrus-5-culms-structure",
+            "group": "papyrus-stands",
+            "svg": "plates/papyrus-5-culms-structure.svg",
+            "paths": 290,
+            "points": 19170,
+            "estimated_svg_bytes": 615096
+        },
+        {
+            "id": "papyrus-5-culms-detail",
+            "group": "papyrus-stands",
+            "svg": "plates/papyrus-5-culms-detail.svg",
+            "paths": 2455,
+            "points": 43255,
+            "estimated_svg_bytes": 1843716
+        },
+        {
+            "id": "papyrus-9-culms-structure",
+            "group": "papyrus-stands",
+            "svg": "plates/papyrus-9-culms-structure.svg",
+            "paths": 416,
+            "points": 27616,
+            "estimated_svg_bytes": 883840
+        },
+        {
+            "id": "papyrus-9-culms-detail",
+            "group": "papyrus-stands",
+            "svg": "plates/papyrus-9-culms-detail.svg",
+            "paths": 3447,
+            "points": 61335,
+            "estimated_svg_bytes": 2603908
+        },
+        {
+            "id": "cannabis-bud-detail",
+            "group": "cannabis-details",
+            "svg": "plates/cannabis-bud-detail.svg",
+            "paths": 18783,
+            "points": 600155,
+            "estimated_svg_bytes": 21616884
+        },
+        {
+            "id": "cannabis-stem-detail",
+            "group": "cannabis-details",
+            "svg": "plates/cannabis-stem-detail.svg",
+            "paths": 5172,
+            "points": 120424,
+            "estimated_svg_bytes": 4700000
+        },
+        {
+            "id": "cannabis-1-plants",
+            "group": "botanical-counts",
+            "svg": "plates/cannabis-1-plants.svg",
+            "paths": 4517,
+            "points": 348997,
+            "estimated_svg_bytes": 10932364
+        },
+        {
+            "id": "papyrus-1-stems",
+            "group": "botanical-counts",
+            "svg": "plates/papyrus-1-stems.svg",
+            "paths": 197,
+            "points": 5957,
+            "estimated_svg_bytes": 221324
+        },
+        {
+            "id": "cannabis-2-plants",
+            "group": "botanical-counts",
+            "svg": "plates/cannabis-2-plants.svg",
+            "paths": 7064,
+            "points": 620908,
+            "estimated_svg_bytes": 19197904
+        },
+        {
+            "id": "papyrus-2-stems",
+            "group": "botanical-counts",
+            "svg": "plates/papyrus-2-stems.svg",
+            "paths": 394,
+            "points": 11914,
+            "estimated_svg_bytes": 438552
+        },
+        {
+            "id": "cannabis-3-plants",
+            "group": "botanical-counts",
+            "svg": "plates/cannabis-3-plants.svg",
+            "paths": 9377,
+            "points": 841261,
+            "estimated_svg_bytes": 25959916
+        },
+        {
+            "id": "papyrus-3-stems",
+            "group": "botanical-counts",
+            "svg": "plates/papyrus-3-stems.svg",
+            "paths": 591,
+            "points": 17871,
+            "estimated_svg_bytes": 655780
+        },
+        {
+            "id": "cannabis-4-plants",
+            "group": "botanical-counts",
+            "svg": "plates/cannabis-4-plants.svg",
+            "paths": 12996,
+            "points": 1179776,
+            "estimated_svg_bytes": 36364800
+        },
+        {
+            "id": "papyrus-4-stems",
+            "group": "botanical-counts",
+            "svg": "plates/papyrus-4-stems.svg",
+            "paths": 788,
+            "points": 23828,
+            "estimated_svg_bytes": 873008
+        },
+        {
+            "id": "cannabis-5-plants",
+            "group": "botanical-counts",
+            "svg": "plates/cannabis-5-plants.svg",
+            "paths": 15979,
+            "points": 1456779,
+            "estimated_svg_bytes": 44884532
+        },
+        {
+            "id": "papyrus-5-stems",
+            "group": "botanical-counts",
+            "svg": "plates/papyrus-5-stems.svg",
+            "paths": 985,
+            "points": 29785,
+            "estimated_svg_bytes": 1090236
         },
         {
             "id": "foliate-running-vine",
@@ -948,6 +1268,86 @@
             "estimated_svg_bytes": 126016
         },
         {
+            "id": "botanical-wild-01-thorn-triangle",
+            "group": "botanical-wild",
+            "svg": "plates/botanical-wild-01-thorn-triangle.svg",
+            "paths": 8593,
+            "points": 646337,
+            "estimated_svg_bytes": 20301340
+        },
+        {
+            "id": "botanical-wild-02-pollen-eclipse",
+            "group": "botanical-wild",
+            "svg": "plates/botanical-wild-02-pollen-eclipse.svg",
+            "paths": 8402,
+            "points": 632778,
+            "estimated_svg_bytes": 19872792
+        },
+        {
+            "id": "botanical-wild-03-feral-arch",
+            "group": "botanical-wild",
+            "svg": "plates/botanical-wild-03-feral-arch.svg",
+            "paths": 4100,
+            "points": 330828,
+            "estimated_svg_bytes": 10316880
+        },
+        {
+            "id": "botanical-wild-04-diamond-cage",
+            "group": "botanical-wild",
+            "svg": "plates/botanical-wild-04-diamond-cage.svg",
+            "paths": 1859,
+            "points": 146787,
+            "estimated_svg_bytes": 4590036
+        },
+        {
+            "id": "botanical-wild-05-hexagonal-spore",
+            "group": "botanical-wild",
+            "svg": "plates/botanical-wild-05-hexagonal-spore.svg",
+            "paths": 10619,
+            "points": 777235,
+            "estimated_svg_bytes": 24485140
+        },
+        {
+            "id": "botanical-wild-06-serpentine-frieze",
+            "group": "botanical-wild",
+            "svg": "plates/botanical-wild-06-serpentine-frieze.svg",
+            "paths": 5568,
+            "points": 479092,
+            "estimated_svg_bytes": 14844080
+        },
+        {
+            "id": "botanical-wild-07-double-arch-mirage",
+            "group": "botanical-wild",
+            "svg": "plates/botanical-wild-07-double-arch-mirage.svg",
+            "paths": 7899,
+            "points": 576871,
+            "estimated_svg_bytes": 18178628
+        },
+        {
+            "id": "botanical-wild-08-fractured-compass",
+            "group": "botanical-wild",
+            "svg": "plates/botanical-wild-08-fractured-compass.svg",
+            "paths": 16031,
+            "points": 966963,
+            "estimated_svg_bytes": 31182996
+        },
+        {
+            "id": "botanical-wild-09-orbital-herbarium",
+            "group": "botanical-wild",
+            "svg": "plates/botanical-wild-09-orbital-herbarium.svg",
+            "paths": 11326,
+            "points": 811062,
+            "estimated_svg_bytes": 25613288
+        },
+        {
+            "id": "botanical-wild-10-overgrown-cathedral",
+            "group": "botanical-wild",
+            "svg": "plates/botanical-wild-10-overgrown-cathedral.svg",
+            "paths": 12804,
+            "points": 858936,
+            "estimated_svg_bytes": 27332128
+        },
+        {
             "id": "motion-basketweave-0",
             "group": "motion",
             "svg": "plates/motion-basketweave-0.svg",
@@ -996,5 +1396,5 @@
             "estimated_svg_bytes": 77248
         }
     ],
-    "plate_count": 123
+    "plate_count": 173
 }

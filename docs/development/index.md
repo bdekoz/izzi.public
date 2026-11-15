@@ -5,12 +5,28 @@ artifacts, cross-cutting proposals, and archived history. Vertical plans here
 are the source tree for the plan-vertical review class on
 situationshipin.space; the portal holds the reviewed copies.
 
+## Current entry points — November 14, 2026
+
+Use task guides for reproduction and dated records for decisions and evidence.
+Historical milestones stay in place; a later status summary supersedes an older
+in-progress sentence without rewriting the original receipts.
+
+| Area | Current state | Guide and records |
+| --- | --- | --- |
+| Portrait API and banknote controls | Implemented; JSON C++ adapter and solid shadow masses remain proposed | [API entry](../portrait.md), [banknote exploration](20261114_banknote_portrait_api.md) |
+| Anniversary currency | Stage 3: 20 pairs and 124-case explorer; stage 4: portrait-only refresh complete | [Print workflow](../visual_workflow/tool_portrait_print.md), [stage 3](sessions/20261114.guilloche_anniversary_24_stage_3.md), [stage 4](sessions/20261114.guilloche_anniversary_24_stage_4.md) |
+| Holiday cards | V1 complete; v2 trials superseded; v3 and v4 each complete with 50 designs | [V1](sessions/20261114.dk_2026_holiday_v1.md), [v2](sessions/20261114.dk_2026_holiday_v2.md), [v3](sessions/20261114.dk_2026_holiday_v3.md), [v4 / fall-crazy-pants](sessions/20261114.dk_2026_holiday_v4.md) |
+| MOSS and Here Lies Trouble | Appearance pilot/refinement complete; opening-v7 approved; full episode delivered, full-length review open | [MOSS/local workflow](../visual_workflow/tool_moss_local.md), [durable production record](sessions/20261030.local_rendering_exploration_stage_5_durable_workflow.md) |
+| Native examples and Organica | Separate form/composition books; botanical revision and group selectors implemented | [Examples commands](examples-workflows.md), [Organica](../generative_patterns/organica.md), [botanical record](sessions/20261107.botanical_papyrus_cannabis_v2.md) |
+| MSP projection and print setup | Metric grids accepted; printer and installation checks remain physical work | [Grid record](sessions/20261108.projection_grid_msp_3x3_metric.md), [P9000 notes](20261108_epson_9000_low_ink_gamut.md) |
+| Documentation | Navigation and workflow diagrams refreshed locally; further stages itemized | [Review and plan](sessions/20261114.documentation_review.md) |
+
 ## Verticals
 
 | Vertical | Directory | Key artifacts |
 |---|---|---|
 | ai-time-to-die | [`time-to-die-ai/`](time-to-die-ai/) | [plan draft v1](time-to-die-ai/proposal_vertical_v1.md), [formal plan v2](time-to-die-ai/proposed_vertical_v2.md) (+ [special-topics](time-to-die-ai/proposed_vertical_v2.special-topics.md) and [PDF](time-to-die-ai/proposed_vertical_v2.pdf)), [draft 2](time-to-die-ai/draft-2.md), [draft 8](time-to-die-ai/draft-8.md), [session log](time-to-die-ai/explore_futures.20260813.md) |
-| Here Lies Trouble | [`here-lies-trouble/`](here-lies-trouble/) | [Stage 5 production and restart reference](sessions/20261027.here_lies_trouble_stage_5.md), [Stage 4 baseline](sessions/20261026.here_lies_trouble_stage_4_production_details.md), [budget](sessions/20261026.here_lies_trouble_stage_4_production_breakdown.md), [format fit](sessions/20261026.here_lies_trouble_format_fit.md); earlier [cut v1](here-lies-trouble/cut-v1.md), [full vertical](here-lies-trouble/full-vertical.md), [episode 01 v2](here-lies-trouble/episode-01-v2.md), [visual test](here-lies-trouble/visual-test.md), [provider auth](here-lies-trouble/provider-auth-motion.md) |
+| Here Lies Trouble | [`here-lies-trouble/`](here-lies-trouble/) | [Current local Stage 5 and full episode](sessions/20261030.local_rendering_exploration_stage_5_durable_workflow.md), [MOSS/local guide](../visual_workflow/tool_moss_local.md); earlier [provider Stage 5](sessions/20261027.here_lies_trouble_stage_5.md), [Stage 4 baseline](sessions/20261026.here_lies_trouble_stage_4_production_details.md), [budget](sessions/20261026.here_lies_trouble_stage_4_production_breakdown.md), [format fit](sessions/20261026.here_lies_trouble_format_fit.md), [cut v1](here-lies-trouble/cut-v1.md) |
 | Seedance | [`seedance/`](seedance/) | [audio-first workflow](seedance/audio.md), [Higgs](seedance/audio-higgs.md), [test plan](seedance/test-plan.md), [visual method](seedance/visual-method.md), [plan](seedance/plan.md) |
 | Blade Runner motion seeds | [`blade-runner/`](blade-runner/) | [motion seeds](blade-runner/motion-seeds.md) |
 
@@ -18,11 +34,45 @@ situationshipin.space; the portal holds the reviewed copies.
 
 Dated exploration logs live in [`sessions/`](sessions/):
 
+- [2026-10-30 Local Stage 5 durable workflow](sessions/20261030.local_rendering_exploration_stage_5_durable_workflow.md) —
+  Opening-v7 approved November 1; the complete 52:35.375 episode is delivered for review.
+  The accepted treatment uses complete walking surfaces,
+  a full unicorn cycle, preserved cat/dog cadence, and conversation restricted
+  to actual side-by-side neighbors. Records exact inputs, software, replay,
+  verification, resource admission, full-episode continuation and review decisions.
+- [2026-10-30 Local rendering exploration Stage 5](sessions/20261030.local_rendering_exploration_stage_5.md) —
+  ten-minute opening-v6 delivered for human review using saved Seedance walking
+  poses and real head views, registered mouths, revised bird contact, and
+  preserved OSM scenery/incidental animals. Includes the complete published
+  audio review and the November source-library prompt/budget plan. See the
+  execution record for current production status and open human review items.
+- [2026-10-29 Local rendering exploration Stage 4](sessions/20261029.local_rendering_exploration_stage_4.md) —
+  approved Plan B motion-data workflow; five-minute opening-v5 delivered
+  with connected skin, distinct cadences, partner attention, revised landing
+  and continuous OSM-based scenery. Exact media, captions and restart checks
+  passed. October 30 human review accepts scenery/location tracking and
+  incidental animals, and requests further gait, gaze and bird-contact work
+  in local Stage 5. Appendix C records the earlier fixes and production details.
+  The [standalone opening-v5 workflow](sessions/20261029.local_rendering_exploration_stage_4_durable_workflow.md)
+  adds exact replay/restore instructions, architecture diagrams and open
+  human-review decisions.
+  Earlier candidates, Plan A labeling instructions and animal-motion source
+  research remain preserved.
+- [2026-10-28 Local rendering Stage 3](sessions/20261028.local_rendering_exploration_stage_3.md) —
+  technically delivered 512-step canary and 30-second opening with exact
+  dialogue and verified restart. Human review requires mouth, gait, gaze and
+  scenery revisions; verbatim feedback is retained in Appendix A.
+- [2026-10-28 Local rendering Stage 2](sessions/20261028.local_rendering_exploration_stage_2.md) —
+  Stage 4 frame curation and appearance LoRA pilot; MOSS-Image-Base on
+  rizal's Quadro RTX 4000, measured CUDA/full-backbone backward feasibility,
+  whole-clip holdouts, pinned runtime and matched image comparison;
+  user accepts the improvement and selects MOSS/LoRA as the primary appearance path.
 - [2026-10-27 Local rendering Stage 1](sessions/20261027.local_rendering_exploration_stage_1.md) —
   completed six-second controlled proof, five Qwen/FLUX image attempts,
   measured Wan runtime limit and guided VACE result; rig selected for
   performance control; version 2 gaze accepted, version 3 animal artwork
-  awaiting review; verified evidence and restart details;
+  still needing improvement; appearance learning continues in Stage 2;
+  verified evidence and restart details;
   [parent exploration](sessions/20261027.local_rendering_exploration.md).
 - [2026-10-27 Here Lies Trouble Stage 5](sessions/20261027.here_lies_trouble_stage_5.md) —
   speaking mouths, noticeable reciprocal gaze, prepared canary audio,
@@ -77,6 +127,9 @@ Dated exploration logs live in [`sessions/`](sessions/):
 
 ## Cross-cutting
 
+- [Epson P9000 Commercial Edition low-ink colors and gamut notes](20261108_epson_9000_low_ink_gamut.md)
+  — Metallic Photo Paper Glossy, confirmed ink inventory, reconstructed PDF
+  swatches, MSP palette context, and Fedora/CUPS profile and status retrieval.
 - [Milestone 0 baseline](sessions/20260808.milestone_0_baseline.md)
 - [Vertical-series visual form](sessions/20260809.vertical-form.md)
 - [Vector text overlay proposal](sessions/20260814.vector-text-overlay-proposal.md)

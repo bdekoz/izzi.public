@@ -20,6 +20,7 @@ var searchData=
   ['load_5fswarm_5fmetadata_5fslice_5fcandidate_5fkeys_17',['load_swarm_metadata_slice_candidate_keys',['../namespacesvg.html#a282d6864a3f4f2b673ce4c0072c3de6c',1,'svg']]],
   ['load_5fswarm_5fmetadata_5fvisualization_5fdata_18',['load_swarm_metadata_visualization_data',['../namespacesvg.html#a94d2612e172a03d9ad0481a87ad77a4b',1,'svg']]],
   ['lobe_19',['lobe',['../namespaceizzi_1_1film__decay__v2.html#ab75158dd1737948fb32460dc5308a9c3',1,'izzi::film_decay_v2']]],
-  ['loft_20',['loft',['../namespaceizzi_1_1review_1_1edge__recipes.html#a9ea753e1cea2c98bb28535fd0dea730c',1,'izzi::review::edge_recipes']]],
-  ['loft_5fcontrols_21',['loft_controls',['../namespaceizzi_1_1review_1_1edge__recipes.html#a1aa60478476071ff6c1157f8efeb161d',1,'izzi::review::edge_recipes']]]
+  ['local_20',['local',['../structizzi_1_1portrait_1_1detail_1_1coverage__grid.html#add273ab072195858ff4b5d1b2319c853',1,'izzi::portrait::detail::coverage_grid']]],
+  ['loft_21',['loft',['../namespaceizzi_1_1review_1_1edge__recipes.html#a9ea753e1cea2c98bb28535fd0dea730c',1,'izzi::review::edge_recipes']]],
+  ['loft_5fcontrols_22',['loft_controls',['../namespaceizzi_1_1review_1_1edge__recipes.html#a1aa60478476071ff6c1157f8efeb161d',1,'izzi::review::edge_recipes']]]
 ];

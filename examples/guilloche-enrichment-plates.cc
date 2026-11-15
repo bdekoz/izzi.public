@@ -35,7 +35,7 @@ struct review_writer
   explicit review_writer(fs::path path):root(std::move(path)){
     manifest.StartObject();manifest.Key("schema_version");manifest.String("izzi.enrichment-review/1");
     manifest.Key("generator");manifest.String("examples/guilloche-enrichment-plates.cc");
-    manifest.Key("canvas_units");manifest.String("SVG user units; 320 by 320; nominal ink width 0.7");
+    manifest.Key("canvas_units");manifest.String("SVG user units; 320 by 320; ink widths are specified per authored scene");
     manifest.Key("physical_lenticular_proof");manifest.String("not-performed");
     manifest.Key("plates");manifest.StartArray();
     html<<"<!doctype html><html lang=\"en\"><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width\">"
@@ -52,7 +52,7 @@ struct review_writer
                          const std::string& authored="",const std::string& resolved="",
                          const std::string& source_crop=""){
     write(root/"plates"/(id+".svg"),render_svg(scene));
-    if(!authored.empty())write(root/"json"/(id+".json"),authored+"\n");
+    if(!authored.empty())write(root/"json"/(id+".json"),authored.back()=='\n'?authored:authored+"\n");
     if(!resolved.empty())write(root/"resolved"/(id+".json"),resolved+"\n");
     manifest.StartObject();manifest.Key("id");manifest.String(id.c_str());
     manifest.Key("group");manifest.String(group.c_str());manifest.Key("svg");manifest.String(("plates/"+id+".svg").c_str());
@@ -71,7 +71,10 @@ struct review_writer
   }
   resolved_scene emit(const std::string& id,const std::string& group,const std::string& geometry,
                        const std::string& crop=""){
-    const auto json=document(id,geometry);
+    return emit_document(id,group,document(id,geometry),crop);
+  }
+  resolved_scene emit_document(const std::string& id,const std::string& group,const std::string& json,
+                       const std::string& crop=""){
     auto r=resolve_guilloche_scene_json(json);std::string reason;
     for(const auto& d:r.diagnostics)reason+=d.pointer+": "+d.observed+"\n";
     if(!r.ok())throw std::runtime_error(id+": "+reason);
@@ -166,10 +169,36 @@ int main(int argc,char** argv){
   w.legacy("legacy-flinque",make_p3_flinque({160,160},142));
   for(std::size_t i=3;i<organic_preset_names.size();++i)for(int detail:{0,2})
     w.emit(std::string(organic_preset_names[i])+(detail?"-detail":"-structure"),i<10?"botanical":"reef",
-      geom("organic_field",",\"preset\":\""+std::string(organic_preset_names[i])+"\",\"span\":280,\"detail\":"+std::to_string(detail)));
+      geom("organic_field",",\"preset\":\""+std::string(organic_preset_names[i])+"\",\"span\":280,\"detail\":"+std::to_string(detail)
+        +((i==6||i==7)?",\"asymmetry\":0.18,\"seed\":20261107":"")
+        +(i==7?",\"stems\":7,\"branches\":18":"")));
+  for(std::size_t stage=1;stage<cannabis_growth_stage_names.size();++stage)for(int detail:{0,2})
+    w.emit("cannabis-"+std::string(cannabis_growth_stage_names[stage])+(detail?"-detail":"-structure"),"cannabis-growth",
+      geom("organic_field",",\"preset\":\"cannabis\",\"span\":280,\"branches\":16,\"growth_stage\":\""
+        +std::string(cannabis_growth_stage_names[stage])+"\",\"asymmetry\":0.18,\"seed\":20261107,\"detail\":"+std::to_string(detail)));
   for(int count:{5,9})w.emit("cannabis-"+std::to_string(count)+"-leaflets","attachments",
-    geom("organic_field",",\"preset\":\"cannabis\",\"span\":280,\"leaflets\":"+std::to_string(count)));
-  w.emit("papyrus-three-stems","attachments",geom("organic_field",",\"preset\":\"papyrus\",\"span\":270,\"stems\":3"));
+    geom("organic_field",",\"preset\":\"cannabis\",\"span\":280,\"asymmetry\":0.18,\"seed\":20261107,\"leaflets\":"+std::to_string(count)));
+  w.emit("papyrus-three-stems","attachments",geom("organic_field",",\"preset\":\"papyrus\",\"span\":270,\"stems\":3,\"asymmetry\":0.18,\"seed\":20261107"));
+  for(const auto form:cannabis_leaf_form_names)for(int count:{3,5,7,9})
+    w.emit("cannabis-"+std::string(form)+"-"+std::to_string(count)+"-leaflets","cannabis-leaves",
+      geom("organic_field",",\"preset\":\"cannabis\",\"span\":280,\"detail\":3,\"asymmetry\":0.22,\"seed\":20261107,\"leaf_form\":\""
+        +std::string(form)+"\",\"leaflets\":"+std::to_string(count)));
+  for(int count:{5,9})for(int detail:{0,3})
+    w.emit("papyrus-"+std::to_string(count)+"-culms-"+(detail?"detail":"structure"),"papyrus-stands",
+      geom("organic_field",",\"preset\":\"papyrus\",\"span\":280,\"branches\":18,\"stems\":"
+        +std::to_string(count)+",\"asymmetry\":0.22,\"seed\":20261107,\"detail\":"+std::to_string(detail)));
+  w.emit("cannabis-bud-detail","cannabis-details",
+    "{\"id\":\"form\",\"kind\":\"organic_field\",\"origin\":[160,520],\"preset\":\"cannabis\",\"growth_stage\":\"full-flower\",\"span\":1100,\"branches\":16,\"detail\":4,\"flower_fullness\":1.3,\"asymmetry\":0.18,\"seed\":20261107}");
+  w.emit("cannabis-stem-detail","cannabis-details",
+    "{\"id\":\"form\",\"kind\":\"organic_field\",\"origin\":[160,0],\"preset\":\"cannabis\",\"growth_stage\":\"vegetative\",\"span\":900,\"branches\":16,\"detail\":4,\"asymmetry\":0.18,\"seed\":20261107}");
+  for(int count=1;count<=5;++count){
+    w.emit("cannabis-"+std::to_string(count)+"-plants","botanical-counts",geom("organic_field",
+      ",\"preset\":\"cannabis\",\"growth_stage\":\"full-flower\",\"plants\":"+std::to_string(count)
+      +",\"span\":280,\"branches\":12,\"detail\":2,\"asymmetry\":0.25,\"seed\":20261107"));
+    w.emit("papyrus-"+std::to_string(count)+"-stems","botanical-counts",geom("organic_field",
+      ",\"preset\":\"papyrus\",\"stems\":"+std::to_string(count)
+      +",\"span\":280,\"branches\":16,\"detail\":2,\"asymmetry\":0.25,\"seed\":20261107"));
+  }
   for(const std::string name:{"running-vine","palmette"})
     w.emit("foliate-"+name,"attachments",geom("organic_field",",\"preset\":\""+name+"\",\"span\":270"));
   w.emit("foliate-interlaced-vines","attachments",geom("organic_field",",\"preset\":\"running-vine\",\"span\":270,\"branches\":8,\"interlace\":true"));
@@ -190,6 +219,16 @@ int main(int argc,char** argv){
   w.emit("basketweave-diagonal","basketweave",geom("basketweave_field",
     ",\"rows\":8,\"columns\":8,\"pitch\":23,\"band_width\":6,\"clearance\":0.5,\"rotation\":0.7853981633974483"));
   const fs::path repo=argc>2?fs::path(argv[2]):fs::path(__FILE__).parent_path().parent_path();
+  std::vector<fs::path> botanical_plates;
+  for(const auto& entry:fs::directory_iterator(repo/"examples/generative/botanical-wild"))
+    if(entry.path().filename().string().starts_with("botanical-wild-")&&entry.path().extension()==".json")
+      botanical_plates.push_back(entry.path());
+  std::sort(botanical_plates.begin(),botanical_plates.end());
+  if(botanical_plates.size()!=10)throw std::runtime_error("Expected ten authored botanical interference plates");
+  for(const auto& path:botanical_plates){
+    std::ifstream source(path);const std::string json{std::istreambuf_iterator<char>(source),{}};
+    w.emit_document(path.stem().string(),"botanical-wild",json);
+  }
   fs::create_directories(w.root/"sources");
   for(const char* crop:crops)fs::copy_file(repo/"docs/generative_patterns/images/hamonshu-groups"/(std::string(crop)+".jpg"),
     w.root/"sources"/(std::string(crop)+".jpg"),fs::copy_options::overwrite_existing);

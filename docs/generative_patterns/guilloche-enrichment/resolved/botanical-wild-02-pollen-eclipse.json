@@ -1,0 +1,516 @@
+{
+  "schema_version": "izzi.guilloche-scene-resolved/1",
+  "scene_id": "botanical-wild-02-pollen-eclipse",
+  "resolution": {
+    "input_sha256": "UNAVAILABLE",
+    "schema_sha256": "UNAVAILABLE"
+  },
+  "canvas": {
+    "width": 320.0,
+    "height": 320.0,
+    "background": "#062528"
+  },
+  "content": {
+    "kind": "none",
+    "accessible_label": "Pollen Eclipse",
+    "inscriptions": []
+  },
+  "treatment": {
+    "kind": "floral-cycloid",
+    "seed": 2026110702,
+    "floral_group_range": [
+      1,
+      3
+    ],
+    "petal_range": [
+      5,
+      11
+    ],
+    "selected_petals": 5,
+    "cycloid_amplitude": 0.0,
+    "density": "experimental",
+    "ornament_samples": 48
+  },
+  "layout": {
+    "kind": "radial",
+    "symmetry_order": 6,
+    "center": [
+      160.0,
+      160.0
+    ],
+    "radius": 120.0,
+    "include_radial_field": false,
+    "geometries": [
+      {
+        "id": "layer-00",
+        "family": "rosette",
+        "class": "radial",
+        "origin": [
+          155.0,
+          157.0
+        ],
+        "plate_index": 0,
+        "path_count": 18,
+        "point_count": 73746,
+        "parameters": {
+          "kind": "contour_loop",
+          "radius": 104.0,
+          "x_scale": 1.17,
+          "y_scale": 0.76,
+          "rotation": 0.0,
+          "normal_amplitude": 16.0,
+          "tangent_amplitude": 23.0,
+          "cycles": 61,
+          "phase": 0.0,
+          "secondary": 0.0,
+          "samples": 4096,
+          "phase_modulation": 0.0,
+          "phase_frequency": 8,
+          "strands": 18,
+          "phase_step": 0.3490658503988659,
+          "modes": []
+        }
+      },
+      {
+        "id": "layer-01",
+        "family": "rosette",
+        "class": "radial",
+        "origin": [
+          165.0,
+          157.0
+        ],
+        "plate_index": 1,
+        "path_count": 18,
+        "point_count": 73746,
+        "parameters": {
+          "kind": "contour_loop",
+          "radius": 104.0,
+          "x_scale": 1.17,
+          "y_scale": 0.76,
+          "rotation": 0.0,
+          "normal_amplitude": 16.0,
+          "tangent_amplitude": 23.0,
+          "cycles": 62,
+          "phase": 0.0,
+          "secondary": 0.0,
+          "samples": 4096,
+          "phase_modulation": 0.0,
+          "phase_frequency": 8,
+          "strands": 18,
+          "phase_step": 0.3490658503988659,
+          "modes": []
+        }
+      },
+      {
+        "id": "layer-02",
+        "family": "rosette",
+        "class": "radial",
+        "origin": [
+          160.0,
+          160.0
+        ],
+        "plate_index": 0,
+        "path_count": 23,
+        "point_count": 94231,
+        "parameters": {
+          "kind": "contour_loop",
+          "radius": 41.0,
+          "x_scale": 1.5,
+          "y_scale": 0.7,
+          "rotation": 0.0,
+          "normal_amplitude": 29.0,
+          "tangent_amplitude": 34.0,
+          "cycles": 29,
+          "phase": 0.0,
+          "secondary": 0.0,
+          "samples": 4096,
+          "phase_modulation": 2.1,
+          "phase_frequency": 3,
+          "strands": 23,
+          "phase_step": 0.2731819698773733,
+          "modes": []
+        }
+      },
+      {
+        "id": "layer-03",
+        "family": "botanical",
+        "class": "framed",
+        "origin": [
+          260.0,
+          185.272
+        ],
+        "plate_index": 2,
+        "path_count": 86,
+        "point_count": 1790,
+        "parameters": {
+          "preset": "papyrus",
+          "taxon_group": "vegetal",
+          "span": 62.0,
+          "asymmetry": 0.3,
+          "branches": 9,
+          "detail": 1,
+          "samples": 32,
+          "seed": 20263264,
+          "leaflets": 7,
+          "stems": 1,
+          "branch_depth": 4,
+          "rotation": -3.141592653589793,
+          "interlace": false
+        }
+      },
+      {
+        "id": "layer-04",
+        "family": "botanical",
+        "class": "framed",
+        "origin": [
+          216.26508256456,
+          216.32026833582708
+        ],
+        "plate_index": 3,
+        "path_count": 1909,
+        "point_count": 93613,
+        "parameters": {
+          "preset": "cannabis",
+          "taxon_group": "vegetal",
+          "span": 72.0,
+          "asymmetry": 0.3,
+          "branches": 6,
+          "detail": 1,
+          "samples": 32,
+          "seed": 20263983,
+          "leaflets": 5,
+          "stems": 1,
+          "branch_depth": 4,
+          "rotation": -2.2929493974889352,
+          "interlace": false,
+          "growth_stage": "full-flower",
+          "leaf_form": "folded",
+          "flower_fullness": 1.0,
+          "plants": 1
+        }
+      },
+      {
+        "id": "layer-05",
+        "family": "botanical",
+        "class": "framed",
+        "origin": [
+          154.29285387076624,
+          225.48037543071624
+        ],
+        "plate_index": 2,
+        "path_count": 66,
+        "point_count": 1958,
+        "parameters": {
+          "preset": "cannabis",
+          "taxon_group": "vegetal",
+          "span": 82.0,
+          "asymmetry": 0.3,
+          "branches": 3,
+          "detail": 1,
+          "samples": 32,
+          "seed": 20264702,
+          "leaflets": 5,
+          "stems": 1,
+          "branch_depth": 4,
+          "rotation": -1.7758229635803868,
+          "interlace": false,
+          "growth_stage": "leaf",
+          "leaf_form": "natural",
+          "flower_fullness": 1.0,
+          "plants": 1
+        }
+      },
+      {
+        "id": "layer-06",
+        "family": "botanical",
+        "class": "framed",
+        "origin": [
+          88.02496163398058,
+          209.32647348581628
+        ],
+        "plate_index": 3,
+        "path_count": 172,
+        "point_count": 3580,
+        "parameters": {
+          "preset": "papyrus",
+          "taxon_group": "vegetal",
+          "span": 92.0,
+          "asymmetry": 0.3,
+          "branches": 9,
+          "detail": 1,
+          "samples": 32,
+          "seed": 20265421,
+          "leaflets": 7,
+          "stems": 2,
+          "branch_depth": 4,
+          "rotation": -1.3657696900094067,
+          "interlace": false
+        }
+      },
+      {
+        "id": "layer-07",
+        "family": "botanical",
+        "class": "framed",
+        "origin": [
+          57.88343603303366,
+          175.93041231720795
+        ],
+        "plate_index": 2,
+        "path_count": 1895,
+        "point_count": 93431,
+        "parameters": {
+          "preset": "cannabis",
+          "taxon_group": "vegetal",
+          "span": 62.0,
+          "asymmetry": 0.3,
+          "branches": 6,
+          "detail": 1,
+          "samples": 32,
+          "seed": 20266140,
+          "leaflets": 5,
+          "stems": 1,
+          "branch_depth": 4,
+          "rotation": -0.8486432561008579,
+          "interlace": false,
+          "growth_stage": "full-flower",
+          "leaf_form": "natural",
+          "flower_fullness": 1.0,
+          "plants": 1
+        }
+      },
+      {
+        "id": "layer-08",
+        "family": "botanical",
+        "class": "framed",
+        "origin": [
+          60.0,
+          124.168
+        ],
+        "plate_index": 3,
+        "path_count": 67,
+        "point_count": 1971,
+        "parameters": {
+          "preset": "cannabis",
+          "taxon_group": "vegetal",
+          "span": 72.0,
+          "asymmetry": 0.3,
+          "branches": 3,
+          "detail": 1,
+          "samples": 32,
+          "seed": 20266859,
+          "leaflets": 5,
+          "stems": 1,
+          "branch_depth": 4,
+          "interlace": false,
+          "growth_stage": "leaf",
+          "leaf_form": "folded",
+          "flower_fullness": 1.0,
+          "plants": 1
+        }
+      },
+      {
+        "id": "layer-09",
+        "family": "botanical",
+        "class": "framed",
+        "origin": [
+          107.15666977890317,
+          94.6655633045745
+        ],
+        "plate_index": 2,
+        "path_count": 86,
+        "point_count": 1790,
+        "parameters": {
+          "preset": "papyrus",
+          "taxon_group": "vegetal",
+          "span": 82.0,
+          "asymmetry": 0.3,
+          "branches": 9,
+          "detail": 1,
+          "samples": 32,
+          "seed": 20267578,
+          "leaflets": 7,
+          "stems": 1,
+          "branch_depth": 4,
+          "rotation": 0.8486432561008574,
+          "interlace": false
+        }
+      },
+      {
+        "id": "layer-10",
+        "family": "botanical",
+        "class": "framed",
+        "origin": [
+          170.1716394910299,
+          87.59123940003659
+        ],
+        "plate_index": 3,
+        "path_count": 1909,
+        "point_count": 93613,
+        "parameters": {
+          "preset": "cannabis",
+          "taxon_group": "vegetal",
+          "span": 92.0,
+          "asymmetry": 0.3,
+          "branches": 6,
+          "detail": 1,
+          "samples": 32,
+          "seed": 20268297,
+          "leaflets": 5,
+          "stems": 1,
+          "branch_depth": 4,
+          "rotation": 1.3657696900094063,
+          "interlace": false,
+          "growth_stage": "full-flower",
+          "leaf_form": "folded",
+          "flower_fullness": 1.0,
+          "plants": 1
+        }
+      },
+      {
+        "id": "layer-11",
+        "family": "botanical",
+        "class": "framed",
+        "origin": [
+          218.58155828063093,
+          101.88837100644236
+        ],
+        "plate_index": 2,
+        "path_count": 66,
+        "point_count": 1958,
+        "parameters": {
+          "preset": "cannabis",
+          "taxon_group": "vegetal",
+          "span": 62.0,
+          "asymmetry": 0.3,
+          "branches": 3,
+          "detail": 1,
+          "samples": 32,
+          "seed": 20269016,
+          "leaflets": 5,
+          "stems": 1,
+          "branch_depth": 4,
+          "rotation": 1.7758229635803868,
+          "interlace": false,
+          "growth_stage": "leaf",
+          "leaf_form": "natural",
+          "flower_fullness": 1.0,
+          "plants": 1
+        }
+      },
+      {
+        "id": "layer-12",
+        "family": "botanical",
+        "class": "framed",
+        "origin": [
+          265.5383163104295,
+          141.0837560423905
+        ],
+        "plate_index": 3,
+        "path_count": 172,
+        "point_count": 3580,
+        "parameters": {
+          "preset": "papyrus",
+          "taxon_group": "vegetal",
+          "span": 72.0,
+          "asymmetry": 0.3,
+          "branches": 9,
+          "detail": 1,
+          "samples": 32,
+          "seed": 20269735,
+          "leaflets": 7,
+          "stems": 2,
+          "branch_depth": 4,
+          "rotation": 2.2929493974889352,
+          "interlace": false
+        }
+      },
+      {
+        "id": "layer-13",
+        "family": "botanical",
+        "class": "framed",
+        "origin": [
+          131.6438782964659,
+          169.020165369504
+        ],
+        "plate_index": 3,
+        "path_count": 1915,
+        "point_count": 93771,
+        "parameters": {
+          "preset": "cannabis",
+          "taxon_group": "vegetal",
+          "span": 144.0,
+          "asymmetry": 0.3,
+          "branches": 6,
+          "detail": 1,
+          "samples": 32,
+          "seed": 20270454,
+          "leaflets": 5,
+          "stems": 1,
+          "branch_depth": 4,
+          "rotation": -0.3799999999999999,
+          "interlace": false,
+          "growth_stage": "full-flower",
+          "leaf_form": "natural",
+          "flower_fullness": 1.0,
+          "plants": 1
+        }
+      }
+    ]
+  },
+  "palette": {
+    "plates": [
+      {
+        "id": "plate-1",
+        "color": "#00D5C1",
+        "stroke_width": 0.32,
+        "opacity": 1.0,
+        "blend": "normal"
+      },
+      {
+        "id": "plate-2",
+        "color": "#FE4F91",
+        "stroke_width": 0.32,
+        "opacity": 1.0,
+        "blend": "normal"
+      },
+      {
+        "id": "plate-3",
+        "color": "#FCDF78",
+        "stroke_width": 0.32,
+        "opacity": 1.0,
+        "blend": "normal"
+      },
+      {
+        "id": "plate-4",
+        "color": "#A6EEAA",
+        "stroke_width": 0.32,
+        "opacity": 1.0,
+        "blend": "normal"
+      }
+    ]
+  },
+  "budget": {
+    "maximum_paths": 20000,
+    "maximum_points": 2000000,
+    "maximum_svg_bytes": 67108864
+  },
+  "statistics": {
+    "path_count": 8402,
+    "point_count": 632778,
+    "estimated_svg_bytes": 19872792
+  },
+  "review": {
+    "profile": "experimental",
+    "human_acceptance": "PENDING",
+    "accessibility_conformance": "NOT-CLAIMED",
+    "baseline_promotion": "PENDING"
+  },
+  "diagnostics": [
+    {
+      "severity": "information",
+      "code": "LOCAL-EXPERIMENTAL-ART-RETAINED",
+      "message": "Wild local output remains renderable; public conformance is a separate gate."
+    }
+  ],
+  "extensions": {}
+}

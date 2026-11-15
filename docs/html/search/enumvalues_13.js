@@ -16,5 +16,7 @@ var searchData=
   ['transition_13',['transition',['../namespaceizzi_1_1transcription__enrichment.html#ae0b0659a7a36a6c361d8decd2c9f0d5aa1e3057527650f36abc8cfa0131920cda',1,'izzi::transcription_enrichment']]],
   ['transport_5fburst_14',['transport_burst',['../namespacesvg_1_1screen__glitch.html#a0235525184525a026a828965ac8d736cac9ec4f1fd80c373f06fba9ff14b8653c',1,'svg::screen_glitch']]],
   ['triangle_15',['triangle',['../namespacesvg.html#a7c30513e0ec17ac816f135b43687f7eaacef44b46f16ae8ecf664df4266ffdbf9',1,'svg']]],
-  ['triangular_16',['triangular',['../namespaceizzi_1_1guilloche.html#acef020a319fabc54456e17369f45a42cac83040fe8a3e100aa5087c393befa6cb',1,'izzi::guilloche']]]
+  ['triangular_16',['triangular',['../namespaceizzi_1_1guilloche.html#acef020a319fabc54456e17369f45a42cac83040fe8a3e100aa5087c393befa6cb',1,'izzi::guilloche']]],
+  ['triangular_5flattice_17',['triangular_lattice',['../namespaceizzi_1_1engraving.html#a575be10c7959844407014feb7e96d169ad448d002cb766bdd9b51de938fffbe75',1,'izzi::engraving']]],
+  ['truchet_5ftile_18',['truchet_tile',['../namespaceizzi_1_1engraving.html#a575be10c7959844407014feb7e96d169a1a3d2cf54c8630399e67aa6672458825',1,'izzi::engraving']]]
 ];

@@ -1,0 +1,18 @@
+<map id="izzi::portrait::detail::hash_prepare" name="izzi::portrait::detail::hash_prepare">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,23,132,60"/>
+<area shape="rect" id="Node000002" href="$classizzi_1_1portrait_1_1detail_1_1sha256.html#ae40a127355e06f37efdd4cfbabb68540" title=" " alt="" coords="354,23,480,60"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="125,20,179,8,243,3,306,8,347,19,342,19,306,14,243,8,180,14,127,25"/>
+<area shape="rect" id="Node000005" href="$classizzi_1_1portrait_1_1detail_1_1sha256.html#a67986221759f8552a524c082df7132c2" title=" " alt="" coords="180,23,306,60"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="132,39,167,41,162,43,133,44"/>
+<area shape="rect" id="Node000006" href="$classizzi_1_1portrait_1_1detail_1_1sha256.html#a27ad0c1925bf26abc95b22060e876c63" title=" " alt="" coords="180,85,306,121"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="123,58,177,78,172,80,122,63"/>
+<area shape="rect" id="Node000003" href="$classizzi_1_1portrait_1_1detail_1_1sha256.html#a714ef672de47fe29ae2b6f8996d6dec7" title=" " alt="" coords="528,54,655,91"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="481,50,516,59,510,59,481,56"/>
+<area shape="rect" id="Node000004" href="$classizzi_1_1portrait_1_1detail_1_1sha256.html#a97c306f7b86b0ee0bf0aa49dece4d5b1" title=" " alt="" coords="703,54,829,91"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="655,70,690,72,685,72,655,75"/>
+<area shape="poly" id="edge5_Node000005_Node000002" title=" " alt="" coords="306,39,341,41,336,42,307,44"/>
+<area shape="poly" id="edge7_Node000006_Node000002" title=" " alt="" coords="296,82,346,66,351,65,298,87"/>
+<area shape="rect" id="Node000007" href="$classizzi_1_1portrait_1_1detail_1_1sha256.html#a7776605712824dded2fe86d99ca15cdd" title=" " alt="" coords="354,85,480,121"/>
+<area shape="poly" id="edge8_Node000006_Node000007" title=" " alt="" coords="307,100,341,103,336,103,307,106"/>
+<area shape="poly" id="edge9_Node000007_Node000003" title=" " alt="" coords="481,89,510,86,516,86,481,95"/>
+</map>

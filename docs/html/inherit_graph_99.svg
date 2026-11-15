@@ -11,10 +11,10 @@
 <!-- Node0 -->
 <g id="Node000000" class="node">
 <title>Node0</title>
-<g id="a_Node000000"><a xlink:href="structizzi_1_1guilloche_1_1p3__medallion__tuning.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="90.25,-27.5 0,-27.5 0,0 90.25,0 90.25,-27.5"/>
-<text xml:space="preserve" text-anchor="start" x="8" y="-15.9" font-family="SourceSans" font-size="8.00">izzi::guilloche::p3</text>
-<text xml:space="preserve" text-anchor="middle" x="45.12" y="-6.15" font-family="SourceSans" font-size="8.00">_medallion_tuning</text>
+<g id="a_Node000000"><a xlink:href="structizzi_1_1guilloche_1_1p1__sunburst__tuning.html" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="#666666" points="89.5,-27.5 0,-27.5 0,0 89.5,0 89.5,-27.5"/>
+<text xml:space="preserve" text-anchor="start" x="8" y="-15.9" font-family="SourceSans" font-size="8.00">izzi::guilloche::p1</text>
+<text xml:space="preserve" text-anchor="middle" x="44.75" y="-6.15" font-family="SourceSans" font-size="8.00">_sunburst_tuning</text>
 </a>
 </g>
 </g>

@@ -50,19 +50,19 @@
           160.0
         ],
         "plate_index": 0,
-        "path_count": 101,
-        "point_count": 1781,
+        "path_count": 1331,
+        "point_count": 40307,
         "parameters": {
           "preset": "papyrus",
           "taxon_group": "vegetal",
           "span": 280.0,
-          "asymmetry": 0.0,
-          "branches": 12,
+          "asymmetry": 0.18,
+          "branches": 18,
           "detail": 2,
           "samples": 64,
-          "seed": 0,
+          "seed": 20261107,
           "leaflets": 7,
-          "stems": 1,
+          "stems": 7,
           "branch_depth": 4,
           "interlace": false
         }
@@ -86,9 +86,9 @@
     "maximum_svg_bytes": 67108864
   },
   "statistics": {
-    "path_count": 101,
-    "point_count": 1781,
-    "estimated_svg_bytes": 79820
+    "path_count": 1331,
+    "point_count": 40307,
+    "estimated_svg_bytes": 1473428
   },
   "review": {
     "profile": "experimental",

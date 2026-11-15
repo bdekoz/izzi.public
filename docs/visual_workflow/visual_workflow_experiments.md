@@ -7,9 +7,9 @@ documents. Nothing removed; nothing promoted.
   current method docs (pointed to by `docs/visual_workflow.md` until an
   individual move is approved).
 - Failure loops with visual renderer/contract lessons:
-  `docs/training-conversion/failure-loops/TC-LOOP-VISUAL-*.json`.
+  `examples.rizal/local-objects/legacy/izzi-docs-training-conversion-2026-08-12/failure-loops/TC-LOOP-VISUAL-*.json`.
 - Style processing and proof review dyads:
-  `docs/training-conversion/dyads/DYAD-2026-08-09-GUILLOCHE-V3-VISUAL-FEEDBACK-001.json`,
+  `examples.rizal/local-objects/legacy/izzi-docs-training-conversion-2026-08-12/dyads/DYAD-2026-08-09-GUILLOCHE-V3-VISUAL-FEEDBACK-001.json`,
   `DYAD-2026-08-10-THREE-VISUAL-PASS-4D-SYNTHESIS-END-001.json`.
 
 Status: `FIRST-PASS-SORT; NO-REMOVAL`

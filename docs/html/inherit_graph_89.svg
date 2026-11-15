@@ -11,10 +11,10 @@
 <!-- Node0 -->
 <g id="Node000000" class="node">
 <title>Node0</title>
-<g id="a_Node000000"><a xlink:href="structizzi_1_1guilloche_1_1muqarnas_1_1writer.html" target="_top" xlink:title=" ">
+<g id="a_Node000000"><a xlink:href="structizzi_1_1guilloche_1_1muqarnas_1_1cell.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="120.25,-27.5 0,-27.5 0,0 120.25,0 120.25,-27.5"/>
 <text xml:space="preserve" text-anchor="start" x="8" y="-15.9" font-family="SourceSans" font-size="8.00">izzi::guilloche::muqarnas</text>
-<text xml:space="preserve" text-anchor="middle" x="60.12" y="-6.15" font-family="SourceSans" font-size="8.00">::writer</text>
+<text xml:space="preserve" text-anchor="middle" x="60.12" y="-6.15" font-family="SourceSans" font-size="8.00">::cell</text>
 </a>
 </g>
 </g>

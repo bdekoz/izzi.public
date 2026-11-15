@@ -4,6 +4,8 @@ The section index lives at [visual workflow](../visual_workflow.md).
 
 Notable entries in this directory:
 
+- [MOSS appearance and local animation](tool_moss_local.md)
+- [Portrait and print editions](tool_portrait_print.md)
 - [Supercut usage](../supercut.md)
 - [Visual method](method.md)
 - [Visual experiments method](visual_experiments_method.md)

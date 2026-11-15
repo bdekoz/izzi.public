@@ -1,0 +1,30 @@
+<map id="izzi::portrait::detail::prepared_hash" name="izzi::portrait::detail::prepared_hash">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,145,132,182"/>
+<area shape="rect" id="Node000002" href="$classizzi_1_1portrait_1_1detail_1_1sha256.html#ae66d3a0da605e1fa240afbf9f74627a7" title=" " alt="" coords="354,5,480,42"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="82,143,122,100,149,77,178,59,218,43,259,32,341,23,336,26,260,38,219,48,181,63,152,81,125,103,86,147"/>
+<area shape="rect" id="Node000005" href="$classizzi_1_1portrait_1_1detail_1_1sha256.html#ae40a127355e06f37efdd4cfbabb68540" title=" " alt="" coords="528,131,655,167"/>
+<area shape="poly" id="edge16_Node000001_Node000005" title=" " alt="" coords="122,142,194,122,283,104,382,95,432,96,481,102,532,124,527,124,480,108,431,101,382,100,284,109,195,127,124,147"/>
+<area shape="rect" id="Node000006" href="$classizzi_1_1portrait_1_1detail_1_1sha256.html#af670e856bf6bb96f5a474a5c724a592a" title=" " alt="" coords="180,285,306,322"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="88,180,130,221,181,264,197,277,192,276,178,268,126,224,87,185"/>
+<area shape="rect" id="Node000007" href="$namespaceizzi_1_1portrait_1_1detail.html#a08ea8a94b0c9193aa39be007c200a354" title=" " alt="" coords="180,173,306,210"/>
+<area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="132,171,167,178,162,180,133,176"/>
+<area shape="rect" id="Node000008" href="$classizzi_1_1portrait_1_1detail_1_1sha256.html#a67986221759f8552a524c082df7132c2" title=" " alt="" coords="354,117,480,154"/>
+<area shape="poly" id="edge17_Node000001_Node000008" title=" " alt="" coords="132,156,339,140,337,144,133,161"/>
+<area shape="rect" id="Node000009" href="$classizzi_1_1portrait_1_1detail_1_1sha256.html#a27ad0c1925bf26abc95b22060e876c63" title=" " alt="" coords="354,229,480,266"/>
+<area shape="poly" id="edge18_Node000001_Node000009" title=" " alt="" coords="98,180,137,202,180,220,261,237,341,246,335,247,260,242,179,225,135,206,98,185"/>
+<area shape="rect" id="Node000003" href="$classizzi_1_1portrait_1_1detail_1_1sha256.html#a714ef672de47fe29ae2b6f8996d6dec7" title=" " alt="" coords="703,173,829,210"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="475,40,562,73,656,116,730,164,725,164,653,121,560,78,475,45"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="452,40,482,59,560,120,554,120,479,63,452,45"/>
+<area shape="rect" id="Node000004" href="$classizzi_1_1portrait_1_1detail_1_1sha256.html#a97c306f7b86b0ee0bf0aa49dece4d5b1" title=" " alt="" coords="877,173,1003,210"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="829,189,864,191,859,192,830,194"/>
+<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="655,162,690,173,685,173,655,167"/>
+<area shape="poly" id="edge7_Node000006_Node000003" title=" " alt="" coords="306,301,379,298,466,290,561,275,654,250,690,235,722,219,727,218,693,240,656,256,562,280,467,296,379,303,307,306"/>
+<area shape="poly" id="edge9_Node000007_Node000005" title=" " alt="" coords="306,183,480,164,516,161,511,162,481,169,307,188"/>
+<area shape="poly" id="edge10_Node000007_Node000008" title=" " alt="" coords="301,170,346,158,341,160,303,175"/>
+<area shape="poly" id="edge12_Node000007_Node000009" title=" " alt="" coords="302,208,346,224,341,224,302,213"/>
+<area shape="poly" id="edge11_Node000008_Node000005" title=" " alt="" coords="481,138,516,143,510,143,481,143"/>
+<area shape="poly" id="edge13_Node000009_Node000005" title=" " alt="" coords="450,226,542,176,547,175,452,231"/>
+<area shape="rect" id="Node000010" href="$classizzi_1_1portrait_1_1detail_1_1sha256.html#a7776605712824dded2fe86d99ca15cdd" title=" " alt="" coords="528,204,655,241"/>
+<area shape="poly" id="edge14_Node000009_Node000010" title=" " alt="" coords="481,236,516,233,510,234,481,241"/>
+<area shape="poly" id="edge15_Node000010_Node000003" title=" " alt="" coords="655,209,685,206,690,205,656,214"/>
+</map>

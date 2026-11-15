@@ -1,7 +1,7 @@
 var searchData=
 [
   ['name_0',['name',['../structizzi_1_1film__decay__v2_1_1binding.html#a0eb4a44bad9fdd1fb1e4c3c934ba1be1',1,'izzi::film_decay_v2::binding::name'],['../structizzi_1_1film__decay__detail_1_1control.html#adb124f4203345650282887ad72f0bada',1,'izzi::film_decay_detail::control::name'],['../structPoint.html#af52ec9c5dc533d46c1a67b4bbdaeae23',1,'Point::name'],['../structsvg_1_1hamonshu_1_1pattern__spec.html#a89c3f546a08a2a8f45e3116674df0523',1,'svg::hamonshu::pattern_spec::name'],['../structsvg_1_1video__glitch_1_1film_1_1control.html#aba545ee6dfe282548b44e5865763566e',1,'svg::video_glitch::film::control::name'],['../structsvg_1_1id__rstate.html#abaf75e62e9a1166c6855d8af32fe51a9',1,'svg::id_rstate::name']]],
-  ['names_1',['names',['../namespaceizzi_1_1film__decay__detail.html#a8e100ba31b0c8e9fcbb34a5a181474d0',1,'izzi::film_decay_detail::names'],['../namespaceizzi_1_1film__decay__v2.html#ab533830e3a6fc21dd499ae03d31e779c',1,'izzi::film_decay_v2::names']]],
+  ['names_1',['names',['../namespaceizzi_1_1engraving.html#a21369438f8840680150eeed1b7d513dd',1,'izzi::engraving::names'],['../namespaceizzi_1_1film__decay__detail.html#a8e100ba31b0c8e9fcbb34a5a181474d0',1,'izzi::film_decay_detail::names'],['../namespaceizzi_1_1film__decay__v2.html#ab533830e3a6fc21dd499ae03d31e779c',1,'izzi::film_decay_v2::names']]],
   ['nationality_5fcounts_2',['nationality_counts',['../structsvg_1_1swarm__metadata__chord__data.html#a49704ed2cca72194d97f82f857c6eb36',1,'svg::swarm_metadata_chord_data']]],
   ['nationality_5fvalue_5fcount_3',['nationality_value_count',['../structsvg_1_1swarm__metadata__chord__data.html#af383e8ac9b1c4850aae82bbf21f0d8ca',1,'svg::swarm_metadata_chord_data']]],
   ['nested_5fscenes_4',['nested_scenes',['../structizzi_1_1guilloche_1_1scene__spec.html#aabf726372f38eb04904d92d2a0e63369',1,'izzi::guilloche::scene_spec']]],
@@ -16,5 +16,7 @@ var searchData=
   ['normal_5foffset_5fratio_13',['normal_offset_ratio',['../structizzi_1_1guilloche_1_1p1__band__guilloche__tuning.html#ab5f269d7893b1eeaa3e91d767ab6f259',1,'izzi::guilloche::p1_band_guilloche_tuning']]],
   ['normal_5foffset_5fstep_14',['normal_offset_step',['../structizzi_1_1guilloche_1_1family__spec.html#a5b5f897ac21ab33132f5b3597a612c32',1,'izzi::guilloche::family_spec']]],
   ['number_15',['number',['../structizzi_1_1guilloche_1_1scene__content.html#ad0d07a2010a25db67807016b54a6e161',1,'izzi::guilloche::scene_content']]],
-  ['numerator_16',['numerator',['../structsvg_1_1video__glitch_1_1film_1_1rational.html#aee85380de1319d82156c3ebd91a869cb',1,'svg::video_glitch::film::rational::numerator'],['../structsvg_1_1video__glitch_1_1rational.html#a002bba135059ecfb8023394335f6d710',1,'svg::video_glitch::rational::numerator']]]
+  ['numerator_16',['numerator',['../structsvg_1_1video__glitch_1_1film_1_1rational.html#aee85380de1319d82156c3ebd91a869cb',1,'svg::video_glitch::film::rational::numerator'],['../structsvg_1_1video__glitch_1_1rational.html#a002bba135059ecfb8023394335f6d710',1,'svg::video_glitch::rational::numerator']]],
+  ['nx_17',['nx',['../structizzi_1_1portrait_1_1detail_1_1coverage__grid.html#a60c839f231d3612db646bd56075c990c',1,'izzi::portrait::detail::coverage_grid']]],
+  ['ny_18',['ny',['../structizzi_1_1portrait_1_1detail_1_1coverage__grid.html#a22f4423383538b415cea63d848aeb72e',1,'izzi::portrait::detail::coverage_grid']]]
 ];
