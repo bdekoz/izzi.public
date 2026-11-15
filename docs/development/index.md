@@ -19,7 +19,7 @@ in-progress sentence without rewriting the original receipts.
 | MOSS and Here Lies Trouble | Appearance pilot/refinement complete; opening-v7 approved; full episode delivered, full-length review open | [MOSS/local workflow](../visual_workflow/tool_moss_local.md), [durable production record](sessions/20261030.local_rendering_exploration_stage_5_durable_workflow.md) |
 | Native examples and Organica | Separate form/composition books; botanical revision and group selectors implemented | [Examples commands](examples-workflows.md), [Organica](../generative_patterns/organica.md), [botanical record](sessions/20261107.botanical_papyrus_cannabis_v2.md) |
 | MSP projection and print setup | Metric grids accepted; printer and installation checks remain physical work | [Grid record](sessions/20261108.projection_grid_msp_3x3_metric.md), [P9000 notes](20261108_epson_9000_low_ink_gamut.md) |
-| Documentation | Navigation and workflow diagrams refreshed locally; further stages itemized | [Review and plan](sessions/20261114.documentation_review.md) |
+| Documentation and reproduction | Guides, generated APIs and diagrams published; holiday v3/v4 preflight, isolated candidates and restore checks complete | [Review and results](sessions/20261114.documentation_review.md) |
 
 ## Verticals
 

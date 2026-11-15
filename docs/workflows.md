@@ -408,8 +408,11 @@ automatically to new pictures.
 
 The November 14 local refresh adds MOSS/SAM preparation, native portrait
 production and the distinction between digital checks and human/physical
-review. The October publication and its receipts remain historical evidence;
-this new packet has not been published or accepted.
+review. The October publication and its receipts remain historical evidence.
+The November packet is now published with the
+[Izzi public documentation](https://bdekoz.github.io/izzi.public/docs/workflows.html).
+Human acceptance remains open; the situationshipin.space review portal still
+holds its earlier packet.
 
 - Editable content and graph: the three tagged Mermaid blocks in this file.
 - The three revised diagrams use explicit SVG layouts in
