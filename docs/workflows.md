@@ -1,25 +1,22 @@
 # Workflows
 
 Status: DOCUMENTATION-REFRESH; LOCAL-DIAGRAMS-AWAITING-REVIEW
-Recorded: 2026-08-18; updated 2026-11-14, America/Los_Angeles.
+Recorded: 2026-08-18; updated 2026-11-16, America/Los_Angeles.
 Hardware observations remain dated October 27; later MOSS/SAM roles come from
 the saved production records. This pass does not re-inventory live services.
 
-See also: [transcription enrichment workflow](transcription-enrichment_workflow.md)
-(post-transcription formatting layer for the here-lies-trouble canonical
-transcript) and [visual workflow](visual_workflow.md) (visual passes plus
-the [supercut](supercut.md) usage guide, moved there in the 2026-08-22
-documentation pass).
+General covers the shared plan, produce and revise loop, review gates and
+compute resources. [Visual](visual_workflow.md) and [Audio](audio_workflow.md)
+are sibling workflow groups for task-specific production. Start with
+[Using](using.md) to compare the scope of every route.
 
 ## Choose a workflow
 
-| Work | Current guide | Recorded state |
+| Group | Scope | Detailed documentation |
 | --- | --- | --- |
-| Native form and composition books | [Examples workflows](development/examples-workflows.md) | Separate study/composition coverage and exports, including Organica |
-| Photograph engraving and print | [Portrait and print](visual_workflow/tool_portrait_print.md) | Anniversary stage 4 and holiday v3/v4 digitally complete |
-| MOSS appearance and local film | [MOSS/local workflow](visual_workflow/tool_moss_local.md) | Appearance pilot/refinement complete; full episode delivered for human review |
-| Native guilloche motion | [Guilloche reels](visual_workflow/tool_guilloche.md) | Review 4 stills and compact reels delivered |
-| Speech and transcription | [Audio](audio_workflow.md), [transcription](audio_workflow/tool_transcribe_audio.md) | Consult the selected production's audio and review receipts |
+| General | Shared planning, production stages, review gates and compute roles | [Production loop](#workflow), [stage gates](#stage-gates), [compute software](#compute-software) |
+| Visual | Graphics, motion and video, print and publication | [Visual workflow](visual_workflow.md) |
+| Audio | Speech and voices, recognition and transcript enrichment | [Audio workflow](audio_workflow.md) |
 
 The [development index](development/index.md) separates current results from
 historical sessions. The [November review](development/sessions/20261114.documentation_review.md)
@@ -391,8 +388,9 @@ the middle box and enter the bottom of PLAN, as requested in
 
 ## Indexes
 
-- [`docs/audio_workflow.md`](audio_workflow.md) — Status: `FIRST-PASS-SORT; NO-REMOVAL; NOT-SHARED`
-- [`docs/visual_workflow.md`](visual_workflow.md) — current task routes and historical tool guides
+- [Using](using.md) — the scope and detailed documentation for every workflow
+- [Visual](visual_workflow.md) — Graphics, Motion and video, Print and publication
+- [Audio](audio_workflow.md) — Speech and voices, Transcription
 
 House rule: sort and link, do not rewrite evidence.
 

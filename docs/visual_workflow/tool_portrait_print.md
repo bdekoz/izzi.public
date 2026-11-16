@@ -4,6 +4,8 @@ Use the [portrait API](../portrait.md) for native marks and the edition scripts
 for composition and delivery. The November 14 editions are digitally complete;
 physical print proofing and final design selection remain separate steps.
 
+For multi-page books and ebooks, use the [publication workflow](tool_publication.md). It is separate from portrait mark geometry and physical mark constraints.
+
 ## Production flow
 
 ```mermaid

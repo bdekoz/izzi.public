@@ -1,0 +1,32 @@
+{
+  "schema": "izzi-publication-profile-v1",
+  "id": "ingramspark-a4-20261114",
+  "checked": "2026-11-14",
+  "trim_mm": [210, 297],
+  "inner_mm": 20,
+  "outer_mm": 15,
+  "top_mm": 20,
+  "bottom_mm": 20,
+  "print_ppi": 300,
+  "pdfx": "PDF/X-3:2002",
+  "max_ink_percent": 240,
+  "min_pages": 24,
+  "max_pages": 590,
+  "epub_max_pixels": 3200000,
+  "epub_max_bytes": 100000000,
+  "epub_max_edge": 2400,
+  "cover_pixels": [1400, 2240],
+  "sources": [
+    "https://www.ingramspark.com/hubfs/downloads/file-creation-guide.pdf",
+    "https://www.ingramspark.com/plan-your-book/ebooks",
+    "https://kdp.amazon.com/en_US/help/topic/G201857950",
+    "https://assets.lulu.com/media/guides/en/lulu-book-creation-guide.pdf"
+  ],
+  "notes": [
+    "A4 portrait, premium color paperback interior, white margins, no bleed.",
+    "24-590 is the conservative common IngramSpark/KDP production range for these editions; Lulu Amazon color distribution requires at least 72 pages.",
+    "The IngramSpark PDF guide limits ebook images to 3.2 million pixels; its web page says 5.6 million. This profile uses 3.2 million.",
+    "The print wraparound cover, ISBN/title setup, retailer upload and physical proof are separate publishing steps.",
+    "240 percent is enforced on actual output image samples and paint colors, after the declared ICC conversion."
+  ]
+}

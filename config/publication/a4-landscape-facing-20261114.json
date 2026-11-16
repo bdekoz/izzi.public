@@ -1,0 +1,39 @@
+{
+  "schema": "izzi-publication-profile-v1",
+  "id": "a4-landscape-facing-20261114",
+  "checked": "2026-11-14",
+  "layout": "facing-spreads-v1",
+  "trim_mm": [297, 210],
+  "inner_mm": 13,
+  "outer_mm": 13,
+  "top_mm": 13,
+  "bottom_mm": 13,
+  "inner_margin_by_pages": [
+    {"max_pages": 60, "inner_mm": 13},
+    {"max_pages": 150, "inner_mm": 16},
+    {"max_pages": 400, "inner_mm": 25},
+    {"max_pages": 600, "inner_mm": 29}
+  ],
+  "print_ppi": 300,
+  "pdfx": "PDF/X-3:2002",
+  "max_ink_percent": 240,
+  "min_pages": 2,
+  "max_pages": 600,
+  "epub_max_pixels": 3200000,
+  "epub_max_bytes": 100000000,
+  "epub_max_edge": 2400,
+  "cover_pixels": [1400, 2240],
+  "sources": [
+    "https://assets.lulu.com/media/guides/en/lulu-book-creation-guide.pdf",
+    "https://www.ingramspark.com/hubfs/downloads/file-creation-guide.pdf",
+    "https://kdp.amazon.com/en_US/help/topic/G201834180"
+  ],
+  "notes": [
+    "A4 landscape interior master with white margins; complete artwork on even left pages and readable primary legends on the facing odd pages.",
+    "Lulu lists exact A4 landscape. Its binding guidance supplies the page-count bands; the ambiguous 60-page boundary uses the lower band. Selected product, paper, region, minimum pages and distribution eligibility still require title setup.",
+    "The 2-600 range is a master-generation bound, not a retailer product eligibility claim. There is no padding to a retailer minimum in this neutral profile.",
+    "Final layout resolves the inside margin from the final page count. Text pages reserve footer clearance; artwork pages use the entire safe frame without page furniture.",
+    "PDF/X-3:2002, 300 ppi CMYK and the numerical 240 percent ink cap retain the existing production baseline. A provider derivative must satisfy the selected product template.",
+    "Reflowable EPUB keeps the conservative 3.2-million-pixel image limit independently of print trim. Print covers and physical proofs remain separate."
+  ]
+}

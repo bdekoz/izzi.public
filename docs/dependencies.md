@@ -106,3 +106,39 @@ and the [approved production plan](development/sessions/20261001.short_center_fr
 The verified eureka GPU allocation is 103,079,215,104 bytes (96 GiB), with
 approximately 32 GiB host-visible RAM. The approved libx265 encoder is a CPU
 workload; this delivery does not install or substitute a GPU encoder.
+
+## Publication production (November 2026)
+
+The [publication workflow](visual_workflow/tool_publication.md) adds optional
+Python tools; these are not dependencies of Izzi's installed C++ headers.
+
+| Component | Required for | Exercised version |
+| --- | --- | --- |
+| Python, Pillow/ImageCms, NumPy, ReportLab, pikepdf | Book layout, image/color conversion and structural checks | Python 3.14; Pillow 13.0.0; NumPy 2.4.6; ReportLab 4.5.1; pikepdf 10.17.0 |
+| Poppler (`pdftoppm`, `pdftotext`) | Original PDF rasterization, page reviews, text extraction | 26.01.0 |
+| Ghostscript (`gs`) and a CMYK ICC profile | PDF/X-3 conversion and complete-page decoding | 10.06.0; Artifex CMYK SWOP profile, hash in each manifest |
+| Java and EPUBCheck | Required final EPUB validation | EPUBCheck 5.4.0 |
+| Pycairo, PyGObject/librsvg and the existing review font environment | Only when the manifest contains SVG artwork | Shared `scripts/review_raster.py` adapter |
+| Explicit TrueType fonts | Searchable print type and glyph fallback | Bundled Atkinson Hyperlegible example fonts; system DejaVu Sans fallback |
+
+Install the optional Python packages in an environment that can also access
+system `gi` and `cairo` when SVG rendering is needed:
+
+```sh
+python3 -m venv --system-site-packages build/publication-python
+build/publication-python/bin/python -m pip install Pillow numpy reportlab pikepdf
+```
+
+Install Poppler, Ghostscript and Java through the operating system. Obtain the
+[official EPUBCheck release](https://github.com/w3c/epubcheck/releases/tag/v5.4.0)
+and pass its jar with `--epubcheck` or `EPUBCHECK_JAR`. The tools do not install
+software, fetch artwork or contact a publisher. An existing isolated package
+installation may instead be supplied through `PYTHONPATH`.
+
+The default example ICC location is
+`/usr/share/ghostscript/iccprofiles/default_cmyk.icc`; the manifest hashes the
+actual file. Record a different profile as a new input/edition. For SVGs the
+shared renderer requires installed Atkinson Hyperlegible Next Regular/Bold
+OTFs, using its isolated fontconfig. The PDF/bitmap path does not need that
+SVG font environment. See [manifest reference](publication.md) for output
+limits, ink limiting, evidence and the independent PDF/X validator limitation.

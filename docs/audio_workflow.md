@@ -1,25 +1,50 @@
 # Audio workflow
 
-Parent workflow: [Workflows](workflows.md).
+Workflow navigation: [Using](using.md) · [General](workflows.md) ·
+[Visual](visual_workflow.md).
 
-First-pass index for the Here Lies Trouble audio development workflow. This is
-a pointer index only: nothing was moved, removed, or rewritten. Each entry
-lists where the working material currently lives so future passes can split or
-merge without losing evidence.
+Audio workflows cover source preparation, speech and voices, and transcription.
+Choose a route below; [Using](using.md#audio) describes each route's full scope.
+The [general workflow](workflows.md#workflow) supplies shared planning and
+review stages. The [development index](development/index.md) links production
+status and evidence.
+
+## Choose a production route
+
+### Speech and voices
+
+| Route | Detailed documentation |
+| --- | --- |
+| Voice auditions and redubbing | [Human voice selection](audio_workflow/human_voice_selection.md), [MeanVC2 transformations and Kokoro references](audio_workflow/tool_meanvc2_kokoro.md) |
+| Higgs speech generation | [Recorded high-compute local TTS path](audio_workflow/tool_higgs.md) |
+
+### Transcription
+
+Audio/video transcription recognizes speech from the selected media stream.
+Review the recognized text and speaker structure before using enrichment to
+produce a screenplay.
+
+| Route | Detailed documentation |
+| --- | --- |
+| Audio/video transcription | [Local Whisper command, timestamped text/subtitles and verification](audio_workflow/tool_transcribe_audio.md), [runnable examples](../examples/audio-transcription/README.md) |
+| Transcription enrichment | [Reviewed transcript to Final Draft, Fountain and PDF](transcription-enrichment_workflow.md), [pipeline and FDX contract](development/transcription-enrichment/workflow.md), [example fixture](../examples/transcription-enrichment/README.md) |
+
+For book interiors, EPUB, ebook covers or mobile PDFs, use
+[Visual → Print and publication](visual_workflow.md#print-and-publication).
 
 ## Document map
 
-| File | Bucket |
+Shared preparation, rendering and annotation references support the routes
+above.
+
+| Guide | Scope |
 | --- | --- |
-| `docs/audio_workflow/index.md` | Directory entry page mirroring this index |
-| `docs/audio_workflow/defaults.md` | Render defaults, targets, seeds, and contracts |
-| `docs/audio_workflow/etl.md` | Source decode, VAD windows, transcripts, hashing, manifests |
-| [Audio/video transcription](audio_workflow/tool_transcribe_audio.md) | General-purpose local Whisper command, timestamped transcripts/subtitles, hash-bound reruns and examples |
-| `docs/audio_workflow/analyze_expand_voice_reference_bank.md` | Reference-bank analysis and expansion |
-| `docs/audio_workflow/tool_higgs.md` | Higgs TTS 2 (high compute; eureka GPU host) |
-| `docs/audio_workflow/tool_meanvc2_kokoro.md` | Low-compute local pass: MeanVC2 transformation + Kokoro target voices |
-| `docs/audio_workflow/annotation_schema.md` | RESPONSE annotations, VAD alignment, MeanVC2 timing notes |
-| `docs/audio_workflow/audio_workflow_experiments.md` | First-pass unclassified material and experiments |
+| [Directory index](audio_workflow/index.md) | The same Speech and voices and Transcription navigation |
+| [Render defaults](audio_workflow/defaults.md) | Targets, seeds and contracts |
+| [Audio preparation and assembly](audio_workflow/etl.md) | Source decode, VAD windows, transcripts, hashing and manifests |
+| [Voice reference bank](audio_workflow/analyze_expand_voice_reference_bank.md) | Reference-bank analysis and expansion |
+| [Annotation schema](audio_workflow/annotation_schema.md) | RESPONSE annotations, VAD alignment and MeanVC2 timing notes |
+| [Audio experiments](audio_workflow/audio_workflow_experiments.md) | Historical first-pass material and experiments |
 
 ## Current working material (2026-08-12)
 
@@ -46,4 +71,7 @@ The legacy archive paths above are historical locations and were absent during
 the November 14 documentation review. Current production receipts are linked
 from the [development index](development/index.md).
 
-Status: `FIRST-PASS-SORT; NO-REMOVAL; NOT-SHARED`
+Historical inventory status (August 12): `FIRST-PASS-SORT; NO-REMOVAL; NOT-SHARED`.
+
+Navigation updated November 16, 2026. Historical paths and observations above
+retain their recorded dates.

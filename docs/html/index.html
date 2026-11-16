@@ -85,8 +85,6 @@ $(function() {
 <li>Prerequisites</li>
 <li>Building and testing</li>
 <li>Installing and consuming</li>
-<li>Typed graph boundary</li>
-<li>Portrait engraving</li>
 <li>Using</li>
 </ul>
 </li>
@@ -100,13 +98,18 @@ $(function() {
 </li>
 <li><b>API reference:</b> <a href="index.html">Doxygen</a>, <a href="screen-glitch/index.html">Screen Glitch</a></li>
 <li><b>Workflows</b><ul>
-<li>Workflows</li>
-<li>MOSS appearance and local animation</li>
-<li>Portrait and print editions</li>
-<li><a href="https://bdekoz.github.io/izzi.public/docs/visual_workflow/">Visual</a></li>
-<li>DOCX word title videos — configurable word holds, paragraph clips, layered review reels and Instagram exports, with runnable examples</li>
-<li><a href="https://bdekoz.github.io/izzi.public/docs/audio_workflow/">Audio</a></li>
-<li>Audio/video transcription — local Whisper recognition, timestamped transcripts and subtitles, with runnable examples</li>
+<li>General</li>
+<li>Visual<ul>
+<li><a href="docs/visual_workflow.md#graphics">Graphics</a></li>
+<li><a href="docs/visual_workflow.md#motion-and-video">Motion and video</a></li>
+<li><a href="docs/visual_workflow.md#print-and-publication">Print and publication</a></li>
+</ul>
+</li>
+<li>Audio<ul>
+<li><a href="docs/audio_workflow.md#speech-and-voices">Speech and voices</a></li>
+<li><a href="docs/audio_workflow.md#transcription">Transcription</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li><a href="https://situationshipin.space/review/izzi-generation-20260814/">Examples</a></li>
@@ -121,7 +124,7 @@ $(function() {
 <p>The portrait and print workflow maps the completed anniversary and holiday editions. Anniversary stage 4 refreshes twenty front/back pairs; holiday v3 and v4 each deliver fifty whole-photo designs. Holiday v4 retains the output name <span class="tt">fall-crazy-pants</span>. Native DLH controls, guilloche, 600 dpi artwork, PDF exports and validation records are linked there. Physical print proofing and final selection remain.</p>
 <p>The development index tracks recent work and distinguishes technical delivery from human acceptance. See the November documentation review for current gaps and the staged improvement plan.</p>
 <p><b>PUBLISHING THE PUBLIC SITE</b></p>
-<p>The public docs site (<a href="https://bdekoz.github.io/izzi.public/">https://bdekoz.github.io/izzi.public/</a>) is a curated snapshot of this repository: <span class="tt">docs/</span>, <span class="tt">examples/</span>, <span class="tt">schemas/</span>, and the root landing files, with <span class="tt">src/</span> and other private trees excluded. Refresh it with:</p>
+<p>The public docs site (<a href="https://bdekoz.github.io/izzi.public/">https://bdekoz.github.io/izzi.public/</a>) is a curated snapshot of this repository: <span class="tt">docs/</span>, <span class="tt">examples/</span>, <span class="tt">schemas/</span>, <span class="tt">config/publication/</span>, and the root documentation including <span class="tt">CHANGELOG.md</span>, with <span class="tt">src/</span> and other private trees excluded. Refresh it with:</p>
 <div class="fragment"><div class="line">scripts/publish-public-mirror.sh --push</div>
 </div><!-- fragment --><p>Add <span class="tt">--regen-doxygen</span> to regenerate <span class="tt">docs/html</span> (with <span class="tt">SOURCE_BROWSER = NO</span>, source-listing pages stripped) and commit that to this repository first. Use <span class="tt">--dry-run</span> to build and audit the snapshot without changing any repository. The refresh also regenerates the focused Screen Glitch reference. In the snapshot, source-header links use available API pages and links to excluded local artifacts become plain labels; genuinely missing public targets still fail the audit. Dry runs use committed <span class="tt">HEAD</span>, so commit reviewed documentation changes before refreshing the public site. The three current workflow SVGs and their hardware inventory are copied from <span class="tt">resources.static/workflows/</span> into the snapshot's <span class="tt">docs/workflow-diagrams/</span>; their documentation links are rewritten to those public copies. </p>
 </div></div><!-- PageDoc -->

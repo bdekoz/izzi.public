@@ -1,5 +1,7 @@
 # Transcription enrichment
 
+Workflow group: [Audio → Transcription](audio_workflow.md#transcription).
+
 Post-transcription formatting layer: takes the canonical
 here-lies-trouble transcript and emits a Final Draft 13 screenplay (FDX +
 rendered PDF) and a production-fit assessment against the May 2026 network

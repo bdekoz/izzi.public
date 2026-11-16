@@ -15,7 +15,7 @@ cmake --build build/install --target install
 A downstream CMake project can then use:
 
 ```cmake
-find_package(izzi 2 CONFIG REQUIRED)
+find_package(izzi 4 CONFIG REQUIRED)
 target_link_libraries(my-program PRIVATE izzi::izzi)
 ```
 

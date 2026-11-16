@@ -10,8 +10,6 @@ It supports graphing, cartography, scientific documentation, generative design, 
   - [Prerequisites](docs/prerequisites.md)
   - [Building and testing](docs/building.md)
   - [Installing and consuming](docs/installing.md)
-  - [Typed graph boundary](docs/graph.md)
-  - [Portrait engraving](docs/portrait.md)
   - [Using](docs/using.md)
 - **Generative families**
   - [Pattern](https://bdekoz.github.io/izzi.public/docs/generative_patterns.html)
@@ -29,15 +27,14 @@ It supports graphing, cartography, scientific documentation, generative design, 
 - **API reference:** [Doxygen](docs/html/index.html),
   [Screen Glitch](docs/html/screen-glitch/index.html)
 - **Workflows**
-  - [Workflows](docs/workflows.md)
-  - [MOSS appearance and local animation](docs/visual_workflow/tool_moss_local.md)
-  - [Portrait and print editions](docs/visual_workflow/tool_portrait_print.md)
-  - [Visual](https://bdekoz.github.io/izzi.public/docs/visual_workflow/)
-  - [DOCX word title videos](docs/visual_workflow/tool_docx_word_titles.md)
-    — configurable word holds, paragraph clips, layered review reels and Instagram exports, with [runnable examples](examples/docx-word-titles/README.md)
-  - [Audio](https://bdekoz.github.io/izzi.public/docs/audio_workflow/)
-  - [Audio/video transcription](docs/audio_workflow/tool_transcribe_audio.md)
-    — local Whisper recognition, timestamped transcripts and subtitles, with [runnable examples](examples/audio-transcription/README.md)
+  - [General](docs/workflows.md)
+  - [Visual](docs/visual_workflow.md)
+    - [Graphics](docs/visual_workflow.md#graphics)
+    - [Motion and video](docs/visual_workflow.md#motion-and-video)
+    - [Print and publication](docs/visual_workflow.md#print-and-publication)
+  - [Audio](docs/audio_workflow.md)
+    - [Speech and voices](docs/audio_workflow.md#speech-and-voices)
+    - [Transcription](docs/audio_workflow.md#transcription)
 - [Examples](https://situationshipin.space/review/izzi-generation-20260814/)
 
 **BUILD AND EXAMPLES**
@@ -80,8 +77,9 @@ for current gaps and the staged improvement plan.
 **PUBLISHING THE PUBLIC SITE**
 
 The public docs site ([https://bdekoz.github.io/izzi.public/](https://bdekoz.github.io/izzi.public/))
-is a curated snapshot of this repository: `docs/`, `examples/`, `schemas/`, and the root
-landing files, with `src/` and other private trees excluded. Refresh it with:
+is a curated snapshot of this repository: `docs/`, `examples/`, `schemas/`,
+`config/publication/`, and the root documentation including `CHANGELOG.md`, with
+`src/` and other private trees excluded. Refresh it with:
 
 ```sh
 scripts/publish-public-mirror.sh --push

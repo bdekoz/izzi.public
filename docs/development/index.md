@@ -13,6 +13,7 @@ in-progress sentence without rewriting the original receipts.
 
 | Area | Current state | Guide and records |
 | --- | --- | --- |
+| Print books and EPUB | Landscape facing legends and full-bleed portrait spreads implemented; 16 tests pass; v4 real books have 162/38 pages | [Publication workflow](../visual_workflow/tool_publication.md), [layout reference](../publication.md), [delivery evidence](sessions/20261114.publication_production.md) |
 | Portrait API and banknote controls | Implemented; JSON C++ adapter and solid shadow masses remain proposed | [API entry](../portrait.md), [banknote exploration](20261114_banknote_portrait_api.md) |
 | Anniversary currency | Stage 3: 20 pairs and 124-case explorer; stage 4: portrait-only refresh complete | [Print workflow](../visual_workflow/tool_portrait_print.md), [stage 3](sessions/20261114.guilloche_anniversary_24_stage_3.md), [stage 4](sessions/20261114.guilloche_anniversary_24_stage_4.md) |
 | Holiday cards | V1 complete; v2 trials superseded; v3 and v4 each complete with 50 designs | [V1](sessions/20261114.dk_2026_holiday_v1.md), [v2](sessions/20261114.dk_2026_holiday_v2.md), [v3](sessions/20261114.dk_2026_holiday_v3.md), [v4 / fall-crazy-pants](sessions/20261114.dk_2026_holiday_v4.md) |

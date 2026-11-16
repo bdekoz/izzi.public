@@ -1,0 +1,241 @@
+{
+  "schema": "izzi-publication-v1",
+  "id": "izzi-visual-sampler",
+  "metadata": {
+    "title": "Lines, light and layers",
+    "subtitle": "An Izzi visual sampler",
+    "creator": "Izzi",
+    "language": "en",
+    "identifier": "urn:uuid:4645a813-b482-5887-a924-a435893d8a67",
+    "modified": "2026-11-14T12:00:00Z",
+    "edition": "Production example / November 2026"
+  },
+  "fonts": {
+    "regular": "font-regular",
+    "bold": "font-bold",
+    "fallback_regular": "fallback-regular",
+    "fallback_bold": "fallback-bold"
+  },
+  "cmyk_profile": "cmyk",
+  "assets": {
+    "art": {
+      "path": "sampler.svg",
+      "sha256": "f8305a516aef8c6f9d70b9af04907cb71fd20ee1816024374713bc344415e676"
+    },
+    "font-regular": {
+      "path": "fonts/AtkinsonHyperlegible-Regular.ttf",
+      "sha256": "7fb917c89019896d0b52ee84b7cbb3304c18cb90b19a62f5e32712bd23e97669"
+    },
+    "font-bold": {
+      "path": "fonts/AtkinsonHyperlegible-Bold.ttf",
+      "sha256": "5a3b0c8cc8ca545155150b4512a1fa248298df121c50d6557e651e61fbdab92f"
+    },
+    "cmyk": {
+      "path": "/usr/share/ghostscript/iccprofiles/default_cmyk.icc",
+      "sha256": "8472fa1493a024b800b67dee9424835ec0c41ab79490200ae8ec4a689fd1b9a9"
+    },
+    "fallback-regular": {
+      "path": "/usr/share/fonts/dejavu-sans-fonts/DejaVuSans.ttf",
+      "sha256": "f0d9a390aa7cf43999a2fd1502a47c381bc7809ab5fac6937f0f6dd6524096cd"
+    },
+    "fallback-bold": {
+      "path": "/usr/share/fonts/dejavu-sans-fonts/DejaVuSans-Bold.ttf",
+      "sha256": "d18ffe80992824fbb131e34a582786f0267bdbf68e3f086c1095bf4697bc76cd"
+    }
+  },
+  "introduction": [
+    "A small, self-contained art publication demonstrates the same layout and packaging used for larger visual books."
+  ],
+  "reading_guide": [
+    "The overview presents the full composition. The enlarged detail separates thin lines and overlapping shapes.",
+    "Text remains adjustable in the ebook. The print edition uses readable text outside the artwork."
+  ],
+  "colophon": [
+    "Original synthetic artwork made for the Izzi publication example.",
+    "Atkinson Hyperlegible is distributed under the SIL Open Font License; see the bundled OFL.txt.",
+    "Blank end pages bring this test interior to the selected paperback profile minimum."
+  ],
+  "chapters": [
+    {
+      "id": "layers",
+      "title": "Layers and interference",
+      "image": {
+        "asset": "art",
+        "alt": "Two overlapping circles, dense diagonal lines and a white wave over a gold-to-blue gradient.",
+        "caption": "Transparency, line fields and a gradient in a small visual study."
+      },
+      "sections": [
+        {
+          "title": "How to read the composition",
+          "paragraphs": [
+            "The wave crosses two translucent circles. Their overlap changes the local contrast without changing the line spacing.",
+            "Unicode typography: café, piñata, Ångström, 37° N, 50 m², and λ. Long links wrap without losing their target: https://www.w3.org/publishing/epub3/epub-spec.html."
+          ]
+        },
+        {
+          "title": "Sample regions",
+          "keys": [
+            {
+              "label": "Warm field",
+              "image": {
+                "asset": "art",
+                "alt": "Warm field",
+                "caption": "Transparency, line fields and a gradient in a small visual study.",
+                "crop": [
+                  0.06,
+                  0.25,
+                  0.08,
+                  0.14
+                ]
+              }
+            },
+            {
+              "label": "First translucent layer",
+              "image": {
+                "asset": "art",
+                "alt": "First translucent layer",
+                "caption": "Transparency, line fields and a gradient in a small visual study.",
+                "crop": [
+                  0.16,
+                  0.25,
+                  0.08,
+                  0.14
+                ]
+              }
+            },
+            {
+              "label": "A deliberately long key label that wraps across several lines without touching its neighbor",
+              "image": {
+                "asset": "art",
+                "alt": "A deliberately long key label that wraps across several lines without touching its neighbor",
+                "caption": "Transparency, line fields and a gradient in a small visual study.",
+                "crop": [
+                  0.26,
+                  0.25,
+                  0.08,
+                  0.14
+                ]
+              }
+            },
+            {
+              "label": "Fine diagonal lines",
+              "image": {
+                "asset": "art",
+                "alt": "Fine diagonal lines",
+                "caption": "Transparency, line fields and a gradient in a small visual study.",
+                "crop": [
+                  0.36000000000000004,
+                  0.25,
+                  0.08,
+                  0.14
+                ]
+              }
+            },
+            {
+              "label": "Crossing wave",
+              "image": {
+                "asset": "art",
+                "alt": "Crossing wave",
+                "caption": "Transparency, line fields and a gradient in a small visual study.",
+                "crop": [
+                  0.46,
+                  0.25,
+                  0.08,
+                  0.14
+                ]
+              }
+            },
+            {
+              "label": "Layer overlap / λ",
+              "image": {
+                "asset": "art",
+                "alt": "Layer overlap / λ",
+                "caption": "Transparency, line fields and a gradient in a small visual study.",
+                "crop": [
+                  0.56,
+                  0.25,
+                  0.08,
+                  0.14
+                ]
+              }
+            },
+            {
+              "label": "Cool field",
+              "image": {
+                "asset": "art",
+                "alt": "Cool field",
+                "caption": "Transparency, line fields and a gradient in a small visual study.",
+                "crop": [
+                  0.6600000000000001,
+                  0.25,
+                  0.08,
+                  0.14
+                ]
+              }
+            },
+            {
+              "label": "Outer boundary",
+              "image": {
+                "asset": "art",
+                "alt": "Outer boundary",
+                "caption": "Transparency, line fields and a gradient in a small visual study.",
+                "crop": [
+                  0.76,
+                  0.25,
+                  0.08,
+                  0.14
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "details": [
+        {
+          "asset": "art",
+          "alt": "Two overlapping circles, dense diagonal lines and a white wave over a gold-to-blue gradient.",
+          "caption": "An enlarged section of the same vector source.",
+          "crop": [
+            0.33,
+            0.16,
+            0.33,
+            0.65
+          ],
+          "title": "Linework at a larger scale"
+        }
+      ]
+    },
+    {
+      "id": "observation",
+      "title": "Looking again: a deliberately long heading to exercise wrapping and page composition",
+      "image": {
+        "asset": "art",
+        "alt": "Two overlapping circles, dense diagonal lines and a white wave over a gold-to-blue gradient.",
+        "caption": "Transparency, line fields and a gradient in a small visual study."
+      },
+      "sections": [
+        {
+          "title": "Observation notes",
+          "paragraphs": [
+            "A repeated motif looks different as the surrounding field changes. The source contains gradients and opacity; the printed version is a flattened color image.",
+            "A repeated motif looks different as the surrounding field changes. The source contains gradients and opacity; the printed version is a flattened color image.",
+            "A repeated motif looks different as the surrounding field changes. The source contains gradients and opacity; the printed version is a flattened color image.",
+            "A repeated motif looks different as the surrounding field changes. The source contains gradients and opacity; the printed version is a flattened color image.",
+            "A repeated motif looks different as the surrounding field changes. The source contains gradients and opacity; the printed version is a flattened color image.",
+            "A repeated motif looks different as the surrounding field changes. The source contains gradients and opacity; the printed version is a flattened color image.",
+            "A repeated motif looks different as the surrounding field changes. The source contains gradients and opacity; the printed version is a flattened color image.",
+            "A repeated motif looks different as the surrounding field changes. The source contains gradients and opacity; the printed version is a flattened color image.",
+            "A repeated motif looks different as the surrounding field changes. The source contains gradients and opacity; the printed version is a flattened color image.",
+            "A repeated motif looks different as the surrounding field changes. The source contains gradients and opacity; the printed version is a flattened color image.",
+            "A repeated motif looks different as the surrounding field changes. The source contains gradients and opacity; the printed version is a flattened color image.",
+            "A repeated motif looks different as the surrounding field changes. The source contains gradients and opacity; the printed version is a flattened color image."
+          ]
+        }
+      ]
+    }
+  ],
+  "chapter_order": [
+    "layers",
+    "observation"
+  ]
+}

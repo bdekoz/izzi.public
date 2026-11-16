@@ -1,0 +1,18 @@
+{
+  "schema": "izzi-ebook-cover-profile-v1",
+  "id": "ebook-cover-1600-20261114",
+  "checked": "2026-11-14",
+  "cover_pixels": [1600, 2560],
+  "cover_max_bytes": 5000000,
+  "epub_max_pixels": 3200000,
+  "sources": [
+    "https://www.ingramspark.com/hubfs/downloads/file-creation-guide.pdf",
+    "https://kdp.amazon.com/en_US/help/topic/G200645690"
+  ],
+  "notes": [
+    "The external RGB JPEG meets IngramSpark's 1600-pixel shortest-side and 1873-pixel longest-side minimum, and KDP's ideal 1600 x 2560 dimensions.",
+    "IngramSpark separately caps every image inside an EPUB at 3.2 million pixels. The embedded cover is proportionally reduced to fit that cap.",
+    "Regenerate typography and art from the original manifest assets; do not enlarge an undersized JPEG.",
+    "This digital derivative preserves the source book, print PDF and historical build receipt. Its own receipt records changed output hashes."
+  ]
+}

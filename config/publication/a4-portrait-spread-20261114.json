@@ -1,0 +1,58 @@
+{
+  "schema": "izzi-publication-profile-v1",
+  "id": "a4-portrait-spread-20261114",
+  "checked": "2026-11-14",
+  "layout": "portrait-map-spreads-v1",
+  "trim_mm": [
+    210,
+    297
+  ],
+  "inner_mm": 13,
+  "outer_mm": 13,
+  "top_mm": 13,
+  "bottom_mm": 13,
+  "inner_margin_by_pages": [
+    {
+      "max_pages": 60,
+      "inner_mm": 13
+    },
+    {
+      "max_pages": 150,
+      "inner_mm": 16
+    },
+    {
+      "max_pages": 400,
+      "inner_mm": 25
+    },
+    {
+      "max_pages": 600,
+      "inner_mm": 29
+    }
+  ],
+  "print_ppi": 300,
+  "pdfx": "PDF/X-3:2002",
+  "max_ink_percent": 240,
+  "min_pages": 2,
+  "max_pages": 600,
+  "epub_max_pixels": 3200000,
+  "epub_max_bytes": 100000000,
+  "epub_max_edge": 2400,
+  "cover_pixels": [
+    1400,
+    2240
+  ],
+  "sources": [
+    "https://assets.lulu.com/media/guides/en/lulu-book-creation-guide.pdf",
+    "https://www.ingramspark.com/hubfs/downloads/file-creation-guide.pdf",
+    "https://kdp.amazon.com/en_US/help/topic/G201834180"
+  ],
+  "notes": [
+    "Neutral A4 portrait interior master. Each complete artwork occupies an even/odd two-page spread, followed by exactly two pages of keys and notes.",
+    "Each page has 3 mm bleed on all four edges. TrimBox is A4; MediaBox/BleedBox are 216 x 303 mm. Text uses the recorded binding margins; artwork reaches the fold and outer trim.",
+    "Contain the entire map in the 420 x 297 mm trim spread. Extend its dominant border background without stretching or removing source coverage. Outer bleed repeats edge pixels; fold bleed contains the adjacent page pixels.",
+    "Integral pixels/mm above 300 ppi ensure exact matching halves. Receipt records the complete CMYK trim raster hash so final PDF halves can be rejoined and checked.",
+    "The neutral generation bounds and inherited binding bands are not a retailer eligibility claim. Product-specific export templates, wraparound covers and physical proof remain separate.",
+    "EPUB remains reflowable, with complete source text and optional detail images. It imposes no print split or parity."
+  ],
+  "bleed_mm": 3
+}

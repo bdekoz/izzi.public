@@ -187,7 +187,7 @@ render_round2_country_slice(const std::filesystem::path& path,
       const auto& values = split ? bands[page] : all;
       const std::string name = std::string(output_name)
         + (split ? "-" + std::string(suffixes[page]) : "");
-      const svg::area<> viewport = {3840, split ? 2880U : 2560U};
+      const svg::area<> viewport = {3840, split ? 2880.0 : 2560.0};
       svg::svg_element obj(name, viewport);
       obj.add_desc(std::string(round3 ? "Round 3 canonical country associations. Slice=" : "Round 2 canonical country occurrences. Slice=") + slice_key
                    + "; artifact=" + artifact + "; values=" + exact_values
