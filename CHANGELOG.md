@@ -87,6 +87,9 @@ after `v2.20260812`; the two v3 versions were distributed as Git tags.
   include fragments. Font reproducibility checks retain exact artifact
   comparisons while validating runtime provenance separately; native catalog
   checks allow enough time for the complete Debug study grid.
+- Aligned CMake's dense screen renderer with the production worker's `-O2`
+  in GNU/Clang Debug builds, retaining debug symbols and assertions so the
+  complete pixel-control checks can finish within their existing time limit.
 - Updated the CMake package to `4.20261116`. Consumers should request
   `find_package(izzi 4 CONFIG REQUIRED)` and link `izzi::izzi`; the package
   retains `SameMajorVersion` compatibility. Schema versions remain independent.
